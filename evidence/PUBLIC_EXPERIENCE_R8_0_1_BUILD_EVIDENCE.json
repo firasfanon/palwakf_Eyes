@@ -1,0 +1,52 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "PAL_EYES_PUBLIC_EXPERIENCE_ANALYZER_AND_PUBLIC_STORY_BADGE_TEST_CONTRACT_CLOSURE_HOTFIX_V1",
+  "target_baseline": "PAL_EYES_PUBLIC_EXPERIENCE_ATLAS_MUSEUM_MAGAZINE_R8_0_1_20260720",
+  "parent_baseline": "PAL_EYES_PUBLIC_EXPERIENCE_ATLAS_MUSEUM_MAGAZINE_R8_0_0_20260720",
+  "result": "PASS_STATIC_BUILD_PENDING_LOCAL_UAT",
+  "input_evidence": {
+    "r8_0_0_apply": "PASS",
+    "r8_0_0_static_verifiers": "PASS",
+    "dart_format": "PASS_102_FILES_16_CHANGED",
+    "flutter_analyze": "TWO_INFO_DIRECTIVES_ORDERING",
+    "flutter_test": "FAIL_ONE_LEGACY_LABEL_ASSERTION"
+  },
+  "repair": {
+    "directives_ordering_files": [
+      "lib/features/places/presentation/place_detail_screen.dart",
+      "lib/features/places/presentation/places_screen.dart"
+    ],
+    "public_story_badge_label": "حكاية موسعة",
+    "legacy_internal_label_removed_from_public_test": true,
+    "site_card_boundary": "364x402",
+    "overflow_assertion_preserved": true,
+    "historical_verifiers_reconciled": [
+      "R6.0.1",
+      "R6.0.2"
+    ]
+  },
+  "static_verification": {
+    "r8_0_1_hotfix": "PASS",
+    "r8_0_0_public_experience": "PASS",
+    "r6_0_1": "PASS",
+    "r6_0_2": "PASS",
+    "operational_backend": "PASS",
+    "product_ux": "PASS",
+    "original_draft": "PASS",
+    "governed_adoption": "PASS",
+    "compile_contract": "PASS",
+    "foundation": "PASS",
+    "tracker_formula_errors": 0
+  },
+  "local_gates": {
+    "dart_format": "PENDING_REPEAT",
+    "flutter_analyze": "PENDING_REPEAT",
+    "flutter_test": "PENDING_REPEAT",
+    "browser_uat": "PENDING"
+  },
+  "governance": {
+    "database_write": false,
+    "public_release": "BLOCKED",
+    "production_deployment": "NOT_APPROVED"
+  }
+}

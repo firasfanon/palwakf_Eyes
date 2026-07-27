@@ -1,0 +1,63 @@
+{
+  "project_id": "pal_eyes",
+  "baseline": "PAL_EYES_PUBLIC_EXPERIENCE_ATLAS_MUSEUM_MAGAZINE_R8_0_0_20260720",
+  "result": "PASS",
+  "public_identity": [
+    "ATLAS",
+    "MUSEUM",
+    "EDITORIAL_MAGAZINE"
+  ],
+  "surfaces": {
+    "public_shell": {
+      "primary_navigation": [
+        "الرئيسية",
+        "استكشف",
+        "الأطلس",
+        "الخريطة",
+        "القصص"
+      ],
+      "mobile_navigation_count": 4,
+      "workspace_separated": true
+    },
+    "discovery": {
+      "search_modes": [
+        "الكل",
+        "الاسم",
+        "المكان",
+        "الفترة",
+        "المصدر"
+      ],
+      "filters": 5,
+      "sorting": 4,
+      "mobile_page_size": 12
+    },
+    "stories": {
+      "long_form_story_count": 3,
+      "chapter_count": 12,
+      "related_places": true,
+      "source_leads": true
+    },
+    "map": {
+      "approved_coordinates_only": true,
+      "public_coordinates_current": 0,
+      "governorate_journeys": true
+    },
+    "states": [
+      "loading",
+      "empty",
+      "error"
+    ],
+    "accessibility": [
+      "semantics",
+      "live_region",
+      "focus_traversal",
+      "image_labels",
+      "search_action"
+    ]
+  },
+  "governance": {
+    "database_write": false,
+    "public_release": "BLOCKED",
+    "production_deployment": "NOT_APPROVED"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "result": "PASS",
+  "batch": "MEGA_BATCH_PAL_EYES_IMMERSIVE_PUBLIC_EXPERIENCE_AND_UNIFIED_PRODUCT_SURFACES_V1_0_1",
+  "target": "PAL_EYES_IMMERSIVE_PUBLIC_EXPERIENCE_AND_UNIFIED_PRODUCT_SURFACES_R4_0_1_20260715",
+  "failed_r4_apply_mutation_count": 0,
+  "observed_local_state": {
+    "verify": "PASS",
+    "pub_get": "PASS",
+    "format": "PASS_0_CHANGED",
+    "analyze": "PASS",
+    "tests": "PASS_18",
+    "run": "STARTED_WITH_LIST_TILE_ASSERTION"
+  },
+  "repairs": {
+    "formatted_preimage_hashes_added": 49,
+    "public_list_tile_material_boundary": true,
+    "workspace_list_tile_material_boundary": true,
+    "map_list_tile_material_boundary": true,
+    "dedicated_immersive_test": true
+  },
+  "boundaries": {
+    "database_mutation": "NONE",
+    "automatic_publication": "BLOCKED"
+  }
+}

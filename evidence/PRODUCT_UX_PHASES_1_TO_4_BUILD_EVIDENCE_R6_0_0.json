@@ -1,0 +1,37 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_PUBLIC_EXPERIENCE_OPERATIONAL_WORKSPACE_GIS_MEDIA_RIGHTS_AND_RELEASE_CONTROL_SURFACES_V1",
+  "target_baseline": "PAL_EYES_PRODUCT_UX_PHASES_1_TO_4_FOUNDATION_R6_0_0_20260719",
+  "parent_baseline": "PAL_EYES_ORIGINAL_HISTORICAL_DRAFT_LAYER_AND_DUAL_NARRATIVE_SURFACE_R5_2_1_20260719",
+  "result": "PASS_STATIC_BUILD_PENDING_LOCAL_UAT",
+  "implementation": {
+    "phase_1_public_experience": "IMPLEMENTED_FOUNDATION",
+    "phase_2_operational_workspace": "IMPLEMENTED_FOUNDATION",
+    "phase_3_gis_media_rights": "IMPLEMENTED_FOUNDATION",
+    "phase_4_release_control": "IMPLEMENTED_FOUNDATION",
+    "new_operational_screens": 10,
+    "shared_task_ux_components": true,
+    "routes_and_sidebar": true,
+    "product_plan_persisted": true,
+    "memory_and_tracker_updated": true
+  },
+  "static_verification": {
+    "product_ux_phases": "PASS",
+    "original_draft_dual_surface": "PASS",
+    "governed_content_adoption": "PASS",
+    "compile_contract": "PASS",
+    "foundation_static": "PASS",
+    "tracker_formula_errors": 0
+  },
+  "local_gates": {
+    "dart_format": "PENDING",
+    "flutter_analyze": "PENDING",
+    "flutter_test": "PENDING",
+    "browser_uat": "PENDING"
+  },
+  "governance": {
+    "database_write": false,
+    "automatic_publication": false,
+    "production_deployment": "NOT_APPROVED"
+  }
+}

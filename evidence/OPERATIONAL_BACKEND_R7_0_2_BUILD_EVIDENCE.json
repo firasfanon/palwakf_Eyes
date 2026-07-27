@@ -1,0 +1,53 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "PAL_EYES_OPERATIONAL_LOCAL_FALLBACK_COORDINATE_SEED_PARITY_AND_REVIEW_TASK_COUNT_CLOSURE_V1",
+  "target_baseline": "PAL_EYES_GOVERNED_OPERATIONAL_BACKEND_AND_WORKFLOW_ACTIVATION_R7_0_2_20260719",
+  "parent_baseline": "PAL_EYES_GOVERNED_OPERATIONAL_BACKEND_AND_WORKFLOW_ACTIVATION_R7_0_1_20260719",
+  "result": "PASS_STATIC_BUILD_PENDING_LOCAL_UAT",
+  "input_evidence": {
+    "r7_0_1_static": "PASS",
+    "dart_format": "PASS_95_FILES_7_CHANGED",
+    "flutter_analyze": "PASS_NO_ISSUES",
+    "flutter_test": "FAIL_ONE_COORDINATE_COUNT_3_VS_4"
+  },
+  "diagnosis": {
+    "legacy_catalog_review_coordinates": 3,
+    "operational_sql_seed_candidates": 4,
+    "manifest_coordinate_candidates": 4,
+    "root_cause": "Local mapper consumed legacy site coordinate fields instead of the governed operational coordinate seed."
+  },
+  "repair": {
+    "dedicated_local_coordinate_seed": true,
+    "exact_seed_ids": [
+      "W4-COORD-GERIZIM-001",
+      "W3-COORD-OMARI-001",
+      "W3-COORD-PORPHYRIOS-001",
+      "W3-COORD-GAZA-HISTORIC-CENTRE-001"
+    ],
+    "local_coordinate_candidates": 4,
+    "gis_review_tasks": 4,
+    "total_initial_review_tasks": 16,
+    "public_coordinates": 0
+  },
+  "static_verification": {
+    "r7_0_2_hotfix": "PASS",
+    "operational_backend": "PASS",
+    "product_ux": "PASS",
+    "original_draft": "PASS",
+    "governed_adoption": "PASS",
+    "compile_contract": "PASS",
+    "foundation": "PASS",
+    "tracker_formula_errors": 0
+  },
+  "local_gates": {
+    "dart_format": "PENDING_REPEAT",
+    "flutter_analyze": "PENDING_REPEAT",
+    "flutter_test": "PENDING_REPEAT",
+    "local_workflow_uat": "PENDING"
+  },
+  "governance": {
+    "database_migration": "PREPARED_NOT_APPLIED",
+    "public_release": "BLOCKED",
+    "production_deployment": "NOT_APPROVED"
+  }
+}

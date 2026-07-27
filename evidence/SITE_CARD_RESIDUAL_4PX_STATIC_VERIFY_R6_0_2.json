@@ -1,0 +1,21 @@
+{
+  "result": "PASS",
+  "mode": "SITE_CARD_RESIDUAL_4PX_VERTICAL_PADDING_HOTFIX",
+  "checks": {
+    "non_compact_horizontal_padding_preserved_19": true,
+    "non_compact_vertical_padding_reduced_to_17": true,
+    "compact_padding_preserved_15": true,
+    "card_height_not_increased": true,
+    "overflow_assertion_preserved": true,
+    "public_story_badge_information_preserved": true,
+    "database_writes_confined_to_governed_adapter": true
+  },
+  "failures": [],
+  "target_baseline": "PAL_EYES_PRODUCT_UX_PHASES_1_TO_4_FOUNDATION_R6_0_2_20260719",
+  "governance": {
+    "card_height_changed": false,
+    "content_removed": false,
+    "database_write": false,
+    "automatic_publication": false
+  }
+}

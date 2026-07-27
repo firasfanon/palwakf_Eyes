@@ -1,0 +1,21 @@
+{
+  "result": "PASS",
+  "mode": "PUBLIC_EXPERIENCE_ANALYZER_AND_STORY_BADGE_R8_0_1",
+  "checks": {
+    "place_detail_imports_sorted": true,
+    "places_imports_sorted": true,
+    "site_card_uses_public_story_label": true,
+    "layout_test_uses_public_story_label": true,
+    "r6_0_1_contract_reconciled": true,
+    "r6_0_2_contract_reconciled": true,
+    "public_experience_identity_preserved": true,
+    "database_write_absent": true
+  },
+  "failures": [],
+  "target_baseline": "PAL_EYES_PUBLIC_EXPERIENCE_ATLAS_MUSEUM_MAGAZINE_R8_0_1_20260720",
+  "governance": {
+    "database_write": false,
+    "public_release": "BLOCKED",
+    "production_deployment": "NOT_APPROVED"
+  }
+}

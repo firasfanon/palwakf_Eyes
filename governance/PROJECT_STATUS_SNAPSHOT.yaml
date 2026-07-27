@@ -1,0 +1,84 @@
+project:
+  id: pal_eyes
+  name_ar: "بعيون فلسطينية"
+  version: "4.0.0"
+  build: 11
+  date: "2026-07-14"
+  project_root: "C:\\Users\\DELL\\StudioProjects\\Pal_Eyes"
+
+baseline:
+  current: "PAL_EYES_IMMERSIVE_PUBLIC_EXPERIENCE_AND_UNIFIED_PRODUCT_SURFACES_R4_0_0_20260715"
+  parent: "PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_R3_0_3_20260715"
+  batch: "MEGA_BATCH_PAL_EYES_IMMERSIVE_PUBLIC_EXPERIENCE_AND_UNIFIED_PRODUCT_SURFACES_V1"
+  status: "BUILT_STATIC_VERIFIED_LOCAL_FLUTTER_VALIDATION_PENDING"
+
+content:
+  reference_document_sha256: "1f82a6c9941063436b40d13e258f7d03b1b3b00ef209494fe7032ee756673f6d"
+  site_catalog_count: 79
+  expanded_narrative_count: 47
+  source_registry_count: 79
+  governorate_coverage_count: 16
+  mapped_coordinate_count: 3
+  coordinate_gap_count: 76
+  governorate_extraction_gap_count: 2
+  governorate_extraction_gaps:
+    - "شمال غزة"
+    - "دير البلح"
+  approved_count: 0
+  published_count: 0
+  all_visible_during_development: true
+
+product:
+  public_shell: "PRODUCTIVE"
+  workspace_shell: "GROUPED_NAVIGATION"
+  governance_surface: "ISOLATED"
+  search_filters: "FULL_CATALOG_BOUND"
+  progressive_rendering: "ENABLED"
+  map_gap_registry: "ENABLED"
+  source_registry: "ENABLED"
+
+runtime:
+  static_contract: "PASS"
+  flutter_pub_get: "PENDING_USER_ENVIRONMENT"
+  flutter_analyze: "PENDING_USER_ENVIRONMENT"
+  flutter_test: "PENDING_USER_ENVIRONMENT"
+  flutter_build_web: "PENDING_USER_ENVIRONMENT"
+  browser_uat: "PENDING_USER_ENVIRONMENT"
+
+boundaries:
+  database_mutation: "NONE"
+  supabase_schema_apply: "NONE"
+  production_mutation: "NONE"
+  automatic_publication: "BLOCKED"
+
+test_contract_hotfix:
+  analyzer_precondition: "PASS"
+  sebastia_qualifier_aware: true
+  tell_es_sultan_qualifier_aware: true
+  canonical_home_draft_banner: true
+  smoke_scroll_contract: true
+  static_regression_gate: "PASS"
+
+home_smoke_identity_hotfix:
+  banner_location: "FIRST_HERO_SURFACE"
+  banner_key: "home-governed-draft-banner"
+  assertion_mode: "BY_KEY"
+  repeated_label_allowed: true
+  scroll_until_visible_removed: true
+
+immersive_ui_ux:
+  home: "IMMERSIVE_ATLAS_STORYTELLING"
+  public_shell: "UNIFIED_PREMIUM"
+  workspace_shell: "UNIFIED_PREMIUM"
+  global_page_hero: true
+  custom_palestine_map_artwork: true
+  editorial_story_surfaces: true
+  category_discovery: true
+  visual_timeline: true
+  site_of_the_day: true
+  evidence_journey: true
+  oral_memory_surface: true
+  community_contribution_surface: true
+  responsive_mobile: true
+  dark_mode_aligned: true
+  static_contract: "PASS"

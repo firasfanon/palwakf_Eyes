@@ -1,0 +1,58 @@
+{
+  "result": "PASS",
+  "batch": "MEGA_BATCH_PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_V1",
+  "target_baseline": "PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_R3_0_0_20260714",
+  "date": "2026-07-14",
+  "source_document": {
+    "path_in_build_environment": "/mnt/data/نص واحد ملصق .txt",
+    "filename": "نص واحد ملصق .txt",
+    "sha256": "1f82a6c9941063436b40d13e258f7d03b1b3b00ef209494fe7032ee756673f6d",
+    "line_count": 5334,
+    "role": "user_supplied_reference_draft"
+  },
+  "extraction": {
+    "raw_site_rows": 79,
+    "final_unique_site_catalog": 79,
+    "expanded_narrative_mappings": 47,
+    "source_registry_entries": 79,
+    "governorate_coverage_records": 16,
+    "mapped_coordinate_records": 3,
+    "coordinate_gaps": 76,
+    "governorates_without_extracted_site_rows": [
+      "شمال غزة",
+      "دير البلح"
+    ]
+  },
+  "canonical_deduplication_decisions": {
+    "برك سليمان": "بيت لحم / أرطاس",
+    "دير مار سابا": "بيت لحم",
+    "مقام النبي يوسف": "نابلس / بلاطة",
+    "سبسطية": "نابلس",
+    "قصر هشام": "أريحا",
+    "خربة عابود": "رام الله والبيرة",
+    "مقام النبي موسى": "أريحا"
+  },
+  "standalone_catalog_additions_from_narrative_material": [
+    "حلحول (مقام النبي يونس)",
+    "بيت أمر (خربة النبي متى)",
+    "مدينة طولكرم التاريخية",
+    "مدينة غزة القديمة",
+    "رفح التاريخية"
+  ],
+  "content_policy": {
+    "all_records_visible_during_development": true,
+    "all_records_marked_draft": true,
+    "approved_records": 0,
+    "published_records": 0,
+    "automatic_publication": "BLOCKED",
+    "claim_level_citations_verified": 0,
+    "unverified_coordinates_are_not_invented": true
+  },
+  "limitations": [
+    "The reference draft is not treated as a historical authority.",
+    "Source mentions require bibliographic and rights verification.",
+    "Only three previously evidenced coordinates are retained.",
+    "North Gaza and Deir al-Balah remain visible as extraction gaps.",
+    "Flutter analyze/test/build must run in the user's local environment."
+  ]
+}

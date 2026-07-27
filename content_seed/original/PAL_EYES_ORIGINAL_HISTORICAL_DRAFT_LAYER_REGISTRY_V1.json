@@ -1,0 +1,2027 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "pal_eyes",
+  "baseline": "PAL_EYES_ORIGINAL_HISTORICAL_DRAFT_LAYER_AND_DUAL_NARRATIVE_SURFACE_R5_2_1_20260719",
+  "status": "DEVELOPMENT_VISIBLE_PUBLICATION_BLOCKED",
+  "source_document": {
+    "filename": "نص واحد ملصق .txt",
+    "project_copy": "content_seed/original/PAL_EYES_ORIGINAL_HISTORICAL_DRAFT_SOURCE_1F82A6C9.txt",
+    "sha256": "1f82a6c9941063436b40d13e258f7d03b1b3b00ef209494fe7032ee756673f6d",
+    "line_count": 5334,
+    "size_bytes": 440042
+  },
+  "policy": {
+    "development_visible": true,
+    "runtime_gate": "kDebugMode",
+    "public_release_approved": false,
+    "draft_label_required": true,
+    "governed_editorial_layer_remains_separate": true,
+    "held_claims_remain_research_only": true
+  },
+  "counts": {
+    "sites": 79,
+    "expanded_narratives": 47,
+    "catalog_summaries": 32,
+    "governed_draft_pages": 57,
+    "limited_research_pages": 22,
+    "reviewed_editorial_records": 92
+  },
+  "records": [
+    {
+      "site_id": "site-4aeec5656d1d",
+      "slug": "lmsjd-l-qs-lmbrk-lhrm-lqdsy-lshryf-4aeec5",
+      "name_ar": "المسجد الأقصى المبارك / الحرم القدسي الشريف",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "أقدس موقع إسلامي بعد مكة والمدينة، بناه الخليفة عمر بن الخطاب ووسعه الأمويون. يتضمن قبة الصخرة والمسجد القبلي والمصليات المروانية.",
+      "expanded_narrative_title": "المسجد الأقصى المبارك: قلب فلسطين الروحي والتاريخي",
+      "section_count": 9,
+      "section_titles": [
+        "الموقع والجغرافيا المقدسة",
+        "ما قبل الإسلام: قدسية متجذرة",
+        "الفتح الإسلامي: عهد عمر بن الخطاب",
+        "العصر الأموي: البناء التأسيسي",
+        "العباسيون والفاطميون: الإهمال والزلازل",
+        "الأيوبيون والمماليك: استرداد وتجديد",
+        "العصر العثماني: الإدارة والترميم",
+        "العصر الحديث: الاحتلال والمقاومة الشعبية",
+        "خلاصة الرواية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"تاريخ القدس\" – مجير الدين الحنبلي، \"الموسوعة الفلسطينية\"، موقع دائرة الأوقاف الإسلامية"
+      ],
+      "timeline_periods": [
+        "أموي",
+        "عباسي",
+        "فاطمي",
+        "أيوبي",
+        "مملوكي",
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-f9df0c7e708c",
+      "slug": "bld-slwn-f9df0c",
+      "name_ar": "بلدة سلوان",
+      "content_profile": "catalogSummary",
+      "summary_draft": "موقع \"عين سلوان\" الكنعانية، بها قنوات مائية قديمة.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"آثار فلسطين\" – كاثلين كينيون، \"دائرة الآثار الفلسطينية\""
+      ],
+      "timeline_periods": [
+        "كنعاني",
+        "روماني",
+        "إسلامي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-f9067873c322",
+      "slug": "hy-t-lbrq-f90678",
+      "name_ar": "حائط البراق",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "جزء من السور الغربي للحرم القدسي، ربطه الفلسطينيون بالبراق النبوي. منذ العهد الإسلامي هو وقف إسلامي.",
+      "expanded_narrative_title": "حائط البراق: من جدار الحرم إلى رمز النزاع",
+      "section_count": 6,
+      "section_titles": [
+        "ما هو حائط البراق؟",
+        "التسمية: البراق، وليس المبكى",
+        "تاريخ الوقفية الإسلامية",
+        "النكبة والتهويد",
+        "الرواية الفلسطينية: نضال متواصل",
+        "خلاصة الرواية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"الأماكن المقدسة في القدس\" – د. خالد عوض، \"وثائق الأوقاف القدسية\""
+      ],
+      "timeline_periods": [
+        "هيرودي",
+        "روماني",
+        "إسلامي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-9b42bff63df0",
+      "slug": "khn-ljwbr-9b42bf",
+      "name_ar": "خان الجوابرة",
+      "content_profile": "catalogSummary",
+      "summary_draft": "خان تجاري قرب باب الخليل.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "Riwaq registry"
+      ],
+      "timeline_periods": [
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-4bbdf07d8d66",
+      "slug": "swq-lqtnyn-4bbdf0",
+      "name_ar": "سوق القطانين",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "أحد أسواق القدس التاريخية، بُني في زمن السلطان قلاوون.",
+      "expanded_narrative_title": "سوق القطانين: بوابة التجارة والصوفية",
+      "section_count": 4,
+      "section_titles": [
+        "الوصف المعماري",
+        "البناء المملوكي",
+        "الحكاية الاقتصادية",
+        "اليوم"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"أسواق القدس\" – أمانة القدس"
+      ],
+      "timeline_periods": [
+        "مملوكي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-8d297f3c37a9",
+      "slug": "qbr-lsyd-mrym-mgr-ljsmny-8d297f",
+      "name_ar": "قبر السيدة مريم (مغارة الجسمانية)",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "كنيسة عند سفح جبل الزيتون، تضم قبر مريم العذراء بحسب التقليد المسيحي.",
+      "expanded_narrative_title": "قبر السيدة مريم (مغارة الجسمانية): النومة الأخيرة للأم",
+      "section_count": 5,
+      "section_titles": [
+        "الموقع في وادي قدرون",
+        "رواية الموت والدفن",
+        "البناء البيزنطي والصليبي",
+        "الذاكرة المحلية",
+        "خلاصة الرواية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"الأراضي المقدسة\" – الفرنسيسكان، \"دليل كنائس القدس\""
+      ],
+      "timeline_periods": [
+        "بيزنطي",
+        "صليبي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-f7553f79288f",
+      "slug": "qswr-lmmlyk-shr-lwd-f7553f",
+      "name_ar": "قصور المماليك (شارع الواد)",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "مجموعة قصور وأسبلة ومدارس منها المدرسة الطشتمرية ودار الحديث.",
+      "expanded_narrative_title": "قصور المماليك (شارع الواد): ذاكرة حجرية للعلم والتصوف",
+      "section_count": 4,
+      "section_titles": [
+        "شارع الواد: شريان القدس المملوكي",
+        "نماذج معمارية",
+        "الحياة اليومية في العصر المملوكي",
+        "الإهمال والترميم"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"الآثار المملوكية في فلسطين\" – د. عبد الله عطيات"
+      ],
+      "timeline_periods": [
+        "مملوكي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-83d3025c4675",
+      "slug": "ql-lqds-brj-dwd-83d302",
+      "name_ar": "قلعة القدس (برج داود)",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "بنيت على أنقاض حصن هيرودي، جددها صلاح الدين والمماليك والعثمانيون، ودُعيت ببرج داود خطأ.",
+      "expanded_narrative_title": "قلعة القدس (برج داود): حارسة المدينة المخدوعة باسمها",
+      "section_count": 8,
+      "section_titles": [
+        "الموقع والتسمية المضللة",
+        "الجذور: هيرودس والرومان",
+        "الأمويون والعباسيون: الإهمال النسبي",
+        "الأيوبيون: إعادة التحصين",
+        "المماليك: العمارة الباقية",
+        "العثمانيون: المئذنة الرمز",
+        "الحديث: من معسكر إلى متحف",
+        "خلاصة الرواية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"قلاع فلسطين\" – د. يوسف النتشة، Riwaq"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "بيزنطي",
+        "أيوبي",
+        "مملوكي",
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-431ed266867b",
+      "slug": "knys-lqym-431ed2",
+      "name_ar": "كنيسة القيامة",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "أقدس موقع مسيحي، بنتها القديسة هيلانة في القرن الرابع، وتضم قبر المسيح.",
+      "expanded_narrative_title": "كنيسة القيامة: الجلجلة والقيامة في قلب القدس",
+      "section_count": 7,
+      "section_titles": [
+        "الموقع والتأسيس",
+        "ما قبل الكنيسة: محجر ومقبرة",
+        "البناء البيزنطي: هيلانة وقسطنطين",
+        "العمارة الأصلية والتدمير",
+        "إعادة البناء الصليبية والتسامح الأيوبي",
+        "الوضع الراهن والنزاعات",
+        "خلاصة الرواية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"تاريخ الكنائس في فلسطين\" – الأب عيسى مصلح، موسوعة \"المسيحية في الأرض المقدسة\""
+      ],
+      "timeline_periods": [
+        "روماني",
+        "بيزنطي",
+        "صليبي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-3a3d3669f0ba",
+      "slug": "mqm-lnby-dwwd-jbl-shywn-3a3d36",
+      "name_ar": "مقام النبي داوود (جبل صهيون)",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "مقام أثري في الطابق العلوي من بناية صليبية، تحول لمسجد في العهد الإسلامي.",
+      "expanded_narrative_title": "مقام النبي داوود (جبل صهيون): النبي الملك في القدس",
+      "section_count": 5,
+      "section_titles": [
+        "موقع يروي قصة",
+        "الجدل حول القبر",
+        "العصر الإسلامي والمملوكي",
+        "النزاع الحديث",
+        "خلاصة الرواية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"المسجد الأقصى والمقامات\" – د. حسن الكرمي"
+      ],
+      "timeline_periods": [
+        "أموي",
+        "مملوكي",
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-899e38be070d",
+      "slug": "lhrm-lbrhymy-899e38",
+      "name_ar": "الحرم الإبراهيمي",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "بناه الكنعانيون، تحول لكنيسة في العهد الروماني، ثم مسجد في الفتح الإسلامي. به مقامات الأنبياء إبراهيم وإسحق ويعقوب.",
+      "expanded_narrative_title": "الحرم الإبراهيمي: القداسة والنزاع والمجتمع",
+      "section_count": 5,
+      "section_titles": [
+        "ما قبل البناء: قدسية الموقع",
+        "العمارة عبر العصور: تراكم لا إحلال",
+        "المجتمع الخليلي والإدارة الوقفية (القرن 12 – 20)",
+        "النزاع الحديث وثبات الهوية",
+        "خلاصة الرواية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"تاريخ الخليل\" – د. منذر أبو حمدة، \"المسجد الإبراهيمي\" – وزارة الأوقاف"
+      ],
+      "timeline_periods": [
+        "كنعاني",
+        "روماني",
+        "أموي",
+        "مملوكي",
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-6b6c5a396756",
+      "slug": "bld-lkhlyl-lqdym-6b6c5a",
+      "name_ar": "بلدة الخليل القديمة",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "أزقة وحارات تاريخية (الشيخ، باب الزاوية، المشارقة)، خان شاهين، أسواق تقليدية.",
+      "expanded_narrative_title": "بلدة الخليل القديمة: متاهة التاريخ الحي",
+      "section_count": 4,
+      "section_titles": [
+        "التخطيط العمراني",
+        "خان شاهين",
+        "أسواق الخليل التقليدية",
+        "التهديدات المعاصرة"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"خليل الرحمن\" – بلدية الخليل، Riwaq"
+      ],
+      "timeline_periods": [
+        "مملوكي",
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-f60be7cd7d5e",
+      "slug": "byt-mr-khrb-lnby-mt-f60be7",
+      "name_ar": "بيت أمر (خربة النبي متى)",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "تعرض المسودة بيت أمر وخربة النبي متى كمسار يربط البلدة القديمة بالمعاصر والمقام والذاكرة المسيحية والإسلامية، مع حاجة إلى مراجعة أثرية دقيقة.",
+      "expanded_narrative_title": "بيت أمر: خربة النبي متى",
+      "section_count": 2,
+      "section_titles": [
+        "البلدة والتاريخ",
+        "المقام والذاكرة المسيحية الإسلامية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "إحالات الرواية الموسعة في الوثيقة المرجعية — تحتاج تحققاً ببليوغرافياً"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "بيزنطي",
+        "إسلامي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-63c0ba59c24e",
+      "slug": "tl-lrmyd-63c0ba",
+      "name_ar": "تل الرميدة",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "موقع مدينة الخليل القديمة، به طبقات أثرية هامة.",
+      "expanded_narrative_title": "تل الرميدة: جذور الخليل الكنعانية",
+      "section_count": 4,
+      "section_titles": [
+        "الموقع والاكتشاف",
+        "البوابات والأسوار",
+        "النبع المقدس",
+        "الصراع على التل"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"حفريات الخليل\" – دائرة الآثار الفلسطينية"
+      ],
+      "timeline_periods": [
+        "برونزي",
+        "كنعاني",
+        "روماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-cd3be04163b6",
+      "slug": "hlhwl-mqm-lnby-ywns-cd3be0",
+      "name_ar": "حلحول (مقام النبي يونس)",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "تقدم المسودة حلحول بوصفها بلدة تاريخية شمال الخليل ترتبط بمقام النبي يونس وذاكرة محلية وموسمية تحتاج تدقيقاً ومصادر أصلية.",
+      "expanded_narrative_title": "حلحول: مدينة النبي يونس",
+      "section_count": 2,
+      "section_titles": [
+        "الموقع والتاريخ القديم",
+        "مقام النبي يونس"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "إحالات الرواية الموسعة في الوثيقة المرجعية — تحتاج تحققاً ببليوغرافياً"
+      ],
+      "timeline_periods": [
+        "كنعاني",
+        "مملوكي",
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-2310c1600481",
+      "slug": "khn-lhtb-2310c1",
+      "name_ar": "خان الحطب",
+      "content_profile": "catalogSummary",
+      "summary_draft": "خان تجاري قديم في البلدة القديمة.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "Riwaq"
+      ],
+      "timeline_periods": [
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-c9ac723c0271",
+      "slug": "khrb-lnby-nwh-c9ac72",
+      "name_ar": "خربة النبي نوح",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "مقام وقرية تاريخية، بها آثار رومانية.",
+      "expanded_narrative_title": "بلدة دورا وخربة النبي نوح: عنب ونبوة",
+      "section_count": 2,
+      "section_titles": [
+        "دورا: مدينة العنب والتاريخ",
+        "خربة النبي نوح"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"مسح الآثار في دورا\" – جامعة الخليل"
+      ],
+      "timeline_periods": [
+        "مملوكي",
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-6162b1da6edc",
+      "slug": "yn-sr-6162b1",
+      "name_ar": "عين سارة",
+      "content_profile": "catalogSummary",
+      "summary_draft": "عين ماء تاريخية على طريق الخليل-بيت لحم، قناة رومانية.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"أنظمة المياه\" – م. ناصر الدين"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "إسلامي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-d2c9e9bc9652",
+      "slug": "ql-lkrml-dyr-smt-d2c9e9",
+      "name_ar": "قلعة الكرمل (دير سامت)",
+      "content_profile": "catalogSummary",
+      "summary_draft": "قلعة أثرية على جبل الكرمل جنوب الخليل.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"قلاع الجنوب\" – أريج"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "صليبي",
+        "أيوبي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-0dc57168d963",
+      "slug": "mgr-lbtrk-jz-mn-lhrm-0dc571",
+      "name_ar": "مغارة البطاركة (جزء من الحرم)",
+      "content_profile": "catalogSummary",
+      "summary_draft": "كهف المكفيلة، دفن فيه إبراهيم وسارة.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "الكتاب المقدس، الروايات الإسلامية"
+      ],
+      "timeline_periods": [
+        "كنعاني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-7532d020842e",
+      "slug": "mqm-lshykh-ly-lbk-7532d0",
+      "name_ar": "مقام الشيخ علي البكاء",
+      "content_profile": "catalogSummary",
+      "summary_draft": "أحد مقامات الخليل التاريخية.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"المقامات الدينية\" – أريج"
+      ],
+      "timeline_periods": [
+        "مملوكي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-37c8be50ce73",
+      "slug": "brk-slymn-37c8be",
+      "name_ar": "برك سليمان",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "3 برك ضخمة جنوب بيت لحم، تزود القدس بالمياه عبر قنوات، عمّرها السلطان سليمان القانوني. (أنظر التفصيل السابق)",
+      "expanded_narrative_title": "برك سليمان: شريان الحياة وقلب الذاكرة",
+      "section_count": 4,
+      "section_titles": [
+        "الموقع والجغرافيا (ما وراء الوصف)",
+        "التسلسل التاريخي العميق والرواية الموثقة",
+        "الجوانب الهندسية والعمرانية",
+        "خلاصة الرواية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"أنظمة المياه في فلسطين\" – م. ناصر الدين، \"رحلة أوليا جلبي\""
+      ],
+      "timeline_periods": [
+        "روماني",
+        "بيزنطي",
+        "أموي",
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-f97aa993c98b",
+      "slug": "dyr-ljn-lkhdr-f97aa9",
+      "name_ar": "دير الجنة (الخضر)",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "دير تاريخي يضم بئر ماء مقدسة.",
+      "expanded_narrative_title": "دير الجنة (الخضر): مقام القديس جاورجيوس",
+      "section_count": 3,
+      "section_titles": [
+        "الموقع والتسمية",
+        "الرواية المشتركة",
+        "الدير والمقام"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"المسيحية في الأرض المقدسة\""
+      ],
+      "timeline_periods": [
+        "بيزنطي",
+        "صليبي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-a8aeb054b451",
+      "slug": "dyr-mr-sb-a8aeb0",
+      "name_ar": "دير مار سابا",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "دير أرثوذكسي في وادي قدرون، أسسه القديس سابا في القرن الخامس. دير يوناني أرثوذكسي في برية القدس.",
+      "expanded_narrative_title": "دير مار سابا: حصن النسك في برية القدس",
+      "section_count": 6,
+      "section_titles": [
+        "الموقع: معلق بين السماء والأرض",
+        "المؤسس: القديس سابا",
+        "نظام الحياة في الدير",
+        "المخطوطات والمكتبة",
+        "العصر الإسلامي: الحماية والاحترام",
+        "خلاصة الرواية"
+      ],
+      "source_mention_count": 2,
+      "source_mentions_raw": [
+        "\"دليل الأديرة الفلسطينية\" – المركز الأرثوذكسي",
+        "\"دليل أديرة فلسطين\" – مطرانية الروم"
+      ],
+      "timeline_periods": [
+        "بيزنطي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-88fede7b6df0",
+      "slug": "qry-btyr-88fede",
+      "name_ar": "قرية بتير",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "مصاطب زراعية رومانية وقنوات ري، موقع تراث عالمي (اليونسكو).",
+      "expanded_narrative_title": "قرية بتير: المصاطب المعلقة والذاكرة الخضراء",
+      "section_count": 7,
+      "section_titles": [
+        "الجغرافيا والموقع",
+        "التاريخ القديم: بتر الرومانية",
+        "نظام الري العثماني: عدالة الماء",
+        "سكة حديد الحجاز والانتداب البريطاني",
+        "النكبة والحدود الملتهبة",
+        "التهديد المعاصر: جدار الفصل",
+        "خلاصة الرواية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"بتير: المشهد الثقافي\" – اليونسكو"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "بيزنطي",
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-133155518939",
+      "slug": "qsr-hyrwdywn-133155",
+      "name_ar": "قصر هيروديون",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "قصر جبلي بناه هيرودس الكبير، تحول لحصن.",
+      "expanded_narrative_title": "قصر هيروديون: جبل القبر المتفجر",
+      "section_count": 5,
+      "section_titles": [
+        "الموقع والبناء",
+        "العمارة والهندسة",
+        "الثورة اليهودية الكبرى",
+        "قبر هيرودس",
+        "الوضع الراهن"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"آثار هيرودس\" – إيهود نيتزر، دائرة الآثار"
+      ],
+      "timeline_periods": [
+        "روماني (هيرودي)"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-63fe9eba7871",
+      "slug": "ql-lbrk-63fe9e",
+      "name_ar": "قلعة البرك",
+      "content_profile": "catalogSummary",
+      "summary_draft": "قلعة عسكرية عثمانية بناها السلطان سليمان لحماية برك المياه.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"قلاع فلسطين\" – د. النتشة"
+      ],
+      "timeline_periods": [
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-4b15f14c306f",
+      "slug": "knys-lmhd-4b15f1",
+      "name_ar": "كنيسة المهد",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "بنتها الإمبراطورة هيلانة فوق مغارة المهد سنة 326م، من أقدم الكنائس.",
+      "expanded_narrative_title": "كنيسة المهد: مهد المسيح وقلب الهوية الفلسطينية المسيحية",
+      "section_count": 7,
+      "section_titles": [
+        "الموقع والتأسيس",
+        "ما قبل الكنيسة: مغارة في حقل الرعاة",
+        "البناء البيزنطي: هيلانة وقسطنطين",
+        "العصر الإسلامي: العهدة العمرية والحماية",
+        "الصليبيون والمماليك والعثمانيون",
+        "كنيسة المهد والهوية الوطنية الفلسطينية",
+        "خلاصة الرواية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"تاريخ بيت لحم\" – الأب بطرس نجم، اليونسكو (التراث العالمي)"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "بيزنطي",
+        "صليبي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-57adc62d6d70",
+      "slug": "mgr-lhlyb-57adc6",
+      "name_ar": "مغارة الحليب",
+      "content_profile": "catalogSummary",
+      "summary_draft": "كنيسة صغيرة قرب المهد، يُعتقد أن العذراء أرضعت يسوع هنا.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"دليل بيت لحم\" – بلدية بيت لحم"
+      ],
+      "timeline_periods": [
+        "بيزنطي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-e2a5c15f76f6",
+      "slug": "bld-byrzyt-lqdym-e2a5c1",
+      "name_ar": "بلدة بيرزيت القديمة",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "مباني حجرية تقليدية، كنيسة القديس بطرس.",
+      "expanded_narrative_title": "بيرزيت: قرية الزيت والكنيسة المحصنة",
+      "section_count": 3,
+      "section_titles": [
+        "التسمية والتاريخ",
+        "كنيسة القديس بطرس",
+        "العمارة التقليدية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"تراث بيرزيت\" – جامعة بيرزيت"
+      ],
+      "timeline_periods": [
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-014e4c4e4845",
+      "slug": "khrb-bwd-014e4c",
+      "name_ar": "خربة عابود",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "موقع أثري به معاصر زيتون وكهوف. معاصر زيتون رومانية، كهوف، كنائس بيزنطية.",
+      "expanded_narrative_title": "خربة عابود: معاصر الزيتون الرومانية",
+      "section_count": 3,
+      "section_titles": [
+        "الموقع",
+        "معاصر الزيتون",
+        "الكنائس البيزنطية"
+      ],
+      "source_mention_count": 2,
+      "source_mentions_raw": [
+        "مسح الآثار البريطاني (SWP)",
+        "هيئة الآثار الإسرائيلية، Riwaq"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "بيزنطي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-28dd528f5f3a",
+      "slug": "dyr-mr-28dd52",
+      "name_ar": "دير عمار",
+      "content_profile": "catalogSummary",
+      "summary_draft": "آثار دير قديم مع أرضيات فسيفساء.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"مسح رام الله\" – أريج"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "بيزنطي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-2a3fdab99250",
+      "slug": "yn-smy-2a3fda",
+      "name_ar": "عين سامية",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "خربة أثرية بجوار نبع ماء، تعود للعصر البرونزي.",
+      "expanded_narrative_title": "عين سامية: مياه كفر مالك الأثرية",
+      "section_count": 2,
+      "section_titles": [
+        "الموقع",
+        "المقبرة الملكية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"مواقع العصر البرونزي\" – جامعة بيرزيت"
+      ],
+      "timeline_periods": [
+        "كنعاني",
+        "روماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-78a64ec5ef15",
+      "slug": "qsr-lryn-78a64e",
+      "name_ar": "قصر الريان",
+      "content_profile": "catalogSummary",
+      "summary_draft": "قصر أثري بنته عائلة الريان.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "Riwaq"
+      ],
+      "timeline_periods": [
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-12fc185d4b0b",
+      "slug": "mqm-lnby-slh-12fc18",
+      "name_ar": "مقام النبي صالح",
+      "content_profile": "catalogSummary",
+      "summary_draft": "مقام تاريخي، تقام حوله مواسم شعبية.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"الموسم النبوي\" – كناعنة"
+      ],
+      "timeline_periods": [
+        "أيوبي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-a9ac192e20c3",
+      "slug": "bld-nbls-lqdym-a9ac19",
+      "name_ar": "بلدة نابلس القديمة",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "تحتوي على أزقة وأسواق (خان التجار)، مساجد أثرية (النصر، الخضر)، وحمامات تركية.",
+      "expanded_narrative_title": "بلدة نابلس القديمة: عاصمة الكنعانيين والتجار",
+      "section_count": 7,
+      "section_titles": [
+        "الجغرافيا والتسمية",
+        "العصر الكنعاني: شكيم المدينة العاصية",
+        "العصر الروماني: نيابوليس الوثنية",
+        "العصر الإسلامي: نابلس العربية",
+        "نابلس العثمانية: مركز التجارة والصابون",
+        "البلدة القديمة اليوم",
+        "خلاصة الرواية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"نابلس التاريخية\" – جامعة النجاح، Riwaq"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "بيزنطي",
+        "إسلامي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-a429c345ac25",
+      "slug": "jm-lnsr-a429c3",
+      "name_ar": "جامع النصر",
+      "content_profile": "catalogSummary",
+      "summary_draft": "من أقدم مساجد نابلس، حول من كنيسة صليبية.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"مساجد فلسطين\" – د. رائف يوسف"
+      ],
+      "timeline_periods": [
+        "أيوبي",
+        "مملوكي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-b6773e683274",
+      "slug": "jbl-jrzym-b6773e",
+      "name_ar": "جبل جرزيم",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "موقع مقدس للسامريين، به آثار معبد زيوس الروماني.",
+      "expanded_narrative_title": "جبل جرزيم: قدس الأقداس السامري",
+      "section_count": 3,
+      "section_titles": [
+        "الموقع وقدسية المكان",
+        "السامريون: الشعب المضطهد",
+        "الآثار على الجبل"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"السامريون في نابلس\" – د. حسني دعيس"
+      ],
+      "timeline_periods": [
+        "سامري",
+        "روماني",
+        "بيزنطي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-160c60c7b952",
+      "slug": "hr-lysmyn-160c60",
+      "name_ar": "حارة الياسمينة",
+      "content_profile": "catalogSummary",
+      "summary_draft": "حارة سكنية قديمة بقناطر وحجارة.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "Riwaq"
+      ],
+      "timeline_periods": [
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-31c7667ff10e",
+      "slug": "khn-ltjr-31c766",
+      "name_ar": "خان التجار",
+      "content_profile": "catalogSummary",
+      "summary_draft": "خان كبير في قلب المدينة، كان مركزاً تجارياً.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"الخانات الفلسطينية\" – وزارة السياحة"
+      ],
+      "timeline_periods": [
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-6f6afe87f969",
+      "slug": "sbsty-shmrwn-6f6afe",
+      "name_ar": "سبسطية (شمرون)",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "عاصمة مملكة السامرة، بها آثار رومانية (مسرح، كنيسة). آثار رومانية (مسرح، بازيليك).",
+      "expanded_narrative_title": "سبسطية (شمرون): عاصمة تبحث عن إنقاذ",
+      "section_count": 8,
+      "section_titles": [
+        "الجغرافيا والتسمية",
+        "العصر الكنعاني والإسرائيلي: البدايات",
+        "العصر الروماني: إعادة التأسيس الهيرودية",
+        "العصر البيزنطي: التحول للمسيحية",
+        "العصر الإسلامي: الاستمرارية",
+        "العصر الصليبي: الكاتدرائية والجامع",
+        "العصر الحديث: الإهمال والتهديد",
+        "خلاصة الرواية"
+      ],
+      "source_mention_count": 2,
+      "source_mentions_raw": [
+        "\"سبسطية عبر التاريخ\" – أريج، \"دليل الآثار الرومانية\"",
+        "\"سبسطية\" – أريج"
+      ],
+      "timeline_periods": [
+        "كنعاني",
+        "إسرائيلي",
+        "روماني",
+        "صليبي",
+        "بيزنطي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-d00341226494",
+      "slug": "mqm-lnby-sh-yb-d00341",
+      "name_ar": "مقام النبي شعيب",
+      "content_profile": "catalogSummary",
+      "summary_draft": "مقام تاريخي.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"موسوعة المقامات\""
+      ],
+      "timeline_periods": [
+        "مملوكي",
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-fb9a817ec94a",
+      "slug": "mqm-lnby-ywsf-blt-fb9a81",
+      "name_ar": "مقام النبي يوسف (بلاطة)",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "مقام منسوب ليوسف عليه السلام، في منطقة سبسطية. مقام منسوب للنبي يوسف، تعرض لتدمير وإعادة بناء.",
+      "expanded_narrative_title": "مقام النبي يوسف (بلاطة): قبر في قلب النزاع",
+      "section_count": 4,
+      "section_titles": [
+        "الموقع والرواية",
+        "التاريخ الإسلامي",
+        "النزاع الحديث",
+        "خلاصة الرواية"
+      ],
+      "source_mention_count": 2,
+      "source_mentions_raw": [
+        "\"مقامات الأنبياء\" – د. أحمد حجازي",
+        "\"مقامات فلسطين\" – وزارة الأوقاف"
+      ],
+      "timeline_periods": [
+        "فاطمي",
+        "مملوكي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-f2a7fbbda5a5",
+      "slug": "bld-jnyn-lqdym-f2a7fb",
+      "name_ar": "بلدة جنين القديمة",
+      "content_profile": "catalogSummary",
+      "summary_draft": "حارات وأسواق قديمة، قصر الكايد.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"تاريخ جنين\" – د. نمر سرحان"
+      ],
+      "timeline_periods": [
+        "مملوكي",
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-0ae63f2b6a17",
+      "slug": "tl-jnyn-0ae63f",
+      "name_ar": "تل جنين",
+      "content_profile": "catalogSummary",
+      "summary_draft": "آثار مدينة كنعانية.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"حفريات جنين\" – دائرة الآثار"
+      ],
+      "timeline_periods": [
+        "برونزي",
+        "كنعاني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-fe1e2a1605b5",
+      "slug": "qsr-lkyd-fe1e2a",
+      "name_ar": "قصر الكايد",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "قصر أثري لعائلة عبد الهادي.",
+      "expanded_narrative_title": "جنين: بوابة الشمال ومرج ابن عامر",
+      "section_count": 5,
+      "section_titles": [
+        "الموقع والتسمية",
+        "العصر الكنعاني والروماني",
+        "العصر الإسلامي: جنين العربية",
+        "قصر الكايد: حصن آل عبد الهادي",
+        "جنين الحديثة: المخيم والمقاومة"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "Riwaq"
+      ],
+      "timeline_periods": [
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-2c1f6b6dbd51",
+      "slug": "knys-brqyn-2c1f6b",
+      "name_ar": "كنيسة برقين",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "كنيسة القديس جاورجيوس، من أقدم كنائس العالم، بُنيت في القرن الرابع.",
+      "expanded_narrative_title": "كنيسة برقين: أقدم كنائس المسيح",
+      "section_count": 4,
+      "section_titles": [
+        "الموقع والتأسيس",
+        "معجزة المسيح",
+        "العمارة والترميم",
+        "خلاصة الرواية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"دليل كنائس فلسطين\" – مطرانية الروم الأرثوذكس"
+      ],
+      "timeline_periods": [
+        "بيزنطي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-fc3cde18193c",
+      "slug": "mqm-lshykh-hsn-fc3cde",
+      "name_ar": "مقام الشيخ حسن",
+      "content_profile": "catalogSummary",
+      "summary_draft": "مقام تاريخي في المدينة.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"المقامات\" – أريج"
+      ],
+      "timeline_periods": [
+        "مملوكي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-a28891855f38",
+      "slug": "bld-dyr-lgswn-a28891",
+      "name_ar": "بلدة دير الغصون",
+      "content_profile": "catalogSummary",
+      "summary_draft": "أزقة قديمة ومساجد أثرية.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"تاريخ طولكرم\" – بلدية طولكرم"
+      ],
+      "timeline_periods": [
+        "مملوكي",
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-7a4bd929848c",
+      "slug": "khrb-brj-l-bd-7a4bd9",
+      "name_ar": "خربة برج العبد",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "برج أثري وبقايا قلعة صغيرة.",
+      "expanded_narrative_title": "خربة برج العبد: حارس الطريق بين الساحل والجبل",
+      "section_count": 4,
+      "section_titles": [
+        "سياق محافظة طولكرم",
+        "الموقع والبناء",
+        "الوظيفة العسكرية والتجارية",
+        "الرواية الشفوية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"قلاع الشمال\" – أريج"
+      ],
+      "timeline_periods": [
+        "صليبي",
+        "مملوكي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-0c0a379f20f7",
+      "slug": "khrb-jb-0c0a37",
+      "name_ar": "خربة جبع",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "خربة تضم معاصر وكهوف.",
+      "expanded_narrative_title": "خربة جبع: معاصر وكهوف منسية",
+      "section_count": 3,
+      "section_titles": [
+        "الموقع",
+        "المعاصر والاقتصاد القديم",
+        "الكهوف والدفن"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "SWP"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "بيزنطي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-be1c2ce90997",
+      "slug": "mdyn-twlkrm-ltrykhy-be1c2c",
+      "name_ar": "مدينة طولكرم التاريخية",
+      "content_profile": "catalogSummary",
+      "summary_draft": "تقدم المسودة طولكرم كمدينة على صلة بالسهل الساحلي وطرق التجارة والزراعة والتحولات الحديثة، وتحتاج روايتها إلى مصادر محلية وخرائط تاريخية.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"تاريخ طولكرم\" – بلدية طولكرم، وإحالات الرواية الموسعة"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "إسلامي",
+        "عثماني",
+        "حديث"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-95d241c30366",
+      "slug": "mqm-lshykh-shltwt-95d241",
+      "name_ar": "مقام الشيخ شلتوت",
+      "content_profile": "catalogSummary",
+      "summary_draft": "مقام تاريخي في ضواحي المدينة.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"مقامات شمال فلسطين\""
+      ],
+      "timeline_periods": [
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-02cb039fe1eb",
+      "slug": "khrb-zwn-02cb03",
+      "name_ar": "خربة عزون",
+      "content_profile": "catalogSummary",
+      "summary_draft": "خربة تضم بقايا كنيسة بيزنطية.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "SWP"
+      ],
+      "timeline_periods": [
+        "بيزنطي",
+        "مملوكي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-3ab4c5b64173",
+      "slug": "khrb-qlqyly-lqdym-3ab4c5",
+      "name_ar": "خربة قلقيلية القديمة",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "آثار رومانية تحت البلدة.",
+      "expanded_narrative_title": "قلقيلية: المدينة المحاصرة",
+      "section_count": 3,
+      "section_titles": [
+        "الموقع والتسمية",
+        "العصر الروماني والإسلامي",
+        "الجدار والتحول إلى سجن"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"آثار قلقيلية\" – بلدية قلقيلية"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "مملوكي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-a33c0a4f64fa",
+      "slug": "mqm-lnby-ymyn-a33c0a",
+      "name_ar": "مقام النبي يامين",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "مقام تاريخي مشهور.",
+      "expanded_narrative_title": "مقام النبي يامين: نبي منسي في عزون",
+      "section_count": 2,
+      "section_titles": [
+        "الموقع والرواية",
+        "الممارسات الشعبية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"المقامات\" – أريج"
+      ],
+      "timeline_periods": [
+        "مملوكي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-69f3ad775733",
+      "slug": "khrb-dyr-sty-69f3ad",
+      "name_ar": "خربة دير استيا",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "بقايا دير روماني، معاصر، ومسجد أثري.",
+      "expanded_narrative_title": "دير استيا: الدير الذي صار مسجداً وقرية",
+      "section_count": 3,
+      "section_titles": [
+        "الموقع والتسمية",
+        "الدير البيزنطي والتحول الإسلامي",
+        "عيون الماء والقنوات الرومانية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "SWP، Riwaq"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "بيزنطي",
+        "مملوكي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-ba91049d51a9",
+      "slug": "ywn-lm-l-thry-ba9104",
+      "name_ar": "عيون الماء الأثرية",
+      "content_profile": "catalogSummary",
+      "summary_draft": "قنوات رومانية وآبار أثرية.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"أنظمة المياه\" – م. ناصر الدين"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-b2a7e03ecda1",
+      "slug": "ql-kfl-hrs-b2a7e0",
+      "name_ar": "قلعة كفل حارس",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "بقايا قلعة صليبية.",
+      "expanded_narrative_title": "كفل حارس: مقام ذو الكفل وقلعة الصليبيين",
+      "section_count": 2,
+      "section_titles": [
+        "الموقع",
+        "المقام والقلعة"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"قلاع فلسطين\" – د. النتشة"
+      ],
+      "timeline_periods": [
+        "صليبي",
+        "مملوكي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-c6731a990917",
+      "slug": "tl-lfr-lmdyn-lkn-ny-c6731a",
+      "name_ar": "تل الفارعة (المدينة الكنعانية)",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "مستوطنة كنعانية هامة.",
+      "expanded_narrative_title": "تل الفارعة: مدينة كنعانية نامت طويلاً",
+      "section_count": 3,
+      "section_titles": [
+        "الموقع والاكتشاف",
+        "العمارة والتحصينات",
+        "العصر الحديدي والإسلامي"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"حفريات الفارعة\" – جامعة النجاح"
+      ],
+      "timeline_periods": [
+        "برونزي",
+        "كنعاني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-4ab7d2100cc2",
+      "slug": "khrb-twbs-lqdym-4ab7d2",
+      "name_ar": "خربة طوباس القديمة",
+      "content_profile": "catalogSummary",
+      "summary_draft": "أرضيات فسيفساء وآبار.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "SWP"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "بيزنطي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-bc56c2f93d66",
+      "slug": "yn-lfr-bc56c2",
+      "name_ar": "عين الفارعة",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "نبع مائي قديم عليه قناطر.",
+      "expanded_narrative_title": "عين الفارعة: شريان الحياة",
+      "section_count": 2,
+      "section_titles": [
+        "الموقع",
+        "الطواحين العثمانية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"العيون في فلسطين\" – أريج"
+      ],
+      "timeline_periods": [
+        "روماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-a86fc049d470",
+      "slug": "tl-lsltn-ryh-lqdym-a86fc0",
+      "name_ar": "تل السلطان (أريحا القديمة)",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "أقدم مدينة في التاريخ، تعود للعصر الحجري الحديث (9000 ق.م).",
+      "expanded_narrative_title": "تل السلطان: أقدم مدينة في التاريخ",
+      "section_count": 4,
+      "section_titles": [
+        "الموقع والاكتشاف",
+        "أريحا الكنعانية: البرج والأسوار",
+        "الرواية المضادة: قصة يوشع",
+        "العصور اللاحقة"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"أريحا: أقدم مدينة\" – كاثلين كينيون، اليونسكو"
+      ],
+      "timeline_periods": [
+        "عصر حجري",
+        "برونزي",
+        "كنعاني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-cc4465115964",
+      "slug": "dyr-qrntl-cc4465",
+      "name_ar": "دير قرنطل",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "دير أرثوذكسي على الجبل حيث صام المسيح.",
+      "expanded_narrative_title": "دير قرنطل: جبل الأربعين والصوم المقدس",
+      "section_count": 3,
+      "section_titles": [
+        "الموقع والجغرافيا المقدسة",
+        "الدير اليوناني الأرثوذكسي",
+        "النساك والمتوحدون"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"الأديرة في فلسطين\" – الأب عيسى مصلح"
+      ],
+      "timeline_periods": [
+        "بيزنطي",
+        "صليبي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-b5f00132ee24",
+      "slug": "yn-lsltn-b5f001",
+      "name_ar": "عين السلطان",
+      "content_profile": "catalogSummary",
+      "summary_draft": "نبع ماء تاريخي مرتبط بتل السلطان.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"مصادر المياه\" – أريج"
+      ],
+      "timeline_periods": [
+        "كنعاني",
+        "روماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-ce23c41d7641",
+      "slug": "qbr-lnby-mws-ce23c4",
+      "name_ar": "قبر النبي موسى",
+      "content_profile": "catalogSummary",
+      "summary_draft": "مقام ضخم يخدم كمركز لموسم سنوي.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"الموسم النبوي\" – كناعنة"
+      ],
+      "timeline_periods": [
+        "أيوبي",
+        "مملوكي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-0285c869e647",
+      "slug": "qsr-hshm-khrb-lmfjr-0285c8",
+      "name_ar": "قصر هشام (خربة المفجر)",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "قصر أثري مع فسيفساء وبركة ماء، بناه الخليفة هشام. قصر صحراوي بفسيفساء \"شجرة الحياة\"، بناه هشام بن عبد الملك.",
+      "expanded_narrative_title": "قصر هشام (خربة المفجر): مسودة رواية موسعة",
+      "section_count": 2,
+      "section_titles": [
+        "المجمع الأموي ووظائفه",
+        "بوابات التدقيق"
+      ],
+      "source_mention_count": 2,
+      "source_mentions_raw": [
+        "\"الفن الأموي\" – د. محمد أبو الفتوح",
+        "\"القصور الأموية\" – د. محمد أبو الفتوح"
+      ],
+      "timeline_periods": [
+        "أموي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-7551f628d089",
+      "slug": "qn-wdy-lqlt-7551f6",
+      "name_ar": "قناة وادي القلط",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "قناة مائية رومانية معلقة.",
+      "expanded_narrative_title": "قناة وادي القلط: مياه معلقة في الهواء",
+      "section_count": 2,
+      "section_titles": [
+        "الموقع والبناء",
+        "العبقرية الهندسية"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"أنظمة الري\" – جامعة بيرزيت"
+      ],
+      "timeline_periods": [
+        "روماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-c4d8c9fdd1f0",
+      "slug": "mqm-lnby-mws-c4d8c9",
+      "name_ar": "مقام النبي موسى",
+      "content_profile": "catalogSummary",
+      "summary_draft": "مقام كبير بناه صلاح الدين وأكمله بيبرس، يحتفل الفلسطينيون بموسمه السنوي.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"الموسم النبوي في فلسطين\" – د. شريف كناعنة"
+      ],
+      "timeline_periods": [
+        "أيوبي",
+        "مملوكي",
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-2e45744cdab4",
+      "slug": "lmsjd-l-mry-lkbyr-2e4574",
+      "name_ar": "المسجد العمري الكبير",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "بناه الظاهر بيبرس على أنقاض معبد روماني وكنيسة بيزنطية.",
+      "expanded_narrative_title": "المسجد العمري الكبير: مسودة رواية موسعة",
+      "section_count": 2,
+      "section_titles": [
+        "طبقات المكان",
+        "بوابات التدقيق"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"آثار غزة\" – بلدية غزة، وزارة السياحة"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "بيزنطي",
+        "إسلامي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-21150eefdea6",
+      "slug": "tl-l-jwl-mdyn-gz-lqdym-21150e",
+      "name_ar": "تل العجول (مدينة غزة القديمة)",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "موقع أثري هام، كان مرفأً تجارياً.",
+      "expanded_narrative_title": "تل العجول: ميناء غزة الكنعاني والفلسطيني",
+      "section_count": 3,
+      "section_titles": [
+        "الموقع",
+        "الاكتشافات",
+        "الفلسطينيون القدماء"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"حفريات غزة\" – المدرسة البريطانية للآثار"
+      ],
+      "timeline_periods": [
+        "برونزي",
+        "كنعاني",
+        "فلسطيني قديم"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-3ded44be126d",
+      "slug": "hmm-lsmr-3ded44",
+      "name_ar": "حمام السمرة",
+      "content_profile": "catalogSummary",
+      "summary_draft": "حمام أثري لا يزال قائماً.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "Riwaq"
+      ],
+      "timeline_periods": [
+        "مملوكي",
+        "عثماني"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-5e98cf44d976",
+      "slug": "ql-brqwq-5e98cf",
+      "name_ar": "قلعة برقوق",
+      "content_profile": "catalogSummary",
+      "summary_draft": "قلعة بناها السلطان برقوق، دُمرت أجزاء منها.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"قلاع فلسطين\" – د. النتشة"
+      ],
+      "timeline_periods": [
+        "مملوكي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-e1e3de7b8519",
+      "slug": "knys-lqdys-brfyryws-e1e3de",
+      "name_ar": "كنيسة القديس برفيريوس",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "من أقدم كنائس غزة (القرن 5م)، دُفن فيها القديس برفيريوس.",
+      "expanded_narrative_title": "كنيسة القديس برفيريوس: شهيدة الحروب",
+      "section_count": 3,
+      "section_titles": [
+        "التأسيس",
+        "العمارة والتاريخ",
+        "قصف 2023"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"تاريخ كنيسة غزة\" – الأرثوذكس"
+      ],
+      "timeline_periods": [
+        "بيزنطي",
+        "صليبي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-015f495c4236",
+      "slug": "mdyn-gz-lqdym-015f49",
+      "name_ar": "مدينة غزة القديمة",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "تعرض المسودة مدينة غزة القديمة كطبقات متصلة من الميناء والتجارة والعمارة الدينية والمدنية، مع إبراز آثار الحروب الحديثة وحاجة التوثيق إلى تحديث مستمر.",
+      "expanded_narrative_title": "مدينة غزة القديمة: عروس البحر المتوسط",
+      "section_count": 5,
+      "section_titles": [
+        "الموقع والتاريخ",
+        "الكنعانيون والفلسطينيون القدماء",
+        "الرومان والبيزنطيون والعرب",
+        "غزة الإسلامية والعثمانية",
+        "النكبة والقطاع المحاصر"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"غزة عبر التاريخ\" – د. عاطف أبو سيف، سجلات المحكمة الشرعية في غزة"
+      ],
+      "timeline_periods": [
+        "كنعاني",
+        "روماني",
+        "بيزنطي",
+        "إسلامي",
+        "مملوكي",
+        "عثماني",
+        "حديث"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-a77381cd3cae",
+      "slug": "mqm-lshykh-rdwn-a77381",
+      "name_ar": "مقام الشيخ رضوان",
+      "content_profile": "catalogSummary",
+      "summary_draft": "مقام تاريخي في حي الرمال.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"المقامات في غزة\" – وزارة الأوقاف"
+      ],
+      "timeline_periods": [
+        "مملوكي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-99f520b3d607",
+      "slug": "myn-gz-lqdym-l-nt-99f520",
+      "name_ar": "ميناء غزة القديم (الأنطة)",
+      "content_profile": "catalogSummary",
+      "summary_draft": "الميناء التاريخي للمدينة.",
+      "expanded_narrative_title": null,
+      "section_count": 0,
+      "section_titles": [],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"غزة عبر التاريخ\" – د. عاطف أبو سيف"
+      ],
+      "timeline_periods": [
+        "روماني",
+        "بيزنطي",
+        "إسلامي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-0a78d22c1a69",
+      "slug": "khn-ywns-lqdym-0a78d2",
+      "name_ar": "خان يونس القديم",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "خان أثري بناه الأمير يونس النورزي في القرن 14.",
+      "expanded_narrative_title": "خان يونس: أمير المماليك ومدينة اللاجئين",
+      "section_count": 2,
+      "section_titles": [
+        "التأسيس",
+        "الخان والمدينة"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "\"خانات غزة\" – أريج"
+      ],
+      "timeline_periods": [
+        "مملوكي"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    },
+    {
+      "site_id": "site-ee0e5bf1f753",
+      "slug": "rfh-ltrykhy-ee0e5b",
+      "name_ar": "رفح التاريخية",
+      "content_profile": "expandedNarrative",
+      "summary_draft": "تقدم المسودة رفح بوصفها بوابة فلسطين الجنوبية ومحطة قديمة على الطريق الساحلي، ثم مدينة قسمت الحدود الحديثة نسيجها الاجتماعي والجغرافي.",
+      "expanded_narrative_title": "رفح: بوابة فلسطين الجنوبية",
+      "section_count": 3,
+      "section_titles": [
+        "الموقع والتاريخ",
+        "العصر الإسلامي",
+        "النكبة والحدود المصطنعة"
+      ],
+      "source_mention_count": 1,
+      "source_mentions_raw": [
+        "إحالات الرواية الموسعة في الوثيقة المرجعية — تحتاج تحققاً ببليوغرافياً"
+      ],
+      "timeline_periods": [
+        "كنعاني",
+        "روماني",
+        "إسلامي",
+        "عثماني",
+        "حديث"
+      ],
+      "development_visibility": "DEBUG_ONLY",
+      "public_release": "BLOCKED",
+      "historical_authority": "NOT_ASSUMED",
+      "verification_status": "ORIGINAL_DRAFT_UNDER_REVIEW"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "result": "PASS",
+  "batch": "PAL_EYES_FULL_DRAFT_SITE_CATALOG_TEST_CONTRACT_AND_DRAFT_BANNER_ALIGNMENT_HOTFIX_V1",
+  "parent_baseline": "PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_R3_0_1_20260714",
+  "target_baseline": "PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_R3_0_2_20260715",
+  "date": "2026-07-15",
+  "precondition": {
+    "flutter_analyze": "PASS_FROM_USER_LOG",
+    "flutter_tests": "FAILED_2"
+  },
+  "repairs": {
+    "sebastia_assertion": "QUALIFIER_AWARE_PREFIX",
+    "tell_es_sultan_assertion": "QUALIFIER_AWARE_PREFIX",
+    "home_banner_title": "مسودة خاضعة للتدقيق",
+    "smoke_test_scroll": "ENABLED"
+  },
+  "semantic_checks": {
+    "sebastia_prefix_match": true,
+    "tell_es_sultan_prefix_match": true,
+    "sebastia_qualified_name_preserved": true,
+    "tell_es_sultan_qualified_name_preserved": true,
+    "home_canonical_banner_present": true,
+    "smoke_scroll_contract_present": true
+  },
+  "static_regression": {
+    "canonical_home_draft_banner_title": "PASS",
+    "sebastia_qualifier_aware_assertion": "PASS",
+    "tell_es_sultan_qualifier_aware_assertion": "PASS",
+    "smoke_test_scrolls_to_governed_banner": "PASS"
+  },
+  "content_counts_unchanged": {
+    "sites": 79,
+    "expanded_narratives": 47,
+    "sources": 79,
+    "governorates": 16
+  },
+  "local_gates": {
+    "flutter_analyze": "PENDING_RECHECK",
+    "flutter_test": "PENDING_RECHECK",
+    "flutter_build_web": "PENDING",
+    "flutter_run_chrome": "PENDING"
+  },
+  "boundaries": {
+    "database_mutation": "NONE",
+    "automatic_publication": "BLOCKED"
+  }
+}

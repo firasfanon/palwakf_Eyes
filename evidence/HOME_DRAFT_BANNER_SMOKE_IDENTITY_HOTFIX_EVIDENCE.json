@@ -1,0 +1,28 @@
+{
+  "result": "PASS",
+  "batch": "PAL_EYES_HOME_DRAFT_BANNER_SMOKE_TEST_IDENTITY_HOTFIX_V1",
+  "parent_baseline": "PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_R3_0_2_20260715",
+  "target_baseline": "PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_R3_0_3_20260715",
+  "semantic_checks": {
+    "unique_key": true,
+    "key_before_hero_title": true,
+    "smoke_key": true,
+    "finds_widgets": true,
+    "no_scroll": true
+  },
+  "content_counts_unchanged": {
+    "sites": 79,
+    "expanded_narratives": 47,
+    "sources": 79,
+    "governorates": 16
+  },
+  "apply_mode": "APPLY_ONLY",
+  "local_sequence": [
+    "verify",
+    "flutter pub get",
+    "dart format lib test",
+    "flutter analyze",
+    "flutter test",
+    "flutter run"
+  ]
+}

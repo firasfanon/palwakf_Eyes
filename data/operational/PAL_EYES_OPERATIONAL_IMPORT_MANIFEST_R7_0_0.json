@@ -1,0 +1,32 @@
+{
+  "project_id": "pal_eyes",
+  "baseline": "PAL_EYES_GOVERNED_OPERATIONAL_BACKEND_AND_WORKFLOW_ACTIVATION_R7_0_0_20260719",
+  "source_baseline": "PAL_EYES_PRODUCT_UX_PHASES_1_TO_4_FOUNDATION_R6_0_2_20260719",
+  "counts": {
+    "sites": 79,
+    "original_draft_layers": 79,
+    "sources": 95,
+    "editorial_records": 92,
+    "claims": 211,
+    "site_source_links": 144,
+    "relationships": 9,
+    "coordinate_candidates": 4,
+    "review_tasks": 16,
+    "media_assets": 0,
+    "release_candidates": 0
+  },
+  "governance": {
+    "all_publication_statuses": "BLOCKED",
+    "public_coordinates": 0,
+    "approved_media": 0,
+    "production_apply": "NOT_EXECUTED"
+  },
+  "files": {
+    "migration": "supabase/migrations/202607190001_pal_eyes_operational_backend.sql",
+    "seed": "supabase/seed/202607190001_pal_eyes_r7_0_0_seed.sql"
+  },
+  "sha256": {
+    "migration": "68cfa5033e30cd41b37ff3c0c662fb802d5a90d380e3d2899686d65688405118",
+    "seed": "118241c838432f0ff116157fbe3f5a72e92e46ac6c46ac36fb0569b9593d4020"
+  }
+}

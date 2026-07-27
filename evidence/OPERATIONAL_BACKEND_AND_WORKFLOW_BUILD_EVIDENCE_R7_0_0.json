@@ -1,0 +1,66 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_GOVERNED_OPERATIONAL_DATA_BACKEND_AND_END_TO_END_WORKFLOW_ACTIVATION_V1",
+  "target_baseline": "PAL_EYES_GOVERNED_OPERATIONAL_BACKEND_AND_WORKFLOW_ACTIVATION_R7_0_0_20260719",
+  "parent_baseline": "PAL_EYES_PRODUCT_UX_PHASES_1_TO_4_FOUNDATION_R6_0_2_20260719",
+  "result": "PASS_STATIC_BUILD_PENDING_LOCAL_AND_STAGING_UAT",
+  "accepted_parent_evidence": {
+    "dart_format": "PASS",
+    "flutter_analyze": "PASS",
+    "flutter_test": "ALL_TESTS_PASSED",
+    "r6_0_2_static": "PASS"
+  },
+  "implementation": {
+    "schema_pal_eyes": true,
+    "rls_role_matrix": true,
+    "hybrid_backend": true,
+    "local_workflow_activation": true,
+    "supabase_adapter": true,
+    "workspace_data_binding": true,
+    "versioning": true,
+    "audit": true,
+    "release_candidate": true,
+    "production_database_apply": false
+  },
+  "counts": {
+    "sites": 79,
+    "original_draft_layers": 79,
+    "sources": 95,
+    "editorial_records": 92,
+    "claims": 211,
+    "site_source_links": 144,
+    "relationships": 9,
+    "coordinate_candidates": 4,
+    "review_tasks": 16,
+    "media_assets": 0,
+    "release_candidates": 0
+  },
+  "static_verification": {
+    "operational_backend": "PASS",
+    "product_ux": "PASS",
+    "original_draft": "PASS",
+    "governed_adoption": "PASS",
+    "compile_contract": "PASS",
+    "foundation_static": "PASS",
+    "r6_0_1": "PASS",
+    "r6_0_2": "PASS",
+    "tracker_formula_errors": 0
+  },
+  "local_gates": {
+    "dart_format": "PENDING",
+    "flutter_analyze": "PENDING",
+    "flutter_test": "PENDING",
+    "local_workflow_uat": "PENDING"
+  },
+  "staging_gates": {
+    "database_apply": "SEPARATE_AUTHORIZATION_REQUIRED",
+    "rls_uat": "PENDING",
+    "authenticated_role_uat": "PENDING"
+  },
+  "governance": {
+    "publication": "BLOCKED",
+    "production": "NOT_APPROVED",
+    "service_role_in_client": false,
+    "anonymous_write": false
+  }
+}

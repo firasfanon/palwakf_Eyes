@@ -1,0 +1,26 @@
+# ملف توريث — Product UX Phases 1–4 R6.0.0
+
+```text
+TARGET_BASELINE=PAL_EYES_PRODUCT_UX_PHASES_1_TO_4_FOUNDATION_R6_0_0_20260719
+PARENT_BASELINE=PAL_EYES_ORIGINAL_HISTORICAL_DRAFT_LAYER_AND_DUAL_NARRATIVE_SURFACE_R5_2_1_20260719
+STATUS=BUILT_PENDING_LOCAL_UAT
+
+PHASE_1_PUBLIC_EXPERIENCE=IMPLEMENTED_FOUNDATION
+PHASE_2_OPERATIONAL_WORKSPACE=IMPLEMENTED_FOUNDATION
+PHASE_3_GIS_MEDIA_RIGHTS=IMPLEMENTED_FOUNDATION
+PHASE_4_RELEASE_CONTROL=IMPLEMENTED_FOUNDATION
+
+DATABASE_WRITE=FALSE
+AUTOMATIC_PUBLICATION=BLOCKED
+PRODUCTION_DEPLOYMENT=NOT_APPROVED
+```
+
+## UAT
+
+1. Home: تظهر بوابات الأماكن والخريطة والزمن والقصص.
+2. Workspace/Today: تظهر الأولويات اليومية.
+3. Site Editor: الخطوات التسع وأفعال الحفظ والمعاينة والمراجعة.
+4. Source Registry وClaim Workspace وReview Queue.
+5. GIS Review وMedia/Rights وRelationships.
+6. Release Control: زر مرشح الإصدار معطل حتى اكتمال البوابات.
+7. Audit Log: يظهر سجل القرارات.

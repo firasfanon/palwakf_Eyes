@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "mode": "OPERATIONAL_LOCAL_FALLBACK_COORDINATE_SEED_PARITY_R7_0_2",
+  "checks": {
+    "exact_four_coordinate_seed_ids": true,
+    "manifest_coordinate_count_four": true,
+    "manifest_review_task_count_sixteen": true,
+    "mapper_uses_operational_coordinate_seed": true,
+    "all_candidates_fail_closed": true,
+    "runtime_test_checks_exact_ids": true,
+    "database_not_applied": true,
+    "publication_blocked": true
+  },
+  "failures": [],
+  "counts": {
+    "coordinate_candidates": 4,
+    "review_tasks": 16,
+    "gis_review_tasks": 4,
+    "public_coordinates": 0
+  },
+  "target_baseline": "PAL_EYES_GOVERNED_OPERATIONAL_BACKEND_AND_WORKFLOW_ACTIVATION_R7_0_2_20260719",
+  "governance": {
+    "database_migration": "PREPARED_NOT_APPLIED",
+    "public_release": "BLOCKED",
+    "production_deployment": "NOT_APPROVED"
+  }
+}

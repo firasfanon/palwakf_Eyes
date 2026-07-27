@@ -1,0 +1,28 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "PAL_EYES_GOVERNED_CONTENT_ADOPTION_SOURCE_CONTRACT_AND_LIST_TILE_MATERIAL_BOUNDARY_HOTFIX_V1",
+  "target_baseline": "PAL_EYES_GOVERNED_CONTENT_ADOPTION_TO_PROJECT_PAGES_R5_1_1_20260715",
+  "result": "PASS",
+  "checks": {
+    "lib/core/widgets/public_shell.dart": {
+      "painted_material_boundaries": 3,
+      "minimum_required": 3,
+      "transparent_material_type_removed": true,
+      "status": "PASS"
+    },
+    "lib/core/widgets/workspace_shell.dart": {
+      "painted_material_boundaries": 1,
+      "minimum_required": 1,
+      "transparent_material_type_removed": true,
+      "status": "PASS"
+    },
+    "lib/features/map/presentation/map_screen.dart": {
+      "painted_material_boundaries": 1,
+      "minimum_required": 1,
+      "transparent_material_type_removed": true,
+      "status": "PASS"
+    }
+  },
+  "regression_test": "test/list_tile_material_boundary_contract_test.dart",
+  "runtime_uat": "PENDING_USER_ENVIRONMENT"
+}

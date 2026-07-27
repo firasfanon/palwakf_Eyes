@@ -1,0 +1,76 @@
+{
+  "result": "PASS",
+  "batch": "MEGA_BATCH_PAL_EYES_IMMERSIVE_PUBLIC_EXPERIENCE_AND_UNIFIED_PRODUCT_SURFACES_V1",
+  "target_baseline": "PAL_EYES_IMMERSIVE_PUBLIC_EXPERIENCE_AND_UNIFIED_PRODUCT_SURFACES_R4_0_0_20260715",
+  "parent_baseline": "PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_R3_0_3_20260715",
+  "date": "2026-07-15",
+  "visual_system": {
+    "brand_mark": true,
+    "heritage_pattern": true,
+    "palestine_map_artwork": true,
+    "global_page_hero": true,
+    "section_headers": true,
+    "metric_tiles": true,
+    "visual_cards": true,
+    "glass_panels": true,
+    "timeline_band": true
+  },
+  "home_surfaces": [
+    "opening_hero",
+    "governed_draft_banner",
+    "search",
+    "map_gateway",
+    "editorial_stories",
+    "category_discovery",
+    "visual_timeline",
+    "site_of_the_day",
+    "evidence_journey",
+    "oral_memory",
+    "community_contribution",
+    "featured_catalog"
+  ],
+  "specialized_pages": [
+    "public_shell",
+    "workspace_shell",
+    "home",
+    "map",
+    "stories",
+    "methodology",
+    "contribution",
+    "workspace_dashboard",
+    "workspace_section",
+    "site_card"
+  ],
+  "globally_unified_via_shared_page_hero": [
+    "discover",
+    "places",
+    "place_detail",
+    "timeline",
+    "governorates",
+    "sources",
+    "admin",
+    "governance"
+  ],
+  "content_counts_unchanged": {
+    "sites": 79,
+    "expanded_narratives": 47,
+    "sources": 79,
+    "governorates": 16,
+    "approved": 0,
+    "published": 0
+  },
+  "boundaries": {
+    "database_mutation": "NONE",
+    "supabase_schema_apply": "NONE",
+    "production_mutation": "NONE",
+    "automatic_publication": "BLOCKED"
+  },
+  "local_gates": {
+    "verify": "STATIC_PASS",
+    "flutter_pub_get": "PENDING_USER_ENVIRONMENT",
+    "dart_format": "PENDING_USER_ENVIRONMENT",
+    "flutter_analyze": "PENDING_USER_ENVIRONMENT",
+    "flutter_test": "PENDING_USER_ENVIRONMENT",
+    "flutter_run": "PENDING_USER_ENVIRONMENT"
+  }
+}

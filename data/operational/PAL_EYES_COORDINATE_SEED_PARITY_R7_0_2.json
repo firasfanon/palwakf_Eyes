@@ -1,0 +1,74 @@
+{
+  "project_id": "pal_eyes",
+  "baseline": "PAL_EYES_GOVERNED_OPERATIONAL_BACKEND_AND_WORKFLOW_ACTIVATION_R7_0_2_20260719",
+  "source": "supabase/seed/202607190001_pal_eyes_r7_0_0_seed.sql",
+  "local_seed": "lib/features/operations/data/operational_coordinate_seed.dart",
+  "result": "PASS",
+  "coordinate_candidates": [
+    {
+      "id": "W4-COORD-GERIZIM-001",
+      "site_id": "site-b6773e683274",
+      "site_name_ar": "جبل جرزيم",
+      "latitude": 32.2122222222,
+      "longitude": 35.2688888889,
+      "source_id": "W4-AUTH-UNESCO-GERIZIM-2012",
+      "source_notation": "N32 12 44 E35 16 08",
+      "candidate_type": "state_party_property_reference_point",
+      "verification_status": "SOURCE_TRACED_NOT_INDEPENDENTLY_VERIFIED",
+      "promotion_status": "NOT_PROMOTED",
+      "public_map_use": "BLOCKED"
+    },
+    {
+      "id": "W3-COORD-OMARI-001",
+      "site_id": "site-2e45744cdab4",
+      "site_name_ar": "المسجد العمري الكبير",
+      "latitude": 31.5043333333,
+      "longitude": 34.4646388889,
+      "source_id": "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026",
+      "source_notation": "N31 30 15.6 E34 27 52.7",
+      "candidate_type": "state_party_monument_reference_point",
+      "verification_status": "SOURCE_TRACED_NOT_INDEPENDENTLY_VERIFIED",
+      "promotion_status": "NOT_PROMOTED",
+      "public_map_use": "BLOCKED"
+    },
+    {
+      "id": "W3-COORD-PORPHYRIOS-001",
+      "site_id": "site-e1e3de7b8519",
+      "site_name_ar": "كنيسة القديس برفيريوس",
+      "latitude": 31.5033333333,
+      "longitude": 34.4622222222,
+      "source_id": "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026",
+      "source_notation": "N31 30 12 E34 27 44",
+      "candidate_type": "state_party_monument_reference_point",
+      "verification_status": "SOURCE_TRACED_NOT_INDEPENDENTLY_VERIFIED",
+      "promotion_status": "NOT_PROMOTED",
+      "public_map_use": "BLOCKED"
+    },
+    {
+      "id": "W3-COORD-GAZA-HISTORIC-CENTRE-001",
+      "site_id": "site-015f495c4236",
+      "site_name_ar": "مدينة غزة القديمة",
+      "latitude": 31.5049611111,
+      "longitude": 34.4641,
+      "source_id": "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026",
+      "source_notation": "N31 30 17.86 E34 27 50.76",
+      "candidate_type": "state_party_property_reference_point",
+      "verification_status": "SOURCE_TRACED_NOT_INDEPENDENTLY_VERIFIED",
+      "promotion_status": "NOT_PROMOTED",
+      "public_map_use": "BLOCKED"
+    }
+  ],
+  "counts": {
+    "coordinate_candidates": 4,
+    "gis_review_tasks": 4,
+    "claim_review_tasks": 12,
+    "review_tasks_total": 16,
+    "public_coordinates": 0
+  },
+  "governance": {
+    "all_public_map_use": "BLOCKED",
+    "all_promotion_status": "NOT_PROMOTED",
+    "database_migration": "PREPARED_NOT_APPLIED",
+    "publication": "BLOCKED"
+  }
+}

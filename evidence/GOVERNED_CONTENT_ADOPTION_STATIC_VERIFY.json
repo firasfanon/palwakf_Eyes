@@ -1,0 +1,28 @@
+{
+  "result": "PASS",
+  "checks": {
+    "site_count_79": true,
+    "governed_page_count_57": true,
+    "limited_page_count_22": true,
+    "editorial_record_count_92": true,
+    "source_count_95": true,
+    "backlog_count_211": true,
+    "publication_blocked_79": true,
+    "database_import_blocked_79": true,
+    "map_approval_false_79": true,
+    "approved_media_zero_79": true,
+    "detail_uses_governed_narrative": true,
+    "places_page_categories": true,
+    "sources_governed_registry": true,
+    "research_backlog_visible": true,
+    "public_map_guard": true,
+    "no_database_writes": true,
+    "master_site_registry_79": true,
+    "master_editorial_records_92": true,
+    "master_held_claims_211": true
+  },
+  "failures": []
+}
+GOVERNED_CONTENT_ADOPTION_STATIC_VERIFY=PASS
+DATABASE_MUTATION=NONE
+PUBLICATION_APPROVAL=NOT_GRANTED

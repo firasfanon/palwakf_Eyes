@@ -1,0 +1,30 @@
+{
+  "result": "PASS",
+  "batch": "PAL_EYES_FULL_DRAFT_SITE_CATALOG_EXTENSION_IMPORT_ALIGNMENT_COMPILE_HOTFIX_V1",
+  "parent_baseline": "PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_R3_0_0_20260714",
+  "target_baseline": "PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_R3_0_1_20260714",
+  "date": "2026-07-14",
+  "observed_analyzer_findings": {
+    "undefined_getter_icon": "FIXED",
+    "undefined_getter_labelAr": "FIXED",
+    "unused_import_places": "FIXED",
+    "unused_import_workspace": "FIXED"
+  },
+  "regression_gate": "PASS",
+  "content_counts_unchanged": {
+    "sites": 79,
+    "expanded_narratives": 47,
+    "sources": 79,
+    "governorates": 16
+  },
+  "local_flutter_gates": {
+    "flutter_analyze": "PENDING_USER_ENVIRONMENT",
+    "flutter_test": "PENDING_USER_ENVIRONMENT",
+    "flutter_build_web": "PENDING_USER_ENVIRONMENT",
+    "flutter_run_chrome": "PENDING_USER_ENVIRONMENT"
+  },
+  "boundaries": {
+    "database_mutation": "NONE",
+    "automatic_publication": "BLOCKED"
+  }
+}

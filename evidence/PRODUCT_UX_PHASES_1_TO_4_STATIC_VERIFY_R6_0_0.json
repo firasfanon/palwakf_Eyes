@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "mode": "PRODUCT_UX_PHASES_1_TO_4_STATIC_CONTRACT",
+  "checks": {
+    "required_files": true,
+    "phase_1_public_gateways": true,
+    "phase_2_today": true,
+    "phase_2_site_editor": true,
+    "phase_2_sources_claims_reviews": true,
+    "phase_3_gis_media_relationships": true,
+    "phase_4_release_audit": true,
+    "sidebar_navigation_complete": true,
+    "publication_default_blocked": true,
+    "editor_fixed_actions": true,
+    "database_writes_confined_to_governed_adapter": true
+  },
+  "failures": [],
+  "baseline": "PAL_EYES_PRODUCT_UX_PHASES_1_TO_4_FOUNDATION_R6_0_0_20260719",
+  "governance": {
+    "database_write": false,
+    "automatic_publication": false,
+    "production_deployment": "NOT_APPROVED"
+  }
+}

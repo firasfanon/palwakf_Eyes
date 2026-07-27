@@ -1,0 +1,49 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "PAL_EYES_PRODUCT_UX_COMPILE_ANALYZER_AND_SITE_CARD_DUAL_NARRATIVE_BADGE_OVERFLOW_HOTFIX_V1",
+  "target_baseline": "PAL_EYES_PRODUCT_UX_PHASES_1_TO_4_FOUNDATION_R6_0_1_20260719",
+  "parent_baseline": "PAL_EYES_PRODUCT_UX_PHASES_1_TO_4_FOUNDATION_R6_0_0_20260719",
+  "result": "PASS_STATIC_BUILD_PENDING_LOCAL_UAT",
+  "input_evidence": {
+    "product_ux_static": "PASS",
+    "original_draft_static": "PASS",
+    "governed_adoption_static": "PASS",
+    "foundation_static": "PASS",
+    "compile_static": "FAIL_ONE_FORMATTER_FALSE_POSITIVE",
+    "analyzer": "4_INFO_FINDINGS",
+    "flutter_test": "FAIL_SITE_CARD_OVERFLOW_24PX_X3",
+    "browser_home": "PASS_PRELIMINARY",
+    "browser_workspace": "PASS_PRELIMINARY"
+  },
+  "repair": {
+    "site_card_badge_count": 2,
+    "redundant_page_category_chip_removed": true,
+    "compact_original_profile_tag": true,
+    "exact_boundary_widget_test_added": true,
+    "router_imports_sorted": true,
+    "detail_imports_sorted": true,
+    "unnecessary_underscores_removed": true,
+    "compile_verifier_formatter_tolerant": true,
+    "foundation_site_card_contract_updated": true
+  },
+  "static_verification": {
+    "r6_0_1_hotfix": "PASS",
+    "compile_contract": "PASS",
+    "product_ux_phases": "PASS",
+    "original_draft_dual_surface": "PASS",
+    "governed_content_adoption": "PASS",
+    "foundation_static": "PASS",
+    "tracker_formula_errors": 0
+  },
+  "local_gates": {
+    "dart_format": "PENDING",
+    "flutter_analyze": "PENDING",
+    "flutter_test": "PENDING",
+    "browser_uat": "PENDING_FINAL"
+  },
+  "governance": {
+    "database_write": false,
+    "automatic_publication": false,
+    "production_deployment": "NOT_APPROVED"
+  }
+}

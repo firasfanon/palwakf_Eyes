@@ -1,0 +1,52 @@
+{
+  "project_id": "pal_eyes",
+  "governance_baseline": "PAL_EYES_PUBLIC_EXPERIENCE_ATLAS_MUSEUM_MAGAZINE_R8_0_1_20260720",
+  "generated_at": "2026-07-20",
+  "files": [
+    {
+      "relative_path": "data\\governance\\PAL_EYES_PROJECT_UPDATE_LOG.jsonl",
+      "sha256": "55e50b7e4d72f3ec84dfa5c310b044b23afbf8361c7481b3e21c5fb8fa9d87e6",
+      "size_bytes": 7827
+    },
+    {
+      "relative_path": "data\\trackers\\PAL_EYES_MASTER_SITE_STATUS_TRACKER_CURRENT.csv",
+      "sha256": "b724ef8e2e6503c7859429299167f8389be7b1d57ec0ed981806cdfc322a058e",
+      "size_bytes": 26677
+    },
+    {
+      "relative_path": "data\\trackers\\PAL_EYES_MASTER_SITE_STATUS_TRACKER_CURRENT.xlsx",
+      "sha256": "d98e4ae9488a9a550f75dee8d4f1c971396734ce055bfbeb72da4b0bc4e7a8d3",
+      "size_bytes": 103465
+    },
+    {
+      "relative_path": "docs\\CHANGELOG.md",
+      "sha256": "96ac55727bfdad507e7700b2460bf6b5e8a75c68a5c301f250c00a7abec05926",
+      "size_bytes": 18396
+    },
+    {
+      "relative_path": "docs\\DECISION_LOG.md",
+      "sha256": "80dee60654783d5e01576e8e7d4bb0ae9685fd68b08b3dd5ec82b4a1e28d7c30",
+      "size_bytes": 18121
+    },
+    {
+      "relative_path": "docs\\ERROR_RECORD.md",
+      "sha256": "c113c10767086abc6fe57ae891b1dd3def7d31ed5d8607bc7bcc4ad2f5132756",
+      "size_bytes": 18630
+    },
+    {
+      "relative_path": "docs\\project_memory\\PAL_EYES_PROJECT_MEMORY_CURRENT.md",
+      "sha256": "a35a557cc530987b3cc8709e63b985f7d6ba66eb3394583bbd56da14c158542c",
+      "size_bytes": 6535
+    },
+    {
+      "relative_path": "docs\\project_memory\\PAL_EYES_PROJECT_STATE_SNAPSHOT_CURRENT.json",
+      "sha256": "b6562f50162580529434b279b14f520aded42c5954433696dcd625526ad22322",
+      "size_bytes": 5005
+    },
+    {
+      "relative_path": "docs\\project_memory\\PAL_EYES_SESSION_HANDOFF_CURRENT.md",
+      "sha256": "7db31da1ea3238dd1b27089029ea5037738b24fa4841d64bbd9d411bdcac61a8",
+      "size_bytes": 674
+    }
+  ]
+}

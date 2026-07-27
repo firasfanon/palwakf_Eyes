@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "mode": "OPERATIONAL_BACKEND_R7_0_1_COMPILE_SQL_ANALYZER_HOTFIX",
+  "checks": {
+    "mapper_uses_heritage_site_coordinates": true,
+    "backend_mode_extension_imported": true,
+    "initializing_formal_used": true,
+    "factories_before_fields": true,
+    "async_context_guarded": true,
+    "seed_sql_conflict_update_valid": true,
+    "sql_test_is_semantic": true,
+    "mapper_runtime_regression_test": true,
+    "database_not_applied": true,
+    "publication_blocked": true
+  },
+  "failures": [],
+  "target_baseline": "PAL_EYES_GOVERNED_OPERATIONAL_BACKEND_AND_WORKFLOW_ACTIVATION_R7_0_1_20260719",
+  "governance": {
+    "database_migration": "PREPARED_NOT_APPLIED",
+    "public_release": "BLOCKED",
+    "production_deployment": "NOT_APPROVED"
+  }
+}

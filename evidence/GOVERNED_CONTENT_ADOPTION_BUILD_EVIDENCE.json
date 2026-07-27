@@ -1,0 +1,59 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "PAL_EYES_GOVERNED_CONTENT_ADOPTION_LEGACY_NARRATIVE_METRIC_AND_EXPANSION_TILE_MATERIAL_CANVAS_HOTFIX_V1",
+  "target_baseline": "PAL_EYES_GOVERNED_CONTENT_ADOPTION_TO_PROJECT_PAGES_R5_1_3_20260719",
+  "parent_baseline": "PAL_EYES_GOVERNED_CONTENT_ADOPTION_TO_PROJECT_PAGES_R5_1_2_20260715",
+  "generated_at": "2026-07-19",
+  "result": "PASS_STATIC_BUILD_PENDING_LOCAL_UAT",
+  "content_counts": {
+    "sites": 79,
+    "governed_draft_pages": 57,
+    "limited_research_pages": 22,
+    "reviewed_editorial_records": 92,
+    "governed_sources": 95,
+    "adopted_editorial_source_ids": 65,
+    "held_claims": 211,
+    "public_map_coordinates": 0,
+    "review_coordinates": 3,
+    "approved_media_assets": 0,
+    "legacy_expanded_narratives": 47
+  },
+  "static_checks": {
+    "governed_content_adoption": "PASS",
+    "flutter_runtime_foundation_static": "PASS",
+    "database_write_scan": "PASS",
+    "publication_block": "PASS"
+  },
+  "local_gates": {
+    "dart_format": "PENDING_USER_ENVIRONMENT",
+    "flutter_analyze": "PENDING_USER_ENVIRONMENT",
+    "flutter_test": "PENDING_USER_ENVIRONMENT",
+    "browser_uat": "PENDING_USER_ENVIRONMENT"
+  },
+  "mutations": {
+    "application_source_code": true,
+    "database": false,
+    "production": false,
+    "public_publication": false
+  },
+  "runtime_repair": {
+    "workspace_expansion_tile_material_canvas": "PASS_STATIC",
+    "map_root_material_canvas": "PASS_STATIC",
+    "interactive_colored_box_guard": "PASS_STATIC"
+  },
+  "source_contract_repair": {
+    "local_whatif_hashes_captured": 20,
+    "local_dart_source_hashes_captured": 50,
+    "failed_package_superseded": "MEGA_BATCH_PAL_EYES_GOVERNED_CONTENT_ADOPTION_TO_PROJECT_PAGES_V1_20260715_BUILT_APPLY_PACKAGE.zip"
+  },
+  "compile_and_legacy_contract_repair": {
+    "place_detail_compile_blocker_repaired": true,
+    "analyzer_cleanup_markers_repaired": true,
+    "legacy_expanded_narrative_count_preserved": 47,
+    "legacy_review_coordinate_count_preserved": 3,
+    "public_coordinate_count_preserved": 0,
+    "governed_visibility_test_updated": true,
+    "database_write": false,
+    "publication": "BLOCKED"
+  }
+}

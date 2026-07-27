@@ -1,0 +1,456 @@
+{
+  "result": "PASS",
+  "mode": "FULL_DRAFT_SITE_CATALOG_STATIC_CONTRACT",
+  "root": "/mnt/data/work_paleyes_content_adoption_r5_1_0",
+  "checks": {
+    "required_files": "PASS",
+    "dependencies": {
+      "flutter_riverpod": "PASS",
+      "go_router": "PASS",
+      "supabase_flutter": "PASS",
+      "flutter_map": "PASS",
+      "latlong2": "PASS",
+      "intl": "PASS"
+    },
+    "backup_directory_excluded": "PASS",
+    "forbidden_patterns": {
+      "legacy_riverpod_import": "PASS",
+      "service_role_literal": "PASS",
+      "hardcoded_supabase_url": "PASS",
+      "database_insert_call": "PASS",
+      "database_update_call": "PASS",
+      "database_upsert_call": "PASS",
+      "database_delete_call": "PASS",
+      "broken_postfix_null_aware_element": "PASS",
+      "fragile_prefix_null_aware_element": "PASS"
+    },
+    "database_migrations_absent": "PASS",
+    "routes": {
+      "'/'": "PASS",
+      "'/discover'": "PASS",
+      "'/places'": "PASS",
+      "'/places/:slug'": "PASS",
+      "'/map'": "PASS",
+      "'/timeline'": "PASS",
+      "'/governorates'": "PASS",
+      "'/stories'": "PASS",
+      "'/sources'": "PASS",
+      "'/contribute'": "PASS",
+      "'/methodology'": "PASS",
+      "workspace_grouped": "PASS",
+      "governance_isolated": "PASS"
+    },
+    "content_catalog_metrics": {
+      "extractedSiteCount": "PASS",
+      "expandedNarrativeCount": "PASS",
+      "sourceRegistryCount": "PASS",
+      "governorateCoverageCount": "PASS",
+      "mappedCoordinateCount": "PASS",
+      "governedDraftPageCount": "PASS",
+      "limitedResearchPageCount": "PASS",
+      "reviewedEditorialRecordCount": "PASS",
+      "governedSourceRegistryCount": "PASS",
+      "heldClaimBacklogCount": "PASS",
+      "publicMapCoordinateCount": "PASS",
+      "governoratesWithoutSiteRows": "PASS"
+    },
+    "generated_catalog_counts": {
+      "HeritageSite": {
+        "status": "PASS",
+        "expected": 79,
+        "actual": 79
+      },
+      "DraftSourceRegistryEntry": {
+        "status": "PASS",
+        "expected": 79,
+        "actual": 79
+      },
+      "GovernorateCoverage": {
+        "status": "PASS",
+        "expected": 16,
+        "actual": 16
+      },
+      "expandedNarrative": {
+        "status": "PASS",
+        "expected": 47,
+        "actual": 47
+      },
+      "mappedCoordinates": {
+        "status": "PASS",
+        "expected": 3,
+        "actual": 3
+      }
+    },
+    "key_sites": {
+      "المسجد الأقصى المبارك / الحرم القدسي الشريف": "PASS",
+      "الحرم الإبراهيمي": "PASS",
+      "كنيسة المهد": "PASS",
+      "برك سليمان": "PASS",
+      "سبسطية": "PASS",
+      "تل السلطان": "PASS",
+      "مدينة غزة القديمة": "PASS",
+      "رفح التاريخية": "PASS"
+    },
+    "development_fixtures_unpublished": "PASS",
+    "nullable_coordinate_contract": "PASS",
+    "map_coordinate_gap_contract": "PASS",
+    "governorate_gap_visibility": "PASS",
+    "source_registry_ui_contract": "PASS",
+    "progressive_rendering": {
+      "places": "PASS",
+      "discovery": "PASS",
+      "sources": "PASS",
+      "timeline": "PASS",
+      "workspace_places": "PASS"
+    },
+    "content_seed_counts": {
+      "content_seed/PAL_EYES_DRAFT_SITE_CATALOG_V1.json": {
+        "status": "PASS",
+        "expected": 79,
+        "actual": 79
+      },
+      "content_seed/PAL_EYES_DRAFT_SOURCE_REGISTRY_V1.json": {
+        "status": "PASS",
+        "expected": 79,
+        "actual": 79
+      },
+      "content_seed/PAL_EYES_GOVERNORATE_COVERAGE_V1.json": {
+        "status": "PASS",
+        "expected": 16,
+        "actual": 16
+      }
+    },
+    "extraction_evidence_contract": "PASS",
+    "extension_import_scope_regression": {
+      "site_card_governed_page_contract": "PASS",
+      "places_screen_unused_profile_import_removed": "PASS",
+      "workspace_unused_metrics_import_removed": "PASS"
+    },
+    "test_contract_and_draft_banner_regression": {
+      "canonical_home_draft_banner_title": "PASS",
+      "sebastia_qualifier_aware_assertion": "PASS",
+      "tell_es_sultan_qualifier_aware_assertion": "PASS",
+      "smoke_test_uses_governed_banner_identity": "PASS"
+    },
+    "home_banner_smoke_identity_regression": {
+      "banner_key_is_unique": "PASS",
+      "banner_is_inside_first_hero_surface": "PASS",
+      "smoke_asserts_key_identity": "PASS",
+      "repeated_label_is_allowed": "PASS",
+      "fragile_scroll_contract_removed": "PASS"
+    },
+    "immersive_ui_design_system": {
+      "brand_mark_component": "PASS",
+      "palestine_map_artwork_component": "PASS",
+      "page_hero_component": "PASS",
+      "public_shell_uses_brand_system": "PASS",
+      "workspace_shell_uses_brand_system": "PASS",
+      "home_has_map_story_category_timeline_journey": "PASS",
+      "stories_editorial_surface": "PASS",
+      "methodology_visual_journey": "PASS",
+      "contribution_guided_surface": "PASS"
+    },
+    "material_boundary_and_immersive_test_regression": {
+      "public_shell_material_boundaries": "PASS",
+      "workspace_navigation_material_boundary": "PASS",
+      "map_gap_list_material_boundary": "PASS",
+      "immersive_home_dedicated_test": "PASS"
+    },
+    "analyzer_cleanup_and_lazy_section_test_regression": {
+      "timeline_separator_uses_wildcards": "PASS",
+      "map_separator_uses_wildcards": "PASS",
+      "stories_section_has_stable_key": "PASS",
+      "evidence_section_has_stable_key": "PASS",
+      "immersive_test_scrolls_lazy_sections": "PASS"
+    },
+    "compact_visual_card_overflow_regression": {
+      "card_uses_bounded_layout_builder": "PASS",
+      "description_uses_expanded_space": "PASS",
+      "compact_text_uses_ellipsis": "PASS",
+      "compact_layout_has_widget_regression_test": "PASS"
+    },
+    "local_package_imports": "PASS",
+    "basic_delimiter_balance": "PASS"
+  },
+  "failures": [],
+  "dart_file_count": 54,
+  "source_snapshot": [
+    {
+      "path": "lib/app/app.dart",
+      "sha256": "80a7d7c8d9ee2cb0172ed1ecea137d2a81a74f9a48be60618bcd37858c3af92e",
+      "size_bytes": 1347
+    },
+    {
+      "path": "lib/app/application/app_settings.dart",
+      "sha256": "bcc2c3ae35ab0e5c6462c17978a7c4f88d03b87b9274501607598ed7a6a1337a",
+      "size_bytes": 735
+    },
+    {
+      "path": "lib/app/localization/pal_eyes_localizations.dart",
+      "sha256": "27b009183bc36c6a95053d84b8048e850479435f97f6c5e256b6aef4a93f019e",
+      "size_bytes": 2375
+    },
+    {
+      "path": "lib/app/router/app_router.dart",
+      "sha256": "b4943df1913367fff65abc813d75cd5678e141d5e14ea0f0db628ff28c8b863e",
+      "size_bytes": 15959
+    },
+    {
+      "path": "lib/app/router/route_paths.dart",
+      "sha256": "88c872d8a267c0d931301b43123271d6a67af003c150c3e71c8268893a52a884",
+      "size_bytes": 2786
+    },
+    {
+      "path": "lib/app/theme/app_colors.dart",
+      "sha256": "7dbb85abc1da0051642703344b418449a9d836bc090454af747401c94a1d44f5",
+      "size_bytes": 1637
+    },
+    {
+      "path": "lib/app/theme/app_theme.dart",
+      "sha256": "716cf97208dcfe7b11de10f2c0472d4634fc8c4d3320cc1d21cabec57b779b86",
+      "size_bytes": 7579
+    },
+    {
+      "path": "lib/core/config/app_environment.dart",
+      "sha256": "2a0e411125cbd921455b80e0cd233af25e97204b8dc581c4d8223b621eda15df",
+      "size_bytes": 1023
+    },
+    {
+      "path": "lib/core/content/content_review_status.dart",
+      "sha256": "5b727c466e7705307ad46ef75696e10dfc25d43fd539e9a2cb91ecd7de8f6c58",
+      "size_bytes": 2519
+    },
+    {
+      "path": "lib/core/supabase/supabase_bootstrap.dart",
+      "sha256": "bf1f6cecec29079714bd83c04aebc5cf327095fe27bcbd5449a466debdacded6",
+      "size_bytes": 1852
+    },
+    {
+      "path": "lib/core/widgets/app_shell.dart",
+      "sha256": "f28873f9157461ce1512fa4e52e51f43d999371ca412af1f06659e5ddb77aaab",
+      "size_bytes": 59
+    },
+    {
+      "path": "lib/core/widgets/content_status_badge.dart",
+      "sha256": "a3a9b20098cf86c993e527507f9f09fbad1ab5697192448a84a5224f6356a3d2",
+      "size_bytes": 1361
+    },
+    {
+      "path": "lib/core/widgets/draft_content_banner.dart",
+      "sha256": "face3a18d397865d2e878af3762c63bf5cab6b4545e818855f10cb5264cbd808",
+      "size_bytes": 2029
+    },
+    {
+      "path": "lib/core/widgets/pal_eyes_page.dart",
+      "sha256": "33b6b850210b07d231743a0fc18c9f4f7b7f16fa6af0994f125ad48208667b6b",
+      "size_bytes": 3034
+    },
+    {
+      "path": "lib/core/widgets/pal_eyes_visual_system.dart",
+      "sha256": "c1e2440e2c84a3c612caa3952a0c6d67ae7ef058a826ffaf30e77a6e1214f754",
+      "size_bytes": 28269
+    },
+    {
+      "path": "lib/core/widgets/public_shell.dart",
+      "sha256": "699c5a51c2e97b9e5f59c2ecdd88f1193d077c48571e101470c0c73c4a66fe6e",
+      "size_bytes": 12104
+    },
+    {
+      "path": "lib/core/widgets/workspace_shell.dart",
+      "sha256": "cfb7b8f4d9a100aa4ea168d451eb547f16befd4ed47d18f2f555bdde1a44bdac",
+      "size_bytes": 12959
+    },
+    {
+      "path": "lib/features/admin/presentation/admin_dashboard_screen.dart",
+      "sha256": "b500fb725e5146a51da29c2159c051ea58216e98ec1194242fd263c70236eb58",
+      "size_bytes": 2099
+    },
+    {
+      "path": "lib/features/common/presentation/not_found_screen.dart",
+      "sha256": "e60f281a78f5dd317c24b4c3d94df29d0bebfb9e4b01a6eed9579c53d4606e6e",
+      "size_bytes": 735
+    },
+    {
+      "path": "lib/features/contributions/presentation/contribute_screen.dart",
+      "sha256": "044d2ecfcbae9a2a0ba3aeff9599f8489e2de142c3845a68f4587f9d35ca1546",
+      "size_bytes": 11426
+    },
+    {
+      "path": "lib/features/discovery/presentation/discovery_screen.dart",
+      "sha256": "33ff912bc9201447325e2ae38ec9044c25649ba2eeeda3ef4752657dc5411edc",
+      "size_bytes": 13087
+    },
+    {
+      "path": "lib/features/governance/presentation/governance_overview_screen.dart",
+      "sha256": "fc1814771782bdcb68d97433087eb639f36a07f88c7ab679180720c5c51a9de6",
+      "size_bytes": 3470
+    },
+    {
+      "path": "lib/features/governance/presentation/system_status_screen.dart",
+      "sha256": "8be26a6d96640b91a63e13424c80686c3596df7e57d3733b2628fc18f1b71a16",
+      "size_bytes": 2169
+    },
+    {
+      "path": "lib/features/governorates/domain/governorate_coverage.dart",
+      "sha256": "57f9639a8b9117e8e3b25097c598b379cab5a83c1a9e1316cc00ea8f922b0b5a",
+      "size_bytes": 491
+    },
+    {
+      "path": "lib/features/governorates/presentation/governorates_screen.dart",
+      "sha256": "7ff1ee70c90a85413029dc434494011cddc45ca9fec6d1f20667e68e12e4b45c",
+      "size_bytes": 9080
+    },
+    {
+      "path": "lib/features/home/presentation/home_screen.dart",
+      "sha256": "a7b76e01cf2e12c6ac0f9b13ec137d4b20ce7629b01d338f68758ed9ac531d42",
+      "size_bytes": 50228
+    },
+    {
+      "path": "lib/features/map/presentation/map_screen.dart",
+      "sha256": "99deb09d7b793723f0bcb891d167871679f5095538af4f0136c3aa15d37c9600",
+      "size_bytes": 15131
+    },
+    {
+      "path": "lib/features/methodology/presentation/methodology_screen.dart",
+      "sha256": "ee8783c30bb09582df4f21a8a1afff32c617ed3e8e9d98b71ae3147163bae18b",
+      "size_bytes": 8828
+    },
+    {
+      "path": "lib/features/places/application/heritage_sites_provider.dart",
+      "sha256": "96ee4212ed43f5f0ea7939eb0c7a89cc311ed7c574f92975cad5d5476cc25922",
+      "size_bytes": 2445
+    },
+    {
+      "path": "lib/features/places/data/content_catalog_metrics.dart",
+      "sha256": "709ab7cc90986384e845402d8961fb6c62f533ea500c93b9f6068d6401c1b65c",
+      "size_bytes": 1200
+    },
+    {
+      "path": "lib/features/places/data/demo_heritage_site_repository.dart",
+      "sha256": "d40f6cef4e10e0a7d935b044d45da4a2fb750b9aa4d74fdd84101cf08247ea2d",
+      "size_bytes": 46
+    },
+    {
+      "path": "lib/features/places/data/draft_catalog_generated.dart",
+      "sha256": "1b91353ec3f7b8d5f47de0c09d5dff99a6c998fef5dabb6afa1345fc9cab62e0",
+      "size_bytes": 507526
+    },
+    {
+      "path": "lib/features/places/data/draft_heritage_site_repository.dart",
+      "sha256": "f2bf6706b947cc27672d5e3e062e3ebeedb949af94fefb480485b590bc1a7499",
+      "size_bytes": 597
+    },
+    {
+      "path": "lib/features/places/data/governed_catalog_generated.dart",
+      "sha256": "055b4a4cf8b7bb2a3718d3a74278ea94998d16c1d4d4883cc3f0230496fe61c7",
+      "size_bytes": 334590
+    },
+    {
+      "path": "lib/features/places/data/heritage_site_repository.dart",
+      "sha256": "9ec2390b39105583633cd64edd21f9fb70af88098554d88285c112f605cc5280",
+      "size_bytes": 198
+    },
+    {
+      "path": "lib/features/places/domain/draft_content_profile.dart",
+      "sha256": "e4c0c3fbc31d83c3e1a1bcbd1156953ae72f4eefd925bb1afffd56461c4d6ab4",
+      "size_bytes": 585
+    },
+    {
+      "path": "lib/features/places/domain/heritage_site.dart",
+      "sha256": "40ca60c5c59c27914719d47152dbf33a90bd4f90450b56a151b403da5228333e",
+      "size_bytes": 5159
+    },
+    {
+      "path": "lib/features/places/domain/historical_content.dart",
+      "sha256": "c946242e2d9fc387bb00e65b6a01dbc203cadc69c3d2311bf940f5b4b47e4c4a",
+      "size_bytes": 1984
+    },
+    {
+      "path": "lib/features/places/presentation/place_detail_screen.dart",
+      "sha256": "fc472d665e4827ae43c65f525034cdd6d64d482bc068acd6fc33e98f32c6f031",
+      "size_bytes": 18804
+    },
+    {
+      "path": "lib/features/places/presentation/places_screen.dart",
+      "sha256": "9e1f4850e6a5dd19f673d41df03d98f4b3a060436cd80590e12456afc39010a8",
+      "size_bytes": 9384
+    },
+    {
+      "path": "lib/features/places/presentation/widgets/site_card.dart",
+      "sha256": "3042b46b8a708739c36adb94ff33c321dee238a88ec7152864683df77365b09f",
+      "size_bytes": 8029
+    },
+    {
+      "path": "lib/features/research/data/governed_research_backlog_generated.dart",
+      "sha256": "f13bbac945d8277e4a72ff0470a8657977481f3434be36a54808e8d18125e6ea",
+      "size_bytes": 128682
+    },
+    {
+      "path": "lib/features/research/domain/governed_research_backlog_item.dart",
+      "sha256": "e1ac15739a731f787b58dc6e5d676f29ab885cd6a8e8284c35afad195c24a898",
+      "size_bytes": 877
+    },
+    {
+      "path": "lib/features/research/presentation/research_workspace_screen.dart",
+      "sha256": "2cd789692879245181b39e7c123bebf41ae59fcd3765ac396a5b1b05767977a4",
+      "size_bytes": 6628
+    },
+    {
+      "path": "lib/features/sources/data/governed_source_registry_generated.dart",
+      "sha256": "0f96e4ab22ef56dfb8af9121810e003752c5165d73923796021380e5e1fd8984",
+      "size_bytes": 115146
+    },
+    {
+      "path": "lib/features/sources/domain/draft_source_registry_entry.dart",
+      "sha256": "5c53632443509ef01bf011bb21c8bb49769f218b06ba566dcbb61d03e3b39b7c",
+      "size_bytes": 1217
+    },
+    {
+      "path": "lib/features/sources/presentation/sources_screen.dart",
+      "sha256": "af38ab46d65c10c45bfef6b0f7fdf6c2bff469deabc8ed9044acdb20ea5242ae",
+      "size_bytes": 7833
+    },
+    {
+      "path": "lib/features/stories/presentation/stories_screen.dart",
+      "sha256": "93af24a7f55c9e1b9d4d17829fcf00208cf5e8ac7ac62c81dfb5507b13a3f4f7",
+      "size_bytes": 8350
+    },
+    {
+      "path": "lib/features/timeline/presentation/timeline_screen.dart",
+      "sha256": "a3621b882efccae08789789783ad0083640f7e5cb7709202b93aa6464b922190",
+      "size_bytes": 9074
+    },
+    {
+      "path": "lib/features/workspace/presentation/new_place_draft_screen.dart",
+      "sha256": "586716a9dd1178adfb9af28f492c7ab938528d8146ac0ef29d5fba03e4434eb0",
+      "size_bytes": 6689
+    },
+    {
+      "path": "lib/features/workspace/presentation/workspace_dashboard_screen.dart",
+      "sha256": "2c033bdb98f2d5c1d7ae478ddcec39e0b7e868424edcd83bf6b2226e5e0470e4",
+      "size_bytes": 12939
+    },
+    {
+      "path": "lib/features/workspace/presentation/workspace_places_screen.dart",
+      "sha256": "c9d280509f53547da9325bb44c0a3226bbf285569378563663fb6bc28bf9295a",
+      "size_bytes": 10974
+    },
+    {
+      "path": "lib/features/workspace/presentation/workspace_section_screen.dart",
+      "sha256": "eab9fb991b58e945b17ff9c13318a5e4dba5086219c87f084d02a39db436a030",
+      "size_bytes": 2900
+    },
+    {
+      "path": "lib/main.dart",
+      "sha256": "7bd3a5f9dfa456f3ce119c6c5fb1b7aa71fd810015a7f52b506c0d3c0fce412d",
+      "size_bytes": 709
+    }
+  ],
+  "local_flutter_gates": {
+    "flutter_pub_get": "PENDING_USER_ENVIRONMENT",
+    "flutter_analyze": "PENDING_USER_ENVIRONMENT",
+    "flutter_test": "PENDING_USER_ENVIRONMENT",
+    "flutter_build_web": "PENDING_USER_ENVIRONMENT",
+    "browser_uat": "PENDING_USER_ENVIRONMENT"
+  }
+}

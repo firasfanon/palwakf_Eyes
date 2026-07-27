@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "mode": "PRODUCT_UX_R6_0_1_HOTFIX_STATIC_CONTRACT",
+  "checks": {
+    "site_card_two_badges_only": true,
+    "compact_tag_present": true,
+    "site_card_public_story_badge_layout_regression_test": true,
+    "router_imports_sorted": true,
+    "detail_imports_sorted": true,
+    "unnecessary_underscores_removed": true,
+    "foundation_site_card_public_contract_updated": true,
+    "compile_verifier_formatter_tolerant": true,
+    "database_writes_confined_to_governed_adapter": true
+  },
+  "failures": [],
+  "target_baseline": "PAL_EYES_PRODUCT_UX_PHASES_1_TO_4_FOUNDATION_R6_0_1_20260719",
+  "governance": {
+    "database_write": false,
+    "automatic_publication": false,
+    "production_deployment": "NOT_APPROVED"
+  }
+}

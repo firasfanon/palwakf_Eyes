@@ -1,0 +1,35 @@
+{
+  "result": "PASS",
+  "batch": "PAL_EYES_IMMERSIVE_HOME_LAZY_SECTION_TEST_AND_ANALYZER_CLEANUP_HOTFIX_V1",
+  "parent_baseline": "PAL_EYES_IMMERSIVE_PUBLIC_EXPERIENCE_AND_UNIFIED_PRODUCT_SURFACES_R4_0_1_20260715",
+  "target_baseline": "PAL_EYES_IMMERSIVE_PUBLIC_EXPERIENCE_AND_UNIFIED_PRODUCT_SURFACES_R4_0_2_20260715",
+  "observed": {
+    "browser_render": "PASS",
+    "analyzer_infos": 2,
+    "failing_tests": 1
+  },
+  "repairs": {
+    "analyzer_wildcard_parameters": 2,
+    "stable_lazy_section_keys": 2,
+    "scroll_until_visible_calls": 2
+  },
+  "semantic_checks": {
+    "visual_double_underscore_removed": true,
+    "map_double_underscore_removed": true,
+    "stories_key_present": true,
+    "evidence_key_present": true,
+    "test_scrolls_sections": true
+  },
+  "local_gates": {
+    "verify": "PENDING_RECHECK",
+    "pub_get": "PENDING_RECHECK",
+    "format": "PENDING_RECHECK",
+    "analyze": "PENDING_RECHECK",
+    "test": "PENDING_RECHECK",
+    "run": "PENDING_RECHECK"
+  },
+  "boundaries": {
+    "database_mutation": "NONE",
+    "automatic_publication": "BLOCKED"
+  }
+}

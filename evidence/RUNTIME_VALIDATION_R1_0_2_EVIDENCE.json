@@ -1,0 +1,29 @@
+{
+  "project_id": "pal_eyes",
+  "baseline_name": "PAL_EYES_FLUTTER_RUNTIME_VALIDATED_R1_0_2_20260714",
+  "date": "2026-07-14",
+  "environment": {
+    "flutter": "3.44.1",
+    "dart": "3.12.1"
+  },
+  "results": {
+    "static_source_contract": "PASS",
+    "flutter_pub_get": "PASS",
+    "flutter_analyze": "PASS",
+    "flutter_test": "PASS",
+    "tests_passed": 3,
+    "flutter_build_web": "PASS",
+    "browser_uat": "PENDING"
+  },
+  "integrated_repairs": [
+    "intl_dependency_alignment_0_20_2",
+    "static_verifier_intl_alignment",
+    "places_screen_unterminated_string_repair",
+    "analyzer_backups_exclusion"
+  ],
+  "mutations": {
+    "database": "NONE",
+    "production": "NONE",
+    "historical_publication": "NONE"
+  }
+}

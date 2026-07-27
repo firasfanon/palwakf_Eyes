@@ -1,0 +1,24 @@
+{
+  "project_id": "pal_eyes",
+  "batch": "PAL_EYES_UI_UX_PRODUCTIVE_SURFACES_COMPILE_HOTFIX_V1_0_2",
+  "parent_baseline": "PAL_EYES_UI_UX_PRODUCTIVE_SURFACES_COMPILE_HOTFIX_R2_0_1_20260714",
+  "target_baseline": "PAL_EYES_UI_UX_PRODUCTIVE_SURFACES_COMPILE_HOTFIX_R2_0_2_20260714",
+  "date": "2026-07-14",
+  "defect": "POSTFIX_NULL_AWARE_COLLECTION_ELEMENT",
+  "broken_source": "trailing?,",
+  "correct_source": "?trailing,",
+  "verification": {
+    "exact_source_assertion": "PASS",
+    "static_contract": "PASS",
+    "regression_gate": "PASS",
+    "flutter_analyze": "PENDING_USER_ENVIRONMENT",
+    "flutter_test": "PENDING_USER_ENVIRONMENT",
+    "flutter_build_web": "PENDING_USER_ENVIRONMENT",
+    "flutter_run_chrome": "PENDING_USER_ENVIRONMENT"
+  },
+  "boundaries": {
+    "database_mutation": "NONE",
+    "production_mutation": "NONE",
+    "automatic_publication": "BLOCKED"
+  }
+}

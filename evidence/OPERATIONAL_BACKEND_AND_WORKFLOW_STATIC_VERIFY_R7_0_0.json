@@ -1,0 +1,49 @@
+{
+  "result": "PASS",
+  "mode": "GOVERNED_OPERATIONAL_BACKEND_AND_WORKFLOW_ACTIVATION_STATIC_CONTRACT",
+  "checks": {
+    "required_files_present": true,
+    "schema_pal_eyes": true,
+    "rls_enabled_and_forced": true,
+    "role_function_present": true,
+    "anonymous_writes_forbidden": true,
+    "original_draft_not_public_view": true,
+    "release_candidate_not_publication": true,
+    "hybrid_backend_selection": true,
+    "supabase_writes_confined": true,
+    "local_workflow_mutations": true,
+    "workspace_data_bound": true,
+    "audit_surface_data_bound": true,
+    "seed_sites_79": true,
+    "seed_original_layers_79": true,
+    "seed_sources_95": true,
+    "seed_editorial_92": true,
+    "seed_claims_211": true,
+    "manifest_counts_exact": true,
+    "publication_fail_closed": true,
+    "local_coordinate_seed_matches_operational_seed": true,
+    "backend_mode_label_extension_imported": true,
+    "seed_coordinate_conflict_update_valid": true,
+    "service_role_not_in_client": true
+  },
+  "failures": [],
+  "counts": {
+    "sites": 79,
+    "original_draft_layers": 79,
+    "sources": 95,
+    "editorial_records": 92,
+    "claims": 211,
+    "site_source_links": 144,
+    "relationships": 9,
+    "coordinate_candidates": 4,
+    "review_tasks": 16,
+    "media_assets": 0,
+    "release_candidates": 0
+  },
+  "governance": {
+    "production_apply": "NOT_EXECUTED",
+    "database_migration": "PREPARED_NOT_APPLIED",
+    "public_release": "BLOCKED",
+    "service_role_in_client": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "mode": "LIGHTWEIGHT_DART_LEXICAL_BALANCE_SCAN",
+  "date": "2026-07-14",
+  "files_scanned": 55,
+  "checks": [
+    "single_and_double_quoted_strings_terminate",
+    "triple_quoted_strings_terminate",
+    "line_and_block_comments_terminate",
+    "parentheses_brackets_and_braces_balance_outside_strings"
+  ],
+  "errors": {},
+  "limitations": [
+    "This is not the Dart analyzer.",
+    "Type checking and Flutter API compatibility remain pending locally."
+  ]
+}

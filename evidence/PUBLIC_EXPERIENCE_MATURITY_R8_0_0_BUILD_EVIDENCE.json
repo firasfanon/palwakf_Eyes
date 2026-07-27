@@ -1,0 +1,52 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_PUBLIC_EXPERIENCE_MATURITY_ROUND_2_V1",
+  "target_baseline": "PAL_EYES_PUBLIC_EXPERIENCE_ATLAS_MUSEUM_MAGAZINE_R8_0_0_20260720",
+  "parent_baseline": "PAL_EYES_GOVERNED_OPERATIONAL_BACKEND_AND_WORKFLOW_ACTIVATION_R7_0_2_20260719",
+  "result": "PASS_STATIC_BUILD_PENDING_LOCAL_UAT",
+  "scope": {
+    "public_navigation": "SIMPLIFIED",
+    "public_identity": "ATLAS_MUSEUM_EDITORIAL_MAGAZINE",
+    "primary_navigation_items": 5,
+    "mobile_navigation_items": 4,
+    "multi_dimensional_search": true,
+    "search_modes": 5,
+    "filters": 5,
+    "sort_options": 4,
+    "map_experience": "APPROVED_COORDINATES_ONLY",
+    "public_coordinates_current": 0,
+    "long_form_stories": 3,
+    "story_chapters": 12,
+    "shared_states": [
+      "loading",
+      "empty",
+      "error"
+    ],
+    "accessibility_semantics": true,
+    "mobile_progressive_results": 12
+  },
+  "static_verification": {
+    "public_experience": "PASS",
+    "operational_backend": "PASS",
+    "product_ux": "PASS",
+    "original_draft": "PASS",
+    "governed_adoption": "PASS",
+    "compile_contract": "PASS",
+    "foundation": "PASS",
+    "tracker_formula_errors": 0
+  },
+  "local_gates": {
+    "dart_format": "PENDING",
+    "flutter_analyze": "PENDING",
+    "flutter_test": "PENDING",
+    "desktop_browser_uat": "PENDING",
+    "mobile_browser_uat": "PENDING",
+    "accessibility_uat": "PENDING"
+  },
+  "governance": {
+    "database_write": false,
+    "database_migration": "NOT_APPLIED",
+    "public_release": "BLOCKED",
+    "production_deployment": "NOT_APPROVED"
+  }
+}

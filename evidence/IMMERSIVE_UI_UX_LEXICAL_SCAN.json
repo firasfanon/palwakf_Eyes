@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "mode": "LIGHTWEIGHT_DART_LEXICAL_BALANCE_SCAN",
+  "date": "2026-07-15",
+  "files_scanned": 56,
+  "errors": {},
+  "limitations": [
+    "This is not the Dart analyzer.",
+    "Flutter analyze, test, and run remain pending in the user's local environment."
+  ]
+}

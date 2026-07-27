@@ -1,0 +1,1028 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "pal_eyes",
+  "status": "DRAFT_REGISTRY_REQUIRES_BIBLIOGRAPHIC_VERIFICATION",
+  "source_document": {
+    "filename": "نص واحد ملصق .txt",
+    "sha256": "1f82a6c9941063436b40d13e258f7d03b1b3b00ef209494fe7032ee756673f6d"
+  },
+  "count": 79,
+  "records": [
+    {
+      "id": "src-f4792c3edd4d",
+      "title": "\"آثار غزة\" – بلدية غزة، وزارة السياحة",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "lmsjd-l-mry-lkbyr-2e4574"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-dbf0bc28b3f9",
+      "title": "\"آثار فلسطين\" – كاثلين كينيون، \"دائرة الآثار الفلسطينية\"",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "bld-slwn-f9df0c"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-b9ffe56ebcb3",
+      "title": "\"آثار قلقيلية\" – بلدية قلقيلية",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "khrb-qlqyly-lqdym-3ab4c5"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-cf04c1d8bf77",
+      "title": "\"آثار هيرودس\" – إيهود نيتزر، دائرة الآثار",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "qsr-hyrwdywn-133155"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-6962b30c91f5",
+      "title": "\"أريحا: أقدم مدينة\" – كاثلين كينيون، اليونسكو",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "tl-lsltn-ryh-lqdym-a86fc0"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-7c86388977ca",
+      "title": "\"أسواق القدس\" – أمانة القدس",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "swq-lqtnyn-4bbdf0"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-e9d249b9d0ac",
+      "title": "\"أنظمة الري\" – جامعة بيرزيت",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "دراسة/تقرير أكاديمي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "qn-wdy-lqlt-7551f6"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-fa9059050ba7",
+      "title": "\"أنظمة المياه في فلسطين\" – م. ناصر الدين، \"رحلة أوليا جلبي\"",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "brk-slymn-37c8be"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-9fa4b2849810",
+      "title": "\"أنظمة المياه\" – م. ناصر الدين",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "yn-sr-6162b1",
+        "ywn-lm-l-thry-ba9104"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-4889a48e73e7",
+      "title": "\"الآثار المملوكية في فلسطين\" – د. عبد الله عطيات",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "qswr-lmmlyk-shr-lwd-f7553f"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-c84acc68d1a3",
+      "title": "\"الأديرة في فلسطين\" – الأب عيسى مصلح",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "dyr-qrntl-cc4465"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-654ca713ba38",
+      "title": "\"الأراضي المقدسة\" – الفرنسيسكان، \"دليل كنائس القدس\"",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "qbr-lsyd-mrym-mgr-ljsmny-8d297f"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-7f1adc780ae8",
+      "title": "\"الأماكن المقدسة في القدس\" – د. خالد عوض، \"وثائق الأوقاف القدسية\"",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "وثيقة/سجل أرشيفي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "hy-t-lbrq-f90678"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-86049ddcfef7",
+      "title": "\"الخانات الفلسطينية\" – وزارة السياحة",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "khn-ltjr-31c766"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-4c8d723783d2",
+      "title": "\"السامريون في نابلس\" – د. حسني دعيس",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "jbl-jrzym-b6773e"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-feee27e30997",
+      "title": "\"العيون في فلسطين\" – أريج",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "yn-lfr-bc56c2"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-fe781a7ee33e",
+      "title": "\"الفن الأموي\" – د. محمد أبو الفتوح",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "qsr-hshm-khrb-lmfjr-0285c8"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-62af06ed0e78",
+      "title": "\"القصور الأموية\" – د. محمد أبو الفتوح",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "qsr-hshm-khrb-lmfjr-0285c8"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-6dd492282cb6",
+      "title": "\"المسجد الأقصى والمقامات\" – د. حسن الكرمي",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "mqm-lnby-dwwd-jbl-shywn-3a3d36"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-1e5ebf4e7a7f",
+      "title": "\"المسيحية في الأرض المقدسة\"",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "dyr-ljn-lkhdr-f97aa9"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-58c58961b739",
+      "title": "\"المقامات الدينية\" – أريج",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "mqm-lshykh-ly-lbk-7532d0"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-9adc3957ea38",
+      "title": "\"المقامات في غزة\" – وزارة الأوقاف",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "mqm-lshykh-rdwn-a77381"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-e91498a6f747",
+      "title": "\"المقامات\" – أريج",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "mqm-lshykh-hsn-fc3cde",
+        "mqm-lnby-ymyn-a33c0a"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-4e48b1335c90",
+      "title": "\"الموسم النبوي في فلسطين\" – د. شريف كناعنة",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "mqm-lnby-mws-c4d8c9"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-734787c258db",
+      "title": "\"الموسم النبوي\" – كناعنة",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "mqm-lnby-slh-12fc18",
+        "qbr-lnby-mws-ce23c4"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-df87010fa6f3",
+      "title": "\"بتير: المشهد الثقافي\" – اليونسكو",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "qry-btyr-88fede"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-c5ba76c62c51",
+      "title": "\"تاريخ الخليل\" – د. منذر أبو حمدة، \"المسجد الإبراهيمي\" – وزارة الأوقاف",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "lhrm-lbrhymy-899e38"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-59c26932f9d7",
+      "title": "\"تاريخ القدس\" – مجير الدين الحنبلي، \"الموسوعة الفلسطينية\"، موقع دائرة الأوقاف الإسلامية",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "lmsjd-l-qs-lmbrk-lhrm-lqdsy-lshryf-4aeec5"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-890dc70fa8bc",
+      "title": "\"تاريخ الكنائس في فلسطين\" – الأب عيسى مصلح، موسوعة \"المسيحية في الأرض المقدسة\"",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "knys-lqym-431ed2"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-8d9fdfe44373",
+      "title": "\"تاريخ بيت لحم\" – الأب بطرس نجم، اليونسكو (التراث العالمي)",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "knys-lmhd-4b15f1"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-8ffaed4faf07",
+      "title": "\"تاريخ جنين\" – د. نمر سرحان",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "bld-jnyn-lqdym-f2a7fb"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-ea8cd21513df",
+      "title": "\"تاريخ طولكرم\" – بلدية طولكرم",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "bld-dyr-lgswn-a28891"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-102bed5ae447",
+      "title": "\"تاريخ كنيسة غزة\" – الأرثوذكس",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "knys-lqdys-brfyryws-e1e3de"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-ccbe66c13739",
+      "title": "\"تراث بيرزيت\" – جامعة بيرزيت",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "دراسة/تقرير أكاديمي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "bld-byrzyt-lqdym-e2a5c1"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-8f2ba0022470",
+      "title": "\"حفريات الخليل\" – دائرة الآثار الفلسطينية",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "tl-lrmyd-63c0ba"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-c11d8e66ef63",
+      "title": "\"حفريات الفارعة\" – جامعة النجاح",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "دراسة/تقرير أكاديمي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "tl-lfr-lmdyn-lkn-ny-c6731a"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-6d98efdf214c",
+      "title": "\"حفريات جنين\" – دائرة الآثار",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "tl-jnyn-0ae63f"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-0482367734c7",
+      "title": "\"حفريات غزة\" – المدرسة البريطانية للآثار",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "دراسة/تقرير أكاديمي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "tl-l-jwl-mdyn-gz-lqdym-21150e"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-c29f64997ba2",
+      "title": "\"خانات غزة\" – أريج",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "khn-ywns-lqdym-0a78d2"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-9dbf2c9ede9e",
+      "title": "\"خليل الرحمن\" – بلدية الخليل، Riwaq",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "bld-lkhlyl-lqdym-6b6c5a"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-3dbd5084ee8d",
+      "title": "\"دليل أديرة فلسطين\" – مطرانية الروم",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "dyr-mr-sb-a8aeb0"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-797f4240b680",
+      "title": "\"دليل الأديرة الفلسطينية\" – المركز الأرثوذكسي",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "dyr-mr-sb-a8aeb0"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-0838ec59144a",
+      "title": "\"دليل بيت لحم\" – بلدية بيت لحم",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "mgr-lhlyb-57adc6"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-8035ad0cd6a8",
+      "title": "\"دليل كنائس فلسطين\" – مطرانية الروم الأرثوذكس",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "knys-brqyn-2c1f6b"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-28f2de37a33d",
+      "title": "\"سبسطية عبر التاريخ\" – أريج، \"دليل الآثار الرومانية\"",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "sbsty-shmrwn-6f6afe"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-bc84d1d6e431",
+      "title": "\"سبسطية\" – أريج",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "sbsty-shmrwn-6f6afe"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-f2947c343d2e",
+      "title": "\"غزة عبر التاريخ\" – د. عاطف أبو سيف",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "myn-gz-lqdym-l-nt-99f520"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-a03aaa081e66",
+      "title": "\"قلاع الجنوب\" – أريج",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "ql-lkrml-dyr-smt-d2c9e9"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-f5c5dcf6f17b",
+      "title": "\"قلاع الشمال\" – أريج",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "khrb-brj-l-bd-7a4bd9"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-6042f44b2489",
+      "title": "\"قلاع فلسطين\" – د. النتشة",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "ql-lbrk-63fe9e",
+        "ql-kfl-hrs-b2a7e0",
+        "ql-brqwq-5e98cf"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-603608db000e",
+      "title": "\"قلاع فلسطين\" – د. يوسف النتشة، Riwaq",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "ql-lqds-brj-dwd-83d302"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-db1c41ee36d7",
+      "title": "\"مساجد فلسطين\" – د. رائف يوسف",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "jm-lnsr-a429c3"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-d980ff409630",
+      "title": "\"مسح الآثار في دورا\" – جامعة الخليل",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مسح/تقرير تاريخي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "khrb-lnby-nwh-c9ac72"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-e86a1942f0ed",
+      "title": "\"مسح رام الله\" – أريج",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مسح/تقرير تاريخي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "dyr-mr-28dd52"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-6a5b58f239f0",
+      "title": "\"مصادر المياه\" – أريج",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "yn-lsltn-b5f001"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-51396868f02e",
+      "title": "\"مقامات الأنبياء\" – د. أحمد حجازي",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "mqm-lnby-ywsf-blt-fb9a81"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-f09b98ae279c",
+      "title": "\"مقامات شمال فلسطين\"",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "mqm-lshykh-shltwt-95d241"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-9d988ce95867",
+      "title": "\"مقامات فلسطين\" – وزارة الأوقاف",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "mqm-lnby-ywsf-blt-fb9a81"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-76aebf014cde",
+      "title": "\"مواقع العصر البرونزي\" – جامعة بيرزيت",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "دراسة/تقرير أكاديمي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "yn-smy-2a3fda"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-a10867314c7b",
+      "title": "\"موسوعة المقامات\"",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "mqm-lnby-sh-yb-d00341"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-f1d0405f7a5f",
+      "title": "\"نابلس التاريخية\" – جامعة النجاح، Riwaq",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "bld-nbls-lqdym-a9ac19"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-c39839e5e1af",
+      "title": "Riwaq",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "khn-lhtb-2310c1",
+        "qsr-lryn-78a64e",
+        "hr-lysmyn-160c60",
+        "qsr-lkyd-fe1e2a",
+        "hmm-lsmr-3ded44"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-30d0f33c9030",
+      "title": "Riwaq registry",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "khn-ljwbr-9b42bf"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-c33b473261bf",
+      "title": "SWP",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مسح/تقرير تاريخي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "khrb-jb-0c0a37",
+        "khrb-zwn-02cb03",
+        "khrb-twbs-lqdym-4ab7d2"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-49600c283853",
+      "title": "SWP، Riwaq",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مسح/تقرير تاريخي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "khrb-dyr-sty-69f3ad"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-54bcea943c96",
+      "title": "الكتاب المقدس، الروايات الإسلامية",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "كتاب/مرجع منشور",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "mgr-lbtrk-jz-mn-lhrm-0dc571"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-f27d8d68f8f8",
+      "title": "مسح الآثار البريطاني (SWP)",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مسح/تقرير تاريخي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "khrb-bwd-014e4c"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-df314229a6c1",
+      "title": "هيئة الآثار الإسرائيلية، Riwaq",
+      "attribution": "إحالة واردة في مصفوفة المواقع داخل الوثيقة المرفقة",
+      "source_type_ar": "مرجع مؤسسي",
+      "note": "الإحالة ظاهرة للتطوير، لكنها تحتاج تفكيكاً ببليوغرافياً ومطابقة الأصل والطبعة والصفحات والحقوق.",
+      "site_slugs": [
+        "khrb-bwd-014e4c"
+      ],
+      "registry_tier": "siteMention",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-ba797ae42d53",
+      "title": "بلادنا فلسطين",
+      "attribution": "مصطفى مراد الدباغ — أجزاء متعددة",
+      "source_type_ar": "كتاب مرجعي",
+      "note": "مرجع عام ورد في الوثيقة المرجعية ويحتاج تسجيل الطبعة والجزء والصفحة لكل استخدام.",
+      "site_slugs": [],
+      "registry_tier": "umbrellaReference",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-4b474f6d1348",
+      "title": "الموسوعة الفلسطينية",
+      "attribution": "هيئة الموسوعة الفلسطينية",
+      "source_type_ar": "موسوعة",
+      "note": "مرجع مؤسسي عام؛ يحتاج تحديد المجلد والطبعة والصفحة عند ربطه بادعاء.",
+      "site_slugs": [],
+      "registry_tier": "umbrellaReference",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-df5eb5194b3e",
+      "title": "سجل المباني التاريخية",
+      "attribution": "رواق — مركز المعمار الشعبي",
+      "source_type_ar": "سجل مؤسسي",
+      "note": "ورد كسجل مرجعي للمباني والبلدات؛ يلزم ربط كل سجل بالنسخة أو الرابط الأصلي.",
+      "site_slugs": [],
+      "registry_tier": "umbrellaReference",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-622d675fd0cd",
+      "title": "خرائط ومسوحات أثرية ومكانية",
+      "attribution": "أريج — معهد الأبحاث التطبيقية، القدس",
+      "source_type_ar": "تقارير ومسوحات",
+      "note": "ورد كمصدر مؤسسي للخرائط والمسوح؛ يحتاج تحديد التقرير وتاريخه ونطاقه.",
+      "site_slugs": [],
+      "registry_tier": "umbrellaReference",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-f3a9899f95ab",
+      "title": "تقارير الحفريات والتراث الثقافي",
+      "attribution": "دائرة الآثار والتراث الثقافي الفلسطينية",
+      "source_type_ar": "تقارير أثرية رسمية",
+      "note": "مرجع رسمي مقترح؛ يحتاج تسجيل التقرير ورقم الحفرية والسنة.",
+      "site_slugs": [],
+      "registry_tier": "umbrellaReference",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-b809791f1b23",
+      "title": "ملفات مواقع التراث العالمي",
+      "attribution": "اليونسكو",
+      "source_type_ar": "ملفات مؤسسية دولية",
+      "note": "يجب ربط أحدث نسخة من ملف الترشيح أو حالة الصون بالموقع المعني.",
+      "site_slugs": [],
+      "registry_tier": "umbrellaReference",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-0406c4138b4c",
+      "title": "أرشيف القرى والمدن الفلسطينية",
+      "attribution": "Palestine Remembered",
+      "source_type_ar": "أرشيف رقمي",
+      "note": "ورد كأرشيف مساعد؛ لا يعتمد منفرداً للادعاءات التاريخية الحساسة.",
+      "site_slugs": [],
+      "registry_tier": "umbrellaReference",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-1dfbadd1e047",
+      "title": "Survey of Western Palestine",
+      "attribution": "SWP — مسح فلسطين الغربية، القرن التاسع عشر",
+      "source_type_ar": "مسح تاريخي",
+      "note": "مصدر تاريخي يحتاج قراءة نقدية وتحديد اللوحة أو المجلد والصفحة.",
+      "site_slugs": [],
+      "registry_tier": "umbrellaReference",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-fcbf37748d01",
+      "title": "سجلات المحاكم الشرعية",
+      "attribution": "القدس والخليل ونابلس وغزة — أرشيفات الوثائق",
+      "source_type_ar": "وثائق أرشيفية",
+      "note": "مرجع أولي مهم؛ يحتاج رقم السجل والحجة والتاريخ وصورة الأصل.",
+      "site_slugs": [],
+      "registry_tier": "umbrellaReference",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-0c71daab74f7",
+      "title": "الدراسات الأكاديمية والجامعية",
+      "attribution": "جامعات النجاح وبيرزيت والخليل ومنصات النشر الأكاديمي",
+      "source_type_ar": "دراسات أكاديمية",
+      "note": "فئة مرجعية عامة؛ يجب تفكيكها إلى سجلات ببليوغرافية مستقلة.",
+      "site_slugs": [],
+      "registry_tier": "umbrellaReference",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    },
+    {
+      "id": "src-51147b51988e",
+      "title": "أرشيف الرواية الفلسطينية الشفوية",
+      "attribution": "مقابلات مع كبار السن في أرطاس والخليل وسبسطية وغيرها",
+      "source_type_ar": "ذاكرة شفوية",
+      "note": "لا تعتمد أي شهادة دون هوية الراوي والموافقة والتاريخ والتفريغ والسياق.",
+      "site_slugs": [],
+      "registry_tier": "umbrellaReference",
+      "review_status": "source_review",
+      "publication_status": "not_published"
+    }
+  ]
+}

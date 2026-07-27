@@ -1,0 +1,35 @@
+{
+  "result": "PASS",
+  "mode": "ORIGINAL_HISTORICAL_DRAFT_DUAL_SURFACE_STATIC_CONTRACT",
+  "checks": {
+    "source_file_present": true,
+    "source_sha256_exact": true,
+    "source_line_count_5334": true,
+    "registry_site_count_79": true,
+    "registry_expanded_count_47": true,
+    "registry_summary_count_32": true,
+    "heritage_original_layer_field": true,
+    "dual_catalog_attaches_original_layer": true,
+    "repository_uses_dual_catalog": true,
+    "dual_navigation_labels": true,
+    "original_surface_present": true,
+    "debug_gate_enforced": true,
+    "governed_catalog_not_replaced": true,
+    "metric_test_uses_dual_catalog": true,
+    "database_writes_confined_to_governed_adapter": true
+  },
+  "failures": [],
+  "counts": {
+    "sites": 79,
+    "expanded_narratives": 47,
+    "catalog_summaries": 32,
+    "governed_draft_pages": 57,
+    "limited_research_pages": 22,
+    "reviewed_editorial_records": 92
+  },
+  "governance": {
+    "development_visibility": "DEBUG_ONLY",
+    "public_release": "BLOCKED",
+    "database_write": false
+  }
+}

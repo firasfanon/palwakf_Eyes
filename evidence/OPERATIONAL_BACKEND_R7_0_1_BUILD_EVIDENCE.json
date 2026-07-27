@@ -1,0 +1,45 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "PAL_EYES_OPERATIONAL_BACKEND_COMPILE_MAPPER_SQL_AND_ANALYZER_CLOSURE_HOTFIX_V1",
+  "target_baseline": "PAL_EYES_GOVERNED_OPERATIONAL_BACKEND_AND_WORKFLOW_ACTIVATION_R7_0_1_20260719",
+  "parent_baseline": "PAL_EYES_GOVERNED_OPERATIONAL_BACKEND_AND_WORKFLOW_ACTIVATION_R7_0_0_20260719",
+  "result": "PASS_STATIC_BUILD_PENDING_LOCAL_UAT",
+  "input_evidence": {
+    "static_verifiers": "PASS",
+    "dart_format": "PASS_94_FILES_19_CHANGED",
+    "flutter_analyze": "FAIL_4_ERRORS_11_INFO",
+    "flutter_test": "COMPILE_BLOCKED_AND_ONE_SQL_CONTRACT_FAILURE"
+  },
+  "repair": {
+    "coordinate_mapper_source": "HERITAGE_SITE",
+    "coordinate_candidate_count_expected": 4,
+    "backend_mode_extension_imported": true,
+    "initializing_formal": true,
+    "factories_moved_before_fields": 8,
+    "async_context_guarded": true,
+    "seed_conflict_updates_repaired": 4,
+    "mapper_runtime_test_added": true,
+    "sql_semantic_test_strengthened": true
+  },
+  "static_verification": {
+    "r7_0_1_hotfix": "PASS",
+    "operational_backend": "PASS",
+    "product_ux": "PASS",
+    "original_draft": "PASS",
+    "governed_adoption": "PASS",
+    "compile_contract": "PASS",
+    "foundation": "PASS",
+    "tracker_formula_errors": 0
+  },
+  "local_gates": {
+    "dart_format": "PENDING_REPEAT",
+    "flutter_analyze": "PENDING_REPEAT",
+    "flutter_test": "PENDING_REPEAT",
+    "local_workflow_uat": "PENDING"
+  },
+  "governance": {
+    "database_migration": "PREPARED_NOT_APPLIED",
+    "public_release": "BLOCKED",
+    "production_deployment": "NOT_APPROVED"
+  }
+}

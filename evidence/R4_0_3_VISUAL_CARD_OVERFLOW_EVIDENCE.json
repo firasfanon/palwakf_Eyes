@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "batch": "PAL_EYES_VISUAL_CARD_COMPACT_HEIGHT_OVERFLOW_HOTFIX_V1",
+  "parent_baseline": "PAL_EYES_IMMERSIVE_PUBLIC_EXPERIENCE_AND_UNIFIED_PRODUCT_SURFACES_R4_0_2_20260715",
+  "target_baseline": "PAL_EYES_IMMERSIVE_PUBLIC_EXPERIENCE_AND_UNIFIED_PRODUCT_SURFACES_R4_0_3_20260715",
+  "observed": {
+    "overflow_pixels": 4,
+    "exception_count": 3,
+    "effective_content_width": 318,
+    "effective_content_height": 199
+  },
+  "repair": {
+    "layout_builder": true,
+    "bounded_description": true,
+    "compact_typography": true,
+    "dedicated_widget_test": true
+  },
+  "local_gates": "PENDING_RECHECK",
+  "database_mutation": "NONE"
+}

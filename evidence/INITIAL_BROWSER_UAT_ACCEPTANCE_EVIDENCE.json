@@ -1,0 +1,50 @@
+{
+  "project_id": "pal_eyes",
+  "baseline_name": "PAL_EYES_INITIAL_BROWSER_UAT_ACCEPTED_R1_0_2_20260714",
+  "date": "2026-07-14",
+  "environment": {
+    "flutter": "3.44.1",
+    "dart": "3.12.1",
+    "browser": "Chrome",
+    "supabase_enabled": false
+  },
+  "runtime_results": {
+    "static_source_contract": "PASS",
+    "flutter_pub_get": "PASS",
+    "flutter_analyze": "PASS",
+    "flutter_test": "PASS",
+    "tests_passed": 3,
+    "flutter_build_web": "PASS",
+    "initial_browser_uat": "PASS"
+  },
+  "visual_evidence": {
+    "file": "evidence/BROWSER_UAT_HOME_DESKTOP_RTL_20260714.png",
+    "sha256": "20e2fe96693c0fccb2aac9c8d54757c4fc521428d65079dd95d93431ce83dddc",
+    "observed": [
+      "Arabic RTL home page",
+      "top application bar",
+      "right navigation rail",
+      "hero section",
+      "operational surface cards",
+      "research sample cards",
+      "no visible overflow or red error screen"
+    ]
+  },
+  "warnings": [
+    "Flutter replaced existing viewport meta tag",
+    "OpenStreetMap public tile usage warning"
+  ],
+  "pending": [
+    "full route UAT",
+    "mobile narrow UAT",
+    "dark mode UAT",
+    "map interaction UAT"
+  ],
+  "development_policy": "PARALLEL_OPERATIONAL_UI_GOVERNANCE",
+  "next_batch": "MEGA_BATCH_PAL_EYES_OPERATIONAL_PLACE_DISCOVERY_DOCUMENTATION_AND_REVIEW_V1",
+  "mutations": {
+    "database": "NONE",
+    "production": "NONE",
+    "historical_publication": "NONE"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "PAL_EYES_GOVERNED_CONTENT_ADOPTION_LEGACY_NARRATIVE_METRIC_AND_EXPANSION_TILE_MATERIAL_CANVAS_HOTFIX_V1",
+  "target_baseline": "PAL_EYES_GOVERNED_CONTENT_ADOPTION_TO_PROJECT_PAGES_R5_1_3_20260719",
+  "result": "PASS",
+  "checks": {
+    "legacy_expanded_narrative_profile_count_47": true,
+    "legacy_catalog_summary_profile_count_32": true,
+    "governed_draft_page_count_57": true,
+    "legacy_metric_reads_content_profile": true,
+    "workspace_root_material_canvas": true,
+    "workspace_root_colored_box_absent": true,
+    "map_root_material_canvas": true,
+    "map_root_colored_box_absent": true,
+    "broad_interactive_boundary_test_present": true,
+    "governed_static_verify": true,
+    "compile_static_verify": true,
+    "foundation_static_verify": true,
+    "tracker_formula_errors": 0
+  },
+  "local_gates": {
+    "flutter_analyze": "PENDING",
+    "flutter_test": "PENDING",
+    "chrome_uat": "PENDING"
+  }
+}

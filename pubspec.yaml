@@ -1,0 +1,28 @@
+name: pal_eyes
+description: "بعيون فلسطينية — منصة الرواية التاريخية الفلسطينية الموثقة."
+publish_to: "none"
+version: 8.0.1+27
+
+environment:
+  sdk: ">=3.10.0 <4.0.0"
+  flutter: ">=3.38.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^3.3.2
+  go_router: ^17.3.0
+  supabase_flutter: ^2.16.0
+  flutter_map: ^8.3.1
+  latlong2: ^0.10.1
+  intl: 0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

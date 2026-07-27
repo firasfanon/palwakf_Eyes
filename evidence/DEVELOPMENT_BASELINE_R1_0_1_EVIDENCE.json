@@ -1,0 +1,33 @@
+{
+  "project_id": "pal_eyes",
+  "baseline_name": "PAL_EYES_DEVELOPMENT_BASELINE_R1_0_1_20260714",
+  "version": "1.0.1",
+  "build": 2,
+  "date": "2026-07-14",
+  "parent_baseline": "PAL_EYES_FLUTTER_RUNTIME_FOUNDATION_R1_0_0_20260713",
+  "parent_zip_sha256": "4bdb7ba70c418bac26c8b63dc29b583bd837b8abfc0083a2cd0a3a6c7ea87059",
+  "operation": "CREATE_FULL_FRESH_INSTALL_DEVELOPMENT_BASELINE",
+  "project_root": "C:\\Users\\DELL\\StudioProjects\\Pal_Eyes",
+  "verification": {
+    "parent_zip_validation": "PASS",
+    "static_source_contract": "PASS",
+    "legacy_dart_usage": "NONE",
+    "hardcoded_supabase_secrets": "NONE",
+    "database_write_calls": "NONE",
+    "supabase_migrations": "NONE",
+    "fresh_installer_present": true,
+    "manifest_validation_script_present": true
+  },
+  "pending_user_environment": [
+    "flutter pub get",
+    "flutter analyze",
+    "flutter test",
+    "flutter build web",
+    "browser UAT"
+  ],
+  "mutations": {
+    "database": "NONE",
+    "production": "NONE",
+    "historical_publication": "NONE"
+  }
+}

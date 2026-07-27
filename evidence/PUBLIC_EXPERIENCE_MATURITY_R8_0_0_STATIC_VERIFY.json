@@ -1,0 +1,38 @@
+{
+  "result": "PASS",
+  "mode": "PUBLIC_EXPERIENCE_MATURITY_ROUND_2_R8_0_0",
+  "checks": {
+    "required_files_present": true,
+    "five_primary_public_paths": true,
+    "mobile_navigation_four_paths": true,
+    "multi_dimensional_search": true,
+    "public_friendly_atlas": true,
+    "public_map_fail_closed": true,
+    "museum_like_place_opening": true,
+    "long_form_magazine": true,
+    "media_rights_safe_visuals": true,
+    "accessibility_contract": true,
+    "loading_empty_error_states": true,
+    "mobile_performance_contract": true,
+    "story_route_registered": true,
+    "workspace_governance_unchanged": true,
+    "database_write_absent": true
+  },
+  "failures": [],
+  "target_baseline": "PAL_EYES_PUBLIC_EXPERIENCE_ATLAS_MUSEUM_MAGAZINE_R8_0_0_20260720",
+  "experience": {
+    "atlas": true,
+    "museum": true,
+    "editorial_magazine": true,
+    "primary_navigation_items": 5,
+    "mobile_navigation_items": 4,
+    "long_form_stories": 3,
+    "story_chapters": 12,
+    "shared_content_states": 3
+  },
+  "governance": {
+    "database_write": false,
+    "public_release": "BLOCKED",
+    "production_deployment": "NOT_APPROVED"
+  }
+}

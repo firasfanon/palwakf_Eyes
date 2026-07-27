@@ -1,0 +1,293 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "pal_eyes",
+  "status": "DRAFT_COVERAGE_FROM_REFERENCE_DOCUMENT",
+  "source_document": {
+    "filename": "نص واحد ملصق .txt",
+    "sha256": "1f82a6c9941063436b40d13e258f7d03b1b3b00ef209494fe7032ee756673f6d"
+  },
+  "count": 16,
+  "records": [
+    {
+      "name_ar": "القدس",
+      "localities": [
+        "القدس القديمة",
+        "سلوان",
+        "الطور",
+        "العيزرية",
+        "أبو ديس",
+        "الرام",
+        "بيت حنينا",
+        "شعفاط",
+        "صور باهر",
+        "جبل المكبر",
+        "عناتا",
+        "بدو",
+        "قطنة",
+        "بير نبالا"
+      ],
+      "site_count": 10,
+      "expanded_narrative_count": 8,
+      "mapped_site_count": 0,
+      "source_mention_count": 10,
+      "extraction_gap": false
+    },
+    {
+      "name_ar": "الخليل",
+      "localities": [
+        "الخليل",
+        "حلحول",
+        "دورا",
+        "يطا",
+        "الظاهرية",
+        "السموع",
+        "بيت أمر",
+        "ترقوميا",
+        "إذنا",
+        "تفوح",
+        "سعير",
+        "الشيوخ"
+      ],
+      "site_count": 11,
+      "expanded_narrative_count": 6,
+      "mapped_site_count": 0,
+      "source_mention_count": 11,
+      "extraction_gap": false
+    },
+    {
+      "name_ar": "بيت لحم",
+      "localities": [
+        "بيت لحم",
+        "بيت جالا",
+        "بيت ساحور",
+        "الخضر",
+        "الدوحة",
+        "أرطاس",
+        "تقوع",
+        "زعترة",
+        "جناتا",
+        "بتير"
+      ],
+      "site_count": 8,
+      "expanded_narrative_count": 6,
+      "mapped_site_count": 1,
+      "source_mention_count": 9,
+      "extraction_gap": false
+    },
+    {
+      "name_ar": "رام الله والبيرة",
+      "localities": [
+        "رام الله",
+        "البيرة",
+        "بيرزيت",
+        "المزرعة الشرقية",
+        "سلواد",
+        "دير دبوان",
+        "عين يبرود",
+        "كفر مالك",
+        "الطيبة",
+        "عابود"
+      ],
+      "site_count": 6,
+      "expanded_narrative_count": 3,
+      "mapped_site_count": 0,
+      "source_mention_count": 7,
+      "extraction_gap": false
+    },
+    {
+      "name_ar": "نابلس",
+      "localities": [
+        "نابلس",
+        "سبسطية",
+        "رفيديا",
+        "بيتا",
+        "عقربا",
+        "حوارة",
+        "عورتا",
+        "برقة",
+        "دير شرف",
+        "طلوزة"
+      ],
+      "site_count": 8,
+      "expanded_narrative_count": 4,
+      "mapped_site_count": 1,
+      "source_mention_count": 10,
+      "extraction_gap": false
+    },
+    {
+      "name_ar": "جنين",
+      "localities": [
+        "جنين",
+        "قباطية",
+        "يعبد",
+        "عرابة",
+        "الزبابدة",
+        "مركة",
+        "سيلة الظهر",
+        "جبع",
+        "برقين"
+      ],
+      "site_count": 5,
+      "expanded_narrative_count": 2,
+      "mapped_site_count": 0,
+      "source_mention_count": 5,
+      "extraction_gap": false
+    },
+    {
+      "name_ar": "طولكرم",
+      "localities": [
+        "طولكرم",
+        "عنبتا",
+        "دير الغصون",
+        "بلعا",
+        "كفر اللبد",
+        "رامين",
+        "كفر صور",
+        "قفين"
+      ],
+      "site_count": 5,
+      "expanded_narrative_count": 2,
+      "mapped_site_count": 0,
+      "source_mention_count": 5,
+      "extraction_gap": false
+    },
+    {
+      "name_ar": "قلقيلية",
+      "localities": [
+        "قلقيلية",
+        "عزون",
+        "كفر ثلث",
+        "حبلة",
+        "جيوس",
+        "إماتين",
+        "عزون عتمة"
+      ],
+      "site_count": 3,
+      "expanded_narrative_count": 2,
+      "mapped_site_count": 0,
+      "source_mention_count": 3,
+      "extraction_gap": false
+    },
+    {
+      "name_ar": "سلفيت",
+      "localities": [
+        "سلفيت",
+        "بديا",
+        "الزاوية",
+        "كفل حارس",
+        "دير استيا",
+        "قراوة بني حسان",
+        "مسحة",
+        "فرخة"
+      ],
+      "site_count": 3,
+      "expanded_narrative_count": 2,
+      "mapped_site_count": 0,
+      "source_mention_count": 3,
+      "extraction_gap": false
+    },
+    {
+      "name_ar": "طوباس",
+      "localities": [
+        "طوباس",
+        "عقابا",
+        "طمون",
+        "رأس الفارعة",
+        "تياسير"
+      ],
+      "site_count": 3,
+      "expanded_narrative_count": 2,
+      "mapped_site_count": 0,
+      "source_mention_count": 3,
+      "extraction_gap": false
+    },
+    {
+      "name_ar": "أريحا",
+      "localities": [
+        "أريحا",
+        "عقبة جبر",
+        "عين السلطان",
+        "النبي موسى",
+        "الجفتلك",
+        "فصايل"
+      ],
+      "site_count": 7,
+      "expanded_narrative_count": 4,
+      "mapped_site_count": 1,
+      "source_mention_count": 8,
+      "extraction_gap": false
+    },
+    {
+      "name_ar": "شمال غزة",
+      "localities": [
+        "بيت حانون",
+        "جباليا",
+        "بيت لاهيا"
+      ],
+      "site_count": 0,
+      "expanded_narrative_count": 0,
+      "mapped_site_count": 0,
+      "source_mention_count": 0,
+      "extraction_gap": true
+    },
+    {
+      "name_ar": "غزة",
+      "localities": [
+        "مدينة غزة (البلدة القديمة)",
+        "الشجاعية",
+        "الزيتون",
+        "الدرج",
+        "الرمال"
+      ],
+      "site_count": 8,
+      "expanded_narrative_count": 4,
+      "mapped_site_count": 0,
+      "source_mention_count": 8,
+      "extraction_gap": false
+    },
+    {
+      "name_ar": "دير البلح",
+      "localities": [
+        "دير البلح",
+        "البريج",
+        "النصيرات",
+        "المغازي",
+        "الزوايدة"
+      ],
+      "site_count": 0,
+      "expanded_narrative_count": 0,
+      "mapped_site_count": 0,
+      "source_mention_count": 0,
+      "extraction_gap": true
+    },
+    {
+      "name_ar": "خان يونس",
+      "localities": [
+        "خان يونس",
+        "بني سهيلا",
+        "القرارة",
+        "خزاعة",
+        "عبسان"
+      ],
+      "site_count": 1,
+      "expanded_narrative_count": 1,
+      "mapped_site_count": 0,
+      "source_mention_count": 1,
+      "extraction_gap": false
+    },
+    {
+      "name_ar": "رفح",
+      "localities": [
+        "رفح",
+        "الشوكة",
+        "المدينة",
+        "المعسكر"
+      ],
+      "site_count": 1,
+      "expanded_narrative_count": 1,
+      "mapped_site_count": 0,
+      "source_mention_count": 1,
+      "extraction_gap": false
+    }
+  ]
+}

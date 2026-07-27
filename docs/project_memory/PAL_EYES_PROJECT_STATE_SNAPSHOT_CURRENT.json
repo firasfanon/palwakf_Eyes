@@ -1,0 +1,142 @@
+{
+  "project_id": "pal_eyes",
+  "project_name_ar": "بعيون فلسطينية",
+  "governance_baseline": "PAL_EYES_PUBLIC_EXPERIENCE_ATLAS_MUSEUM_MAGAZINE_R8_0_1_20260720",
+  "generated_at": "2026-07-15",
+  "verification_phase_1_stop_point": "REACHED",
+  "continue_exhaustive_verification_before_page_adoption": false,
+  "canonical_sites": 79,
+  "governed_draft_pages_to_build": 57,
+  "limited_research_pages_to_build": 22,
+  "reviewed_editorial_records_to_adopt": 92,
+  "adoptable_editorial_source_ids": 65,
+  "registered_rights_triaged_sources": 77,
+  "research_support_sources": 18,
+  "held_claim_groups": 211,
+  "p0_claims_executed": 37,
+  "field_engineering_requests": 13,
+  "legal_requests": 2,
+  "identity_gis_requests": 6,
+  "source_discovery_requests": 6,
+  "approved_media_assets": 0,
+  "database_import": "BLOCKED",
+  "public_publication": "BLOCKED",
+  "next_priority": "APPLY_R8_0_1_AND_REPEAT_ANALYZE_TEST",
+  "permanent_parallel_tracks": [
+    "HELD_CLAIM_RESEARCH_BACKLOG",
+    "FIELD_LEGAL_AND_GIS_ENRICHMENT",
+    "CONTROLLED_ASSET_RIGHTS_INTAKE",
+    "PAGE_LEVEL_HUMAN_REVIEW_AND_UAT"
+  ],
+  "content_adoption_implementation": "BUILT_PENDING_LOCAL_UAT",
+  "governed_draft_pages_implemented": 57,
+  "limited_research_pages_implemented": 22,
+  "reviewed_editorial_records_implemented": 92,
+  "governed_source_registry_records": 95,
+  "public_map_coordinates": 0,
+  "runtime_material_boundary_status": "WORKSPACE_EXPANSION_TILE_AND_MAP_ROOT_REPAIRED",
+  "source_contract_status": "EXACT_LOCAL_SNAPSHOT_ACCEPTED",
+  "compile_blocker_status": "REPAIRED_IN_TARGET_PAYLOAD",
+  "legacy_evidence_contract": {
+    "expanded_narratives": 47,
+    "review_coordinates": 3,
+    "public_coordinates": 0
+  },
+  "legacy_expanded_narrative_count": 47,
+  "governed_draft_page_count": 57,
+  "original_historical_draft": {
+    "source_preserved": true,
+    "source_sha256": "1f82a6c9941063436b40d13e258f7d03b1b3b00ef209494fe7032ee756673f6d",
+    "source_line_count": 5334,
+    "site_layers": 79,
+    "expanded_narratives": 47,
+    "catalog_summaries": 32,
+    "development_visibility": "DEBUG_ONLY",
+    "public_release": "BLOCKED"
+  },
+  "parent_baseline": "PAL_EYES_GOVERNED_CONTENT_ADOPTION_TO_PROJECT_PAGES_R5_1_3_20260719",
+  "source_contract_repair": {
+    "current_local_parent": "R5_1_3",
+    "r5_2_0_project_mutation": false,
+    "create_target_drift_repaired": true,
+    "dual_metric_test_corrected": true,
+    "compile_verifier_formatter_tolerant": true
+  },
+  "product_ux_phases_1_to_4": {
+    "phase_1_public_experience": "IMPLEMENTED_FOUNDATION",
+    "phase_2_operational_workspace": "IMPLEMENTED_FOUNDATION",
+    "phase_3_gis_media_rights": "IMPLEMENTED_FOUNDATION",
+    "phase_4_release_control": "IMPLEMENTED_FOUNDATION",
+    "database_write": false,
+    "automatic_publication": false,
+    "production_deployment": "NOT_APPROVED"
+  },
+  "r6_0_1_hotfix": {
+    "compile_static_false_positive": "REPAIRED",
+    "analyzer_info_count_target": 0,
+    "site_card_overflow_24px_x3": "REPAIRED",
+    "public_home_visual_uat": "PASS_PRELIMINARY",
+    "workspace_visual_uat": "PASS_PRELIMINARY"
+  },
+  "r6_0_2_hotfix": {
+    "residual_overflow_pixels": 4,
+    "non_compact_vertical_padding_before": 19,
+    "non_compact_vertical_padding_after": 17,
+    "card_height_changed": false,
+    "content_removed": false,
+    "analyzer_pre_fix": "PASS",
+    "chrome_start_pre_fix": "PASS"
+  },
+  "operational_backend": {
+    "mode": "HYBRID",
+    "local_fallback": "ACTIVE_IN_SESSION",
+    "supabase_schema": "PREPARED_NOT_APPLIED",
+    "rls": "PREPARED",
+    "publication": "BLOCKED"
+  },
+  "r7_0_1_hotfix": {
+    "mapper_coordinate_errors": "REPAIRED",
+    "backend_mode_label_error": "REPAIRED",
+    "analyzer_info_findings": "REPAIRED",
+    "async_context_lint": "REPAIRED",
+    "seed_sql_conflict_update": "REPAIRED",
+    "database_migration": "PREPARED_NOT_APPLIED",
+    "publication": "BLOCKED"
+  },
+  "r7_0_2_hotfix": {
+    "legacy_catalog_review_coordinates": 3,
+    "operational_coordinate_seed_candidates": 4,
+    "local_fallback_coordinate_candidates": 4,
+    "gis_review_tasks": 4,
+    "total_initial_review_tasks": 16,
+    "public_coordinates": 0,
+    "database_migration": "PREPARED_NOT_APPLIED",
+    "publication": "BLOCKED"
+  },
+  "r8_0_0_public_experience": {
+    "identity": "ATLAS_MUSEUM_EDITORIAL_MAGAZINE",
+    "primary_navigation_items": 5,
+    "mobile_navigation_items": 4,
+    "multi_dimensional_search": true,
+    "long_form_stories": 3,
+    "story_chapters": 12,
+    "public_map": "APPROVED_COORDINATES_ONLY",
+    "shared_content_states": [
+      "loading",
+      "empty",
+      "error"
+    ],
+    "database_write": false,
+    "publication": "BLOCKED"
+  },
+  "r8_0_1_hotfix": {
+    "directives_ordering_files": 2,
+    "public_story_badge_label": "حكاية موسعة",
+    "legacy_public_test_label_removed": true,
+    "site_card_width": 364,
+    "site_card_height": 402,
+    "overflow_assertion_preserved": true,
+    "database_write": false,
+    "publication": "BLOCKED"
+  }
+}

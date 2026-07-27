@@ -1,0 +1,28 @@
+{
+  "project_id": "pal_eyes",
+  "batch": "MEGA_BATCH_PAL_EYES_UI_UX_PRODUCTIVE_SURFACES_AND_GROUPED_NAVIGATION_V1",
+  "baseline_name": "PAL_EYES_UI_UX_PRODUCTIVE_SURFACES_AND_GROUPED_NAVIGATION_R2_0_0_20260714",
+  "date": "2026-07-14",
+  "parent_baseline": "PAL_EYES_INITIAL_BROWSER_UAT_ACCEPTED_R1_0_2_20260714",
+  "results": {
+    "static_contract": "PASS",
+    "dart_file_count": 43,
+    "public_shell": "PASS",
+    "workspace_grouped_navigation": "PASS",
+    "governance_isolation": "PASS",
+    "draft_content_visibility": "PASS",
+    "prototype_language_removed": "PASS",
+    "viewport_meta_removed": "PASS",
+    "database_mutation": "NONE",
+    "local_package_imports": "PASS"
+  },
+  "pending_user_environment": [
+    "flutter pub get",
+    "flutter analyze",
+    "flutter test",
+    "flutter build web",
+    "desktop route UAT",
+    "mobile UAT",
+    "dark mode UAT"
+  ]
+}

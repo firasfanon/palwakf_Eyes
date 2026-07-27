@@ -1,0 +1,2596 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_HUMAN_HISTORICAL_REVIEW_ASSET_RIGHTS_AUDIT_AND_HELD_CLAIM_PRIORITIZATION_V1",
+  "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+  "baseline_name": "PAL_EYES_HISTORICALLY_REVIEWED_ARABIC_EDITORIAL_BASELINE_CANDIDATE_V1",
+  "baseline_status": "internal_candidate_only",
+  "record_count": 92,
+  "excluded_claim_ids": [
+    "site-7551f628d089-W5-C01",
+    "site-b2a7e03ecda1-W4-C01",
+    "site-e2a5c15f76f6-W5-C02",
+    "site-f97aa993c98b-W2-C01"
+  ],
+  "records": [
+    {
+      "editorial_record_id": "ED-001",
+      "claim_id": "site-4aeec5656d1d-W1-C01",
+      "canonical_site_id": "site-4aeec5656d1d",
+      "canonical_slug": "lmsjd-l-qs-lmbrk-lhrm-lqdsy-lshryf-4aeec5",
+      "name_ar": "المسجد الأقصى المبارك / الحرم القدسي الشريف",
+      "editorial_text_ar": "تتعامل قرارات لجنة التراث العالمي مع المسجد الأقصى المبارك/الحرم القدسي الشريف بوصفه موقع عبادة إسلامياً وجزءاً لا يتجزأ من موقع القدس القديمة وأسوارها المدرج على قائمة التراث العالمي.",
+      "source_ids": [
+        "AUTH-UNESCO-JERUSALEM-DECISION-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-JERUSALEM-DECISION-001"
+      ],
+      "verification_status": "CONFIRMED_IN_OFFICIAL_DECISION",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "OFFICIAL_RECORD_LIMITED_QUOTATION_AND_PARAPHRASE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تتعامل قرارات لجنة التراث العالمي مع المسجد الأقصى المبارك/الحرم القدسي الشريف بوصفه موقع عبادة إسلامياً وجزءاً لا يتجزأ من موقع القدس القديمة وأسوارها المدرج على قائمة التراث العالمي.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-002",
+      "claim_id": "site-4b15f14c306f-W1-C01",
+      "canonical_site_id": "site-4b15f14c306f",
+      "canonical_slug": "knys-lmhd-4b15f1",
+      "name_ar": "كنيسة المهد",
+      "editorial_text_ar": "يرتبط الموقع، وفق التقليد المسيحي الموثق منذ القرن الثاني الميلادي، بميلاد السيد المسيح.",
+      "source_ids": [
+        "AUTH-UNESCO-NATIVITY-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-NATIVITY-001"
+      ],
+      "verification_status": "CONFIRMED_AS_TRADITION",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يرتبط الموقع، وفق التقليد المسيحي الموثق منذ القرن الثاني الميلادي، بميلاد السيد المسيح.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-003",
+      "claim_id": "site-4b15f14c306f-W1-C02",
+      "canonical_site_id": "site-4b15f14c306f",
+      "canonical_slug": "knys-lmhd-4b15f1",
+      "name_ar": "كنيسة المهد",
+      "editorial_text_ar": "اكتمل أول بناء كنسي موثق في الموقع سنة 339م، ثم أُقيم بناء بديل بعد حريق في القرن السادس، مع بقاء أجزاء من فسيفساء الكنيسة الأولى.",
+      "source_ids": [
+        "AUTH-UNESCO-NATIVITY-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-NATIVITY-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "اكتمل أول بناء كنسي موثق في الموقع سنة 339م، ثم أُقيم بناء بديل بعد حريق في القرن السادس، مع بقاء أجزاء من فسيفساء الكنيسة الأولى.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-004",
+      "claim_id": "site-88fede7b6df0-W1-C01",
+      "canonical_site_id": "site-88fede7b6df0",
+      "canonical_slug": "qry-btyr-88fede",
+      "name_ar": "قرية بتير",
+      "editorial_text_ar": "تمثل بتير مشهداً ثقافياً فلسطينياً يقوم على مصاطب حجرية جافة ونظام ري معقد يدعم زراعة الزيتون والخضروات.",
+      "source_ids": [
+        "AUTH-UNESCO-BATTIR-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-BATTIR-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تمثل بتير مشهداً ثقافياً فلسطينياً يقوم على مصاطب حجرية جافة ونظام ري معقد يدعم زراعة الزيتون والخضروات.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-005",
+      "claim_id": "site-88fede7b6df0-W1-C02",
+      "canonical_site_id": "site-88fede7b6df0",
+      "canonical_slug": "qry-btyr-88fede",
+      "name_ar": "قرية بتير",
+      "editorial_text_ar": "يعتمد توزيع مياه الري بين العائلات على دورة زمنية منظمة وآلية حسابية لتخصيص الحصص.",
+      "source_ids": [
+        "AUTH-UNESCO-BATTIR-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-BATTIR-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يعتمد توزيع مياه الري بين العائلات على دورة زمنية منظمة وآلية حسابية لتخصيص الحصص.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-006",
+      "claim_id": "site-6b6c5a396756-W1-C01",
+      "canonical_site_id": "site-6b6c5a396756",
+      "canonical_slug": "bld-lkhlyl-lqdym-6b6c5a",
+      "name_ar": "بلدة الخليل القديمة",
+      "editorial_text_ar": "تحافظ البلدة القديمة في الخليل بدرجة كبيرة على نسيجها العمراني المملوكي، مع إضافات وتوسعات من الفترة العثمانية.",
+      "source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تحافظ البلدة القديمة في الخليل بدرجة كبيرة على نسيجها العمراني المملوكي، مع إضافات وتوسعات من الفترة العثمانية.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-007",
+      "claim_id": "site-6b6c5a396756-W1-C02",
+      "canonical_site_id": "site-6b6c5a396756",
+      "canonical_slug": "bld-lkhlyl-lqdym-6b6c5a",
+      "name_ar": "بلدة الخليل القديمة",
+      "editorial_text_ar": "يشكل مجمع الحرم الإبراهيمي/مغارة البطاركة محوراً أساسياً في البلدة القديمة، ويعود السور التذكاري المحيط بالمجمع إلى القرن الأول الميلادي.",
+      "source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يشكل مجمع الحرم الإبراهيمي/مغارة البطاركة محوراً أساسياً في البلدة القديمة، ويعود السور التذكاري المحيط بالمجمع إلى القرن الأول الميلادي.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-008",
+      "claim_id": "site-6b6c5a396756-W1-C03",
+      "canonical_site_id": "site-6b6c5a396756",
+      "canonical_slug": "bld-lkhlyl-lqdym-6b6c5a",
+      "name_ar": "بلدة الخليل القديمة",
+      "editorial_text_ar": "يحظى الموقع بمكانة دينية لدى اليهودية والمسيحية والإسلام.",
+      "source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يحظى الموقع بمكانة دينية لدى اليهودية والمسيحية والإسلام.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-009",
+      "claim_id": "site-899e38be070d-W1-C01",
+      "canonical_site_id": "site-899e38be070d",
+      "canonical_slug": "lhrm-lbrhymy-899e38",
+      "name_ar": "الحرم الإبراهيمي",
+      "editorial_text_ar": "أُقيم السور التذكاري المحيط بالمغارة المقدسة في القرن الأول الميلادي.",
+      "source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "أُقيم السور التذكاري المحيط بالمغارة المقدسة في القرن الأول الميلادي.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-010",
+      "claim_id": "site-899e38be070d-W1-C02",
+      "canonical_site_id": "site-899e38be070d",
+      "canonical_slug": "lhrm-lbrhymy-899e38",
+      "name_ar": "الحرم الإبراهيمي",
+      "editorial_text_ar": "يرتبط الموقع بتقاليد دينية تتصل بالنبي إبراهيم، ويحظى بالتبجيل في الديانات التوحيدية الثلاث.",
+      "source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "verification_status": "CONFIRMED_AS_TRADITION_AND_LIVING_HERITAGE",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يرتبط الموقع بتقاليد دينية تتصل بالنبي إبراهيم، ويحظى بالتبجيل في الديانات التوحيدية الثلاث.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-011",
+      "claim_id": "site-a86fc049d470-W1-C01",
+      "canonical_site_id": "site-a86fc049d470",
+      "canonical_slug": "tl-lsltn-ryh-lqdym-a86fc0",
+      "name_ar": "تل السلطان (أريحا القديمة)",
+      "editorial_text_ar": "يحتوي موقع تل السلطان على ترسبات تدل على نشاط بشري يعود إلى نحو 10,500 قبل الميلاد.",
+      "source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يحتوي موقع تل السلطان على ترسبات تدل على نشاط بشري يعود إلى نحو 10,500 قبل الميلاد.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-012",
+      "claim_id": "site-a86fc049d470-W1-C02",
+      "canonical_site_id": "site-a86fc049d470",
+      "canonical_slug": "tl-lsltn-ryh-lqdym-a86fc0",
+      "name_ar": "تل السلطان (أريحا القديمة)",
+      "editorial_text_ar": "أصبح الموقع في الألفيتين التاسعة والثامنة قبل الميلاد مستوطنة دائمة كبيرة، وما زالت فيه بقايا سور وخندق وبرج.",
+      "source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "أصبح الموقع في الألفيتين التاسعة والثامنة قبل الميلاد مستوطنة دائمة كبيرة، وما زالت فيه بقايا سور وخندق وبرج.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-013",
+      "claim_id": "site-a86fc049d470-W1-C03",
+      "canonical_site_id": "site-a86fc049d470",
+      "canonical_slug": "tl-lsltn-ryh-lqdym-a86fc0",
+      "name_ar": "تل السلطان (أريحا القديمة)",
+      "editorial_text_ar": "تشير بقايا العصر البرونزي الأوسط إلى وجود مدينة-دولة كنعانية كبيرة في الموقع.",
+      "source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تشير بقايا العصر البرونزي الأوسط إلى وجود مدينة-دولة كنعانية كبيرة في الموقع.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-014",
+      "claim_id": "site-6f6afe87f969-W1-C01",
+      "canonical_site_id": "site-6f6afe87f969",
+      "canonical_slug": "sbsty-shmrwn-6f6afe",
+      "name_ar": "سبسطية (شمرون)",
+      "editorial_text_ar": "أدرجت دولة فلسطين سبسطية في قائمتها التمهيدية لدى اليونسكو سنة 2012.",
+      "source_ids": [
+        "AUTH-UNESCO-SEBASTIA-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-SEBASTIA-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "ATTRIBUTED_STATE_PARTY_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "أدرجت دولة فلسطين سبسطية في قائمتها التمهيدية لدى اليونسكو سنة 2012.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-015",
+      "claim_id": "site-6f6afe87f969-W1-C02",
+      "canonical_site_id": "site-6f6afe87f969",
+      "canonical_slug": "sbsty-shmrwn-6f6afe",
+      "name_ar": "سبسطية (شمرون)",
+      "editorial_text_ar": "يصف ملف دولة فلسطين سبسطية بأنها عاصمة في العصر الحديدي الثاني ومركزاً عمرانياً مهماً في العصرين الهلنستي والروماني، كما يوثق حملات تنقيب رئيسية في الموقع.",
+      "source_ids": [
+        "AUTH-UNESCO-SEBASTIA-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-SEBASTIA-001"
+      ],
+      "verification_status": "CONFIRMED_AS_STATE_SUBMISSION",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "ATTRIBUTED_STATE_PARTY_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يصف ملف دولة فلسطين سبسطية بأنها عاصمة في العصر الحديدي الثاني ومركزاً عمرانياً مهماً في العصرين الهلنستي والروماني، كما يوثق حملات تنقيب رئيسية في الموقع.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-016",
+      "claim_id": "site-6f6afe87f969-W1-C03",
+      "canonical_site_id": "site-6f6afe87f969",
+      "canonical_slug": "sbsty-shmrwn-6f6afe",
+      "name_ar": "سبسطية (شمرون)",
+      "editorial_text_ar": "ترتبط سبسطية، في التقاليد المسيحية والإسلامية، بالنبي يحيى/يوحنا المعمدان.",
+      "source_ids": [
+        "AUTH-UNESCO-SEBASTIA-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-SEBASTIA-001"
+      ],
+      "verification_status": "CONFIRMED_AS_TRADITION",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "ATTRIBUTED_STATE_PARTY_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "ترتبط سبسطية، في التقاليد المسيحية والإسلامية، بالنبي يحيى/يوحنا المعمدان.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-017",
+      "claim_id": "site-0285c869e647-W1-C01",
+      "canonical_site_id": "site-0285c869e647",
+      "canonical_slug": "qsr-hshm-khrb-lmfjr-0285c8",
+      "name_ar": "قصر هشام (خربة المفجر)",
+      "editorial_text_ar": "يؤرخ ملف دولة فلسطين مجمع خربة المفجر بالفترة بين 724 و743م، ويرجح ارتباط بنائه بهشام بن عبد الملك ثم استكمال زخرفته في عهد الوليد الثاني.",
+      "source_ids": [
+        "AUTH-UNESCO-HISHAM-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HISHAM-001"
+      ],
+      "verification_status": "CONFIRMED_AS_STATE_SUBMISSION",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "ATTRIBUTED_STATE_PARTY_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يؤرخ ملف دولة فلسطين مجمع خربة المفجر بالفترة بين 724 و743م، ويرجح ارتباط بنائه بهشام بن عبد الملك ثم استكمال زخرفته في عهد الوليد الثاني.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-018",
+      "claim_id": "site-0285c869e647-W1-C02",
+      "canonical_site_id": "site-0285c869e647",
+      "canonical_slug": "qsr-hshm-khrb-lmfjr-0285c8",
+      "name_ar": "قصر هشام (خربة المفجر)",
+      "editorial_text_ar": "يسجل الملف تعرض المجمع لزلزال سنة 749م، كما يوثق حفريات دائرة الآثار الفلسطينية بين 1935 و1948 بإدارة ديمتري برامكي وبمشاركة روبرت هاملتون.",
+      "source_ids": [
+        "AUTH-UNESCO-HISHAM-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HISHAM-001"
+      ],
+      "verification_status": "CONFIRMED_AS_STATE_SUBMISSION",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "ATTRIBUTED_STATE_PARTY_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يسجل الملف تعرض المجمع لزلزال سنة 749م، كما يوثق حفريات دائرة الآثار الفلسطينية بين 1935 و1948 بإدارة ديمتري برامكي وبمشاركة روبرت هاملتون.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-019",
+      "claim_id": "site-0285c869e647-W1-C03",
+      "canonical_site_id": "site-0285c869e647",
+      "canonical_slug": "qsr-hshm-khrb-lmfjr-0285c8",
+      "name_ar": "قصر هشام (خربة المفجر)",
+      "editorial_text_ar": "يضم الموقع مجمع حمامات كبيراً وزخارف فسيفسائية واسعة، من بينها لوحة شجرة الحياة.",
+      "source_ids": [
+        "AUTH-UNESCO-HISHAM-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HISHAM-001"
+      ],
+      "verification_status": "CONFIRMED_AS_STATE_SUBMISSION",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "ATTRIBUTED_STATE_PARTY_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يضم الموقع مجمع حمامات كبيراً وزخارف فسيفسائية واسعة، من بينها لوحة شجرة الحياة.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-020",
+      "claim_id": "site-f9df0c7e708c-W2-C01",
+      "canonical_site_id": "site-f9df0c7e708c",
+      "canonical_slug": "bld-slwn-f9df0c",
+      "name_ar": "بلدة سلوان",
+      "editorial_text_ar": "يضع ملف دولة فلسطين سلوان ضمن السياق الجغرافي التاريخي المحيط بالبلدة القديمة، ويعرض عين جيحون بوصفها مصدراً مائياً محورياً في تطور القدس.",
+      "source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001"
+      ],
+      "verification_status": "ATTRIBUTED_STATE_PARTY_CONTEXT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "ATTRIBUTED_STATE_PARTY_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يضع ملف دولة فلسطين سلوان ضمن السياق الجغرافي التاريخي المحيط بالبلدة القديمة، ويعرض عين جيحون بوصفها مصدراً مائياً محورياً في تطور القدس.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-021",
+      "claim_id": "site-f9df0c7e708c-W2-C02",
+      "canonical_site_id": "site-f9df0c7e708c",
+      "canonical_slug": "bld-slwn-f9df0c",
+      "name_ar": "بلدة سلوان",
+      "editorial_text_ar": "تسجل وثائق مراقبة اليونسكو تقارير ومخاوف قدمتها أطراف مختلفة بشأن أعمال حفر وأنفاق في سلوان؛ ولا تمثل هذه الإشارات تحقيقاً مستقلاً من اليونسكو في كل ادعاء.",
+      "source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+      ],
+      "verification_status": "CONFIRMED_AS_REPORTED_CONCERN_NOT_INDEPENDENT_FINDING",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "OFFICIAL_RECORD_LIMITED_QUOTATION_AND_PARAPHRASE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تسجل وثائق مراقبة اليونسكو تقارير ومخاوف قدمتها أطراف مختلفة بشأن أعمال حفر وأنفاق في سلوان؛ ولا تمثل هذه الإشارات تحقيقاً مستقلاً من اليونسكو في كل ادعاء.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-022",
+      "claim_id": "site-f9067873c322-W2-C01",
+      "canonical_site_id": "site-f9067873c322",
+      "canonical_slug": "hy-t-lbrq-f90678",
+      "name_ar": "حائط البراق",
+      "editorial_text_ar": "تعد اليونسكو حائط البراق/الحائط الغربي أحد المعالم الرئيسية ضمن موقع القدس القديمة وأسوارها.",
+      "source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تعد اليونسكو حائط البراق/الحائط الغربي أحد المعالم الرئيسية ضمن موقع القدس القديمة وأسوارها.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-023",
+      "claim_id": "site-f9067873c322-W2-C02",
+      "canonical_site_id": "site-f9067873c322",
+      "canonical_slug": "hy-t-lbrq-f90678",
+      "name_ar": "حائط البراق",
+      "editorial_text_ar": "شُكلت سنة 1930 لجنة دولية لبحث الحقوق والمطالب الإسلامية واليهودية المرتبطة بالحائط.",
+      "source_ids": [
+        "W2-AUTH-UNISPAL-WESTERN-WALL-1930"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-UNISPAL-WESTERN-WALL-1930"
+      ],
+      "verification_status": "CONFIRMED_HISTORICAL_RECORD",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "OFFICIAL_RECORD_LIMITED_QUOTATION_AND_PARAPHRASE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "شُكلت سنة 1930 لجنة دولية لبحث الحقوق والمطالب الإسلامية واليهودية المرتبطة بالحائط.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-024",
+      "claim_id": "site-4bbdf07d8d66-W2-C01",
+      "canonical_site_id": "site-4bbdf07d8d66",
+      "canonical_slug": "swq-lqtnyn-4bbdf0",
+      "name_ar": "سوق القطانين",
+      "editorial_text_ar": "سوق القطانين سوق مملوكي يصل إلى شارع الواد، ويرتبط عبر باب القطانين بساحة الحرم الشريف.",
+      "source_ids": [
+        "W2-AUTH-ARCHNET-QATTANIN-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-ARCHNET-QATTANIN-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "سوق القطانين سوق مملوكي يصل إلى شارع الواد، ويرتبط عبر باب القطانين بساحة الحرم الشريف.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-025",
+      "claim_id": "site-8d297f3c37a9-W2-C01",
+      "canonical_site_id": "site-8d297f3c37a9",
+      "canonical_slug": "qbr-lsyd-mrym-mgr-ljsmny-8d297f",
+      "name_ar": "قبر السيدة مريم (مغارة الجسمانية)",
+      "editorial_text_ar": "تحافظ بطريركية الروم الأرثوذكس على التقليد الديني الحي الذي يعرّف مزار الجسمانية بوصفه قبر السيدة مريم.",
+      "source_ids": [
+        "W2-AUTH-JERUSALEM-PATRIARCHATE-GETHSEMANE-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-JERUSALEM-PATRIARCHATE-GETHSEMANE-001"
+      ],
+      "verification_status": "CONFIRMED_AS_RELIGIOUS_TRADITION",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تحافظ بطريركية الروم الأرثوذكس على التقليد الديني الحي الذي يعرّف مزار الجسمانية بوصفه قبر السيدة مريم.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-026",
+      "claim_id": "site-8d297f3c37a9-W2-C02",
+      "canonical_site_id": "site-8d297f3c37a9",
+      "canonical_slug": "qbr-lsyd-mrym-mgr-ljsmny-8d297f",
+      "name_ar": "قبر السيدة مريم (مغارة الجسمانية)",
+      "editorial_text_ar": "توثق منشورات مؤسسة الفرنسيسكان للدراسات الكتابية أعمال تنقيب أثرية في الجسمانية وقبر السيدة مريم.",
+      "source_ids": [
+        "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001"
+      ],
+      "verification_status": "CONFIRMED_RESEARCH_CORPUS",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "توثق منشورات مؤسسة الفرنسيسكان للدراسات الكتابية أعمال تنقيب أثرية في الجسمانية وقبر السيدة مريم.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-027",
+      "claim_id": "site-f7553f79288f-W2-C01",
+      "canonical_site_id": "site-f7553f79288f",
+      "canonical_slug": "qswr-lmmlyk-shr-lwd-f7553f",
+      "name_ar": "قصور المماليك (شارع الواد)",
+      "editorial_text_ar": "يضم شارع الواد مؤسسات معمارية مملوكية بارزة، ويرتبط عمرانياً بسوق القطانين وبابه.",
+      "source_ids": [
+        "W2-AUTH-ARCHNET-QATTANIN-001",
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-ARCHNET-QATTANIN-001",
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+      ],
+      "verification_status": "CONFIRMED_AS_URBAN_ARCHITECTURAL_CONTEXT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY",
+        "OFFICIAL_RECORD_LIMITED_QUOTATION_AND_PARAPHRASE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يضم شارع الواد مؤسسات معمارية مملوكية بارزة، ويرتبط عمرانياً بسوق القطانين وبابه.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-028",
+      "claim_id": "site-83d3025c4675-W2-C01",
+      "canonical_site_id": "site-83d3025c4675",
+      "canonical_slug": "ql-lqds-brj-dwd-83d302",
+      "name_ar": "قلعة القدس (برج داود)",
+      "editorial_text_ar": "تتكون قلعة القدس الحالية من طبقات معمارية متعددة تشمل تحصينات رومانية وبناءً صليبياً وأيوبياً ومملوكياً وعثمانياً.",
+      "source_ids": [
+        "W2-AUTH-ARCHNET-CITADEL-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-ARCHNET-CITADEL-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تتكون قلعة القدس الحالية من طبقات معمارية متعددة تشمل تحصينات رومانية وبناءً صليبياً وأيوبياً ومملوكياً وعثمانياً.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-029",
+      "claim_id": "site-431ed266867b-W2-C01",
+      "canonical_site_id": "site-431ed266867b",
+      "canonical_slug": "knys-lqym-431ed2",
+      "name_ar": "كنيسة القيامة",
+      "editorial_text_ar": "تعد كنيسة القيامة من المعالم الرئيسية في موقع القدس القديمة، وتربط اليونسكو قبة القيامة بقبر المسيح ضمن التقليد المسيحي.",
+      "source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-001"
+      ],
+      "verification_status": "CONFIRMED_AS_HERITAGE_AND_RELIGIOUS_TRADITION",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تعد كنيسة القيامة من المعالم الرئيسية في موقع القدس القديمة، وتربط اليونسكو قبة القيامة بقبر المسيح ضمن التقليد المسيحي.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-030",
+      "claim_id": "site-431ed266867b-W2-C02",
+      "canonical_site_id": "site-431ed266867b",
+      "canonical_slug": "knys-lqym-431ed2",
+      "name_ar": "كنيسة القيامة",
+      "editorial_text_ar": "توثق مؤسسة الفرنسيسكان للدراسات الكتابية أعمال تنقيب أثرية في كنيسة القيامة.",
+      "source_ids": [
+        "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001"
+      ],
+      "verification_status": "CONFIRMED_RESEARCH_CORPUS",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "توثق مؤسسة الفرنسيسكان للدراسات الكتابية أعمال تنقيب أثرية في كنيسة القيامة.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-031",
+      "claim_id": "site-3a3d3669f0ba-W2-C01",
+      "canonical_site_id": "site-3a3d3669f0ba",
+      "canonical_slug": "mqm-lnby-dwwd-jbl-shywn-3a3d36",
+      "name_ar": "مقام النبي داوود (جبل صهيون)",
+      "editorial_text_ar": "تنقل وثيقة مراقبة لليونسكو تقريراً أردنياً وفلسطينياً يصف مسجد النبي داوود بأنه عقار وقف إسلامي قرب السور الجنوبي للبلدة القديمة، ويتحدث عن تغييرات أُجريت في الموقع.",
+      "source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+      ],
+      "verification_status": "CONFIRMED_AS_ATTRIBUTED_REPORT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "OFFICIAL_RECORD_LIMITED_QUOTATION_AND_PARAPHRASE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تنقل وثيقة مراقبة لليونسكو تقريراً أردنياً وفلسطينياً يصف مسجد النبي داوود بأنه عقار وقف إسلامي قرب السور الجنوبي للبلدة القديمة، ويتحدث عن تغييرات أُجريت في الموقع.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-032",
+      "claim_id": "site-3a3d3669f0ba-W2-C02",
+      "canonical_site_id": "site-3a3d3669f0ba",
+      "canonical_slug": "mqm-lnby-dwwd-jbl-shywn-3a3d36",
+      "name_ar": "مقام النبي داوود (جبل صهيون)",
+      "editorial_text_ar": "يظهر جبل صهيون ضمن السياق الجغرافي التاريخي والديني الأوسع في مقترح توسعة قدمته دولة طرف ثم أُرجئ النظر فيه.",
+      "source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001"
+      ],
+      "verification_status": "ATTRIBUTED_STATE_PARTY_CONTEXT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "ATTRIBUTED_STATE_PARTY_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يظهر جبل صهيون ضمن السياق الجغرافي التاريخي والديني الأوسع في مقترح توسعة قدمته دولة طرف ثم أُرجئ النظر فيه.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-033",
+      "claim_id": "site-63c0ba59c24e-W2-C01",
+      "canonical_site_id": "site-63c0ba59c24e",
+      "canonical_slug": "tl-lrmyd-63c0ba",
+      "name_ar": "تل الرميدة",
+      "editorial_text_ar": "يدخل تل الرميدة ضمن السياق الأثري للمنطقة العازلة المحيطة ببلدة الخليل القديمة.",
+      "source_ids": [
+        "W2-AUTH-UNESCO-HEBRON-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يدخل تل الرميدة ضمن السياق الأثري للمنطقة العازلة المحيطة ببلدة الخليل القديمة.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-034",
+      "claim_id": "site-63c0ba59c24e-W2-C02",
+      "canonical_site_id": "site-63c0ba59c24e",
+      "canonical_slug": "tl-lrmyd-63c0ba",
+      "name_ar": "تل الرميدة",
+      "editorial_text_ar": "وثقت إيكوموس استبعاد تل الرميدة من حدود العقار المرشح أصلاً، وناقشت دلائل على استيطان أقدم في محيطه.",
+      "source_ids": [
+        "W2-AUTH-ICOMOS-HEBRON-2017"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-ICOMOS-HEBRON-2017"
+      ],
+      "verification_status": "CONFIRMED_EVALUATION_CONTEXT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "OFFICIAL_RECORD_LIMITED_QUOTATION_AND_PARAPHRASE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "وثقت إيكوموس استبعاد تل الرميدة من حدود العقار المرشح أصلاً، وناقشت دلائل على استيطان أقدم في محيطه.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-035",
+      "claim_id": "site-cd3be04163b6-W2-C01",
+      "canonical_site_id": "site-cd3be04163b6",
+      "canonical_slug": "hlhwl-mqm-lnby-ywns-cd3be0",
+      "name_ar": "حلحول (مقام النبي يونس)",
+      "editorial_text_ar": "يقع مسجد ومقام النبي يونس في البلدة القديمة بحلحول، ويؤرخ السجل المعماري المبنى بسنة 623هـ/1226م، وينسب رعايته إلى العصر الأيوبي مع تسجيل تجديدات مملوكية لاحقة.",
+      "source_ids": [
+        "W2-AUTH-MWNF-NABI-YUNUS-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-MWNF-NABI-YUNUS-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يقع مسجد ومقام النبي يونس في البلدة القديمة بحلحول، ويؤرخ السجل المعماري المبنى بسنة 623هـ/1226م، وينسب رعايته إلى العصر الأيوبي مع تسجيل تجديدات مملوكية لاحقة.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-036",
+      "claim_id": "site-c9ac723c0271-W2-C01",
+      "canonical_site_id": "site-c9ac723c0271",
+      "canonical_slug": "khrb-lnby-nwh-c9ac72",
+      "name_ar": "خربة النبي نوح",
+      "editorial_text_ar": "توثق وكالة وفا وجود مقام النبي نوح في دورا بوصفه معلماً دينياً وتاريخياً محلياً، كما تسجل أعمال ترميم واستخداماً خيرياً للموقع حتى سنة 2020.",
+      "source_ids": [
+        "W2-AUTH-WAFA-NABI-NUH-2020"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-WAFA-NABI-NUH-2020"
+      ],
+      "verification_status": "CONFIRMED_CURRENT_EXISTENCE_AND_USE",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "توثق وكالة وفا وجود مقام النبي نوح في دورا بوصفه معلماً دينياً وتاريخياً محلياً، كما تسجل أعمال ترميم واستخداماً خيرياً للموقع حتى سنة 2020.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-037",
+      "claim_id": "site-0dc57168d963-W2-C01",
+      "canonical_site_id": "site-0dc57168d963",
+      "canonical_slug": "mgr-lbtrk-jz-mn-lhrm-0dc571",
+      "name_ar": "مغارة البطاركة (جزء من الحرم)",
+      "editorial_text_ar": "تحدد اليونسكو مغارة البطاركة/الغار الشريف مكوّناً داخل مجمع الحرم الإبراهيمي، وتعرض نسب الدفن المرتبطة بها ضمن إطار التقاليد الدينية.",
+      "source_ids": [
+        "W2-AUTH-UNESCO-HEBRON-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "verification_status": "CONFIRMED_AS_COMPONENT_AND_TRADITION",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تحدد اليونسكو مغارة البطاركة/الغار الشريف مكوّناً داخل مجمع الحرم الإبراهيمي، وتعرض نسب الدفن المرتبطة بها ضمن إطار التقاليد الدينية.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-038",
+      "claim_id": "site-7532d020842e-W2-C01",
+      "canonical_site_id": "site-7532d020842e",
+      "canonical_slug": "mqm-lshykh-ly-lbk-7532d0",
+      "name_ar": "مقام الشيخ علي البكاء",
+      "editorial_text_ar": "تناقش إيكوموس منطقة الشيخ علي البكاء بوصفها منطقة مستبعدة تؤثر في سلامة بلدة الخليل القديمة وفي فهم أنماط شوارعها الأقدم.",
+      "source_ids": [
+        "W2-AUTH-ICOMOS-HEBRON-2017"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-ICOMOS-HEBRON-2017"
+      ],
+      "verification_status": "CONFIRMED_CONTEXT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "OFFICIAL_RECORD_LIMITED_QUOTATION_AND_PARAPHRASE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تناقش إيكوموس منطقة الشيخ علي البكاء بوصفها منطقة مستبعدة تؤثر في سلامة بلدة الخليل القديمة وفي فهم أنماط شوارعها الأقدم.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-039",
+      "claim_id": "site-37c8be50ce73-W2-C01",
+      "canonical_site_id": "site-37c8be50ce73",
+      "canonical_slug": "brk-slymn-37c8be",
+      "name_ar": "برك سليمان",
+      "editorial_text_ar": "يوثق مشروع الترميم ثلاث برك تاريخية وقلعة مراد العثمانية، ويذكر اكتمال المشروع سنة 2012 باستخدام تدخلات مميزة وقابلة للعكس.",
+      "source_ids": [
+        "W2-AUTH-ARCHNET-SOLOMON-POOLS-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-ARCHNET-SOLOMON-POOLS-001"
+      ],
+      "verification_status": "CONFIRMED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يوثق مشروع الترميم ثلاث برك تاريخية وقلعة مراد العثمانية، ويذكر اكتمال المشروع سنة 2012 باستخدام تدخلات مميزة وقابلة للعكس.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-041",
+      "claim_id": "site-a8aeb054b451-W2-C01",
+      "canonical_site_id": "site-a8aeb054b451",
+      "canonical_slug": "dyr-mr-sb-a8aeb0",
+      "name_ar": "دير مار سابا",
+      "editorial_text_ar": "يضع التاريخ المؤسسي للبطريركية نشأة لافرا القديس سابا قرابة سنة 483م، ويصف استمرار النشاط الرهباني فيها عبر فترات طويلة.",
+      "source_ids": [
+        "W2-AUTH-JERUSALEM-PATRIARCHATE-MAR-SABA-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-JERUSALEM-PATRIARCHATE-MAR-SABA-001"
+      ],
+      "verification_status": "CONFIRMED_IN_ECCLESIASTICAL_HISTORY",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يضع التاريخ المؤسسي للبطريركية نشأة لافرا القديس سابا قرابة سنة 483م، ويصف استمرار النشاط الرهباني فيها عبر فترات طويلة.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-042",
+      "claim_id": "site-133155518939-W2-C01",
+      "canonical_site_id": "site-133155518939",
+      "canonical_slug": "qsr-hyrwdywn-133155",
+      "name_ar": "قصر هيروديون",
+      "editorial_text_ar": "توجد مجموعة واسعة من تقارير الحفريات المنشورة عن هيروديون، تشمل تقرير كوربو عن القصر-الحصن وتقارير نهائية لاحقة لحفريات 1972–2010.",
+      "source_ids": [
+        "W2-AUTH-SBF-HERODIUM-BIBLIOGRAPHY-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-SBF-HERODIUM-BIBLIOGRAPHY-001"
+      ],
+      "verification_status": "CONFIRMED_RESEARCH_CORPUS",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "توجد مجموعة واسعة من تقارير الحفريات المنشورة عن هيروديون، تشمل تقرير كوربو عن القصر-الحصن وتقارير نهائية لاحقة لحفريات 1972–2010.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-043",
+      "claim_id": "site-133155518939-W2-C02",
+      "canonical_site_id": "site-133155518939",
+      "canonical_slug": "qsr-hyrwdywn-133155",
+      "name_ar": "قصر هيروديون",
+      "editorial_text_ar": "تتناول فصول أكاديمية منشورة الكنائس البيزنطية والنقوش اليونانية في هيروديون.",
+      "source_ids": [
+        "W2-AUTH-SBF-HERODIUM-CHRISTIAN-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-SBF-HERODIUM-CHRISTIAN-001"
+      ],
+      "verification_status": "CONFIRMED_RESEARCH_CORPUS",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تتناول فصول أكاديمية منشورة الكنائس البيزنطية والنقوش اليونانية في هيروديون.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-044",
+      "claim_id": "site-63fe9eba7871-W2-C01",
+      "canonical_site_id": "site-63fe9eba7871",
+      "canonical_slug": "ql-lbrk-63fe9e",
+      "name_ar": "قلعة البرك",
+      "editorial_text_ar": "يعرف سجل الترميم قلعة مراد العثمانية بوصفها مكوّناً من مجمع برك سليمان التاريخي.",
+      "source_ids": [
+        "W2-AUTH-ARCHNET-SOLOMON-POOLS-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-ARCHNET-SOLOMON-POOLS-001"
+      ],
+      "verification_status": "CONFIRMED_AS_COMPONENT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يعرف سجل الترميم قلعة مراد العثمانية بوصفها مكوّناً من مجمع برك سليمان التاريخي.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-045",
+      "claim_id": "site-57adc62d6d70-W2-C01",
+      "canonical_site_id": "site-57adc62d6d70",
+      "canonical_slug": "mgr-lhlyb-57adc6",
+      "name_ar": "مغارة الحليب",
+      "editorial_text_ar": "مغارة الحليب مزار محلي قرب كنيسة المهد، وترتبط بتقاليد عبادة حية لدى نساء مسيحيات ومسلمات.",
+      "source_ids": [
+        "W2-AUTH-SBF-MILK-GROTTO-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-SBF-MILK-GROTTO-001"
+      ],
+      "verification_status": "CONFIRMED_LIVING_TRADITION",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "مغارة الحليب مزار محلي قرب كنيسة المهد، وترتبط بتقاليد عبادة حية لدى نساء مسيحيات ومسلمات.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-046",
+      "claim_id": "site-57adc62d6d70-W2-C02",
+      "canonical_site_id": "site-57adc62d6d70",
+      "canonical_slug": "mgr-lhlyb-57adc6",
+      "name_ar": "مغارة الحليب",
+      "editorial_text_ar": "توثق مؤسسة الفرنسيسكان للدراسات الكتابية تنقيباً أثرياً إسعافياً في المزار خلال أكتوبر 2005.",
+      "source_ids": [
+        "W2-AUTH-SBF-MILK-GROTTO-EXCAVATION-2005"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-SBF-MILK-GROTTO-EXCAVATION-2005"
+      ],
+      "verification_status": "CONFIRMED_ARCHAEOLOGICAL_ACTIVITY",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "توثق مؤسسة الفرنسيسكان للدراسات الكتابية تنقيباً أثرياً إسعافياً في المزار خلال أكتوبر 2005.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-047",
+      "claim_id": "site-2e45744cdab4-W3-C01",
+      "canonical_site_id": "site-2e45744cdab4",
+      "canonical_slug": "lmsjd-l-mry-lkbyr-2e4574",
+      "name_ar": "المسجد العمري الكبير",
+      "editorial_text_ar": "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان المسجد العمري الكبير من الممتلكات الثقافية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحدد هذا الإدراج وحده درجة الضرر الهندسية.",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "original_editorial_text_ar": "تدرج اليونسكو المسجد العمري الكبير ضمن الممتلكات الثقافية في غزة التي تحققت من تعرضها للضرر.",
+      "historically_reviewed_text_ar": "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان المسجد العمري الكبير من الممتلكات الثقافية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحدد هذا الإدراج وحده درجة الضرر الهندسية.",
+      "temporal_validity": {
+        "source_update_date": "2026-03-25",
+        "verified_damage_cutoff": "2026-03-24",
+        "freshness_review_required_before_any_release": true
+      },
+      "historical_review_status": "ACCEPTED_AFTER_MANDATORY_TEMPORAL_REVISION"
+    },
+    {
+      "editorial_record_id": "ED-048",
+      "claim_id": "site-2e45744cdab4-W3-C02",
+      "canonical_site_id": "site-2e45744cdab4",
+      "canonical_slug": "lmsjd-l-mry-lkbyr-2e4574",
+      "name_ar": "المسجد العمري الكبير",
+      "editorial_text_ar": "يعرف ملف دولة فلسطين المقدم سنة 2026 المسجد بوصفه المسجد الجامع المركزي في غزة التاريخية، ويصف توسعات مملوكية وعثمانية في معلم متعدد الطبقات.",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026"
+      ],
+      "verification_status": "CONFIRMED_AS_STATE_PARTY_SUBMISSION",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يعرف ملف دولة فلسطين المقدم سنة 2026 المسجد بوصفه المسجد الجامع المركزي في غزة التاريخية، ويصف توسعات مملوكية وعثمانية في معلم متعدد الطبقات.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-049",
+      "claim_id": "site-21150eefdea6-W3-C01",
+      "canonical_site_id": "site-21150eefdea6",
+      "canonical_slug": "tl-l-jwl-mdyn-gz-lqdym-21150e",
+      "name_ar": "تل العجول",
+      "editorial_text_ar": "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان تل العجول من المواقع الأثرية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحدد ذلك وحده حدود الضرر أو شدته.",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "original_editorial_text_ar": "تدرج اليونسكو تل العجول ضمن المواقع الأثرية في غزة التي تحققت من تعرضها للضرر.",
+      "historically_reviewed_text_ar": "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان تل العجول من المواقع الأثرية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحدد ذلك وحده حدود الضرر أو شدته.",
+      "temporal_validity": {
+        "source_update_date": "2026-03-25",
+        "verified_damage_cutoff": "2026-03-24",
+        "freshness_review_required_before_any_release": true
+      },
+      "historical_review_status": "ACCEPTED_AFTER_MANDATORY_TEMPORAL_REVISION"
+    },
+    {
+      "editorial_record_id": "ED-050",
+      "claim_id": "site-21150eefdea6-W3-C02",
+      "canonical_site_id": "site-21150eefdea6",
+      "canonical_slug": "tl-l-jwl-mdyn-gz-lqdym-21150e",
+      "name_ar": "تل العجول",
+      "editorial_text_ar": "تحدد السجلات الأكاديمية والمتحفية تل العجول موقعاً أثرياً مستقلاً من العصر البرونزي جنوب مدينة غزة الحديثة، وتوثق مواد من العصرين البرونزي الأوسط والمتأخر.",
+      "source_ids": [
+        "W3-AUTH-UCL-TELL-AJJUL-2021",
+        "W3-AUTH-BM-TELL-AJJUL-COLLECTION"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-BM-TELL-AJJUL-COLLECTION",
+        "W3-AUTH-UCL-TELL-AJJUL-2021"
+      ],
+      "verification_status": "CONFIRMED_CORE_ARCHAEOLOGICAL_IDENTITY",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY",
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تحدد السجلات الأكاديمية والمتحفية تل العجول موقعاً أثرياً مستقلاً من العصر البرونزي جنوب مدينة غزة الحديثة، وتوثق مواد من العصرين البرونزي الأوسط والمتأخر.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-051",
+      "claim_id": "site-3ded44be126d-W3-C01",
+      "canonical_site_id": "site-3ded44be126d",
+      "canonical_slug": "hmm-lsmr-3ded44",
+      "name_ar": "حمام السمرة",
+      "editorial_text_ar": "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان حمام السمرة من المواقع التراثية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يمثل هذا تقييماً إنشائياً تفصيلياً.",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "original_editorial_text_ar": "تدرج اليونسكو حمام السمرة ضمن المواقع التراثية في غزة التي تحققت من تعرضها للضرر.",
+      "historically_reviewed_text_ar": "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان حمام السمرة من المواقع التراثية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يمثل هذا تقييماً إنشائياً تفصيلياً.",
+      "temporal_validity": {
+        "source_update_date": "2026-03-25",
+        "verified_damage_cutoff": "2026-03-24",
+        "freshness_review_required_before_any_release": true
+      },
+      "historical_review_status": "ACCEPTED_AFTER_MANDATORY_TEMPORAL_REVISION"
+    },
+    {
+      "editorial_record_id": "ED-052",
+      "claim_id": "site-3ded44be126d-W3-C02",
+      "canonical_site_id": "site-3ded44be126d",
+      "canonical_slug": "hmm-lsmr-3ded44",
+      "name_ar": "حمام السمرة",
+      "editorial_text_ar": "أفاد تقرير فلسطيني مستضاف على موقع اليونسكو بأن حمام السمرة دُمر بالكامل في 30 ديسمبر 2023، ووصفه بأنه آخر حمام تاريخي باقٍ في غزة؛ وتبقى هذه الصياغة منسوبة إلى الجهة مقدمة التقرير.",
+      "source_ids": [
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+      ],
+      "verification_status": "CONFIRMED_AS_ATTRIBUTED_REPORT_NOT_INDEPENDENT_FINDING",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "أفاد تقرير فلسطيني مستضاف على موقع اليونسكو بأن حمام السمرة دُمر بالكامل في 30 ديسمبر 2023، ووصفه بأنه آخر حمام تاريخي باقٍ في غزة؛ وتبقى هذه الصياغة منسوبة إلى الجهة مقدمة التقرير.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-053",
+      "claim_id": "site-5e98cf44d976-W3-C01",
+      "canonical_site_id": "site-5e98cf44d976",
+      "canonical_slug": "ql-brqwq-5e98cf",
+      "name_ar": "قلعة برقوق",
+      "editorial_text_ar": "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كانت قلعة برقوق في خان يونس من المواقع التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ وتبقى السلامة الإنشائية بحاجة إلى مسح ميداني.",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "original_editorial_text_ar": "تدرج اليونسكو قلعة برقوق في خان يونس ضمن المواقع التي تحققت من تعرضها للضرر.",
+      "historically_reviewed_text_ar": "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كانت قلعة برقوق في خان يونس من المواقع التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ وتبقى السلامة الإنشائية بحاجة إلى مسح ميداني.",
+      "temporal_validity": {
+        "source_update_date": "2026-03-25",
+        "verified_damage_cutoff": "2026-03-24",
+        "freshness_review_required_before_any_release": true
+      },
+      "historical_review_status": "ACCEPTED_AFTER_MANDATORY_TEMPORAL_REVISION"
+    },
+    {
+      "editorial_record_id": "ED-054",
+      "claim_id": "site-5e98cf44d976-W3-C02",
+      "canonical_site_id": "site-5e98cf44d976",
+      "canonical_slug": "ql-brqwq-5e98cf",
+      "name_ar": "قلعة برقوق",
+      "editorial_text_ar": "ينسب تقرير فلسطيني مستضاف على موقع اليونسكو القلعة إلى سنة 1387 في عهد السلطان برقوق، ويصف وظيفتها على طريق القوافل وواجهة باقية منها؛ وتبقى هذه المعلومات منسوبة إلى التقرير.",
+      "source_ids": [
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+      ],
+      "verification_status": "CONFIRMED_AS_ATTRIBUTED_REPORT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "ينسب تقرير فلسطيني مستضاف على موقع اليونسكو القلعة إلى سنة 1387 في عهد السلطان برقوق، ويصف وظيفتها على طريق القوافل وواجهة باقية منها؛ وتبقى هذه المعلومات منسوبة إلى التقرير.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-055",
+      "claim_id": "site-e1e3de7b8519-W3-C01",
+      "canonical_site_id": "site-e1e3de7b8519",
+      "canonical_slug": "knys-lqdys-brfyryws-e1e3de",
+      "name_ar": "كنيسة القديس برفيريوس",
+      "editorial_text_ar": "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان مجمع كنيسة القديس برفيريوس الأرثوذكسية من الممتلكات التراثية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحسم ذلك الوضع الإنشائي الحالي.",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "original_editorial_text_ar": "تدرج اليونسكو مجمع كنيسة القديس برفيريوس الأرثوذكسية ضمن الممتلكات التراثية في غزة التي تحققت من تعرضها للضرر.",
+      "historically_reviewed_text_ar": "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان مجمع كنيسة القديس برفيريوس الأرثوذكسية من الممتلكات التراثية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحسم ذلك الوضع الإنشائي الحالي.",
+      "temporal_validity": {
+        "source_update_date": "2026-03-25",
+        "verified_damage_cutoff": "2026-03-24",
+        "freshness_review_required_before_any_release": true
+      },
+      "historical_review_status": "ACCEPTED_AFTER_MANDATORY_TEMPORAL_REVISION"
+    },
+    {
+      "editorial_record_id": "ED-056",
+      "claim_id": "site-e1e3de7b8519-W3-C02",
+      "canonical_site_id": "site-e1e3de7b8519",
+      "canonical_slug": "knys-lqdys-brfyryws-e1e3de",
+      "name_ar": "كنيسة القديس برفيريوس",
+      "editorial_text_ar": "يصف ملف دولة فلسطين كنيسة من أوائل القرن الخامس ظلت مزاراً مستخدماً، بينما تؤكد بطريركية القدس الهوية الكنسية الحية لدير غزة.",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026",
+        "W3-AUTH-JERUSALEM-PATRIARCHATE-PORPHYRIOS"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-JERUSALEM-PATRIARCHATE-PORPHYRIOS",
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026"
+      ],
+      "verification_status": "CONFIRMED_AS_STATE_PARTY_AND_ECCLESIASTICAL_RECORD",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY",
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يصف ملف دولة فلسطين كنيسة من أوائل القرن الخامس ظلت مزاراً مستخدماً، بينما تؤكد بطريركية القدس الهوية الكنسية الحية لدير غزة.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-057",
+      "claim_id": "site-015f495c4236-W3-C01",
+      "canonical_site_id": "site-015f495c4236",
+      "canonical_slug": "mdyn-gz-lqdym-015f49",
+      "name_ar": "مدينة غزة القديمة",
+      "editorial_text_ar": "قدمت دولة فلسطين المركز التاريخي لمدينة غزة إلى قائمة اليونسكو التمهيدية في 13 يناير 2026، وحددت نطاقاً تاريخياً مساحته 1.7 كم² يضم أربعة أحياء تقليدية.",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026"
+      ],
+      "verification_status": "CONFIRMED_STATE_PARTY_SUBMISSION",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "قدمت دولة فلسطين المركز التاريخي لمدينة غزة إلى قائمة اليونسكو التمهيدية في 13 يناير 2026، وحددت نطاقاً تاريخياً مساحته 1.7 كم² يضم أربعة أحياء تقليدية.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-058",
+      "claim_id": "site-015f495c4236-W3-C02",
+      "canonical_site_id": "site-015f495c4236",
+      "canonical_slug": "mdyn-gz-lqdym-015f49",
+      "name_ar": "مدينة غزة القديمة",
+      "editorial_text_ar": "تسجل قائمة اليونسكو المحدثة في 25 مارس 2026 أضراراً تحققت منها المنظمة، حتى 24 مارس 2026، في عدد كبير من الممتلكات الدينية والأثرية والمدنية والسكنية المسماة داخل محافظة غزة؛ ولا تُعمم هذه النتيجة على كل مكونات المركز التاريخي.",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "verification_status": "CONFIRMED_CURRENT_DAMAGE_CONTEXT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "original_editorial_text_ar": "يثبت تقييم اليونسكو الصادر في مارس 2026 وقوع أضرار في عدد كبير من الممتلكات الدينية والأثرية والمدنية والسكنية المسماة داخل محافظة غزة.",
+      "historically_reviewed_text_ar": "تسجل قائمة اليونسكو المحدثة في 25 مارس 2026 أضراراً تحققت منها المنظمة، حتى 24 مارس 2026، في عدد كبير من الممتلكات الدينية والأثرية والمدنية والسكنية المسماة داخل محافظة غزة؛ ولا تُعمم هذه النتيجة على كل مكونات المركز التاريخي.",
+      "temporal_validity": {
+        "source_update_date": "2026-03-25",
+        "verified_damage_cutoff": "2026-03-24",
+        "freshness_review_required_before_any_release": true
+      },
+      "historical_review_status": "ACCEPTED_AFTER_MANDATORY_TEMPORAL_REVISION"
+    },
+    {
+      "editorial_record_id": "ED-059",
+      "claim_id": "site-99f520b3d607-W3-C01",
+      "canonical_site_id": "site-99f520b3d607",
+      "canonical_slug": "myn-gz-lqdym-l-nt-99f520",
+      "name_ar": "ميناء غزة القديم (الأنطة)",
+      "editorial_text_ar": "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان ميناء الأنثيدون من المواقع في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ وما زالت حدود الموقع وشدة الضرر بحاجة إلى تحقق ميداني.",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "original_editorial_text_ar": "تدرج اليونسكو ميناء الأنثيدون ضمن المواقع في غزة التي تحققت من تعرضها للضرر.",
+      "historically_reviewed_text_ar": "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان ميناء الأنثيدون من المواقع في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ وما زالت حدود الموقع وشدة الضرر بحاجة إلى تحقق ميداني.",
+      "temporal_validity": {
+        "source_update_date": "2026-03-25",
+        "verified_damage_cutoff": "2026-03-24",
+        "freshness_review_required_before_any_release": true
+      },
+      "historical_review_status": "ACCEPTED_AFTER_MANDATORY_TEMPORAL_REVISION"
+    },
+    {
+      "editorial_record_id": "ED-060",
+      "claim_id": "site-99f520b3d607-W3-C02",
+      "canonical_site_id": "site-99f520b3d607",
+      "canonical_slug": "myn-gz-lqdym-l-nt-99f520",
+      "name_ar": "ميناء غزة القديم (الأنطة)",
+      "editorial_text_ar": "يصف ملف دولة فلسطين الأنثيدون بوصفه ميناءً قديماً شمال غربي غزة يضم بقايا من فترات متعددة، ويصرح بأن التحديد الدقيق للموقع ما زال غير محسوم.",
+      "source_ids": [
+        "W3-AUTH-UNESCO-ANTHEDON-2012"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-ANTHEDON-2012"
+      ],
+      "verification_status": "CONFIRMED_AS_STATE_PARTY_SUBMISSION",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "ATTRIBUTED_STATE_PARTY_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يصف ملف دولة فلسطين الأنثيدون بوصفه ميناءً قديماً شمال غربي غزة يضم بقايا من فترات متعددة، ويصرح بأن التحديد الدقيق للموقع ما زال غير محسوم.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-061",
+      "claim_id": "site-0a78d22c1a69-W3-C01",
+      "canonical_site_id": "site-0a78d22c1a69",
+      "canonical_slug": "khn-ywns-lqdym-0a78d2",
+      "name_ar": "خان يونس القديم",
+      "editorial_text_ar": "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، تحققت المنظمة حتى 24 مارس 2026 من وقوع ضرر في قلعة برقوق بمحافظة خان يونس؛ ولا يثبت ذلك سلامة أو حالة كامل عنقود خان يونس القديم.",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "verification_status": "CONFIRMED_COMPONENT_DAMAGE",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "original_editorial_text_ar": "تثبت اليونسكو وقوع ضرر في قلعة برقوق بمحافظة خان يونس.",
+      "historically_reviewed_text_ar": "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، تحققت المنظمة حتى 24 مارس 2026 من وقوع ضرر في قلعة برقوق بمحافظة خان يونس؛ ولا يثبت ذلك سلامة أو حالة كامل عنقود خان يونس القديم.",
+      "temporal_validity": {
+        "source_update_date": "2026-03-25",
+        "verified_damage_cutoff": "2026-03-24",
+        "freshness_review_required_before_any_release": true
+      },
+      "historical_review_status": "ACCEPTED_AFTER_MANDATORY_TEMPORAL_REVISION"
+    },
+    {
+      "editorial_record_id": "ED-062",
+      "claim_id": "site-0a78d22c1a69-W3-C02",
+      "canonical_site_id": "site-0a78d22c1a69",
+      "canonical_slug": "khn-ywns-lqdym-0a78d2",
+      "name_ar": "خان يونس القديم",
+      "editorial_text_ar": "يسجل تقرير فلسطيني مستضاف على موقع اليونسكو أضراراً في بيوت تاريخية بخان يونس، ويعرض قلعة برقوق بوصفها مكوّناً تاريخياً رئيسياً.",
+      "source_ids": [
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+      ],
+      "verification_status": "CONFIRMED_AS_ATTRIBUTED_REPORT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يسجل تقرير فلسطيني مستضاف على موقع اليونسكو أضراراً في بيوت تاريخية بخان يونس، ويعرض قلعة برقوق بوصفها مكوّناً تاريخياً رئيسياً.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-063",
+      "claim_id": "site-ee0e5bf1f753-W3-C01",
+      "canonical_site_id": "site-ee0e5bf1f753",
+      "canonical_slug": "rfh-ltrykhy-ee0e5b",
+      "name_ar": "رفح التاريخية",
+      "editorial_text_ar": "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، تحققت المنظمة حتى 24 مارس 2026 من وقوع ضرر في تل رفح؛ ولا يمتد هذا الإثبات تلقائياً إلى كامل النسيج الحضري التاريخي لرفح.",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "verification_status": "CONFIRMED_ARCHAEOLOGICAL_DAMAGE",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "original_editorial_text_ar": "تثبت اليونسكو وقوع ضرر في تل رفح بمحافظة رفح؛ ولا يمتد هذا الإثبات تلقائياً إلى كامل النسيج الحضري التاريخي للمدينة.",
+      "historically_reviewed_text_ar": "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، تحققت المنظمة حتى 24 مارس 2026 من وقوع ضرر في تل رفح؛ ولا يمتد هذا الإثبات تلقائياً إلى كامل النسيج الحضري التاريخي لرفح.",
+      "temporal_validity": {
+        "source_update_date": "2026-03-25",
+        "verified_damage_cutoff": "2026-03-24",
+        "freshness_review_required_before_any_release": true
+      },
+      "historical_review_status": "ACCEPTED_AFTER_MANDATORY_TEMPORAL_REVISION"
+    },
+    {
+      "editorial_record_id": "ED-064",
+      "claim_id": "site-a9ac192e20c3-W4-C01",
+      "canonical_site_id": "site-a9ac192e20c3",
+      "canonical_slug": "bld-nbls-lqdym-a9ac19",
+      "name_ar": "بلدة نابلس القديمة",
+      "editorial_text_ar": "تمثل نابلس القديمة عنقوداً عمرانياً تاريخياً يضم مكونات رومانية وإسلامية ووسيطة وعثمانية ودينية وتجارية وسكنية ومائية.",
+      "source_ids": [
+        "W4-AUTH-UNESCO-NABLUS-2012",
+        "W4-AUTH-MOTA-NABLUS-OLD-CITY"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-NABLUS-OLD-CITY",
+        "W4-AUTH-UNESCO-NABLUS-2012"
+      ],
+      "verification_status": "CONFIRMED_AS_STATE_PARTY_AND_MINISTRY_RECORD",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "ATTRIBUTED_STATE_PARTY_PARAPHRASE_ONLY",
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تمثل نابلس القديمة عنقوداً عمرانياً تاريخياً يضم مكونات رومانية وإسلامية ووسيطة وعثمانية ودينية وتجارية وسكنية ومائية.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-065",
+      "claim_id": "site-a9ac192e20c3-W4-C02",
+      "canonical_site_id": "site-a9ac192e20c3",
+      "canonical_slug": "bld-nbls-lqdym-a9ac19",
+      "name_ar": "بلدة نابلس القديمة",
+      "editorial_text_ar": "أكملت اليونسكو وشركاؤها ترميم خان الوكالة وإعادة توظيفه بوصفه مكوّناً من مكونات نابلس القديمة.",
+      "source_ids": [
+        "W4-AUTH-UNESCO-KHAN-WAKALA-2012"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-UNESCO-KHAN-WAKALA-2012"
+      ],
+      "verification_status": "CONFIRMED_CONSERVATION_RECORD",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "OFFICIAL_RECORD_LIMITED_QUOTATION_AND_PARAPHRASE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "أكملت اليونسكو وشركاؤها ترميم خان الوكالة وإعادة توظيفه بوصفه مكوّناً من مكونات نابلس القديمة.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-066",
+      "claim_id": "site-a429c345ac25-W4-C01",
+      "canonical_site_id": "site-a429c345ac25",
+      "canonical_slug": "jm-lnsr-a429c3",
+      "name_ar": "جامع النصر",
+      "editorial_text_ar": "يشكل جامع النصر مكوّناً عمرانياً معروفاً يحد ساحة باب الساحة وشارع النصر داخل نابلس القديمة.",
+      "source_ids": [
+        "W4-AUTH-MOTA-NASR-CONTEXT"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-NASR-CONTEXT"
+      ],
+      "verification_status": "CONFIRMED_CURRENT_URBAN_IDENTITY",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يشكل جامع النصر مكوّناً عمرانياً معروفاً يحد ساحة باب الساحة وشارع النصر داخل نابلس القديمة.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-067",
+      "claim_id": "site-b6773e683274-W4-C01",
+      "canonical_site_id": "site-b6773e683274",
+      "canonical_slug": "jbl-jrzym-b6773e",
+      "name_ar": "جبل جرزيم",
+      "editorial_text_ar": "يمثل جبل جرزيم المركز الديني الحي للطائفة السامرية، ويضم بقايا رئيسية من الفترات الهلنستية والرومانية والبيزنطية والإسلامية.",
+      "source_ids": [
+        "W4-AUTH-UNESCO-GERIZIM-2012",
+        "W4-AUTH-MOTA-NABLUS-OLD-CITY"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-NABLUS-OLD-CITY",
+        "W4-AUTH-UNESCO-GERIZIM-2012"
+      ],
+      "verification_status": "CONFIRMED_AS_STATE_PARTY_AND_MINISTRY_RECORD",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "ATTRIBUTED_STATE_PARTY_PARAPHRASE_ONLY",
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يمثل جبل جرزيم المركز الديني الحي للطائفة السامرية، ويضم بقايا رئيسية من الفترات الهلنستية والرومانية والبيزنطية والإسلامية.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-068",
+      "claim_id": "site-160c60c7b952-W4-C01",
+      "canonical_site_id": "site-160c60c7b952",
+      "canonical_slug": "hr-lysmyn-160c60",
+      "name_ar": "حارة الياسمينة",
+      "editorial_text_ar": "حارة الياسمينة إحدى الحارات المعروفة في نابلس القديمة، ويحفظ حوش العطوط نموذجاً من النسيج السكني ذي الأفنية العثمانية.",
+      "source_ids": [
+        "W4-AUTH-MOTA-YASMINA-ATOUT"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-YASMINA-ATOUT"
+      ],
+      "verification_status": "CONFIRMED_CURRENT_IDENTITY_AND_COMPONENT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "حارة الياسمينة إحدى الحارات المعروفة في نابلس القديمة، ويحفظ حوش العطوط نموذجاً من النسيج السكني ذي الأفنية العثمانية.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-069",
+      "claim_id": "site-160c60c7b952-W4-C02",
+      "canonical_site_id": "site-160c60c7b952",
+      "canonical_slug": "hr-lysmyn-160c60",
+      "name_ar": "حارة الياسمينة",
+      "editorial_text_ar": "تذكر البوابة الرسمية تعرض حوش العطوط لأضرار جسيمة سنة 2002، واكتمال إعادة بنائه سنة 2012.",
+      "source_ids": [
+        "W4-AUTH-MOTA-YASMINA-ATOUT"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-YASMINA-ATOUT"
+      ],
+      "verification_status": "CONFIRMED_AS_MINISTRY_REPORT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تذكر البوابة الرسمية تعرض حوش العطوط لأضرار جسيمة سنة 2002، واكتمال إعادة بنائه سنة 2012.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-070",
+      "claim_id": "site-31c7667ff10e-W4-C01",
+      "canonical_site_id": "site-31c7667ff10e",
+      "canonical_slug": "khn-ltjr-31c766",
+      "name_ar": "خان التجار",
+      "editorial_text_ar": "خان التجار سوق تاريخي معروف، ويعمل بوصفه سوقاً للأقمشة ضمن مكونات نابلس القديمة.",
+      "source_ids": [
+        "W4-AUTH-MOTA-KHAN-TUJJAR"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-KHAN-TUJJAR"
+      ],
+      "verification_status": "CONFIRMED_CURRENT_IDENTITY",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "خان التجار سوق تاريخي معروف، ويعمل بوصفه سوقاً للأقمشة ضمن مكونات نابلس القديمة.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-071",
+      "claim_id": "site-fb9a817ec94a-W4-C01",
+      "canonical_site_id": "site-fb9a817ec94a",
+      "canonical_slug": "mqm-lnby-ywsf-blt-fb9a81",
+      "name_ar": "مقام النبي يوسف (بلاطة)",
+      "editorial_text_ar": "شهد مقام النبي يوسف قرب بلاطة تقاليد تبجيل لدى مسلمين ومسيحيين ويهود وسامريين، كما تغيرت معانيه الاجتماعية والدينية الفلسطينية عبر الزمن.",
+      "source_ids": [
+        "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023"
+      ],
+      "canonical_source_ids": [
+        "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023"
+      ],
+      "verification_status": "CONFIRMED_SHARED_SHRINE_AND_MEMORY_HISTORY",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "شهد مقام النبي يوسف قرب بلاطة تقاليد تبجيل لدى مسلمين ومسيحيين ويهود وسامريين، كما تغيرت معانيه الاجتماعية والدينية الفلسطينية عبر الزمن.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-072",
+      "claim_id": "site-fb9a817ec94a-W4-C02",
+      "canonical_site_id": "site-fb9a817ec94a",
+      "canonical_slug": "mqm-lnby-ywsf-blt-fb9a81",
+      "name_ar": "مقام النبي يوسف (بلاطة)",
+      "editorial_text_ar": "تخلص الدراسة الأكاديمية المفحوصة إلى أن الأدلة الأثرية لا تحسم هويات الدفن المتنافسة المنسوبة إلى المقام.",
+      "source_ids": [
+        "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023"
+      ],
+      "canonical_source_ids": [
+        "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023"
+      ],
+      "verification_status": "CONFIRMED_ACADEMIC_ASSESSMENT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تخلص الدراسة الأكاديمية المفحوصة إلى أن الأدلة الأثرية لا تحسم هويات الدفن المتنافسة المنسوبة إلى المقام.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-073",
+      "claim_id": "site-f2a7fbbda5a5-W4-C01",
+      "canonical_site_id": "site-f2a7fbbda5a5",
+      "canonical_slug": "bld-jnyn-lqdym-f2a7fb",
+      "name_ar": "بلدة جنين القديمة",
+      "editorial_text_ar": "سوق السيباط مكوّن عثماني متأخر داخل أحياء جنين القديمة، وتذكر البوابة الرسمية وجود سياق أثري روماني وبيزنطي تحته.",
+      "source_ids": [
+        "W4-AUTH-MOTA-JENIN-SIBAT"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-JENIN-SIBAT"
+      ],
+      "verification_status": "CONFIRMED_AS_MINISTRY_RECORD",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "سوق السيباط مكوّن عثماني متأخر داخل أحياء جنين القديمة، وتذكر البوابة الرسمية وجود سياق أثري روماني وبيزنطي تحته.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-074",
+      "claim_id": "site-f2a7fbbda5a5-W4-C02",
+      "canonical_site_id": "site-f2a7fbbda5a5",
+      "canonical_slug": "bld-jnyn-lqdym-f2a7fb",
+      "name_ar": "بلدة جنين القديمة",
+      "editorial_text_ar": "يمثل مسجد فاطمة خاتون مكوّناً عمرانياً عثمانياً رئيسياً من القرن السادس عشر في وسط جنين.",
+      "source_ids": [
+        "W4-AUTH-MOTA-JENIN-FATIMA-KHATUN"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-JENIN-FATIMA-KHATUN"
+      ],
+      "verification_status": "CONFIRMED_AS_MINISTRY_RECORD",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يمثل مسجد فاطمة خاتون مكوّناً عمرانياً عثمانياً رئيسياً من القرن السادس عشر في وسط جنين.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-075",
+      "claim_id": "site-fe1e2a1605b5-W4-C01",
+      "canonical_site_id": "site-fe1e2a1605b5",
+      "canonical_slug": "qsr-lkyd-fe1e2a",
+      "name_ar": "قصر الكايد",
+      "editorial_text_ar": "تضع البوابة الفلسطينية الرسمية قصر الكايد في سبسطية بمحافظة نابلس، وتؤرخ بناءه بسنة 1858.",
+      "source_ids": [
+        "W4-AUTH-MOTA-KAYED-SEBASTIA"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-KAYED-SEBASTIA"
+      ],
+      "verification_status": "CONFIRMED_IDENTITY_CONFLICT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تضع البوابة الفلسطينية الرسمية قصر الكايد في سبسطية بمحافظة نابلس، وتؤرخ بناءه بسنة 1858.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-076",
+      "claim_id": "site-2c1f6b6dbd51-W4-C01",
+      "canonical_site_id": "site-2c1f6b6dbd51",
+      "canonical_slug": "knys-brqyn-2c1f6b",
+      "name_ar": "كنيسة برقين",
+      "editorial_text_ar": "كنيسة برقين كنيسة روم أرثوذكس حية في بلدة برقين، وتنسبها البوابة الرسمية تراثياً إلى الفترة البيزنطية.",
+      "source_ids": [
+        "W4-AUTH-MOTA-BURQIN"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-BURQIN"
+      ],
+      "verification_status": "CONFIRMED_CURRENT_IDENTITY_AND_INSTITUTIONAL_PERIOD",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "كنيسة برقين كنيسة روم أرثوذكس حية في بلدة برقين، وتنسبها البوابة الرسمية تراثياً إلى الفترة البيزنطية.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-077",
+      "claim_id": "site-be1c2ce90997-W4-C01",
+      "canonical_site_id": "site-be1c2ce90997",
+      "canonical_slug": "mdyn-twlkrm-ltrykhy-be1c2c",
+      "name_ar": "مدينة طولكرم التاريخية",
+      "editorial_text_ar": "تضم طولكرم أصولاً مبنية معترفاً بها رسمياً، منها متحف داخل مبنى شُيد سنة 1908 في أواخر العهد العثماني، ومنشآت تراثية جرى تأهيلها.",
+      "source_ids": [
+        "W4-AUTH-MOTA-TULKARM-MUSEUM",
+        "W4-AUTH-UNESCO-RIWAQ-75-STEPS-2023"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-TULKARM-MUSEUM",
+        "W4-AUTH-UNESCO-RIWAQ-75-STEPS-2023"
+      ],
+      "verification_status": "CONFIRMED_HERITAGE_ASSET_CONTEXT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY",
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تضم طولكرم أصولاً مبنية معترفاً بها رسمياً، منها متحف داخل مبنى شُيد سنة 1908 في أواخر العهد العثماني، ومنشآت تراثية جرى تأهيلها.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-078",
+      "claim_id": "site-69f3ad775733-W4-C01",
+      "canonical_site_id": "site-69f3ad775733",
+      "canonical_slug": "khrb-dyr-sty-69f3ad",
+      "name_ar": "بلدة دير استيا التاريخية",
+      "editorial_text_ar": "دير استيا مركز تاريخي فلسطيني معروف يضم مباني عمرها نحو ثلاثة قرون وشوارع ضيقة وقصوراً وينابيع وكهوفاً وخرباً.",
+      "source_ids": [
+        "W4-AUTH-MOTA-DEIR-ISTIYA",
+        "W4-AUTH-RIWAQ-50-CENTRES",
+        "W4-AUTH-RIWAQ-DEIR-ISTIYA-PALACES"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-DEIR-ISTIYA",
+        "W4-AUTH-RIWAQ-50-CENTRES",
+        "W4-AUTH-RIWAQ-DEIR-ISTIYA-PALACES"
+      ],
+      "verification_status": "CONFIRMED_CURRENT_HISTORIC_TOWN_IDENTITY",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY",
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY",
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "دير استيا مركز تاريخي فلسطيني معروف يضم مباني عمرها نحو ثلاثة قرون وشوارع ضيقة وقصوراً وينابيع وكهوفاً وخرباً.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-079",
+      "claim_id": "site-ba91049d51a9-W4-C01",
+      "canonical_site_id": "site-ba91049d51a9",
+      "canonical_slug": "ywn-lm-l-thry-ba9104",
+      "name_ar": "عيون الماء الأثرية",
+      "editorial_text_ar": "يؤكد السجل الرسمي لدير استيا وجود ينابيع مائية عديدة، إلى جانب وادي قانا الدائم الجريان في المحيط القريب.",
+      "source_ids": [
+        "W4-AUTH-MOTA-DEIR-ISTIYA"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-DEIR-ISTIYA"
+      ],
+      "verification_status": "CONFIRMED_GENERAL_HYDROLOGICAL_CONTEXT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يؤكد السجل الرسمي لدير استيا وجود ينابيع مائية عديدة، إلى جانب وادي قانا الدائم الجريان في المحيط القريب.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-081",
+      "claim_id": "site-c6731a990917-W4-C01",
+      "canonical_site_id": "site-c6731a990917",
+      "canonical_slug": "tl-lfr-lmdyn-lkn-ny-c6731a",
+      "name_ar": "تل الفارعة (المدينة الكنعانية)",
+      "editorial_text_ar": "يرتبط تل الفارعة الشمالي بمجموعة كبيرة من حفريات ومنشورات المدرسة الكتابية والآثارية الفرنسية، شملت تسع حملات قادها رولان دي فو بين 1946 و1960.",
+      "source_ids": [
+        "W4-ACADEMIC-EBAF-TELL-FARAH-CORPUS"
+      ],
+      "canonical_source_ids": [
+        "W4-ACADEMIC-EBAF-TELL-FARAH-CORPUS"
+      ],
+      "verification_status": "CONFIRMED_RESEARCH_CORPUS",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يرتبط تل الفارعة الشمالي بمجموعة كبيرة من حفريات ومنشورات المدرسة الكتابية والآثارية الفرنسية، شملت تسع حملات قادها رولان دي فو بين 1946 و1960.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-082",
+      "claim_id": "site-e2a5c15f76f6-W5-C01",
+      "canonical_site_id": "site-e2a5c15f76f6",
+      "canonical_slug": "bld-byrzyt-lqdym-e2a5c1",
+      "name_ar": "بلدة بيرزيت القديمة",
+      "editorial_text_ar": "تضم بيرزيت مركزاً تاريخياً خضع لتوثيق مبانيه وساحاته وبنيته التحتية وحدوده، ولبرنامج طويل الأمد للحماية والتأهيل نفذته مؤسسة رواق.",
+      "source_ids": [
+        "W5-AUTH-RIWAQ-BIRZEIT-001",
+        "W5-AUTH-RIWAQ-BIRZEIT-AWARD-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-RIWAQ-BIRZEIT-001",
+        "W5-AUTH-RIWAQ-BIRZEIT-AWARD-001"
+      ],
+      "verification_status": "CONFIRMED_HISTORIC_CENTRE_AND_CONSERVATION_RECORD",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY",
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تضم بيرزيت مركزاً تاريخياً خضع لتوثيق مبانيه وساحاته وبنيته التحتية وحدوده، ولبرنامج طويل الأمد للحماية والتأهيل نفذته مؤسسة رواق.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-084",
+      "claim_id": "site-014e4c4e4845-W5-C01",
+      "canonical_site_id": "site-014e4c4e4845",
+      "canonical_slug": "khrb-bwd-014e4c",
+      "name_ar": "عابود التاريخية",
+      "editorial_text_ar": "تندرج عابود ضمن برنامج رواق للمراكز التاريخية الفلسطينية.",
+      "source_ids": [
+        "W5-AUTH-RIWAQ-50-CENTRES-001"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-RIWAQ-50-CENTRES"
+      ],
+      "verification_status": "CONFIRMED_HISTORIC_CENTRE_CONTEXT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تندرج عابود ضمن برنامج رواق للمراكز التاريخية الفلسطينية.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-085",
+      "claim_id": "site-014e4c4e4845-W5-C02",
+      "canonical_site_id": "site-014e4c4e4845",
+      "canonical_slug": "khrb-bwd-014e4c",
+      "name_ar": "عابود التاريخية",
+      "editorial_text_ar": "يضم مشهد عابود بقايا كنيسة القديسة بربارة من القرن السادس وسياقاً لطريق ومقبرة رومانيين، إلى جانب كنيسة الرقاد الموثقة بمراحل معمارية متعددة.",
+      "source_ids": [
+        "W5-AUTH-MOTA-ABOUD-BARBARA-001",
+        "W5-AUTH-MOTA-ABOUD-DORMITION-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-MOTA-ABOUD-BARBARA-001",
+        "W5-AUTH-MOTA-ABOUD-DORMITION-001"
+      ],
+      "verification_status": "CONFIRMED_MULTIPLE_ARCHAEOLOGICAL_AND_ARCHITECTURAL_COMPONENTS",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY",
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يضم مشهد عابود بقايا كنيسة القديسة بربارة من القرن السادس وسياقاً لطريق ومقبرة رومانيين، إلى جانب كنيسة الرقاد الموثقة بمراحل معمارية متعددة.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-086",
+      "claim_id": "site-28dd528f5f3a-W5-C01",
+      "canonical_site_id": "site-28dd528f5f3a",
+      "canonical_slug": "dyr-mr-28dd52",
+      "name_ar": "دير عمار",
+      "editorial_text_ar": "تعرف مؤسسة رواق دير عمار بوصفها مركزاً تاريخياً فلسطينياً.",
+      "source_ids": [
+        "W5-AUTH-RIWAQ-DEIR-AMMAR-001",
+        "W5-AUTH-RIWAQ-50-CENTRES-001"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-RIWAQ-50-CENTRES",
+        "W5-AUTH-RIWAQ-DEIR-AMMAR-001"
+      ],
+      "verification_status": "CONFIRMED_CURRENT_HISTORIC_CENTRE_IDENTITY",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY",
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تعرف مؤسسة رواق دير عمار بوصفها مركزاً تاريخياً فلسطينياً.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-087",
+      "claim_id": "site-2a3fdab99250-W5-C01",
+      "canonical_site_id": "site-2a3fdab99250",
+      "canonical_slug": "yn-smy-2a3fda",
+      "name_ar": "عين سامية",
+      "editorial_text_ar": "توثق المصادر الأكاديمية في عين سامية قبوراً عمودية ولقى مرتبطة بالعصر البرونزي الانتقالي/الأوسط.",
+      "source_ids": [
+        "W5-ACADEMIC-AIN-SAMIYA-TOMB-204-001",
+        "W5-ACADEMIC-CAMBRIDGE-AIN-SAMIYA-001"
+      ],
+      "canonical_source_ids": [
+        "W5-ACADEMIC-AIN-SAMIYA-TOMB-204-001",
+        "W5-ACADEMIC-CAMBRIDGE-AIN-SAMIYA-001"
+      ],
+      "verification_status": "CONFIRMED_BRONZE_AGE_CEMETERY_CONTEXT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY",
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "توثق المصادر الأكاديمية في عين سامية قبوراً عمودية ولقى مرتبطة بالعصر البرونزي الانتقالي/الأوسط.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-088",
+      "claim_id": "site-2a3fdab99250-W5-C02",
+      "canonical_site_id": "site-2a3fdab99250",
+      "canonical_slug": "yn-smy-2a3fda",
+      "name_ar": "عين سامية",
+      "editorial_text_ar": "يميز دليل المسارات الفلسطيني بين عين سامية وخربة مرجمة وعنصر القصر وخربة سامية ضمن المشهد الأوسع، ولا يعاملها موقعاً واحداً.",
+      "source_ids": [
+        "W5-AUTH-WAFA-TOURIST-TRAILS-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-WAFA-TOURIST-TRAILS-001"
+      ],
+      "verification_status": "CONFIRMED_MULTIPLE_FEATURES_IN_LANDSCAPE",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يميز دليل المسارات الفلسطيني بين عين سامية وخربة مرجمة وعنصر القصر وخربة سامية ضمن المشهد الأوسع، ولا يعاملها موقعاً واحداً.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-089",
+      "claim_id": "site-12fc185d4b0b-W5-C01",
+      "canonical_site_id": "site-12fc185d4b0b",
+      "canonical_slug": "mqm-lnby-slh-12fc18",
+      "name_ar": "مقام النبي صالح",
+      "editorial_text_ar": "توثق مؤسسة رواق ترميم مجمع مركز النبي صالح الثقافي وإعادة توظيفه بالشراكة مع جهة محلية، مع اكتمال المشروع سنة 2003.",
+      "source_ids": [
+        "W5-AUTH-RIWAQ-NABI-SALEH-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-RIWAQ-NABI-SALEH-001"
+      ],
+      "verification_status": "CONFIRMED_CURRENT_COMPLEX_AND_CONSERVATION",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "توثق مؤسسة رواق ترميم مجمع مركز النبي صالح الثقافي وإعادة توظيفه بالشراكة مع جهة محلية، مع اكتمال المشروع سنة 2003.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-090",
+      "claim_id": "site-cc4465115964-W5-C01",
+      "canonical_site_id": "site-cc4465115964",
+      "canonical_slug": "dyr-qrntl-cc4465",
+      "name_ar": "دير قرنطل",
+      "editorial_text_ar": "توثق البوابة الفلسطينية الرسمية كهوفاً رهبانية ومرحلة دير من القرن السادس وأعمال ترميم سنة 1892 في دير قرنطل.",
+      "source_ids": [
+        "W5-AUTH-MOTA-QURUNTAL-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-MOTA-QURUNTAL-001"
+      ],
+      "verification_status": "CONFIRMED_INSTITUTIONAL_ARCHITECTURAL_HISTORY",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "توثق البوابة الفلسطينية الرسمية كهوفاً رهبانية ومرحلة دير من القرن السادس وأعمال ترميم سنة 1892 في دير قرنطل.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-091",
+      "claim_id": "site-b5f00132ee24-W5-C01",
+      "canonical_site_id": "site-b5f00132ee24",
+      "canonical_slug": "yn-lsltn-b5f001",
+      "name_ar": "عين السلطان",
+      "editorial_text_ar": "عين السلطان نبع دائم مجاور لتل السلطان، وتعده اليونسكو من عناصر عقار أريحا القديمة/تل السلطان المدرج على قائمة التراث العالمي.",
+      "source_ids": [
+        "W5-AUTH-UNESCO-JERICHO-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "verification_status": "CONFIRMED_WORLD_HERITAGE_COMPONENT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "CONDITIONAL_CC_BY_SA_IGO_3_0_TEXT_REUSE"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "عين السلطان نبع دائم مجاور لتل السلطان، وتعده اليونسكو من عناصر عقار أريحا القديمة/تل السلطان المدرج على قائمة التراث العالمي.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-092",
+      "claim_id": "site-ce23c41d7641-W5-C01",
+      "canonical_site_id": "site-ce23c41d7641",
+      "canonical_slug": "qbr-lnby-mws-ce23c4",
+      "name_ar": "قبر النبي موسى",
+      "editorial_text_ar": "يصف السجل الفلسطيني الرسمي مجمعاً واحداً للنبي موسى يضم مسجداً وضريحاً أو قبراً وساحة وغرفاً ومرافق مرتبطة.",
+      "source_ids": [
+        "W5-AUTH-MOTA-NABI-MUSA-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-MOTA-NABI-MUSA-001"
+      ],
+      "verification_status": "CONFIRMED_COMPONENT_WITHIN_SINGLE_COMPLEX",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يصف السجل الفلسطيني الرسمي مجمعاً واحداً للنبي موسى يضم مسجداً وضريحاً أو قبراً وساحة وغرفاً ومرافق مرتبطة.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-094",
+      "claim_id": "site-c4d8c9fdd1f0-W5-C01",
+      "canonical_site_id": "site-c4d8c9fdd1f0",
+      "canonical_slug": "mqm-lnby-mws-c4d8c9",
+      "name_ar": "مقام النبي موسى",
+      "editorial_text_ar": "تعرف البوابة الفلسطينية الرسمية مقام النبي موسى بوصفه مجمعاً معمارياً مملوكياً مرتبطاً مؤسسياً بالسلطان الظاهر بيبرس.",
+      "source_ids": [
+        "W5-AUTH-MOTA-NABI-MUSA-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-MOTA-NABI-MUSA-001"
+      ],
+      "verification_status": "CONFIRMED_OFFICIAL_ARCHITECTURAL_IDENTITY",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "تعرف البوابة الفلسطينية الرسمية مقام النبي موسى بوصفه مجمعاً معمارياً مملوكياً مرتبطاً مؤسسياً بالسلطان الظاهر بيبرس.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-095",
+      "claim_id": "site-c4d8c9fdd1f0-W5-C02",
+      "canonical_site_id": "site-c4d8c9fdd1f0",
+      "canonical_slug": "mqm-lnby-mws-c4d8c9",
+      "name_ar": "مقام النبي موسى",
+      "editorial_text_ar": "يضع ملف دولة فلسطين للبرية مقام النبي موسى ضمن المشهد الإسلامي المقدس ومسار الحج في المنطقة.",
+      "source_ids": [
+        "W5-AUTH-UNESCO-EL-BARIYAH-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-UNESCO-EL-BARIYAH-001"
+      ],
+      "verification_status": "CONFIRMED_AS_STATE_PARTY_LANDSCAPE_CONTEXT",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "ATTRIBUTED_STATE_PARTY_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يضع ملف دولة فلسطين للبرية مقام النبي موسى ضمن المشهد الإسلامي المقدس ومسار الحج في المنطقة.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    },
+    {
+      "editorial_record_id": "ED-096",
+      "claim_id": "site-c6731a990917-W4-C02R1",
+      "replaces_claim_id": "site-c6731a990917-W4-C02",
+      "canonical_site_id": "site-c6731a990917",
+      "canonical_slug": "tl-lfr-lmdyn-lkn-ny-c6731a",
+      "name_ar": "تل الفارعة (المدينة الكنعانية)",
+      "editorial_text_ar": "يوثق موقع مشروع تل الفارعة تسلسلاً استيطانياً يشمل العصرين البرونزي المبكر الأول والثاني، ويعرض دراسة العمارة والعمران والتسلسل الزمني ضمن محاور البحث الجاري في الموقع. أما تفاصيل مراحل التحصين فتظل مرتبطة بفحص تقارير الحفريات الكاملة.",
+      "source_ids": [
+        "W4-AUTH-TELL-EL-FARA-PROJECT-2026",
+        "W4-ACADEMIC-EBAF-TELL-FARAH-CORPUS"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-TELL-EL-FARA-PROJECT-2026",
+        "W4-ACADEMIC-EBAF-TELL-FARAH-CORPUS"
+      ],
+      "verification_status": "REVISED_NARROWER_CLAIM_SUPPORTED",
+      "claim_scope_validation": "CLOSED",
+      "editorial_status": "DRAFT_READY_FOR_HUMAN_HISTORICAL_REVIEW",
+      "source_attribution_must_be_preserved": true,
+      "uncertainty_and_tradition_labels_must_be_preserved": true,
+      "rights_routes": [
+        "RIGHTS_NOT_EXPLICIT_PARAPHRASE_ONLY",
+        "COPYRIGHTED_OR_RESTRICTED_PARAPHRASE_ONLY"
+      ],
+      "rights_status": "TRIAGED_NOT_FULLY_CLEARED",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED",
+      "historically_reviewed_text_ar": "يوثق موقع مشروع تل الفارعة تسلسلاً استيطانياً يشمل العصرين البرونزي المبكر الأول والثاني، ويعرض دراسة العمارة والعمران والتسلسل الزمني ضمن محاور البحث الجاري في الموقع. أما تفاصيل مراحل التحصين فتظل مرتبطة بفحص تقارير الحفريات الكاملة.",
+      "historical_review_status": "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE"
+    }
+  ],
+  "database_import": "BLOCKED",
+  "publication": "BLOCKED"
+}

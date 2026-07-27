@@ -1,0 +1,62 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "PAL_EYES_ORIGINAL_HISTORICAL_DRAFT_SOURCE_CONTRACT_DUAL_METRIC_TEST_AND_STATIC_VERIFIER_HOTFIX_V1",
+  "target_baseline": "PAL_EYES_ORIGINAL_HISTORICAL_DRAFT_LAYER_AND_DUAL_NARRATIVE_SURFACE_R5_2_1_20260719",
+  "parent_baseline": "PAL_EYES_GOVERNED_CONTENT_ADOPTION_TO_PROJECT_PAGES_R5_1_3_20260719",
+  "supersedes_package": "PAL_EYES_R5_2_0_APPLY.zip",
+  "result": "PASS_STATIC_BUILD_PENDING_LOCAL_UAT",
+  "diagnosis": {
+    "r5_2_0_whatif": "FAIL_BEFORE_COPY",
+    "r5_2_0_project_mutation": false,
+    "rollback_required": false,
+    "create_target_drift_path": "test/legacy_narrative_metric_and_expansion_tile_material_canvas_contract_test.dart",
+    "flutter_analyze_current": "PASS",
+    "flutter_test_current": "FAIL_ONE_STALE_TEST",
+    "compile_verifier_current": "FAIL_TWO_FORMATTER_SENSITIVE_CHECKS"
+  },
+  "repair": {
+    "source_contract_parent": "R5.1.3",
+    "existing_r5_1_3_test_is_replace_target": true,
+    "metric_test_catalog": "dualNarrativeSiteCatalog",
+    "metric_counts": {
+      "original_expanded": 47,
+      "governed_draft": 57,
+      "limited_research": 22
+    },
+    "compile_verifier_formatter_tolerant": true,
+    "full_original_historical_restoration_included": true
+  },
+  "counts": {
+    "sites": 79,
+    "original_draft_layers": 79,
+    "original_expanded_narratives": 47,
+    "original_catalog_summaries": 32,
+    "governed_draft_pages": 57,
+    "limited_research_pages": 22,
+    "reviewed_editorial_records": 92,
+    "governed_sources": 95,
+    "held_claims": 211,
+    "public_map_coordinates": 0,
+    "approved_media_assets": 0
+  },
+  "static_verification": {
+    "original_draft_dual_surface": "PASS",
+    "governed_content_adoption": "PASS",
+    "compile_contract": "PASS",
+    "foundation_static": "PASS",
+    "tracker_formula_errors": 0
+  },
+  "local_gates": {
+    "dart_format": "PENDING",
+    "flutter_analyze": "PENDING",
+    "flutter_test": "PENDING",
+    "chrome_dual_surface_uat": "PENDING"
+  },
+  "governance": {
+    "original_draft_development_visibility": "DEBUG_ONLY",
+    "original_draft_public_release": "BLOCKED",
+    "database_write": false,
+    "database_import": "BLOCKED",
+    "publication": "BLOCKED"
+  }
+}

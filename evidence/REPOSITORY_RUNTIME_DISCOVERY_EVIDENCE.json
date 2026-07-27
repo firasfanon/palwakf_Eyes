@@ -1,0 +1,189 @@
+{
+  "project_id": "pal_eyes",
+  "operation": "REPOSITORY_AND_RUNTIME_DISCOVERY_READ_ONLY",
+  "date": "2026-07-13",
+  "parent_baseline": "PAL_EYES_PROJECT_FOUNDATION_V0_1_0_20260713",
+  "parent_zip_sha256": "88b87fc2e9ec5934e30f92976862808287210fb043b3d75263b3ea6417ff4b83",
+  "parent_manifest_validation": "PASS",
+  "parent_manifest_errors": [],
+  "zip_validation": "PASS",
+  "discovery": {
+    "target": "/mnt/data/PAL_EYES_PROJECT_FOUNDATION_V0_1_0_20260713",
+    "mode": "READ_ONLY",
+    "file_count": 18,
+    "top_level_directories": [
+      "database",
+      "docs",
+      "governance"
+    ],
+    "runtime_markers": {
+      "pubspec.yaml": {
+        "exists": false,
+        "kind": "missing"
+      },
+      "pubspec.lock": {
+        "exists": false,
+        "kind": "missing"
+      },
+      "analysis_options.yaml": {
+        "exists": false,
+        "kind": "missing"
+      },
+      "lib/main.dart": {
+        "exists": false,
+        "kind": "missing"
+      },
+      "web/index.html": {
+        "exists": false,
+        "kind": "missing"
+      },
+      "android": {
+        "exists": false,
+        "kind": "missing"
+      },
+      "ios": {
+        "exists": false,
+        "kind": "missing"
+      },
+      "test": {
+        "exists": false,
+        "kind": "missing"
+      },
+      "integration_test": {
+        "exists": false,
+        "kind": "missing"
+      },
+      "supabase/config.toml": {
+        "exists": false,
+        "kind": "missing"
+      },
+      "supabase/migrations": {
+        "exists": false,
+        "kind": "missing"
+      },
+      "supabase/functions": {
+        "exists": false,
+        "kind": "missing"
+      },
+      "package.json": {
+        "exists": false,
+        "kind": "missing"
+      }
+    },
+    "classification": {
+      "flutter_runtime": "NOT_PRESENT",
+      "supabase_local_project": "NOT_PRESENT",
+      "repository_type": "DOCUMENTATION_AND_GOVERNANCE_BASELINE"
+    },
+    "files": [
+      {
+        "path": "BASELINE_MANIFEST.json",
+        "size_bytes": 3183,
+        "sha256": "0fbb575299181686a53124f553964371d3c0476d4294861313109795d3ff8865"
+      },
+      {
+        "path": "PAL_EYES_PROJECT_COMPREHENSIVE_GUIDE.md",
+        "size_bytes": 13917,
+        "sha256": "1b812fe233b24e5800a249223e303b0b183b87a7362fe79a4a10640422484310"
+      },
+      {
+        "path": "README.md",
+        "size_bytes": 1547,
+        "sha256": "e7245fbb7ca4109de84b980a9cfd80aa05ebd229d6c9fc9cff28fb102a36362f"
+      },
+      {
+        "path": "database/PAL_EYES_SCHEMA_CONCEPT_V0_1_0.sql",
+        "size_bytes": 1431,
+        "sha256": "0e6c50051b6b3d519fb3ea162b7e2d3378c34ed086c12e9c790bde548588ea83"
+      },
+      {
+        "path": "database/README.md",
+        "size_bytes": 410,
+        "sha256": "98f0ff0a32216a50d2ae85318f2513599c3c89156a4d98af952fa599b862b07f"
+      },
+      {
+        "path": "docs/00_PROJECT_CHARTER.md",
+        "size_bytes": 1715,
+        "sha256": "4d0e12464331d9ba59a44b6e5498b5ea5c5da1ea2d75a4533964847474e77180"
+      },
+      {
+        "path": "docs/01_PHASE_0_GOVERNANCE_AND_REFERENCE_MODEL.md",
+        "size_bytes": 2330,
+        "sha256": "847e01f5da83375b544fd4090c94c878e2a67a436dc7480ec97f743c15396668"
+      },
+      {
+        "path": "docs/02_NARRATIVE_AND_SOURCE_GOVERNANCE.md",
+        "size_bytes": 1748,
+        "sha256": "52c95befd98b920c6210caa26761743e61d000993659d524f2bc4645130db2d2"
+      },
+      {
+        "path": "docs/03_CONCEPTUAL_DATA_MODEL.md",
+        "size_bytes": 1673,
+        "sha256": "d99092edd2ee2dad3a2260e3a75b073326b13db45f3ff1a28d4301196c6a0be6"
+      },
+      {
+        "path": "docs/04_WORKFLOWS_RBAC_AND_PUBLICATION_GATES.md",
+        "size_bytes": 1433,
+        "sha256": "9c04b72c0295efe67c80ccb3da30a97932f556727918d8ffc910b4ca8fa1b995"
+      },
+      {
+        "path": "docs/05_TECHNICAL_ARCHITECTURE.md",
+        "size_bytes": 1682,
+        "sha256": "890938f073143f55f239e985aa5f00c45531ccbcb15f6d6f053b76d397de7c14"
+      },
+      {
+        "path": "docs/06_PRODUCT_SCOPE_AND_ROUTES.md",
+        "size_bytes": 1244,
+        "sha256": "bd32948e09f9ccc872ebc39ec275bacc01b6d184d5bf7ce0482add11c31138f6"
+      },
+      {
+        "path": "docs/07_ACCEPTANCE_CRITERIA.md",
+        "size_bytes": 1047,
+        "sha256": "5dbcd76c92976577db390637f3841f23a8b505dbdacb1aeabd9588e4e1b4bd0d"
+      },
+      {
+        "path": "docs/CHANGELOG.md",
+        "size_bytes": 706,
+        "sha256": "ce5ed1c9af68e0120cc26665bd19621a1d40cbfbd73a57dfc6436d288b3f134b"
+      },
+      {
+        "path": "docs/DECISION_LOG.md",
+        "size_bytes": 1308,
+        "sha256": "ed9e9e2de33dc12eb31b0db11d6b412f38e74bb766407ef1f57bf246898def82"
+      },
+      {
+        "path": "docs/ERROR_RECORD.md",
+        "size_bytes": 404,
+        "sha256": "09ad0b88de55f98d5377c750fb59dd6afb36818122fc138a16eace9531e5e1ec"
+      },
+      {
+        "path": "docs/SESSION_HANDOFF_20260713.md",
+        "size_bytes": 1955,
+        "sha256": "46c41b9c0503203b60cc64e7b1acffe26b1cdfa8236b57b941267d12ba1f970e"
+      },
+      {
+        "path": "governance/PROJECT_STATUS_SNAPSHOT.yaml",
+        "size_bytes": 719,
+        "sha256": "c52d649b77961e2d2f065f3b4456f0f2331c3030b418ad73a89d1b7265dcad8d"
+      }
+    ]
+  },
+  "conclusion": {
+    "repository_type": "DOCUMENTATION_AND_GOVERNANCE_BASELINE",
+    "flutter_runtime": "NOT_PRESENT",
+    "supabase_local_project": "NOT_PRESENT",
+    "flutter_analyze": "NOT_APPLICABLE",
+    "flutter_test": "NOT_APPLICABLE",
+    "flutter_build": "NOT_APPLICABLE",
+    "database_connectivity": "NOT_TESTED",
+    "runtime_failure": false,
+    "reason": "No Flutter or Supabase runtime files exist in the accepted baseline."
+  },
+  "mutations": {
+    "parent_baseline": "NONE",
+    "runtime_source": "NONE",
+    "database": "NONE",
+    "production": "NONE",
+    "new_baseline_documentation_and_evidence": "CREATED"
+  }
+}

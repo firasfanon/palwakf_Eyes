@@ -1,0 +1,11 @@
+{
+  "name": "بعيون فلسطينية",
+  "short_name": "Pal_Eyes",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F7F4ED",
+  "theme_color": "#0B2742",
+  "description": "منصة الرواية التاريخية الفلسطينية الموثقة",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false
+}

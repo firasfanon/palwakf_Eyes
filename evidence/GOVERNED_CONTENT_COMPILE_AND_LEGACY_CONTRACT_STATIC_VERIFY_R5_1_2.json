@@ -1,0 +1,22 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "PAL_EYES_GOVERNED_CONTENT_ADOPTION_COMPILE_TEST_AND_LEGACY_EVIDENCE_CONTRACT_HOTFIX_V1",
+  "target_baseline": "PAL_EYES_GOVERNED_CONTENT_ADOPTION_TO_PROJECT_PAGES_R5_1_2_20260715",
+  "result": "PASS",
+  "checks": {
+    "place_detail_compile_blocker_repaired": true,
+    "analyzer_cleanup_markers_repaired": true,
+    "legacy_expanded_narrative_count_preserved": 47,
+    "legacy_review_coordinate_count_preserved": 3,
+    "public_coordinate_count_preserved": 0,
+    "governed_visibility_test_updated": true,
+    "database_write": false,
+    "publication": "BLOCKED"
+  },
+  "local_gates": {
+    "dart_format": "PENDING_USER_ENVIRONMENT",
+    "flutter_analyze": "PENDING_USER_ENVIRONMENT",
+    "flutter_test": "PENDING_USER_ENVIRONMENT",
+    "browser_uat": "PENDING_USER_ENVIRONMENT"
+  }
+}
