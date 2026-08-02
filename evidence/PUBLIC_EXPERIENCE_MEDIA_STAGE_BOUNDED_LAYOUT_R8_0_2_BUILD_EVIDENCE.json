@@ -1,0 +1,34 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "PAL_EYES_PUBLIC_EXPERIENCE_MEDIA_STAGE_BOUNDED_LAYOUT_RUNTIME_CLOSURE_HOTFIX_V1",
+  "target_baseline": "PAL_EYES_PUBLIC_EXPERIENCE_MEDIA_STAGE_BOUNDED_LAYOUT_R8_0_2_20260802",
+  "parent_baseline": "PAL_EYES_PUBLIC_EXPERIENCE_ATLAS_MUSEUM_MAGAZINE_R8_0_1_20260720",
+  "result": "PASS_STATIC_BUILD_PENDING_LOCAL_RUNTIME_GATES",
+  "input_evidence": {
+    "r8_0_1_apply": "PASS",
+    "r8_0_1_flutter_analyze": "PASS",
+    "r8_0_1_flutter_test": "PASS_56",
+    "browser_uat": "FAIL",
+    "root_assertion": "Stack size.isFinite",
+    "root_file": "lib/core/widgets/public_experience_maturity.dart",
+    "root_runtime_constraints": "BoxConstraints(w=1184.0, 370.0<=h<=Infinity)"
+  },
+  "repair": {
+    "old_contract": "BoxConstraints(minHeight: height)",
+    "new_contract": "height: height",
+    "stack_visual_composition_preserved": true,
+    "desktop_scrollable_test": true,
+    "mobile_390px_test": true
+  },
+  "local_gates": {
+    "dart_format": "PENDING",
+    "flutter_analyze": "PENDING",
+    "flutter_test": "PENDING",
+    "browser_uat_retry": "PENDING"
+  },
+  "governance": {
+    "database_write": false,
+    "public_release": "BLOCKED",
+    "production_deployment": "NOT_APPROVED"
+  }
+}

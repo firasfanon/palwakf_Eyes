@@ -15,24 +15,23 @@ void main() {
     expect(source.contains('النشر العام: محجوب'), isTrue);
   });
 
-  test(
-    'original draft rendering is protected by the debug visibility policy',
-    () {
-      final policy = File(
-        'lib/features/places/application/original_draft_visibility_policy.dart',
-      ).readAsStringSync();
-      final detail = File(
-        'lib/features/places/presentation/place_detail_screen.dart',
-      ).readAsStringSync();
+  test('original draft rendering is protected by the debug visibility policy', () {
+    final policy = File(
+      'lib/features/places/application/original_draft_visibility_policy.dart',
+    ).readAsStringSync();
+    final detail = File(
+      'lib/features/places/presentation/place_detail_screen.dart',
+    ).readAsStringSync();
 
-      expect(policy.contains('kDebugMode'), isTrue);
-      expect(policy.contains('publicReleaseApproved = false'), isTrue);
-      expect(
-        detail.contains('OriginalDraftVisibilityPolicy.canRenderOriginalDraft'),
-        isTrue,
-      );
-    },
-  );
+    expect(policy.contains('kDebugMode'), isTrue);
+    expect(policy.contains('publicReleaseApproved = false'), isTrue);
+    expect(
+      detail.contains(
+        'OriginalDraftVisibilityPolicy.canRenderOriginalDraft',
+      ),
+      isTrue,
+    );
+  });
 
   test('repository reads the dual narrative catalog', () {
     final source = File(

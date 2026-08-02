@@ -15,9 +15,7 @@ class SiteCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scene = _sceneFor(site.siteTypeAr);
-    final period = site.periods.isEmpty
-        ? 'فترة قيد التحديد'
-        : site.periods.first;
+    final period = site.periods.isEmpty ? 'فترة قيد التحديد' : site.periods.first;
     return Semantics(
       button: true,
       label:
@@ -34,7 +32,9 @@ class SiteCard extends StatelessWidget {
                 decoration: BoxDecoration(gradient: scene.gradient),
                 child: Stack(
                   children: <Widget>[
-                    const Positioned.fill(child: PalEyesPattern(opacity: 0.06)),
+                    const Positioned.fill(
+                      child: PalEyesPattern(opacity: 0.06),
+                    ),
                     PositionedDirectional(
                       end: 16,
                       top: 16,
@@ -93,9 +93,10 @@ class SiteCard extends StatelessWidget {
                         site.nameAr,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                          fontWeight: FontWeight.w900,
-                        ),
+                        style:
+                            Theme.of(context).textTheme.titleLarge?.copyWith(
+                                  fontWeight: FontWeight.w900,
+                                ),
                       ),
                       if (site.nameEn.isNotEmpty) ...<Widget>[
                         const SizedBox(height: 3),
@@ -103,12 +104,12 @@ class SiteCard extends StatelessWidget {
                           site.nameEn,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
-                          style: Theme.of(context).textTheme.bodySmall
-                              ?.copyWith(
-                                color: Theme.of(
-                                  context,
-                                ).colorScheme.onSurfaceVariant,
-                              ),
+                          style:
+                              Theme.of(context).textTheme.bodySmall?.copyWith(
+                                    color: Theme.of(context)
+                                        .colorScheme
+                                        .onSurfaceVariant,
+                                  ),
                         ),
                       ],
                       const SizedBox(height: 9),
@@ -138,9 +139,9 @@ class SiteCard extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(
                             height: 1.55,
-                            color: Theme.of(
-                              context,
-                            ).colorScheme.onSurfaceVariant,
+                            color: Theme.of(context)
+                                .colorScheme
+                                .onSurfaceVariant,
                           ),
                         ),
                       ),
@@ -149,7 +150,10 @@ class SiteCard extends StatelessWidget {
                         spacing: 10,
                         runSpacing: 6,
                         children: <Widget>[
-                          _Meta(icon: Icons.timeline_outlined, label: period),
+                          _Meta(
+                            icon: Icons.timeline_outlined,
+                            label: period,
+                          ),
                           _Meta(
                             icon: Icons.library_books_outlined,
                             label: '${site.sources.length} مراجع',
@@ -200,7 +204,9 @@ class SiteCard extends StatelessWidget {
         ),
       );
     }
-    if (type.contains('ماء') || type.contains('عين') || type.contains('برك')) {
+    if (type.contains('ماء') ||
+        type.contains('عين') ||
+        type.contains('برك')) {
       return const _SiteScene(
         icon: Icons.water_drop_outlined,
         gradient: LinearGradient(
@@ -299,7 +305,11 @@ class _Meta extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
-        Icon(icon, size: 16, color: Theme.of(context).colorScheme.primary),
+        Icon(
+          icon,
+          size: 16,
+          color: Theme.of(context).colorScheme.primary,
+        ),
         const SizedBox(width: 4),
         Text(label, style: Theme.of(context).textTheme.labelMedium),
       ],

@@ -11,7 +11,8 @@ class ReleaseControlScreen extends ConsumerStatefulWidget {
       _ReleaseControlScreenState();
 }
 
-class _ReleaseControlScreenState extends ConsumerState<ReleaseControlScreen> {
+class _ReleaseControlScreenState
+    extends ConsumerState<ReleaseControlScreen> {
   bool previewChecked = false;
   bool editorialApproved = false;
   bool sourcesApproved = false;
@@ -26,18 +27,14 @@ class _ReleaseControlScreenState extends ConsumerState<ReleaseControlScreen> {
       mapApproved;
 
   Future<void> _createCandidate() async {
-    final snapshot = await ref
-        .read(operationalWorkspaceStoreProvider)
-        .initialize();
+    final snapshot = await ref.read(operationalWorkspaceStoreProvider).initialize();
     final siteIds = snapshot.sites
         .where((site) => site.workflowStatus != 'LIMITED_RESEARCH')
         .take(10)
         .map((site) => site.id)
         .toList(growable: false);
 
-    await ref
-        .read(operationalWorkspaceStoreProvider)
-        .createReleaseCandidate(
+    await ref.read(operationalWorkspaceStoreProvider).createReleaseCandidate(
           title: 'مرشح إصدار داخلي ${DateTime.now().toIso8601String()}',
           siteIds: siteIds,
           gates: <String, bool>{
@@ -51,9 +48,7 @@ class _ReleaseControlScreenState extends ConsumerState<ReleaseControlScreen> {
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text(
-            'تم إنشاء مرشح إصدار مجمد. النشر العام ما زال محجوباً.',
-          ),
+          content: Text('تم إنشاء مرشح إصدار مجمد. النشر العام ما زال محجوباً.'),
         ),
       );
     }
@@ -113,7 +108,9 @@ class _ReleaseControlScreenState extends ConsumerState<ReleaseControlScreen> {
             text: ready
                 ? 'كل بوابات المرشح مكتملة. النشر الفعلي ما زال محظوراً.'
                 : 'مرشح الإصدار غير جاهز. أكمل البوابات البشرية المطلوبة.',
-            icon: ready ? Icons.task_alt_rounded : Icons.lock_outline_rounded,
+            icon: ready
+                ? Icons.task_alt_rounded
+                : Icons.lock_outline_rounded,
           ),
           const SizedBox(height: 18),
           snapshot.when(
@@ -130,18 +127,16 @@ class _ReleaseControlScreenState extends ConsumerState<ReleaseControlScreen> {
                 );
               }
               return Column(
-                children: data.releaseCandidates
-                    .map((candidate) {
-                      return Card(
-                        child: PalEyesWorkflowStatus(
-                          label: candidate.title,
-                          status:
-                              '${candidate.status} • ${candidate.siteIds.length} مواقع • إنشاء: ${candidate.createdBy}',
-                          icon: Icons.inventory_2_outlined,
-                        ),
-                      );
-                    })
-                    .toList(growable: false),
+                children: data.releaseCandidates.map((candidate) {
+                  return Card(
+                    child: PalEyesWorkflowStatus(
+                      label: candidate.title,
+                      status:
+                          '${candidate.status} • ${candidate.siteIds.length} مواقع • إنشاء: ${candidate.createdBy}',
+                      icon: Icons.inventory_2_outlined,
+                    ),
+                  );
+                }).toList(growable: false),
               );
             },
           ),
@@ -171,7 +166,10 @@ class _Gate extends StatelessWidget {
         secondary: Icon(
           value ? Icons.check_circle_outline : Icons.radio_button_unchecked,
         ),
-        title: Text(label, style: const TextStyle(fontWeight: FontWeight.w900)),
+        title: Text(
+          label,
+          style: const TextStyle(fontWeight: FontWeight.w900),
+        ),
         subtitle: const Text('قرار بشري محفوظ ضمن مرشح الإصدار فقط'),
       ),
     );

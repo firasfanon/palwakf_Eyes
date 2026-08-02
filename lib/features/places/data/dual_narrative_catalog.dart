@@ -5,13 +5,14 @@ import 'package:pal_eyes/features/places/domain/original_historical_draft_layer.
 
 final Map<String, HeritageSite> _originalDraftSitesById =
     <String, HeritageSite>{
-      for (final HeritageSite site in fullDraftSiteCatalog) site.id: site,
-    };
+  for (final HeritageSite site in fullDraftSiteCatalog) site.id: site,
+};
 
-final List<HeritageSite>
-dualNarrativeSiteCatalog = List<HeritageSite>.unmodifiable(
+final List<HeritageSite> dualNarrativeSiteCatalog =
+    List<HeritageSite>.unmodifiable(
   governedSiteCatalog.map((HeritageSite governedSite) {
-    final HeritageSite? originalSite = _originalDraftSitesById[governedSite.id];
+    final HeritageSite? originalSite =
+        _originalDraftSitesById[governedSite.id];
     if (originalSite == null) {
       throw StateError(
         'Original historical draft is missing for ${governedSite.id}',

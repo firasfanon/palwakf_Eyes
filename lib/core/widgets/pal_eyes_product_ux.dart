@@ -116,9 +116,10 @@ class PalEyesNotice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Theme.of(
-        context,
-      ).colorScheme.secondaryContainer.withValues(alpha: 0.45),
+      color: Theme.of(context)
+          .colorScheme
+          .secondaryContainer
+          .withValues(alpha: 0.45),
       borderRadius: BorderRadius.circular(18),
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -161,9 +162,10 @@ class PalEyesKpiCard extends StatelessWidget {
             const SizedBox(height: 14),
             Text(
               value,
-              style: Theme.of(
-                context,
-              ).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.w900),
+              style: Theme.of(context)
+                  .textTheme
+                  .headlineMedium
+                  ?.copyWith(fontWeight: FontWeight.w900),
             ),
             const SizedBox(height: 4),
             Text(label, style: const TextStyle(fontWeight: FontWeight.w800)),
@@ -266,9 +268,10 @@ class PalEyesEmptyState extends StatelessWidget {
                 const SizedBox(height: 14),
                 Text(
                   title,
-                  style: Theme.of(
-                    context,
-                  ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w900),
+                  style: Theme.of(context)
+                      .textTheme
+                      .titleLarge
+                      ?.copyWith(fontWeight: FontWeight.w900),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 8),

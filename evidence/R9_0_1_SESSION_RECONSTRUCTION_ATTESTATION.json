@@ -1,0 +1,94 @@
+{
+  "project_id": "pal_eyes",
+  "target_baseline": "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802",
+  "version": "9.0.1+30",
+  "generated_at": "2026-08-03T01:27:32+03:00",
+  "reconstruction_mode": "SESSION_SOURCE_REPLAY",
+  "status": "ACCEPTED_GITHUB_CANDIDATE_AFTER_FORMAT_REPLAY_AND_CI",
+  "inputs": {
+    "r9_0_0_full_source_zip": {
+      "filename": "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0_20260802_FULL(1).zip",
+      "sha256": "842abe476695e2097436f51cc7fa04a4c238ddb218637dc412974ae091e0ee46",
+      "size_bytes": 1642943,
+      "manifest_entries": 299,
+      "manifest_validation": "PASS_299_OF_299"
+    },
+    "r9_0_1_promotion_evidence_package": {
+      "filename": "PAL_EYES_R9_0_1_BROWSER_UAT_BASELINE_PROMOTION_FINALIZATION_V1_0_1_20260802.zip",
+      "sha256": "aea5b7f53563b415e9f05ad4a18a0763cfc5bd72d57b0994795a07f16c81cde6",
+      "size_bytes": 9713343
+    },
+    "browser_uat_evidence_archive": {
+      "filename": "PAL_EYES_R9_0_1_BROWSER_UAT_EVIDENCE_ARCHIVE_20260802.zip",
+      "sha256": "a862717b4e6e2a73ec189e1b3197291459c3b711ffafad2a699b2cf9b876df9c",
+      "size_bytes": 9698675
+    }
+  },
+  "recorded_session_gates": {
+    "targeted_format": "PASS_12_FILES",
+    "format_scope_escape": false,
+    "static_verify": "PASS",
+    "flutter_analyze": "PASS",
+    "flutter_test": "PASS_65",
+    "git_diff_check": "PASS",
+    "chrome_runtime_smoke": "PASS",
+    "edge_runtime_smoke": "PASS",
+    "browser_uat": "CLOSED_BY_EXPLICIT_OPERATOR_AUTHORIZATION",
+    "runtime_exceptions": 0,
+    "visible_render_overflows": 0
+  },
+  "byte_identity": {
+    "unavailable_worktree": "C:\\Users\\Firas_Fanon\\StudioProjects\\Pal_Eyes",
+    "byte_identical_to_unavailable_worktree": "UNVERIFIED",
+    "reason": "The exact post-format worktree bytes were not uploaded after the local 12-file Dart format run.",
+    "semantic_effect": "The missing operation was canonical whitespace formatting; functional source comes from the complete R9.0.0 source and recorded R9.0.1 closure.",
+    "required_gate": "Replay the canonical targeted format list and rerun analyze/tests before merging to main."
+  },
+  "github_remote_audit": {
+    "repository": "firasfanon/Pal_Eyes",
+    "main_head": "c67ff5e28205aac57ff28e8b8120c3bac5de4488",
+    "main_version": "8.0.1+27",
+    "main_baseline": "PAL_EYES_PUBLIC_EXPERIENCE_ATLAS_MUSEUM_MAGAZINE_R8_0_1_20260720",
+    "branches": [
+      "main",
+      "agent/pal-eyes-ci-foundation"
+    ],
+    "open_pull_requests": 0,
+    "write_gateway": "BLOCKED_403_RESOURCE_NOT_ACCESSIBLE_BY_INTEGRATION",
+    "write_probe_mutation": false
+  },
+  "governance": {
+    "database_write": false,
+    "supabase_apply": false,
+    "public_coordinates": 0,
+    "public_markers": 0,
+    "approved_media": 0,
+    "publication": "BLOCKED",
+    "production_deployment": "NOT_APPROVED",
+    "osm_tile_policy_warning": "OPEN_PRODUCTION_READINESS_BLOCKER"
+  },
+  "finalization": {
+    "completed_at": "2026-08-03T00:38:14+03:00",
+    "targeted_format_replay": "PASS",
+    "flutter_analyze": "PASS",
+    "flutter_test": "PASS",
+    "git_diff_check": "PASS",
+    "byte_identity_to_unavailable_worktree": "NOT_ASSERTED",
+    "merge_readiness": "READY_FOR_FINAL_PR_ACCEPTANCE_AND_MERGE_DECISION"
+  },
+  "github_promotion": {
+    "repository": "firasfanon/Pal_Eyes",
+    "pull_request_number": 1,
+    "pull_request_state": "OPEN_DRAFT",
+    "source_candidate_head": "14e0a64d40a58b1d4cdf0e3646e001376599bc77",
+    "source_candidate_workflow_run_id": 30769326139,
+    "source_candidate_ci": "SUCCESS",
+    "metadata_closure_batch": "PAL_EYES_R9_0_1_GITHUB_METADATA_RECONCILIATION_CLOSURE_V1",
+    "metadata_only": true,
+    "metadata_closure_requires_ci_before_merge": true,
+    "merge_authorization": "NOT_YET_ISSUED",
+    "main_merged": false,
+    "next_gate": "PR_FINAL_ACCEPTANCE_AND_MERGE_DECISION",
+    "recorded_at": "2026-08-03T01:27:32+03:00"
+  }
+}

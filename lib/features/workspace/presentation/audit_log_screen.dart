@@ -22,25 +22,22 @@ class AuditLogScreen extends ConsumerWidget {
         ),
         data: (data) {
           return Column(
-            children: data.auditEvents
-                .take(200)
-                .map((event) {
-                  return Card(
-                    child: ListTile(
-                      leading: const CircleAvatar(
-                        child: Icon(Icons.history_toggle_off),
-                      ),
-                      title: Text(
-                        event.summary,
-                        style: const TextStyle(fontWeight: FontWeight.w900),
-                      ),
-                      subtitle: Text(
-                        '${event.actorLabel} • ${event.action} • ${event.entityType}:${event.entityId} • ${event.createdAt.toLocal()}',
-                      ),
-                    ),
-                  );
-                })
-                .toList(growable: false),
+            children: data.auditEvents.take(200).map((event) {
+              return Card(
+                child: ListTile(
+                  leading: const CircleAvatar(
+                    child: Icon(Icons.history_toggle_off),
+                  ),
+                  title: Text(
+                    event.summary,
+                    style: const TextStyle(fontWeight: FontWeight.w900),
+                  ),
+                  subtitle: Text(
+                    '${event.actorLabel} • ${event.action} • ${event.entityType}:${event.entityId} • ${event.createdAt.toLocal()}',
+                  ),
+                ),
+              );
+            }).toList(growable: false),
           );
         },
       ),

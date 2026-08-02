@@ -37,9 +37,7 @@ class _SourceRegistryWorkspaceScreenState
               const SizedBox(height: 10),
               TextField(
                 controller: attribution,
-                decoration: const InputDecoration(
-                  labelText: 'المؤلف أو المؤسسة',
-                ),
+                decoration: const InputDecoration(labelText: 'المؤلف أو المؤسسة'),
               ),
               const SizedBox(height: 10),
               TextField(
@@ -63,9 +61,7 @@ class _SourceRegistryWorkspaceScreenState
     );
 
     if (confirmed == true && title.text.trim().isNotEmpty) {
-      await ref
-          .read(operationalWorkspaceStoreProvider)
-          .addSource(
+      await ref.read(operationalWorkspaceStoreProvider).addSource(
             title: title.text.trim(),
             attribution: attribution.text.trim(),
             sourceType: 'مرجع جديد',
@@ -91,8 +87,7 @@ class _SourceRegistryWorkspaceScreenState
       title: 'سجل المصادر',
       subtitle: 'مصادر قابلة للبحث مع حالة بيانات وحقوق وروابط تشغيلية.',
       icon: Icons.library_books_outlined,
-      notice:
-          'وضع التشغيل: ${store.backendMode.labelAr}. المصدر الجديد غير منشور افتراضياً.',
+      notice: 'وضع التشغيل: ${store.backendMode.labelAr}. المصدر الجديد غير منشور افتراضياً.',
       actions: <Widget>[
         FilledButton.icon(
           onPressed: _addSource,
@@ -107,16 +102,13 @@ class _SourceRegistryWorkspaceScreenState
           icon: Icons.error_outline,
         ),
         data: (data) {
-          final rows = data.sources
-              .where((source) {
-                final needle = query.trim();
-                return needle.isEmpty ||
-                    source.title.contains(needle) ||
-                    source.attribution.contains(needle) ||
-                    source.sourceType.contains(needle);
-              })
-              .take(100)
-              .toList(growable: false);
+          final rows = data.sources.where((source) {
+            final needle = query.trim();
+            return needle.isEmpty ||
+                source.title.contains(needle) ||
+                source.attribution.contains(needle) ||
+                source.sourceType.contains(needle);
+          }).take(100).toList(growable: false);
 
           return Column(
             children: <Widget>[

@@ -99,7 +99,9 @@ class PalEyesPattern extends StatelessWidget {
   Widget build(BuildContext context) {
     return IgnorePointer(
       child: CustomPaint(
-        painter: _HeritagePatternPainter(color.withValues(alpha: opacity)),
+        painter: _HeritagePatternPainter(
+          color.withValues(alpha: opacity),
+        ),
         size: Size.infinite,
       ),
     );
@@ -157,7 +159,9 @@ class PalEyesPageHero extends StatelessWidget {
     final width = MediaQuery.sizeOf(context).width;
     final horizontal = width < 600 ? 16.0 : 28.0;
     return Container(
-      decoration: const BoxDecoration(gradient: AppColors.sovereignGradient),
+      decoration: const BoxDecoration(
+        gradient: AppColors.sovereignGradient,
+      ),
       child: Stack(
         children: <Widget>[
           const Positioned.fill(child: PalEyesPattern()),
@@ -201,7 +205,9 @@ class PalEyesPageHero extends StatelessWidget {
                               const SizedBox(height: 14),
                               Text(
                                 title,
-                                style: Theme.of(context).textTheme.displaySmall
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .displaySmall
                                     ?.copyWith(
                                       color: Colors.white,
                                       fontWeight: FontWeight.w900,
@@ -210,11 +216,11 @@ class PalEyesPageHero extends StatelessWidget {
                               const SizedBox(height: 12),
                               Text(
                                 subtitle,
-                                style: Theme.of(context).textTheme.titleMedium
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .titleMedium
                                     ?.copyWith(
-                                      color: Colors.white.withValues(
-                                        alpha: 0.76,
-                                      ),
+                                      color: Colors.white.withValues(alpha: 0.76),
                                       height: 1.65,
                                     ),
                               ),
@@ -222,7 +228,11 @@ class PalEyesPageHero extends StatelessWidget {
                           ),
                         ),
                         if (actions.isNotEmpty)
-                          Wrap(spacing: 9, runSpacing: 9, children: actions),
+                          Wrap(
+                            spacing: 9,
+                            runSpacing: 9,
+                            children: actions,
+                          ),
                       ],
                     ),
                     if (header != null) ...<Widget>[
@@ -282,16 +292,17 @@ class PalEyesSectionHeader extends StatelessWidget {
                 ),
               Text(
                 title,
-                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                  fontWeight: FontWeight.w900,
-                ),
+                style: Theme.of(context)
+                    .textTheme
+                    .headlineMedium
+                    ?.copyWith(fontWeight: FontWeight.w900),
               ),
               const SizedBox(height: 7),
               Text(
                 subtitle,
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                  color: Theme.of(context).colorScheme.onSurfaceVariant,
-                ),
+                      color: Theme.of(context).colorScheme.onSurfaceVariant,
+                    ),
               ),
             ],
           ),
@@ -333,7 +344,10 @@ class PalEyesMetricTile extends StatelessWidget {
             ? const LinearGradient(
                 begin: AlignmentDirectional.topStart,
                 end: AlignmentDirectional.bottomEnd,
-                colors: <Color>[AppColors.sovereignBlue, AppColors.deepBlue],
+                colors: <Color>[
+                  AppColors.sovereignBlue,
+                  AppColors.deepBlue,
+                ],
               )
             : null,
         color: emphasis ? null : scheme.surface,
@@ -368,9 +382,9 @@ class PalEyesMetricTile extends StatelessWidget {
                 Text(
                   value,
                   style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                    color: emphasis ? Colors.white : null,
-                    fontWeight: FontWeight.w900,
-                  ),
+                        color: emphasis ? Colors.white : null,
+                        fontWeight: FontWeight.w900,
+                      ),
                 ),
                 Text(
                   label,
@@ -515,11 +529,11 @@ class PalEyesVisualCard extends StatelessWidget {
                           title,
                           maxLines: compact ? 1 : 2,
                           overflow: TextOverflow.ellipsis,
-                          style: Theme.of(context).textTheme.titleLarge
-                              ?.copyWith(
-                                color: foreground,
-                                fontWeight: FontWeight.w900,
-                              ),
+                          style:
+                              Theme.of(context).textTheme.titleLarge?.copyWith(
+                                    color: foreground,
+                                    fontWeight: FontWeight.w900,
+                                  ),
                         ),
                         SizedBox(height: compact ? 6 : 8),
                         Expanded(
@@ -617,7 +631,10 @@ class PalEyesTimelineBand extends StatelessWidget {
         separatorBuilder: (_, _) => SizedBox(
           width: 38,
           child: Center(
-            child: Container(height: 2, color: scheme.outlineVariant),
+            child: Container(
+              height: 2,
+              color: scheme.outlineVariant,
+            ),
           ),
         ),
         itemBuilder: (context, index) {
@@ -652,7 +669,9 @@ class PalEyesTimelineBand extends StatelessWidget {
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
-                      fontWeight: selected ? FontWeight.w900 : FontWeight.w700,
+                      fontWeight: selected
+                          ? FontWeight.w900
+                          : FontWeight.w700,
                       color: selected ? scheme.primary : null,
                     ),
                   ),
@@ -667,7 +686,11 @@ class PalEyesTimelineBand extends StatelessWidget {
 }
 
 class _Eyebrow extends StatelessWidget {
-  const _Eyebrow({required this.icon, required this.label, this.dark = true});
+  const _Eyebrow({
+    required this.icon,
+    required this.label,
+    this.dark = true,
+  });
 
   final IconData icon;
   final String label;

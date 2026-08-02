@@ -9,9 +9,8 @@ class MediaRightsScreen extends ConsumerWidget {
   Future<void> _registerAsset(BuildContext context, WidgetRef ref) async {
     final title = TextEditingController();
     final owner = TextEditingController();
-    final snapshot = await ref
-        .read(operationalWorkspaceStoreProvider)
-        .initialize();
+    final snapshot =
+        await ref.read(operationalWorkspaceStoreProvider).initialize();
     if (!context.mounted) {
       title.dispose();
       owner.dispose();
@@ -51,21 +50,15 @@ class MediaRightsScreen extends ConsumerWidget {
     );
 
     if (confirmed == true && title.text.trim().isNotEmpty) {
-      await ref
-          .read(operationalWorkspaceStoreProvider)
-          .registerMediaAsset(
+      await ref.read(operationalWorkspaceStoreProvider).registerMediaAsset(
             siteId: site.id,
             title: title.text.trim(),
             assetType: 'image',
-            ownerLabel: owner.text.trim().isEmpty
-                ? 'غير محدد'
-                : owner.text.trim(),
+            ownerLabel: owner.text.trim().isEmpty ? 'غير محدد' : owner.text.trim(),
           );
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('تم تسجيل الوسائط وحظر النشر حتى مراجعة الحقوق.'),
-          ),
+          const SnackBar(content: Text('تم تسجيل الوسائط وحظر النشر حتى مراجعة الحقوق.')),
         );
       }
     }
@@ -100,7 +93,8 @@ class MediaRightsScreen extends ConsumerWidget {
           if (data.mediaAssets.isEmpty) {
             return PalEyesEmptyState(
               title: 'لا توجد وسائط مسجلة',
-              message: 'ابدأ بتسجيل ملف ووصفه وتحديد مالكه قبل أي مراجعة حقوق.',
+              message:
+                  'ابدأ بتسجيل ملف ووصفه وتحديد مالكه قبل أي مراجعة حقوق.',
               actionLabel: 'تسجيل مادة',
               onAction: () => _registerAsset(context, ref),
               icon: Icons.photo_library_outlined,
@@ -108,18 +102,16 @@ class MediaRightsScreen extends ConsumerWidget {
           }
 
           return Column(
-            children: data.mediaAssets
-                .map((asset) {
-                  return Card(
-                    child: PalEyesWorkflowStatus(
-                      label: asset.title,
-                      status:
-                          '${asset.assetType} • مالك: ${asset.ownerLabel} • حقوق: ${asset.rightsStatus} • داخلي: ${asset.internalUseStatus} • عام: ${asset.publicUseStatus}',
-                      icon: Icons.image_outlined,
-                    ),
-                  );
-                })
-                .toList(growable: false),
+            children: data.mediaAssets.map((asset) {
+              return Card(
+                child: PalEyesWorkflowStatus(
+                  label: asset.title,
+                  status:
+                      '${asset.assetType} • مالك: ${asset.ownerLabel} • حقوق: ${asset.rightsStatus} • داخلي: ${asset.internalUseStatus} • عام: ${asset.publicUseStatus}',
+                  icon: Icons.image_outlined,
+                ),
+              );
+            }).toList(growable: false),
           );
         },
       ),

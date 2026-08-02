@@ -1,81 +1,89 @@
 {
-  "project_id": "pal_eyes",
-  "package_name": "PAL_EYES_REPOSITORY_AND_RUNTIME_DISCOVERY_R0_2_0_20260713_UPDATES_ONLY",
-  "version": "0.2.0",
-  "date": "2026-07-13",
-  "status": "REPOSITORY_RUNTIME_DISCOVERY_COMPLETED_READ_ONLY",
-  "parent_baseline": {
-    "name": "PAL_EYES_PROJECT_FOUNDATION_V0_1_0_20260713",
-    "zip_sha256": "88b87fc2e9ec5934e30f92976862808287210fb043b3d75263b3ea6417ff4b83"
-  },
-  "runtime_source_mutation": "NONE",
-  "database_mutation": "NONE",
-  "production_mutation": "NONE",
+  "package_name": "PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_R3_0_1_20260714_UPDATES_ONLY",
+  "batch": "PAL_EYES_FULL_DRAFT_SITE_CATALOG_EXTENSION_IMPORT_ALIGNMENT_COMPILE_HOTFIX_V1",
+  "parent_baseline": "PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_R3_0_0_20260714",
+  "target_baseline": "PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_R3_0_1_20260714",
+  "changed_file_count": 15,
   "files": [
     {
-      "path": "PAL_EYES_PROJECT_COMPREHENSIVE_GUIDE.md",
-      "sha256": "9712628f580cb88224c5ef4936965be95f65192b01afe4af330b048fad653aca",
-      "size_bytes": 14944
+      "path": "BASELINE_MANIFEST.json",
+      "sha256": "71242da86520fb547b38e9f19c52e787e7183135480f508ac137e7e39fb3e625",
+      "size_bytes": 25721
     },
     {
-      "path": "README.md",
-      "sha256": "7cb7855d97243591240e6339a93773869e769e4d3ad11676180cbf2f5b0ec0ad",
-      "size_bytes": 2089
+      "path": "PAL_EYES_BASELINE_ID.txt",
+      "sha256": "2dbf454c02e2025a9345947fcb5bbb7752f3027853fff6d9a8b914e06450df57",
+      "size_bytes": 746
+    },
+    {
+      "path": "PAL_EYES_PROJECT_COMPREHENSIVE_GUIDE.md",
+      "sha256": "18735fe458bdbe11f900a45f8ab4d574ce6da8ac6ee063ddedeea2ccbe1f890e",
+      "size_bytes": 22251
     },
     {
       "path": "README_UPDATES_ONLY.md",
-      "sha256": "aaf269e1394221c66c1cb0ddb72d5737f6faa3ade7db6919cfed3461e6d16621",
-      "size_bytes": 606
+      "sha256": "7d8fa53a06d6ee60fad3fa09f45b076ac85b4fa267c9222f3046238d121a7dd2",
+      "size_bytes": 327
     },
     {
-      "path": "docs/08_REPOSITORY_AND_RUNTIME_DISCOVERY_REPORT.md",
-      "sha256": "8246dd700f02ffbc4feb5827a0b2001a4950a29ee8ba33979ed70f3b37e87cfa",
-      "size_bytes": 3730
-    },
-    {
-      "path": "docs/09_RUNTIME_FOUNDATION_READINESS_AND_NEXT_BATCH.md",
-      "sha256": "f5cdcfa96c6c7dbfdcb3ece57e99f7ed22a0068e44ed6067ddf29e2bdc12c411",
-      "size_bytes": 1819
+      "path": "docs/21_EXTENSION_IMPORT_ALIGNMENT_COMPILE_HOTFIX_V1.md",
+      "sha256": "f89865a4ccc980a098bcdb4fddcb2a3b78d491019885c25b802eb34ac5de9e00",
+      "size_bytes": 782
     },
     {
       "path": "docs/CHANGELOG.md",
-      "sha256": "b1785cc7e5a110bc6f939f1351588fdcedf0161292d731d89105d348a9d32121",
-      "size_bytes": 1555
+      "sha256": "6a7c8ff4c25a0b30bc1a5157f7110c03af2bd1845c2ddaeb5fa56737169d2e31",
+      "size_bytes": 8363
     },
     {
       "path": "docs/DECISION_LOG.md",
-      "sha256": "ed5a41c49d8ffeea37fc0b34d609a6273ef5f76d52512691aba0c1e3af7b053b",
-      "size_bytes": 2012
+      "sha256": "e57d585f9ce2b834de82b4b779b53495f1a64a846feee3447177d00980e7f9b9",
+      "size_bytes": 7766
     },
     {
-      "path": "docs/SESSION_HANDOFF_20260713_R0_2_0.md",
-      "sha256": "01a8dfc907f81082e22a5c99b390a6c13903d13ce000c95f509828d8db4d3d2f",
-      "size_bytes": 1744
+      "path": "docs/ERROR_RECORD.md",
+      "sha256": "bf4c1e7e12a7750c070ae118bbff8d7b3bf40d0f3c27b8f3aedfd779cfc6629b",
+      "size_bytes": 6429
     },
     {
-      "path": "evidence/BASELINE_INTEGRITY_REPORT.txt",
-      "sha256": "6dffbd528e5203faaf3fc4f49c641a04b1e64760cfcbbb4c6c8b68e18eb7d5b4",
-      "size_bytes": 546
+      "path": "docs/SESSION_HANDOFF_20260714_EXTENSION_IMPORT_HOTFIX_R3_0_1.md",
+      "sha256": "a8d00bac2df54aa2e2de3ae6b6bb83c7413939b9d94a19bf31abcb651e73b462",
+      "size_bytes": 592
     },
     {
-      "path": "evidence/REPOSITORY_RUNTIME_DISCOVERY_EVIDENCE.json",
-      "sha256": "0127d09fd163bf294adf4aac28cd999b3d7000d22b870cbaf5cdc88d0f226b16",
-      "size_bytes": 5831
+      "path": "evidence/EXTENSION_IMPORT_ALIGNMENT_HOTFIX_EVIDENCE.json",
+      "sha256": "9493fa98e7288fea1da1daf16a6230a94678b8faf9ad4a46f05e6fa078d72f84",
+      "size_bytes": 1049
     },
     {
-      "path": "governance/PROJECT_STATUS_SNAPSHOT.yaml",
-      "sha256": "5800d6d2a5a9bcaa517a099d9031cddc45f7ca07d3d984d45e673a678072d80f",
-      "size_bytes": 1115
+      "path": "evidence/EXTENSION_IMPORT_ALIGNMENT_STATIC_VERIFY.json",
+      "sha256": "d3c8788c7aea9be838c162f4e04b9a484e785641bd4856b866a9002e48c2b66e",
+      "size_bytes": 13418
     },
     {
-      "path": "tools/Invoke-PalEyesRepositoryDiscovery.ps1",
-      "sha256": "efdd4d368fd98161d509612819b66e96351612f12f5476819de747bf33a45f89",
-      "size_bytes": 882
+      "path": "lib/features/places/presentation/places_screen.dart",
+      "sha256": "b3544fa396d7322d5e5db8a8e046cde45e71d8929f1a78fbcb0b38625dfed8ff",
+      "size_bytes": 13978
     },
     {
-      "path": "tools/pal_eyes_repository_discovery.py",
-      "sha256": "ab413b38d6576586aed7e87bc5b7964d7e0e16a1da12dc80068c2ea0581d3fb1",
-      "size_bytes": 3054
+      "path": "lib/features/places/presentation/widgets/site_card.dart",
+      "sha256": "c04f73a2c4099ae9bdd68e8a4799d37829f722780f474c0c2a721c2d1e7ef95f",
+      "size_bytes": 6441
+    },
+    {
+      "path": "lib/features/workspace/presentation/workspace_dashboard_screen.dart",
+      "sha256": "fc8694d119f173d7a140e777018e8715f501aa06c42cd86f8283967cfddeb016",
+      "size_bytes": 10931
+    },
+    {
+      "path": "pubspec.yaml",
+      "sha256": "1d379f2937ef805f8328392b9aca58f19768708258a41834ff7677c5f62b0a8a",
+      "size_bytes": 572
+    },
+    {
+      "path": "tools/verify_flutter_runtime_foundation_static.py",
+      "sha256": "f68b2ac80aac9901dbf1ad68f4862b5c65df4eddce440ffa96469d94ba09b82a",
+      "size_bytes": 18643
     }
   ]
 }

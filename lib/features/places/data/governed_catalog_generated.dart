@@ -14,22 +14,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مسجد/حرم",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "تتعامل قرارات لجنة التراث العالمي مع المسجد الأقصى المبارك/الحرم القدسي الشريف بوصفه موقع عبادة إسلامياً وجزءاً لا يتجزأ من موقع القدس القديمة وأسوارها المدرج على قائمة التراث العالمي.",
+    summaryDraft: "تتعامل قرارات لجنة التراث العالمي مع المسجد الأقصى المبارك/الحرم القدسي الشريف بوصفه موقع عبادة إسلامياً وجزءاً لا يتجزأ من موقع القدس القديمة وأسوارها المدرج على قائمة التراث العالمي.",
     periods: <String>["أموي", "عباسي", "فاطمي", "أيوبي", "مملوكي", "عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-001",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "تتعامل قرارات لجنة التراث العالمي مع المسجد الأقصى المبارك/الحرم القدسي الشريف بوصفه موقع عبادة إسلامياً وجزءاً لا يتجزأ من موقع القدس القديمة وأسوارها المدرج على قائمة التراث العالمي.",
+        draftText: "تتعامل قرارات لجنة التراث العالمي مع المسجد الأقصى المبارك/الحرم القدسي الشريف بوصفه موقع عبادة إسلامياً وجزءاً لا يتجزأ من موقع القدس القديمة وأسوارها المدرج على قائمة التراث العالمي.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-4aeec5656d1d-W1-C01",
@@ -43,8 +39,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "AUTH-UNESCO-JERUSALEM-DECISION-001",
         title: "40 COM 7A.13 - Old City of Jerusalem and its Walls",
         attribution: "UNESCO World Heritage Committee",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/decisions/6818/",
         sourceClass: "official_committee_decision",
@@ -54,8 +49,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/decisions/6818/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/decisions/6818/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -69,9 +63,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 1,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "لا تسمح الأدلة المفحوصة بحسم ادعاءات المعبد الكنعاني أو الموقع الدقيق للمعابد القديمة أو إثبات وجود/غياب بقايا تحت كامل الحرم. يوثق تقرير 2026 أعمالاً ومخاوف منسوبة إلى جهات فلسطينية وأردنية، ولا يحولها إلى نتيجة أثرية مستقلة.",
-    ],
+    p0Findings: <String>["لا تسمح الأدلة المفحوصة بحسم ادعاءات المعبد الكنعاني أو الموقع الدقيق للمعابد القديمة أو إثبات وجود/غياب بقايا تحت كامل الحرم. يوثق تقرير 2026 أعمالاً ومخاوف منسوبة إلى جهات فلسطينية وأردنية، ولا يحولها إلى نتيجة أثرية مستقلة."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -91,22 +83,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "بلدة قديمة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "يضع ملف دولة فلسطين سلوان ضمن السياق الجغرافي التاريخي المحيط بالبلدة القديمة، ويعرض عين جيحون بوصفها مصدراً مائياً محورياً في تطور القدس.",
+    summaryDraft: "يضع ملف دولة فلسطين سلوان ضمن السياق الجغرافي التاريخي المحيط بالبلدة القديمة، ويعرض عين جيحون بوصفها مصدراً مائياً محورياً في تطور القدس.",
     periods: <String>["كنعاني", "روماني", "إسلامي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-020",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "يضع ملف دولة فلسطين سلوان ضمن السياق الجغرافي التاريخي المحيط بالبلدة القديمة، ويعرض عين جيحون بوصفها مصدراً مائياً محورياً في تطور القدس.",
+        draftText: "يضع ملف دولة فلسطين سلوان ضمن السياق الجغرافي التاريخي المحيط بالبلدة القديمة، ويعرض عين جيحون بوصفها مصدراً مائياً محورياً في تطور القدس.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-f9df0c7e708c-W2-C01",
@@ -117,11 +105,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-021",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "تسجل وثائق مراقبة اليونسكو تقارير ومخاوف قدمتها أطراف مختلفة بشأن أعمال حفر وأنفاق في سلوان؛ ولا تمثل هذه الإشارات تحقيقاً مستقلاً من اليونسكو في كل ادعاء.",
+        draftText: "تسجل وثائق مراقبة اليونسكو تقارير ومخاوف قدمتها أطراف مختلفة بشأن أعمال حفر وأنفاق في سلوان؛ ولا تمثل هذه الإشارات تحقيقاً مستقلاً من اليونسكو في كل ادعاء.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-f9df0c7e708c-W2-C02",
@@ -135,8 +121,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001",
         title: "Jerusalem — Old City and Ramparts to include Mount Zion",
         attribution: "State Party submission published by UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/tentativelists/1483/",
         sourceClass: "official_state_submission_tentative_list",
@@ -146,16 +131,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/1483/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/1483/\"}]",
       ),
       HistoricalSourceReference(
         id: "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015",
-        title:
-            "State of conservation of properties inscribed on the List of World Heritage in Danger — Old City of Jerusalem and its Walls",
+        title: "State of conservation of properties inscribed on the List of World Heritage in Danger — Old City of Jerusalem and its Walls",
         attribution: "UNESCO World Heritage Centre",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/document/135821",
         sourceClass: "official_monitoring_document_with_party_reports",
@@ -165,8 +147,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"pdf_pages\", \"pages\": [49, 50], \"scope\": \"Silwan, Al-Buraq/Western Wall area and Nabi Dawoud monitoring passages; party attribution must be retained\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"pdf_pages\", \"pages\": [49, 50], \"scope\": \"Silwan, Al-Buraq/Western Wall area and Nabi Dawoud monitoring passages; party attribution must be retained\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -180,9 +161,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 2,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "يوثق تقرير 2026 استمرار حفريات وممرات تحت الأرض في سلوان خلال 2025، وينقل مخاوف بشأن الأثر على النسيج الحي. لم يثبت التقرير تقييماً هندسياً مستقلاً لكل مبنى أو أساس.",
-    ],
+    p0Findings: <String>["يوثق تقرير 2026 استمرار حفريات وممرات تحت الأرض في سلوان خلال 2025، وينقل مخاوف بشأن الأثر على النسيج الحي. لم يثبت التقرير تقييماً هندسياً مستقلاً لكل مبنى أو أساس."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -202,22 +181,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "جدار تاريخي",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "تعد اليونسكو حائط البراق/الحائط الغربي أحد المعالم الرئيسية ضمن موقع القدس القديمة وأسوارها.",
+    summaryDraft: "تعد اليونسكو حائط البراق/الحائط الغربي أحد المعالم الرئيسية ضمن موقع القدس القديمة وأسوارها.",
     periods: <String>["هيرودي", "روماني", "إسلامي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-022",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "تعد اليونسكو حائط البراق/الحائط الغربي أحد المعالم الرئيسية ضمن موقع القدس القديمة وأسوارها.",
+        draftText: "تعد اليونسكو حائط البراق/الحائط الغربي أحد المعالم الرئيسية ضمن موقع القدس القديمة وأسوارها.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-f9067873c322-W2-C01",
@@ -228,11 +203,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-023",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "شُكلت سنة 1930 لجنة دولية لبحث الحقوق والمطالب الإسلامية واليهودية المرتبطة بالحائط.",
+        draftText: "شُكلت سنة 1930 لجنة دولية لبحث الحقوق والمطالب الإسلامية واليهودية المرتبطة بالحائط.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-f9067873c322-W2-C02",
@@ -246,8 +219,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W2-AUTH-UNESCO-JERUSALEM-001",
         title: "Old City of Jerusalem and its Walls",
         attribution: "UNESCO World Heritage Centre",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/list/148/",
         sourceClass: "official_world_heritage_record",
@@ -257,17 +229,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/148/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/148/\"}]",
       ),
       HistoricalSourceReference(
         id: "W2-AUTH-UNISPAL-WESTERN-WALL-1930",
-        title:
-            "Report of the Commission appointed to determine rights and claims in connection with the Western or Wailing Wall at Jerusalem",
-        attribution:
-            "League of Nations / United Nations Information System on the Question of Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        title: "Report of the Commission appointed to determine rights and claims in connection with the Western or Wailing Wall at Jerusalem",
+        attribution: "League of Nations / United Nations Information System on the Question of Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.un.org/unispal/document/auto-insert-183319/",
         sourceClass: "official_historical_commission_report",
@@ -277,8 +245,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_LIMITED_TO_INSPECTED_RECORD",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.un.org/unispal/document/auto-insert-183319/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.un.org/unispal/document/auto-insert-183319/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -292,9 +259,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "توثق تقارير 2025 تدخلات ومطالبات متعارضة في المنطقة الغربية للحرم، لكنها لا تشكل حكماً قضائياً معاصراً نهائياً في الملكية.",
-    ],
+    p0Findings: <String>["توثق تقارير 2025 تدخلات ومطالبات متعارضة في المنطقة الغربية للحرم، لكنها لا تشكل حكماً قضائياً معاصراً نهائياً في الملكية."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -314,15 +279,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "خان",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["عثماني"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -354,22 +319,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "سوق",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "سوق القطانين سوق مملوكي يصل إلى شارع الواد، ويرتبط عبر باب القطانين بساحة الحرم الشريف.",
+    summaryDraft: "سوق القطانين سوق مملوكي يصل إلى شارع الواد، ويرتبط عبر باب القطانين بساحة الحرم الشريف.",
     periods: <String>["مملوكي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-024",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "سوق القطانين سوق مملوكي يصل إلى شارع الواد، ويرتبط عبر باب القطانين بساحة الحرم الشريف.",
+        draftText: "سوق القطانين سوق مملوكي يصل إلى شارع الواد، ويرتبط عبر باب القطانين بساحة الحرم الشريف.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-4bbdf07d8d66-W2-C01",
@@ -383,8 +344,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W2-AUTH-ARCHNET-QATTANIN-001",
         title: "Bab al-Qattanin / Suq al-Qattanin",
         attribution: "Archnet / Aga Khan Documentation Center at MIT",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.archnet.org/sites/3060",
         sourceClass: "academic_architectural_record",
@@ -394,8 +354,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_LIMITED_TO_INSPECTED_RECORD",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.archnet.org/sites/3060\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.archnet.org/sites/3060\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -429,22 +388,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "كنيسة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "تحافظ بطريركية الروم الأرثوذكس على التقليد الديني الحي الذي يعرّف مزار الجسمانية بوصفه قبر السيدة مريم.",
+    summaryDraft: "تحافظ بطريركية الروم الأرثوذكس على التقليد الديني الحي الذي يعرّف مزار الجسمانية بوصفه قبر السيدة مريم.",
     periods: <String>["بيزنطي", "صليبي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-025",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "تحافظ بطريركية الروم الأرثوذكس على التقليد الديني الحي الذي يعرّف مزار الجسمانية بوصفه قبر السيدة مريم.",
+        draftText: "تحافظ بطريركية الروم الأرثوذكس على التقليد الديني الحي الذي يعرّف مزار الجسمانية بوصفه قبر السيدة مريم.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-8d297f3c37a9-W2-C01",
@@ -455,11 +410,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-026",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "توثق منشورات مؤسسة الفرنسيسكان للدراسات الكتابية أعمال تنقيب أثرية في الجسمانية وقبر السيدة مريم.",
+        draftText: "توثق منشورات مؤسسة الفرنسيسكان للدراسات الكتابية أعمال تنقيب أثرية في الجسمانية وقبر السيدة مريم.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-8d297f3c37a9-W2-C02",
@@ -473,11 +426,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W2-AUTH-JERUSALEM-PATRIARCHATE-GETHSEMANE-001",
         title: "Holy Gethsemane",
         attribution: "Greek Orthodox Patriarchate of Jerusalem",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://en.jerusalem-patriarchate.info/holy-shrines/holy-gethsemane/",
+        url: "https://en.jerusalem-patriarchate.info/holy-shrines/holy-gethsemane/",
         sourceClass: "official_ecclesiastical_tradition_record",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -485,16 +436,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_LIMITED_TO_INSPECTED_RECORD",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://en.jerusalem-patriarchate.info/holy-shrines/holy-gethsemane/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://en.jerusalem-patriarchate.info/holy-shrines/holy-gethsemane/\"}]",
       ),
       HistoricalSourceReference(
         id: "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001",
-        title:
-            "General information — archaeological work of the Studium Biblicum Franciscanum",
+        title: "General information — archaeological work of the Studium Biblicum Franciscanum",
         attribution: "Studium Biblicum Franciscanum",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://sbf.custodia.org/en/general-info",
         sourceClass: "academic_institutional_archaeology_record",
@@ -504,8 +452,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://sbf.custodia.org/en/general-info\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://sbf.custodia.org/en/general-info\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -539,29 +486,22 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "عنقود معماري",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "يضم شارع الواد مؤسسات معمارية مملوكية بارزة، ويرتبط عمرانياً بسوق القطانين وبابه.",
+    summaryDraft: "يضم شارع الواد مؤسسات معمارية مملوكية بارزة، ويرتبط عمرانياً بسوق القطانين وبابه.",
     periods: <String>["مملوكي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-027",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "يضم شارع الواد مؤسسات معمارية مملوكية بارزة، ويرتبط عمرانياً بسوق القطانين وبابه.",
+        draftText: "يضم شارع الواد مؤسسات معمارية مملوكية بارزة، ويرتبط عمرانياً بسوق القطانين وبابه.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-f7553f79288f-W2-C01",
-        sourceIds: <String>[
-          "W2-AUTH-ARCHNET-QATTANIN-001",
-          "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015",
-        ],
+        sourceIds: <String>["W2-AUTH-ARCHNET-QATTANIN-001", "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"],
         historicalReviewStatus: "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE",
         rightsStatus: "TRIAGED_NOT_FULLY_CLEARED",
       ),
@@ -571,8 +511,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W2-AUTH-ARCHNET-QATTANIN-001",
         title: "Bab al-Qattanin / Suq al-Qattanin",
         attribution: "Archnet / Aga Khan Documentation Center at MIT",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.archnet.org/sites/3060",
         sourceClass: "academic_architectural_record",
@@ -582,16 +521,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_LIMITED_TO_INSPECTED_RECORD",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.archnet.org/sites/3060\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.archnet.org/sites/3060\"}]",
       ),
       HistoricalSourceReference(
         id: "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015",
-        title:
-            "State of conservation of properties inscribed on the List of World Heritage in Danger — Old City of Jerusalem and its Walls",
+        title: "State of conservation of properties inscribed on the List of World Heritage in Danger — Old City of Jerusalem and its Walls",
         attribution: "UNESCO World Heritage Centre",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/document/135821",
         sourceClass: "official_monitoring_document_with_party_reports",
@@ -601,8 +537,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"pdf_pages\", \"pages\": [49, 50], \"scope\": \"Silwan, Al-Buraq/Western Wall area and Nabi Dawoud monitoring passages; party attribution must be retained\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"pdf_pages\", \"pages\": [49, 50], \"scope\": \"Silwan, Al-Buraq/Western Wall area and Nabi Dawoud monitoring passages; party attribution must be retained\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -616,9 +551,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 2,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "الاسم يمثل عنقوداً يضم مباني ومؤسسات متعددة؛ لذلك لا يمكن إغلاق تواريخ ورعاة وإحداثيات وحقوق العنقود كادعاء واحد.",
-    ],
+    p0Findings: <String>["الاسم يمثل عنقوداً يضم مباني ومؤسسات متعددة؛ لذلك لا يمكن إغلاق تواريخ ورعاة وإحداثيات وحقوق العنقود كادعاء واحد."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -638,22 +571,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "حصن/قلعة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "تتكون قلعة القدس الحالية من طبقات معمارية متعددة تشمل تحصينات رومانية وبناءً صليبياً وأيوبياً ومملوكياً وعثمانياً.",
+    summaryDraft: "تتكون قلعة القدس الحالية من طبقات معمارية متعددة تشمل تحصينات رومانية وبناءً صليبياً وأيوبياً ومملوكياً وعثمانياً.",
     periods: <String>["روماني", "بيزنطي", "أيوبي", "مملوكي", "عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-028",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "تتكون قلعة القدس الحالية من طبقات معمارية متعددة تشمل تحصينات رومانية وبناءً صليبياً وأيوبياً ومملوكياً وعثمانياً.",
+        draftText: "تتكون قلعة القدس الحالية من طبقات معمارية متعددة تشمل تحصينات رومانية وبناءً صليبياً وأيوبياً ومملوكياً وعثمانياً.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-83d3025c4675-W2-C01",
@@ -667,8 +596,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W2-AUTH-ARCHNET-CITADEL-001",
         title: "Qal'at al-Quds",
         attribution: "Archnet / Aga Khan Documentation Center at MIT",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.archnet.org/sites/3735",
         sourceClass: "academic_architectural_record",
@@ -678,8 +606,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_LIMITED_TO_INSPECTED_RECORD",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.archnet.org/sites/3735\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.archnet.org/sites/3735\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -713,22 +640,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "كنيسة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "تعد كنيسة القيامة من المعالم الرئيسية في موقع القدس القديمة، وتربط اليونسكو قبة القيامة بقبر المسيح ضمن التقليد المسيحي.",
+    summaryDraft: "تعد كنيسة القيامة من المعالم الرئيسية في موقع القدس القديمة، وتربط اليونسكو قبة القيامة بقبر المسيح ضمن التقليد المسيحي.",
     periods: <String>["روماني", "بيزنطي", "صليبي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-029",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "تعد كنيسة القيامة من المعالم الرئيسية في موقع القدس القديمة، وتربط اليونسكو قبة القيامة بقبر المسيح ضمن التقليد المسيحي.",
+        draftText: "تعد كنيسة القيامة من المعالم الرئيسية في موقع القدس القديمة، وتربط اليونسكو قبة القيامة بقبر المسيح ضمن التقليد المسيحي.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-431ed266867b-W2-C01",
@@ -739,11 +662,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-030",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "توثق مؤسسة الفرنسيسكان للدراسات الكتابية أعمال تنقيب أثرية في كنيسة القيامة.",
+        draftText: "توثق مؤسسة الفرنسيسكان للدراسات الكتابية أعمال تنقيب أثرية في كنيسة القيامة.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-431ed266867b-W2-C02",
@@ -755,11 +676,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     sources: <HistoricalSourceReference>[
       HistoricalSourceReference(
         id: "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001",
-        title:
-            "General information — archaeological work of the Studium Biblicum Franciscanum",
+        title: "General information — archaeological work of the Studium Biblicum Franciscanum",
         attribution: "Studium Biblicum Franciscanum",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://sbf.custodia.org/en/general-info",
         sourceClass: "academic_institutional_archaeology_record",
@@ -769,15 +688,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://sbf.custodia.org/en/general-info\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://sbf.custodia.org/en/general-info\"}]",
       ),
       HistoricalSourceReference(
         id: "W2-AUTH-UNESCO-JERUSALEM-001",
         title: "Old City of Jerusalem and its Walls",
         attribution: "UNESCO World Heritage Centre",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/list/148/",
         sourceClass: "official_world_heritage_record",
@@ -787,8 +704,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/148/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/148/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -822,22 +738,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مقام/مقام إسلامي",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "تنقل وثيقة مراقبة لليونسكو تقريراً أردنياً وفلسطينياً يصف مسجد النبي داوود بأنه عقار وقف إسلامي قرب السور الجنوبي للبلدة القديمة، ويتحدث عن تغييرات أُجريت في الموقع.",
+    summaryDraft: "تنقل وثيقة مراقبة لليونسكو تقريراً أردنياً وفلسطينياً يصف مسجد النبي داوود بأنه عقار وقف إسلامي قرب السور الجنوبي للبلدة القديمة، ويتحدث عن تغييرات أُجريت في الموقع.",
     periods: <String>["أموي", "مملوكي", "عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-031",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "تنقل وثيقة مراقبة لليونسكو تقريراً أردنياً وفلسطينياً يصف مسجد النبي داوود بأنه عقار وقف إسلامي قرب السور الجنوبي للبلدة القديمة، ويتحدث عن تغييرات أُجريت في الموقع.",
+        draftText: "تنقل وثيقة مراقبة لليونسكو تقريراً أردنياً وفلسطينياً يصف مسجد النبي داوود بأنه عقار وقف إسلامي قرب السور الجنوبي للبلدة القديمة، ويتحدث عن تغييرات أُجريت في الموقع.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-3a3d3669f0ba-W2-C01",
@@ -848,11 +760,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-032",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "يظهر جبل صهيون ضمن السياق الجغرافي التاريخي والديني الأوسع في مقترح توسعة قدمته دولة طرف ثم أُرجئ النظر فيه.",
+        draftText: "يظهر جبل صهيون ضمن السياق الجغرافي التاريخي والديني الأوسع في مقترح توسعة قدمته دولة طرف ثم أُرجئ النظر فيه.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-3a3d3669f0ba-W2-C02",
@@ -866,8 +776,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001",
         title: "Jerusalem — Old City and Ramparts to include Mount Zion",
         attribution: "State Party submission published by UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/tentativelists/1483/",
         sourceClass: "official_state_submission_tentative_list",
@@ -877,16 +786,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/1483/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/1483/\"}]",
       ),
       HistoricalSourceReference(
         id: "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015",
-        title:
-            "State of conservation of properties inscribed on the List of World Heritage in Danger — Old City of Jerusalem and its Walls",
+        title: "State of conservation of properties inscribed on the List of World Heritage in Danger — Old City of Jerusalem and its Walls",
         attribution: "UNESCO World Heritage Centre",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/document/135821",
         sourceClass: "official_monitoring_document_with_party_reports",
@@ -896,8 +802,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"pdf_pages\", \"pages\": [49, 50], \"scope\": \"Silwan, Al-Buraq/Western Wall area and Nabi Dawoud monitoring passages; party attribution must be retained\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"pdf_pages\", \"pages\": [49, 50], \"scope\": \"Silwan, Al-Buraq/Western Wall area and Nabi Dawoud monitoring passages; party attribution must be retained\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -911,9 +816,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "توثق المصادر السابقة مطالبات وتقارير منسوبة بشأن الوقف والتغييرات في الموقع، لكن لم يُعثر في تقرير القدس لسنة 2026 على حسم حديث للملكية أو ترتيبات وصول قابلة للتعميم.",
-    ],
+    p0Findings: <String>["توثق المصادر السابقة مطالبات وتقارير منسوبة بشأن الوقف والتغييرات في الموقع، لكن لم يُعثر في تقرير القدس لسنة 2026 على حسم حديث للملكية أو ترتيبات وصول قابلة للتعميم."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -933,22 +836,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مسجد/حرم",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "أُقيم السور التذكاري المحيط بالمغارة المقدسة في القرن الأول الميلادي.",
+    summaryDraft: "أُقيم السور التذكاري المحيط بالمغارة المقدسة في القرن الأول الميلادي.",
     periods: <String>["كنعاني", "روماني", "أموي", "مملوكي", "عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-009",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "أُقيم السور التذكاري المحيط بالمغارة المقدسة في القرن الأول الميلادي.",
+        draftText: "أُقيم السور التذكاري المحيط بالمغارة المقدسة في القرن الأول الميلادي.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-899e38be070d-W1-C01",
@@ -959,11 +858,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-010",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "يرتبط الموقع بتقاليد دينية تتصل بالنبي إبراهيم، ويحظى بالتبجيل في الديانات التوحيدية الثلاث.",
+        draftText: "يرتبط الموقع بتقاليد دينية تتصل بالنبي إبراهيم، ويحظى بالتبجيل في الديانات التوحيدية الثلاث.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-899e38be070d-W1-C02",
@@ -977,8 +874,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "AUTH-UNESCO-HEBRON-001",
         title: "Hebron/Al-Khalil Old Town",
         attribution: "UNESCO World Heritage Centre",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/list/1565/",
         sourceClass: "official_world_heritage_record",
@@ -988,8 +884,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/1565/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/1565/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -1023,22 +918,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "بلدة قديمة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "تحافظ البلدة القديمة في الخليل بدرجة كبيرة على نسيجها العمراني المملوكي، مع إضافات وتوسعات من الفترة العثمانية.",
+    summaryDraft: "تحافظ البلدة القديمة في الخليل بدرجة كبيرة على نسيجها العمراني المملوكي، مع إضافات وتوسعات من الفترة العثمانية.",
     periods: <String>["مملوكي", "عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-006",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "تحافظ البلدة القديمة في الخليل بدرجة كبيرة على نسيجها العمراني المملوكي، مع إضافات وتوسعات من الفترة العثمانية.",
+        draftText: "تحافظ البلدة القديمة في الخليل بدرجة كبيرة على نسيجها العمراني المملوكي، مع إضافات وتوسعات من الفترة العثمانية.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-6b6c5a396756-W1-C01",
@@ -1049,11 +940,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-007",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "يشكل مجمع الحرم الإبراهيمي/مغارة البطاركة محوراً أساسياً في البلدة القديمة، ويعود السور التذكاري المحيط بالمجمع إلى القرن الأول الميلادي.",
+        draftText: "يشكل مجمع الحرم الإبراهيمي/مغارة البطاركة محوراً أساسياً في البلدة القديمة، ويعود السور التذكاري المحيط بالمجمع إلى القرن الأول الميلادي.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-6b6c5a396756-W1-C02",
@@ -1066,8 +955,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         title: "مادة تاريخية محكومة 3",
         draftText: "يحظى الموقع بمكانة دينية لدى اليهودية والمسيحية والإسلام.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-6b6c5a396756-W1-C03",
@@ -1081,8 +969,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "AUTH-UNESCO-HEBRON-001",
         title: "Hebron/Al-Khalil Old Town",
         attribution: "UNESCO World Heritage Centre",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/list/1565/",
         sourceClass: "official_world_heritage_record",
@@ -1092,8 +979,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/1565/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/1565/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -1127,15 +1013,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "بلدة تاريخية/خربة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["روماني", "بيزنطي", "إسلامي"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -1167,22 +1053,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "تل أثري",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "يدخل تل الرميدة ضمن السياق الأثري للمنطقة العازلة المحيطة ببلدة الخليل القديمة.",
+    summaryDraft: "يدخل تل الرميدة ضمن السياق الأثري للمنطقة العازلة المحيطة ببلدة الخليل القديمة.",
     periods: <String>["برونزي", "كنعاني", "روماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-033",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "يدخل تل الرميدة ضمن السياق الأثري للمنطقة العازلة المحيطة ببلدة الخليل القديمة.",
+        draftText: "يدخل تل الرميدة ضمن السياق الأثري للمنطقة العازلة المحيطة ببلدة الخليل القديمة.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-63c0ba59c24e-W2-C01",
@@ -1193,11 +1075,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-034",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "وثقت إيكوموس استبعاد تل الرميدة من حدود العقار المرشح أصلاً، وناقشت دلائل على استيطان أقدم في محيطه.",
+        draftText: "وثقت إيكوموس استبعاد تل الرميدة من حدود العقار المرشح أصلاً، وناقشت دلائل على استيطان أقدم في محيطه.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-63c0ba59c24e-W2-C02",
@@ -1211,11 +1091,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W2-AUTH-ICOMOS-HEBRON-2017",
         title: "ICOMOS Evaluation — Hebron/Al-Khalil Old Town",
         attribution: "ICOMOS / UNESCO World Heritage Centre",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://whc.unesco.org/archive/2017/whc17-41com-inf8B1-Add2-en.pdf",
+        url: "https://whc.unesco.org/archive/2017/whc17-41com-inf8B1-Add2-en.pdf",
         sourceClass: "official_advisory_body_evaluation",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "LIMITED_USE_WITH_CITATION",
@@ -1223,15 +1101,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"pdf_pages\", \"pages\": [6, 8, 9, 12, 16], \"scope\": \"Tell Rumeida context, Sheikh Ali al-Bakka area, nomination boundary and integrity discussion\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"pdf_pages\", \"pages\": [6, 8, 9, 12, 16], \"scope\": \"Tell Rumeida context, Sheikh Ali al-Bakka area, nomination boundary and integrity discussion\"}]",
       ),
       HistoricalSourceReference(
         id: "W2-AUTH-UNESCO-HEBRON-001",
         title: "Hebron/Al-Khalil Old Town",
         attribution: "UNESCO World Heritage Centre",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/list/1565/",
         sourceClass: "official_world_heritage_record",
@@ -1241,8 +1117,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/1565/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/1565/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -1256,9 +1131,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 2,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "يوثق تقرير الخليل لسنة 2026 بدء أعمال حفر في تل الرميدة في 11 يونيو 2025، ويعرض مخاوف متعلقة بالملكية وسلامة الطبقات. هذه نتيجة منسوبة إلى تقرير دولة فلسطين وليست بديلاً عن تفتيش ميداني مستقل.",
-    ],
+    p0Findings: <String>["يوثق تقرير الخليل لسنة 2026 بدء أعمال حفر في تل الرميدة في 11 يونيو 2025، ويعرض مخاوف متعلقة بالملكية وسلامة الطبقات. هذه نتيجة منسوبة إلى تقرير دولة فلسطين وليست بديلاً عن تفتيش ميداني مستقل."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -1278,22 +1151,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "بلدة تاريخية/مقام",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "يقع مسجد ومقام النبي يونس في البلدة القديمة بحلحول، ويؤرخ السجل المعماري المبنى بسنة 623هـ/1226م، وينسب رعايته إلى العصر الأيوبي مع تسجيل تجديدات مملوكية لاحقة.",
+    summaryDraft: "يقع مسجد ومقام النبي يونس في البلدة القديمة بحلحول، ويؤرخ السجل المعماري المبنى بسنة 623هـ/1226م، وينسب رعايته إلى العصر الأيوبي مع تسجيل تجديدات مملوكية لاحقة.",
     periods: <String>["كنعاني", "مملوكي", "عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-035",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "يقع مسجد ومقام النبي يونس في البلدة القديمة بحلحول، ويؤرخ السجل المعماري المبنى بسنة 623هـ/1226م، وينسب رعايته إلى العصر الأيوبي مع تسجيل تجديدات مملوكية لاحقة.",
+        draftText: "يقع مسجد ومقام النبي يونس في البلدة القديمة بحلحول، ويؤرخ السجل المعماري المبنى بسنة 623هـ/1226م، وينسب رعايته إلى العصر الأيوبي مع تسجيل تجديدات مملوكية لاحقة.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-cd3be04163b6-W2-C01",
@@ -1307,11 +1176,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W2-AUTH-MWNF-NABI-YUNUS-001",
         title: "Mosque of Nabi Yunus (Prophet Jonah)",
         attribution: "Museum With No Frontiers — Discover Islamic Art",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://islamicart.museumwnf.org/database_item.php?id=monument%3BISL%3Bpa%3BMon01%3B12%3Ben%3Bar",
+        url: "https://islamicart.museumwnf.org/database_item.php?id=monument%3BISL%3Bpa%3BMon01%3B12%3Ben%3Bar",
         sourceClass: "curated_academic_museum_record",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -1319,8 +1186,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://islamicart.museumwnf.org/database_item.php?id=monument%3BISL%3Bpa%3BMon01%3B12%3Ben%3Bar\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://islamicart.museumwnf.org/database_item.php?id=monument%3BISL%3Bpa%3BMon01%3B12%3Ben%3Bar\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -1354,15 +1220,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "خان",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["عثماني"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -1374,9 +1240,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: "blocked_pending_dedicated_source",
     heldClaimCount: 3,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "لم يُعثر على سجل معماري أو وقفي أو عقاري مخصص يثبت موقع خان الحطب في الخليل أو ملكيته. تشابه الاسم مع خانات في مدن أخرى يجعل المطابقة غير آمنة.",
-    ],
+    p0Findings: <String>["لم يُعثر على سجل معماري أو وقفي أو عقاري مخصص يثبت موقع خان الحطب في الخليل أو ملكيته. تشابه الاسم مع خانات في مدن أخرى يجعل المطابقة غير آمنة."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -1396,22 +1260,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مقام/خربة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "توثق وكالة وفا وجود مقام النبي نوح في دورا بوصفه معلماً دينياً وتاريخياً محلياً، كما تسجل أعمال ترميم واستخداماً خيرياً للموقع حتى سنة 2020.",
+    summaryDraft: "توثق وكالة وفا وجود مقام النبي نوح في دورا بوصفه معلماً دينياً وتاريخياً محلياً، كما تسجل أعمال ترميم واستخداماً خيرياً للموقع حتى سنة 2020.",
     periods: <String>["مملوكي", "عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-036",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "توثق وكالة وفا وجود مقام النبي نوح في دورا بوصفه معلماً دينياً وتاريخياً محلياً، كما تسجل أعمال ترميم واستخداماً خيرياً للموقع حتى سنة 2020.",
+        draftText: "توثق وكالة وفا وجود مقام النبي نوح في دورا بوصفه معلماً دينياً وتاريخياً محلياً، كما تسجل أعمال ترميم واستخداماً خيرياً للموقع حتى سنة 2020.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-c9ac723c0271-W2-C01",
@@ -1423,11 +1283,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     sources: <HistoricalSourceReference>[
       HistoricalSourceReference(
         id: "W2-AUTH-WAFA-NABI-NUH-2020",
-        title:
-            "تكية النبي نوح.. من فكرة فردية إلى أهم المؤسسات الخيرية والإنسانية",
+        title: "تكية النبي نوح.. من فكرة فردية إلى أهم المؤسسات الخيرية والإنسانية",
         attribution: "وكالة الأنباء والمعلومات الفلسطينية — وفا",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.wafa.ps/pages/details/11353",
         sourceClass: "official_palestinian_news_and_current_use_record",
@@ -1437,8 +1295,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.wafa.ps/pages/details/11353\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.wafa.ps/pages/details/11353\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -1472,15 +1329,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "نبع/عين",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["روماني", "إسلامي"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -1512,15 +1369,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "قلعة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["روماني", "صليبي", "أيوبي"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -1532,9 +1389,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: "blocked_pending_dedicated_source",
     heldClaimCount: 2,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "يثبت سجل التجمعات الفلسطيني أن دير سامت والكرمل تجمعان منفصلان في محافظة الخليل. وعليه فإن الاسم المركب «قلعة الكرمل (دير سامت)» غير صالح كهوية واحدة.",
-    ],
+    p0Findings: <String>["يثبت سجل التجمعات الفلسطيني أن دير سامت والكرمل تجمعان منفصلان في محافظة الخليل. وعليه فإن الاسم المركب «قلعة الكرمل (دير سامت)» غير صالح كهوية واحدة."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -1554,22 +1409,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مغارة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "تحدد اليونسكو مغارة البطاركة/الغار الشريف مكوّناً داخل مجمع الحرم الإبراهيمي، وتعرض نسب الدفن المرتبطة بها ضمن إطار التقاليد الدينية.",
+    summaryDraft: "تحدد اليونسكو مغارة البطاركة/الغار الشريف مكوّناً داخل مجمع الحرم الإبراهيمي، وتعرض نسب الدفن المرتبطة بها ضمن إطار التقاليد الدينية.",
     periods: <String>["كنعاني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-037",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "تحدد اليونسكو مغارة البطاركة/الغار الشريف مكوّناً داخل مجمع الحرم الإبراهيمي، وتعرض نسب الدفن المرتبطة بها ضمن إطار التقاليد الدينية.",
+        draftText: "تحدد اليونسكو مغارة البطاركة/الغار الشريف مكوّناً داخل مجمع الحرم الإبراهيمي، وتعرض نسب الدفن المرتبطة بها ضمن إطار التقاليد الدينية.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-0dc57168d963-W2-C01",
@@ -1583,8 +1434,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W2-AUTH-UNESCO-HEBRON-001",
         title: "Hebron/Al-Khalil Old Town",
         attribution: "UNESCO World Heritage Centre",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/list/1565/",
         sourceClass: "official_world_heritage_record",
@@ -1594,8 +1444,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/1565/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/1565/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -1629,22 +1478,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مقام",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "تناقش إيكوموس منطقة الشيخ علي البكاء بوصفها منطقة مستبعدة تؤثر في سلامة بلدة الخليل القديمة وفي فهم أنماط شوارعها الأقدم.",
+    summaryDraft: "تناقش إيكوموس منطقة الشيخ علي البكاء بوصفها منطقة مستبعدة تؤثر في سلامة بلدة الخليل القديمة وفي فهم أنماط شوارعها الأقدم.",
     periods: <String>["مملوكي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-038",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "تناقش إيكوموس منطقة الشيخ علي البكاء بوصفها منطقة مستبعدة تؤثر في سلامة بلدة الخليل القديمة وفي فهم أنماط شوارعها الأقدم.",
+        draftText: "تناقش إيكوموس منطقة الشيخ علي البكاء بوصفها منطقة مستبعدة تؤثر في سلامة بلدة الخليل القديمة وفي فهم أنماط شوارعها الأقدم.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-7532d020842e-W2-C01",
@@ -1658,11 +1503,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W2-AUTH-ICOMOS-HEBRON-2017",
         title: "ICOMOS Evaluation — Hebron/Al-Khalil Old Town",
         attribution: "ICOMOS / UNESCO World Heritage Centre",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://whc.unesco.org/archive/2017/whc17-41com-inf8B1-Add2-en.pdf",
+        url: "https://whc.unesco.org/archive/2017/whc17-41com-inf8B1-Add2-en.pdf",
         sourceClass: "official_advisory_body_evaluation",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "LIMITED_USE_WITH_CITATION",
@@ -1670,8 +1513,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"pdf_pages\", \"pages\": [6, 8, 9, 12, 16], \"scope\": \"Tell Rumeida context, Sheikh Ali al-Bakka area, nomination boundary and integrity discussion\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"pdf_pages\", \"pages\": [6, 8, 9, 12, 16], \"scope\": \"Tell Rumeida context, Sheikh Ali al-Bakka area, nomination boundary and integrity discussion\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -1705,22 +1547,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "بركة/خزان مياه",
     latitude: 31.6885,
     longitude: 35.1695,
-    summaryDraft:
-        "يوثق مشروع الترميم ثلاث برك تاريخية وقلعة مراد العثمانية، ويذكر اكتمال المشروع سنة 2012 باستخدام تدخلات مميزة وقابلة للعكس.",
+    summaryDraft: "يوثق مشروع الترميم ثلاث برك تاريخية وقلعة مراد العثمانية، ويذكر اكتمال المشروع سنة 2012 باستخدام تدخلات مميزة وقابلة للعكس.",
     periods: <String>["روماني", "بيزنطي", "أموي", "عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-039",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "يوثق مشروع الترميم ثلاث برك تاريخية وقلعة مراد العثمانية، ويذكر اكتمال المشروع سنة 2012 باستخدام تدخلات مميزة وقابلة للعكس.",
+        draftText: "يوثق مشروع الترميم ثلاث برك تاريخية وقلعة مراد العثمانية، ويذكر اكتمال المشروع سنة 2012 باستخدام تدخلات مميزة وقابلة للعكس.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-37c8be50ce73-W2-C01",
@@ -1734,8 +1572,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W2-AUTH-ARCHNET-SOLOMON-POOLS-001",
         title: "Renovation of Solomon's Pool Historical Site",
         attribution: "Archnet / Aga Khan Trust for Culture",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.archnet.org/sites/17049",
         sourceClass: "academic_conservation_project_record",
@@ -1745,8 +1582,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.archnet.org/sites/17049\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.archnet.org/sites/17049\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -1780,15 +1616,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "دير",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["بيزنطي", "صليبي"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -1820,22 +1656,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "دير",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "يضع التاريخ المؤسسي للبطريركية نشأة لافرا القديس سابا قرابة سنة 483م، ويصف استمرار النشاط الرهباني فيها عبر فترات طويلة.",
+    summaryDraft: "يضع التاريخ المؤسسي للبطريركية نشأة لافرا القديس سابا قرابة سنة 483م، ويصف استمرار النشاط الرهباني فيها عبر فترات طويلة.",
     periods: <String>["بيزنطي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-041",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "يضع التاريخ المؤسسي للبطريركية نشأة لافرا القديس سابا قرابة سنة 483م، ويصف استمرار النشاط الرهباني فيها عبر فترات طويلة.",
+        draftText: "يضع التاريخ المؤسسي للبطريركية نشأة لافرا القديس سابا قرابة سنة 483م، ويصف استمرار النشاط الرهباني فيها عبر فترات طويلة.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-a8aeb054b451-W2-C01",
@@ -1849,11 +1681,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W2-AUTH-JERUSALEM-PATRIARCHATE-MAR-SABA-001",
         title: "Short History Account of Saint Savvas' Lavra",
         attribution: "Greek Orthodox Patriarchate of Jerusalem",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://en.jerusalem-patriarchate.info/pilgrimages/short-history-account-of-saint-savvas-lavra/",
+        url: "https://en.jerusalem-patriarchate.info/pilgrimages/short-history-account-of-saint-savvas-lavra/",
         sourceClass: "official_ecclesiastical_history_record",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -1861,8 +1691,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_LIMITED_TO_INSPECTED_RECORD",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://en.jerusalem-patriarchate.info/pilgrimages/short-history-account-of-saint-savvas-lavra/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://en.jerusalem-patriarchate.info/pilgrimages/short-history-account-of-saint-savvas-lavra/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -1896,22 +1725,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "بلدة قديمة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "تمثل بتير مشهداً ثقافياً فلسطينياً يقوم على مصاطب حجرية جافة ونظام ري معقد يدعم زراعة الزيتون والخضروات.",
+    summaryDraft: "تمثل بتير مشهداً ثقافياً فلسطينياً يقوم على مصاطب حجرية جافة ونظام ري معقد يدعم زراعة الزيتون والخضروات.",
     periods: <String>["روماني", "بيزنطي", "عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-004",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "تمثل بتير مشهداً ثقافياً فلسطينياً يقوم على مصاطب حجرية جافة ونظام ري معقد يدعم زراعة الزيتون والخضروات.",
+        draftText: "تمثل بتير مشهداً ثقافياً فلسطينياً يقوم على مصاطب حجرية جافة ونظام ري معقد يدعم زراعة الزيتون والخضروات.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-88fede7b6df0-W1-C01",
@@ -1922,11 +1747,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-005",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "يعتمد توزيع مياه الري بين العائلات على دورة زمنية منظمة وآلية حسابية لتخصيص الحصص.",
+        draftText: "يعتمد توزيع مياه الري بين العائلات على دورة زمنية منظمة وآلية حسابية لتخصيص الحصص.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-88fede7b6df0-W1-C02",
@@ -1938,11 +1761,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     sources: <HistoricalSourceReference>[
       HistoricalSourceReference(
         id: "AUTH-UNESCO-BATTIR-001",
-        title:
-            "Palestine: Land of Olives and Vines – Cultural Landscape of Southern Jerusalem, Battir",
+        title: "Palestine: Land of Olives and Vines – Cultural Landscape of Southern Jerusalem, Battir",
         attribution: "UNESCO World Heritage Centre",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/list/1492/",
         sourceClass: "official_world_heritage_record",
@@ -1952,8 +1773,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/1492/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/1492/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -1987,22 +1807,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "حصن/قصر",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "توجد مجموعة واسعة من تقارير الحفريات المنشورة عن هيروديون، تشمل تقرير كوربو عن القصر-الحصن وتقارير نهائية لاحقة لحفريات 1972–2010.",
+    summaryDraft: "توجد مجموعة واسعة من تقارير الحفريات المنشورة عن هيروديون، تشمل تقرير كوربو عن القصر-الحصن وتقارير نهائية لاحقة لحفريات 1972–2010.",
     periods: <String>["روماني (هيرودي)"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-042",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "توجد مجموعة واسعة من تقارير الحفريات المنشورة عن هيروديون، تشمل تقرير كوربو عن القصر-الحصن وتقارير نهائية لاحقة لحفريات 1972–2010.",
+        draftText: "توجد مجموعة واسعة من تقارير الحفريات المنشورة عن هيروديون، تشمل تقرير كوربو عن القصر-الحصن وتقارير نهائية لاحقة لحفريات 1972–2010.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-133155518939-W2-C01",
@@ -2013,11 +1829,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-043",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "تتناول فصول أكاديمية منشورة الكنائس البيزنطية والنقوش اليونانية في هيروديون.",
+        draftText: "تتناول فصول أكاديمية منشورة الكنائس البيزنطية والنقوش اليونانية في هيروديون.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-133155518939-W2-C02",
@@ -2031,8 +1845,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W2-AUTH-SBF-HERODIUM-BIBLIOGRAPHY-001",
         title: "Herodium archaeological bibliography and final reports",
         attribution: "Studium Biblicum Franciscanum",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://sbf.custodia.org/it/seminario-iv",
         sourceClass: "academic_bibliographic_registry",
@@ -2042,18 +1855,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://sbf.custodia.org/it/seminario-iv\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://sbf.custodia.org/it/seminario-iv\"}]",
       ),
       HistoricalSourceReference(
         id: "W2-AUTH-SBF-HERODIUM-CHRISTIAN-001",
         title: "Christian Archaeology in the Holy Land — Herodion chapters",
         attribution: "Studium Biblicum Franciscanum",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://sbf.custodia.org/en/publications/collectio-maior/christian-archaeology-in-the-holy-land",
+        url: "https://sbf.custodia.org/en/publications/collectio-maior/christian-archaeology-in-the-holy-land",
         sourceClass: "academic_monograph_record",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -2061,8 +1871,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://sbf.custodia.org/en/publications/collectio-maior/christian-archaeology-in-the-holy-land\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://sbf.custodia.org/en/publications/collectio-maior/christian-archaeology-in-the-holy-land\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -2076,9 +1885,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "يمكن إثبات وجود مسار وصول منشور حالياً إلى متنزه هيروديون، أما التسلسل الزمني التفصيلي وحقوق الأرض والوصول الأوسع فتبقى خارج نطاق سجل الزوار وتتطلب corpus الحفريات ومراجعة قانونية.",
-    ],
+    p0Findings: <String>["يمكن إثبات وجود مسار وصول منشور حالياً إلى متنزه هيروديون، أما التسلسل الزمني التفصيلي وحقوق الأرض والوصول الأوسع فتبقى خارج نطاق سجل الزوار وتتطلب corpus الحفريات ومراجعة قانونية."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -2098,22 +1905,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "قلعة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "يعرف سجل الترميم قلعة مراد العثمانية بوصفها مكوّناً من مجمع برك سليمان التاريخي.",
+    summaryDraft: "يعرف سجل الترميم قلعة مراد العثمانية بوصفها مكوّناً من مجمع برك سليمان التاريخي.",
     periods: <String>["عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-044",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "يعرف سجل الترميم قلعة مراد العثمانية بوصفها مكوّناً من مجمع برك سليمان التاريخي.",
+        draftText: "يعرف سجل الترميم قلعة مراد العثمانية بوصفها مكوّناً من مجمع برك سليمان التاريخي.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-63fe9eba7871-W2-C01",
@@ -2127,8 +1930,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W2-AUTH-ARCHNET-SOLOMON-POOLS-001",
         title: "Renovation of Solomon's Pool Historical Site",
         attribution: "Archnet / Aga Khan Trust for Culture",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.archnet.org/sites/17049",
         sourceClass: "academic_conservation_project_record",
@@ -2138,8 +1940,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.archnet.org/sites/17049\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.archnet.org/sites/17049\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -2173,22 +1974,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "كنيسة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "يرتبط الموقع، وفق التقليد المسيحي الموثق منذ القرن الثاني الميلادي، بميلاد السيد المسيح.",
+    summaryDraft: "يرتبط الموقع، وفق التقليد المسيحي الموثق منذ القرن الثاني الميلادي، بميلاد السيد المسيح.",
     periods: <String>["روماني", "بيزنطي", "صليبي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-002",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "يرتبط الموقع، وفق التقليد المسيحي الموثق منذ القرن الثاني الميلادي، بميلاد السيد المسيح.",
+        draftText: "يرتبط الموقع، وفق التقليد المسيحي الموثق منذ القرن الثاني الميلادي، بميلاد السيد المسيح.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-4b15f14c306f-W1-C01",
@@ -2199,11 +1996,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-003",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "اكتمل أول بناء كنسي موثق في الموقع سنة 339م، ثم أُقيم بناء بديل بعد حريق في القرن السادس، مع بقاء أجزاء من فسيفساء الكنيسة الأولى.",
+        draftText: "اكتمل أول بناء كنسي موثق في الموقع سنة 339م، ثم أُقيم بناء بديل بعد حريق في القرن السادس، مع بقاء أجزاء من فسيفساء الكنيسة الأولى.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-4b15f14c306f-W1-C02",
@@ -2215,11 +2010,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     sources: <HistoricalSourceReference>[
       HistoricalSourceReference(
         id: "AUTH-UNESCO-NATIVITY-001",
-        title:
-            "Birthplace of Jesus: Church of the Nativity and the Pilgrimage Route, Bethlehem",
+        title: "Birthplace of Jesus: Church of the Nativity and the Pilgrimage Route, Bethlehem",
         attribution: "UNESCO World Heritage Centre",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/list/1433/",
         sourceClass: "official_world_heritage_record",
@@ -2229,8 +2022,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/1433/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/1433/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -2264,22 +2056,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "كنيسة/مغارة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "مغارة الحليب مزار محلي قرب كنيسة المهد، وترتبط بتقاليد عبادة حية لدى نساء مسيحيات ومسلمات.",
+    summaryDraft: "مغارة الحليب مزار محلي قرب كنيسة المهد، وترتبط بتقاليد عبادة حية لدى نساء مسيحيات ومسلمات.",
     periods: <String>["بيزنطي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-045",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "مغارة الحليب مزار محلي قرب كنيسة المهد، وترتبط بتقاليد عبادة حية لدى نساء مسيحيات ومسلمات.",
+        draftText: "مغارة الحليب مزار محلي قرب كنيسة المهد، وترتبط بتقاليد عبادة حية لدى نساء مسيحيات ومسلمات.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-57adc62d6d70-W2-C01",
@@ -2290,11 +2078,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-046",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "توثق مؤسسة الفرنسيسكان للدراسات الكتابية تنقيباً أثرياً إسعافياً في المزار خلال أكتوبر 2005.",
+        draftText: "توثق مؤسسة الفرنسيسكان للدراسات الكتابية تنقيباً أثرياً إسعافياً في المزار خلال أكتوبر 2005.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-57adc62d6d70-W2-C02",
@@ -2308,8 +2094,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W2-AUTH-SBF-MILK-GROTTO-001",
         title: "Bethlehem excursion record — Milk Grotto",
         attribution: "Studium Biblicum Franciscanum",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://sbf.custodia.org/it/escursioni/betlemme",
         sourceClass: "academic_institutional_tradition_and_site_record",
@@ -2319,19 +2104,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://sbf.custodia.org/it/escursioni/betlemme\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://sbf.custodia.org/it/escursioni/betlemme\"}]",
       ),
       HistoricalSourceReference(
         id: "W2-AUTH-SBF-MILK-GROTTO-EXCAVATION-2005",
-        title:
-            "SBF Notiziario 2005–2006 — emergency excavation at the Milk Grotto",
+        title: "SBF Notiziario 2005–2006 — emergency excavation at the Milk Grotto",
         attribution: "Studium Biblicum Franciscanum",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://sbf.custodia.org/sites/default/files/2019-04/SBF_Notiziario_2005-2006.pdf",
+        url: "https://sbf.custodia.org/sites/default/files/2019-04/SBF_Notiziario_2005-2006.pdf",
         sourceClass: "academic_archaeological_activity_record",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -2339,8 +2120,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"pdf_page\", \"page\": 32, \"scope\": \"Emergency excavation at the Milk Grotto, 21–25 October 2005\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"pdf_page\", \"page\": 32, \"scope\": \"Emergency excavation at the Milk Grotto, 21–25 October 2005\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -2374,29 +2154,22 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "عنقود عمراني تاريخي",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "تضم بيرزيت مركزاً تاريخياً خضع لتوثيق مبانيه وساحاته وبنيته التحتية وحدوده، ولبرنامج طويل الأمد للحماية والتأهيل نفذته مؤسسة رواق.",
+    summaryDraft: "تضم بيرزيت مركزاً تاريخياً خضع لتوثيق مبانيه وساحاته وبنيته التحتية وحدوده، ولبرنامج طويل الأمد للحماية والتأهيل نفذته مؤسسة رواق.",
     periods: <String>["عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-082",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "تضم بيرزيت مركزاً تاريخياً خضع لتوثيق مبانيه وساحاته وبنيته التحتية وحدوده، ولبرنامج طويل الأمد للحماية والتأهيل نفذته مؤسسة رواق.",
+        draftText: "تضم بيرزيت مركزاً تاريخياً خضع لتوثيق مبانيه وساحاته وبنيته التحتية وحدوده، ولبرنامج طويل الأمد للحماية والتأهيل نفذته مؤسسة رواق.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-e2a5c15f76f6-W5-C01",
-        sourceIds: <String>[
-          "W5-AUTH-RIWAQ-BIRZEIT-001",
-          "W5-AUTH-RIWAQ-BIRZEIT-AWARD-001",
-        ],
+        sourceIds: <String>["W5-AUTH-RIWAQ-BIRZEIT-001", "W5-AUTH-RIWAQ-BIRZEIT-AWARD-001"],
         historicalReviewStatus: "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE",
         rightsStatus: "TRIAGED_NOT_FULLY_CLEARED",
       ),
@@ -2406,8 +2179,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W5-AUTH-RIWAQ-BIRZEIT-001",
         title: "Birzeit — historic-centre revitalization project",
         attribution: "Riwaq Centre for Architectural Conservation",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://riwaq.org/page/1154",
         sourceClass: "palestinian_architectural_conservation_record",
@@ -2417,15 +2189,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://riwaq.org/page/1154\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://riwaq.org/page/1154\"}]",
       ),
       HistoricalSourceReference(
         id: "W5-AUTH-RIWAQ-BIRZEIT-AWARD-001",
         title: "Birzeit — regeneration of the historic centre",
         attribution: "Riwaq Centre for Architectural Conservation",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://riwaq.org/page/121",
         sourceClass: "palestinian_conservation_and_award_record",
@@ -2435,8 +2205,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://riwaq.org/page/121\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://riwaq.org/page/121\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -2450,9 +2219,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "تثبت رواق المركز التاريخي في بيرزيت، لكن الإشارة السياقية إلى قلعة لا تكفي لتحديد اسمها وتاريخها وحدودها أو نسيجها الباقي.",
-    ],
+    p0Findings: <String>["تثبت رواق المركز التاريخي في بيرزيت، لكن الإشارة السياقية إلى قلعة لا تكفي لتحديد اسمها وتاريخها وحدودها أو نسيجها الباقي."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -2476,16 +2243,14 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     periods: <String>["روماني", "بيزنطي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-084",
         title: "مادة تاريخية محكومة 1",
         draftText: "تندرج عابود ضمن برنامج رواق للمراكز التاريخية الفلسطينية.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-014e4c4e4845-W5-C01",
@@ -2496,18 +2261,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-085",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "يضم مشهد عابود بقايا كنيسة القديسة بربارة من القرن السادس وسياقاً لطريق ومقبرة رومانيين، إلى جانب كنيسة الرقاد الموثقة بمراحل معمارية متعددة.",
+        draftText: "يضم مشهد عابود بقايا كنيسة القديسة بربارة من القرن السادس وسياقاً لطريق ومقبرة رومانيين، إلى جانب كنيسة الرقاد الموثقة بمراحل معمارية متعددة.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-014e4c4e4845-W5-C02",
-        sourceIds: <String>[
-          "W5-AUTH-MOTA-ABOUD-BARBARA-001",
-          "W5-AUTH-MOTA-ABOUD-DORMITION-001",
-        ],
+        sourceIds: <String>["W5-AUTH-MOTA-ABOUD-BARBARA-001", "W5-AUTH-MOTA-ABOUD-DORMITION-001"],
         historicalReviewStatus: "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE",
         rightsStatus: "TRIAGED_NOT_FULLY_CLEARED",
       ),
@@ -2516,34 +2276,26 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "W5-AUTH-MOTA-ABOUD-BARBARA-001",
         title: "St. Barbara Church in Aboud",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://www.travelpalestine.ps/en/Site/416/St-Barbara-Church-in-Aboud",
-        sourceClass:
-            "official_palestinian_architectural_and_archaeological_record",
+        url: "https://www.travelpalestine.ps/en/Site/416/St-Barbara-Church-in-Aboud",
+        sourceClass: "official_palestinian_architectural_and_archaeological_record",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
         imageReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/416/St-Barbara-Church-in-Aboud\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/416/St-Barbara-Church-in-Aboud\"}]",
       ),
       HistoricalSourceReference(
         id: "W5-AUTH-MOTA-ABOUD-DORMITION-001",
         title: "Dormition of the Theotokos Church — Al-Aboudieh",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://www.travelpalestine.ps/en/Site/29/Dormition-of-the-Theotokos-Church---Al-Aboudieh",
+        url: "https://www.travelpalestine.ps/en/Site/29/Dormition-of-the-Theotokos-Church---Al-Aboudieh",
         sourceClass: "official_palestinian_architectural_record",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -2551,15 +2303,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/29/Dormition-of-the-Theotokos-Church---Al-Aboudieh\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/29/Dormition-of-the-Theotokos-Church---Al-Aboudieh\"}]",
       ),
       HistoricalSourceReference(
         id: "W5-AUTH-RIWAQ-50-CENTRES-001",
         title: "50 Historic Centers",
         attribution: "Riwaq Centre for Architectural Conservation",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.riwaq.org/page/14",
         sourceClass: "palestinian_historic_centres_registry_programme",
@@ -2569,8 +2319,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.riwaq.org/page/14\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.riwaq.org/page/14\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -2584,9 +2333,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "توثق المصادر مكونات منفصلة في عابود، لكنها لا توفر مصفوفة حالة وملكية وحقوق لكل كنيسة ومقبرة ومعصرة وخربة.",
-    ],
+    p0Findings: <String>["توثق المصادر مكونات منفصلة في عابود، لكنها لا توفر مصفوفة حالة وملكية وحقوق لكل كنيسة ومقبرة ومعصرة وخربة."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -2610,23 +2357,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     periods: <String>["روماني", "بيزنطي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-086",
         title: "مادة تاريخية محكومة",
         draftText: "تعرف مؤسسة رواق دير عمار بوصفها مركزاً تاريخياً فلسطينياً.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-28dd528f5f3a-W5-C01",
-        sourceIds: <String>[
-          "W5-AUTH-RIWAQ-DEIR-AMMAR-001",
-          "W5-AUTH-RIWAQ-50-CENTRES-001",
-        ],
+        sourceIds: <String>["W5-AUTH-RIWAQ-DEIR-AMMAR-001", "W5-AUTH-RIWAQ-50-CENTRES-001"],
         historicalReviewStatus: "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE",
         rightsStatus: "TRIAGED_NOT_FULLY_CLEARED",
       ),
@@ -2636,8 +2378,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W5-AUTH-RIWAQ-50-CENTRES-001",
         title: "50 Historic Centers",
         attribution: "Riwaq Centre for Architectural Conservation",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.riwaq.org/page/14",
         sourceClass: "palestinian_historic_centres_registry_programme",
@@ -2647,15 +2388,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.riwaq.org/page/14\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.riwaq.org/page/14\"}]",
       ),
       HistoricalSourceReference(
         id: "W5-AUTH-RIWAQ-DEIR-AMMAR-001",
         title: "Deir Ammar",
         attribution: "Riwaq Centre for Architectural Conservation",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.riwaq.org/page/1184",
         sourceClass: "palestinian_historic_centre_registry_record",
@@ -2665,8 +2404,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_LIMITED_TO_INSPECTED_RECORD",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.riwaq.org/page/1184\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.riwaq.org/page/1184\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -2680,9 +2418,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "ثبتت دير عمار كمركز تاريخي، لكن لا يتوفر جرد منشور للمكونات أو حد جغرافي حاكم.",
-    ],
+    p0Findings: <String>["ثبتت دير عمار كمركز تاريخي، لكن لا يتوفر جرد منشور للمكونات أو حد جغرافي حاكم."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -2702,40 +2438,31 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "عنقود مشهد أثري ومائي",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "توثق المصادر الأكاديمية في عين سامية قبوراً عمودية ولقى مرتبطة بالعصر البرونزي الانتقالي/الأوسط.",
+    summaryDraft: "توثق المصادر الأكاديمية في عين سامية قبوراً عمودية ولقى مرتبطة بالعصر البرونزي الانتقالي/الأوسط.",
     periods: <String>["كنعاني", "روماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-087",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "توثق المصادر الأكاديمية في عين سامية قبوراً عمودية ولقى مرتبطة بالعصر البرونزي الانتقالي/الأوسط.",
+        draftText: "توثق المصادر الأكاديمية في عين سامية قبوراً عمودية ولقى مرتبطة بالعصر البرونزي الانتقالي/الأوسط.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-2a3fdab99250-W5-C01",
-        sourceIds: <String>[
-          "W5-ACADEMIC-AIN-SAMIYA-TOMB-204-001",
-          "W5-ACADEMIC-CAMBRIDGE-AIN-SAMIYA-001",
-        ],
+        sourceIds: <String>["W5-ACADEMIC-AIN-SAMIYA-TOMB-204-001", "W5-ACADEMIC-CAMBRIDGE-AIN-SAMIYA-001"],
         historicalReviewStatus: "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE",
         rightsStatus: "TRIAGED_NOT_FULLY_CLEARED",
       ),
       HistoricalNarrativeSection(
         id: "ED-088",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "يميز دليل المسارات الفلسطيني بين عين سامية وخربة مرجمة وعنصر القصر وخربة سامية ضمن المشهد الأوسع، ولا يعاملها موقعاً واحداً.",
+        draftText: "يميز دليل المسارات الفلسطيني بين عين سامية وخربة مرجمة وعنصر القصر وخربة سامية ضمن المشهد الأوسع، ولا يعاملها موقعاً واحداً.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-2a3fdab99250-W5-C02",
@@ -2749,8 +2476,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W5-ACADEMIC-AIN-SAMIYA-TOMB-204-001",
         title: "Tomb 204 at 'Ain-Samiya",
         attribution: "Israel Exploration Journal / JSTOR record",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.jstor.org/stable/27925264",
         sourceClass: "academic_excavation_publication",
@@ -2760,19 +2486,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"journal_page_range\", \"pages\": \"73–77\", \"scope\": \"Bibliographic page range for Tomb 204 at Ain Samiya\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"journal_page_range\", \"pages\": \"73–77\", \"scope\": \"Bibliographic page range for Tomb 204 at Ain Samiya\"}]",
       ),
       HistoricalSourceReference(
         id: "W5-ACADEMIC-CAMBRIDGE-AIN-SAMIYA-001",
-        title:
-            "The Archaeology of the Bronze Age Levant — Intermediate Bronze Age",
+        title: "The Archaeology of the Bronze Age Levant — Intermediate Bronze Age",
         attribution: "Cambridge University Press",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://www.cambridge.org/core/books/archaeology-of-the-bronze-age-levant/intermediate-bronze-age/FDADC29CDE3FFAAAF16FF0DDD64B5CF6",
+        url: "https://www.cambridge.org/core/books/archaeology-of-the-bronze-age-levant/intermediate-bronze-age/FDADC29CDE3FFAAAF16FF0DDD64B5CF6",
         sourceClass: "academic_synthesis",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -2780,19 +2502,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"publisher_html_chapter\", \"chapter\": \"Chapter 4 — The Intermediate Bronze Age\", \"scope\": \"Ain Samiya goblet, cemetery and shaft-tomb discussion\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"publisher_html_chapter\", \"chapter\": \"Chapter 4 — The Intermediate Bronze Age\", \"scope\": \"Ain Samiya goblet, cemetery and shaft-tomb discussion\"}]",
       ),
       HistoricalSourceReference(
         id: "W5-AUTH-WAFA-TOURIST-TRAILS-001",
         title: "دليل المسارات السياحية في فلسطين",
-        attribution:
-            "وكالة الأنباء والمعلومات الفلسطينية — وفا / Palestinian tourism information",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "وكالة الأنباء والمعلومات الفلسطينية — وفا / Palestinian tourism information",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://info.wafa.ps/userfiles/server/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D9%8A%D8%A9%20%D9%81%D9%8A%20%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86.pdf",
+        url: "https://info.wafa.ps/userfiles/server/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D9%8A%D8%A9%20%D9%81%D9%8A%20%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86.pdf",
         sourceClass: "official_palestinian_route_and_landscape_guide",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -2800,8 +2518,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"pdf_pages\", \"pages\": [20, 68], \"scope\": \"Ain Samiya route context and distinction among Ain Samiya, Khirbet Marjameh, Khirbet Samiya and the palace feature\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"pdf_pages\", \"pages\": [20, 68], \"scope\": \"Ain Samiya route context and distinction among Ain Samiya, Khirbet Marjameh, Khirbet Samiya and the palace feature\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -2835,15 +2552,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "قصر",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["عثماني"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -2875,22 +2592,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مقام",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "توثق مؤسسة رواق ترميم مجمع مركز النبي صالح الثقافي وإعادة توظيفه بالشراكة مع جهة محلية، مع اكتمال المشروع سنة 2003.",
+    summaryDraft: "توثق مؤسسة رواق ترميم مجمع مركز النبي صالح الثقافي وإعادة توظيفه بالشراكة مع جهة محلية، مع اكتمال المشروع سنة 2003.",
     periods: <String>["أيوبي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-089",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "توثق مؤسسة رواق ترميم مجمع مركز النبي صالح الثقافي وإعادة توظيفه بالشراكة مع جهة محلية، مع اكتمال المشروع سنة 2003.",
+        draftText: "توثق مؤسسة رواق ترميم مجمع مركز النبي صالح الثقافي وإعادة توظيفه بالشراكة مع جهة محلية، مع اكتمال المشروع سنة 2003.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-12fc185d4b0b-W5-C01",
@@ -2904,8 +2617,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W5-AUTH-RIWAQ-NABI-SALEH-001",
         title: "An Nabi Salih Cultural Center",
         attribution: "Riwaq Centre for Architectural Conservation",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://riwaq.org/page/135",
         sourceClass: "palestinian_conservation_project_record",
@@ -2915,8 +2627,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://riwaq.org/page/135\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://riwaq.org/page/135\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -2950,40 +2661,31 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "عنقود عمراني تاريخي",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "تمثل نابلس القديمة عنقوداً عمرانياً تاريخياً يضم مكونات رومانية وإسلامية ووسيطة وعثمانية ودينية وتجارية وسكنية ومائية.",
+    summaryDraft: "تمثل نابلس القديمة عنقوداً عمرانياً تاريخياً يضم مكونات رومانية وإسلامية ووسيطة وعثمانية ودينية وتجارية وسكنية ومائية.",
     periods: <String>["روماني", "بيزنطي", "إسلامي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-064",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "تمثل نابلس القديمة عنقوداً عمرانياً تاريخياً يضم مكونات رومانية وإسلامية ووسيطة وعثمانية ودينية وتجارية وسكنية ومائية.",
+        draftText: "تمثل نابلس القديمة عنقوداً عمرانياً تاريخياً يضم مكونات رومانية وإسلامية ووسيطة وعثمانية ودينية وتجارية وسكنية ومائية.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-a9ac192e20c3-W4-C01",
-        sourceIds: <String>[
-          "W4-AUTH-UNESCO-NABLUS-2012",
-          "W4-AUTH-MOTA-NABLUS-OLD-CITY",
-        ],
+        sourceIds: <String>["W4-AUTH-UNESCO-NABLUS-2012", "W4-AUTH-MOTA-NABLUS-OLD-CITY"],
         historicalReviewStatus: "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE",
         rightsStatus: "TRIAGED_NOT_FULLY_CLEARED",
       ),
       HistoricalNarrativeSection(
         id: "ED-065",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "أكملت اليونسكو وشركاؤها ترميم خان الوكالة وإعادة توظيفه بوصفه مكوّناً من مكونات نابلس القديمة.",
+        draftText: "أكملت اليونسكو وشركاؤها ترميم خان الوكالة وإعادة توظيفه بوصفه مكوّناً من مكونات نابلس القديمة.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-a9ac192e20c3-W4-C02",
@@ -2996,10 +2698,8 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "W4-AUTH-MOTA-NABLUS-OLD-CITY",
         title: "The Old City of Nablus",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.travelpalestine.ps/en/Site/92/The-Old-City-of-Nablus",
         sourceClass: "official_palestinian_heritage_portal",
@@ -3009,16 +2709,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/92/The-Old-City-of-Nablus\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/92/The-Old-City-of-Nablus\"}]",
       ),
       HistoricalSourceReference(
         id: "W4-AUTH-UNESCO-KHAN-WAKALA-2012",
         title: "EU and UNESCO restore Nablus' landmark Khan Al-Wakalah",
-        attribution:
-            "UNESCO / United Nations Information System on the Question of Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "UNESCO / United Nations Information System on the Question of Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.un.org/unispal/document/auto-insert-204941/",
         sourceClass: "official_conservation_project_record",
@@ -3028,15 +2725,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_LIMITED_TO_INSPECTED_RECORD",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.un.org/unispal/document/auto-insert-204941/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.un.org/unispal/document/auto-insert-204941/\"}]",
       ),
       HistoricalSourceReference(
         id: "W4-AUTH-UNESCO-NABLUS-2012",
         title: "Old Town of Nablus and its environs",
         attribution: "State of Palestine submission published by UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/tentativelists/5714/",
         sourceClass: "official_state_party_tentative_list_submission",
@@ -3046,8 +2741,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/5714/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/5714/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -3061,9 +2755,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "توثق المصادر أعمال حفظ مختارة داخل نابلس القديمة، لكنها لا تقدم حالة حديثة لكل مكون من مكونات العنقود.",
-    ],
+    p0Findings: <String>["توثق المصادر أعمال حفظ مختارة داخل نابلس القديمة، لكنها لا تقدم حالة حديثة لكل مكون من مكونات العنقود."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>["site-160c60c7b952", "site-31c7667ff10e"],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -3083,22 +2775,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مسجد",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "يشكل جامع النصر مكوّناً عمرانياً معروفاً يحد ساحة باب الساحة وشارع النصر داخل نابلس القديمة.",
+    summaryDraft: "يشكل جامع النصر مكوّناً عمرانياً معروفاً يحد ساحة باب الساحة وشارع النصر داخل نابلس القديمة.",
     periods: <String>["أيوبي", "مملوكي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-066",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "يشكل جامع النصر مكوّناً عمرانياً معروفاً يحد ساحة باب الساحة وشارع النصر داخل نابلس القديمة.",
+        draftText: "يشكل جامع النصر مكوّناً عمرانياً معروفاً يحد ساحة باب الساحة وشارع النصر داخل نابلس القديمة.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-a429c345ac25-W4-C01",
@@ -3111,13 +2799,10 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "W4-AUTH-MOTA-NASR-CONTEXT",
         title: "Bab Al-Saha and Al-Nasr urban context",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://www.travelpalestine.ps/en/Site/87/The-Manara-Clock-Tower-and-Bab-Al-Saha-%28Quarter-of-Nablus%29",
+        url: "https://www.travelpalestine.ps/en/Site/87/The-Manara-Clock-Tower-and-Bab-Al-Saha-%28Quarter-of-Nablus%29",
         sourceClass: "official_palestinian_heritage_portal_context",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -3125,8 +2810,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/87/The-Manara-Clock-Tower-and-Bab-Al-Saha-%28Quarter-of-Nablus%29\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/87/The-Manara-Clock-Tower-and-Bab-Al-Saha-%28Quarter-of-Nablus%29\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -3140,9 +2824,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "تدعم السجلات البلدية والتاريخية أن البناء الحالي أعيد تشييده بعد زلزال 1927، وأن المسجد تعرض لحريق وأضرار في مارس 2025. أما سجل الترميم الكامل بعد الحريق فما زال مفتوحاً.",
-    ],
+    p0Findings: <String>["تدعم السجلات البلدية والتاريخية أن البناء الحالي أعيد تشييده بعد زلزال 1927، وأن المسجد تعرض لحريق وأضرار في مارس 2025. أما سجل الترميم الكامل بعد الحريق فما زال مفتوحاً."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -3162,29 +2844,22 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "موقع مقدس",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "يمثل جبل جرزيم المركز الديني الحي للطائفة السامرية، ويضم بقايا رئيسية من الفترات الهلنستية والرومانية والبيزنطية والإسلامية.",
+    summaryDraft: "يمثل جبل جرزيم المركز الديني الحي للطائفة السامرية، ويضم بقايا رئيسية من الفترات الهلنستية والرومانية والبيزنطية والإسلامية.",
     periods: <String>["سامري", "روماني", "بيزنطي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-067",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "يمثل جبل جرزيم المركز الديني الحي للطائفة السامرية، ويضم بقايا رئيسية من الفترات الهلنستية والرومانية والبيزنطية والإسلامية.",
+        draftText: "يمثل جبل جرزيم المركز الديني الحي للطائفة السامرية، ويضم بقايا رئيسية من الفترات الهلنستية والرومانية والبيزنطية والإسلامية.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-b6773e683274-W4-C01",
-        sourceIds: <String>[
-          "W4-AUTH-UNESCO-GERIZIM-2012",
-          "W4-AUTH-MOTA-NABLUS-OLD-CITY",
-        ],
+        sourceIds: <String>["W4-AUTH-UNESCO-GERIZIM-2012", "W4-AUTH-MOTA-NABLUS-OLD-CITY"],
         historicalReviewStatus: "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE",
         rightsStatus: "TRIAGED_NOT_FULLY_CLEARED",
       ),
@@ -3193,10 +2868,8 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "W4-AUTH-MOTA-NABLUS-OLD-CITY",
         title: "The Old City of Nablus",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.travelpalestine.ps/en/Site/92/The-Old-City-of-Nablus",
         sourceClass: "official_palestinian_heritage_portal",
@@ -3206,15 +2879,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/92/The-Old-City-of-Nablus\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/92/The-Old-City-of-Nablus\"}]",
       ),
       HistoricalSourceReference(
         id: "W4-AUTH-UNESCO-GERIZIM-2012",
         title: "Mount Gerizim and the Samaritans",
         attribution: "State of Palestine submission published by UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/tentativelists/5706/",
         sourceClass: "official_state_party_tentative_list_submission",
@@ -3224,8 +2895,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/5706/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/5706/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -3259,22 +2929,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "حارة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "حارة الياسمينة إحدى الحارات المعروفة في نابلس القديمة، ويحفظ حوش العطوط نموذجاً من النسيج السكني ذي الأفنية العثمانية.",
+    summaryDraft: "حارة الياسمينة إحدى الحارات المعروفة في نابلس القديمة، ويحفظ حوش العطوط نموذجاً من النسيج السكني ذي الأفنية العثمانية.",
     periods: <String>["عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-068",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "حارة الياسمينة إحدى الحارات المعروفة في نابلس القديمة، ويحفظ حوش العطوط نموذجاً من النسيج السكني ذي الأفنية العثمانية.",
+        draftText: "حارة الياسمينة إحدى الحارات المعروفة في نابلس القديمة، ويحفظ حوش العطوط نموذجاً من النسيج السكني ذي الأفنية العثمانية.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-160c60c7b952-W4-C01",
@@ -3285,11 +2951,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-069",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "تذكر البوابة الرسمية تعرض حوش العطوط لأضرار جسيمة سنة 2002، واكتمال إعادة بنائه سنة 2012.",
+        draftText: "تذكر البوابة الرسمية تعرض حوش العطوط لأضرار جسيمة سنة 2002، واكتمال إعادة بنائه سنة 2012.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-160c60c7b952-W4-C02",
@@ -3302,13 +2966,10 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "W4-AUTH-MOTA-YASMINA-ATOUT",
         title: "Hosh Al-Atout — Al-Yasmina Quarter",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://www.travelpalestine.ps/en/Site/110/Hosh-Al-Atout-%28Quarter%29",
+        url: "https://www.travelpalestine.ps/en/Site/110/Hosh-Al-Atout-%28Quarter%29",
         sourceClass: "official_palestinian_heritage_portal",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -3316,8 +2977,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/110/Hosh-Al-Atout-%28Quarter%29\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/110/Hosh-Al-Atout-%28Quarter%29\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -3331,10 +2991,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 2,
-    p0Findings: <String>[
-      "توثق مصادر الحفظ أعمالاً في حوش العطوط وواجهات مختارة من الياسمينة، لكنها لا تمثل فحصاً لكل المباني.",
-      "هوية حارة الياسمينة ثابتة، لكن الحدود الكاملة للحارة لم تُثبت بملف GIS أو مسح عمراني منشور.",
-    ],
+    p0Findings: <String>["توثق مصادر الحفظ أعمالاً في حوش العطوط وواجهات مختارة من الياسمينة، لكنها لا تمثل فحصاً لكل المباني.", "هوية حارة الياسمينة ثابتة، لكن الحدود الكاملة للحارة لم تُثبت بملف GIS أو مسح عمراني منشور."],
     parentSiteIds: <String>["site-a9ac192e20c3"],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -3354,22 +3011,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "خان",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "خان التجار سوق تاريخي معروف، ويعمل بوصفه سوقاً للأقمشة ضمن مكونات نابلس القديمة.",
+    summaryDraft: "خان التجار سوق تاريخي معروف، ويعمل بوصفه سوقاً للأقمشة ضمن مكونات نابلس القديمة.",
     periods: <String>["عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-070",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "خان التجار سوق تاريخي معروف، ويعمل بوصفه سوقاً للأقمشة ضمن مكونات نابلس القديمة.",
+        draftText: "خان التجار سوق تاريخي معروف، ويعمل بوصفه سوقاً للأقمشة ضمن مكونات نابلس القديمة.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-31c7667ff10e-W4-C01",
@@ -3382,13 +3035,10 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "W4-AUTH-MOTA-KHAN-TUJJAR",
         title: "Khan Al-Tujjar (Fabric Market)",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://www.travelpalestine.ps/en/Site/115/Khan-Al-Tujjar-%28Fabric-Market%29",
+        url: "https://www.travelpalestine.ps/en/Site/115/Khan-Al-Tujjar-%28Fabric-Market%29",
         sourceClass: "official_palestinian_heritage_portal",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -3396,8 +3046,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/115/Khan-Al-Tujjar-%28Fabric-Market%29\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/115/Khan-Al-Tujjar-%28Fabric-Market%29\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -3431,22 +3080,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مدينة أثرية",
     latitude: 32.2766,
     longitude: 35.1953,
-    summaryDraft:
-        "أدرجت دولة فلسطين سبسطية في قائمتها التمهيدية لدى اليونسكو سنة 2012.",
+    summaryDraft: "أدرجت دولة فلسطين سبسطية في قائمتها التمهيدية لدى اليونسكو سنة 2012.",
     periods: <String>["كنعاني", "إسرائيلي", "روماني", "صليبي", "بيزنطي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-014",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "أدرجت دولة فلسطين سبسطية في قائمتها التمهيدية لدى اليونسكو سنة 2012.",
+        draftText: "أدرجت دولة فلسطين سبسطية في قائمتها التمهيدية لدى اليونسكو سنة 2012.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-6f6afe87f969-W1-C01",
@@ -3457,11 +3102,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-015",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "يصف ملف دولة فلسطين سبسطية بأنها عاصمة في العصر الحديدي الثاني ومركزاً عمرانياً مهماً في العصرين الهلنستي والروماني، كما يوثق حملات تنقيب رئيسية في الموقع.",
+        draftText: "يصف ملف دولة فلسطين سبسطية بأنها عاصمة في العصر الحديدي الثاني ومركزاً عمرانياً مهماً في العصرين الهلنستي والروماني، كما يوثق حملات تنقيب رئيسية في الموقع.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-6f6afe87f969-W1-C02",
@@ -3472,11 +3115,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-016",
         title: "مادة تاريخية محكومة 3",
-        draftText:
-            "ترتبط سبسطية، في التقاليد المسيحية والإسلامية، بالنبي يحيى/يوحنا المعمدان.",
+        draftText: "ترتبط سبسطية، في التقاليد المسيحية والإسلامية، بالنبي يحيى/يوحنا المعمدان.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-6f6afe87f969-W1-C03",
@@ -3489,10 +3130,8 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "AUTH-UNESCO-SEBASTIA-001",
         title: "Sebastia - Tentative List",
-        attribution:
-            "Permanent Delegation of Palestine to UNESCO / UNESCO World Heritage Centre publication",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Permanent Delegation of Palestine to UNESCO / UNESCO World Heritage Centre publication",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/tentativelists/5718/",
         sourceClass: "official_state_submission_tentative_list",
@@ -3502,8 +3141,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/5718/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/5718/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -3537,15 +3175,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مقام",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["مملوكي", "عثماني"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -3557,10 +3195,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: "blocked_pending_dedicated_source",
     heldClaimCount: 4,
     p0ClaimCount: 2,
-    p0Findings: <String>[
-      "تثبت بيانات الجهاز المركزي للإحصاء أن سنجل تتبع محافظة رام الله والبيرة، ولذلك فإن إسناد السجل إلى نابلس مع ذكر سنجل متناقض.",
-      "لم يُعثر على مصدر رسمي يثبت أن المقام المقصود في السجل هو مقام النبي شعيب في سنجل أو موقع آخر يحمل الاسم نفسه.",
-    ],
+    p0Findings: <String>["تثبت بيانات الجهاز المركزي للإحصاء أن سنجل تتبع محافظة رام الله والبيرة، ولذلك فإن إسناد السجل إلى نابلس مع ذكر سنجل متناقض.", "لم يُعثر على مصدر رسمي يثبت أن المقام المقصود في السجل هو مقام النبي شعيب في سنجل أو موقع آخر يحمل الاسم نفسه."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -3580,22 +3215,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مقام",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "شهد مقام النبي يوسف قرب بلاطة تقاليد تبجيل لدى مسلمين ومسيحيين ويهود وسامريين، كما تغيرت معانيه الاجتماعية والدينية الفلسطينية عبر الزمن.",
+    summaryDraft: "شهد مقام النبي يوسف قرب بلاطة تقاليد تبجيل لدى مسلمين ومسيحيين ويهود وسامريين، كما تغيرت معانيه الاجتماعية والدينية الفلسطينية عبر الزمن.",
     periods: <String>["فاطمي", "مملوكي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-071",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "شهد مقام النبي يوسف قرب بلاطة تقاليد تبجيل لدى مسلمين ومسيحيين ويهود وسامريين، كما تغيرت معانيه الاجتماعية والدينية الفلسطينية عبر الزمن.",
+        draftText: "شهد مقام النبي يوسف قرب بلاطة تقاليد تبجيل لدى مسلمين ومسيحيين ويهود وسامريين، كما تغيرت معانيه الاجتماعية والدينية الفلسطينية عبر الزمن.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-fb9a817ec94a-W4-C01",
@@ -3606,11 +3237,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-072",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "تخلص الدراسة الأكاديمية المفحوصة إلى أن الأدلة الأثرية لا تحسم هويات الدفن المتنافسة المنسوبة إلى المقام.",
+        draftText: "تخلص الدراسة الأكاديمية المفحوصة إلى أن الأدلة الأثرية لا تحسم هويات الدفن المتنافسة المنسوبة إلى المقام.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-fb9a817ec94a-W4-C02",
@@ -3622,14 +3251,11 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     sources: <HistoricalSourceReference>[
       HistoricalSourceReference(
         id: "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023",
-        title:
-            "Sacred Space/Contested Place: Intergenerational Memory and the Shifting Meanings of the Shrine/Tomb of Joseph",
+        title: "Sacred Space/Contested Place: Intergenerational Memory and the Shifting Meanings of the Shrine/Tomb of Joseph",
         attribution: "Jerusalem Quarterly / Institute for Palestine Studies",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://www.palestine-studies.org/sites/default/files/jq-articles/Sacred%20Space-Contested%20Place%20-%20Intergenerational%20Memory%20and%20the%20Shifting%20Meanings%20of%20the%20Shrine%2C%20Tomb%20of%20Joseph.pdf",
+        url: "https://www.palestine-studies.org/sites/default/files/jq-articles/Sacred%20Space-Contested%20Place%20-%20Intergenerational%20Memory%20and%20the%20Shifting%20Meanings%20of%20the%20Shrine%2C%20Tomb%20of%20Joseph.pdf",
         sourceClass: "peer_reviewed_or_editorially_reviewed_academic_article",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -3637,8 +3263,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"pdf_pages\", \"pages\": [33, 34], \"scope\": \"Shared/contested shrine memory and absence of archaeological proof for competing burial identifications\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"pdf_pages\", \"pages\": [33, 34], \"scope\": \"Shared/contested shrine memory and absence of archaeological proof for competing burial identifications\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -3672,22 +3297,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "عنقود عمراني تاريخي مؤقت",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "سوق السيباط مكوّن عثماني متأخر داخل أحياء جنين القديمة، وتذكر البوابة الرسمية وجود سياق أثري روماني وبيزنطي تحته.",
+    summaryDraft: "سوق السيباط مكوّن عثماني متأخر داخل أحياء جنين القديمة، وتذكر البوابة الرسمية وجود سياق أثري روماني وبيزنطي تحته.",
     periods: <String>["مملوكي", "عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-073",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "سوق السيباط مكوّن عثماني متأخر داخل أحياء جنين القديمة، وتذكر البوابة الرسمية وجود سياق أثري روماني وبيزنطي تحته.",
+        draftText: "سوق السيباط مكوّن عثماني متأخر داخل أحياء جنين القديمة، وتذكر البوابة الرسمية وجود سياق أثري روماني وبيزنطي تحته.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-f2a7fbbda5a5-W4-C01",
@@ -3698,11 +3319,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-074",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "يمثل مسجد فاطمة خاتون مكوّناً عمرانياً عثمانياً رئيسياً من القرن السادس عشر في وسط جنين.",
+        draftText: "يمثل مسجد فاطمة خاتون مكوّناً عمرانياً عثمانياً رئيسياً من القرن السادس عشر في وسط جنين.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-f2a7fbbda5a5-W4-C02",
@@ -3715,10 +3334,8 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "W4-AUTH-MOTA-JENIN-FATIMA-KHATUN",
         title: "Fatima Khatun Mosque",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.travelpalestine.ps/en/Site/37/Fatima-Khatun-Mosque",
         sourceClass: "official_palestinian_heritage_portal",
@@ -3728,16 +3345,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/37/Fatima-Khatun-Mosque\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/37/Fatima-Khatun-Mosque\"}]",
       ),
       HistoricalSourceReference(
         id: "W4-AUTH-MOTA-JENIN-SIBAT",
         title: "Al Sibat Souq",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.travelpalestine.ps/en/Site/46/Al-Sibat-Souq",
         sourceClass: "official_palestinian_heritage_portal",
@@ -3747,8 +3361,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/46/Al-Sibat-Souq\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/46/Al-Sibat-Souq\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -3762,9 +3375,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "لم يُعثر على جرد حالة حديث وشامل لكل مكونات جنين القديمة. وجود مكونات موثقة لا يسمح بتعميم حالة واحدة على كامل العنقود.",
-    ],
+    p0Findings: <String>["لم يُعثر على جرد حالة حديث وشامل لكل مكونات جنين القديمة. وجود مكونات موثقة لا يسمح بتعميم حالة واحدة على كامل العنقود."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -3784,15 +3395,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "تل أثري",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["برونزي", "كنعاني"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -3824,22 +3435,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "قصر",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "تضع البوابة الفلسطينية الرسمية قصر الكايد في سبسطية بمحافظة نابلس، وتؤرخ بناءه بسنة 1858.",
+    summaryDraft: "تضع البوابة الفلسطينية الرسمية قصر الكايد في سبسطية بمحافظة نابلس، وتؤرخ بناءه بسنة 1858.",
     periods: <String>["عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-075",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "تضع البوابة الفلسطينية الرسمية قصر الكايد في سبسطية بمحافظة نابلس، وتؤرخ بناءه بسنة 1858.",
+        draftText: "تضع البوابة الفلسطينية الرسمية قصر الكايد في سبسطية بمحافظة نابلس، وتؤرخ بناءه بسنة 1858.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-fe1e2a1605b5-W4-C01",
@@ -3852,10 +3459,8 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "W4-AUTH-MOTA-KAYED-SEBASTIA",
         title: "Al-Kayed Palace",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.travelpalestine.ps/en/Site/70/Al-Kayed-Palace",
         sourceClass: "official_palestinian_heritage_portal_identity_record",
@@ -3865,8 +3470,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/70/Al-Kayed-Palace\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/70/Al-Kayed-Palace\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -3900,22 +3504,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "كنيسة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "كنيسة برقين كنيسة روم أرثوذكس حية في بلدة برقين، وتنسبها البوابة الرسمية تراثياً إلى الفترة البيزنطية.",
+    summaryDraft: "كنيسة برقين كنيسة روم أرثوذكس حية في بلدة برقين، وتنسبها البوابة الرسمية تراثياً إلى الفترة البيزنطية.",
     periods: <String>["بيزنطي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-076",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "كنيسة برقين كنيسة روم أرثوذكس حية في بلدة برقين، وتنسبها البوابة الرسمية تراثياً إلى الفترة البيزنطية.",
+        draftText: "كنيسة برقين كنيسة روم أرثوذكس حية في بلدة برقين، وتنسبها البوابة الرسمية تراثياً إلى الفترة البيزنطية.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-2c1f6b6dbd51-W4-C01",
@@ -3928,10 +3528,8 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "W4-AUTH-MOTA-BURQIN",
         title: "Burqin Church",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.travelpalestine.ps/en/Site/38/Burqin-Church",
         sourceClass: "official_palestinian_heritage_portal",
@@ -3941,8 +3539,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_LIMITED_TO_INSPECTED_RECORD",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/38/Burqin-Church\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/38/Burqin-Church\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -3976,15 +3573,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مقام",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["مملوكي"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -4016,15 +3613,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "بلدة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["مملوكي", "عثماني"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -4056,15 +3653,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "خربة/برج",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["صليبي", "مملوكي"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -4096,15 +3693,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "خربة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["روماني", "بيزنطي"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -4136,29 +3733,22 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "عنقود عمراني تاريخي مؤقت",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "تضم طولكرم أصولاً مبنية معترفاً بها رسمياً، منها متحف داخل مبنى شُيد سنة 1908 في أواخر العهد العثماني، ومنشآت تراثية جرى تأهيلها.",
+    summaryDraft: "تضم طولكرم أصولاً مبنية معترفاً بها رسمياً، منها متحف داخل مبنى شُيد سنة 1908 في أواخر العهد العثماني، ومنشآت تراثية جرى تأهيلها.",
     periods: <String>["روماني", "إسلامي", "عثماني", "حديث"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-077",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "تضم طولكرم أصولاً مبنية معترفاً بها رسمياً، منها متحف داخل مبنى شُيد سنة 1908 في أواخر العهد العثماني، ومنشآت تراثية جرى تأهيلها.",
+        draftText: "تضم طولكرم أصولاً مبنية معترفاً بها رسمياً، منها متحف داخل مبنى شُيد سنة 1908 في أواخر العهد العثماني، ومنشآت تراثية جرى تأهيلها.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-be1c2ce90997-W4-C01",
-        sourceIds: <String>[
-          "W4-AUTH-MOTA-TULKARM-MUSEUM",
-          "W4-AUTH-UNESCO-RIWAQ-75-STEPS-2023",
-        ],
+        sourceIds: <String>["W4-AUTH-MOTA-TULKARM-MUSEUM", "W4-AUTH-UNESCO-RIWAQ-75-STEPS-2023"],
         historicalReviewStatus: "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE",
         rightsStatus: "TRIAGED_NOT_FULLY_CLEARED",
       ),
@@ -4167,13 +3757,10 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "W4-AUTH-MOTA-TULKARM-MUSEUM",
         title: "The Museum of Tulkarem",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://www.travelpalestine.ps/en/Site/157/The-Museum-of-Tulkarem",
+        url: "https://www.travelpalestine.ps/en/Site/157/The-Museum-of-Tulkarem",
         sourceClass: "official_palestinian_museum_record",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -4181,18 +3768,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_LIMITED_TO_INSPECTED_RECORD",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/157/The-Museum-of-Tulkarem\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/157/The-Museum-of-Tulkarem\"}]",
       ),
       HistoricalSourceReference(
         id: "W4-AUTH-UNESCO-RIWAQ-75-STEPS-2023",
         title: "75 Steps Towards Preserving Palestinian Cultural Heritage",
         attribution: "UNESCO with Riwaq and Palestinian heritage partners",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://www.unesco.org/en/articles/75-steps-towards-preserving-palestinian-cultural-heritage",
+        url: "https://www.unesco.org/en/articles/75-steps-towards-preserving-palestinian-cultural-heritage",
         sourceClass: "official_conservation_programme_record",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -4200,8 +3784,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/articles/75-steps-towards-preserving-palestinian-cultural-heritage\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/articles/75-steps-towards-preserving-palestinian-cultural-heritage\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -4235,15 +3818,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مقام",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["عثماني"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -4275,15 +3858,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "خربة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["بيزنطي", "مملوكي"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -4315,15 +3898,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "خربة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["روماني", "مملوكي"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -4355,15 +3938,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مقام",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["مملوكي"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -4395,30 +3978,22 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "عنقود بلدة تاريخية",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "دير استيا مركز تاريخي فلسطيني معروف يضم مباني عمرها نحو ثلاثة قرون وشوارع ضيقة وقصوراً وينابيع وكهوفاً وخرباً.",
+    summaryDraft: "دير استيا مركز تاريخي فلسطيني معروف يضم مباني عمرها نحو ثلاثة قرون وشوارع ضيقة وقصوراً وينابيع وكهوفاً وخرباً.",
     periods: <String>["روماني", "بيزنطي", "مملوكي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-078",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "دير استيا مركز تاريخي فلسطيني معروف يضم مباني عمرها نحو ثلاثة قرون وشوارع ضيقة وقصوراً وينابيع وكهوفاً وخرباً.",
+        draftText: "دير استيا مركز تاريخي فلسطيني معروف يضم مباني عمرها نحو ثلاثة قرون وشوارع ضيقة وقصوراً وينابيع وكهوفاً وخرباً.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-69f3ad775733-W4-C01",
-        sourceIds: <String>[
-          "W4-AUTH-MOTA-DEIR-ISTIYA",
-          "W4-AUTH-RIWAQ-50-CENTRES",
-          "W4-AUTH-RIWAQ-DEIR-ISTIYA-PALACES",
-        ],
+        sourceIds: <String>["W4-AUTH-MOTA-DEIR-ISTIYA", "W4-AUTH-RIWAQ-50-CENTRES", "W4-AUTH-RIWAQ-DEIR-ISTIYA-PALACES"],
         historicalReviewStatus: "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE",
         rightsStatus: "TRIAGED_NOT_FULLY_CLEARED",
       ),
@@ -4427,10 +4002,8 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "W4-AUTH-MOTA-DEIR-ISTIYA",
         title: "Deir Istiya",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.travelpalestine.ps/en/Site/280/Deir-Istiya",
         sourceClass: "official_palestinian_heritage_portal",
@@ -4440,15 +4013,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/280/Deir-Istiya\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/280/Deir-Istiya\"}]",
       ),
       HistoricalSourceReference(
         id: "W4-AUTH-RIWAQ-50-CENTRES",
         title: "50 Historic Centers",
         attribution: "Riwaq Centre for Architectural Conservation",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.riwaq.org/page/14",
         sourceClass: "palestinian_architectural_heritage_registry_programme",
@@ -4458,15 +4029,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_LIMITED_TO_INSPECTED_RECORD",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.riwaq.org/page/14\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.riwaq.org/page/14\"}]",
       ),
       HistoricalSourceReference(
         id: "W4-AUTH-RIWAQ-DEIR-ISTIYA-PALACES",
         title: "Deir Istiya Palaces",
         attribution: "Riwaq Centre for Architectural Conservation",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.riwaq.org/page/16",
         sourceClass: "palestinian_architectural_conservation_record",
@@ -4476,8 +4045,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_LIMITED_TO_INSPECTED_RECORD",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.riwaq.org/page/16\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.riwaq.org/page/16\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -4511,22 +4079,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "عنقود معالم مائية",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "يؤكد السجل الرسمي لدير استيا وجود ينابيع مائية عديدة، إلى جانب وادي قانا الدائم الجريان في المحيط القريب.",
+    summaryDraft: "يؤكد السجل الرسمي لدير استيا وجود ينابيع مائية عديدة، إلى جانب وادي قانا الدائم الجريان في المحيط القريب.",
     periods: <String>["روماني", "عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-079",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "يؤكد السجل الرسمي لدير استيا وجود ينابيع مائية عديدة، إلى جانب وادي قانا الدائم الجريان في المحيط القريب.",
+        draftText: "يؤكد السجل الرسمي لدير استيا وجود ينابيع مائية عديدة، إلى جانب وادي قانا الدائم الجريان في المحيط القريب.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-ba91049d51a9-W4-C01",
@@ -4539,10 +4103,8 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "W4-AUTH-MOTA-DEIR-ISTIYA",
         title: "Deir Istiya",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.travelpalestine.ps/en/Site/280/Deir-Istiya",
         sourceClass: "official_palestinian_heritage_portal",
@@ -4552,8 +4114,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/280/Deir-Istiya\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/280/Deir-Istiya\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -4587,15 +4148,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "قلعة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["صليبي", "مملوكي"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -4627,22 +4188,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "تل أثري",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "يرتبط تل الفارعة الشمالي بمجموعة كبيرة من حفريات ومنشورات المدرسة الكتابية والآثارية الفرنسية، شملت تسع حملات قادها رولان دي فو بين 1946 و1960.",
+    summaryDraft: "يرتبط تل الفارعة الشمالي بمجموعة كبيرة من حفريات ومنشورات المدرسة الكتابية والآثارية الفرنسية، شملت تسع حملات قادها رولان دي فو بين 1946 و1960.",
     periods: <String>["برونزي", "كنعاني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-081",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "يرتبط تل الفارعة الشمالي بمجموعة كبيرة من حفريات ومنشورات المدرسة الكتابية والآثارية الفرنسية، شملت تسع حملات قادها رولان دي فو بين 1946 و1960.",
+        draftText: "يرتبط تل الفارعة الشمالي بمجموعة كبيرة من حفريات ومنشورات المدرسة الكتابية والآثارية الفرنسية، شملت تسع حملات قادها رولان دي فو بين 1946 و1960.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-c6731a990917-W4-C01",
@@ -4653,18 +4210,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-096",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "يوثق موقع مشروع تل الفارعة تسلسلاً استيطانياً يشمل العصرين البرونزي المبكر الأول والثاني، ويعرض دراسة العمارة والعمران والتسلسل الزمني ضمن محاور البحث الجاري في الموقع. أما تفاصيل مراحل التحصين فتظل مرتبطة بفحص تقارير الحفريات الكاملة.",
+        draftText: "يوثق موقع مشروع تل الفارعة تسلسلاً استيطانياً يشمل العصرين البرونزي المبكر الأول والثاني، ويعرض دراسة العمارة والعمران والتسلسل الزمني ضمن محاور البحث الجاري في الموقع. أما تفاصيل مراحل التحصين فتظل مرتبطة بفحص تقارير الحفريات الكاملة.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-c6731a990917-W4-C02R1",
-        sourceIds: <String>[
-          "W4-AUTH-TELL-EL-FARA-PROJECT-2026",
-          "W4-ACADEMIC-EBAF-TELL-FARAH-CORPUS",
-        ],
+        sourceIds: <String>["W4-AUTH-TELL-EL-FARA-PROJECT-2026", "W4-ACADEMIC-EBAF-TELL-FARAH-CORPUS"],
         historicalReviewStatus: "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE",
         rightsStatus: "TRIAGED_NOT_FULLY_CLEARED",
       ),
@@ -4674,8 +4226,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W4-ACADEMIC-EBAF-TELL-FARAH-CORPUS",
         title: "Tell el-Far'ah excavation and publication corpus",
         attribution: "École biblique et archéologique française de Jérusalem",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.ebaf.edu/publications-2/1144-2/",
         sourceClass: "academic_excavation_institution_record",
@@ -4685,16 +4236,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"institutional_publication_registry\", \"scope\": \"École biblique publication corpus and preliminary Revue Biblique reports for Tell el-Far'ah\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"institutional_publication_registry\", \"scope\": \"École biblique publication corpus and preliminary Revue Biblique reports for Tell el-Far'ah\"}]",
       ),
       HistoricalSourceReference(
         id: "W4-AUTH-TELL-EL-FARA-PROJECT-2026",
         title: "Tell el-Far'a — archaeological research project",
-        attribution:
-            "International Tell el-Far'a research project with Palestinian Ministry of Tourism and Antiquities participation",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "International Tell el-Far'a research project with Palestinian Ministry of Tourism and Antiquities participation",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.tellelfara.com/",
         sourceClass: "institutional_archaeological_project_record",
@@ -4718,9 +4266,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "هوية موقع البحث وتاريخ الحفريات موثقان، لكن الحدود الحالية وحالة الحفظ الميدانية لا تُغلقان من الموقع المؤسسي وحده.",
-    ],
+    p0Findings: <String>["هوية موقع البحث وتاريخ الحفريات موثقان، لكن الحدود الحالية وحالة الحفظ الميدانية لا تُغلقان من الموقع المؤسسي وحده."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -4740,15 +4286,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "خربة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["روماني", "بيزنطي"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -4780,15 +4326,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "نبع",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["روماني"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -4820,22 +4366,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "تل أثري",
     latitude: 31.8711,
     longitude: 35.4439,
-    summaryDraft:
-        "يحتوي موقع تل السلطان على ترسبات تدل على نشاط بشري يعود إلى نحو 10,500 قبل الميلاد.",
+    summaryDraft: "يحتوي موقع تل السلطان على ترسبات تدل على نشاط بشري يعود إلى نحو 10,500 قبل الميلاد.",
     periods: <String>["عصر حجري", "برونزي", "كنعاني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-011",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "يحتوي موقع تل السلطان على ترسبات تدل على نشاط بشري يعود إلى نحو 10,500 قبل الميلاد.",
+        draftText: "يحتوي موقع تل السلطان على ترسبات تدل على نشاط بشري يعود إلى نحو 10,500 قبل الميلاد.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-a86fc049d470-W1-C01",
@@ -4846,11 +4388,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-012",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "أصبح الموقع في الألفيتين التاسعة والثامنة قبل الميلاد مستوطنة دائمة كبيرة، وما زالت فيه بقايا سور وخندق وبرج.",
+        draftText: "أصبح الموقع في الألفيتين التاسعة والثامنة قبل الميلاد مستوطنة دائمة كبيرة، وما زالت فيه بقايا سور وخندق وبرج.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-a86fc049d470-W1-C02",
@@ -4861,11 +4401,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-013",
         title: "مادة تاريخية محكومة 3",
-        draftText:
-            "تشير بقايا العصر البرونزي الأوسط إلى وجود مدينة-دولة كنعانية كبيرة في الموقع.",
+        draftText: "تشير بقايا العصر البرونزي الأوسط إلى وجود مدينة-دولة كنعانية كبيرة في الموقع.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-a86fc049d470-W1-C03",
@@ -4879,8 +4417,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "AUTH-UNESCO-JERICHO-001",
         title: "Ancient Jericho/Tell es-Sultan",
         attribution: "UNESCO World Heritage Centre",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/list/1687/",
         sourceClass: "official_world_heritage_record",
@@ -4890,8 +4427,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/1687/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/1687/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -4925,22 +4461,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "دير",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "توثق البوابة الفلسطينية الرسمية كهوفاً رهبانية ومرحلة دير من القرن السادس وأعمال ترميم سنة 1892 في دير قرنطل.",
+    summaryDraft: "توثق البوابة الفلسطينية الرسمية كهوفاً رهبانية ومرحلة دير من القرن السادس وأعمال ترميم سنة 1892 في دير قرنطل.",
     periods: <String>["بيزنطي", "صليبي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-090",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "توثق البوابة الفلسطينية الرسمية كهوفاً رهبانية ومرحلة دير من القرن السادس وأعمال ترميم سنة 1892 في دير قرنطل.",
+        draftText: "توثق البوابة الفلسطينية الرسمية كهوفاً رهبانية ومرحلة دير من القرن السادس وأعمال ترميم سنة 1892 في دير قرنطل.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-cc4465115964-W5-C01",
@@ -4953,13 +4485,10 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "W5-AUTH-MOTA-QURUNTAL-001",
         title: "Deir Quruntal — The Monastery of the Temptation",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://www.travelpalestine.ps/en/Site/239/Deir-Quruntal%2C-The-Monastery-of-the-Temptation",
+        url: "https://www.travelpalestine.ps/en/Site/239/Deir-Quruntal%2C-The-Monastery-of-the-Temptation",
         sourceClass: "official_palestinian_religious_and_architectural_record",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -4967,8 +4496,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/239/Deir-Quruntal%2C-The-Monastery-of-the-Temptation\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/239/Deir-Quruntal%2C-The-Monastery-of-the-Temptation\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -5002,22 +4530,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "نبع",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "عين السلطان نبع دائم مجاور لتل السلطان، وتعده اليونسكو من عناصر عقار أريحا القديمة/تل السلطان المدرج على قائمة التراث العالمي.",
+    summaryDraft: "عين السلطان نبع دائم مجاور لتل السلطان، وتعده اليونسكو من عناصر عقار أريحا القديمة/تل السلطان المدرج على قائمة التراث العالمي.",
     periods: <String>["كنعاني", "روماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-091",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "عين السلطان نبع دائم مجاور لتل السلطان، وتعده اليونسكو من عناصر عقار أريحا القديمة/تل السلطان المدرج على قائمة التراث العالمي.",
+        draftText: "عين السلطان نبع دائم مجاور لتل السلطان، وتعده اليونسكو من عناصر عقار أريحا القديمة/تل السلطان المدرج على قائمة التراث العالمي.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-b5f00132ee24-W5-C01",
@@ -5031,8 +4555,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W5-AUTH-UNESCO-JERICHO-001",
         title: "Ancient Jericho/Tell es-Sultan",
         attribution: "UNESCO World Heritage Centre",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/list/1687/",
         sourceClass: "official_world_heritage_record",
@@ -5042,8 +4565,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/1687/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/list/1687/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -5077,22 +4599,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مقام",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "يصف السجل الفلسطيني الرسمي مجمعاً واحداً للنبي موسى يضم مسجداً وضريحاً أو قبراً وساحة وغرفاً ومرافق مرتبطة.",
+    summaryDraft: "يصف السجل الفلسطيني الرسمي مجمعاً واحداً للنبي موسى يضم مسجداً وضريحاً أو قبراً وساحة وغرفاً ومرافق مرتبطة.",
     periods: <String>["أيوبي", "مملوكي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-092",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "يصف السجل الفلسطيني الرسمي مجمعاً واحداً للنبي موسى يضم مسجداً وضريحاً أو قبراً وساحة وغرفاً ومرافق مرتبطة.",
+        draftText: "يصف السجل الفلسطيني الرسمي مجمعاً واحداً للنبي موسى يضم مسجداً وضريحاً أو قبراً وساحة وغرفاً ومرافق مرتبطة.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-ce23c41d7641-W5-C01",
@@ -5105,13 +4623,10 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "W5-AUTH-MOTA-NABI-MUSA-001",
         title: "The Shrine of Nabi Musa",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://www.travelpalestine.ps/en/Site/236/The-Shrine-of-Nabi-Musa",
+        url: "https://www.travelpalestine.ps/en/Site/236/The-Shrine-of-Nabi-Musa",
         sourceClass: "official_palestinian_islamic_architectural_record",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -5119,8 +4634,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/236/The-Shrine-of-Nabi-Musa\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/236/The-Shrine-of-Nabi-Musa\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -5154,22 +4668,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "قصر أموي",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "يؤرخ ملف دولة فلسطين مجمع خربة المفجر بالفترة بين 724 و743م، ويرجح ارتباط بنائه بهشام بن عبد الملك ثم استكمال زخرفته في عهد الوليد الثاني.",
+    summaryDraft: "يؤرخ ملف دولة فلسطين مجمع خربة المفجر بالفترة بين 724 و743م، ويرجح ارتباط بنائه بهشام بن عبد الملك ثم استكمال زخرفته في عهد الوليد الثاني.",
     periods: <String>["أموي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-017",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "يؤرخ ملف دولة فلسطين مجمع خربة المفجر بالفترة بين 724 و743م، ويرجح ارتباط بنائه بهشام بن عبد الملك ثم استكمال زخرفته في عهد الوليد الثاني.",
+        draftText: "يؤرخ ملف دولة فلسطين مجمع خربة المفجر بالفترة بين 724 و743م، ويرجح ارتباط بنائه بهشام بن عبد الملك ثم استكمال زخرفته في عهد الوليد الثاني.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-0285c869e647-W1-C01",
@@ -5180,11 +4690,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-018",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "يسجل الملف تعرض المجمع لزلزال سنة 749م، كما يوثق حفريات دائرة الآثار الفلسطينية بين 1935 و1948 بإدارة ديمتري برامكي وبمشاركة روبرت هاملتون.",
+        draftText: "يسجل الملف تعرض المجمع لزلزال سنة 749م، كما يوثق حفريات دائرة الآثار الفلسطينية بين 1935 و1948 بإدارة ديمتري برامكي وبمشاركة روبرت هاملتون.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-0285c869e647-W1-C02",
@@ -5195,11 +4703,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-019",
         title: "مادة تاريخية محكومة 3",
-        draftText:
-            "يضم الموقع مجمع حمامات كبيراً وزخارف فسيفسائية واسعة، من بينها لوحة شجرة الحياة.",
+        draftText: "يضم الموقع مجمع حمامات كبيراً وزخارف فسيفسائية واسعة، من بينها لوحة شجرة الحياة.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-0285c869e647-W1-C03",
@@ -5212,10 +4718,8 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "AUTH-UNESCO-HISHAM-001",
         title: "Hisham’s Palace/Khirbet al-Mafjar - Tentative List",
-        attribution:
-            "Permanent Delegation of Palestine to UNESCO / UNESCO World Heritage Centre publication",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Permanent Delegation of Palestine to UNESCO / UNESCO World Heritage Centre publication",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/tentativelists/6546/",
         sourceClass: "official_state_submission_tentative_list",
@@ -5225,8 +4729,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/6546/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/6546/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -5260,15 +4763,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "قناة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["روماني"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "لا يوجد اعتماد ميداني أو هندسي عام؛ أي حالة حفظ تحتاج دليلاً مؤرخاً خاصاً بالموقع.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -5300,22 +4803,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مقام",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "تعرف البوابة الفلسطينية الرسمية مقام النبي موسى بوصفه مجمعاً معمارياً مملوكياً مرتبطاً مؤسسياً بالسلطان الظاهر بيبرس.",
+    summaryDraft: "تعرف البوابة الفلسطينية الرسمية مقام النبي موسى بوصفه مجمعاً معمارياً مملوكياً مرتبطاً مؤسسياً بالسلطان الظاهر بيبرس.",
     periods: <String>["أيوبي", "مملوكي", "عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-094",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "تعرف البوابة الفلسطينية الرسمية مقام النبي موسى بوصفه مجمعاً معمارياً مملوكياً مرتبطاً مؤسسياً بالسلطان الظاهر بيبرس.",
+        draftText: "تعرف البوابة الفلسطينية الرسمية مقام النبي موسى بوصفه مجمعاً معمارياً مملوكياً مرتبطاً مؤسسياً بالسلطان الظاهر بيبرس.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-c4d8c9fdd1f0-W5-C01",
@@ -5326,11 +4825,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-095",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "يضع ملف دولة فلسطين للبرية مقام النبي موسى ضمن المشهد الإسلامي المقدس ومسار الحج في المنطقة.",
+        draftText: "يضع ملف دولة فلسطين للبرية مقام النبي موسى ضمن المشهد الإسلامي المقدس ومسار الحج في المنطقة.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-c4d8c9fdd1f0-W5-C02",
@@ -5343,13 +4840,10 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalSourceReference(
         id: "W5-AUTH-MOTA-NABI-MUSA-001",
         title: "The Shrine of Nabi Musa",
-        attribution:
-            "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        attribution: "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://www.travelpalestine.ps/en/Site/236/The-Shrine-of-Nabi-Musa",
+        url: "https://www.travelpalestine.ps/en/Site/236/The-Shrine-of-Nabi-Musa",
         sourceClass: "official_palestinian_islamic_architectural_record",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -5357,15 +4851,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/236/The-Shrine-of-Nabi-Musa\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.travelpalestine.ps/en/Site/236/The-Shrine-of-Nabi-Musa\"}]",
       ),
       HistoricalSourceReference(
         id: "W5-AUTH-UNESCO-EL-BARIYAH-001",
         title: "El-Bariyah: wilderness with monasteries",
         attribution: "State of Palestine submission published by UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/tentativelists/5708/",
         sourceClass: "official_state_party_tentative_list_submission",
@@ -5375,8 +4867,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/5708/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/5708/\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -5390,9 +4881,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "يمكن إثبات هوية المجمع المملوكي ومكوناته العامة، لكن التواريخ التفصيلية لكل عنصر والملكية والحقوق تحتاج نقوشاً وسجلات وقف وعقوداً أو قرارات قانونية.",
-    ],
+    p0Findings: <String>["يمكن إثبات هوية المجمع المملوكي ومكوناته العامة، لكن التواريخ التفصيلية لكل عنصر والملكية والحقوق تحتاج نقوشاً وسجلات وقف وعقوداً أو قرارات قانونية."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>["site-ce23c41d7641"],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -5412,22 +4901,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مسجد",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان المسجد العمري الكبير من الممتلكات الثقافية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحدد هذا الإدراج وحده درجة الضرر الهندسية.",
+    summaryDraft: "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان المسجد العمري الكبير من الممتلكات الثقافية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحدد هذا الإدراج وحده درجة الضرر الهندسية.",
     periods: <String>["روماني", "بيزنطي", "إسلامي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-047",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان المسجد العمري الكبير من الممتلكات الثقافية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحدد هذا الإدراج وحده درجة الضرر الهندسية.",
+        draftText: "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان المسجد العمري الكبير من الممتلكات الثقافية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحدد هذا الإدراج وحده درجة الضرر الهندسية.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-2e45744cdab4-W3-C01",
@@ -5438,11 +4923,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-048",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "يعرف ملف دولة فلسطين المقدم سنة 2026 المسجد بوصفه المسجد الجامع المركزي في غزة التاريخية، ويصف توسعات مملوكية وعثمانية في معلم متعدد الطبقات.",
+        draftText: "يعرف ملف دولة فلسطين المقدم سنة 2026 المسجد بوصفه المسجد الجامع المركزي في غزة التاريخية، ويصف توسعات مملوكية وعثمانية في معلم متعدد الطبقات.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-2e45744cdab4-W3-C02",
@@ -5454,11 +4937,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     sources: <HistoricalSourceReference>[
       HistoricalSourceReference(
         id: "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026",
-        title:
-            "The Historic Centre of Gaza, including Omari Mosque and Porphyrius Church",
+        title: "The Historic Centre of Gaza, including Omari Mosque and Porphyrius Church",
         attribution: "Permanent Delegation of the State of Palestine to UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/tentativelists/6955/",
         sourceClass: "official_state_party_tentative_list_submission",
@@ -5468,15 +4949,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/6955/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/6955/\"}]",
       ),
       HistoricalSourceReference(
         id: "W3-AUTH-UNESCO-GAZA-IMPACT-2026",
         title: "Impact on cultural heritage — Gaza",
         attribution: "UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.unesco.org/en/gaza/assessment",
         sourceClass: "official_damage_monitoring_record",
@@ -5486,8 +4965,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -5501,10 +4979,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 2,
-    p0Findings: <String>[
-      "ثبت الضرر في المسجد العمري الكبير، لكن حالة العناصر الباقية ودرجة الدمار تحتاجان مسحاً إنشائياً وأثرياً ميدانياً.",
-      "لم يُعثر على سجل رسمي حديث يثبت بدء إعادة بناء شاملة أو يحدد نسبة الإنجاز الحالية للمسجد العمري.",
-    ],
+    p0Findings: <String>["ثبت الضرر في المسجد العمري الكبير، لكن حالة العناصر الباقية ودرجة الدمار تحتاجان مسحاً إنشائياً وأثرياً ميدانياً.", "لم يُعثر على سجل رسمي حديث يثبت بدء إعادة بناء شاملة أو يحدد نسبة الإنجاز الحالية للمسجد العمري."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -5524,22 +4999,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "تل أثري",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان تل العجول من المواقع الأثرية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحدد ذلك وحده حدود الضرر أو شدته.",
+    summaryDraft: "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان تل العجول من المواقع الأثرية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحدد ذلك وحده حدود الضرر أو شدته.",
     periods: <String>["برونزي", "كنعاني", "فلسطيني قديم"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-049",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان تل العجول من المواقع الأثرية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحدد ذلك وحده حدود الضرر أو شدته.",
+        draftText: "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان تل العجول من المواقع الأثرية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحدد ذلك وحده حدود الضرر أو شدته.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-21150eefdea6-W3-C01",
@@ -5550,18 +5021,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-050",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "تحدد السجلات الأكاديمية والمتحفية تل العجول موقعاً أثرياً مستقلاً من العصر البرونزي جنوب مدينة غزة الحديثة، وتوثق مواد من العصرين البرونزي الأوسط والمتأخر.",
+        draftText: "تحدد السجلات الأكاديمية والمتحفية تل العجول موقعاً أثرياً مستقلاً من العصر البرونزي جنوب مدينة غزة الحديثة، وتوثق مواد من العصرين البرونزي الأوسط والمتأخر.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-21150eefdea6-W3-C02",
-        sourceIds: <String>[
-          "W3-AUTH-UCL-TELL-AJJUL-2021",
-          "W3-AUTH-BM-TELL-AJJUL-COLLECTION",
-        ],
+        sourceIds: <String>["W3-AUTH-UCL-TELL-AJJUL-2021", "W3-AUTH-BM-TELL-AJJUL-COLLECTION"],
         historicalReviewStatus: "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE",
         rightsStatus: "TRIAGED_NOT_FULLY_CLEARED",
       ),
@@ -5571,11 +5037,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W3-AUTH-BM-TELL-AJJUL-COLLECTION",
         title: "British Museum collection records — Tell el-Ajjul",
         attribution: "The British Museum",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://www.britishmuseum.org/collection/search?place=Tell+el-Ajjul",
+        url: "https://www.britishmuseum.org/collection/search?place=Tell+el-Ajjul",
         sourceClass: "official_museum_collection_registry",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -5583,19 +5047,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_LIMITED_TO_INSPECTED_RECORD",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.britishmuseum.org/collection/search?place=Tell+el-Ajjul\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.britishmuseum.org/collection/search?place=Tell+el-Ajjul\"}]",
       ),
       HistoricalSourceReference(
         id: "W3-AUTH-UCL-TELL-AJJUL-2021",
-        title:
-            "Historical Methods and Mishaps: Flinders Petrie's Views on Interconnected Tell el-Ajjul and the 'Middle Sea'",
+        title: "Historical Methods and Mishaps: Flinders Petrie's Views on Interconnected Tell el-Ajjul and the 'Middle Sea'",
         attribution: "University College London",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://discovery.ucl.ac.uk/10130277/1/Sparks_interconnected%20Ajjul_Accepted%20MSS.pdf",
+        url: "https://discovery.ucl.ac.uk/10130277/1/Sparks_interconnected%20Ajjul_Accepted%20MSS.pdf",
         sourceClass: "peer_reviewed_academic_research",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -5603,15 +5063,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"pdf_page\", \"page\": 1, \"scope\": \"Tell el-Ajjul location south of modern Gaza City and Bronze Age research context\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"pdf_page\", \"page\": 1, \"scope\": \"Tell el-Ajjul location south of modern Gaza City and Bronze Age research context\"}]",
       ),
       HistoricalSourceReference(
         id: "W3-AUTH-UNESCO-GAZA-IMPACT-2026",
         title: "Impact on cultural heritage — Gaza",
         attribution: "UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.unesco.org/en/gaza/assessment",
         sourceClass: "official_damage_monitoring_record",
@@ -5621,8 +5079,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -5636,9 +5093,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "ثبت الضرر في تل العجول، لكن شدة الضرر وحدود الموقع لم تُحسما في السجل العام المنشور.",
-    ],
+    p0Findings: <String>["ثبت الضرر في تل العجول، لكن شدة الضرر وحدود الموقع لم تُحسما في السجل العام المنشور."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -5658,22 +5113,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "حمام",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان حمام السمرة من المواقع التراثية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يمثل هذا تقييماً إنشائياً تفصيلياً.",
+    summaryDraft: "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان حمام السمرة من المواقع التراثية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يمثل هذا تقييماً إنشائياً تفصيلياً.",
     periods: <String>["مملوكي", "عثماني"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-051",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان حمام السمرة من المواقع التراثية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يمثل هذا تقييماً إنشائياً تفصيلياً.",
+        draftText: "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان حمام السمرة من المواقع التراثية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يمثل هذا تقييماً إنشائياً تفصيلياً.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-3ded44be126d-W3-C01",
@@ -5684,11 +5135,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-052",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "أفاد تقرير فلسطيني مستضاف على موقع اليونسكو بأن حمام السمرة دُمر بالكامل في 30 ديسمبر 2023، ووصفه بأنه آخر حمام تاريخي باقٍ في غزة؛ وتبقى هذه الصياغة منسوبة إلى الجهة مقدمة التقرير.",
+        draftText: "أفاد تقرير فلسطيني مستضاف على موقع اليونسكو بأن حمام السمرة دُمر بالكامل في 30 ديسمبر 2023، ووصفه بأنه آخر حمام تاريخي باقٍ في غزة؛ وتبقى هذه الصياغة منسوبة إلى الجهة مقدمة التقرير.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-3ded44be126d-W3-C02",
@@ -5702,8 +5151,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W3-AUTH-UNESCO-GAZA-IMPACT-2026",
         title: "Impact on cultural heritage — Gaza",
         attribution: "UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.unesco.org/en/gaza/assessment",
         sourceClass: "official_damage_monitoring_record",
@@ -5713,18 +5161,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
       ),
       HistoricalSourceReference(
         id: "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023",
         title: "Preliminary report on cultural and historical damage in Gaza",
         attribution: "Palestinian cultural-sector material hosted by UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://www.unesco.org/sites/default/files/medias/fichiers/2024/03/16_palestine_cultural_gaza.pdf",
+        url: "https://www.unesco.org/sites/default/files/medias/fichiers/2024/03/16_palestine_cultural_gaza.pdf",
         sourceClass: "attributed_party_report_hosted_by_unesco",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -5732,8 +5177,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"pdf_pages\", \"pages\": [67, 68], \"scope\": \"Great Omari Mosque and Saint Porphyrios passages\"}, {\"locator_type\": \"pdf_page\", \"page\": 69, \"scope\": \"Reported damage to historic houses including Khan Younis\"}, {\"locator_type\": \"pdf_page\", \"page\": 71, \"scope\": \"Hamam As-Samra and Qal'at Barqouq passages\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"pdf_pages\", \"pages\": [67, 68], \"scope\": \"Great Omari Mosque and Saint Porphyrios passages\"}, {\"locator_type\": \"pdf_page\", \"page\": 69, \"scope\": \"Reported damage to historic houses including Khan Younis\"}, {\"locator_type\": \"pdf_page\", \"page\": 71, \"scope\": \"Hamam As-Samra and Qal'at Barqouq passages\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -5747,10 +5191,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 2,
-    p0Findings: <String>[
-      "ثبت الضرر في حمام السمرة، لكن توصيف التدمير الكامل الوارد في تقرير أقدم لا يغني عن تقييم ميداني محدث سنة 2026.",
-      "التسلسل المعماري السابق للضرر ما زال بحاجة إلى دراسة معمارية مباشرة؛ لم يُعتمد عمر الألف سنة أو تأسيس سامري.",
-    ],
+    p0Findings: <String>["ثبت الضرر في حمام السمرة، لكن توصيف التدمير الكامل الوارد في تقرير أقدم لا يغني عن تقييم ميداني محدث سنة 2026.", "التسلسل المعماري السابق للضرر ما زال بحاجة إلى دراسة معمارية مباشرة؛ لم يُعتمد عمر الألف سنة أو تأسيس سامري."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -5770,22 +5211,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "قلعة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كانت قلعة برقوق في خان يونس من المواقع التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ وتبقى السلامة الإنشائية بحاجة إلى مسح ميداني.",
+    summaryDraft: "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كانت قلعة برقوق في خان يونس من المواقع التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ وتبقى السلامة الإنشائية بحاجة إلى مسح ميداني.",
     periods: <String>["مملوكي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-053",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كانت قلعة برقوق في خان يونس من المواقع التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ وتبقى السلامة الإنشائية بحاجة إلى مسح ميداني.",
+        draftText: "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كانت قلعة برقوق في خان يونس من المواقع التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ وتبقى السلامة الإنشائية بحاجة إلى مسح ميداني.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-5e98cf44d976-W3-C01",
@@ -5796,11 +5233,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-054",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "ينسب تقرير فلسطيني مستضاف على موقع اليونسكو القلعة إلى سنة 1387 في عهد السلطان برقوق، ويصف وظيفتها على طريق القوافل وواجهة باقية منها؛ وتبقى هذه المعلومات منسوبة إلى التقرير.",
+        draftText: "ينسب تقرير فلسطيني مستضاف على موقع اليونسكو القلعة إلى سنة 1387 في عهد السلطان برقوق، ويصف وظيفتها على طريق القوافل وواجهة باقية منها؛ وتبقى هذه المعلومات منسوبة إلى التقرير.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-5e98cf44d976-W3-C02",
@@ -5814,8 +5249,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W3-AUTH-UNESCO-GAZA-IMPACT-2026",
         title: "Impact on cultural heritage — Gaza",
         attribution: "UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.unesco.org/en/gaza/assessment",
         sourceClass: "official_damage_monitoring_record",
@@ -5825,18 +5259,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
       ),
       HistoricalSourceReference(
         id: "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023",
         title: "Preliminary report on cultural and historical damage in Gaza",
         attribution: "Palestinian cultural-sector material hosted by UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://www.unesco.org/sites/default/files/medias/fichiers/2024/03/16_palestine_cultural_gaza.pdf",
+        url: "https://www.unesco.org/sites/default/files/medias/fichiers/2024/03/16_palestine_cultural_gaza.pdf",
         sourceClass: "attributed_party_report_hosted_by_unesco",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -5844,8 +5275,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"pdf_pages\", \"pages\": [67, 68], \"scope\": \"Great Omari Mosque and Saint Porphyrios passages\"}, {\"locator_type\": \"pdf_page\", \"page\": 69, \"scope\": \"Reported damage to historic houses including Khan Younis\"}, {\"locator_type\": \"pdf_page\", \"page\": 71, \"scope\": \"Hamam As-Samra and Qal'at Barqouq passages\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"pdf_pages\", \"pages\": [67, 68], \"scope\": \"Great Omari Mosque and Saint Porphyrios passages\"}, {\"locator_type\": \"pdf_page\", \"page\": 69, \"scope\": \"Reported damage to historic houses including Khan Younis\"}, {\"locator_type\": \"pdf_page\", \"page\": 71, \"scope\": \"Hamam As-Samra and Qal'at Barqouq passages\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -5859,9 +5289,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "ثبت الضرر في قلعة برقوق، لكن الاستقرار الإنشائي الحالي غير منشور في تقييم هندسي قابل للاعتماد.",
-    ],
+    p0Findings: <String>["ثبت الضرر في قلعة برقوق، لكن الاستقرار الإنشائي الحالي غير منشور في تقييم هندسي قابل للاعتماد."],
     parentSiteIds: <String>["site-0a78d22c1a69"],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -5881,22 +5309,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "كنيسة",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان مجمع كنيسة القديس برفيريوس الأرثوذكسية من الممتلكات التراثية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحسم ذلك الوضع الإنشائي الحالي.",
+    summaryDraft: "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان مجمع كنيسة القديس برفيريوس الأرثوذكسية من الممتلكات التراثية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحسم ذلك الوضع الإنشائي الحالي.",
     periods: <String>["بيزنطي", "صليبي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-055",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان مجمع كنيسة القديس برفيريوس الأرثوذكسية من الممتلكات التراثية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحسم ذلك الوضع الإنشائي الحالي.",
+        draftText: "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان مجمع كنيسة القديس برفيريوس الأرثوذكسية من الممتلكات التراثية في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ ولا يحسم ذلك الوضع الإنشائي الحالي.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-e1e3de7b8519-W3-C01",
@@ -5907,18 +5331,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-056",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "يصف ملف دولة فلسطين كنيسة من أوائل القرن الخامس ظلت مزاراً مستخدماً، بينما تؤكد بطريركية القدس الهوية الكنسية الحية لدير غزة.",
+        draftText: "يصف ملف دولة فلسطين كنيسة من أوائل القرن الخامس ظلت مزاراً مستخدماً، بينما تؤكد بطريركية القدس الهوية الكنسية الحية لدير غزة.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-e1e3de7b8519-W3-C02",
-        sourceIds: <String>[
-          "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026",
-          "W3-AUTH-JERUSALEM-PATRIARCHATE-PORPHYRIOS",
-        ],
+        sourceIds: <String>["W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026", "W3-AUTH-JERUSALEM-PATRIARCHATE-PORPHYRIOS"],
         historicalReviewStatus: "ACCEPTED_FOR_CANDIDATE_EDITORIAL_BASELINE",
         rightsStatus: "TRIAGED_NOT_FULLY_CLEARED",
       ),
@@ -5926,14 +5345,11 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     sources: <HistoricalSourceReference>[
       HistoricalSourceReference(
         id: "W3-AUTH-JERUSALEM-PATRIARCHATE-PORPHYRIOS",
-        title:
-            "Official records concerning Saint Porphyrios of Gaza and the Gaza monastery",
+        title: "Official records concerning Saint Porphyrios of Gaza and the Gaza monastery",
         attribution: "Greek Orthodox Patriarchate of Jerusalem",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://en.jerusalem-patriarchate.info/liturgic-life/the-feast-of-st-porphyrios-of-gaza-in-gaza/",
+        url: "https://en.jerusalem-patriarchate.info/liturgic-life/the-feast-of-st-porphyrios-of-gaza-in-gaza/",
         sourceClass: "official_ecclesiastical_institutional_record",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -5941,16 +5357,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://en.jerusalem-patriarchate.info/liturgic-life/the-feast-of-st-porphyrios-of-gaza-in-gaza/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://en.jerusalem-patriarchate.info/liturgic-life/the-feast-of-st-porphyrios-of-gaza-in-gaza/\"}]",
       ),
       HistoricalSourceReference(
         id: "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026",
-        title:
-            "The Historic Centre of Gaza, including Omari Mosque and Porphyrius Church",
+        title: "The Historic Centre of Gaza, including Omari Mosque and Porphyrius Church",
         attribution: "Permanent Delegation of the State of Palestine to UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/tentativelists/6955/",
         sourceClass: "official_state_party_tentative_list_submission",
@@ -5960,15 +5373,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/6955/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/6955/\"}]",
       ),
       HistoricalSourceReference(
         id: "W3-AUTH-UNESCO-GAZA-IMPACT-2026",
         title: "Impact on cultural heritage — Gaza",
         attribution: "UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.unesco.org/en/gaza/assessment",
         sourceClass: "official_damage_monitoring_record",
@@ -5978,8 +5389,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -5993,10 +5403,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 2,
-    p0Findings: <String>[
-      "ثبت الضرر في مجمع كنيسة القديس برفيريوس، لكن السلامة الإنشائية الحالية لم تُحسم في السجل العام.",
-      "يثبت وقوع الضرر في المجمع، لكن شدة الضرر وسجل الضحايا يحتاجان فصل مسار التقييم الإنشائي عن مسار توثيق الحادث والضحايا بمصادر كنسية وطبية وحقوقية مباشرة.",
-    ],
+    p0Findings: <String>["ثبت الضرر في مجمع كنيسة القديس برفيريوس، لكن السلامة الإنشائية الحالية لم تُحسم في السجل العام.", "يثبت وقوع الضرر في المجمع، لكن شدة الضرر وسجل الضحايا يحتاجان فصل مسار التقييم الإنشائي عن مسار توثيق الحادث والضحايا بمصادر كنسية وطبية وحقوقية مباشرة."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -6016,30 +5423,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "عنقود عمراني تاريخي",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "قدمت دولة فلسطين المركز التاريخي لمدينة غزة إلى قائمة اليونسكو التمهيدية في 13 يناير 2026، وحددت نطاقاً تاريخياً مساحته 1.7 كم² يضم أربعة أحياء تقليدية.",
-    periods: <String>[
-      "كنعاني",
-      "روماني",
-      "بيزنطي",
-      "إسلامي",
-      "مملوكي",
-      "عثماني",
-      "حديث",
-    ],
+    summaryDraft: "قدمت دولة فلسطين المركز التاريخي لمدينة غزة إلى قائمة اليونسكو التمهيدية في 13 يناير 2026، وحددت نطاقاً تاريخياً مساحته 1.7 كم² يضم أربعة أحياء تقليدية.",
+    periods: <String>["كنعاني", "روماني", "بيزنطي", "إسلامي", "مملوكي", "عثماني", "حديث"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-057",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "قدمت دولة فلسطين المركز التاريخي لمدينة غزة إلى قائمة اليونسكو التمهيدية في 13 يناير 2026، وحددت نطاقاً تاريخياً مساحته 1.7 كم² يضم أربعة أحياء تقليدية.",
+        draftText: "قدمت دولة فلسطين المركز التاريخي لمدينة غزة إلى قائمة اليونسكو التمهيدية في 13 يناير 2026، وحددت نطاقاً تاريخياً مساحته 1.7 كم² يضم أربعة أحياء تقليدية.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-015f495c4236-W3-C01",
@@ -6050,11 +5445,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-058",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "تسجل قائمة اليونسكو المحدثة في 25 مارس 2026 أضراراً تحققت منها المنظمة، حتى 24 مارس 2026، في عدد كبير من الممتلكات الدينية والأثرية والمدنية والسكنية المسماة داخل محافظة غزة؛ ولا تُعمم هذه النتيجة على كل مكونات المركز التاريخي.",
+        draftText: "تسجل قائمة اليونسكو المحدثة في 25 مارس 2026 أضراراً تحققت منها المنظمة، حتى 24 مارس 2026، في عدد كبير من الممتلكات الدينية والأثرية والمدنية والسكنية المسماة داخل محافظة غزة؛ ولا تُعمم هذه النتيجة على كل مكونات المركز التاريخي.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-015f495c4236-W3-C02",
@@ -6066,11 +5459,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     sources: <HistoricalSourceReference>[
       HistoricalSourceReference(
         id: "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026",
-        title:
-            "The Historic Centre of Gaza, including Omari Mosque and Porphyrius Church",
+        title: "The Historic Centre of Gaza, including Omari Mosque and Porphyrius Church",
         attribution: "Permanent Delegation of the State of Palestine to UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/tentativelists/6955/",
         sourceClass: "official_state_party_tentative_list_submission",
@@ -6080,15 +5471,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/6955/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/6955/\"}]",
       ),
       HistoricalSourceReference(
         id: "W3-AUTH-UNESCO-GAZA-IMPACT-2026",
         title: "Impact on cultural heritage — Gaza",
         attribution: "UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.unesco.org/en/gaza/assessment",
         sourceClass: "official_damage_monitoring_record",
@@ -6098,8 +5487,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -6113,9 +5501,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "يحدد ملف الدولة الطرف نطاقاً مقترحاً مساحته 1.7 كم²، وتثبت اليونسكو أضراراً كثيرة داخله وحوله، لكن لا توجد نتيجة تكامل شاملة للعقار كاملاً.",
-    ],
+    p0Findings: <String>["يحدد ملف الدولة الطرف نطاقاً مقترحاً مساحته 1.7 كم²، وتثبت اليونسكو أضراراً كثيرة داخله وحوله، لكن لا توجد نتيجة تكامل شاملة للعقار كاملاً."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -6135,15 +5521,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "مقام",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
+    summaryDraft: "هذه صفحة بحث محدودة. تعرض هوية الموقع وفجوات التوثيق فقط، ولا تقدم رواية تاريخية قبل إغلاق الادعاءات والمصادر اللازمة.",
     periods: <String>["مملوكي"],
     status: ContentReviewStatus.researchInProgress,
     documentationProgress: 30,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
-    narrativeSections: <HistoricalNarrativeSection>[],
-    sources: <HistoricalSourceReference>[],
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    narrativeSections: <HistoricalNarrativeSection>[
+    ],
+    sources: <HistoricalSourceReference>[
+    ],
     timeline: <HistoricalTimelineEntry>[],
     mediaCount: 0,
     oralHistoryCount: 0,
@@ -6155,10 +5541,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 4,
     p0ClaimCount: 2,
-    p0Findings: <String>[
-      "توجد تقاليد تاريخية متعددة مرتبطة باسم الشيخ رضوان، لكن لم يُعثر على سجل فلسطيني رسمي أو مسح أثري مخصص يحسم هوية المقام وحدوده وإحداثياته.",
-      "لا يظهر مقام الشيخ رضوان باسمه كسجل مستقل في قائمة اليونسكو العامة للأضرار، ولا يمكن اشتقاق حالته من ضرر الحي أو المقبرة.",
-    ],
+    p0Findings: <String>["توجد تقاليد تاريخية متعددة مرتبطة باسم الشيخ رضوان، لكن لم يُعثر على سجل فلسطيني رسمي أو مسح أثري مخصص يحسم هوية المقام وحدوده وإحداثياته.", "لا يظهر مقام الشيخ رضوان باسمه كسجل مستقل في قائمة اليونسكو العامة للأضرار، ولا يمكن اشتقاق حالته من ضرر الحي أو المقبرة."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -6178,22 +5561,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "ميناء",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان ميناء الأنثيدون من المواقع في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ وما زالت حدود الموقع وشدة الضرر بحاجة إلى تحقق ميداني.",
+    summaryDraft: "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان ميناء الأنثيدون من المواقع في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ وما زالت حدود الموقع وشدة الضرر بحاجة إلى تحقق ميداني.",
     periods: <String>["روماني", "بيزنطي", "إسلامي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-059",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان ميناء الأنثيدون من المواقع في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ وما زالت حدود الموقع وشدة الضرر بحاجة إلى تحقق ميداني.",
+        draftText: "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، كان ميناء الأنثيدون من المواقع في غزة التي تحققت المنظمة من تعرضها للضرر حتى 24 مارس 2026؛ وما زالت حدود الموقع وشدة الضرر بحاجة إلى تحقق ميداني.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-99f520b3d607-W3-C01",
@@ -6204,11 +5583,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-060",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "يصف ملف دولة فلسطين الأنثيدون بوصفه ميناءً قديماً شمال غربي غزة يضم بقايا من فترات متعددة، ويصرح بأن التحديد الدقيق للموقع ما زال غير محسوم.",
+        draftText: "يصف ملف دولة فلسطين الأنثيدون بوصفه ميناءً قديماً شمال غربي غزة يضم بقايا من فترات متعددة، ويصرح بأن التحديد الدقيق للموقع ما زال غير محسوم.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-99f520b3d607-W3-C02",
@@ -6222,8 +5599,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W3-AUTH-UNESCO-ANTHEDON-2012",
         title: "Anthedon Harbour",
         attribution: "State of Palestine submission published by UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://whc.unesco.org/en/tentativelists/5719/",
         sourceClass: "official_state_party_tentative_list_submission",
@@ -6233,15 +5609,13 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/5719/\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://whc.unesco.org/en/tentativelists/5719/\"}]",
       ),
       HistoricalSourceReference(
         id: "W3-AUTH-UNESCO-GAZA-IMPACT-2026",
         title: "Impact on cultural heritage — Gaza",
         attribution: "UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.unesco.org/en/gaza/assessment",
         sourceClass: "official_damage_monitoring_record",
@@ -6251,8 +5625,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -6266,9 +5639,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 1,
-    p0Findings: <String>[
-      "ثبت الضرر في ميناء الأنثيدون حتى 24 مارس 2026، ولم تُنشر درجة ضرر ميدانية أو هندسية مفصلة.",
-    ],
+    p0Findings: <String>["ثبت الضرر في ميناء الأنثيدون حتى 24 مارس 2026، ولم تُنشر درجة ضرر ميدانية أو هندسية مفصلة."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -6288,22 +5659,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "عنقود عمراني تاريخي مؤقت",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، تحققت المنظمة حتى 24 مارس 2026 من وقوع ضرر في قلعة برقوق بمحافظة خان يونس؛ ولا يثبت ذلك سلامة أو حالة كامل عنقود خان يونس القديم.",
+    summaryDraft: "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، تحققت المنظمة حتى 24 مارس 2026 من وقوع ضرر في قلعة برقوق بمحافظة خان يونس؛ ولا يثبت ذلك سلامة أو حالة كامل عنقود خان يونس القديم.",
     periods: <String>["مملوكي"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-061",
         title: "مادة تاريخية محكومة 1",
-        draftText:
-            "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، تحققت المنظمة حتى 24 مارس 2026 من وقوع ضرر في قلعة برقوق بمحافظة خان يونس؛ ولا يثبت ذلك سلامة أو حالة كامل عنقود خان يونس القديم.",
+        draftText: "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، تحققت المنظمة حتى 24 مارس 2026 من وقوع ضرر في قلعة برقوق بمحافظة خان يونس؛ ولا يثبت ذلك سلامة أو حالة كامل عنقود خان يونس القديم.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-0a78d22c1a69-W3-C01",
@@ -6314,11 +5681,9 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
       HistoricalNarrativeSection(
         id: "ED-062",
         title: "مادة تاريخية محكومة 2",
-        draftText:
-            "يسجل تقرير فلسطيني مستضاف على موقع اليونسكو أضراراً في بيوت تاريخية بخان يونس، ويعرض قلعة برقوق بوصفها مكوّناً تاريخياً رئيسياً.",
+        draftText: "يسجل تقرير فلسطيني مستضاف على موقع اليونسكو أضراراً في بيوت تاريخية بخان يونس، ويعرض قلعة برقوق بوصفها مكوّناً تاريخياً رئيسياً.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-0a78d22c1a69-W3-C02",
@@ -6332,8 +5697,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W3-AUTH-UNESCO-GAZA-IMPACT-2026",
         title: "Impact on cultural heritage — Gaza",
         attribution: "UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.unesco.org/en/gaza/assessment",
         sourceClass: "official_damage_monitoring_record",
@@ -6343,18 +5707,15 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
       ),
       HistoricalSourceReference(
         id: "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023",
         title: "Preliminary report on cultural and historical damage in Gaza",
         attribution: "Palestinian cultural-sector material hosted by UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
-        url:
-            "https://www.unesco.org/sites/default/files/medias/fichiers/2024/03/16_palestine_cultural_gaza.pdf",
+        url: "https://www.unesco.org/sites/default/files/medias/fichiers/2024/03/16_palestine_cultural_gaza.pdf",
         sourceClass: "attributed_party_report_hosted_by_unesco",
         adoptionRole: "PAGE_EDITORIAL_SOURCE",
         textReuseStatus: "PARAPHRASE_WITH_CITATION",
@@ -6362,8 +5723,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"pdf_pages\", \"pages\": [67, 68], \"scope\": \"Great Omari Mosque and Saint Porphyrios passages\"}, {\"locator_type\": \"pdf_page\", \"page\": 69, \"scope\": \"Reported damage to historic houses including Khan Younis\"}, {\"locator_type\": \"pdf_page\", \"page\": 71, \"scope\": \"Hamam As-Samra and Qal'at Barqouq passages\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"pdf_pages\", \"pages\": [67, 68], \"scope\": \"Great Omari Mosque and Saint Porphyrios passages\"}, {\"locator_type\": \"pdf_page\", \"page\": 69, \"scope\": \"Reported damage to historic houses including Khan Younis\"}, {\"locator_type\": \"pdf_page\", \"page\": 71, \"scope\": \"Hamam As-Samra and Qal'at Barqouq passages\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -6377,10 +5737,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 2,
-    p0Findings: <String>[
-      "يثبت الضرر في قلعة برقوق، لكنه لا يحدد حدود خان يونس القديمة ولا يحصر نسيجها ومبانيها التاريخية.",
-      "لا تتوفر في تقييم اليونسكو العام نتيجة سلامة أو تكامل لكامل المركز التاريخي المفترض في خان يونس.",
-    ],
+    p0Findings: <String>["يثبت الضرر في قلعة برقوق، لكنه لا يحدد حدود خان يونس القديمة ولا يحصر نسيجها ومبانيها التاريخية.", "لا تتوفر في تقييم اليونسكو العام نتيجة سلامة أو تكامل لكامل المركز التاريخي المفترض في خان يونس."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>["site-5e98cf44d976"],
     coordinateStatusAr: "فجوة تحقق جغرافي",
@@ -6400,22 +5757,18 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     siteTypeAr: "عنقود عمراني تاريخي مؤقت",
     latitude: null,
     longitude: null,
-    summaryDraft:
-        "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، تحققت المنظمة حتى 24 مارس 2026 من وقوع ضرر في تل رفح؛ ولا يمتد هذا الإثبات تلقائياً إلى كامل النسيج الحضري التاريخي لرفح.",
+    summaryDraft: "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، تحققت المنظمة حتى 24 مارس 2026 من وقوع ضرر في تل رفح؛ ولا يمتد هذا الإثبات تلقائياً إلى كامل النسيج الحضري التاريخي لرفح.",
     periods: <String>["كنعاني", "روماني", "إسلامي", "عثماني", "حديث"],
     status: ContentReviewStatus.rightsReview,
     documentationProgress: 70,
-    preservationStatus:
-        "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
+    preservationStatus: "توجد مطالب أدلة ميدانية أو قانونية أو جغرافية مفتوحة؛ لا تستخدم الصفحة لإصدار حكم هندسي أو قانوني.",
     narrativeSections: <HistoricalNarrativeSection>[
       HistoricalNarrativeSection(
         id: "ED-063",
         title: "مادة تاريخية محكومة",
-        draftText:
-            "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، تحققت المنظمة حتى 24 مارس 2026 من وقوع ضرر في تل رفح؛ ولا يمتد هذا الإثبات تلقائياً إلى كامل النسيج الحضري التاريخي لرفح.",
+        draftText: "بحسب قائمة اليونسكو المحدثة في 25 مارس 2026، تحققت المنظمة حتى 24 مارس 2026 من وقوع ضرر في تل رفح؛ ولا يمتد هذا الإثبات تلقائياً إلى كامل النسيج الحضري التاريخي لرفح.",
         status: ContentReviewStatus.rightsReview,
-        evidenceNote:
-            "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
+        evidenceNote: "مراجعة تاريخية بشرية مكتملة؛ الإسناد والحقوق النهائية والنشر العام ما زالت محكومة.",
         claimCount: 1,
         citedClaimCount: 1,
         claimId: "site-ee0e5bf1f753-W3-C01",
@@ -6429,8 +5782,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         id: "W3-AUTH-UNESCO-GAZA-IMPACT-2026",
         title: "Impact on cultural heritage — Gaza",
         attribution: "UNESCO",
-        note:
-            "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
+        note: "مصدر مرتبط بسجل تحريري مراجع. يسمح بالصياغة الداخلية مع الاستشهاد وفق مسار الحقوق، ولا يسمح بإعادة استخدام الصور أو الخرائط تلقائياً.",
         status: ContentReviewStatus.rightsReview,
         url: "https://www.unesco.org/en/gaza/assessment",
         sourceClass: "official_damage_monitoring_record",
@@ -6440,8 +5792,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
         mapReuseStatus: "BLOCKED_PENDING_FILE_LEVEL_RIGHTS",
         publicReleaseStatus: "BLOCKED_PENDING_FINAL_RIGHTS_REVIEW",
         evidenceScopeStatus: "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
-        citationLocatorSummary:
-            "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
+        citationLocatorSummary: "[{\"locator_type\": \"direct_resource_record\", \"url\": \"https://www.unesco.org/en/gaza/assessment\"}]",
       ),
     ],
     timeline: <HistoricalTimelineEntry>[],
@@ -6455,10 +5806,7 @@ const List<HeritageSite> governedSiteCatalog = <HeritageSite>[
     specialHold: null,
     heldClaimCount: 3,
     p0ClaimCount: 2,
-    p0Findings: <String>[
-      "تؤكد اليونسكو وجود تل رفح وتضرره، لكنها لا تنشر في قائمة الأضرار تسلسله الطبقي أو حداً أثرياً معتمداً.",
-      "ثبت وقوع الضرر حتى 24 مارس 2026، ولم تُنشر درجة ضرر هندسية مفصلة لتل رفح.",
-    ],
+    p0Findings: <String>["تؤكد اليونسكو وجود تل رفح وتضرره، لكنها لا تنشر في قائمة الأضرار تسلسله الطبقي أو حداً أثرياً معتمداً.", "ثبت وقوع الضرر حتى 24 مارس 2026، ولم تُنشر درجة ضرر هندسية مفصلة لتل رفح."],
     parentSiteIds: <String>[],
     constituentSiteIds: <String>[],
     coordinateStatusAr: "فجوة تحقق جغرافي",

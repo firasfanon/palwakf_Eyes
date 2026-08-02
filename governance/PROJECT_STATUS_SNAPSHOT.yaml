@@ -1,16 +1,16 @@
 project:
   id: pal_eyes
   name_ar: "بعيون فلسطينية"
-  version: "4.0.0"
-  build: 11
-  date: "2026-07-14"
-  project_root: "C:\\Users\\DELL\\StudioProjects\\Pal_Eyes"
+  version: "9.0.1"
+  build: 30
+  date: "2026-08-02"
+  project_root: "PORTABLE_GITHUB_WORKTREE"
 
 baseline:
-  current: "PAL_EYES_IMMERSIVE_PUBLIC_EXPERIENCE_AND_UNIFIED_PRODUCT_SURFACES_R4_0_0_20260715"
-  parent: "PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_R3_0_3_20260715"
-  batch: "MEGA_BATCH_PAL_EYES_IMMERSIVE_PUBLIC_EXPERIENCE_AND_UNIFIED_PRODUCT_SURFACES_V1"
-  status: "BUILT_STATIC_VERIFIED_LOCAL_FLUTTER_VALIDATION_PENDING"
+  current: "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802"
+  parent: "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0_20260802"
+  batch: "PAL_EYES_DIRECT_FLUTTER_R9_TARGETED_FORMAT_BROWSER_UAT_AND_BASELINE_PROMOTION_CLOSURE_V1"
+  status: "ACCEPTED_GITHUB_CANDIDATE_AFTER_FORMAT_REPLAY_AND_CI"
 
 content:
   reference_document_sha256: "1f82a6c9941063436b40d13e258f7d03b1b3b00ef209494fe7032ee756673f6d"
@@ -39,11 +39,11 @@ product:
 
 runtime:
   static_contract: "PASS"
-  flutter_pub_get: "PENDING_USER_ENVIRONMENT"
-  flutter_analyze: "PENDING_USER_ENVIRONMENT"
-  flutter_test: "PENDING_USER_ENVIRONMENT"
-  flutter_build_web: "PENDING_USER_ENVIRONMENT"
-  browser_uat: "PENDING_USER_ENVIRONMENT"
+  flutter_pub_get: "PASS_LOCAL_AND_CI"
+  flutter_analyze: "PASS_LOCAL_AND_CI"
+  flutter_test: "PASS_65_LOCAL_AND_CI"
+  flutter_build_web: "PASS_LOCAL"
+  browser_uat: "PASS_CLOSED_BY_EXPLICIT_OPERATOR_AUTHORIZATION"
 
 boundaries:
   database_mutation: "NONE"
@@ -82,3 +82,40 @@ immersive_ui_ux:
   responsive_mobile: true
   dark_mode_aligned: true
   static_contract: "PASS"
+
+
+r9_0_1_acceptance:
+  targeted_format: "PASS_12_FILES"
+  static_verify: "PASS"
+  flutter_analyze: "PASS"
+  flutter_test: "PASS_65"
+  git_diff_check: "PASS"
+  chrome_runtime_smoke: "PASS"
+  edge_runtime_smoke: "PASS"
+  desktop_browser_uat: "PASS"
+  desktop_detail_surfaces: "PASS"
+  narrow_mobile_visual_uat: "PASS"
+  runtime_exceptions: 0
+  visible_render_overflows: 0
+  browser_uat_closure: "EXPLICIT_OPERATOR_AUTHORIZATION"
+  exact_390x844_telemetry: "NOT_SEPARATELY_CAPTURED_ACCEPTED_BY_OPERATOR"
+  manual_keyboard_focus_capture: "NOT_SEPARATELY_CAPTURED_ACCEPTED_BY_OPERATOR"
+  osm_tile_policy_warning: "OPEN_PRODUCTION_READINESS_BLOCKER"
+
+# PAL_EYES_R9_0_1_GITHUB_METADATA_RECONCILIATION_CLOSURE_V1
+github_promotion_closure:
+  baseline: "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802"
+  status: "ACCEPTED_GITHUB_CANDIDATE_AFTER_FORMAT_REPLAY_AND_CI"
+  repository: "firasfanon/Pal_Eyes"
+  pull_request_number: 1
+  pull_request_state: "OPEN_DRAFT"
+  source_candidate_head: "14e0a64d40a58b1d4cdf0e3646e001376599bc77"
+  source_candidate_workflow_run_id: 30769326139
+  source_candidate_ci: "SUCCESS"
+  metadata_closure_batch: "PAL_EYES_R9_0_1_GITHUB_METADATA_RECONCILIATION_CLOSURE_V1"
+  metadata_only: true
+  metadata_closure_requires_ci_before_merge: true
+  merge_authorization: "NOT_YET_ISSUED"
+  main_merged: false
+  next_gate: "PR_FINAL_ACCEPTANCE_AND_MERGE_DECISION"
+  recorded_at: "2026-08-03T01:27:32+03:00"

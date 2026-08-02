@@ -55,7 +55,10 @@ class LocalOperationalDataBackend implements OperationalDataBackend {
       releaseCandidates: releaseCandidates,
       auditEvents: audit == null
           ? _snapshot.auditEvents
-          : <OperationalAuditEvent>[audit, ..._snapshot.auditEvents],
+          : <OperationalAuditEvent>[
+              audit,
+              ..._snapshot.auditEvents,
+            ],
       loadedAt: DateTime.now().toUtc(),
     );
     return _snapshot;
@@ -71,19 +74,17 @@ class LocalOperationalDataBackend implements OperationalDataBackend {
     required String editorialDraft,
   }) async {
     final now = DateTime.now().toUtc();
-    final sites = _snapshot.sites
-        .map((site) {
-          if (site.id != siteId) {
-            return site;
-          }
-          return site.copyWith(
-            editorialDraft: editorialDraft,
-            workflowStatus: 'DRAFT_UPDATED',
-            versionNumber: site.versionNumber + 1,
-            updatedAt: now,
-          );
-        })
-        .toList(growable: false);
+    final sites = _snapshot.sites.map((site) {
+      if (site.id != siteId) {
+        return site;
+      }
+      return site.copyWith(
+        editorialDraft: editorialDraft,
+        workflowStatus: 'DRAFT_UPDATED',
+        versionNumber: site.versionNumber + 1,
+        updatedAt: now,
+      );
+    }).toList(growable: false);
 
     return _commit(
       sites: sites,
@@ -93,7 +94,9 @@ class LocalOperationalDataBackend implements OperationalDataBackend {
         entityType: 'site',
         entityId: siteId,
         summary: 'حفظ مسودة الموقع وإنشاء إصدار محلي جديد.',
-        metadata: <String, Object?>{'public_release': 'BLOCKED'},
+        metadata: <String, Object?>{
+          'public_release': 'BLOCKED',
+        },
       ),
     );
   }
@@ -116,16 +119,14 @@ class LocalOperationalDataBackend implements OperationalDataBackend {
       createdAt: DateTime.now().toUtc(),
       updatedAt: DateTime.now().toUtc(),
     );
-    final sites = _snapshot.sites
-        .map((item) {
-          return item.id == siteId
-              ? item.copyWith(
-                  workflowStatus: 'SUBMITTED_FOR_REVIEW',
-                  updatedAt: DateTime.now().toUtc(),
-                )
-              : item;
-        })
-        .toList(growable: false);
+    final sites = _snapshot.sites.map((item) {
+      return item.id == siteId
+          ? item.copyWith(
+              workflowStatus: 'SUBMITTED_FOR_REVIEW',
+              updatedAt: DateTime.now().toUtc(),
+            )
+          : item;
+    }).toList(growable: false);
 
     return _commit(
       sites: sites,
@@ -180,17 +181,15 @@ class LocalOperationalDataBackend implements OperationalDataBackend {
     required String workflowStatus,
     required String evidenceStatus,
   }) async {
-    final claims = _snapshot.claims
-        .map((claim) {
-          return claim.id == claimId
-              ? claim.copyWith(
-                  workflowStatus: workflowStatus,
-                  evidenceStatus: evidenceStatus,
-                  updatedAt: DateTime.now().toUtc(),
-                )
-              : claim;
-        })
-        .toList(growable: false);
+    final claims = _snapshot.claims.map((claim) {
+      return claim.id == claimId
+          ? claim.copyWith(
+              workflowStatus: workflowStatus,
+              evidenceStatus: evidenceStatus,
+              updatedAt: DateTime.now().toUtc(),
+            )
+          : claim;
+    }).toList(growable: false);
 
     return _commit(
       claims: claims,
@@ -215,16 +214,14 @@ class LocalOperationalDataBackend implements OperationalDataBackend {
     required String decision,
     required String note,
   }) async {
-    final tasks = _snapshot.reviewTasks
-        .map((task) {
-          return task.id == taskId
-              ? task.copyWith(
-                  status: decision,
-                  updatedAt: DateTime.now().toUtc(),
-                )
-              : task;
-        })
-        .toList(growable: false);
+    final tasks = _snapshot.reviewTasks.map((task) {
+      return task.id == taskId
+          ? task.copyWith(
+              status: decision,
+              updatedAt: DateTime.now().toUtc(),
+            )
+          : task;
+    }).toList(growable: false);
 
     return _commit(
       reviewTasks: tasks,
@@ -234,7 +231,10 @@ class LocalOperationalDataBackend implements OperationalDataBackend {
         entityType: 'review_task',
         entityId: taskId,
         summary: 'تسجيل قرار مراجعة بشري.',
-        metadata: <String, Object?>{'decision': decision, 'note': note},
+        metadata: <String, Object?>{
+          'decision': decision,
+          'note': note,
+        },
       ),
     );
   }
@@ -336,7 +336,9 @@ class LocalOperationalDataBackend implements OperationalDataBackend {
         entityType: 'release_candidate',
         entityId: candidate.id,
         summary: 'إنشاء مرشح إصدار مجمد دون تنفيذ نشر عام.',
-        metadata: const <String, Object?>{'publication': 'BLOCKED'},
+        metadata: const <String, Object?>{
+          'publication': 'BLOCKED',
+        },
       ),
     );
   }

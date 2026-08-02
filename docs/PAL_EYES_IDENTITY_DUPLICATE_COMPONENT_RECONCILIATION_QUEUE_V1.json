@@ -1,0 +1,563 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_CROSS_WAVE_RECONCILIATION_AND_GOVERNED_REWRITE_V1",
+  "queue_status": "pending_human_approval",
+  "relation_proposals": [
+    {
+      "proposal_id": "REL-001",
+      "relation_type": "COMPONENT_OF",
+      "source_site_id": "site-0dc57168d963",
+      "target_site_id": "site-899e38be070d",
+      "source_name_ar": "مغارة البطاركة (جزء من الحرم)",
+      "target_name_ar": "الحرم الإبراهيمي",
+      "status": "PROPOSED_REQUIRES_HUMAN_APPROVAL",
+      "reason": "مغارة البطاركة موثقة كمكوّن داخل مجمع الحرم الإبراهيمي."
+    },
+    {
+      "proposal_id": "REL-002",
+      "relation_type": "COMPONENT_OF",
+      "source_site_id": "site-63fe9eba7871",
+      "target_site_id": "site-37c8be50ce73",
+      "source_name_ar": "قلعة البرك",
+      "target_name_ar": "برك سليمان",
+      "status": "PROPOSED_REQUIRES_HUMAN_APPROVAL",
+      "reason": "قلعة البرك عنصر من مجمع برك سليمان التاريخي."
+    },
+    {
+      "proposal_id": "REL-003",
+      "relation_type": "COMPONENT_OF",
+      "source_site_id": "site-b5f00132ee24",
+      "target_site_id": "site-a86fc049d470",
+      "source_name_ar": "عين السلطان",
+      "target_name_ar": "تل السلطان (أريحا القديمة)",
+      "status": "PROPOSED_REQUIRES_HUMAN_APPROVAL",
+      "reason": "عين السلطان عنصر مائي داخل عقار تل السلطان."
+    },
+    {
+      "proposal_id": "REL-004",
+      "relation_type": "COMPONENT_OR_ALIAS_OF",
+      "source_site_id": "site-ce23c41d7641",
+      "target_site_id": "site-c4d8c9fdd1f0",
+      "source_name_ar": "قبر النبي موسى",
+      "target_name_ar": "مقام النبي موسى",
+      "status": "PROPOSED_REQUIRES_HUMAN_APPROVAL",
+      "reason": "قبر النبي موسى جزء من مجمع مقام النبي موسى."
+    },
+    {
+      "proposal_id": "REL-005",
+      "relation_type": "IDENTITY_SPLIT_REQUIRED",
+      "source_site_id": "site-21150eefdea6",
+      "target_site_id": "site-015f495c4236",
+      "source_name_ar": "تل العجول (مدينة غزة القديمة)",
+      "target_name_ar": "مدينة غزة القديمة",
+      "status": "PROPOSED_REQUIRES_HUMAN_APPROVAL",
+      "reason": "تل العجول موقع أثري منفصل عن المركز التاريخي لمدينة غزة."
+    },
+    {
+      "proposal_id": "REL-006",
+      "relation_type": "REASSIGN_OR_LINK_TO_CLUSTER",
+      "source_site_id": "site-fe1e2a1605b5",
+      "target_site_id": "site-6f6afe87f969",
+      "source_name_ar": "قصر الكايد",
+      "target_name_ar": "سبسطية (شمرون)",
+      "status": "PROPOSED_REQUIRES_HUMAN_APPROVAL",
+      "reason": "المصدر الرسمي يضع قصر الكايد في سبسطية بمحافظة نابلس."
+    }
+  ],
+  "identity_review_queue": [
+    {
+      "canonical_site_id": "site-4b15f14c306f",
+      "canonical_slug": "knys-lmhd-4b15f1",
+      "name_ar": "كنيسة المهد",
+      "wave_status": "OFFICIAL_RECORD_PARTIALLY_VERIFIED",
+      "required_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "corrections": [
+        "draft_pattern=built in 326 by Helena | disposition=REPLACE_OR_QUALIFY | replacement=UNESCO states that a church was completed in AD 339; attribution to Helena requires a separate directly inspected source."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-f9df0c7e708c",
+      "canonical_slug": "bld-slwn-f9df0c",
+      "name_ar": "بلدة سلوان",
+      "wave_status": "CONTEXT_ONLY_OFFICIAL_SOURCE_CONFIRMED",
+      "required_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "corrections": [
+        "Do not treat the tentative-list submission as a settled neutral archaeological synthesis.",
+        "Claims of specific damage or removed strata must be attributed to the reporting party and separately corroborated."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-f7553f79288f",
+      "canonical_slug": "qswr-lmmlyk-shr-lwd-f7553f",
+      "name_ar": "قصور المماليك (شارع الواد)",
+      "wave_status": "CLUSTER_IDENTITY_REVIEW_REQUIRED",
+      "required_actions": [
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "corrections": [
+        "The catalog label groups multiple palaces, madrasas, ribats, and other institutions and must not be treated as a single monument.",
+        "Create a constituent inventory before publication or mapping."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-f60be7cd7d5e",
+      "canonical_slug": "byt-mr-khrb-lnby-mt-f60be7",
+      "name_ar": "بيت أمر (خربة النبي متى)",
+      "wave_status": "SOURCE_GAP",
+      "required_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "corrections": [
+        "No sufficiently specific authoritative record for the combined identity 'Beit Ummar / Khirbet Nabi Matta' was inspected.",
+        "Separate locality identity from shrine/ruin identity before research."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-2310c1600481",
+      "canonical_slug": "khn-lhtb-2310c1",
+      "name_ar": "خان الحطب",
+      "wave_status": "SOURCE_GAP",
+      "required_actions": [
+        "COMPONENT_RELATION_MODELING"
+      ],
+      "corrections": [
+        "UNESCO confirms khans as a building category in Hebron Old Town but does not specifically identify Khan al-Hatab.",
+        "Keep Ottoman attribution and component identity blocked."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-d2c9e9bc9652",
+      "canonical_slug": "ql-lkrml-dyr-smt-d2c9e9",
+      "name_ar": "قلعة الكرمل (دير سامت)",
+      "wave_status": "SOURCE_GAP",
+      "required_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "corrections": [
+        "No sufficiently specific authoritative record was located for the combined identity 'Carmel Castle / Deir Samet'.",
+        "Identity may conflate separate sites and requires cadastral/toponymic review."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-0dc57168d963",
+      "canonical_slug": "mgr-lbtrk-jz-mn-lhrm-0dc571",
+      "name_ar": "مغارة البطاركة (جزء من الحرم)",
+      "wave_status": "OFFICIAL_COMPONENT_RELATION_CONFIRMED_DEDUP_REQUIRED",
+      "required_actions": [
+        "COMPONENT_RELATION_MODELING",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION"
+      ],
+      "corrections": [
+        "This record is a component of the already reviewed Ibrahimi complex, not an independently validated public site.",
+        "Create a parent-child component relation and prevent duplicate map/publication records.",
+        "The catalog's standalone Canaanite period label is not supported by the inspected source."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-63fe9eba7871",
+      "canonical_slug": "ql-lbrk-63fe9e",
+      "name_ar": "قلعة البرك",
+      "wave_status": "COMPONENT_RELATION_CONFIRMED_DEDUP_REQUIRED",
+      "required_actions": [
+        "COMPONENT_RELATION_MODELING",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION"
+      ],
+      "corrections": [
+        "Treat Castle of the Pools as a component of the Solomon's Pools complex unless an independent boundary and identity are established.",
+        "Do not create duplicate public map markers without a parent-child component model."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-21150eefdea6",
+      "canonical_slug": "tl-l-jwl-mdyn-gz-lqdym-21150e",
+      "name_ar": "تل العجول (مدينة غزة القديمة)",
+      "wave_status": "IDENTITY_SPLIT_REQUIRED_DAMAGE_CONFIRMED",
+      "required_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "corrections": [
+        "The canonical name conflates Tell el-Ajjul with the historic centre of Gaza; create separate site identities.",
+        "Do not describe Tell el-Ajjul as the present Old City of Gaza.",
+        "Do not promote any external coordinate without a traceable archaeological geometry."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-5e98cf44d976",
+      "canonical_slug": "ql-brqwq-5e98cf",
+      "name_ar": "قلعة برقوق",
+      "wave_status": "OFFICIAL_DAMAGE_CONFIRMED_MAMLUK_HISTORY_PARTIAL",
+      "required_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "corrections": [
+        "The 1387 date and functional description require inscription, waqf, or architectural publication corroboration.",
+        "Separate the castle from the broader 'Old Khan Younis' cluster."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-e1e3de7b8519",
+      "canonical_slug": "knys-lqdys-brfyryws-e1e3de",
+      "name_ar": "كنيسة القديس برفيريوس",
+      "wave_status": "OFFICIAL_DAMAGE_AND_LIVING_INSTITUTION_CONFIRMED",
+      "required_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "corrections": [
+        "Do not publish global superlatives such as 'third oldest church in the world'.",
+        "Separate ecclesiastical tradition from archaeological dating.",
+        "Store the Tentative List coordinate only as a blocked external candidate."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-015f495c4236",
+      "canonical_slug": "mdyn-gz-lqdym-015f49",
+      "name_ar": "مدينة غزة القديمة",
+      "wave_status": "OFFICIAL_STATE_PARTY_HISTORIC_CLUSTER_CONFIRMED",
+      "required_actions": [
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "corrections": [
+        "Treat Historic Gaza as a governed urban cluster, not a single point monument.",
+        "Create constituent relationships for the Omari Mosque, Saint Porphyrios, Hamam As-Samra, markets, houses, and other elements.",
+        "Tentative List status is not World Heritage inscription or independent verification of every historical assertion."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-0a78d22c1a69",
+      "canonical_slug": "khn-ywns-lqdym-0a78d2",
+      "name_ar": "خان يونس القديم",
+      "wave_status": "URBAN_CLUSTER_PARTIAL_COMPONENT_DAMAGE_CONFIRMED",
+      "required_actions": [
+        "COMPONENT_RELATION_MODELING",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "corrections": [
+        "The broader identity 'Old Khan Younis' is not verified as a bounded historic urban property in this wave.",
+        "Create a constituent inventory beginning with Qal'at Barqouq instead of treating the cluster as a single monument."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-ee0e5bf1f753",
+      "canonical_slug": "rfh-ltrykhy-ee0e5b",
+      "name_ar": "رفح التاريخية",
+      "wave_status": "HISTORIC_CLUSTER_IDENTITY_RECONCILIATION_REQUIRED",
+      "required_actions": [
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "corrections": [
+        "The canonical record 'Historic Rafah' is broader than the UNESCO-listed Tell Rafah.",
+        "Split the archaeological tell from the modern/historic urban narrative before publication.",
+        "No historical chronology or coordinate is promoted in this wave."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-a9ac192e20c3",
+      "canonical_slug": "bld-nbls-lqdym-a9ac19",
+      "name_ar": "بلدة نابلس القديمة",
+      "wave_status": "OFFICIAL_STATE_PARTY_URBAN_CLUSTER_CONFIRMED",
+      "required_actions": [
+        "COMPONENT_RELATION_MODELING",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "corrections": [
+        "Treat Old Nablus as a governed urban cluster, not a single-point monument.",
+        "Create constituent relations for mosques, markets, baths, quarters, khans, and archaeological components.",
+        "Tentative-list narratives remain attributed State Party material."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-160c60c7b952",
+      "canonical_slug": "hr-lysmyn-160c60",
+      "name_ar": "حارة الياسمينة",
+      "wave_status": "OFFICIAL_MINISTRY_URBAN_COMPONENT_CONFIRMED",
+      "required_actions": [
+        "COMPONENT_RELATION_MODELING"
+      ],
+      "corrections": [
+        "A single courtyard does not verify the entire quarter.",
+        "A constituent-building and rights inventory is required."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-31c7667ff10e",
+      "canonical_slug": "khn-ltjr-31c766",
+      "name_ar": "خان التجار",
+      "wave_status": "OFFICIAL_MINISTRY_MARKET_COMPONENT_CONFIRMED",
+      "required_actions": [
+        "COMPONENT_RELATION_MODELING"
+      ],
+      "corrections": [
+        "Do not conflate Khan al-Tujjar with Khan al-Wakala.",
+        "The Ottoman-only period label requires direct architectural evidence."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-d00341226494",
+      "canonical_slug": "mqm-lnby-sh-yb-d00341",
+      "name_ar": "مقام النبي شعيب",
+      "wave_status": "LOCALITY_CONFLICT_AND_DEDICATED_SOURCE_GAP",
+      "required_actions": [
+        "CANONICAL_IDENTITY_OR_LOCALITY_REVIEW"
+      ],
+      "corrections": [
+        "The canonical locality says 'near Nablus (Sinjil)', but Sinjil belongs to Ramallah and al-Bireh Governorate.",
+        "The record may conflate different Nabi Shuayb shrines.",
+        "Block publication, coordinates, and Mamluk/Ottoman period labels pending identity reconciliation."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-f2a7fbbda5a5",
+      "canonical_slug": "bld-jnyn-lqdym-f2a7fb",
+      "name_ar": "بلدة جنين القديمة",
+      "wave_status": "OFFICIAL_MINISTRY_COMPONENTS_CONFIRMED_URBAN_CLUSTER_PARTIAL",
+      "required_actions": [
+        "COMPONENT_RELATION_MODELING",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "corrections": [
+        "Treat Old Jenin as an urban cluster requiring a boundary and constituent inventory.",
+        "The canonical Mamluk/Ottoman summary is too coarse for publication."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-fe1e2a1605b5",
+      "canonical_slug": "qsr-lkyd-fe1e2a",
+      "name_ar": "قصر الكايد",
+      "wave_status": "CANONICAL_LOCALITY_CONFLICT_REASSIGNMENT_REQUIRED",
+      "required_actions": [
+        "CANONICAL_IDENTITY_OR_LOCALITY_REVIEW",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "corrections": [
+        "The canonical Jenin assignment conflicts with the official location in Sebastia.",
+        "Do not publish this as a Jenin site.",
+        "Perform duplicate/relationship review against the already verified Sebastia cluster."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-be1c2ce90997",
+      "canonical_slug": "mdyn-twlkrm-ltrykhy-be1c2c",
+      "name_ar": "مدينة طولكرم التاريخية",
+      "wave_status": "OFFICIAL_HERITAGE_ASSET_CONTEXT_ONLY_CLUSTER_UNDEFINED",
+      "required_actions": [
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "corrections": [
+        "The canonical record 'Historic Tulkarm City' lacks a verified historic-core boundary.",
+        "Roman and Islamic period labels are not supported by the inspected sources.",
+        "Create an asset inventory before treating the city as a historic urban property."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-69f3ad775733",
+      "canonical_slug": "khrb-dyr-sty-69f3ad",
+      "name_ar": "خربة دير استيا",
+      "wave_status": "OFFICIAL_MINISTRY_AND_RIWAQ_HISTORIC_TOWN_CONFIRMED_IDENTITY_REFINEMENT",
+      "required_actions": [
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "corrections": [
+        "The canonical title 'Khirbet Deir Istiya' misclassifies a living historic town/cluster as a single ruin.",
+        "Roman and Byzantine period labels require archaeological evidence.",
+        "Create constituent records for palaces, shrines, springs, caves, and ruins."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-ba91049d51a9",
+      "canonical_slug": "ywn-lm-l-thry-ba9104",
+      "name_ar": "عيون الماء الأثرية",
+      "wave_status": "OFFICIAL_HYDROLOGICAL_CLUSTER_CONTEXT_ONLY",
+      "required_actions": [
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "corrections": [
+        "The canonical record 'Historic Water Springs' lacks a constituent list and precise locality.",
+        "Roman and Ottoman dates are not verified.",
+        "Create one record per spring with coordinates, hydrology, rights, and condition."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-bc56c2f93d66",
+      "canonical_slug": "yn-lfr-bc56c2",
+      "name_ar": "عين الفارعة",
+      "wave_status": "DEDICATED_SOURCE_GAP_AND_HYDROLOGICAL_IDENTITY_REVIEW",
+      "required_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "corrections": [
+        "No dedicated inspected source distinguishes Ein al-Far'ah as a separate Roman-period site from the wider Wadi/Tell al-Far'ah landscape.",
+        "Block Roman attribution and map use."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-e2a5c15f76f6",
+      "canonical_slug": "bld-byrzyt-lqdym-e2a5c1",
+      "name_ar": "بلدة بيرزيت القديمة",
+      "wave_status": "HISTORIC_URBAN_CLUSTER_CONFIRMED_RECLASSIFICATION_REQUIRED",
+      "required_actions": [
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "corrections": [
+        "Represent Old Birzeit as a historic urban cluster, not a single generic town point.",
+        "The Ottoman-only period classification is too narrow and should remain draft pending architectural inventory.",
+        "The castle must become a candidate constituent record only after a dedicated source and boundary are found."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-014e4c4e4845",
+      "canonical_slug": "khrb-bwd-014e4c",
+      "name_ar": "خربة عابود",
+      "wave_status": "CANONICAL_CONFLATION_SPLIT_REQUIRED",
+      "required_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "corrections": [
+        "The title 'Khirbet Aboud' collapses a living historic centre and multiple distinct churches, cemeteries, presses, caves, and ruins.",
+        "Split the record into a governed Aboud historic-centre cluster and separate constituent sites.",
+        "Do not assign one Roman/Byzantine chronology to the entire undifferentiated record."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-28dd528f5f3a",
+      "canonical_slug": "dyr-mr-28dd52",
+      "name_ar": "دير عمار",
+      "wave_status": "HISTORIC_CENTRE_IDENTITY_CONFIRMED_SITE_TYPE_RECLASSIFICATION_REQUIRED",
+      "required_actions": [
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "corrections": [
+        "The canonical type 'monastery/ruin' does not match the confirmed living historic-centre identity.",
+        "Roman and Byzantine period labels remain unsupported by the inspected source.",
+        "Reclassify as a historic town/village cluster pending detailed survey."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-2a3fdab99250",
+      "canonical_slug": "yn-smy-2a3fda",
+      "name_ar": "عين سامية",
+      "wave_status": "ARCHAEOLOGICAL_LANDSCAPE_CONFLATION_SPLIT_REQUIRED",
+      "required_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "corrections": [
+        "The canonical record conflates the spring, cemetery, Khirbet Marjameh, Khirbet Samiya, and other features.",
+        "Create separate hydrological, archaeological-cemetery, settlement/ruin, and architectural candidate records.",
+        "The generic 'Canaanite/Roman' period pair is not an adequate or verified summary."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-12fc185d4b0b",
+      "canonical_slug": "mqm-lnby-slh-12fc18",
+      "name_ar": "مقام النبي صالح",
+      "wave_status": "LIVING_SHRINE_COMPLEX_AND_CONSERVATION_CONFIRMED_PERIOD_UNVERIFIED",
+      "required_actions": [
+        "COMPONENT_RELATION_MODELING"
+      ],
+      "corrections": [
+        "The Ayyubid period label is not supported by the inspected Riwaq record.",
+        "The tomb attribution to Prophet Salih remains religious and local tradition.",
+        "A component inventory is needed to distinguish prayer hall, tomb room, courtyard, press, well, and later cultural-centre functions."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-cc4465115964",
+      "canonical_slug": "dyr-qrntl-cc4465",
+      "name_ar": "دير قرنطل",
+      "wave_status": "OFFICIAL_MONASTIC_RECORD_CONFIRMED_RELIGIOUS_TRADITION_SEPARATED",
+      "required_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "corrections": [
+        "The forty-day temptation association remains Christian religious tradition.",
+        "The canonical Crusader-period label is not supported by the inspected record.",
+        "Do not repeat global 'oldest city' language from the portal in this monastery record."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-b5f00132ee24",
+      "canonical_slug": "yn-lsltn-b5f001",
+      "name_ar": "عين السلطان",
+      "wave_status": "WORLD_HERITAGE_COMPONENT_CONFIRMED_DEDUP_RELATION_REQUIRED",
+      "required_actions": [
+        "COMPONENT_RELATION_MODELING",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION"
+      ],
+      "corrections": [
+        "Model Ain al-Sultan as a component of the Tell al-Sultan property, not an unrelated independent public site.",
+        "Replace the generic Canaanite/Roman period pair with evidence appropriate to the spring and its long settlement relationship.",
+        "Prevent duplicate map and publication entries."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-ce23c41d7641",
+      "canonical_slug": "qbr-lnby-mws-ce23c4",
+      "name_ar": "قبر النبي موسى",
+      "wave_status": "DUPLICATE_OF_NABI_MUSA_COMPLEX_MERGE_REQUIRED",
+      "required_actions": [
+        "COMPONENT_RELATION_MODELING",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION"
+      ],
+      "corrections": [
+        "The 'Tomb of Nabi Musa' record is a component/alias of the Nabi Musa shrine complex, not a second independent site.",
+        "Merge or establish a strict parent-child component relation.",
+        "The burial attribution remains religious tradition."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    },
+    {
+      "canonical_site_id": "site-c4d8c9fdd1f0",
+      "canonical_slug": "mqm-lnby-mws-c4d8c9",
+      "name_ar": "مقام النبي موسى",
+      "wave_status": "OFFICIAL_MAMLUK_SHRINE_COMPLEX_CONFIRMED_DUPLICATE_RECONCILIATION_REQUIRED",
+      "required_actions": [
+        "COMPONENT_RELATION_MODELING",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION",
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "corrections": [
+        "Merge or relate the separate 'Tomb of Nabi Musa' record as a component of this complex.",
+        "The Ottoman period and complete expansion chronology need direct inscriptions, waqf records, or architectural studies.",
+        "The tomb attribution remains religious tradition."
+      ],
+      "approval_status": "PENDING_HUMAN_IDENTITY_REVIEW"
+    }
+  ]
+}

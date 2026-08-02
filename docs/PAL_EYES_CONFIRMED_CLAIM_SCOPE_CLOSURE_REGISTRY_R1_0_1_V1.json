@@ -1,0 +1,3137 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_CLAIM_AND_BIBLIOGRAPHIC_CLOSURE_ON_R1_0_1_CANDIDATE_V1",
+  "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+  "document_status": "confirmed_claim_scope_closure_registry",
+  "closure_definition": "Scope closure means the narrow claim is supported within the stated source class, locator, attribution and limitations. It is not final historical validation and does not authorize publication.",
+  "counts": {
+    "confirmed_claims_reviewed": 96,
+    "scope_closed": 95,
+    "scope_open": 1
+  },
+  "open_claim_ids": [
+    "site-c6731a990917-W4-C02"
+  ],
+  "claims": [
+    {
+      "canonical_site_id": "site-4aeec5656d1d",
+      "name_ar": "المسجد الأقصى المبارك / الحرم القدسي الشريف",
+      "claim_id": "site-4aeec5656d1d-W1-C01",
+      "claim_text": "Al-Aqsa Mosque/Al-Haram Al-Sharif is addressed by UNESCO as a Muslim holy site of worship and an integral part of the Old City of Jerusalem World Heritage property.",
+      "verification_status": "CONFIRMED_IN_OFFICIAL_DECISION",
+      "source_ids": [
+        "AUTH-UNESCO-JERUSALEM-DECISION-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-JERUSALEM-DECISION-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-JERUSALEM-DECISION-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-JERUSALEM-DECISION-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-4b15f14c306f",
+      "name_ar": "كنيسة المهد",
+      "claim_id": "site-4b15f14c306f-W1-C01",
+      "claim_text": "The location has been identified by Christian tradition as the birthplace of Jesus since the 2nd century.",
+      "verification_status": "CONFIRMED_AS_TRADITION",
+      "source_ids": [
+        "AUTH-UNESCO-NATIVITY-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-NATIVITY-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-NATIVITY-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-NATIVITY-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-4b15f14c306f",
+      "name_ar": "كنيسة المهد",
+      "claim_id": "site-4b15f14c306f-W1-C02",
+      "claim_text": "A church was first completed there in AD 339; the replacement building after a 6th-century fire retains mosaics from the original.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "AUTH-UNESCO-NATIVITY-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-NATIVITY-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-NATIVITY-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-NATIVITY-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-88fede7b6df0",
+      "name_ar": "قرية بتير",
+      "claim_id": "site-88fede7b6df0-W1-C01",
+      "claim_text": "Battir is a Palestinian cultural landscape of dry-stone terraces and a complex irrigation system supporting olives and vegetables.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "AUTH-UNESCO-BATTIR-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-BATTIR-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-BATTIR-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-BATTIR-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-88fede7b6df0",
+      "name_ar": "قرية بتير",
+      "claim_id": "site-88fede7b6df0-W1-C02",
+      "claim_text": "The family water-distribution system uses a time-managed rotation and mathematical allocation.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "AUTH-UNESCO-BATTIR-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-BATTIR-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-BATTIR-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-BATTIR-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-6b6c5a396756",
+      "name_ar": "بلدة الخليل القديمة",
+      "claim_id": "site-6b6c5a396756-W1-C01",
+      "claim_text": "The old town substantially preserves Mamluk urban morphology with later Ottoman additions.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-HEBRON-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-6b6c5a396756",
+      "name_ar": "بلدة الخليل القديمة",
+      "claim_id": "site-6b6c5a396756-W1-C02",
+      "claim_text": "The Al-Ibrahimi Mosque/Tomb of Patriarchs monumental compound is central to the old town and the enclosure dates to the 1st century AD.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-HEBRON-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-6b6c5a396756",
+      "name_ar": "بلدة الخليل القديمة",
+      "claim_id": "site-6b6c5a396756-W1-C03",
+      "claim_text": "The place is venerated by Judaism, Christianity and Islam.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-HEBRON-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-899e38be070d",
+      "name_ar": "الحرم الإبراهيمي",
+      "claim_id": "site-899e38be070d-W1-C01",
+      "claim_text": "The monumental enclosure around the sacred cave was constructed in the 1st century AD.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-HEBRON-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-899e38be070d",
+      "name_ar": "الحرم الإبراهيمي",
+      "claim_id": "site-899e38be070d-W1-C02",
+      "claim_text": "The site is associated with traditions concerning Abraham/Ibrahim and is venerated by three monotheistic religions.",
+      "verification_status": "CONFIRMED_AS_TRADITION_AND_LIVING_HERITAGE",
+      "source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-HEBRON-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-a86fc049d470",
+      "name_ar": "تل السلطان (أريحا القديمة)",
+      "claim_id": "site-a86fc049d470-W1-C01",
+      "claim_text": "The property contains deposits of human activity dating to about 10,500 BC.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-JERICHO-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-a86fc049d470",
+      "name_ar": "تل السلطان (أريحا القديمة)",
+      "claim_id": "site-a86fc049d470-W1-C02",
+      "claim_text": "By the 9th–8th millennium BC it was a sizeable permanent settlement with surviving wall, ditch and tower.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-JERICHO-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-a86fc049d470",
+      "name_ar": "تل السلطان (أريحا القديمة)",
+      "claim_id": "site-a86fc049d470-W1-C03",
+      "claim_text": "Middle Bronze Age remains indicate a large Canaanite city-state.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-JERICHO-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-6f6afe87f969",
+      "name_ar": "سبسطية (شمرون)",
+      "claim_id": "site-6f6afe87f969-W1-C01",
+      "claim_text": "The State of Palestine submitted Sebastia to UNESCO's Tentative List in 2012.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "AUTH-UNESCO-SEBASTIA-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-SEBASTIA-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-SEBASTIA-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-SEBASTIA-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-6f6afe87f969",
+      "name_ar": "سبسطية (شمرون)",
+      "claim_id": "site-6f6afe87f969-W1-C02",
+      "claim_text": "The submission describes it as the Iron Age II capital and a major Hellenistic/Roman urban centre, and records major excavation campaigns.",
+      "verification_status": "CONFIRMED_AS_STATE_SUBMISSION",
+      "source_ids": [
+        "AUTH-UNESCO-SEBASTIA-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-SEBASTIA-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-SEBASTIA-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-SEBASTIA-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-6f6afe87f969",
+      "name_ar": "سبسطية (شمرون)",
+      "claim_id": "site-6f6afe87f969-W1-C03",
+      "claim_text": "Christian and Islamic traditions associate the site with John the Baptist/Yahya.",
+      "verification_status": "CONFIRMED_AS_TRADITION",
+      "source_ids": [
+        "AUTH-UNESCO-SEBASTIA-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-SEBASTIA-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-SEBASTIA-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-SEBASTIA-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-0285c869e647",
+      "name_ar": "قصر هشام (خربة المفجر)",
+      "claim_id": "site-0285c869e647-W1-C01",
+      "claim_text": "The State Party submission dates the complex to 724–743 AD and says it was most likely built by Hisham and later decorated by al-Walid II.",
+      "verification_status": "CONFIRMED_AS_STATE_SUBMISSION",
+      "source_ids": [
+        "AUTH-UNESCO-HISHAM-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-HISHAM-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HISHAM-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-HISHAM-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-0285c869e647",
+      "name_ar": "قصر هشام (خربة المفجر)",
+      "claim_id": "site-0285c869e647-W1-C02",
+      "claim_text": "The submission records destruction in the 749 earthquake and excavations from 1935–1948 by the Palestinian Department of Antiquities under Dimitri Baramki with Robert Hamilton.",
+      "verification_status": "CONFIRMED_AS_STATE_SUBMISSION",
+      "source_ids": [
+        "AUTH-UNESCO-HISHAM-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-HISHAM-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HISHAM-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-HISHAM-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-0285c869e647",
+      "name_ar": "قصر هشام (خربة المفجر)",
+      "claim_id": "site-0285c869e647-W1-C03",
+      "claim_text": "The site includes a major bath complex and extensive mosaic decoration, including the Tree of Life panel.",
+      "verification_status": "CONFIRMED_AS_STATE_SUBMISSION",
+      "source_ids": [
+        "AUTH-UNESCO-HISHAM-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "AUTH-UNESCO-HISHAM-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HISHAM-001"
+      ],
+      "source_evidence_statuses": {
+        "AUTH-UNESCO-HISHAM-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-f9df0c7e708c",
+      "name_ar": "بلدة سلوان",
+      "claim_id": "site-f9df0c7e708c-W2-C01",
+      "claim_text": "Silwan is part of the geo-historic context immediately outside the Old City; the Gihon Spring is identified in a State Party submission as a focal water source in Jerusalem's development.",
+      "verification_status": "ATTRIBUTED_STATE_PARTY_CONTEXT",
+      "source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-f9df0c7e708c",
+      "name_ar": "بلدة سلوان",
+      "claim_id": "site-f9df0c7e708c-W2-C02",
+      "claim_text": "UNESCO monitoring documents record reports and concerns concerning excavation and tunnelling activities in Silwan.",
+      "verification_status": "CONFIRMED_AS_REPORTED_CONCERN_NOT_INDEPENDENT_FINDING",
+      "source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-f9067873c322",
+      "name_ar": "حائط البراق",
+      "claim_id": "site-f9067873c322-W2-C01",
+      "claim_text": "The Western/Wailing Wall is identified by UNESCO as one of the major monuments of the Old City property.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-UNESCO-JERUSALEM-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-f9067873c322",
+      "name_ar": "حائط البراق",
+      "claim_id": "site-f9067873c322-W2-C02",
+      "claim_text": "A 1930 international commission was established to determine Muslim and Jewish rights and claims connected with the Wall.",
+      "verification_status": "CONFIRMED_HISTORICAL_RECORD",
+      "source_ids": [
+        "W2-AUTH-UNISPAL-WESTERN-WALL-1930"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-UNISPAL-WESTERN-WALL-1930"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-UNISPAL-WESTERN-WALL-1930"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-UNISPAL-WESTERN-WALL-1930": "CLOSED_LIMITED_TO_INSPECTED_RECORD"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-4bbdf07d8d66",
+      "name_ar": "سوق القطانين",
+      "claim_id": "site-4bbdf07d8d66-W2-C01",
+      "claim_text": "Suq al-Qattanin is a Mamluk market terminating at Tariq al-Wad and connecting through Bab al-Qattanin to the Haram al-Sharif precinct.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "W2-AUTH-ARCHNET-QATTANIN-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-ARCHNET-QATTANIN-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-ARCHNET-QATTANIN-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-ARCHNET-QATTANIN-001": "CLOSED_LIMITED_TO_INSPECTED_RECORD"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-8d297f3c37a9",
+      "name_ar": "قبر السيدة مريم (مغارة الجسمانية)",
+      "claim_id": "site-8d297f3c37a9-W2-C01",
+      "claim_text": "The Greek Orthodox Patriarchate maintains the living tradition identifying the Gethsemane shrine as the Tomb of the Virgin Mary.",
+      "verification_status": "CONFIRMED_AS_RELIGIOUS_TRADITION",
+      "source_ids": [
+        "W2-AUTH-JERUSALEM-PATRIARCHATE-GETHSEMANE-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-JERUSALEM-PATRIARCHATE-GETHSEMANE-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-JERUSALEM-PATRIARCHATE-GETHSEMANE-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-JERUSALEM-PATRIARCHATE-GETHSEMANE-001": "CLOSED_LIMITED_TO_INSPECTED_RECORD"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-8d297f3c37a9",
+      "name_ar": "قبر السيدة مريم (مغارة الجسمانية)",
+      "claim_id": "site-8d297f3c37a9-W2-C02",
+      "claim_text": "The Studium Biblicum Franciscanum records archaeological excavation work at Gethsemane and the Tomb of Mary.",
+      "verification_status": "CONFIRMED_RESEARCH_CORPUS",
+      "source_ids": [
+        "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-f7553f79288f",
+      "name_ar": "قصور المماليك (شارع الواد)",
+      "claim_id": "site-f7553f79288f-W2-C01",
+      "claim_text": "Al-Wad Street contains major Mamluk architectural institutions and connects with the Qattanin market/gate complex.",
+      "verification_status": "CONFIRMED_AS_URBAN_ARCHITECTURAL_CONTEXT",
+      "source_ids": [
+        "W2-AUTH-ARCHNET-QATTANIN-001",
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-ARCHNET-QATTANIN-001",
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-ARCHNET-QATTANIN-001",
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-ARCHNET-QATTANIN-001": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-83d3025c4675",
+      "name_ar": "قلعة القدس (برج داود)",
+      "claim_id": "site-83d3025c4675-W2-C01",
+      "claim_text": "The present citadel is a multi-period composition incorporating Roman fortification and Crusader, Ayyubid, Mamluk, and Ottoman construction.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "W2-AUTH-ARCHNET-CITADEL-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-ARCHNET-CITADEL-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-ARCHNET-CITADEL-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-ARCHNET-CITADEL-001": "CLOSED_LIMITED_TO_INSPECTED_RECORD"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-431ed266867b",
+      "name_ar": "كنيسة القيامة",
+      "claim_id": "site-431ed266867b-W2-C01",
+      "claim_text": "The Church of the Holy Sepulchre is a major monument within the Old City World Heritage property; UNESCO identifies the Resurrection rotunda as housing Christ's tomb within Christian tradition.",
+      "verification_status": "CONFIRMED_AS_HERITAGE_AND_RELIGIOUS_TRADITION",
+      "source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-UNESCO-JERUSALEM-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-431ed266867b",
+      "name_ar": "كنيسة القيامة",
+      "claim_id": "site-431ed266867b-W2-C02",
+      "claim_text": "The Studium Biblicum Franciscanum records archaeological excavation work at the Holy Sepulchre.",
+      "verification_status": "CONFIRMED_RESEARCH_CORPUS",
+      "source_ids": [
+        "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-3a3d3669f0ba",
+      "name_ar": "مقام النبي داوود (جبل صهيون)",
+      "claim_id": "site-3a3d3669f0ba-W2-C01",
+      "claim_text": "A UNESCO monitoring document records the Jordanian and Palestinian report describing Nabi Dawoud Mosque as an Islamic Waqf property next to the southern wall of the Old City and reporting alterations there.",
+      "verification_status": "CONFIRMED_AS_ATTRIBUTED_REPORT",
+      "source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-3a3d3669f0ba",
+      "name_ar": "مقام النبي داوود (جبل صهيون)",
+      "claim_id": "site-3a3d3669f0ba-W2-C02",
+      "claim_text": "Mount Zion forms part of the wider geo-historic and religious context described in a postponed State Party extension proposal.",
+      "verification_status": "ATTRIBUTED_STATE_PARTY_CONTEXT",
+      "source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-63c0ba59c24e",
+      "name_ar": "تل الرميدة",
+      "claim_id": "site-63c0ba59c24e-W2-C01",
+      "claim_text": "Tell Rumeida is included in the archaeological remains of the buffer-zone context of Hebron/Al-Khalil Old Town.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "W2-AUTH-UNESCO-HEBRON-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-UNESCO-HEBRON-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-UNESCO-HEBRON-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-63c0ba59c24e",
+      "name_ar": "تل الرميدة",
+      "claim_id": "site-63c0ba59c24e-W2-C02",
+      "claim_text": "ICOMOS documented that Tell Rumeida was excluded from the original nominated property boundary and discussed evidence of earlier settlement in its vicinity.",
+      "verification_status": "CONFIRMED_EVALUATION_CONTEXT",
+      "source_ids": [
+        "W2-AUTH-ICOMOS-HEBRON-2017"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-ICOMOS-HEBRON-2017"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-ICOMOS-HEBRON-2017"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-ICOMOS-HEBRON-2017": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-cd3be04163b6",
+      "name_ar": "حلحول (مقام النبي يونس)",
+      "claim_id": "site-cd3be04163b6-W2-C01",
+      "claim_text": "The Nabi Yunus mosque/maqam is in old Halhul; the monument record dates it to AH 623 / AD 1226, identifies an Ayyubid patron, and records later Mamluk renovation.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "W2-AUTH-MWNF-NABI-YUNUS-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-MWNF-NABI-YUNUS-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-MWNF-NABI-YUNUS-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-MWNF-NABI-YUNUS-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-c9ac723c0271",
+      "name_ar": "خربة النبي نوح",
+      "claim_id": "site-c9ac723c0271-W2-C01",
+      "claim_text": "WAFA documents the existence of Nabi Nuh shrine in Dura as a local religious and historical landmark and records community restoration and charitable use by 2020.",
+      "verification_status": "CONFIRMED_CURRENT_EXISTENCE_AND_USE",
+      "source_ids": [
+        "W2-AUTH-WAFA-NABI-NUH-2020"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-WAFA-NABI-NUH-2020"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-WAFA-NABI-NUH-2020"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-WAFA-NABI-NUH-2020": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-0dc57168d963",
+      "name_ar": "مغارة البطاركة (جزء من الحرم)",
+      "claim_id": "site-0dc57168d963-W2-C01",
+      "claim_text": "UNESCO identifies the sacred Cave of Machpelah/al-Ghar al-Sharif inside the monumental Al-Ibrahimi Mosque/Tomb of Patriarchs complex and treats its burial associations as tradition.",
+      "verification_status": "CONFIRMED_AS_COMPONENT_AND_TRADITION",
+      "source_ids": [
+        "W2-AUTH-UNESCO-HEBRON-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-UNESCO-HEBRON-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-HEBRON-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-UNESCO-HEBRON-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-7532d020842e",
+      "name_ar": "مقام الشيخ علي البكاء",
+      "claim_id": "site-7532d020842e-W2-C01",
+      "claim_text": "ICOMOS specifically discusses the Sheikh Ali al-Bakka area as an excluded area relevant to the integrity and earlier street patterns of Hebron Old Town.",
+      "verification_status": "CONFIRMED_CONTEXT",
+      "source_ids": [
+        "W2-AUTH-ICOMOS-HEBRON-2017"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-ICOMOS-HEBRON-2017"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-ICOMOS-HEBRON-2017"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-ICOMOS-HEBRON-2017": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-37c8be50ce73",
+      "name_ar": "برك سليمان",
+      "claim_id": "site-37c8be50ce73-W2-C01",
+      "claim_text": "The conservation project documents three historic pools and an Ottoman Murad castle; the project was completed in 2012 using distinguishable and reversible interventions.",
+      "verification_status": "CONFIRMED",
+      "source_ids": [
+        "W2-AUTH-ARCHNET-SOLOMON-POOLS-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-ARCHNET-SOLOMON-POOLS-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-ARCHNET-SOLOMON-POOLS-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-ARCHNET-SOLOMON-POOLS-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-f97aa993c98b",
+      "name_ar": "دير الجنة (الخضر)",
+      "claim_id": "site-f97aa993c98b-W2-C01",
+      "claim_text": "The Greek Orthodox Patriarchate officially lists a Monastery of St George in Al-Khader.",
+      "verification_status": "CONFIRMED_CURRENT_INSTITUTIONAL_IDENTITY",
+      "source_ids": [
+        "W2-AUTH-JERUSALEM-PATRIARCHATE-ALKHADER-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-JERUSALEM-PATRIARCHATE-ALKHADER-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-JERUSALEM-PATRIARCHATE-ALKHADER-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-JERUSALEM-PATRIARCHATE-ALKHADER-001": "CLOSED_LIMITED_TO_INSPECTED_RECORD"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-a8aeb054b451",
+      "name_ar": "دير مار سابا",
+      "claim_id": "site-a8aeb054b451-W2-C01",
+      "claim_text": "The Patriarchate's institutional history places the formation of Saint Savvas' Lavra around AD 483 and describes long continuous monastic activity.",
+      "verification_status": "CONFIRMED_IN_ECCLESIASTICAL_HISTORY",
+      "source_ids": [
+        "W2-AUTH-JERUSALEM-PATRIARCHATE-MAR-SABA-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-JERUSALEM-PATRIARCHATE-MAR-SABA-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-JERUSALEM-PATRIARCHATE-MAR-SABA-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-JERUSALEM-PATRIARCHATE-MAR-SABA-001": "CLOSED_LIMITED_TO_INSPECTED_RECORD"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-133155518939",
+      "name_ar": "قصر هيروديون",
+      "claim_id": "site-133155518939-W2-C01",
+      "claim_text": "A substantial published excavation corpus exists for Herodium, including Corbo's palace-fortress report and later final reports for the 1972–2010 excavations.",
+      "verification_status": "CONFIRMED_RESEARCH_CORPUS",
+      "source_ids": [
+        "W2-AUTH-SBF-HERODIUM-BIBLIOGRAPHY-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-SBF-HERODIUM-BIBLIOGRAPHY-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-SBF-HERODIUM-BIBLIOGRAPHY-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-SBF-HERODIUM-BIBLIOGRAPHY-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-133155518939",
+      "name_ar": "قصر هيروديون",
+      "claim_id": "site-133155518939-W2-C02",
+      "claim_text": "Published academic chapters address Byzantine churches and inscriptions at Herodion.",
+      "verification_status": "CONFIRMED_RESEARCH_CORPUS",
+      "source_ids": [
+        "W2-AUTH-SBF-HERODIUM-CHRISTIAN-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-SBF-HERODIUM-CHRISTIAN-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-SBF-HERODIUM-CHRISTIAN-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-SBF-HERODIUM-CHRISTIAN-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-63fe9eba7871",
+      "name_ar": "قلعة البرك",
+      "claim_id": "site-63fe9eba7871-W2-C01",
+      "claim_text": "The conservation record identifies an Ottoman Murad castle as part of the Solomon's Pools historical-site complex.",
+      "verification_status": "CONFIRMED_AS_COMPONENT",
+      "source_ids": [
+        "W2-AUTH-ARCHNET-SOLOMON-POOLS-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-ARCHNET-SOLOMON-POOLS-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-ARCHNET-SOLOMON-POOLS-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-ARCHNET-SOLOMON-POOLS-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-57adc62d6d70",
+      "name_ar": "مغارة الحليب",
+      "claim_id": "site-57adc62d6d70-W2-C01",
+      "claim_text": "The Milk Grotto is a local sanctuary near the Nativity Basilica with a living devotion shared by Christian and Muslim women.",
+      "verification_status": "CONFIRMED_LIVING_TRADITION",
+      "source_ids": [
+        "W2-AUTH-SBF-MILK-GROTTO-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-SBF-MILK-GROTTO-001"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-SBF-MILK-GROTTO-001"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-SBF-MILK-GROTTO-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-57adc62d6d70",
+      "name_ar": "مغارة الحليب",
+      "claim_id": "site-57adc62d6d70-W2-C02",
+      "claim_text": "The SBF records an emergency excavation at the sanctuary in October 2005.",
+      "verification_status": "CONFIRMED_ARCHAEOLOGICAL_ACTIVITY",
+      "source_ids": [
+        "W2-AUTH-SBF-MILK-GROTTO-EXCAVATION-2005"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W2-AUTH-SBF-MILK-GROTTO-EXCAVATION-2005"
+      ],
+      "canonical_source_ids": [
+        "W2-AUTH-SBF-MILK-GROTTO-EXCAVATION-2005"
+      ],
+      "source_evidence_statuses": {
+        "W2-AUTH-SBF-MILK-GROTTO-EXCAVATION-2005": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-2e45744cdab4",
+      "name_ar": "المسجد العمري الكبير",
+      "claim_id": "site-2e45744cdab4-W3-C01",
+      "claim_text": "UNESCO lists the Great Omari Mosque among the cultural properties in Gaza with verified damage.",
+      "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-2e45744cdab4",
+      "name_ar": "المسجد العمري الكبير",
+      "claim_id": "site-2e45744cdab4-W3-C02",
+      "claim_text": "The 2026 State of Palestine Tentative List submission identifies it as the central congregational mosque of historic Gaza and describes Mamluk and Ottoman enlargement of a layered monument.",
+      "verification_status": "CONFIRMED_AS_STATE_PARTY_SUBMISSION",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-21150eefdea6",
+      "name_ar": "تل العجول (مدينة غزة القديمة)",
+      "claim_id": "site-21150eefdea6-W3-C01",
+      "claim_text": "UNESCO lists Tell el-Ajjul among the archaeological sites with verified damage.",
+      "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-21150eefdea6",
+      "name_ar": "تل العجول (مدينة غزة القديمة)",
+      "claim_id": "site-21150eefdea6-W3-C02",
+      "claim_text": "Academic and museum records identify Tell el-Ajjul as a separate Bronze Age archaeological site south of modern Gaza City, with excavated Middle and Late Bronze Age material.",
+      "verification_status": "CONFIRMED_CORE_ARCHAEOLOGICAL_IDENTITY",
+      "source_ids": [
+        "W3-AUTH-UCL-TELL-AJJUL-2021",
+        "W3-AUTH-BM-TELL-AJJUL-COLLECTION"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UCL-TELL-AJJUL-2021",
+        "W3-AUTH-BM-TELL-AJJUL-COLLECTION"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-BM-TELL-AJJUL-COLLECTION",
+        "W3-AUTH-UCL-TELL-AJJUL-2021"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UCL-TELL-AJJUL-2021": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+        "W3-AUTH-BM-TELL-AJJUL-COLLECTION": "CLOSED_LIMITED_TO_INSPECTED_RECORD"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-3ded44be126d",
+      "name_ar": "حمام السمرة",
+      "claim_id": "site-3ded44be126d-W3-C01",
+      "claim_text": "UNESCO lists Hamam As-Samra among Gaza properties with verified damage.",
+      "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-3ded44be126d",
+      "name_ar": "حمام السمرة",
+      "claim_id": "site-3ded44be126d-W3-C02",
+      "claim_text": "A Palestinian cultural-sector report hosted by UNESCO reported complete destruction on 30 December 2023 and described the bath as Gaza's last surviving historic hammam.",
+      "verification_status": "CONFIRMED_AS_ATTRIBUTED_REPORT_NOT_INDEPENDENT_FINDING",
+      "source_ids": [
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-5e98cf44d976",
+      "name_ar": "قلعة برقوق",
+      "claim_id": "site-5e98cf44d976-W3-C01",
+      "claim_text": "UNESCO lists Qal'at Barqouq in Khan Younis among properties with verified damage.",
+      "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-5e98cf44d976",
+      "name_ar": "قلعة برقوق",
+      "claim_id": "site-5e98cf44d976-W3-C02",
+      "claim_text": "The hosted Palestinian report attributes the castle to 1387 in the reign of Sultan Barquq and describes a caravan-route function and surviving façade.",
+      "verification_status": "CONFIRMED_AS_ATTRIBUTED_REPORT",
+      "source_ids": [
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-e1e3de7b8519",
+      "name_ar": "كنيسة القديس برفيريوس",
+      "claim_id": "site-e1e3de7b8519-W3-C01",
+      "claim_text": "UNESCO lists the Saint Porphyrios Orthodox Church Complex among the Gaza properties with verified damage.",
+      "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-e1e3de7b8519",
+      "name_ar": "كنيسة القديس برفيريوس",
+      "claim_id": "site-e1e3de7b8519-W3-C02",
+      "claim_text": "The 2026 State Party submission describes an early fifth-century church that remains an active sanctuary, while the Jerusalem Patriarchate confirms the living ecclesiastical identity of the Gaza monastery.",
+      "verification_status": "CONFIRMED_AS_STATE_PARTY_AND_ECCLESIASTICAL_RECORD",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026",
+        "W3-AUTH-JERUSALEM-PATRIARCHATE-PORPHYRIOS"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026",
+        "W3-AUTH-JERUSALEM-PATRIARCHATE-PORPHYRIOS"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-JERUSALEM-PATRIARCHATE-PORPHYRIOS",
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+        "W3-AUTH-JERUSALEM-PATRIARCHATE-PORPHYRIOS": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-015f495c4236",
+      "name_ar": "مدينة غزة القديمة",
+      "claim_id": "site-015f495c4236-W3-C01",
+      "claim_text": "The State of Palestine submitted the Historic Centre of Gaza to UNESCO's Tentative List on 13 January 2026, defining a 1.7 km² historic core with four traditional quarters.",
+      "verification_status": "CONFIRMED_STATE_PARTY_SUBMISSION",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-015f495c4236",
+      "name_ar": "مدينة غزة القديمة",
+      "claim_id": "site-015f495c4236-W3-C02",
+      "claim_text": "UNESCO's March 2026 assessment verifies damage to a large number of named religious, archaeological, civic, and residential heritage properties within Gaza Governorate.",
+      "verification_status": "CONFIRMED_CURRENT_DAMAGE_CONTEXT",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-99f520b3d607",
+      "name_ar": "ميناء غزة القديم (الأنطة)",
+      "claim_id": "site-99f520b3d607-W3-C01",
+      "claim_text": "UNESCO lists Anthedon Harbour among the Gaza sites with verified damage.",
+      "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-99f520b3d607",
+      "name_ar": "ميناء غزة القديم (الأنطة)",
+      "claim_id": "site-99f520b3d607-W3-C02",
+      "claim_text": "The State Party Tentative List describes Anthedon as an ancient seaport in northwest Gaza with multi-period remains and explicitly notes uncertainty in precise site identification.",
+      "verification_status": "CONFIRMED_AS_STATE_PARTY_SUBMISSION",
+      "source_ids": [
+        "W3-AUTH-UNESCO-ANTHEDON-2012"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UNESCO-ANTHEDON-2012"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-ANTHEDON-2012"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UNESCO-ANTHEDON-2012": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-0a78d22c1a69",
+      "name_ar": "خان يونس القديم",
+      "claim_id": "site-0a78d22c1a69-W3-C01",
+      "claim_text": "UNESCO verifies damage to Qal'at Barqouq in Khan Younis Governorate.",
+      "verification_status": "CONFIRMED_COMPONENT_DAMAGE",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-0a78d22c1a69",
+      "name_ar": "خان يونس القديم",
+      "claim_id": "site-0a78d22c1a69-W3-C02",
+      "claim_text": "A Palestinian report hosted by UNESCO records damage to historic houses in Khan Younis and describes Qal'at Barqouq as a principal historic component.",
+      "verification_status": "CONFIRMED_AS_ATTRIBUTED_REPORT",
+      "source_ids": [
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-ee0e5bf1f753",
+      "name_ar": "رفح التاريخية",
+      "claim_id": "site-ee0e5bf1f753-W3-C01",
+      "claim_text": "UNESCO verifies damage to Tell Rafah in Rafah Governorate.",
+      "verification_status": "CONFIRMED_ARCHAEOLOGICAL_DAMAGE",
+      "source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "canonical_source_ids": [
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+      ],
+      "source_evidence_statuses": {
+        "W3-AUTH-UNESCO-GAZA-IMPACT-2026": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-a9ac192e20c3",
+      "name_ar": "بلدة نابلس القديمة",
+      "claim_id": "site-a9ac192e20c3-W4-C01",
+      "claim_text": "Old Nablus is a historic urban cluster with Roman, Islamic, medieval, Ottoman, religious, commercial, residential, and water-related components.",
+      "verification_status": "CONFIRMED_AS_STATE_PARTY_AND_MINISTRY_RECORD",
+      "source_ids": [
+        "W4-AUTH-UNESCO-NABLUS-2012",
+        "W4-AUTH-MOTA-NABLUS-OLD-CITY"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-AUTH-UNESCO-NABLUS-2012",
+        "W4-AUTH-MOTA-NABLUS-OLD-CITY"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-NABLUS-OLD-CITY",
+        "W4-AUTH-UNESCO-NABLUS-2012"
+      ],
+      "source_evidence_statuses": {
+        "W4-AUTH-UNESCO-NABLUS-2012": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+        "W4-AUTH-MOTA-NABLUS-OLD-CITY": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-a9ac192e20c3",
+      "name_ar": "بلدة نابلس القديمة",
+      "claim_id": "site-a9ac192e20c3-W4-C02",
+      "claim_text": "UNESCO and partners completed restoration and adaptive reuse of Khan al-Wakala as a component of Old Nablus.",
+      "verification_status": "CONFIRMED_CONSERVATION_RECORD",
+      "source_ids": [
+        "W4-AUTH-UNESCO-KHAN-WAKALA-2012"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-AUTH-UNESCO-KHAN-WAKALA-2012"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-UNESCO-KHAN-WAKALA-2012"
+      ],
+      "source_evidence_statuses": {
+        "W4-AUTH-UNESCO-KHAN-WAKALA-2012": "CLOSED_LIMITED_TO_INSPECTED_RECORD"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-a429c345ac25",
+      "name_ar": "جامع النصر",
+      "claim_id": "site-a429c345ac25-W4-C01",
+      "claim_text": "Al-Nasr Mosque is an identified spatial component bordering Bab al-Saha and Al-Nasr Street within Old Nablus.",
+      "verification_status": "CONFIRMED_CURRENT_URBAN_IDENTITY",
+      "source_ids": [
+        "W4-AUTH-MOTA-NASR-CONTEXT"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-AUTH-MOTA-NASR-CONTEXT"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-NASR-CONTEXT"
+      ],
+      "source_evidence_statuses": {
+        "W4-AUTH-MOTA-NASR-CONTEXT": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-b6773e683274",
+      "name_ar": "جبل جرزيم",
+      "claim_id": "site-b6773e683274-W4-C01",
+      "claim_text": "Mount Gerizim is the living sacred centre of the Samaritan community and contains major Hellenistic, Roman, Byzantine, and Islamic remains.",
+      "verification_status": "CONFIRMED_AS_STATE_PARTY_AND_MINISTRY_RECORD",
+      "source_ids": [
+        "W4-AUTH-UNESCO-GERIZIM-2012",
+        "W4-AUTH-MOTA-NABLUS-OLD-CITY"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-AUTH-UNESCO-GERIZIM-2012",
+        "W4-AUTH-MOTA-NABLUS-OLD-CITY"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-NABLUS-OLD-CITY",
+        "W4-AUTH-UNESCO-GERIZIM-2012"
+      ],
+      "source_evidence_statuses": {
+        "W4-AUTH-UNESCO-GERIZIM-2012": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+        "W4-AUTH-MOTA-NABLUS-OLD-CITY": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-160c60c7b952",
+      "name_ar": "حارة الياسمينة",
+      "claim_id": "site-160c60c7b952-W4-C01",
+      "claim_text": "Al-Yasmina is one of the recognized quarters of Old Nablus; Hosh al-Atout preserves Ottoman residential courtyard fabric.",
+      "verification_status": "CONFIRMED_CURRENT_IDENTITY_AND_COMPONENT",
+      "source_ids": [
+        "W4-AUTH-MOTA-YASMINA-ATOUT"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-AUTH-MOTA-YASMINA-ATOUT"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-YASMINA-ATOUT"
+      ],
+      "source_evidence_statuses": {
+        "W4-AUTH-MOTA-YASMINA-ATOUT": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-160c60c7b952",
+      "name_ar": "حارة الياسمينة",
+      "claim_id": "site-160c60c7b952-W4-C02",
+      "claim_text": "The official portal reports severe damage in 2002 and reconstruction completed in 2012 for Hosh al-Atout.",
+      "verification_status": "CONFIRMED_AS_MINISTRY_REPORT",
+      "source_ids": [
+        "W4-AUTH-MOTA-YASMINA-ATOUT"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-AUTH-MOTA-YASMINA-ATOUT"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-YASMINA-ATOUT"
+      ],
+      "source_evidence_statuses": {
+        "W4-AUTH-MOTA-YASMINA-ATOUT": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-31c7667ff10e",
+      "name_ar": "خان التجار",
+      "claim_id": "site-31c7667ff10e-W4-C01",
+      "claim_text": "Khan al-Tujjar is a recognized historic market/fabric-market component of Old Nablus.",
+      "verification_status": "CONFIRMED_CURRENT_IDENTITY",
+      "source_ids": [
+        "W4-AUTH-MOTA-KHAN-TUJJAR"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-AUTH-MOTA-KHAN-TUJJAR"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-KHAN-TUJJAR"
+      ],
+      "source_evidence_statuses": {
+        "W4-AUTH-MOTA-KHAN-TUJJAR": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-fb9a817ec94a",
+      "name_ar": "مقام النبي يوسف (بلاطة)",
+      "claim_id": "site-fb9a817ec94a-W4-C01",
+      "claim_text": "Maqam Yusuf near Balata has been revered in Muslim, Christian, Jewish, and Samaritan traditions and has had changing Palestinian social and religious meanings.",
+      "verification_status": "CONFIRMED_SHARED_SHRINE_AND_MEMORY_HISTORY",
+      "source_ids": [
+        "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023"
+      ],
+      "canonical_source_ids": [
+        "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023"
+      ],
+      "source_evidence_statuses": {
+        "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-fb9a817ec94a",
+      "name_ar": "مقام النبي يوسف (بلاطة)",
+      "claim_id": "site-fb9a817ec94a-W4-C02",
+      "claim_text": "The inspected academic article states that archaeological evidence does not verify competing burial identifications.",
+      "verification_status": "CONFIRMED_ACADEMIC_ASSESSMENT",
+      "source_ids": [
+        "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023"
+      ],
+      "canonical_source_ids": [
+        "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023"
+      ],
+      "source_evidence_statuses": {
+        "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-f2a7fbbda5a5",
+      "name_ar": "بلدة جنين القديمة",
+      "claim_id": "site-f2a7fbbda5a5-W4-C01",
+      "claim_text": "Al-Sibat market is a late Ottoman component within Jenin's older neighbourhoods and is reported above Roman and Byzantine archaeological context.",
+      "verification_status": "CONFIRMED_AS_MINISTRY_RECORD",
+      "source_ids": [
+        "W4-AUTH-MOTA-JENIN-SIBAT"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-AUTH-MOTA-JENIN-SIBAT"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-JENIN-SIBAT"
+      ],
+      "source_evidence_statuses": {
+        "W4-AUTH-MOTA-JENIN-SIBAT": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-f2a7fbbda5a5",
+      "name_ar": "بلدة جنين القديمة",
+      "claim_id": "site-f2a7fbbda5a5-W4-C02",
+      "claim_text": "Fatima Khatun Mosque is a major sixteenth-century Ottoman urban component in central Jenin.",
+      "verification_status": "CONFIRMED_AS_MINISTRY_RECORD",
+      "source_ids": [
+        "W4-AUTH-MOTA-JENIN-FATIMA-KHATUN"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-AUTH-MOTA-JENIN-FATIMA-KHATUN"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-JENIN-FATIMA-KHATUN"
+      ],
+      "source_evidence_statuses": {
+        "W4-AUTH-MOTA-JENIN-FATIMA-KHATUN": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-fe1e2a1605b5",
+      "name_ar": "قصر الكايد",
+      "claim_id": "site-fe1e2a1605b5-W4-C01",
+      "claim_text": "The official Palestinian heritage portal locates Al-Kayed Palace in Sebastia, Nablus Governorate, and dates construction to 1858.",
+      "verification_status": "CONFIRMED_IDENTITY_CONFLICT",
+      "source_ids": [
+        "W4-AUTH-MOTA-KAYED-SEBASTIA"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-AUTH-MOTA-KAYED-SEBASTIA"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-KAYED-SEBASTIA"
+      ],
+      "source_evidence_statuses": {
+        "W4-AUTH-MOTA-KAYED-SEBASTIA": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-2c1f6b6dbd51",
+      "name_ar": "كنيسة برقين",
+      "claim_id": "site-2c1f6b6dbd51-W4-C01",
+      "claim_text": "Burqin Church is a living Greek Orthodox church in Burqin with an official Byzantine heritage attribution.",
+      "verification_status": "CONFIRMED_CURRENT_IDENTITY_AND_INSTITUTIONAL_PERIOD",
+      "source_ids": [
+        "W4-AUTH-MOTA-BURQIN"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-AUTH-MOTA-BURQIN"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-BURQIN"
+      ],
+      "source_evidence_statuses": {
+        "W4-AUTH-MOTA-BURQIN": "CLOSED_LIMITED_TO_INSPECTED_RECORD"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-be1c2ce90997",
+      "name_ar": "مدينة طولكرم التاريخية",
+      "claim_id": "site-be1c2ce90997-W4-C01",
+      "claim_text": "Tulkarm contains officially recognized built heritage assets, including a museum in a 1908 Ottoman-era building and rehabilitated heritage facilities.",
+      "verification_status": "CONFIRMED_HERITAGE_ASSET_CONTEXT",
+      "source_ids": [
+        "W4-AUTH-MOTA-TULKARM-MUSEUM",
+        "W4-AUTH-UNESCO-RIWAQ-75-STEPS-2023"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-AUTH-MOTA-TULKARM-MUSEUM",
+        "W4-AUTH-UNESCO-RIWAQ-75-STEPS-2023"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-TULKARM-MUSEUM",
+        "W4-AUTH-UNESCO-RIWAQ-75-STEPS-2023"
+      ],
+      "source_evidence_statuses": {
+        "W4-AUTH-MOTA-TULKARM-MUSEUM": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+        "W4-AUTH-UNESCO-RIWAQ-75-STEPS-2023": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-69f3ad775733",
+      "name_ar": "خربة دير استيا",
+      "claim_id": "site-69f3ad775733-W4-C01",
+      "claim_text": "Deir Istiya is a recognized Palestinian historic centre with approximately three-century-old buildings, narrow streets, palaces, springs, caves, and ruins.",
+      "verification_status": "CONFIRMED_CURRENT_HISTORIC_TOWN_IDENTITY",
+      "source_ids": [
+        "W4-AUTH-MOTA-DEIR-ISTIYA",
+        "W4-AUTH-RIWAQ-50-CENTRES",
+        "W4-AUTH-RIWAQ-DEIR-ISTIYA-PALACES"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-AUTH-MOTA-DEIR-ISTIYA",
+        "W4-AUTH-RIWAQ-50-CENTRES",
+        "W4-AUTH-RIWAQ-DEIR-ISTIYA-PALACES"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-DEIR-ISTIYA",
+        "W4-AUTH-RIWAQ-50-CENTRES",
+        "W4-AUTH-RIWAQ-DEIR-ISTIYA-PALACES"
+      ],
+      "source_evidence_statuses": {
+        "W4-AUTH-MOTA-DEIR-ISTIYA": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+        "W4-AUTH-RIWAQ-50-CENTRES": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+        "W4-AUTH-RIWAQ-DEIR-ISTIYA-PALACES": "CLOSED_LIMITED_TO_INSPECTED_RECORD"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-ba91049d51a9",
+      "name_ar": "عيون الماء الأثرية",
+      "claim_id": "site-ba91049d51a9-W4-C01",
+      "claim_text": "The official Deir Istiya record confirms numerous water springs and the nearby perennial Wadi Qana setting.",
+      "verification_status": "CONFIRMED_GENERAL_HYDROLOGICAL_CONTEXT",
+      "source_ids": [
+        "W4-AUTH-MOTA-DEIR-ISTIYA"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-AUTH-MOTA-DEIR-ISTIYA"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-DEIR-ISTIYA"
+      ],
+      "source_evidence_statuses": {
+        "W4-AUTH-MOTA-DEIR-ISTIYA": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-b2a7e03ecda1",
+      "name_ar": "قلعة كفل حارس",
+      "claim_id": "site-b2a7e03ecda1-W4-C01",
+      "claim_text": "The official portal documents Ayyubid and Ottoman shrines in Kifl Haris, including inscription-bearing structures.",
+      "verification_status": "CONFIRMED_SHRINE_CLUSTER",
+      "source_ids": [
+        "W4-AUTH-MOTA-KIFL-HARIS-SHRINES"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-AUTH-MOTA-KIFL-HARIS-SHRINES"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-MOTA-KIFL-HARIS-SHRINES"
+      ],
+      "source_evidence_statuses": {
+        "W4-AUTH-MOTA-KIFL-HARIS-SHRINES": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-c6731a990917",
+      "name_ar": "تل الفارعة (المدينة الكنعانية)",
+      "claim_id": "site-c6731a990917-W4-C01",
+      "claim_text": "Tell el-Far'ah North has a major excavation and publication corpus associated with the École biblique and nine campaigns led by Roland de Vaux.",
+      "verification_status": "CONFIRMED_RESEARCH_CORPUS",
+      "source_ids": [
+        "W4-ACADEMIC-EBAF-TELL-FARAH-CORPUS"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-ACADEMIC-EBAF-TELL-FARAH-CORPUS"
+      ],
+      "canonical_source_ids": [
+        "W4-ACADEMIC-EBAF-TELL-FARAH-CORPUS"
+      ],
+      "source_evidence_statuses": {
+        "W4-ACADEMIC-EBAF-TELL-FARAH-CORPUS": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-c6731a990917",
+      "name_ar": "تل الفارعة (المدينة الكنعانية)",
+      "claim_id": "site-c6731a990917-W4-C02",
+      "claim_text": "Academic synthesis identifies ordered and fortified Early Bronze settlement phases at Tell el-Far'ah North.",
+      "verification_status": "CONFIRMED_BRONZE_AGE_URBAN_CONTEXT",
+      "source_ids": [
+        "W4-ACADEMIC-CAMBRIDGE-TELL-FARAH"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Locate a Tell el-Far'ah-specific excavation passage or replace the generalized Cambridge chapter before Arabic rewrite.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W4-ACADEMIC-CAMBRIDGE-TELL-FARAH"
+      ],
+      "canonical_source_ids": [
+        "W4-ACADEMIC-CAMBRIDGE-TELL-FARAH"
+      ],
+      "source_evidence_statuses": {
+        "W4-ACADEMIC-CAMBRIDGE-TELL-FARAH": "NOT_CLOSED_FOR_LINKED_CLAIM"
+      },
+      "claim_scope_validation": "OPEN",
+      "closure_status": "SOURCE_REPLACEMENT_OR_EXACT_PAGE_REQUIRED",
+      "closure_reason": "The cited Cambridge chapter page confirms general Early Bronze urbanism, not the site-specific ordered and fortified phases asserted for Tell el-Far'ah North.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "SOURCE_EVIDENCE_OPEN",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-e2a5c15f76f6",
+      "name_ar": "بلدة بيرزيت القديمة",
+      "claim_id": "site-e2a5c15f76f6-W5-C01",
+      "claim_text": "Birzeit contains a governed historic centre whose buildings, public spaces, infrastructure, and boundaries were documented and rehabilitated through a long-term Riwaq programme.",
+      "verification_status": "CONFIRMED_HISTORIC_CENTRE_AND_CONSERVATION_RECORD",
+      "source_ids": [
+        "W5-AUTH-RIWAQ-BIRZEIT-001",
+        "W5-AUTH-RIWAQ-BIRZEIT-AWARD-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W5-AUTH-RIWAQ-BIRZEIT-001",
+        "W5-AUTH-RIWAQ-BIRZEIT-AWARD-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-RIWAQ-BIRZEIT-001",
+        "W5-AUTH-RIWAQ-BIRZEIT-AWARD-001"
+      ],
+      "source_evidence_statuses": {
+        "W5-AUTH-RIWAQ-BIRZEIT-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+        "W5-AUTH-RIWAQ-BIRZEIT-AWARD-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-e2a5c15f76f6",
+      "name_ar": "بلدة بيرزيت القديمة",
+      "claim_id": "site-e2a5c15f76f6-W5-C02",
+      "claim_text": "The Palestinian Ministry of Tourism and Antiquities provides contextual reference to a fortified castle in Birzeit.",
+      "verification_status": "CONFIRMED_CONTEXT_ONLY",
+      "source_ids": [
+        "W5-AUTH-MOTA-RAMALLAH-CONTEXT-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W5-AUTH-MOTA-RAMALLAH-CONTEXT-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-MOTA-RAMALLAH-CONTEXT-001"
+      ],
+      "source_evidence_statuses": {
+        "W5-AUTH-MOTA-RAMALLAH-CONTEXT-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-014e4c4e4845",
+      "name_ar": "خربة عابود",
+      "claim_id": "site-014e4c4e4845-W5-C01",
+      "claim_text": "Aboud is recognized within Riwaq's historic-centres programme.",
+      "verification_status": "CONFIRMED_HISTORIC_CENTRE_CONTEXT",
+      "source_ids": [
+        "W5-AUTH-RIWAQ-50-CENTRES-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W5-AUTH-RIWAQ-50-CENTRES-001"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-RIWAQ-50-CENTRES"
+      ],
+      "source_evidence_statuses": {
+        "W5-AUTH-RIWAQ-50-CENTRES-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-014e4c4e4845",
+      "name_ar": "خربة عابود",
+      "claim_id": "site-014e4c4e4845-W5-C02",
+      "claim_text": "The Aboud landscape includes a sixth-century St Barbara church ruin, a Roman-road and cemetery context, and a separately documented multi-phase Dormition church.",
+      "verification_status": "CONFIRMED_MULTIPLE_ARCHAEOLOGICAL_AND_ARCHITECTURAL_COMPONENTS",
+      "source_ids": [
+        "W5-AUTH-MOTA-ABOUD-BARBARA-001",
+        "W5-AUTH-MOTA-ABOUD-DORMITION-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W5-AUTH-MOTA-ABOUD-BARBARA-001",
+        "W5-AUTH-MOTA-ABOUD-DORMITION-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-MOTA-ABOUD-BARBARA-001",
+        "W5-AUTH-MOTA-ABOUD-DORMITION-001"
+      ],
+      "source_evidence_statuses": {
+        "W5-AUTH-MOTA-ABOUD-BARBARA-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+        "W5-AUTH-MOTA-ABOUD-DORMITION-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-28dd528f5f3a",
+      "name_ar": "دير عمار",
+      "claim_id": "site-28dd528f5f3a-W5-C01",
+      "claim_text": "Riwaq recognizes Deir Ammar as a Palestinian historic-centre record.",
+      "verification_status": "CONFIRMED_CURRENT_HISTORIC_CENTRE_IDENTITY",
+      "source_ids": [
+        "W5-AUTH-RIWAQ-DEIR-AMMAR-001",
+        "W5-AUTH-RIWAQ-50-CENTRES-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W5-AUTH-RIWAQ-DEIR-AMMAR-001",
+        "W5-AUTH-RIWAQ-50-CENTRES-001"
+      ],
+      "canonical_source_ids": [
+        "W4-AUTH-RIWAQ-50-CENTRES",
+        "W5-AUTH-RIWAQ-DEIR-AMMAR-001"
+      ],
+      "source_evidence_statuses": {
+        "W5-AUTH-RIWAQ-DEIR-AMMAR-001": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+        "W5-AUTH-RIWAQ-50-CENTRES-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-2a3fdab99250",
+      "name_ar": "عين سامية",
+      "claim_id": "site-2a3fdab99250-W5-C01",
+      "claim_text": "Academic records document Intermediate/Middle Bronze Age shaft-tomb and assemblage evidence at Ain Samiya.",
+      "verification_status": "CONFIRMED_BRONZE_AGE_CEMETERY_CONTEXT",
+      "source_ids": [
+        "W5-ACADEMIC-AIN-SAMIYA-TOMB-204-001",
+        "W5-ACADEMIC-CAMBRIDGE-AIN-SAMIYA-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W5-ACADEMIC-AIN-SAMIYA-TOMB-204-001",
+        "W5-ACADEMIC-CAMBRIDGE-AIN-SAMIYA-001"
+      ],
+      "canonical_source_ids": [
+        "W5-ACADEMIC-AIN-SAMIYA-TOMB-204-001",
+        "W5-ACADEMIC-CAMBRIDGE-AIN-SAMIYA-001"
+      ],
+      "source_evidence_statuses": {
+        "W5-ACADEMIC-AIN-SAMIYA-TOMB-204-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+        "W5-ACADEMIC-CAMBRIDGE-AIN-SAMIYA-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-2a3fdab99250",
+      "name_ar": "عين سامية",
+      "claim_id": "site-2a3fdab99250-W5-C02",
+      "claim_text": "The official Palestinian route guide distinguishes Ain Samiya, Khirbet Marjameh, a palace feature, and Khirbet Samiya within the wider landscape.",
+      "verification_status": "CONFIRMED_MULTIPLE_FEATURES_IN_LANDSCAPE",
+      "source_ids": [
+        "W5-AUTH-WAFA-TOURIST-TRAILS-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W5-AUTH-WAFA-TOURIST-TRAILS-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-WAFA-TOURIST-TRAILS-001"
+      ],
+      "source_evidence_statuses": {
+        "W5-AUTH-WAFA-TOURIST-TRAILS-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-12fc185d4b0b",
+      "name_ar": "مقام النبي صالح",
+      "claim_id": "site-12fc185d4b0b-W5-C01",
+      "claim_text": "Riwaq records conservation and adaptive reuse of the An Nabi Salih Cultural Center complex completed in 2003 with a local partner.",
+      "verification_status": "CONFIRMED_CURRENT_COMPLEX_AND_CONSERVATION",
+      "source_ids": [
+        "W5-AUTH-RIWAQ-NABI-SALEH-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W5-AUTH-RIWAQ-NABI-SALEH-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-RIWAQ-NABI-SALEH-001"
+      ],
+      "source_evidence_statuses": {
+        "W5-AUTH-RIWAQ-NABI-SALEH-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-cc4465115964",
+      "name_ar": "دير قرنطل",
+      "claim_id": "site-cc4465115964-W5-C01",
+      "claim_text": "The official Palestinian portal documents monastic caves, a sixth-century monastery phase, and restoration in 1892 at Deir Quruntal.",
+      "verification_status": "CONFIRMED_INSTITUTIONAL_ARCHITECTURAL_HISTORY",
+      "source_ids": [
+        "W5-AUTH-MOTA-QURUNTAL-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W5-AUTH-MOTA-QURUNTAL-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-MOTA-QURUNTAL-001"
+      ],
+      "source_evidence_statuses": {
+        "W5-AUTH-MOTA-QURUNTAL-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-b5f00132ee24",
+      "name_ar": "عين السلطان",
+      "claim_id": "site-b5f00132ee24-W5-C01",
+      "claim_text": "Ain es-Sultan is the perennial spring adjacent to and included among the attributes of the inscribed Ancient Jericho/Tell es-Sultan property.",
+      "verification_status": "CONFIRMED_WORLD_HERITAGE_COMPONENT",
+      "source_ids": [
+        "W5-AUTH-UNESCO-JERICHO-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W5-AUTH-UNESCO-JERICHO-001"
+      ],
+      "canonical_source_ids": [
+        "AUTH-UNESCO-JERICHO-001"
+      ],
+      "source_evidence_statuses": {
+        "W5-AUTH-UNESCO-JERICHO-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-ce23c41d7641",
+      "name_ar": "قبر النبي موسى",
+      "claim_id": "site-ce23c41d7641-W5-C01",
+      "claim_text": "The official Palestinian record describes one Nabi Musa shrine complex containing a mosque, mausoleum/tomb, courtyard, rooms, and related facilities.",
+      "verification_status": "CONFIRMED_COMPONENT_WITHIN_SINGLE_COMPLEX",
+      "source_ids": [
+        "W5-AUTH-MOTA-NABI-MUSA-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W5-AUTH-MOTA-NABI-MUSA-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-MOTA-NABI-MUSA-001"
+      ],
+      "source_evidence_statuses": {
+        "W5-AUTH-MOTA-NABI-MUSA-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-7551f628d089",
+      "name_ar": "قناة وادي القلط",
+      "claim_id": "site-7551f628d089-W5-C01",
+      "claim_text": "The wider El-Bariyah landscape contains permanent springs, wadis, monasteries, shrines, and long-term human adaptation to desert water resources.",
+      "verification_status": "CONFIRMED_BROAD_LANDSCAPE_CONTEXT_ONLY",
+      "source_ids": [
+        "W5-AUTH-UNESCO-EL-BARIYAH-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W5-AUTH-UNESCO-EL-BARIYAH-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-UNESCO-EL-BARIYAH-001"
+      ],
+      "source_evidence_statuses": {
+        "W5-AUTH-UNESCO-EL-BARIYAH-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-c4d8c9fdd1f0",
+      "name_ar": "مقام النبي موسى",
+      "claim_id": "site-c4d8c9fdd1f0-W5-C01",
+      "claim_text": "The official Palestinian portal identifies Nabi Musa as a Mamluk shrine complex associated institutionally with Sultan al-Zahir Baybars.",
+      "verification_status": "CONFIRMED_OFFICIAL_ARCHITECTURAL_IDENTITY",
+      "source_ids": [
+        "W5-AUTH-MOTA-NABI-MUSA-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W5-AUTH-MOTA-NABI-MUSA-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-MOTA-NABI-MUSA-001"
+      ],
+      "source_evidence_statuses": {
+        "W5-AUTH-MOTA-NABI-MUSA-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-c4d8c9fdd1f0",
+      "name_ar": "مقام النبي موسى",
+      "claim_id": "site-c4d8c9fdd1f0-W5-C02",
+      "claim_text": "The State of Palestine's El-Bariyah submission places Maqam an-Nabi Musa within the Islamic sacred and pilgrimage landscape.",
+      "verification_status": "CONFIRMED_AS_STATE_PARTY_LANDSCAPE_CONTEXT",
+      "source_ids": [
+        "W5-AUTH-UNESCO-EL-BARIYAH-001"
+      ],
+      "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW",
+      "next_action": "Produce conservative Arabic editorial wording that preserves source class, attribution, uncertainty and limitations.",
+      "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+      "candidate_site_resolves": true,
+      "original_source_ids": [
+        "W5-AUTH-UNESCO-EL-BARIYAH-001"
+      ],
+      "canonical_source_ids": [
+        "W5-AUTH-UNESCO-EL-BARIYAH-001"
+      ],
+      "source_evidence_statuses": {
+        "W5-AUTH-UNESCO-EL-BARIYAH-001": "CLOSED_WITHIN_STATED_SOURCE_SCOPE"
+      },
+      "claim_scope_validation": "CLOSED",
+      "closure_status": "SCOPE_CLOSED_FOR_ARABIC_EDITORIAL_REWRITE",
+      "closure_reason": "All source references resolve and the narrow claim is supported within the inspected source scope. This is not final historical approval and does not authorize publication.",
+      "historical_validation": "PENDING_HUMAN_REVIEW",
+      "bibliographic_validation": "CLOSED_FOR_SCOPE",
+      "rights_validation": "PENDING",
+      "arabic_editorial_rewrite": "PENDING",
+      "database_import": "BLOCKED",
+      "publication": "BLOCKED"
+    }
+  ]
+}

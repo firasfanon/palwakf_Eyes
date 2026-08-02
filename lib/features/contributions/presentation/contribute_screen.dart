@@ -59,7 +59,11 @@ class _ContributeScreenState extends State<ContributeScreen> {
           }
 
           return Column(
-            children: <Widget>[guide, const SizedBox(height: 22), form],
+            children: <Widget>[
+              guide,
+              const SizedBox(height: 22),
+              form,
+            ],
           );
         },
       ),
@@ -129,9 +133,9 @@ class _ContributionGuide extends StatelessWidget {
               Text(
                 'المساهمة تبدأ من المعرفة المحلية',
                 style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w900,
-                ),
+                      color: Colors.white,
+                      fontWeight: FontWeight.w900,
+                    ),
               ),
               const SizedBox(height: 8),
               Text(
@@ -212,16 +216,16 @@ class _ContributionForm extends StatelessWidget {
           children: <Widget>[
             Text(
               'بيانات المساهمة',
-              style: Theme.of(
-                context,
-              ).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.w900),
+              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                    fontWeight: FontWeight.w900,
+                  ),
             ),
             const SizedBox(height: 6),
             Text(
               'أدخل الحد الأدنى من المعلومات التي تساعد فريق المراجعة على فهم المادة.',
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: Theme.of(context).colorScheme.onSurfaceVariant,
-              ),
+                    color: Theme.of(context).colorScheme.onSurfaceVariant,
+                  ),
             ),
             const SizedBox(height: 22),
             DropdownButtonFormField<String>(
@@ -230,22 +234,21 @@ class _ContributionForm extends StatelessWidget {
                 labelText: 'نوع المساهمة',
                 prefixIcon: Icon(Icons.category_outlined),
               ),
-              items:
-                  const <String>[
-                        'تصحيح معلومة',
-                        'اقتراح موقع جديد',
-                        'مصدر أو مرجع',
-                        'صورة أو وثيقة',
-                        'رواية شفوية',
-                        'بلاغ ضرر',
-                      ]
-                      .map(
-                        (item) => DropdownMenuItem<String>(
-                          value: item,
-                          child: Text(item),
-                        ),
-                      )
-                      .toList(growable: false),
+              items: const <String>[
+                'تصحيح معلومة',
+                'اقتراح موقع جديد',
+                'مصدر أو مرجع',
+                'صورة أو وثيقة',
+                'رواية شفوية',
+                'بلاغ ضرر',
+              ]
+                  .map(
+                    (item) => DropdownMenuItem<String>(
+                      value: item,
+                      child: Text(item),
+                    ),
+                  )
+                  .toList(growable: false),
               onChanged: (value) {
                 if (value != null) {
                   onTypeChanged(value);
@@ -286,9 +289,10 @@ class _ContributionForm extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
-                color: Theme.of(
-                  context,
-                ).colorScheme.tertiaryContainer.withValues(alpha: 0.48),
+                color: Theme.of(context)
+                    .colorScheme
+                    .tertiaryContainer
+                    .withValues(alpha: 0.48),
                 borderRadius: BorderRadius.circular(18),
               ),
               child: const Row(

@@ -18,9 +18,8 @@ class WorkspaceDashboardScreen extends ConsumerWidget {
     final registry = ref.watch(draftSourceRegistryProvider);
     final coverage = ref.watch(governorateCoverageProvider);
     final coordinateGaps = sites.length - mapped.length;
-    final governorateGaps = coverage
-        .where((item) => !item.hasExtractedSites)
-        .length;
+    final governorateGaps =
+        coverage.where((item) => !item.hasExtractedSites).length;
 
     return PalEyesPage(
       title: 'لوحة العمل اليومية',
@@ -43,8 +42,8 @@ class WorkspaceDashboardScreen extends ConsumerWidget {
               final columns = constraints.maxWidth >= 1040
                   ? 3
                   : constraints.maxWidth >= 620
-                  ? 2
-                  : 1;
+                      ? 2
+                      : 1;
               const gap = 14.0;
               final width =
                   (constraints.maxWidth - gap * (columns - 1)) / columns;
@@ -159,8 +158,11 @@ class WorkspaceDashboardScreen extends ConsumerWidget {
                 runSpacing: 16,
                 children: cards
                     .map(
-                      (item) =>
-                          SizedBox(width: width, height: 270, child: item),
+                      (item) => SizedBox(
+                        width: width,
+                        height: 270,
+                        child: item,
+                      ),
                     )
                     .toList(growable: false),
               );
@@ -203,9 +205,10 @@ class WorkspaceDashboardScreen extends ConsumerWidget {
           Container(
             padding: const EdgeInsets.all(18),
             decoration: BoxDecoration(
-              color: Theme.of(
-                context,
-              ).colorScheme.tertiaryContainer.withValues(alpha: 0.45),
+              color: Theme.of(context)
+                  .colorScheme
+                  .tertiaryContainer
+                  .withValues(alpha: 0.45),
               borderRadius: BorderRadius.circular(22),
             ),
             child: const Row(
@@ -262,8 +265,8 @@ class _QuickActions extends StatelessWidget {
         final width = constraints.maxWidth >= 860
             ? (constraints.maxWidth - 42) / 4
             : constraints.maxWidth >= 540
-            ? (constraints.maxWidth - 14) / 2
-            : constraints.maxWidth;
+                ? (constraints.maxWidth - 14) / 2
+                : constraints.maxWidth;
         return Wrap(
           spacing: 14,
           runSpacing: 14,
@@ -283,7 +286,9 @@ class _QuickActions extends StatelessWidget {
                             const SizedBox(height: 14),
                             Text(
                               item.label,
-                              style: Theme.of(context).textTheme.titleMedium
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .titleMedium
                                   ?.copyWith(fontWeight: FontWeight.w900),
                             ),
                             const SizedBox(height: 8),

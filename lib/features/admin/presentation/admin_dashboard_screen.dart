@@ -8,8 +8,7 @@ class AdminDashboardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return PalEyesPage(
       title: 'لوحة الإدارة',
-      subtitle:
-          'واجهة تأسيسية غير متصلة بالمصادقة أو قاعدة البيانات. جميع الإجراءات الكتابية معطلة.',
+      subtitle: 'واجهة تأسيسية غير متصلة بالمصادقة أو قاعدة البيانات. جميع الإجراءات الكتابية معطلة.',
       actions: const <Widget>[
         Chip(
           avatar: Icon(Icons.lock_outline_rounded, size: 18),

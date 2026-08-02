@@ -1,0 +1,80 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_CROSS_WAVE_RECONCILIATION_AND_GOVERNED_REWRITE_V1",
+  "result": "PASS",
+  "metrics": {
+    "canonical_sites": 79,
+    "sites_reconciled": 79,
+    "source_records": 76,
+    "confirmed_claims": 96,
+    "held_claim_groups": 211,
+    "identity_review_queue": 33,
+    "relation_proposals": 6,
+    "external_coordinate_candidates": 4,
+    "canonical_coordinates_available_for_review": 3,
+    "canonical_coordinate_gaps": 76,
+    "bibliographic_queue": 76,
+    "rights_queue": 79,
+    "publication_ready_sites": 0
+  },
+  "quality_checks": {
+    "canonical_site_count_79": true,
+    "reconciled_site_count_79": true,
+    "canonical_ids_preserved": true,
+    "canonical_slugs_preserved": true,
+    "source_references_resolve": true,
+    "database_write_false": true,
+    "project_source_mutation_false": true,
+    "catalog_mutation_false": true,
+    "coordinate_mutation_false": true,
+    "external_coordinate_promotion_false": true,
+    "publication_ready_sites_zero": true
+  },
+  "artifacts": [
+    {
+      "filename": "PAL_EYES_CROSS_WAVE_RECONCILIATION_REPORT_V1.md",
+      "sha256": "ca05db1d7e5ab23b06437ced7e56ab0220404128a45a29a43a211af11d35de9e",
+      "size_bytes": 3924
+    },
+    {
+      "filename": "PAL_EYES_CROSS_WAVE_UNIFIED_VERIFICATION_REGISTRY_V1.json",
+      "sha256": "df1a57b45b8f4f8b0b7b206941ca9932b5e41cc2b4ebbe5141b4d9b8f7e71f40",
+      "size_bytes": 269799
+    },
+    {
+      "filename": "PAL_EYES_IDENTITY_DUPLICATE_COMPONENT_RECONCILIATION_QUEUE_V1.json",
+      "sha256": "5d7efdf22552bfd8c6581d56842b1531605af10b091b78e0b699a2232a2b43d6",
+      "size_bytes": 25185
+    },
+    {
+      "filename": "PAL_EYES_CLAIM_LEVEL_REVIEW_QUEUE_V1.json",
+      "sha256": "38ef9e1e7ca3b3a90cde884edec667fd06c10778b1e523511d6af99391bce120",
+      "size_bytes": 127618
+    },
+    {
+      "filename": "PAL_EYES_BIBLIOGRAPHIC_PAGE_INSPECTION_QUEUE_V1.json",
+      "sha256": "6a64cb544e85af25aa59d81de9f40f22b3886a43be8ed59936d6c2182f899488",
+      "size_bytes": 49196
+    },
+    {
+      "filename": "PAL_EYES_COORDINATE_CANDIDATE_REGISTRY_V1.json",
+      "sha256": "02ce868bcbe6e88e4618183abfcaa27ba12a085bc999f6aff72e08d68428a68f",
+      "size_bytes": 34679
+    },
+    {
+      "filename": "PAL_EYES_RIGHTS_REVIEW_QUEUE_V1.json",
+      "sha256": "68c5434c52e36f54cb3a9c318375d460dc184d007c859d7f2069f406d4c9d14d",
+      "size_bytes": 32071
+    },
+    {
+      "filename": "PAL_EYES_GOVERNED_REWRITE_DRAFTS_79_V1.json",
+      "sha256": "a73ad66211dc3e84311a7d9e6af65afb547aa2baf284b93bf952647eca1cb3f1",
+      "size_bytes": 169946
+    },
+    {
+      "filename": "PAL_EYES_GOVERNED_REWRITE_DRAFTS_79_V1.md",
+      "sha256": "4ec554810e66b73242b824b5b7f5a0ce8d16a08c55a0618552d8573b33667152",
+      "size_bytes": 62749
+    }
+  ]
+}

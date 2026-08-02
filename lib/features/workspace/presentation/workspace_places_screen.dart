@@ -16,7 +16,8 @@ class WorkspacePlacesScreen extends ConsumerStatefulWidget {
       _WorkspacePlacesScreenState();
 }
 
-class _WorkspacePlacesScreenState extends ConsumerState<WorkspacePlacesScreen> {
+class _WorkspacePlacesScreenState
+    extends ConsumerState<WorkspacePlacesScreen> {
   static const int _pageSize = 30;
 
   final TextEditingController _queryController = TextEditingController();
@@ -42,23 +43,22 @@ class _WorkspacePlacesScreenState extends ConsumerState<WorkspacePlacesScreen> {
     final governorates = <String>{
       'الكل',
       ...sites.map((site) => site.governorateAr),
-    }.toList(growable: false)..sort();
+    }.toList(growable: false)
+      ..sort();
     final profiles = <String>[
       'الكل',
       DraftContentProfile.catalogSummary.labelAr,
       DraftContentProfile.expandedNarrative.labelAr,
     ];
 
-    final filtered = sites
-        .where((site) {
-          final queryMatches = site.matches(_queryController.text);
-          final governorateMatches =
-              _governorate == 'الكل' || site.governorateAr == _governorate;
-          final profileMatches =
-              _profile == 'الكل' || site.contentProfile.labelAr == _profile;
-          return queryMatches && governorateMatches && profileMatches;
-        })
-        .toList(growable: false);
+    final filtered = sites.where((site) {
+      final queryMatches = site.matches(_queryController.text);
+      final governorateMatches =
+          _governorate == 'الكل' || site.governorateAr == _governorate;
+      final profileMatches =
+          _profile == 'الكل' || site.contentProfile.labelAr == _profile;
+      return queryMatches && governorateMatches && profileMatches;
+    }).toList(growable: false);
 
     final visible = filtered.take(_visibleCount).toList(growable: false);
     final canShowMore = visible.length < filtered.length;
@@ -142,9 +142,10 @@ class _WorkspacePlacesScreenState extends ConsumerState<WorkspacePlacesScreen> {
             children: <Widget>[
               Text(
                 'المواقع',
-                style: Theme.of(
-                  context,
-                ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w900),
+                style: Theme.of(context)
+                    .textTheme
+                    .titleLarge
+                    ?.copyWith(fontWeight: FontWeight.w900),
               ),
               Chip(
                 label: Text(
@@ -241,9 +242,10 @@ class _WorkspaceSiteRow extends StatelessWidget {
               children: <Widget>[
                 Text(
                   site.nameAr,
-                  style: Theme.of(
-                    context,
-                  ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w900),
+                  style: Theme.of(context)
+                      .textTheme
+                      .titleLarge
+                      ?.copyWith(fontWeight: FontWeight.w900),
                 ),
                 const SizedBox(height: 5),
                 Text(
@@ -254,7 +256,10 @@ class _WorkspaceSiteRow extends StatelessWidget {
                   spacing: 7,
                   runSpacing: 7,
                   children: <Widget>[
-                    ContentStatusBadge(status: site.status, compact: true),
+                    ContentStatusBadge(
+                      status: site.status,
+                      compact: true,
+                    ),
                     Chip(label: Text(site.contentProfile.labelAr)),
                     Chip(
                       avatar: Icon(
@@ -269,7 +274,9 @@ class _WorkspaceSiteRow extends StatelessWidget {
                             : 'تحتاج إحداثيات',
                       ),
                     ),
-                    Chip(label: Text('${site.sourceMentionCount} ذكر مصدر')),
+                    Chip(
+                      label: Text('${site.sourceMentionCount} ذكر مصدر'),
+                    ),
                   ],
                 ),
               ],
@@ -279,12 +286,14 @@ class _WorkspaceSiteRow extends StatelessWidget {
               runSpacing: 8,
               children: <Widget>[
                 OutlinedButton.icon(
-                  onPressed: () => context.go(RoutePaths.place(site.slug)),
+                  onPressed: () =>
+                      context.go(RoutePaths.place(site.slug)),
                   icon: const Icon(Icons.visibility_outlined),
                   label: const Text('معاينة'),
                 ),
                 FilledButton.tonalIcon(
-                  onPressed: () => context.go(RoutePaths.workspaceNarratives),
+                  onPressed: () =>
+                      context.go(RoutePaths.workspaceNarratives),
                   icon: const Icon(Icons.edit_note_rounded),
                   label: const Text('تحرير'),
                 ),
@@ -304,7 +313,11 @@ class _WorkspaceSiteRow extends StatelessWidget {
             }
             return Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[details, const SizedBox(height: 14), actions],
+              children: <Widget>[
+                details,
+                const SizedBox(height: 14),
+                actions,
+              ],
             );
           },
         ),

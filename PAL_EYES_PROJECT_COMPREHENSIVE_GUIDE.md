@@ -7,13 +7,41 @@
 | الاسم العربي | بعيون فلسطينية |
 | الاسم الإنجليزي | Palestinian Eyes |
 | المعرّف التقني | `pal_eyes` |
-| الإصدار | `4.0.0` |
-| التاريخ | `2026-07-14` |
-| الحالة | مرجع حاكم تأسيسي |
-| المرحلة الحالية | المرحلة صفر: الحوكمة والنموذج المرجعي |
-| نوع الحزمة | Design-only / No runtime or database mutation |
+| الإصدار | `9.0.1` |
+| التاريخ | `2026-08-02` |
+| الحالة | Baseline محلية مقبولة بعد إغلاق Browser UAT |
+| المرحلة الحالية | نضج التجربة العامة المباشرة عبر Flutter — R9.0.1 |
+| نوع الحزمة | Full accepted development baseline / production not approved |
 
 > هذا الملف هو المرجع الأعلى للمشروع، ويجب تحديثه بعد كل Batch أو Patch ناجح.
+
+## تحديث حاكم — R9.0.1 {#PAL_EYES_R9_0_1_GUIDE_UPDATE}
+
+```text
+BASELINE=PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802
+PARENT=PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0_20260802
+VERSION=9.0.1+30
+STATUS=SESSION_RECONSTRUCTED_GITHUB_CANDIDATE_PENDING_FORMAT_REPLAY
+```
+
+أُغلق Browser UAT بقرار صريح من المشغل بعد مراجعة شاشات سطح المكتب الأساسية والتفصيلية، وتشغيل Chrome وEdge، وعرض محمول ضيق RTL. نجحت بوابات التنسيق الموضعي، والمدقق الساكن، و`flutter analyze`، و65 اختبارًا، و`git diff --check`.
+
+حدود القبول:
+
+```text
+DESKTOP_CORE_AND_DETAIL_SURFACES=PASS
+NARROW_MOBILE_VISUAL_LAYOUT=PASS
+RUNTIME_EXCEPTIONS=0
+VISIBLE_RENDER_OVERFLOWS=0
+PUBLIC_COORDINATES=0
+PUBLIC_MARKERS=0
+EXACT_390X844_TELEMETRY=NOT_SEPARATELY_CAPTURED_ACCEPTED_BY_OPERATOR
+MANUAL_KEYBOARD_FOCUS_CAPTURE=NOT_SEPARATELY_CAPTURED_ACCEPTED_BY_OPERATOR
+OSM_TILE_POLICY_WARNING=OPEN_PRODUCTION_READINESS_BLOCKER
+PUBLICATION=BLOCKED
+PRODUCTION_DEPLOYMENT=NOT_APPROVED
+```
+
 
 ---
 
@@ -959,3 +987,7 @@ VISUAL_DIRECTION_CHANGE=NONE
 ## R5.1.0 — Governed Content Adoption
 
 57 governed draft pages and 22 limited research pages now use the historically reviewed Arabic editorial baseline and governed source registry. Held claims remain in the research workspace. Public map coordinates, database import, unapproved media and publication remain blocked.
+
+## Direct Flutter visual-development authority — 2026-08-02
+
+The accepted Flutter screens are the current visual source of truth. Figma is optional and non-authoritative. Public interface work proceeds directly in Flutter through governed packages, static and widget tests, analyzer, and desktop/mobile browser UAT. No visual tool may replace a stronger accepted Flutter surface without explicit human approval.

@@ -1,0 +1,719 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_CROSS_WAVE_RECONCILIATION_AND_GOVERNED_REWRITE_V1",
+  "approved_media_assets": 0,
+  "publication_use": "blocked",
+  "records": [
+    {
+      "canonical_site_id": "site-4aeec5656d1d",
+      "name_ar": "المسجد الأقصى المبارك / الحرم القدسي الشريف",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-4b15f14c306f",
+      "name_ar": "كنيسة المهد",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-88fede7b6df0",
+      "name_ar": "قرية بتير",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-6b6c5a396756",
+      "name_ar": "بلدة الخليل القديمة",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-899e38be070d",
+      "name_ar": "الحرم الإبراهيمي",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-a86fc049d470",
+      "name_ar": "تل السلطان (أريحا القديمة)",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-6f6afe87f969",
+      "name_ar": "سبسطية (شمرون)",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-0285c869e647",
+      "name_ar": "قصر هشام (خربة المفجر)",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-f9df0c7e708c",
+      "name_ar": "بلدة سلوان",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-f9067873c322",
+      "name_ar": "حائط البراق",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-9b42bff63df0",
+      "name_ar": "خان الجوابرة",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-4bbdf07d8d66",
+      "name_ar": "سوق القطانين",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-8d297f3c37a9",
+      "name_ar": "قبر السيدة مريم (مغارة الجسمانية)",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-f7553f79288f",
+      "name_ar": "قصور المماليك (شارع الواد)",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-83d3025c4675",
+      "name_ar": "قلعة القدس (برج داود)",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-431ed266867b",
+      "name_ar": "كنيسة القيامة",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-3a3d3669f0ba",
+      "name_ar": "مقام النبي داوود (جبل صهيون)",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-f60be7cd7d5e",
+      "name_ar": "بيت أمر (خربة النبي متى)",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-63c0ba59c24e",
+      "name_ar": "تل الرميدة",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-cd3be04163b6",
+      "name_ar": "حلحول (مقام النبي يونس)",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-2310c1600481",
+      "name_ar": "خان الحطب",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-c9ac723c0271",
+      "name_ar": "خربة النبي نوح",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-6162b1da6edc",
+      "name_ar": "عين سارة",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-d2c9e9bc9652",
+      "name_ar": "قلعة الكرمل (دير سامت)",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-0dc57168d963",
+      "name_ar": "مغارة البطاركة (جزء من الحرم)",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-7532d020842e",
+      "name_ar": "مقام الشيخ علي البكاء",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-37c8be50ce73",
+      "name_ar": "برك سليمان",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-f97aa993c98b",
+      "name_ar": "دير الجنة (الخضر)",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-a8aeb054b451",
+      "name_ar": "دير مار سابا",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-133155518939",
+      "name_ar": "قصر هيروديون",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-63fe9eba7871",
+      "name_ar": "قلعة البرك",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-57adc62d6d70",
+      "name_ar": "مغارة الحليب",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-2e45744cdab4",
+      "name_ar": "المسجد العمري الكبير",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-21150eefdea6",
+      "name_ar": "تل العجول (مدينة غزة القديمة)",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-3ded44be126d",
+      "name_ar": "حمام السمرة",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-5e98cf44d976",
+      "name_ar": "قلعة برقوق",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-e1e3de7b8519",
+      "name_ar": "كنيسة القديس برفيريوس",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-015f495c4236",
+      "name_ar": "مدينة غزة القديمة",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-a77381cd3cae",
+      "name_ar": "مقام الشيخ رضوان",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-99f520b3d607",
+      "name_ar": "ميناء غزة القديم (الأنطة)",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-0a78d22c1a69",
+      "name_ar": "خان يونس القديم",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-ee0e5bf1f753",
+      "name_ar": "رفح التاريخية",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-a9ac192e20c3",
+      "name_ar": "بلدة نابلس القديمة",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-a429c345ac25",
+      "name_ar": "جامع النصر",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-b6773e683274",
+      "name_ar": "جبل جرزيم",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-160c60c7b952",
+      "name_ar": "حارة الياسمينة",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-31c7667ff10e",
+      "name_ar": "خان التجار",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-d00341226494",
+      "name_ar": "مقام النبي شعيب",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-fb9a817ec94a",
+      "name_ar": "مقام النبي يوسف (بلاطة)",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-f2a7fbbda5a5",
+      "name_ar": "بلدة جنين القديمة",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-0ae63f2b6a17",
+      "name_ar": "تل جنين",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-fe1e2a1605b5",
+      "name_ar": "قصر الكايد",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-2c1f6b6dbd51",
+      "name_ar": "كنيسة برقين",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-fc3cde18193c",
+      "name_ar": "مقام الشيخ حسن",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-a28891855f38",
+      "name_ar": "بلدة دير الغصون",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-7a4bd929848c",
+      "name_ar": "خربة برج العبد",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-0c0a379f20f7",
+      "name_ar": "خربة جبع",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-be1c2ce90997",
+      "name_ar": "مدينة طولكرم التاريخية",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-95d241c30366",
+      "name_ar": "مقام الشيخ شلتوت",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-02cb039fe1eb",
+      "name_ar": "خربة عزون",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-3ab4c5b64173",
+      "name_ar": "خربة قلقيلية القديمة",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-a33c0a4f64fa",
+      "name_ar": "مقام النبي يامين",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-69f3ad775733",
+      "name_ar": "خربة دير استيا",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-ba91049d51a9",
+      "name_ar": "عيون الماء الأثرية",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-b2a7e03ecda1",
+      "name_ar": "قلعة كفل حارس",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-c6731a990917",
+      "name_ar": "تل الفارعة (المدينة الكنعانية)",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-4ab7d2100cc2",
+      "name_ar": "خربة طوباس القديمة",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-bc56c2f93d66",
+      "name_ar": "عين الفارعة",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-e2a5c15f76f6",
+      "name_ar": "بلدة بيرزيت القديمة",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-014e4c4e4845",
+      "name_ar": "خربة عابود",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-28dd528f5f3a",
+      "name_ar": "دير عمار",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-2a3fdab99250",
+      "name_ar": "عين سامية",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-78a64ec5ef15",
+      "name_ar": "قصر الريان",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-12fc185d4b0b",
+      "name_ar": "مقام النبي صالح",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-cc4465115964",
+      "name_ar": "دير قرنطل",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-b5f00132ee24",
+      "name_ar": "عين السلطان",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-ce23c41d7641",
+      "name_ar": "قبر النبي موسى",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-7551f628d089",
+      "name_ar": "قناة وادي القلط",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    },
+    {
+      "canonical_site_id": "site-c4d8c9fdd1f0",
+      "name_ar": "مقام النبي موسى",
+      "content_text_rights": "PENDING_REWRITE_AND_SOURCE_ATTRIBUTION",
+      "media_asset_rights": "NO_APPROVED_MEDIA_ASSET_IN_CROSS_WAVE_REGISTRY",
+      "map_rights": "PENDING_FILE_LEVEL_REVIEW",
+      "oral_history_consent": "REQUIRED_WHERE_APPLICABLE",
+      "publication_use": "BLOCKED"
+    }
+  ]
+}

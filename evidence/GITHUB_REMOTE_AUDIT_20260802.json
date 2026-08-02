@@ -1,0 +1,36 @@
+{
+  "repository": "firasfanon/Pal_Eyes",
+  "main_head": "c67ff5e28205aac57ff28e8b8120c3bac5de4488",
+  "main_version": "8.0.1+27",
+  "main_baseline": "PAL_EYES_PUBLIC_EXPERIENCE_ATLAS_MUSEUM_MAGAZINE_R8_0_1_20260720",
+  "branches": [
+    "main",
+    "agent/pal-eyes-ci-foundation"
+  ],
+  "open_pull_requests": 0,
+  "write_gateway": "BLOCKED_403_RESOURCE_NOT_ACCESSIBLE_BY_INTEGRATION",
+  "write_probe_mutation": false,
+  "audited_at": "2026-08-02T23:36:30+03:00",
+  "remote_vs_candidate": {
+    "remote_version": "8.0.1+27",
+    "candidate_version": "9.0.1+30",
+    "result": "REMOTE_OUTDATED_PROMOTION_REQUIRED"
+  },
+  "connector_write_attempts": [
+    {
+      "operation": "create_branch",
+      "result": "403_RESOURCE_NOT_ACCESSIBLE_BY_INTEGRATION",
+      "mutation": false
+    },
+    {
+      "operation": "create_tree",
+      "result": "403_RESOURCE_NOT_ACCESSIBLE_BY_INTEGRATION",
+      "mutation": false
+    },
+    {
+      "operation": "create_file_probe",
+      "result": "403_RESOURCE_NOT_ACCESSIBLE_BY_INTEGRATION",
+      "mutation": false
+    }
+  ]
+}

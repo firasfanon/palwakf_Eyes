@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "mode": "PUBLIC_EXPERIENCE_MEDIA_STAGE_BOUNDED_LAYOUT_R8_0_2",
+  "checks": {
+    "media_stage_explicit_finite_height": true,
+    "min_height_only_contract_removed": true,
+    "stack_visual_composition_preserved": true,
+    "desktop_scrollable_regression_test": true,
+    "mobile_390px_regression_test": true,
+    "finite_size_and_exception_assertions": true,
+    "version_8_0_2": true,
+    "target_baseline_registered": true,
+    "database_write_absent": true
+  },
+  "failures": [],
+  "target_baseline": "PAL_EYES_PUBLIC_EXPERIENCE_MEDIA_STAGE_BOUNDED_LAYOUT_R8_0_2_20260802",
+  "parent_baseline": "PAL_EYES_PUBLIC_EXPERIENCE_ATLAS_MUSEUM_MAGAZINE_R8_0_1_20260720",
+  "runtime_failure_closed": "Stack size.isFinite under unbounded vertical constraints",
+  "governance": {
+    "database_write": false,
+    "public_release": "BLOCKED",
+    "production_deployment": "NOT_APPROVED"
+  }
+}

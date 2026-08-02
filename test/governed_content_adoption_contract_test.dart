@@ -22,22 +22,10 @@ void main() {
     );
     expect(governedSourceRegistry.length, 95);
     expect(governedResearchBacklog.length, 211);
-    expect(
-      governedSiteCatalog.every((site) => site.publicationBlocked),
-      isTrue,
-    );
-    expect(
-      governedSiteCatalog.every((site) => site.databaseImportBlocked),
-      isTrue,
-    );
-    expect(
-      governedSiteCatalog.every((site) => !site.mapDisplayApproved),
-      isTrue,
-    );
-    expect(
-      governedSiteCatalog.every((site) => site.approvedMediaCount == 0),
-      isTrue,
-    );
+    expect(governedSiteCatalog.every((site) => site.publicationBlocked), isTrue);
+    expect(governedSiteCatalog.every((site) => site.databaseImportBlocked), isTrue);
+    expect(governedSiteCatalog.every((site) => !site.mapDisplayApproved), isTrue);
+    expect(governedSiteCatalog.every((site) => site.approvedMediaCount == 0), isTrue);
   });
 
   test('limited pages do not expose historical narrative', () {

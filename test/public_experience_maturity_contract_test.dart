@@ -5,7 +5,9 @@ import 'package:pal_eyes/app/router/route_paths.dart';
 
 void main() {
   test('public shell exposes five primary destinations only', () {
-    final shell = File('lib/core/widgets/public_shell.dart').readAsStringSync();
+    final shell = File(
+      'lib/core/widgets/public_shell.dart',
+    ).readAsStringSync();
 
     expect(shell.contains('_primaryItems'), isTrue);
     expect(shell.contains("label: 'الأطلس'"), isTrue);

@@ -37,9 +37,8 @@ void main() {
     );
 
     expect(
-      snapshot.sites.where(
-        (site) => site.coordinateStatus == 'REVIEW_CANDIDATE',
-      ),
+      snapshot.sites
+          .where((site) => site.coordinateStatus == 'REVIEW_CANDIDATE'),
       hasLength(4),
     );
     expect(snapshot.reviewTasks, hasLength(16));
@@ -50,7 +49,13 @@ void main() {
   });
 
   test('backend mode exposes its Arabic operational label', () {
-    expect(OperationalBackendMode.localFallback.labelAr, 'تشغيل محلي مؤقت');
-    expect(OperationalBackendMode.supabase.labelAr, 'Supabase محكوم');
+    expect(
+      OperationalBackendMode.localFallback.labelAr,
+      'تشغيل محلي مؤقت',
+    );
+    expect(
+      OperationalBackendMode.supabase.labelAr,
+      'Supabase محكوم',
+    );
   });
 }

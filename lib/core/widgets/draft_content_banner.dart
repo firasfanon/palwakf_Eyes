@@ -41,9 +41,10 @@ class DraftContentBanner extends StatelessWidget {
               children: <Widget>[
                 Text(
                   title,
-                  style: Theme.of(
-                    context,
-                  ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w900),
+                  style: Theme.of(context)
+                      .textTheme
+                      .titleSmall
+                      ?.copyWith(fontWeight: FontWeight.w900),
                 ),
                 if (!compact) ...<Widget>[
                   const SizedBox(height: 4),

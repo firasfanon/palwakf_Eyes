@@ -35,8 +35,8 @@ class GovernoratesScreen extends ConsumerWidget {
               final columns = constraints.maxWidth >= 1050
                   ? 3
                   : constraints.maxWidth >= 660
-                  ? 2
-                  : 1;
+                      ? 2
+                      : 1;
               const gap = 16.0;
               final width =
                   (constraints.maxWidth - gap * (columns - 1)) / columns;
@@ -67,10 +67,8 @@ class _CoverageSummary extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final siteCount = coverage.fold<int>(
-      0,
-      (total, item) => total + item.siteCount,
-    );
+    final siteCount =
+        coverage.fold<int>(0, (total, item) => total + item.siteCount);
     final expanded = coverage.fold<int>(
       0,
       (total, item) => total + item.expandedNarrativeCount,
@@ -79,7 +77,8 @@ class _CoverageSummary extends StatelessWidget {
       0,
       (total, item) => total + item.mappedSiteCount,
     );
-    final gaps = coverage.where((item) => !item.hasExtractedSites).length;
+    final gaps =
+        coverage.where((item) => !item.hasExtractedSites).length;
 
     final metrics = <(String, String, IconData)>[
       ('المحافظات', '${coverage.length}', Icons.location_city_outlined),
@@ -94,8 +93,8 @@ class _CoverageSummary extends StatelessWidget {
         final width = constraints.maxWidth >= 1000
             ? (constraints.maxWidth - 48) / 5
             : constraints.maxWidth >= 600
-            ? (constraints.maxWidth - 12) / 2
-            : constraints.maxWidth;
+                ? (constraints.maxWidth - 12) / 2
+                : constraints.maxWidth;
         return Wrap(
           spacing: 12,
           runSpacing: 12,
@@ -177,9 +176,10 @@ class _GovernorateCard extends StatelessWidget {
                   Expanded(
                     child: Text(
                       item.nameAr,
-                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                        fontWeight: FontWeight.w900,
-                      ),
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleLarge
+                          ?.copyWith(fontWeight: FontWeight.w900),
                     ),
                   ),
                 ],
@@ -224,8 +224,12 @@ class _GovernorateCard extends StatelessWidget {
                         '${item.expandedNarrativeCount} روايات موسعة',
                       ),
                     ),
-                    Chip(label: Text('${item.mappedSiteCount} بإحداثيات')),
-                    Chip(label: Text('${item.sourceMentionCount} ذكر مصدر')),
+                    Chip(
+                      label: Text('${item.mappedSiteCount} بإحداثيات'),
+                    ),
+                    Chip(
+                      label: Text('${item.sourceMentionCount} ذكر مصدر'),
+                    ),
                   ],
                 ),
             ],

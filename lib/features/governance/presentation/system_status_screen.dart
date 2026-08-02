@@ -21,19 +21,20 @@ class SystemStatusScreen extends ConsumerWidget {
       ),
       ('قاعدة البيانات', 'لا كتابة حية', Icons.storage_outlined),
       ('النشر العام', 'غير مفعل', Icons.public_off_outlined),
-      (
-        'كتالوج المسودة',
-        '79 موقعاً • 47 رواية موسعة',
-        Icons.account_balance_outlined,
-      ),
+      ('كتالوج المسودة', '79 موقعاً • 47 رواية موسعة', Icons.account_balance_outlined),
       ('سجل المصادر', '79 مدخلاً غير متحقق', Icons.library_books_outlined),
       ('الإحداثيات', '3 متاحة • 76 فجوة', Icons.location_off_outlined),
-      ('Baseline', 'Full Draft Catalog R3.0.0', Icons.verified_outlined),
+      (
+        'Baseline',
+        'Full Draft Catalog R3.0.0',
+        Icons.verified_outlined,
+      ),
     ];
 
     return PalEyesPage(
       title: 'حالة النظام',
-      subtitle: 'المعلومات التقنية نُقلت إلى هنا ولم تعد تظهر للزائر العام.',
+      subtitle:
+          'المعلومات التقنية نُقلت إلى هنا ولم تعد تظهر للزائر العام.',
       child: Column(
         children: rows
             .map(

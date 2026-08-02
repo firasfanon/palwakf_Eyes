@@ -5,8 +5,8 @@ import 'package:go_router/go_router.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/app_colors.dart';
+import 'package:pal_eyes/core/widgets/direct_flutter_maturity_r9.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_visual_system.dart';
-import 'package:pal_eyes/core/widgets/public_experience_maturity.dart';
 import 'package:pal_eyes/features/places/application/heritage_sites_provider.dart';
 import 'package:pal_eyes/features/places/domain/heritage_site.dart';
 
@@ -218,11 +218,12 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                         ? Column(
                             mainAxisSize: MainAxisSize.min,
                             children: <Widget>[
-                              const PalEyesPublicStatePanel(
-                                kind: PublicContentStateKind.empty,
-                                title: 'الخريطة العامة تنتظر أول موضع معتمد',
-                                message:
-                                    'المواقع موجودة في الأطلس، لكننا لا نضع نقطة على الخريطة قبل اكتمال التحقق الجغرافي.',
+                              PalEyesMapEmptyExperience(
+                                siteCount: allSites.length,
+                                governorateCount: governorates.length,
+                                onAtlas: () => context.go(RoutePaths.places),
+                                onMethodology: () =>
+                                    context.go(RoutePaths.methodology),
                               ),
                               const SizedBox(height: 12),
                               _GovernorateJourneys(governorates: governorates),

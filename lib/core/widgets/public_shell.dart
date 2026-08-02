@@ -7,7 +7,11 @@ import 'package:pal_eyes/app/theme/app_colors.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_visual_system.dart';
 
 class PublicShell extends ConsumerWidget {
-  const PublicShell({required this.location, required this.child, super.key});
+  const PublicShell({
+    required this.location,
+    required this.child,
+    super.key,
+  });
 
   final String location;
   final Widget child;
@@ -97,7 +101,9 @@ class PublicShell extends ConsumerWidget {
                           value: RoutePaths.workspace,
                           child: ListTile(
                             contentPadding: EdgeInsets.zero,
-                            leading: Icon(Icons.dashboard_customize_outlined),
+                            leading: Icon(
+                              Icons.dashboard_customize_outlined,
+                            ),
                             title: Text('مساحة الفريق'),
                             subtitle: Text('للباحثين والمحررين'),
                           ),
@@ -391,7 +397,9 @@ class _DrawerItem extends StatelessWidget {
       child: ListTile(
         selected: selected,
         selectedTileColor: Theme.of(context).colorScheme.primaryContainer,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+        ),
         leading: Icon(selected ? item.selectedIcon : item.icon),
         title: Text(
           item.label,

@@ -13,3 +13,6 @@ coverage/
 .vscode/
 *.iml
 .DS_Store
+backups/
+evidence/local_r9_0_1_session_reconstruction_finalization_*/
+evidence/BROWSER_UAT_R9_0_1/*.png

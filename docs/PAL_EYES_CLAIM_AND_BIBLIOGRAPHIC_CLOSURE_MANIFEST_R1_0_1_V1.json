@@ -1,0 +1,69 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_CLAIM_AND_BIBLIOGRAPHIC_CLOSURE_ON_R1_0_1_CANDIDATE_V1",
+  "result": "PASS",
+  "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+  "candidate_catalog_sha256": "6a2c70ebb65d23fc7fa38f3189d217cebecb598d1a169ab0466817c24eecdffc",
+  "metrics": {
+    "candidate_sites": 79,
+    "source_ids_reviewed": 76,
+    "unique_source_resources": 73,
+    "source_alias_groups": 3,
+    "bibliographic_identities_closed": 76,
+    "confirmed_claims_reviewed": 96,
+    "confirmed_claim_scopes_closed": 95,
+    "confirmed_claim_scopes_open": 1,
+    "held_claim_groups_carried_forward": 211,
+    "sites_with_closed_confirmed_claims": 60,
+    "sites_with_no_closed_confirmed_claims": 19,
+    "rights_approved_sources": 0,
+    "publication_ready_sites": 0
+  },
+  "quality_checks": {
+    "candidate_record_count_79": true,
+    "source_id_count_76": true,
+    "unique_resource_count_73": true,
+    "alias_group_count_3": true,
+    "bibliographic_identities_closed_76": true,
+    "confirmed_claim_count_96": true,
+    "confirmed_claim_scope_closed_95": true,
+    "confirmed_claim_scope_open_1": true,
+    "problem_claim_exactly_identified": true,
+    "held_claim_count_211": true,
+    "all_claim_site_ids_resolve": true,
+    "all_source_ids_resolve": true,
+    "candidate_catalog_mutation_false": true,
+    "database_write_false": true,
+    "project_source_mutation_false": true,
+    "database_import_blocked": true,
+    "publication_ready_sites_zero": true,
+    "publication_blocked": true
+  },
+  "artifacts": [
+    {
+      "filename": "PAL_EYES_CLAIM_AND_BIBLIOGRAPHIC_CLOSURE_REPORT_R1_0_1_V1.md",
+      "sha256": "190dd81c1104ffe5075fd25d5490abcddaa1bb77fc526935a47f34209a6e9641",
+      "size_bytes": 4845
+    },
+    {
+      "filename": "PAL_EYES_BIBLIOGRAPHIC_SOURCE_CLOSURE_REGISTRY_R1_0_1_V1.json",
+      "sha256": "9ea6678fc504f76a42c038ef5b37b6a8a8472639e8fd346eb0ec573b09fdf122",
+      "size_bytes": 119391
+    },
+    {
+      "filename": "PAL_EYES_CONFIRMED_CLAIM_SCOPE_CLOSURE_REGISTRY_R1_0_1_V1.json",
+      "sha256": "fc67ebff934490c5b84a6b0d43f9c600d3cb42cd917340aac8e37ae3d45e7bd7",
+      "size_bytes": 161218
+    },
+    {
+      "filename": "PAL_EYES_HELD_CLAIM_RESEARCH_QUEUE_R1_0_1_V2.json",
+      "sha256": "6d07c515f132e603735bb7110d56a192c0eec1b56ca691b0149eb880b0157925",
+      "size_bytes": 227041
+    },
+    {
+      "filename": "PAL_EYES_CANDIDATE_CLAIM_EVIDENCE_OVERLAY_R1_0_1_V1.json",
+      "sha256": "8edb9e5b29978432d228813b3dc96e3909ab1febe2f4fa9c2bda1afd361963be",
+      "size_bytes": 57504
+    }
+  ]
+}

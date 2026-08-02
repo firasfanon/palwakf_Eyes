@@ -17,6 +17,7 @@ void main() {
     );
   });
 
+
   test('every related story place resolves in the current atlas', () {
     final atlasSlugs = dualNarrativeSiteCatalog
         .map((site) => site.slug)

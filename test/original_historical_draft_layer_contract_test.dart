@@ -10,7 +10,9 @@ void main() {
       hasLength(ContentCatalogMetrics.originalDraftLayerSiteCount),
     );
     expect(
-      dualNarrativeSiteCatalog.every((site) => site.hasOriginalHistoricalDraft),
+      dualNarrativeSiteCatalog.every(
+        (site) => site.hasOriginalHistoricalDraft,
+      ),
       isTrue,
     );
   });

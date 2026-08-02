@@ -12,19 +12,19 @@ class AppEnvironment {
   });
 
   const AppEnvironment.fromCompileTime()
-    : supabaseUrl = const String.fromEnvironment('SUPABASE_URL'),
-      supabasePublishableKey = const String.fromEnvironment(
-        'SUPABASE_PUBLISHABLE_KEY',
-      ),
-      environmentName = const String.fromEnvironment(
-        'PAL_EYES_ENV',
-        defaultValue: 'local',
-      );
+      : supabaseUrl = const String.fromEnvironment('SUPABASE_URL'),
+        supabasePublishableKey = const String.fromEnvironment(
+          'SUPABASE_PUBLISHABLE_KEY',
+        ),
+        environmentName = const String.fromEnvironment(
+          'PAL_EYES_ENV',
+          defaultValue: 'local',
+        );
 
   const AppEnvironment.local()
-    : supabaseUrl = '',
-      supabasePublishableKey = '',
-      environmentName = 'local';
+      : supabaseUrl = '',
+        supabasePublishableKey = '',
+        environmentName = 'local';
 
   final String supabaseUrl;
   final String supabasePublishableKey;

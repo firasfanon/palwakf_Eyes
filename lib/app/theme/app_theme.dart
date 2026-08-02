@@ -131,6 +131,9 @@ abstract final class AppTheme {
       colorScheme: scheme,
       textTheme: textTheme,
       visualDensity: VisualDensity.standard,
+      materialTapTargetSize: MaterialTapTargetSize.padded,
+      focusColor: AppColors.heritageGold.withValues(alpha: 0.24),
+      hoverColor: AppColors.heritageGold.withValues(alpha: 0.08),
       splashFactory: InkSparkle.splashFactory,
       dividerTheme: DividerThemeData(
         color: scheme.outlineVariant.withValues(alpha: 0.55),

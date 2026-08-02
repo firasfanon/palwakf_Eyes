@@ -33,9 +33,7 @@ class _SiteEditorScreenState extends ConsumerState<SiteEditorScreen> {
   Future<void> _save(OperationalSiteRecord site) async {
     setState(() => _saving = true);
     try {
-      await ref
-          .read(operationalWorkspaceStoreProvider)
-          .saveSiteDraft(
+      await ref.read(operationalWorkspaceStoreProvider).saveSiteDraft(
             siteId: site.id,
             editorialDraft: _draftText ?? site.editorialDraft,
           );
@@ -51,9 +49,9 @@ class _SiteEditorScreenState extends ConsumerState<SiteEditorScreen> {
     } on Object catch (error) {
       if (mounted) {
         setState(() => _saving = false);
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('تعذر الحفظ: $error')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('تعذر الحفظ: $error')),
+        );
       }
     }
   }
@@ -219,9 +217,10 @@ class _EditorStep extends StatelessWidget {
         children: <Widget>[
           Text(
             site.nameAr,
-            style: Theme.of(
-              context,
-            ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w900),
+            style: Theme.of(context)
+                .textTheme
+                .titleLarge
+                ?.copyWith(fontWeight: FontWeight.w900),
           ),
           const SizedBox(height: 12),
           const PalEyesNotice(
@@ -230,7 +229,9 @@ class _EditorStep extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           Text(
-            draftValue.isEmpty ? 'لا توجد رواية محكومة بعد.' : draftValue,
+            draftValue.isEmpty
+                ? 'لا توجد رواية محكومة بعد.'
+                : draftValue,
             style: const TextStyle(height: 1.7),
           ),
         ],
@@ -243,9 +244,10 @@ class _EditorStep extends StatelessWidget {
         children: <Widget>[
           Text(
             'المادة التاريخية الأصلية',
-            style: Theme.of(
-              context,
-            ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w900),
+            style: Theme.of(context)
+                .textTheme
+                .titleLarge
+                ?.copyWith(fontWeight: FontWeight.w900),
           ),
           const SizedBox(height: 12),
           PalEyesNotice(
@@ -263,9 +265,10 @@ class _EditorStep extends StatelessWidget {
         children: <Widget>[
           Text(
             'الرواية المحكومة',
-            style: Theme.of(
-              context,
-            ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w900),
+            style: Theme.of(context)
+                .textTheme
+                .titleLarge
+                ?.copyWith(fontWeight: FontWeight.w900),
           ),
           const SizedBox(height: 14),
           TextFormField(
@@ -283,15 +286,12 @@ class _EditorStep extends StatelessWidget {
     }
 
     final details = switch (index) {
-      0 =>
-        'الاسم: ${site.nameAr}\nالنوع: ${site.siteTypeAr}\nالحالة: ${site.workflowStatus}',
-      1 =>
-        'المحافظة: ${site.governorateAr}\nالتجمع: ${site.localityAr}\nالإحداثيات: ${site.coordinateStatus}',
+      0 => 'الاسم: ${site.nameAr}\nالنوع: ${site.siteTypeAr}\nالحالة: ${site.workflowStatus}',
+      1 => 'المحافظة: ${site.governorateAr}\nالتجمع: ${site.localityAr}\nالإحداثيات: ${site.coordinateStatus}',
       4 => 'عدد المصادر المرتبطة: ${site.sourceCount}',
       5 => 'الخط الزمني يظل مسودة حتى ربط الأحداث بالمصادر.',
       6 => 'الوسائط العامة المعتمدة: 0. الحقوق محجوبة افتراضياً.',
-      7 =>
-        'الادعاءات المعلقة: ${site.heldClaimCount}\nمرحلة الصفحة: ${site.pageCategory}',
+      7 => 'الادعاءات المعلقة: ${site.heldClaimCount}\nمرحلة الصفحة: ${site.pageCategory}',
       _ => '',
     };
 
@@ -300,9 +300,10 @@ class _EditorStep extends StatelessWidget {
       children: <Widget>[
         Text(
           _steps[index].$1,
-          style: Theme.of(
-            context,
-          ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w900),
+          style: Theme.of(context)
+              .textTheme
+              .titleLarge
+              ?.copyWith(fontWeight: FontWeight.w900),
         ),
         const SizedBox(height: 14),
         SelectableText(details, style: const TextStyle(height: 1.8)),

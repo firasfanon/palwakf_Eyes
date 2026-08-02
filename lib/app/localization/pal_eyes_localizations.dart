@@ -68,9 +68,10 @@ class _PalEyesLocalizationsDelegate
   const _PalEyesLocalizationsDelegate();
 
   @override
-  bool isSupported(Locale locale) => PalEyesLocalizations.supportedLocales.any(
-    (supported) => supported.languageCode == locale.languageCode,
-  );
+  bool isSupported(Locale locale) =>
+      PalEyesLocalizations.supportedLocales.any(
+        (supported) => supported.languageCode == locale.languageCode,
+      );
 
   @override
   Future<PalEyesLocalizations> load(Locale locale) {

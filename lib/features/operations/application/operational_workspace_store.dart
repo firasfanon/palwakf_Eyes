@@ -39,7 +39,9 @@ class OperationalWorkspaceStore {
     return snapshot;
   }
 
-  Future<void> _run(Future<OperationalSnapshot> Function() operation) async {
+  Future<void> _run(
+    Future<OperationalSnapshot> Function() operation,
+  ) async {
     final snapshot = await operation();
     _snapshot = snapshot;
     _controller.add(snapshot);
@@ -62,7 +64,10 @@ class OperationalWorkspaceStore {
 
   Future<void> submitSiteForReview(String siteId) {
     return _run(
-      () => _backend.submitSiteForReview(actor: actor, siteId: siteId),
+      () => _backend.submitSiteForReview(
+        actor: actor,
+        siteId: siteId,
+      ),
     );
   }
 

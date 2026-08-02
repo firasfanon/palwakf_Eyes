@@ -44,7 +44,12 @@ class PalEyesPage extends StatelessWidget {
             child: ConstrainedBox(
               constraints: BoxConstraints(maxWidth: maxWidth),
               child: Padding(
-                padding: EdgeInsets.fromLTRB(horizontal, 28, horizontal, 64),
+                padding: EdgeInsets.fromLTRB(
+                  horizontal,
+                  28,
+                  horizontal,
+                  64,
+                ),
                 child: child,
               ),
             ),

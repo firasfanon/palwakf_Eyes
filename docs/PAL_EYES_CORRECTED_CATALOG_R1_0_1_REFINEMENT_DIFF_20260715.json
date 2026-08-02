@@ -1,0 +1,442 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_CORRECTED_CATALOG_FINAL_HUMAN_REVIEW_AND_R1_0_1_REFINEMENT_V1",
+  "source_candidate": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_0_20260715.json",
+  "target_candidate": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+  "apply_status": "NOT_APPLIED",
+  "counts": {
+    "findings_resolved": 4,
+    "refinement_diff_entries": 37,
+    "affected_records": 20,
+    "cluster_records_hardened": 13,
+    "parent_records_with_reverse_constituents": 7
+  },
+  "diffs": [
+    {
+      "diff_id": "R101-DIFF-001",
+      "canonical_site_id": "site-f60be7cd7d5e",
+      "finding_id": "FHR-001",
+      "change_type": "UPDATE",
+      "field": "name_ar",
+      "old_value": "بيت أمر (خربة النبي متى)",
+      "new_value": "بيت أمر",
+      "reason": "Reflect the approved separation of Beit Ummar from Khirbet/Maqam Nabi Matta.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-002",
+      "canonical_site_id": "site-f60be7cd7d5e",
+      "finding_id": "FHR-001",
+      "change_type": "ADD",
+      "field": "legacy_name_ar",
+      "old_value": null,
+      "new_value": [
+        "بيت أمر (خربة النبي متى)"
+      ],
+      "reason": "Preserve the prior composite label for audit and migration review.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-003",
+      "canonical_site_id": "site-21150eefdea6",
+      "finding_id": "FHR-002",
+      "change_type": "UPDATE",
+      "field": "name_ar",
+      "old_value": "تل العجول (مدينة غزة القديمة)",
+      "new_value": "تل العجول",
+      "reason": "Reflect the approved separation of Tell el-Ajjul from the Historic Centre of Gaza.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-004",
+      "canonical_site_id": "site-21150eefdea6",
+      "finding_id": "FHR-002",
+      "change_type": "ADD",
+      "field": "legacy_name_ar",
+      "old_value": null,
+      "new_value": [
+        "تل العجول (مدينة غزة القديمة)"
+      ],
+      "reason": "Preserve the former conflated label for audit and migration review.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-005",
+      "canonical_site_id": "site-f7553f79288f",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "candidate_map_representation",
+      "old_value": null,
+      "new_value": "cluster_or_area_geometry_pending",
+      "reason": "Prevent governed cluster records from falling back to a misleading point marker.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-006",
+      "canonical_site_id": "site-f7553f79288f",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "standalone_point_marker",
+      "old_value": null,
+      "new_value": false,
+      "reason": "Cluster records require area/constituent representation rather than a standalone point.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-007",
+      "canonical_site_id": "site-e2a5c15f76f6",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "candidate_map_representation",
+      "old_value": null,
+      "new_value": "cluster_or_area_geometry_pending",
+      "reason": "Prevent governed cluster records from falling back to a misleading point marker.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-008",
+      "canonical_site_id": "site-e2a5c15f76f6",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "standalone_point_marker",
+      "old_value": null,
+      "new_value": false,
+      "reason": "Cluster records require area/constituent representation rather than a standalone point.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-009",
+      "canonical_site_id": "site-014e4c4e4845",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "candidate_map_representation",
+      "old_value": null,
+      "new_value": "cluster_or_area_geometry_pending",
+      "reason": "Prevent governed cluster records from falling back to a misleading point marker.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-010",
+      "canonical_site_id": "site-014e4c4e4845",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "standalone_point_marker",
+      "old_value": null,
+      "new_value": false,
+      "reason": "Cluster records require area/constituent representation rather than a standalone point.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-011",
+      "canonical_site_id": "site-28dd528f5f3a",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "candidate_map_representation",
+      "old_value": null,
+      "new_value": "cluster_or_area_geometry_pending",
+      "reason": "Prevent governed cluster records from falling back to a misleading point marker.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-012",
+      "canonical_site_id": "site-28dd528f5f3a",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "standalone_point_marker",
+      "old_value": null,
+      "new_value": false,
+      "reason": "Cluster records require area/constituent representation rather than a standalone point.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-013",
+      "canonical_site_id": "site-2a3fdab99250",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "candidate_map_representation",
+      "old_value": null,
+      "new_value": "cluster_or_area_geometry_pending",
+      "reason": "Prevent governed cluster records from falling back to a misleading point marker.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-014",
+      "canonical_site_id": "site-2a3fdab99250",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "standalone_point_marker",
+      "old_value": null,
+      "new_value": false,
+      "reason": "Cluster records require area/constituent representation rather than a standalone point.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-015",
+      "canonical_site_id": "site-a9ac192e20c3",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "candidate_map_representation",
+      "old_value": null,
+      "new_value": "cluster_or_area_geometry_pending",
+      "reason": "Prevent governed cluster records from falling back to a misleading point marker.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-016",
+      "canonical_site_id": "site-a9ac192e20c3",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "standalone_point_marker",
+      "old_value": null,
+      "new_value": false,
+      "reason": "Cluster records require area/constituent representation rather than a standalone point.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-017",
+      "canonical_site_id": "site-f2a7fbbda5a5",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "candidate_map_representation",
+      "old_value": null,
+      "new_value": "cluster_or_area_geometry_pending",
+      "reason": "Prevent governed cluster records from falling back to a misleading point marker.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-018",
+      "canonical_site_id": "site-f2a7fbbda5a5",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "standalone_point_marker",
+      "old_value": null,
+      "new_value": false,
+      "reason": "Cluster records require area/constituent representation rather than a standalone point.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-019",
+      "canonical_site_id": "site-be1c2ce90997",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "candidate_map_representation",
+      "old_value": null,
+      "new_value": "cluster_or_area_geometry_pending",
+      "reason": "Prevent governed cluster records from falling back to a misleading point marker.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-020",
+      "canonical_site_id": "site-be1c2ce90997",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "standalone_point_marker",
+      "old_value": null,
+      "new_value": false,
+      "reason": "Cluster records require area/constituent representation rather than a standalone point.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-021",
+      "canonical_site_id": "site-69f3ad775733",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "candidate_map_representation",
+      "old_value": null,
+      "new_value": "cluster_or_area_geometry_pending",
+      "reason": "Prevent governed cluster records from falling back to a misleading point marker.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-022",
+      "canonical_site_id": "site-69f3ad775733",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "standalone_point_marker",
+      "old_value": null,
+      "new_value": false,
+      "reason": "Cluster records require area/constituent representation rather than a standalone point.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-023",
+      "canonical_site_id": "site-ba91049d51a9",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "candidate_map_representation",
+      "old_value": null,
+      "new_value": "cluster_or_area_geometry_pending",
+      "reason": "Prevent governed cluster records from falling back to a misleading point marker.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-024",
+      "canonical_site_id": "site-ba91049d51a9",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "standalone_point_marker",
+      "old_value": null,
+      "new_value": false,
+      "reason": "Cluster records require area/constituent representation rather than a standalone point.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-025",
+      "canonical_site_id": "site-015f495c4236",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "candidate_map_representation",
+      "old_value": null,
+      "new_value": "cluster_or_area_geometry_pending",
+      "reason": "Prevent governed cluster records from falling back to a misleading point marker.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-026",
+      "canonical_site_id": "site-015f495c4236",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "standalone_point_marker",
+      "old_value": null,
+      "new_value": false,
+      "reason": "Cluster records require area/constituent representation rather than a standalone point.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-027",
+      "canonical_site_id": "site-0a78d22c1a69",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "candidate_map_representation",
+      "old_value": null,
+      "new_value": "cluster_or_area_geometry_pending",
+      "reason": "Prevent governed cluster records from falling back to a misleading point marker.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-028",
+      "canonical_site_id": "site-0a78d22c1a69",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "standalone_point_marker",
+      "old_value": null,
+      "new_value": false,
+      "reason": "Cluster records require area/constituent representation rather than a standalone point.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-029",
+      "canonical_site_id": "site-ee0e5bf1f753",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "candidate_map_representation",
+      "old_value": null,
+      "new_value": "cluster_or_area_geometry_pending",
+      "reason": "Prevent governed cluster records from falling back to a misleading point marker.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-030",
+      "canonical_site_id": "site-ee0e5bf1f753",
+      "finding_id": "FHR-003",
+      "change_type": "ADD",
+      "field": "standalone_point_marker",
+      "old_value": null,
+      "new_value": false,
+      "reason": "Cluster records require area/constituent representation rather than a standalone point.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-031",
+      "canonical_site_id": "site-0a78d22c1a69",
+      "finding_id": "FHR-004",
+      "change_type": "ADD",
+      "field": "candidate_constituent_site_ids",
+      "old_value": null,
+      "new_value": [
+        "site-5e98cf44d976"
+      ],
+      "reason": "Expose reverse constituent navigation corresponding to the approved relation registry.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-032",
+      "canonical_site_id": "site-37c8be50ce73",
+      "finding_id": "FHR-004",
+      "change_type": "ADD",
+      "field": "candidate_constituent_site_ids",
+      "old_value": null,
+      "new_value": [
+        "site-63fe9eba7871"
+      ],
+      "reason": "Expose reverse constituent navigation corresponding to the approved relation registry.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-033",
+      "canonical_site_id": "site-6f6afe87f969",
+      "finding_id": "FHR-004",
+      "change_type": "ADD",
+      "field": "candidate_constituent_site_ids",
+      "old_value": null,
+      "new_value": [
+        "site-fe1e2a1605b5"
+      ],
+      "reason": "Expose reverse constituent navigation corresponding to the approved relation registry.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-034",
+      "canonical_site_id": "site-899e38be070d",
+      "finding_id": "FHR-004",
+      "change_type": "ADD",
+      "field": "candidate_constituent_site_ids",
+      "old_value": null,
+      "new_value": [
+        "site-0dc57168d963"
+      ],
+      "reason": "Expose reverse constituent navigation corresponding to the approved relation registry.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-035",
+      "canonical_site_id": "site-a86fc049d470",
+      "finding_id": "FHR-004",
+      "change_type": "ADD",
+      "field": "candidate_constituent_site_ids",
+      "old_value": null,
+      "new_value": [
+        "site-b5f00132ee24"
+      ],
+      "reason": "Expose reverse constituent navigation corresponding to the approved relation registry.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-036",
+      "canonical_site_id": "site-a9ac192e20c3",
+      "finding_id": "FHR-004",
+      "change_type": "ADD",
+      "field": "candidate_constituent_site_ids",
+      "old_value": null,
+      "new_value": [
+        "site-160c60c7b952",
+        "site-31c7667ff10e"
+      ],
+      "reason": "Expose reverse constituent navigation corresponding to the approved relation registry.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    },
+    {
+      "diff_id": "R101-DIFF-037",
+      "canonical_site_id": "site-c4d8c9fdd1f0",
+      "finding_id": "FHR-004",
+      "change_type": "ADD",
+      "field": "candidate_constituent_site_ids",
+      "old_value": null,
+      "new_value": [
+        "site-ce23c41d7641"
+      ],
+      "reason": "Expose reverse constituent navigation corresponding to the approved relation registry.",
+      "apply_status": "CANDIDATE_ONLY_NOT_APPLIED"
+    }
+  ]
+}

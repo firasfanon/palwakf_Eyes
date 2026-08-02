@@ -1,0 +1,53 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_CORRECTED_CATALOG_FINAL_HUMAN_REVIEW_AND_R1_0_1_REFINEMENT_V1",
+  "result": "PASS",
+  "candidate": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+  "counts": {
+    "records": 79,
+    "decisions_reviewed": 33,
+    "relations_reviewed": 9,
+    "findings_resolved": 4,
+    "refinement_diff_entries": 37,
+    "cluster_records_hardened": 13,
+    "parent_records_with_reverse_constituents": 7
+  },
+  "quality_checks": {
+    "candidate_record_count_79": true,
+    "all_33_decisions_pass": true,
+    "all_9_relations_resolve": true,
+    "canonical_ids_preserved": true,
+    "canonical_slugs_preserved": true,
+    "split_display_names_corrected": true,
+    "cluster_point_markers_disabled": true,
+    "reverse_constituent_links_present": true,
+    "auto_apply_false": true,
+    "canonical_catalog_mutation_false": true,
+    "database_write_false": true,
+    "project_source_mutation_false": true,
+    "database_import_blocked": true,
+    "publication_blocked": true
+  },
+  "artifacts": [
+    {
+      "filename": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715.json",
+      "sha256": "6a2c70ebb65d23fc7fa38f3189d217cebecb598d1a169ab0466817c24eecdffc",
+      "size_bytes": 304413
+    },
+    {
+      "filename": "PAL_EYES_CORRECTED_CATALOG_FINAL_HUMAN_REVIEW_R1_0_1_20260715.json",
+      "sha256": "0f54bcf60958758d7e971ddb6748902e0acf37b49f4eed73ce6f4f5d2a7c7f82",
+      "size_bytes": 39553
+    },
+    {
+      "filename": "PAL_EYES_CORRECTED_CATALOG_FINAL_HUMAN_REVIEW_R1_0_1_20260715.md",
+      "sha256": "937c49492f633cfd84e5aee7549c530208b8e779e5f477484fbefcba48a57e86",
+      "size_bytes": 3123
+    },
+    {
+      "filename": "PAL_EYES_CORRECTED_CATALOG_R1_0_1_REFINEMENT_DIFF_20260715.json",
+      "sha256": "a989df7dcfd8b23767bcc30b59510e6845283c4c352c8ee2c103f649d75008bb",
+      "size_bytes": 16325
+    }
+  ]
+}

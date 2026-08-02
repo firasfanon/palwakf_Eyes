@@ -63,8 +63,8 @@ class _TodayData extends StatelessWidget {
             final width = constraints.maxWidth >= 900
                 ? (constraints.maxWidth - 36) / 4
                 : constraints.maxWidth >= 560
-                ? (constraints.maxWidth - 12) / 2
-                : constraints.maxWidth;
+                    ? (constraints.maxWidth - 12) / 2
+                    : constraints.maxWidth;
             return Wrap(
               spacing: 12,
               runSpacing: 12,

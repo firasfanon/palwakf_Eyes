@@ -13,17 +13,15 @@ class ReviewQueueScreen extends ConsumerWidget {
     OperationalReviewTask task,
     String decision,
   ) async {
-    await ref
-        .read(operationalWorkspaceStoreProvider)
-        .decideReviewTask(
+    await ref.read(operationalWorkspaceStoreProvider).decideReviewTask(
           taskId: task.id,
           decision: decision,
           note: 'قرار من واجهة المراجعة التشغيلية.',
         );
     if (context.mounted) {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text('تم تسجيل القرار: $decision')));
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('تم تسجيل القرار: $decision')),
+      );
     }
   }
 
@@ -53,57 +51,62 @@ class ReviewQueueScreen extends ConsumerWidget {
           }
 
           return Column(
-            children: tasks
-                .map((task) {
-                  final closed =
-                      task.status != 'OPEN' && task.status != 'IN_REVIEW';
-                  return Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12),
-                      child: Column(
-                        children: <Widget>[
-                          PalEyesWorkflowStatus(
-                            label: task.title,
-                            status:
-                                '${task.reviewType} • ${task.priority} • ${task.status} • ${task.assigneeLabel}',
-                            icon: task.reviewType == 'GIS'
-                                ? Icons.map_outlined
-                                : Icons.fact_check_outlined,
-                          ),
-                          if (!closed)
-                            Align(
-                              alignment: AlignmentDirectional.centerEnd,
-                              child: Wrap(
-                                spacing: 8,
-                                children: <Widget>[
-                                  TextButton(
-                                    onPressed: () => _decide(
-                                      context,
-                                      ref,
-                                      task,
-                                      'RETURN_FOR_REVISION',
-                                    ),
-                                    child: const Text('إعادة للتعديل'),
-                                  ),
-                                  TextButton(
-                                    onPressed: () =>
-                                        _decide(context, ref, task, 'HOLD'),
-                                    child: const Text('تعليق'),
-                                  ),
-                                  FilledButton(
-                                    onPressed: () =>
-                                        _decide(context, ref, task, 'ACCEPT'),
-                                    child: const Text('قبول'),
-                                  ),
-                                ],
-                              ),
-                            ),
-                        ],
+            children: tasks.map((task) {
+              final closed = task.status != 'OPEN' && task.status != 'IN_REVIEW';
+              return Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(12),
+                  child: Column(
+                    children: <Widget>[
+                      PalEyesWorkflowStatus(
+                        label: task.title,
+                        status:
+                            '${task.reviewType} • ${task.priority} • ${task.status} • ${task.assigneeLabel}',
+                        icon: task.reviewType == 'GIS'
+                            ? Icons.map_outlined
+                            : Icons.fact_check_outlined,
                       ),
-                    ),
-                  );
-                })
-                .toList(growable: false),
+                      if (!closed)
+                        Align(
+                          alignment: AlignmentDirectional.centerEnd,
+                          child: Wrap(
+                            spacing: 8,
+                            children: <Widget>[
+                              TextButton(
+                                onPressed: () => _decide(
+                                  context,
+                                  ref,
+                                  task,
+                                  'RETURN_FOR_REVISION',
+                                ),
+                                child: const Text('إعادة للتعديل'),
+                              ),
+                              TextButton(
+                                onPressed: () => _decide(
+                                  context,
+                                  ref,
+                                  task,
+                                  'HOLD',
+                                ),
+                                child: const Text('تعليق'),
+                              ),
+                              FilledButton(
+                                onPressed: () => _decide(
+                                  context,
+                                  ref,
+                                  task,
+                                  'ACCEPT',
+                                ),
+                                child: const Text('قبول'),
+                              ),
+                            ],
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
+              );
+            }).toList(growable: false),
           );
         },
       ),

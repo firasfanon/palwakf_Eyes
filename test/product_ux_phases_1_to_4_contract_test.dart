@@ -40,10 +40,7 @@ void main() {
     ).readAsStringSync();
 
     expect(source.contains('bool get ready'), isTrue);
-    expect(
-      source.contains('onPressed: ready ? _createCandidate : null'),
-      isTrue,
-    );
+    expect(source.contains('onPressed: ready ? _createCandidate : null'), isTrue);
     expect(source.contains('بوابة النشر مغلقة'), isTrue);
   });
 
