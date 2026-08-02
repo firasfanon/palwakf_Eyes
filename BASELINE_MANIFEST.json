@@ -5,7 +5,7 @@
   "version": "9.0.1",
   "build": 30,
   "date": "2026-08-02",
-  "generated_at": "2026-08-03T00:38:14+03:00",
+  "generated_at": "2026-08-03T01:05:08+03:00",
   "status": "ACCEPTED_LOCAL_BASELINE_AFTER_FORMAT_REPLAY",
   "reconstruction_mode": "SESSION_SOURCE_REPLAY",
   "manifest_self_excluded": true,
@@ -43,8 +43,8 @@
     },
     {
       "path": ".github/workflows/r9_0_1_reconstructed_candidate_validation.yml",
-      "sha256": "ba8408a9a7ff7bd0fd6e953425ca51397063ae8f8747c9937fd2534d2cba8ed6",
-      "size_bytes": 1826
+      "sha256": "2f7c4045e54c25bef6d34753f57d2bef5581e96b696ad9ba114614a4fab488f3",
+      "size_bytes": 1880
     },
     {
       "path": ".gitignore",
@@ -52,9 +52,54 @@
       "size_bytes": 266
     },
     {
+      "path": "Install-PalEyesDevelopmentBaseline.ps1",
+      "sha256": "98b6dcd50881b3cb65e0bc70ade05c4431b03ce5e93dc1cf41f7402fb5db3580",
+      "size_bytes": 5701
+    },
+    {
+      "path": "PAL_EYES_BASELINE_ID.txt",
+      "sha256": "c4fe959e5aa74b379c0d5a58d2e0d46645de4fd4a956e54e8315c3af003464d1",
+      "size_bytes": 2135
+    },
+    {
+      "path": "PAL_EYES_PROJECT_COMPREHENSIVE_GUIDE.md",
+      "sha256": "7f1d9e4127254123c04a5f3b69d9efe15170287e1972052ddda7647419abd909",
+      "size_bytes": 27245
+    },
+    {
+      "path": "README.md",
+      "sha256": "672af069cc47d72df53a2b6df730f52bce56b7b589052d81d8a7617468db8fe9",
+      "size_bytes": 2475
+    },
+    {
+      "path": "README_UPDATES_ONLY.md",
+      "sha256": "7d8fa53a06d6ee60fad3fa09f45b076ac85b4fa267c9222f3046238d121a7dd2",
+      "size_bytes": 327
+    },
+    {
+      "path": "UPDATES_ONLY_MANIFEST.json",
+      "sha256": "bb3e0de8b7fa74ab7da92e33f851965b756f5d633fb6b00c02c34f1b59e053d0",
+      "size_bytes": 3359
+    },
+    {
       "path": "analysis_options.yaml",
       "sha256": "995aed617107339c24be08aa1511eb9fe620e7b47deece68f480d55fb7f089d3",
       "size_bytes": 389
+    },
+    {
+      "path": "content_seed/PAL_EYES_DRAFT_SITE_CATALOG_V1.json",
+      "sha256": "3879879df88397360b2adb73c896bbc1dea2b87b2fac5a8b4b4098fe4d16ba85",
+      "size_bytes": 242526
+    },
+    {
+      "path": "content_seed/PAL_EYES_DRAFT_SOURCE_REGISTRY_V1.json",
+      "sha256": "91198da0e3717cfeaf65acc4bc6b9cb853bde847d9c0c8193577269471036418",
+      "size_bytes": 52643
+    },
+    {
+      "path": "content_seed/PAL_EYES_GOVERNORATE_COVERAGE_V1.json",
+      "sha256": "191b80f9e169e286337c95b4a8aaf13bc202a453a402d27f1dbcb35bfd05d938",
+      "size_bytes": 6969
     },
     {
       "path": "content_seed/governed/PAL_EYES_COORDINATE_CANDIDATE_REGISTRY_V1.json",
@@ -90,21 +135,6 @@
       "path": "content_seed/original/PAL_EYES_ORIGINAL_HISTORICAL_DRAFT_SOURCE_1F82A6C9.txt",
       "sha256": "1f82a6c9941063436b40d13e258f7d03b1b3b00ef209494fe7032ee756673f6d",
       "size_bytes": 440042
-    },
-    {
-      "path": "content_seed/PAL_EYES_DRAFT_SITE_CATALOG_V1.json",
-      "sha256": "3879879df88397360b2adb73c896bbc1dea2b87b2fac5a8b4b4098fe4d16ba85",
-      "size_bytes": 242526
-    },
-    {
-      "path": "content_seed/PAL_EYES_DRAFT_SOURCE_REGISTRY_V1.json",
-      "sha256": "91198da0e3717cfeaf65acc4bc6b9cb853bde847d9c0c8193577269471036418",
-      "size_bytes": 52643
-    },
-    {
-      "path": "content_seed/PAL_EYES_GOVERNORATE_COVERAGE_V1.json",
-      "sha256": "191b80f9e169e286337c95b4a8aaf13bc202a453a402d27f1dbcb35bfd05d938",
-      "size_bytes": 6969
     },
     {
       "path": "data/governance/PAL_EYES_MASTER_SITE_STATUS_REGISTRY_CURRENT.json",
@@ -302,11 +332,6 @@
       "size_bytes": 1319
     },
     {
-      "path": "docs/architecture/PAL_EYES_OPERATIONAL_BACKEND_AND_WORKFLOW_ARCHITECTURE_R7_0_0.md",
-      "sha256": "446edd4523e9c7ce2f6e1707b8c9cdacf70f2c1b086b2b0dadac575a6420e73f",
-      "size_bytes": 1716
-    },
-    {
       "path": "docs/CHANGELOG.md",
       "sha256": "377f1ef59d8fea4ec58fd0c7fc27dcd57cc91a4f1ac80099c5dd4b50089d6daa",
       "size_bytes": 20954
@@ -325,26 +350,6 @@
       "path": "docs/GITHUB_TWO_DEVICE_SYNC_POLICY.md",
       "sha256": "3dd881781b2e70c5363a959f387c4648b504666b207109b4bdc06f09d34025f0",
       "size_bytes": 973
-    },
-    {
-      "path": "docs/governance/PAL_EYES_CONTENT_ADOPTION_DECISION_CURRENT.md",
-      "sha256": "1b5cd9a599669ff50e28276269b8ef24bf16b84007943d6a2922e2170951f432",
-      "size_bytes": 2771
-    },
-    {
-      "path": "docs/governance/PAL_EYES_CONTINUOUS_UPDATE_CONTRACT.md",
-      "sha256": "439c68315e298040f3f8e1d66abb374b94ffd4bf2fc98e5c532145fab349c815",
-      "size_bytes": 2346
-    },
-    {
-      "path": "docs/governance/PAL_EYES_OPERATIONAL_ROLE_MATRIX_R7_0_0.md",
-      "sha256": "7aa198757cc41cef744855b3eecb06ac50855019f9a94ef1fb332fca706723c5",
-      "size_bytes": 886
-    },
-    {
-      "path": "docs/governance/PAL_EYES_PROJECT_COMPREHENSIVE_GUIDE_CURRENT.md",
-      "sha256": "d3610720610621b7e995ad00ff15548d3850dbcdf8f29cfa6224bc1359e23d03",
-      "size_bytes": 7205
     },
     {
       "path": "docs/PAL_EYES_BIBLIOGRAPHIC_PAGE_INSPECTION_QUEUE_V1.json",
@@ -505,36 +510,6 @@
       "path": "docs/PAL_EYES_RIGHTS_REVIEW_QUEUE_V1.json",
       "sha256": "68c5434c52e36f54cb3a9c318375d460dc184d007c859d7f2069f406d4c9d14d",
       "size_bytes": 32071
-    },
-    {
-      "path": "docs/planning/PAL_EYES_CHANGELOG_CURRENT.md",
-      "sha256": "aa398d6290646481c873a447afae189169fc7b21e066de0ac5e5b92c556a816f",
-      "size_bytes": 4323
-    },
-    {
-      "path": "docs/planning/PAL_EYES_PRODUCT_UX_PHASES_1_TO_4_MASTER_PLAN.md",
-      "sha256": "6404c8e09fd6646758562b2f621e19c372320b3493acd645ff95c59ffa0539fc",
-      "size_bytes": 2952
-    },
-    {
-      "path": "docs/planning/PAL_EYES_PROJECT_PLAN_CURRENT.md",
-      "sha256": "8289252be76679cf4581c96b41b0e0826cd02c6b7e8bf4bdc4e512696d28aee4",
-      "size_bytes": 5737
-    },
-    {
-      "path": "docs/project_memory/PAL_EYES_PROJECT_MEMORY_CURRENT.md",
-      "sha256": "4c5c24cad0447aa103e53dc0304eea90ed25118e5aeffbe1a2d3249f774340a2",
-      "size_bytes": 8977
-    },
-    {
-      "path": "docs/project_memory/PAL_EYES_PROJECT_STATE_SNAPSHOT_CURRENT.json",
-      "sha256": "431676aaa946ec39c0e4e974a339891d296e83b1dc55a025103501a125ccfda3",
-      "size_bytes": 8111
-    },
-    {
-      "path": "docs/project_memory/PAL_EYES_SESSION_HANDOFF_CURRENT.md",
-      "sha256": "e6bc2ee0dd5c3ef04f9f2f0dbb662b5bd765e6928d47d6c03a87fb4fdd59d5c5",
-      "size_bytes": 1647
     },
     {
       "path": "docs/SESSION_HANDOFF_20260713.md",
@@ -705,6 +680,61 @@
       "path": "docs/SESSION_RECONSTRUCTION_ATTESTATION_20260802.md",
       "sha256": "02817f06642ac37a435086324633480a08e12d6dc1dea8280a1ac3b65480f4ad",
       "size_bytes": 1831
+    },
+    {
+      "path": "docs/architecture/PAL_EYES_OPERATIONAL_BACKEND_AND_WORKFLOW_ARCHITECTURE_R7_0_0.md",
+      "sha256": "446edd4523e9c7ce2f6e1707b8c9cdacf70f2c1b086b2b0dadac575a6420e73f",
+      "size_bytes": 1716
+    },
+    {
+      "path": "docs/governance/PAL_EYES_CONTENT_ADOPTION_DECISION_CURRENT.md",
+      "sha256": "1b5cd9a599669ff50e28276269b8ef24bf16b84007943d6a2922e2170951f432",
+      "size_bytes": 2771
+    },
+    {
+      "path": "docs/governance/PAL_EYES_CONTINUOUS_UPDATE_CONTRACT.md",
+      "sha256": "439c68315e298040f3f8e1d66abb374b94ffd4bf2fc98e5c532145fab349c815",
+      "size_bytes": 2346
+    },
+    {
+      "path": "docs/governance/PAL_EYES_OPERATIONAL_ROLE_MATRIX_R7_0_0.md",
+      "sha256": "7aa198757cc41cef744855b3eecb06ac50855019f9a94ef1fb332fca706723c5",
+      "size_bytes": 886
+    },
+    {
+      "path": "docs/governance/PAL_EYES_PROJECT_COMPREHENSIVE_GUIDE_CURRENT.md",
+      "sha256": "d3610720610621b7e995ad00ff15548d3850dbcdf8f29cfa6224bc1359e23d03",
+      "size_bytes": 7205
+    },
+    {
+      "path": "docs/planning/PAL_EYES_CHANGELOG_CURRENT.md",
+      "sha256": "aa398d6290646481c873a447afae189169fc7b21e066de0ac5e5b92c556a816f",
+      "size_bytes": 4323
+    },
+    {
+      "path": "docs/planning/PAL_EYES_PRODUCT_UX_PHASES_1_TO_4_MASTER_PLAN.md",
+      "sha256": "6404c8e09fd6646758562b2f621e19c372320b3493acd645ff95c59ffa0539fc",
+      "size_bytes": 2952
+    },
+    {
+      "path": "docs/planning/PAL_EYES_PROJECT_PLAN_CURRENT.md",
+      "sha256": "8289252be76679cf4581c96b41b0e0826cd02c6b7e8bf4bdc4e512696d28aee4",
+      "size_bytes": 5737
+    },
+    {
+      "path": "docs/project_memory/PAL_EYES_PROJECT_MEMORY_CURRENT.md",
+      "sha256": "4c5c24cad0447aa103e53dc0304eea90ed25118e5aeffbe1a2d3249f774340a2",
+      "size_bytes": 8977
+    },
+    {
+      "path": "docs/project_memory/PAL_EYES_PROJECT_STATE_SNAPSHOT_CURRENT.json",
+      "sha256": "431676aaa946ec39c0e4e974a339891d296e83b1dc55a025103501a125ccfda3",
+      "size_bytes": 8111
+    },
+    {
+      "path": "docs/project_memory/PAL_EYES_SESSION_HANDOFF_CURRENT.md",
+      "sha256": "e6bc2ee0dd5c3ef04f9f2f0dbb662b5bd765e6928d47d6c03a87fb4fdd59d5c5",
+      "size_bytes": 1647
     },
     {
       "path": "evidence/BASELINE_INTEGRITY_REPORT.txt",
@@ -1060,11 +1090,6 @@
       "path": "governance/PROJECT_STATUS_SNAPSHOT.yaml",
       "sha256": "e84be46fa51d60669509a665ba51f548d1288c4855dfb3bd4cbb4170c8e8523b",
       "size_bytes": 3170
-    },
-    {
-      "path": "Install-PalEyesDevelopmentBaseline.ps1",
-      "sha256": "98b6dcd50881b3cb65e0bc70ade05c4431b03ce5e93dc1cf41f7402fb5db3580",
-      "size_bytes": 5701
     },
     {
       "path": "lib/app/app.dart",
@@ -1472,16 +1497,6 @@
       "size_bytes": 709
     },
     {
-      "path": "PAL_EYES_BASELINE_ID.txt",
-      "sha256": "c4fe959e5aa74b379c0d5a58d2e0d46645de4fd4a956e54e8315c3af003464d1",
-      "size_bytes": 2135
-    },
-    {
-      "path": "PAL_EYES_PROJECT_COMPREHENSIVE_GUIDE.md",
-      "sha256": "7f1d9e4127254123c04a5f3b69d9efe15170287e1972052ddda7647419abd909",
-      "size_bytes": 27245
-    },
-    {
       "path": "pubspec.lock",
       "sha256": "4021fca7c7a9384368878f5a209307529966cadf64873d420c4afd63f8f48c65",
       "size_bytes": 30673
@@ -1490,16 +1505,6 @@
       "path": "pubspec.yaml",
       "sha256": "243675097b71d10e90407cdd327195184e07a91287ebac8269854a69c43853c2",
       "size_bytes": 572
-    },
-    {
-      "path": "README.md",
-      "sha256": "672af069cc47d72df53a2b6df730f52bce56b7b589052d81d8a7617468db8fe9",
-      "size_bytes": 2475
-    },
-    {
-      "path": "README_UPDATES_ONLY.md",
-      "sha256": "7d8fa53a06d6ee60fad3fa09f45b076ac85b4fa267c9222f3046238d121a7dd2",
-      "size_bytes": 327
     },
     {
       "path": "reference_input/PAL_EYES_REFERENCE_DRAFT_ORIGINAL.txt",
@@ -1667,11 +1672,6 @@
       "size_bytes": 7044
     },
     {
-      "path": "tools/finalize_session_reconstructed_r9_0_1.py",
-      "sha256": "98990278ffadf0227d38c77b02ac502c400dcf10a326cb5b51832d19ba0c1a12",
-      "size_bytes": 5062
-    },
-    {
       "path": "tools/Invoke-PalEyesRepositoryDiscovery.ps1",
       "sha256": "efdd4d368fd98161d509612819b66e96351612f12f5476819de747bf33a45f89",
       "size_bytes": 882
@@ -1682,11 +1682,6 @@
       "size_bytes": 1720
     },
     {
-      "path": "tools/pal_eyes_repository_discovery.py",
-      "sha256": "ab413b38d6576586aed7e87bc5b7964d7e0e16a1da12dc80068c2ea0581d3fb1",
-      "size_bytes": 3054
-    },
-    {
       "path": "tools/Run-PalEyesChrome.ps1",
       "sha256": "a4c266ead27bf0c016a3324effa13b566e0453f2ce3ffed1b9ec33527090e6aa",
       "size_bytes": 966
@@ -1695,6 +1690,16 @@
       "path": "tools/Verify-PalEyesDevelopmentBaseline.ps1",
       "sha256": "b1982beb108d299db386c0b73849824642239647a4287c7a38c1ff8f31f1c698",
       "size_bytes": 2498
+    },
+    {
+      "path": "tools/finalize_session_reconstructed_r9_0_1.py",
+      "sha256": "98990278ffadf0227d38c77b02ac502c400dcf10a326cb5b51832d19ba0c1a12",
+      "size_bytes": 5062
+    },
+    {
+      "path": "tools/pal_eyes_repository_discovery.py",
+      "sha256": "ab413b38d6576586aed7e87bc5b7964d7e0e16a1da12dc80068c2ea0581d3fb1",
+      "size_bytes": 3054
     },
     {
       "path": "tools/verify_direct_flutter_public_experience_maturity_r9_0_0.py",
@@ -1775,11 +1780,6 @@
       "path": "tools/verify_session_reconstructed_r9_0_1.py",
       "sha256": "e9f28ba5776a8fb5c4c4f5e28f5c4a629b3650ca42f3f4bea7f02371e5436927",
       "size_bytes": 3232
-    },
-    {
-      "path": "UPDATES_ONLY_MANIFEST.json",
-      "sha256": "bb3e0de8b7fa74ab7da92e33f851965b756f5d633fb6b00c02c34f1b59e053d0",
-      "size_bytes": 3359
     },
     {
       "path": "web/index.html",
