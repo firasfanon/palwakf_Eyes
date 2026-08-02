@@ -35,21 +35,21 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
     final governorates = <String>{
       'الكل',
       ...sites.map((site) => site.governorateAr),
-    }.toList(growable: false)..sort();
+    }.toList(growable: false)
+      ..sort();
     final periods = <String>{
       'الكل',
       ...items.map((item) => item.entry.period),
-    }.toList(growable: false)..sort();
+    }.toList(growable: false)
+      ..sort();
 
-    final filtered = items
-        .where((item) {
-          final governorateMatches =
-              _governorate == 'الكل' || item.site.governorateAr == _governorate;
-          final periodMatches =
-              _period == 'الكل' || item.entry.period == _period;
-          return governorateMatches && periodMatches;
-        })
-        .toList(growable: false);
+    final filtered = items.where((item) {
+      final governorateMatches = _governorate == 'الكل' ||
+          item.site.governorateAr == _governorate;
+      final periodMatches =
+          _period == 'الكل' || item.entry.period == _period;
+      return governorateMatches && periodMatches;
+    }).toList(growable: false);
 
     final visible = filtered.take(_visibleCount).toList(growable: false);
     final canShowMore = visible.length < filtered.length;
@@ -119,12 +119,15 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
             children: <Widget>[
               Text(
                 'المواد الزمنية',
-                style: Theme.of(
-                  context,
-                ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w900),
+                style: Theme.of(context)
+                    .textTheme
+                    .titleLarge
+                    ?.copyWith(fontWeight: FontWeight.w900),
               ),
               Chip(
-                label: Text('${visible.length} ظاهرة من ${filtered.length}'),
+                label: Text(
+                  '${visible.length} ظاهرة من ${filtered.length}',
+                ),
               ),
             ],
           ),
@@ -225,16 +228,18 @@ class _TimelineCard extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       item.entry.period,
-                      style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                        fontWeight: FontWeight.w900,
-                      ),
+                      style: Theme.of(context)
+                          .textTheme
+                          .labelLarge
+                          ?.copyWith(fontWeight: FontWeight.w900),
                     ),
                     const SizedBox(height: 4),
                     Text(
                       '${item.site.nameAr}: ${item.entry.title}',
-                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                        fontWeight: FontWeight.w900,
-                      ),
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleMedium
+                          ?.copyWith(fontWeight: FontWeight.w900),
                     ),
                     const SizedBox(height: 5),
                     Text(
@@ -260,7 +265,10 @@ class _TimelineCard extends StatelessWidget {
 }
 
 class _TimelineItem {
-  const _TimelineItem({required this.site, required this.entry});
+  const _TimelineItem({
+    required this.site,
+    required this.entry,
+  });
 
   final HeritageSite site;
   final HistoricalTimelineEntry entry;

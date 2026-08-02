@@ -12,16 +12,15 @@ class ClaimWorkspaceScreen extends ConsumerStatefulWidget {
       _ClaimWorkspaceScreenState();
 }
 
-class _ClaimWorkspaceScreenState extends ConsumerState<ClaimWorkspaceScreen> {
+class _ClaimWorkspaceScreenState
+    extends ConsumerState<ClaimWorkspaceScreen> {
   String status = 'الكل';
 
   Future<void> _updateClaim(
     OperationalClaimRecord claim,
     String nextStatus,
   ) async {
-    await ref
-        .read(operationalWorkspaceStoreProvider)
-        .updateClaimStatus(
+    await ref.read(operationalWorkspaceStoreProvider).updateClaimStatus(
           claimId: claim.id,
           workflowStatus: nextStatus,
           evidenceStatus: nextStatus == 'SUPPORTED'
@@ -52,12 +51,9 @@ class _ClaimWorkspaceScreenState extends ConsumerState<ClaimWorkspaceScreen> {
           icon: Icons.error_outline,
         ),
         data: (data) {
-          final visible = data.claims
-              .where((claim) {
-                return status == 'الكل' || claim.workflowStatus == status;
-              })
-              .take(80)
-              .toList(growable: false);
+          final visible = data.claims.where((claim) {
+            return status == 'الكل' || claim.workflowStatus == status;
+          }).take(80).toList(growable: false);
 
           final statuses = <String>{
             'الكل',
@@ -74,8 +70,10 @@ class _ClaimWorkspaceScreenState extends ConsumerState<ClaimWorkspaceScreen> {
                 ),
                 items: statuses
                     .map(
-                      (item) =>
-                          DropdownMenuItem(value: item, child: Text(item)),
+                      (item) => DropdownMenuItem(
+                        value: item,
+                        child: Text(item),
+                      ),
                     )
                     .toList(),
                 onChanged: (value) => setState(() => status = value ?? 'الكل'),
@@ -106,12 +104,18 @@ class _ClaimWorkspaceScreenState extends ConsumerState<ClaimWorkspaceScreen> {
                           value: 'EVIDENCE_ATTACHED',
                           child: Text('أُرفق دليل'),
                         ),
-                        PopupMenuItem(value: 'SUPPORTED', child: Text('مدعوم')),
+                        PopupMenuItem(
+                          value: 'SUPPORTED',
+                          child: Text('مدعوم'),
+                        ),
                         PopupMenuItem(
                           value: 'PARTIALLY_SUPPORTED',
                           child: Text('مدعوم جزئياً'),
                         ),
-                        PopupMenuItem(value: 'HOLD', child: Text('تعليق')),
+                        PopupMenuItem(
+                          value: 'HOLD',
+                          child: Text('تعليق'),
+                        ),
                       ],
                     ),
                   ),

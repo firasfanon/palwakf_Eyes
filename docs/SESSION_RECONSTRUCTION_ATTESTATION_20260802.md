@@ -1,0 +1,54 @@
+# Pal Eyes R9.0.1 — بيان إعادة البناء من الجلسة
+
+```text
+TARGET_BASELINE=PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802
+VERSION=9.0.1+30
+STATUS=SESSION_RECONSTRUCTED_GITHUB_CANDIDATE_PENDING_FORMAT_REPLAY
+RECONSTRUCTION_MODE=SESSION_SOURCE_REPLAY
+```
+
+## المصادر المثبتة
+
+- مصدر R9.0.0 الكامل:
+  - `PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0_20260802_FULL(1).zip`
+  - SHA-256: `842abe476695e2097436f51cc7fa04a4c238ddb218637dc412974ae091e0ee46`
+  - سلامة manifest: `PASS_299_OF_299`.
+- حزمة إغلاق R9.0.1 وأدلة UAT:
+  - `PAL_EYES_R9_0_1_BROWSER_UAT_BASELINE_PROMOTION_FINALIZATION_V1_0_1_20260802.zip`
+  - SHA-256: `aea5b7f53563b415e9f05ad4a18a0763cfc5bd72d57b0994795a07f16c81cde6`.
+- أرشيف Browser UAT:
+  - `PAL_EYES_R9_0_1_BROWSER_UAT_EVIDENCE_ARCHIVE_20260802.zip`
+  - SHA-256: `a862717b4e6e2a73ec189e1b3197291459c3b711ffafad2a699b2cf9b876df9c`.
+
+## ما ثبت داخل الجلسة
+
+```text
+TARGETED_FORMAT=PASS_12_FILES
+FORMAT_SCOPE_ESCAPE=FALSE
+STATIC_VERIFY=PASS
+FLUTTER_ANALYZE=PASS
+FLUTTER_TEST=PASS_65
+GIT_DIFF_CHECK=PASS
+CHROME_RUNTIME_SMOKE=PASS
+EDGE_RUNTIME_SMOKE=PASS
+BROWSER_UAT=CLOSED_BY_EXPLICIT_OPERATOR_AUTHORIZATION
+RUNTIME_EXCEPTIONS=0
+VISIBLE_RENDER_OVERFLOWS=0
+```
+
+## القيد الوحيد
+
+نسخة العمل البايتية بعد تنسيق الملفات الـ12 بقيت على:
+
+```text
+C:\Users\Firas_Fanon\StudioProjects\Pal_Eyes
+```
+
+ولم تُرفع بعد التنسيق. لذلك لا تدعي هذه الحزمة التطابق البايتي
+معها. يعاد تطبيق التنسيق آليًا قبل الدمج بواسطة:
+
+```text
+tools/FINALIZE_SESSION_RECONSTRUCTED_R9_0_1.ps1
+```
+
+لا يجوز دمج الفرع في `main` قبل نجاح السكربت وGitHub CI.

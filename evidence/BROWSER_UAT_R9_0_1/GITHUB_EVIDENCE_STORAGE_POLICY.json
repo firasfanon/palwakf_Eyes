@@ -1,0 +1,97 @@
+{
+  "baseline": "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802",
+  "reason": "AVOID_BINARY_SCREENSHOT_REPOSITORY_BLOAT",
+  "external_archive": {
+    "filename": "PAL_EYES_R9_0_1_BROWSER_UAT_EVIDENCE_ARCHIVE_20260802.zip",
+    "sha256": "a862717b4e6e2a73ec189e1b3197291459c3b711ffafad2a699b2cf9b876df9c",
+    "size_bytes": 9698675
+  },
+  "removed_png_count": 14,
+  "removed_pngs": [
+    {
+      "file": "01_chrome_home_network.png",
+      "sha256": "17506287afde9161cfca1ba0dffee47b9875ecab41591b75e69a846c56ad5b68",
+      "size_bytes": 839778,
+      "storage": "EXTERNAL_BROWSER_UAT_EVIDENCE_ARCHIVE"
+    },
+    {
+      "file": "02_chrome_home_console.png",
+      "sha256": "efe23ca057f64469df56921f39febcc0d922559ebb0ed88a5050e70b747877cc",
+      "size_bytes": 767983,
+      "storage": "EXTERNAL_BROWSER_UAT_EVIDENCE_ARCHIVE"
+    },
+    {
+      "file": "03_chrome_home_console_duplicate_capture.png",
+      "sha256": "efe23ca057f64469df56921f39febcc0d922559ebb0ed88a5050e70b747877cc",
+      "size_bytes": 767983,
+      "storage": "EXTERNAL_BROWSER_UAT_EVIDENCE_ARCHIVE"
+    },
+    {
+      "file": "04_edge_discovery_desktop.png",
+      "sha256": "6f418af4684143cc0f61c3bbe301720d94296d0fc81d7fe4376d6947ed259951",
+      "size_bytes": 777024,
+      "storage": "EXTERNAL_BROWSER_UAT_EVIDENCE_ARCHIVE"
+    },
+    {
+      "file": "05_edge_places_desktop.png",
+      "sha256": "e808b69ab0a65ddaf91ef903cda44c06a80e54dc09e2cf0d48790772ac46209c",
+      "size_bytes": 551390,
+      "storage": "EXTERNAL_BROWSER_UAT_EVIDENCE_ARCHIVE"
+    },
+    {
+      "file": "06_edge_map_desktop.png",
+      "sha256": "0f09acb0282b82c62675a6cf2f3393e1d47106c9bb7195380b9df4c5fcf24ebe",
+      "size_bytes": 728507,
+      "storage": "EXTERNAL_BROWSER_UAT_EVIDENCE_ARCHIVE"
+    },
+    {
+      "file": "07_edge_stories_desktop.png",
+      "sha256": "ce97c2934b2552b9ab6189071d604de524dbaf3bb9daeed92e5d80f97bb6ccab",
+      "size_bytes": 903399,
+      "storage": "EXTERNAL_BROWSER_UAT_EVIDENCE_ARCHIVE"
+    },
+    {
+      "file": "08_edge_workspace_dashboard.png",
+      "sha256": "43e38816813d09b109bf421a54af2dcaaa263f8fc3db3ba176c2c5bb90375072",
+      "size_bytes": 876869,
+      "storage": "EXTERNAL_BROWSER_UAT_EVIDENCE_ARCHIVE"
+    },
+    {
+      "file": "09_edge_workspace_map_editor.png",
+      "sha256": "80b2b276cbe761695980bbad6ba03f3bc640add93032dd918997ed5f2bd13e65",
+      "size_bytes": 614047,
+      "storage": "EXTERNAL_BROWSER_UAT_EVIDENCE_ARCHIVE"
+    },
+    {
+      "file": "10_edge_home_desktop.png",
+      "sha256": "5d93eccb9741358f604609afad848d12b9858b90d040db1694c5bd12e1a20881",
+      "size_bytes": 447003,
+      "storage": "EXTERNAL_BROWSER_UAT_EVIDENCE_ARCHIVE"
+    },
+    {
+      "file": "11_edge_place_detail_desktop.png",
+      "sha256": "44e0627d9550d028c7697549dc540c3c01c6a9f61c45436cfb83269da525e19e",
+      "size_bytes": 667739,
+      "storage": "EXTERNAL_BROWSER_UAT_EVIDENCE_ARCHIVE"
+    },
+    {
+      "file": "12_edge_story_detail_desktop.png",
+      "sha256": "ff8131f908ab29ea0675ad34785f73a3889665ab15d17060d0b82b61cfbe13b2",
+      "size_bytes": 624104,
+      "storage": "EXTERNAL_BROWSER_UAT_EVIDENCE_ARCHIVE"
+    },
+    {
+      "file": "13_edge_stories_desktop_final.png",
+      "sha256": "6306e3e9f1c35f71bac9cceb87e3e128cc7b4dc581885aa63f4987a9e111470e",
+      "size_bytes": 933804,
+      "storage": "EXTERNAL_BROWSER_UAT_EVIDENCE_ARCHIVE"
+    },
+    {
+      "file": "14_edge_stories_narrow_mobile.png",
+      "sha256": "c33b955c738439b193d25fe941edd4f840248a60e3b1411386eaf9ce3813c98c",
+      "size_bytes": 362196,
+      "storage": "EXTERNAL_BROWSER_UAT_EVIDENCE_ARCHIVE"
+    }
+  ],
+  "textual_runtime_and_network_evidence_retained": true
+}

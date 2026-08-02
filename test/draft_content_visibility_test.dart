@@ -25,7 +25,10 @@ void main() {
     expect(governed.every((site) => site.sources.isNotEmpty), isTrue);
     expect(limited.every((site) => site.narrativeSections.isEmpty), isTrue);
     expect(limited.every((site) => site.sources.isEmpty), isTrue);
-    expect(sites.every((site) => site.hasOriginalHistoricalDraft), isTrue);
+    expect(
+      sites.every((site) => site.hasOriginalHistoricalDraft),
+      isTrue,
+    );
     expect(
       sites.where((site) => site.hasOriginalExpandedNarrative),
       hasLength(ContentCatalogMetrics.expandedNarrativeCount),

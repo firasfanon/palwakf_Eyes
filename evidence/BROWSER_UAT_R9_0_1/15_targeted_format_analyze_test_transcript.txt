@@ -1,0 +1,821 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\Firas_Fanon\StudioProjects\Pal_Eyes> & {
+>>     $ErrorActionPreference = "Stop"
+>>
+>>     $ProjectRoot = "C:\Users\Firas_Fanon\StudioProjects\Pal_Eyes"
+>>     $NestedRoot = Join-Path $ProjectRoot "Pal_Eyes"
+>>
+>>     $Timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
+>>
+>>     $EvidenceRoot = Join-Path `
+>>         $ProjectRoot `
+>>         "evidence\local_r9_0_1_targeted_format_closure_20260802"
+>>
+>>     $BackupRoot = Join-Path `
+>>         $env:USERPROFILE `
+>>         "Downloads\PAL_EYES_R9_TARGETED_FORMAT_PREIMAGE_$Timestamp"
+>>
+>>     $BackupZip = "$BackupRoot.zip"
+>>
+>>     function Invoke-External {
+>>         param(
+>>             [Parameter(Mandatory)]
+>>             [string]$FilePath,
+>>
+>>             [Parameter(Mandatory)]
+>>             [string[]]$ArgumentList
+>>         )
+>>
+>>         $PreviousPreference = $ErrorActionPreference
+>>
+>>         try {
+>>             $ErrorActionPreference = "Continue"
+>>
+>>             $CommandOutput = @(
+>>                 & $FilePath @ArgumentList 2>&1
+>>             )
+>>
+>>             $CommandExitCode = $LASTEXITCODE
+>>         }
+>>         finally {
+>>             $ErrorActionPreference = $PreviousPreference
+>>         }
+>>
+>>         return [pscustomobject]@{
+>>             ExitCode = $CommandExitCode
+>>             Output = @(
+>>                 $CommandOutput |
+>>                 ForEach-Object {
+>>                     $_.ToString()
+>>                 }
+>>             )
+>>         }
+>>     }
+>>
+>>     function Save-CommandResult {
+>>         param(
+>>             [Parameter(Mandatory)]
+>>             [object]$Result,
+>>
+>>             [Parameter(Mandatory)]
+>>             [string]$LogPath,
+>>
+>>             [Parameter(Mandatory)]
+>>             [string]$FailureCode
+>>         )
+>>
+>>         $Result.Output |
+>>             Tee-Object `
+>>                 -FilePath $LogPath
+>>
+>>         if ($Result.ExitCode -ne 0) {
+>>             throw "$FailureCode=$($Result.ExitCode)"
+>>         }
+>>     }
+>>
+>>     function Get-SourceHashes {
+>>         param(
+>>             [Parameter(Mandatory)]
+>>             [string]$Root
+>>         )
+>>
+>>         $Result = @{}
+>>
+>>         foreach ($SourceDirectory in @("lib", "test")) {
+>>             $AbsoluteDirectory = Join-Path $Root $SourceDirectory
+>>
+>>             Get-ChildItem `
+>>                 -LiteralPath $AbsoluteDirectory `
+>>                 -File `
+>>                 -Recurse |
+>>             ForEach-Object {
+>>                 $RelativePath = $_.FullName.Substring(
+>>                     $Root.Length
+>>                 ).TrimStart("\").Replace("/", "\")
+>>
+>>                 $Result[$RelativePath] = (
+>>                     Get-FileHash `
+>>                         -LiteralPath $_.FullName `
+>>                         -Algorithm SHA256
+>>                 ).Hash.ToLowerInvariant()
+>>             }
+>>         }
+>>
+>>         return $Result
+>>     }
+>>
+>>     if (-not (Test-Path -LiteralPath $ProjectRoot -PathType Container)) {
+>>         throw "PROJECT_ROOT_NOT_FOUND=$ProjectRoot"
+>>     }
+>>
+>>     if (Test-Path -LiteralPath $NestedRoot) {
+>>         throw "NESTED_REPOSITORY_STILL_PRESENT=$NestedRoot"
+>>     }
+>>
+>>     foreach ($RequiredCommand in @("git", "dart", "flutter")) {
+>>         if (-not (Get-Command $RequiredCommand -ErrorAction SilentlyContinue)) {
+>>             throw "REQUIRED_COMMAND_NOT_FOUND=$RequiredCommand"
+>>         }
+>>     }
+>>
+>>     New-Item `
+>>         -ItemType Directory `
+>>         -Path $EvidenceRoot `
+>>         -Force |
+>>         Out-Null
+>>
+>>     New-Item `
+>>         -ItemType Directory `
+>>         -Path $BackupRoot `
+>>         -Force |
+>>         Out-Null
+>>
+>>     Set-Location $ProjectRoot
+>>
+>>     $TargetFiles = @(
+>>         "lib\app\theme\app_theme.dart",
+>>         "lib\core\widgets\public_experience_maturity.dart",
+>>         "lib\core\widgets\direct_flutter_maturity_r9.dart",
+>>         "lib\features\discovery\presentation\discovery_screen.dart",
+>>         "lib\features\home\presentation\home_screen.dart",
+>>         "lib\features\map\presentation\map_screen.dart",
+>>         "lib\features\places\presentation\place_detail_screen.dart",
+>>         "lib\features\places\presentation\places_screen.dart",
+>>         "lib\features\stories\presentation\stories_screen.dart",
+>>         "lib\features\stories\presentation\story_detail_screen.dart",
+>>         "test\pal_eyes_media_stage_bounded_layout_test.dart",
+>>         "test\direct_flutter_maturity_r9_widget_test.dart"
+>>     )
+>>
+>>     Write-Host "=== REPOSITORY SAFETY GATE ===" `
+>>         -ForegroundColor Cyan
+>>
+>>     $GitRootResult = Invoke-External `
+>>         -FilePath "git" `
+>>         -ArgumentList @(
+>>             "rev-parse",
+>>             "--show-toplevel"
+>>         )
+>>
+>>     Save-CommandResult `
+>>         -Result $GitRootResult `
+>>         -LogPath (
+>>             Join-Path $EvidenceRoot "01_GIT_ROOT.log"
+>>         ) `
+>>         -FailureCode "GIT_ROOT_FAILED"
+>>
+>>     $ResolvedGitRoot = (
+>>         $GitRootResult.Output |
+>>         Select-Object -First 1
+>>     ).Trim()
+>>
+>>     if (
+>>         [System.IO.Path]::GetFullPath($ResolvedGitRoot).TrimEnd("\") -ne
+>>         [System.IO.Path]::GetFullPath($ProjectRoot).TrimEnd("\")
+>>     ) {
+>>         throw "PROJECT_ROOT_AND_GIT_ROOT_MISMATCH"
+>>     }
+>>
+>>     $HeadResult = Invoke-External `
+>>         -FilePath "git" `
+>>         -ArgumentList @(
+>>             "rev-parse",
+>>             "HEAD"
+>>         )
+>>
+>>     Save-CommandResult `
+>>         -Result $HeadResult `
+>>         -LogPath (
+>>             Join-Path $EvidenceRoot "02_GIT_HEAD.log"
+>>         ) `
+>>         -FailureCode "GIT_HEAD_FAILED"
+>>
+>>     $HeadBefore = (
+>>         $HeadResult.Output |
+>>         Select-Object -First 1
+>>     ).Trim()
+>>
+>>     Write-Host "GIT_HEAD=$HeadBefore"
+>>     Write-Host "NESTED_REPOSITORY_PRESENT=FALSE" `
+>>         -ForegroundColor Green
+>>
+>>     Write-Host "`n=== VALIDATING TARGET FILES ===" `
+>>         -ForegroundColor Cyan
+>>
+>>     foreach ($RelativePath in $TargetFiles) {
+>>         $AbsolutePath = Join-Path $ProjectRoot $RelativePath
+>>
+>>         if (-not (
+>>             Test-Path `
+>>                 -LiteralPath $AbsolutePath `
+>>                 -PathType Leaf
+>>         )) {
+>>             throw "TARGET_FILE_NOT_FOUND=$RelativePath"
+>>         }
+>>     }
+>>
+>>     Write-Host "TARGET_FILE_COUNT=$($TargetFiles.Count)"
+>>     Write-Host "TARGET_FILE_VALIDATION=PASS" `
+>>         -ForegroundColor Green
+>>
+>>     Write-Host "`n=== CREATING TARGET PREIMAGE ===" `
+>>         -ForegroundColor Cyan
+>>
+>>     $PreimageManifest = @(
+>>         foreach ($RelativePath in $TargetFiles) {
+>>             $SourcePath = Join-Path $ProjectRoot $RelativePath
+>>             $DestinationPath = Join-Path $BackupRoot $RelativePath
+>>             $DestinationDirectory = Split-Path $DestinationPath -Parent
+>>
+>>             New-Item `
+>>                 -ItemType Directory `
+>>                 -Path $DestinationDirectory `
+>>                 -Force |
+>>                 Out-Null
+>>
+>>             Copy-Item `
+>>                 -LiteralPath $SourcePath `
+>>                 -Destination $DestinationPath `
+>>                 -Force
+>>
+>>             [pscustomobject]@{
+>>                 RelativePath = $RelativePath
+>>                 SHA256 = (
+>>                     Get-FileHash `
+>>                         -LiteralPath $SourcePath `
+>>                         -Algorithm SHA256
+>>                 ).Hash.ToLowerInvariant()
+>>             }
+>>         }
+>>     )
+>>
+>>     $PreimageManifest |
+>>         Export-Csv `
+>>             -LiteralPath (
+>>                 Join-Path $BackupRoot "PREIMAGE_SHA256.csv"
+>>             ) `
+>>             -NoTypeInformation `
+>>             -Encoding UTF8
+>>
+>>     Compress-Archive `
+>>         -LiteralPath $BackupRoot `
+>>         -DestinationPath $BackupZip `
+>>         -Force
+>>
+>>     $BackupZipHash = (
+>>         Get-FileHash `
+>>             -LiteralPath $BackupZip `
+>>             -Algorithm SHA256
+>>     ).Hash.ToLowerInvariant()
+>>
+>>     Write-Host "PREIMAGE_BACKUP=PASS" `
+>>         -ForegroundColor Green
+>>     Write-Host "PREIMAGE_ZIP=$BackupZip"
+>>     Write-Host "PREIMAGE_ZIP_SHA256=$BackupZipHash"
+>>
+>>     $SourceHashesBefore = Get-SourceHashes -Root $ProjectRoot
+>>
+>>     Write-Host "`n=== APPLYING TARGETED DART FORMAT ===" `
+>>         -ForegroundColor Cyan
+>>
+>>     $FormatResult = Invoke-External `
+>>         -FilePath "dart" `
+>>         -ArgumentList (
+>>             @("format") + $TargetFiles
+>>         )
+>>
+>>     Save-CommandResult `
+>>         -Result $FormatResult `
+>>         -LogPath (
+>>             Join-Path $EvidenceRoot "03_TARGETED_DART_FORMAT.log"
+>>         ) `
+>>         -FailureCode "TARGETED_DART_FORMAT_FAILED"
+>>
+>>     $SourceHashesAfter = Get-SourceHashes -Root $ProjectRoot
+>>
+>>     $AllSourcePaths = @(
+>>         $SourceHashesBefore.Keys
+>>         $SourceHashesAfter.Keys
+>>     ) |
+>>         Sort-Object -Unique
+>>
+>>     $ChangedSourceFiles = @(
+>>         foreach ($RelativePath in $AllSourcePaths) {
+>>             $BeforeHash = $SourceHashesBefore[$RelativePath]
+>>             $AfterHash = $SourceHashesAfter[$RelativePath]
+>>
+>>             if ($BeforeHash -ne $AfterHash) {
+>>                 $RelativePath
+>>             }
+>>         }
+>>     )
+>>
+>>     $UnexpectedChanges = @(
+>>         $ChangedSourceFiles |
+>>         Where-Object {
+>>             $TargetFiles -notcontains $_
+>>         }
+>>     )
+>>
+>>     if ($UnexpectedChanges.Count -gt 0) {
+>>         $UnexpectedChanges | ForEach-Object {
+>>             Write-Host "UNEXPECTED_CHANGED_FILE=$_" `
+>>                 -ForegroundColor Red
+>>         }
+>>
+>>         throw "FORMAT_SCOPE_ESCAPE_DETECTED"
+>>     }
+>>
+>>     if ($ChangedSourceFiles.Count -ne 12) {
+>>         Write-Host (
+>>             "ACTUAL_CHANGED_SOURCE_COUNT=" +
+>>             $ChangedSourceFiles.Count
+>>         ) -ForegroundColor Yellow
+>>
+>>         $ChangedSourceFiles | ForEach-Object {
+>>             Write-Host "ACTUAL_CHANGED_SOURCE_FILE=$_"
+>>         }
+>>
+>>         throw (
+>>             "UNEXPECTED_TARGETED_FORMAT_CHANGE_COUNT_" +
+>>             "EXPECTED=12_" +
+>>             "ACTUAL=$($ChangedSourceFiles.Count)"
+>>         )
+>>     }
+>>
+>>     $ChangedSourceFiles |
+>>         Set-Content `
+>>             -LiteralPath (
+>>                 Join-Path $EvidenceRoot "04_CHANGED_SOURCE_FILES.log"
+>>             ) `
+>>             -Encoding UTF8
+>>
+>>     Write-Host "FORMAT_CHANGED_SOURCE_COUNT=12"
+>>     Write-Host "FORMAT_SCOPE=TARGET_FILES_ONLY"
+>>     Write-Host "FORMAT_SCOPE_VERIFICATION=PASS" `
+>>         -ForegroundColor Green
+>>
+>>     Write-Host "`n=== TARGETED FORMAT VERIFICATION ===" `
+>>         -ForegroundColor Cyan
+>>
+>>     $FormatCheckResult = Invoke-External `
+>>         -FilePath "dart" `
+>>         -ArgumentList (
+>>             @(
+>>                 "format",
+>>                 "--output=none",
+>>                 "--set-exit-if-changed"
+>>             ) + $TargetFiles
+>>         )
+>>
+>>     Save-CommandResult `
+>>         -Result $FormatCheckResult `
+>>         -LogPath (
+>>             Join-Path $EvidenceRoot "05_TARGETED_FORMAT_CHECK.log"
+>>         ) `
+>>         -FailureCode "TARGETED_FORMAT_CHECK_FAILED"
+>>
+>>     Write-Host "`n=== STATIC VERIFIER ===" `
+>>         -ForegroundColor Cyan
+>>
+>>     $PythonCommand = $null
+>>     $PythonArguments = @()
+>>
+>>     if (Get-Command py -ErrorAction SilentlyContinue) {
+>>         $PythonCommand = "py"
+>>         $PythonArguments = @(
+>>             "-3",
+>>             ".\tools\verify_direct_flutter_public_experience_maturity_r9_0_0.py"
+>>         )
+>>     }
+>>     elseif (Get-Command python -ErrorAction SilentlyContinue) {
+>>         $PythonCommand = "python"
+>>         $PythonArguments = @(
+>>             ".\tools\verify_direct_flutter_public_experience_maturity_r9_0_0.py"
+>>         )
+>>     }
+>>     elseif (Get-Command python3 -ErrorAction SilentlyContinue) {
+>>         $PythonCommand = "python3"
+>>         $PythonArguments = @(
+>>             ".\tools\verify_direct_flutter_public_experience_maturity_r9_0_0.py"
+>>         )
+>>     }
+>>     else {
+>>         throw "PYTHON_NOT_FOUND"
+>>     }
+>>
+>>     $StaticResult = Invoke-External `
+>>         -FilePath $PythonCommand `
+>>         -ArgumentList $PythonArguments
+>>
+>>     Save-CommandResult `
+>>         -Result $StaticResult `
+>>         -LogPath (
+>>             Join-Path $EvidenceRoot "06_R9_STATIC_VERIFY.log"
+>>         ) `
+>>         -FailureCode "R9_STATIC_VERIFY_FAILED"
+>>
+>>     Write-Host "`n=== FLUTTER ANALYZE ===" `
+>>         -ForegroundColor Cyan
+>>
+>>     $AnalyzeResult = Invoke-External `
+>>         -FilePath "flutter" `
+>>         -ArgumentList @(
+>>             "analyze",
+>>             "--no-pub"
+>>         )
+>>
+>>     Save-CommandResult `
+>>         -Result $AnalyzeResult `
+>>         -LogPath (
+>>             Join-Path $EvidenceRoot "07_FLUTTER_ANALYZE.log"
+>>         ) `
+>>         -FailureCode "FLUTTER_ANALYZE_FAILED"
+>>
+>>     Write-Host "`n=== FLUTTER TEST ===" `
+>>         -ForegroundColor Cyan
+>>
+>>     $TestResult = Invoke-External `
+>>         -FilePath "flutter" `
+>>         -ArgumentList @(
+>>             "test",
+>>             "--no-pub",
+>>             "--reporter",
+>>             "expanded"
+>>         )
+>>
+>>     Save-CommandResult `
+>>         -Result $TestResult `
+>>         -LogPath (
+>>             Join-Path $EvidenceRoot "08_FLUTTER_TEST.log"
+>>         ) `
+>>         -FailureCode "FLUTTER_TEST_FAILED"
+>>
+>>     Write-Host "`n=== WHITESPACE CONTRACT ===" `
+>>         -ForegroundColor Cyan
+>>
+>>     $DiffCheckResult = Invoke-External `
+>>         -FilePath "git" `
+>>         -ArgumentList @(
+>>             "-c",
+>>             "core.safecrlf=false",
+>>             "diff",
+>>             "--check"
+>>         )
+>>
+>>     Save-CommandResult `
+>>         -Result $DiffCheckResult `
+>>         -LogPath (
+>>             Join-Path $EvidenceRoot "09_GIT_DIFF_CHECK.log"
+>>         ) `
+>>         -FailureCode "GIT_DIFF_CHECK_FAILED"
+>>
+>>     $StatusResult = Invoke-External `
+>>         -FilePath "git" `
+>>         -ArgumentList @(
+>>             "status",
+>>             "--short"
+>>         )
+>>
+>>     Save-CommandResult `
+>>         -Result $StatusResult `
+>>         -LogPath (
+>>             Join-Path $EvidenceRoot "10_GIT_STATUS_AFTER_PATCH.log"
+>>         ) `
+>>         -FailureCode "GIT_STATUS_FAILED"
+>>
+>>     $HeadAfterResult = Invoke-External `
+>>         -FilePath "git" `
+>>         -ArgumentList @(
+>>             "rev-parse",
+>>             "HEAD"
+>>         )
+>>
+>>     Save-CommandResult `
+>>         -Result $HeadAfterResult `
+>>         -LogPath (
+>>             Join-Path $EvidenceRoot "11_GIT_HEAD_AFTER.log"
+>>         ) `
+>>         -FailureCode "GIT_HEAD_AFTER_FAILED"
+>>
+>>     $HeadAfter = (
+>>         $HeadAfterResult.Output |
+>>         Select-Object -First 1
+>>     ).Trim()
+>>
+>>     if ($HeadAfter -ne $HeadBefore) {
+>>         throw "GIT_HEAD_CHANGED_DURING_FORMAT_PATCH"
+>>     }
+>>
+>>     Write-Host ""
+>>     Write-Host "PAL_EYES_R9_TARGETED_FORMAT_CLOSURE=PASS" `
+>>         -ForegroundColor Green
+>>     Write-Host "NESTED_REPOSITORY_PRESENT=FALSE"
+>>     Write-Host "TARGETED_FORMAT=PASS_12_FILES"
+>>     Write-Host "FORMAT_SCOPE_ESCAPE=FALSE"
+>>     Write-Host "STATIC_VERIFY=PASS"
+>>     Write-Host "FLUTTER_ANALYZE=PASS"
+>>     Write-Host "FLUTTER_TEST=PASS"
+>>     Write-Host "GIT_DIFF_CHECK=PASS"
+>>     Write-Host "GIT_HEAD_CHANGED=FALSE"
+>>     Write-Host "NEXT_GATE=DESKTOP_AND_MOBILE_BROWSER_UAT"
+>>     Write-Host "EVIDENCE_ROOT=$EvidenceRoot"
+>>     Write-Host "PREIMAGE_ZIP=$BackupZip"
+>>     Write-Host "PREIMAGE_ZIP_SHA256=$BackupZipHash"
+>> }
+=== REPOSITORY SAFETY GATE ===
+C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes
+c67ff5e28205aac57ff28e8b8120c3bac5de4488
+GIT_HEAD=c67ff5e28205aac57ff28e8b8120c3bac5de4488
+NESTED_REPOSITORY_PRESENT=FALSE
+
+=== VALIDATING TARGET FILES ===
+TARGET_FILE_COUNT=12
+TARGET_FILE_VALIDATION=PASS
+
+=== CREATING TARGET PREIMAGE ===
+PREIMAGE_BACKUP=PASS
+PREIMAGE_ZIP=C:\Users\Firas_Fanon\Downloads\PAL_EYES_R9_TARGETED_FORMAT_PREIMAGE_20260802_160526.zip
+PREIMAGE_ZIP_SHA256=f39c85dbb1f62943040488d32ca3ecb224d55ae5da806a5d325a32477bdb5e95
+
+=== APPLYING TARGETED DART FORMAT ===
+Formatted lib\app\theme\app_theme.dart
+Formatted lib\core\widgets\public_experience_maturity.dart
+Formatted lib\core\widgets\direct_flutter_maturity_r9.dart
+Formatted lib\features\discovery\presentation\discovery_screen.dart
+Formatted lib\features\home\presentation\home_screen.dart
+Formatted lib\features\map\presentation\map_screen.dart
+Formatted lib\features\places\presentation\place_detail_screen.dart
+Formatted lib\features\places\presentation\places_screen.dart
+Formatted lib\features\stories\presentation\stories_screen.dart
+Formatted lib\features\stories\presentation\story_detail_screen.dart
+Formatted test\pal_eyes_media_stage_bounded_layout_test.dart
+Formatted test\direct_flutter_maturity_r9_widget_test.dart
+Formatted 12 files (12 changed) in 0.22 seconds.
+FORMAT_CHANGED_SOURCE_COUNT=12
+FORMAT_SCOPE=TARGET_FILES_ONLY
+FORMAT_SCOPE_VERIFICATION=PASS
+
+=== TARGETED FORMAT VERIFICATION ===
+Formatted 12 files (0 changed) in 0.22 seconds.
+
+=== STATIC VERIFIER ===
+{
+  "result": "PASS",
+  "mode": "DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0",
+  "checks": {
+    "required_files_present": true,
+    "version_9_0_0_build_29": true,
+    "target_baseline_registered": true,
+    "parent_baseline_registered": true,
+    "figma_dependency_removed": true,
+    "atlas_museum_magazine_identity_component": true,
+    "identity_integrated_home_and_discovery": true,
+    "atlas_editorial_prelude": true,
+    "magazine_editorial_prelude": true,
+    "place_content_compass": true,
+    "story_reading_maturity": true,
+    "map_empty_experience_fail_closed": true,
+    "mobile_390px_rtl_regression": true,
+    "desktop_adaptive_regression": true,
+    "accessibility_hardening": true,
+    "static_contract_test_present": true,
+    "tracker_exact_79_rows": true,
+    "tracker_r9_status_applied": true,
+    "state_snapshot_current": true,
+    "database_write_absent_from_ui_scope": true,
+    "publication_and_production_blocked": true
+  },
+  "failures": [],
+  "target_baseline": "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0_20260802",
+  "parent_baseline": "PAL_EYES_PUBLIC_EXPERIENCE_MEDIA_STAGE_BOUNDED_LAYOUT_R8_0_2_20260802",
+  "public_experience": {
+    "identity": [
+      "atlas",
+      "museum",
+      "magazine"
+    ],
+    "site_count": 79,
+    "source_count": 95,
+    "story_count": 3,
+    "story_chapter_count": 12,
+    "public_coordinates": 0,
+    "approved_media": 0
+  },
+  "local_gates": {
+    "dart_format": "PENDING",
+    "flutter_analyze": "PENDING",
+    "flutter_test": "PENDING",
+    "desktop_browser_uat": "PENDING",
+    "mobile_browser_uat": "PENDING"
+  },
+  "governance": {
+    "figma_dependency": false,
+    "database_write": false,
+    "supabase_apply": false,
+    "public_release": "BLOCKED",
+    "production_deployment": "NOT_APPROVED"
+  }
+}
+DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0_STATIC_VERIFY=PASS
+
+=== FLUTTER ANALYZE ===
+Analyzing Pal_Eyes...
+No issues found! (ran in 5.7s)
+
+=== FLUTTER TEST ===
+00:00 +0: loading C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart
+00:00 +0: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/direct_flutter_maturity_r9_contract_test.dart: round 3 is implemented directly in Flutter across public surfaces
+00:00 +1: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/direct_flutter_maturity_r9_contract_test.dart: round 3 preserves fail-closed publication and map boundaries
+00:00 +2: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/direct_flutter_maturity_r9_contract_test.dart: mobile RTL and accessibility hardening is explicit
+00:00 +3: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:01 +4: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:01 +5: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:01 +6: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:01 +7: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:01 +8: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:02 +9: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:02 +10: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:02 +11: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:02 +12: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:03 +13: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:03 +14: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:03 +15: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:03 +16: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:03 +17: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:03 +18: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:03 +19: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:03 +20: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:03 +21: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:03 +22: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:03 +23: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:04 +24: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/governed_public_display_and_legacy_evidence_contract_test.dart: legacy evidence metrics remain measurable
+00:04 +25: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/governed_public_display_and_legacy_evidence_contract_test.dart: governed public display keeps coordinates blocked
+00:04 +26: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/governorate_coverage_contract_test.dart: all governed governorate groups are visible
+00:04 +27: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/governorate_coverage_contract_test.dart: coverage totals reconcile with the catalog
+00:04 +28: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/governorate_coverage_contract_test.dart: zero-row extraction gaps remain explicit
+00:04 +29: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:05 +30: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:05 +31: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:05 +32: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:05 +33: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:05 +34: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:06 +35: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:06 +36: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:06 +37: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:06 +38: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:06 +39: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:06 +40: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:07 +41: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:07 +42: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:07 +43: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:07 +44: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:07 +45: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:08 +46: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/pal_eyes_media_stage_bounded_layout_test.dart: media stage has finite height inside a desktop scrollable column
+00:08 +47: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/pal_eyes_media_stage_bounded_layout_test.dart: media stage has finite height inside a desktop scrollable column
+00:08 +48: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/pal_eyes_media_stage_bounded_layout_test.dart: media stage has finite height inside a desktop scrollable column
+00:08 +49: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/pal_eyes_media_stage_bounded_layout_test.dart: media stage has finite height inside a desktop scrollable column
+00:08 +50: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/pal_eyes_media_stage_bounded_layout_test.dart: media stage has finite height inside a desktop scrollable column
+00:09 +51: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/pal_eyes_media_stage_bounded_layout_test.dart: media stage has finite height inside a desktop scrollable column
+00:09 +52: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/pal_eyes_media_stage_bounded_layout_test.dart: media stage has finite height inside a desktop scrollable column
+00:09 +53: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/pal_eyes_media_stage_bounded_layout_test.dart: media stage has finite height inside a desktop scrollable column
+00:09 +54: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/pal_eyes_media_stage_bounded_layout_test.dart: media stage has finite height inside a desktop scrollable column
+00:09 +55: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/pal_eyes_visual_card_layout_test.dart: visual card fits compact story height without overflow
+00:09 +56: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/pal_eyes_visual_card_layout_test.dart: visual card fits compact story height without overflow
+00:09 +57: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/route_contract_test.dart: public route contract is unique and absolute
+00:09 +58: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/route_contract_test.dart: workspace routes are grouped under workspace
+00:09 +59: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/route_contract_test.dart: governance routes are isolated under admin governance
+00:09 +60: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/route_contract_test.dart: place helper creates a stable detail path
+00:10 +61: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/site_card_dual_narrative_badge_layout_test.dart: site card fits the immersive home boundary with public story badge
+00:10 +62: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/site_card_dual_narrative_badge_layout_test.dart: site card fits the immersive home boundary with public story badge
+00:10 +63: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/site_card_dual_narrative_badge_layout_test.dart: site card fits the immersive home boundary with public story badge
+00:10 +64: C:/Users/Firas_Fanon/StudioProjects/Pal_Eyes/test/site_card_dual_narrative_badge_layout_test.dart: site card fits the immersive home boundary with public story badge
+00:11 +65: All tests passed!
+
+=== WHITESPACE CONTRACT ===
+ M BASELINE_MANIFEST.json
+ M PAL_EYES_BASELINE_ID.txt
+ M PAL_EYES_PROJECT_COMPREHENSIVE_GUIDE.md
+ M data/governance/PAL_EYES_PROJECT_MEMORY_FILE_MANIFEST_CURRENT.json
+ M data/governance/PAL_EYES_PROJECT_UPDATE_LOG.jsonl
+ M data/trackers/PAL_EYES_MASTER_SITE_STATUS_TRACKER_CURRENT.csv
+ M data/trackers/PAL_EYES_MASTER_SITE_STATUS_TRACKER_CURRENT.xlsx
+ M docs/CHANGELOG.md
+ M docs/DECISION_LOG.md
+ M docs/ERROR_RECORD.md
+ M docs/project_memory/PAL_EYES_PROJECT_MEMORY_CURRENT.md
+ M docs/project_memory/PAL_EYES_PROJECT_STATE_SNAPSHOT_CURRENT.json
+ M docs/project_memory/PAL_EYES_SESSION_HANDOFF_CURRENT.md
+ M lib/app/app.dart
+ M lib/app/application/app_settings.dart
+ M lib/app/localization/pal_eyes_localizations.dart
+ M lib/app/router/app_router.dart
+ M lib/app/theme/app_colors.dart
+ M lib/app/theme/app_theme.dart
+ M lib/core/config/app_environment.dart
+ M lib/core/content/content_review_status.dart
+ M lib/core/supabase/supabase_bootstrap.dart
+ M lib/core/widgets/draft_content_banner.dart
+ M lib/core/widgets/pal_eyes_page.dart
+ M lib/core/widgets/pal_eyes_product_ux.dart
+ M lib/core/widgets/pal_eyes_visual_system.dart
+ M lib/core/widgets/public_experience_maturity.dart
+ M lib/core/widgets/public_shell.dart
+ M lib/core/widgets/workspace_shell.dart
+ M lib/features/admin/presentation/admin_dashboard_screen.dart
+ M lib/features/contributions/presentation/contribute_screen.dart
+ M lib/features/discovery/presentation/discovery_screen.dart
+ M lib/features/governance/presentation/system_status_screen.dart
+ M lib/features/governorates/presentation/governorates_screen.dart
+ M lib/features/home/presentation/home_screen.dart
+ M lib/features/map/presentation/map_screen.dart
+ M lib/features/methodology/presentation/methodology_screen.dart
+ M lib/features/operations/application/operational_providers.dart
+ M lib/features/operations/application/operational_workspace_store.dart
+ M lib/features/operations/data/local_operational_data_backend.dart
+ M lib/features/operations/data/operational_baseline_mapper.dart
+ M lib/features/operations/data/operational_coordinate_seed.dart
+ M lib/features/operations/data/supabase_operational_data_backend.dart
+ M lib/features/operations/domain/operational_models.dart
+ M lib/features/places/application/heritage_sites_provider.dart
+ M lib/features/places/data/draft_catalog_generated.dart
+ M lib/features/places/data/dual_narrative_catalog.dart
+ M lib/features/places/data/governed_catalog_generated.dart
+ M lib/features/places/domain/draft_content_profile.dart
+ M lib/features/places/domain/heritage_site.dart
+ M lib/features/places/presentation/place_detail_screen.dart
+ M lib/features/places/presentation/places_screen.dart
+ M lib/features/places/presentation/widgets/site_card.dart
+ M lib/features/research/data/governed_research_backlog_generated.dart
+ M lib/features/research/presentation/research_workspace_screen.dart
+ M lib/features/sources/data/governed_source_registry_generated.dart
+ M lib/features/sources/presentation/sources_screen.dart
+ M lib/features/stories/data/editorial_story_catalog.dart
+ M lib/features/stories/presentation/stories_screen.dart
+ M lib/features/stories/presentation/story_detail_screen.dart
+ M lib/features/timeline/presentation/timeline_screen.dart
+ M lib/features/workspace/presentation/audit_log_screen.dart
+ M lib/features/workspace/presentation/claim_workspace_screen.dart
+ M lib/features/workspace/presentation/gis_review_screen.dart
+ M lib/features/workspace/presentation/media_rights_screen.dart
+ M lib/features/workspace/presentation/new_place_draft_screen.dart
+ M lib/features/workspace/presentation/relationships_workspace_screen.dart
+ M lib/features/workspace/presentation/release_control_screen.dart
+ M lib/features/workspace/presentation/review_queue_screen.dart
+ M lib/features/workspace/presentation/site_editor_screen.dart
+ M lib/features/workspace/presentation/source_registry_workspace_screen.dart
+ M lib/features/workspace/presentation/workspace_dashboard_screen.dart
+ M lib/features/workspace/presentation/workspace_places_screen.dart
+ M lib/features/workspace/presentation/workspace_section_screen.dart
+ M lib/features/workspace/presentation/workspace_today_screen.dart
+ M pubspec.yaml
+ M test/app_smoke_test.dart
+ M test/draft_content_visibility_test.dart
+ M test/dual_narrative_page_surface_contract_test.dart
+ M test/editorial_story_catalog_contract_test.dart
+ M test/full_draft_catalog_contract_test.dart
+ M test/governed_content_adoption_contract_test.dart
+ M test/governorate_coverage_contract_test.dart
+ M test/immersive_home_contract_test.dart
+ M test/legacy_narrative_metric_and_expansion_tile_material_canvas_contract_test.dart
+ M test/list_tile_material_boundary_contract_test.dart
+ M test/operational_backend_sql_contract_test.dart
+ M test/operational_backend_workflow_test.dart
+ M test/operational_baseline_mapper_contract_test.dart
+ M test/operational_workspace_ui_binding_contract_test.dart
+ M test/original_historical_draft_layer_contract_test.dart
+ M test/pal_eyes_visual_card_layout_test.dart
+ M test/product_ux_phases_1_to_4_contract_test.dart
+ M test/public_experience_maturity_contract_test.dart
+?? docs/SESSION_HANDOFF_20260802_DIRECT_FLUTTER_R9_0_0.md
+?? docs/SESSION_HANDOFF_20260802_PUBLIC_EXPERIENCE_R8_0_2.md
+?? evidence/DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0_BUILD_EVIDENCE.json
+?? evidence/DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0_STATIC_VERIFY.json
+?? evidence/PUBLIC_EXPERIENCE_MEDIA_STAGE_BOUNDED_LAYOUT_R8_0_2_BUILD_EVIDENCE.json
+?? evidence/PUBLIC_EXPERIENCE_MEDIA_STAGE_BOUNDED_LAYOUT_R8_0_2_STATIC_VERIFY.json
+?? evidence/local_r9_0_0_validation_20260802/
+?? evidence/local_r9_0_1_targeted_format_closure_20260802/
+?? lib/core/widgets/direct_flutter_maturity_r9.dart
+?? test/direct_flutter_maturity_r9_contract_test.dart
+?? test/direct_flutter_maturity_r9_widget_test.dart
+?? test/pal_eyes_media_stage_bounded_layout_test.dart
+?? tools/verify_direct_flutter_public_experience_maturity_r9_0_0.py
+?? tools/verify_public_experience_media_stage_bounded_layout_r8_0_2.py
+c67ff5e28205aac57ff28e8b8120c3bac5de4488
+
+PAL_EYES_R9_TARGETED_FORMAT_CLOSURE=PASS
+NESTED_REPOSITORY_PRESENT=FALSE
+TARGETED_FORMAT=PASS_12_FILES
+FORMAT_SCOPE_ESCAPE=FALSE
+STATIC_VERIFY=PASS
+FLUTTER_ANALYZE=PASS
+FLUTTER_TEST=PASS
+GIT_DIFF_CHECK=PASS
+GIT_HEAD_CHANGED=FALSE
+NEXT_GATE=DESKTOP_AND_MOBILE_BROWSER_UAT
+EVIDENCE_ROOT=C:\Users\Firas_Fanon\StudioProjects\Pal_Eyes\evidence\local_r9_0_1_targeted_format_closure_20260802
+PREIMAGE_ZIP=C:\Users\Firas_Fanon\Downloads\PAL_EYES_R9_TARGETED_FORMAT_PREIMAGE_20260802_160526.zip
+PREIMAGE_ZIP_SHA256=f39c85dbb1f62943040488d32ca3ecb224d55ae5da806a5d325a32477bdb5e95
+PS C:\Users\Firas_Fanon\StudioProjects\Pal_Eyes>

@@ -51,9 +51,8 @@ void main() {
       );
     }
 
-    final workspace = File(
-      'lib/core/widgets/workspace_shell.dart',
-    ).readAsStringSync();
+    final workspace =
+        File('lib/core/widgets/workspace_shell.dart').readAsStringSync();
     expect(workspace.contains('ExpansionTile('), isTrue);
     expect(
       RegExp(
@@ -64,9 +63,8 @@ void main() {
       isTrue,
     );
 
-    final map = File(
-      'lib/features/map/presentation/map_screen.dart',
-    ).readAsStringSync();
+    final map =
+        File('lib/features/map/presentation/map_screen.dart').readAsStringSync();
     expect(map.contains('ListTile('), isFalse);
     expect(
       RegExp(

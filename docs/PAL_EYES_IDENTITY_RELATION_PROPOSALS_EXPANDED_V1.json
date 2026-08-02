@@ -1,0 +1,101 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_HUMAN_IDENTITY_DECISION_DOSSIER_V1",
+  "relation_proposals": [
+    {
+      "relation_id": "HREL-001",
+      "source_site_id": "site-0dc57168d963",
+      "relation_type": "COMPONENT_OF",
+      "target_site_id": "site-899e38be070d",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL"
+    },
+    {
+      "relation_id": "HREL-002",
+      "source_site_id": "site-63fe9eba7871",
+      "relation_type": "COMPONENT_OF",
+      "target_site_id": "site-37c8be50ce73",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL"
+    },
+    {
+      "relation_id": "HREL-003",
+      "source_site_id": "site-5e98cf44d976",
+      "relation_type": "COMPONENT_OF",
+      "target_site_id": "site-0a78d22c1a69",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL"
+    },
+    {
+      "relation_id": "HREL-004",
+      "source_site_id": "site-160c60c7b952",
+      "relation_type": "COMPONENT_OF",
+      "target_site_id": "site-a9ac192e20c3",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL"
+    },
+    {
+      "relation_id": "HREL-005",
+      "source_site_id": "site-31c7667ff10e",
+      "relation_type": "COMPONENT_OF",
+      "target_site_id": "site-a9ac192e20c3",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL"
+    },
+    {
+      "relation_id": "HREL-006",
+      "source_site_id": "site-fe1e2a1605b5",
+      "relation_type": "COMPONENT_OF",
+      "target_site_id": "site-6f6afe87f969",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "additional_change": "REASSIGN_GOVERNORATE_AND_LOCALITY_TO_NABLUS_SEBASTIA"
+    },
+    {
+      "relation_id": "HREL-007",
+      "source_site_id": "site-b5f00132ee24",
+      "relation_type": "COMPONENT_OF",
+      "target_site_id": "site-a86fc049d470",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL"
+    },
+    {
+      "relation_id": "HREL-008",
+      "source_site_id": "site-ce23c41d7641",
+      "relation_type": "COMPONENT_OR_ALIAS_OF",
+      "target_site_id": "site-c4d8c9fdd1f0",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL"
+    },
+    {
+      "relation_id": "HREL-009",
+      "source_site_id": "site-21150eefdea6",
+      "relation_type": "NOT_SAME_AS",
+      "target_site_id": "site-015f495c4236",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL"
+    }
+  ],
+  "new_record_candidates": [
+    {
+      "candidate_id": "NEWREC-001",
+      "parent_or_source_site_id": "site-f60be7cd7d5e",
+      "candidate_name_ar": "خربة أو مقام النبي متى",
+      "candidate_type": "shrine_or_ruin",
+      "creation_status": "BLOCKED_PENDING_DEDICATED_SOURCE"
+    },
+    {
+      "candidate_id": "NEWREC-002",
+      "parent_or_source_site_id": "site-ee0e5bf1f753",
+      "candidate_name_ar": "تل رفح",
+      "candidate_type": "archaeological_tell",
+      "creation_status": "BLOCKED_PENDING_CANONICAL_IDENTITY_AND_BOUNDARY"
+    },
+    {
+      "candidate_id": "NEWREC-003",
+      "parent_or_source_site_id": "site-014e4c4e4845",
+      "candidate_name_ar": "كنائس ومقابر ومعاصر عابود",
+      "candidate_type": "constituent_inventory",
+      "creation_status": "BLOCKED_PENDING_COMPONENT_CENSUS"
+    },
+    {
+      "candidate_id": "NEWREC-004",
+      "parent_or_source_site_id": "site-2a3fdab99250",
+      "candidate_name_ar": "مكونات مشهد عين سامية",
+      "candidate_type": "constituent_inventory",
+      "creation_status": "BLOCKED_PENDING_COMPONENT_CENSUS"
+    }
+  ],
+  "auto_apply": false
+}

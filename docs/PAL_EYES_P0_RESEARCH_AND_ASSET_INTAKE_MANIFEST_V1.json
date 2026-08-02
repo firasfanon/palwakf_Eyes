@@ -1,0 +1,64 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_P0_HELD_CLAIM_RESEARCH_EXECUTION_AND_CONTROLLED_ASSET_INTAKE_V1",
+  "result": "PASS",
+  "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+  "counts": {
+    "p0_claims_executed": 37,
+    "p0_status_counts": {
+      "P0_SOURCE_GAP_REMAINS": 6,
+      "P0_LEGAL_SPECIALIST_REVIEW_REQUIRED": 2,
+      "P0_IDENTITY_GIS_INVENTORY_REQUIRED": 6,
+      "P0_PARTIAL_DOCUMENTARY_CLOSURE": 7,
+      "P0_FIELD_ENGINEERING_REQUIRED": 13,
+      "P0_CLOSED_CORRECTIVE_FINDING": 3
+    },
+    "research_sources": 18,
+    "asset_intake_rows": 316,
+    "candidate_sites": 79,
+    "current_submitted_assets": 0,
+    "approved_media_assets": 0,
+    "publication_ready_claims": 0
+  },
+  "quality_checks": {
+    "p0_claim_count_37": true,
+    "all_p0_claim_ids_accounted_for": true,
+    "all_source_references_resolve": true,
+    "claims_auto_accepted_zero": true,
+    "asset_intake_rows_316": true,
+    "all_asset_site_ids_resolve": true,
+    "automatic_asset_approval_false": true,
+    "candidate_catalog_mutation_false": true,
+    "database_write_false": true,
+    "project_source_mutation_false": true,
+    "database_import_blocked": true,
+    "publication_blocked": true
+  },
+  "artifacts": [
+    {
+      "filename": "PAL_EYES_P0_HELD_CLAIM_RESEARCH_EXECUTION_REPORT_V1.md",
+      "sha256": "95fd4f1addd1e5f7ae4162d62b5e1c6b4f3eb00b748d7ccfe676b12667317962",
+      "size_bytes": 15068
+    },
+    {
+      "filename": "PAL_EYES_P0_HELD_CLAIM_RESEARCH_EXECUTION_REGISTRY_V1.json",
+      "sha256": "34b088b70d76c8be955aa8eb0ede9c5892aa5ba37ba218e2a670b9f4e5b0886b",
+      "size_bytes": 110863
+    },
+    {
+      "filename": "PAL_EYES_CONTROLLED_ASSET_INTAKE_REGISTRY_V1.json",
+      "sha256": "4d3d4c826595281e45aa01bb31c82f39766c21e61547f0c8046a9f3f8bc657a1",
+      "size_bytes": 266844
+    },
+    {
+      "filename": "PAL_EYES_CONTROLLED_ASSET_INTAKE_REGISTER_V1.csv",
+      "sha256": "7e64a739edac7391755e76305cca59ca43c0dc56554a136c924bb0c085946435",
+      "size_bytes": 34746
+    },
+    {
+      "filename": "PAL_EYES_CONTROLLED_ASSET_INTAKE_README_V1.md",
+      "sha256": "aa10ed2fc7c46d91fe455ff4b21ae9ae058f2155fc7d23c59e726ed00258f7a9",
+      "size_bytes": 1845
+    }
+  ]
+}

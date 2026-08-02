@@ -31,8 +31,8 @@ class WorkspaceSectionScreen extends StatelessWidget {
               final width = constraints.maxWidth >= 820
                   ? (constraints.maxWidth - 32) / 3
                   : constraints.maxWidth >= 560
-                  ? (constraints.maxWidth - 16) / 2
-                  : constraints.maxWidth;
+                      ? (constraints.maxWidth - 16) / 2
+                      : constraints.maxWidth;
               return Wrap(
                 spacing: 16,
                 runSpacing: 16,
@@ -51,8 +51,8 @@ class WorkspaceSectionScreen extends StatelessWidget {
                           label: 'مسار تشغيلي',
                           onTap: () =>
                               ScaffoldMessenger.of(context).showSnackBar(
-                                SnackBar(content: Text('فتح: ${entry.value}')),
-                              ),
+                            SnackBar(content: Text('فتح: ${entry.value}')),
+                          ),
                           footer: Row(
                             children: <Widget>[
                               CircleAvatar(

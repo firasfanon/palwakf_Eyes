@@ -463,3 +463,55 @@ renders «حكاية موسعة».
 
 The repair sorts the two imports, updates the unchanged 364×402 regression
 test, preserves the no-overflow assertion, and reconciles R6.0.1/R6.0.2.
+
+## ERR-0030 — 2026-08-02 — PalEyesMediaStage unbounded Stack height
+
+### Evidence
+
+Browser runtime failed at `public_experience_maturity.dart` because the media stage supplied only `minHeight` to a `Stack` whose children were positioned. The effective constraints were `370.0<=h<=Infinity`, so the Stack could not derive a finite size. The later box, null, and mouse-tracker messages were cascading failures.
+
+### Repair
+
+The media stage now owns the finite height already provided by its callers. Desktop-scrollable and 390-pixel mobile widget tests preserve the contract. The OpenStreetMap tile warning is tracked separately and was not the cause.
+
+## ERR-0031 — 2026-08-02 — Mandatory Figma workflow reduced visual quality
+
+### Observation
+
+The generated Figma screens were structurally useful but visually weaker than the accepted Flutter screens. Treating them as a mandatory upstream authority would introduce an unnecessary design-to-code round trip and risk visual regression.
+
+### Resolution
+
+Figma remains preserved as an optional experiment and documentation surface. Direct Flutter visual development is restored as the primary workflow, with human browser review as the visual acceptance authority.
+
+## ERR-R9-001 — 2026-08-02 — Baseline format drift and nested repository contamination
+
+**Marker:** `PAL_EYES_R9_0_1_FORMAT_AND_NESTED_REPOSITORY_ERROR_RECORD`
+
+### Symptoms
+
+- 83 of 106 Dart files failed a global format census; the R8/R9 target scope contained 12 files requiring canonical formatting.
+- A complete nested Git/Flutter repository existed at `Pal_Eyes\Pal_Eyes`.
+
+### Root cause
+
+- Historical packages were applied without a canonical target-scoped format gate.
+- A duplicate working copy was placed inside the authoritative repository root.
+
+### Failed or unsafe approaches
+
+- Global `dart format lib test` was rejected because it would have expanded the patch to unrelated legacy files.
+- Deleting the nested repository before evidence preservation risked losing uncommitted changes; the operator ultimately deleted it manually and authorized continuation using the outer repository as authoritative.
+
+### Repair
+
+- Formatted only the 12 verified R8/R9 files.
+- Proved no format scope escape.
+- Re-ran static verification, analyze, 65 tests, whitespace checks, Chrome/Edge runtime, and visual UAT.
+- Promoted `PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802`.
+
+### Prevention
+
+- Future baselines must run a target-scoped Dart format check before packaging.
+- Future scripts must fail closed when a nested `Pal_Eyes` repository exists.
+- Last stable baseline: `PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802`.

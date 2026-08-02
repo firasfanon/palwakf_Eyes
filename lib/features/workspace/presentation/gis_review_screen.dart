@@ -7,16 +7,12 @@ class GisReviewScreen extends ConsumerWidget {
   const GisReviewScreen({super.key});
 
   Future<void> _addCandidate(BuildContext context, WidgetRef ref) async {
-    final snapshot = await ref
-        .read(operationalWorkspaceStoreProvider)
-        .initialize();
+    final snapshot = await ref.read(operationalWorkspaceStoreProvider).initialize();
     final site = snapshot.sites.firstWhere(
       (item) => !item.publicCoordinatesApproved,
       orElse: () => snapshot.sites.first,
     );
-    await ref
-        .read(operationalWorkspaceStoreProvider)
-        .addCoordinateCandidate(
+    await ref.read(operationalWorkspaceStoreProvider).addCoordinateCandidate(
           siteId: site.id,
           siteNameAr: site.nameAr,
           latitude: 0,
@@ -58,9 +54,7 @@ class GisReviewScreen extends ConsumerWidget {
         data: (data) {
           return Column(
             children: <Widget>[
-              ...data.coordinateCandidates
-                  .take(50)
-                  .map(
+              ...data.coordinateCandidates.take(50).map(
                     (candidate) => Card(
                       child: PalEyesWorkflowStatus(
                         label: candidate.siteNameAr,

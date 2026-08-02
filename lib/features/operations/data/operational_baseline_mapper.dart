@@ -12,93 +12,82 @@ abstract final class OperationalBaselineMapper {
   }) {
     final now = DateTime.utc(2026, 7, 19, 12);
 
-    final operationalSites = sites
-        .map((site) {
-          return OperationalSiteRecord(
-            id: site.id,
-            slug: site.slug,
-            nameAr: site.nameAr,
-            governorateAr: site.governorateAr,
-            localityAr: site.localityAr,
-            siteTypeAr: site.siteTypeAr,
-            pageCategory: site.pageCategory.name,
-            workflowStatus: site.isGovernedDraft
-                ? 'GOVERNED_DRAFT'
-                : 'LIMITED_RESEARCH',
-            publicationStatus: site.publicationBlocked
-                ? 'BLOCKED'
-                : 'PUBLISHED',
-            coordinateStatus: site.hasPublicCoordinates
-                ? 'PUBLIC_APPROVED'
-                : operationalCoordinateSeedSiteIds.contains(site.id)
+    final operationalSites = sites.map((site) {
+      return OperationalSiteRecord(
+        id: site.id,
+        slug: site.slug,
+        nameAr: site.nameAr,
+        governorateAr: site.governorateAr,
+        localityAr: site.localityAr,
+        siteTypeAr: site.siteTypeAr,
+        pageCategory: site.pageCategory.name,
+        workflowStatus: site.isGovernedDraft
+            ? 'GOVERNED_DRAFT'
+            : 'LIMITED_RESEARCH',
+        publicationStatus: site.publicationBlocked ? 'BLOCKED' : 'PUBLISHED',
+        coordinateStatus: site.hasPublicCoordinates
+            ? 'PUBLIC_APPROVED'
+            : operationalCoordinateSeedSiteIds.contains(site.id)
                 ? 'REVIEW_CANDIDATE'
                 : 'MISSING',
-            originalDraftProfile: site.hasOriginalExpandedNarrative
-                ? 'expandedNarrative'
-                : 'catalogSummary',
-            editorialDraft: site.narrativeSections
-                .map((section) => '${section.title}\n${section.draftText}')
-                .join('\n\n'),
-            sourceCount: site.sources.length,
-            heldClaimCount: site.heldClaimCount,
-            versionNumber: 1,
-            updatedAt: now,
-          );
-        })
-        .toList(growable: false);
+        originalDraftProfile: site.hasOriginalExpandedNarrative
+            ? 'expandedNarrative'
+            : 'catalogSummary',
+        editorialDraft: site.narrativeSections
+            .map((section) => '${section.title}\n${section.draftText}')
+            .join('\n\n'),
+        sourceCount: site.sources.length,
+        heldClaimCount: site.heldClaimCount,
+        versionNumber: 1,
+        updatedAt: now,
+      );
+    }).toList(growable: false);
 
-    final operationalSources = sources
-        .map((source) {
-          return OperationalSourceRecord(
-            id: source.id,
-            title: source.title,
-            attribution: source.attribution,
-            sourceType: source.sourceTypeAr,
-            url: source.url,
-            workflowStatus: source.evidenceScopeStatus.contains('CLOSED')
-                ? 'VERIFIED'
-                : 'METADATA_REVIEW',
-            rightsStatus: source.textReuseStatus.isEmpty
-                ? 'PENDING'
-                : source.textReuseStatus,
-            publicReleaseStatus: source.publicReleaseStatus,
-            linkedSiteCount: source.mentionedSiteCount,
-            linkedClaimCount: source.isEditorialSource ? 1 : 0,
-            updatedAt: now,
-          );
-        })
-        .toList(growable: false);
+    final operationalSources = sources.map((source) {
+      return OperationalSourceRecord(
+        id: source.id,
+        title: source.title,
+        attribution: source.attribution,
+        sourceType: source.sourceTypeAr,
+        url: source.url,
+        workflowStatus: source.evidenceScopeStatus.contains('CLOSED')
+            ? 'VERIFIED'
+            : 'METADATA_REVIEW',
+        rightsStatus: source.textReuseStatus.isEmpty
+            ? 'PENDING'
+            : source.textReuseStatus,
+        publicReleaseStatus: source.publicReleaseStatus,
+        linkedSiteCount: source.mentionedSiteCount,
+        linkedClaimCount: source.isEditorialSource ? 1 : 0,
+        updatedAt: now,
+      );
+    }).toList(growable: false);
 
-    final operationalClaims =
-        claims
-            .map((claim) {
-              return OperationalClaimRecord(
-                id: claim.claimId,
-                siteId: claim.siteId,
-                siteNameAr: claim.siteNameAr,
-                claimText: claim.claimText,
-                priorityTier: claim.priorityTier,
-                priorityScore: claim.priorityScore,
-                workflowStatus: switch (claim.researchStatus) {
-                  'OPEN' => 'RESEARCHING',
-                  'HELD' => 'HOLD',
-                  _ => claim.researchStatus,
-                },
-                evidenceStatus: claim.requiresFieldEvidence
-                    ? 'FIELD_EVIDENCE_REQUIRED'
-                    : 'SOURCE_EVIDENCE_REQUIRED',
-                publicationUse: 'BLOCKED',
-                categories: claim.categories,
-                updatedAt: now,
-              );
-            })
-            .toList(growable: false)
-          ..sort((a, b) => b.priorityScore.compareTo(a.priorityScore));
+    final operationalClaims = claims.map((claim) {
+      return OperationalClaimRecord(
+        id: claim.claimId,
+        siteId: claim.siteId,
+        siteNameAr: claim.siteNameAr,
+        claimText: claim.claimText,
+        priorityTier: claim.priorityTier,
+        priorityScore: claim.priorityScore,
+        workflowStatus: switch (claim.researchStatus) {
+          'OPEN' => 'RESEARCHING',
+          'HELD' => 'HOLD',
+          _ => claim.researchStatus,
+        },
+        evidenceStatus: claim.requiresFieldEvidence
+            ? 'FIELD_EVIDENCE_REQUIRED'
+            : 'SOURCE_EVIDENCE_REQUIRED',
+        publicationUse: 'BLOCKED',
+        categories: claim.categories,
+        updatedAt: now,
+      );
+    }).toList(growable: false)
+      ..sort((a, b) => b.priorityScore.compareTo(a.priorityScore));
 
     final reviewTasks = <OperationalReviewTask>[
-      ...operationalClaims
-          .take(12)
-          .map(
+      ...operationalClaims.take(12).map(
             (claim) => OperationalReviewTask(
               id: 'review-${claim.id}',
               entityType: 'claim',

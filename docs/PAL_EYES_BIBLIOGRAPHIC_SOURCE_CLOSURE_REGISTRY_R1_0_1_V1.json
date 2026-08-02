@@ -1,0 +1,2317 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_CLAIM_AND_BIBLIOGRAPHIC_CLOSURE_ON_R1_0_1_CANDIDATE_V1",
+  "candidate_catalog": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_1_20260715",
+  "document_status": "bibliographic_identity_closure_registry",
+  "closure_definition": "Bibliographic identity closure confirms a traceable source identity and locator. It does not approve copyright reuse, historical truth beyond the inspected scope, database import or publication.",
+  "counts": {
+    "source_ids": 76,
+    "unique_resources": 73,
+    "alias_groups": 3,
+    "bibliographic_identities_closed": 76
+  },
+  "alias_groups": [
+    {
+      "canonical_resource_id": "SRCRES-025",
+      "normalized_url": "https://whc.unesco.org/en/list/1565",
+      "canonical_source_id": "AUTH-UNESCO-HEBRON-001",
+      "alias_source_ids": [
+        "W2-AUTH-UNESCO-HEBRON-001"
+      ],
+      "status": "ALIAS_NORMALIZED_WITHOUT_DELETION"
+    },
+    {
+      "canonical_resource_id": "SRCRES-027",
+      "normalized_url": "https://whc.unesco.org/en/list/1687",
+      "canonical_source_id": "AUTH-UNESCO-JERICHO-001",
+      "alias_source_ids": [
+        "W5-AUTH-UNESCO-JERICHO-001"
+      ],
+      "status": "ALIAS_NORMALIZED_WITHOUT_DELETION"
+    },
+    {
+      "canonical_resource_id": "SRCRES-048",
+      "normalized_url": "https://www.riwaq.org/page/14",
+      "canonical_source_id": "W4-AUTH-RIWAQ-50-CENTRES",
+      "alias_source_ids": [
+        "W5-AUTH-RIWAQ-50-CENTRES-001"
+      ],
+      "status": "ALIAS_NORMALIZED_WITHOUT_DELETION"
+    }
+  ],
+  "evidence_scope_status_counts": {
+    "CLOSED_WITHIN_STATED_SOURCE_SCOPE": 54,
+    "NO_CONFIRMED_CLAIM_TO_CLOSE": 8,
+    "CLOSED_LIMITED_TO_INSPECTED_RECORD": 13,
+    "NOT_CLOSED_FOR_LINKED_CLAIM": 1
+  },
+  "sources": [
+    {
+      "source_id": "AUTH-UNESCO-BATTIR-001",
+      "canonical_resource_id": "SRCRES-023",
+      "canonical_source_id": "AUTH-UNESCO-BATTIR-001",
+      "alias_of_source_id": null,
+      "title": "Palestine: Land of Olives and Vines – Cultural Landscape of Southern Jerusalem, Battir",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_world_heritage_record",
+      "url": "https://whc.unesco.org/en/list/1492/",
+      "normalized_url": "https://whc.unesco.org/en/list/1492",
+      "inspection_status": "directly_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/list/1492/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-88fede7b6df0-W1-C01",
+        "site-88fede7b6df0-W1-C02"
+      ],
+      "linked_claim_count": 2,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "AUTH-UNESCO-BATTIR-MAP-001",
+      "canonical_resource_id": "SRCRES-024",
+      "canonical_source_id": "AUTH-UNESCO-BATTIR-MAP-001",
+      "alias_of_source_id": null,
+      "title": "Battir World Heritage Property - Maps",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_property_geodata",
+      "url": "https://whc.unesco.org/en/list/1492/maps/",
+      "normalized_url": "https://whc.unesco.org/en/list/1492/maps",
+      "inspection_status": "directly_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "BIBLIOGRAPHIC_ONLY_NO_LINKED_CONFIRMED_CLAIM",
+      "evidence_scope_status": "NO_CONFIRMED_CLAIM_TO_CLOSE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/list/1492/maps/"
+        }
+      ],
+      "linked_claim_ids": [],
+      "linked_claim_count": 0,
+      "closure_note": "Bibliographic identity and resource locator are closed; the source has no linked confirmed claim in the current queue.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "AUTH-UNESCO-HEBRON-001",
+      "canonical_resource_id": "SRCRES-025",
+      "canonical_source_id": "AUTH-UNESCO-HEBRON-001",
+      "alias_of_source_id": null,
+      "title": "Hebron/Al-Khalil Old Town",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_world_heritage_record",
+      "url": "https://whc.unesco.org/en/list/1565/",
+      "normalized_url": "https://whc.unesco.org/en/list/1565",
+      "inspection_status": "directly_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/list/1565/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-6b6c5a396756-W1-C01",
+        "site-6b6c5a396756-W1-C02",
+        "site-6b6c5a396756-W1-C03",
+        "site-899e38be070d-W1-C01",
+        "site-899e38be070d-W1-C02"
+      ],
+      "linked_claim_count": 5,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "AUTH-UNESCO-HEBRON-MAP-001",
+      "canonical_resource_id": "SRCRES-026",
+      "canonical_source_id": "AUTH-UNESCO-HEBRON-MAP-001",
+      "alias_of_source_id": null,
+      "title": "Hebron/Al-Khalil Old Town - Maps",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_property_geodata",
+      "url": "https://whc.unesco.org/en/list/1565/maps/",
+      "normalized_url": "https://whc.unesco.org/en/list/1565/maps",
+      "inspection_status": "directly_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "BIBLIOGRAPHIC_ONLY_NO_LINKED_CONFIRMED_CLAIM",
+      "evidence_scope_status": "NO_CONFIRMED_CLAIM_TO_CLOSE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/list/1565/maps/"
+        }
+      ],
+      "linked_claim_ids": [],
+      "linked_claim_count": 0,
+      "closure_note": "Bibliographic identity and resource locator are closed; the source has no linked confirmed claim in the current queue.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "AUTH-UNESCO-HISHAM-001",
+      "canonical_resource_id": "SRCRES-036",
+      "canonical_source_id": "AUTH-UNESCO-HISHAM-001",
+      "alias_of_source_id": null,
+      "title": "Hisham’s Palace/Khirbet al-Mafjar - Tentative List",
+      "institution_or_author": "Permanent Delegation of Palestine to UNESCO / UNESCO World Heritage Centre publication",
+      "source_class": "official_state_submission_tentative_list",
+      "url": "https://whc.unesco.org/en/tentativelists/6546/",
+      "normalized_url": "https://whc.unesco.org/en/tentativelists/6546",
+      "inspection_status": "directly_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/tentativelists/6546/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-0285c869e647-W1-C01",
+        "site-0285c869e647-W1-C02",
+        "site-0285c869e647-W1-C03"
+      ],
+      "linked_claim_count": 3,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "AUTH-UNESCO-JERICHO-001",
+      "canonical_resource_id": "SRCRES-027",
+      "canonical_source_id": "AUTH-UNESCO-JERICHO-001",
+      "alias_of_source_id": null,
+      "title": "Ancient Jericho/Tell es-Sultan",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_world_heritage_record",
+      "url": "https://whc.unesco.org/en/list/1687/",
+      "normalized_url": "https://whc.unesco.org/en/list/1687",
+      "inspection_status": "directly_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/list/1687/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-a86fc049d470-W1-C01",
+        "site-a86fc049d470-W1-C02",
+        "site-a86fc049d470-W1-C03"
+      ],
+      "linked_claim_count": 3,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "AUTH-UNESCO-JERICHO-MAP-001",
+      "canonical_resource_id": "SRCRES-028",
+      "canonical_source_id": "AUTH-UNESCO-JERICHO-MAP-001",
+      "alias_of_source_id": null,
+      "title": "Ancient Jericho/Tell es-Sultan - Maps",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_property_geodata",
+      "url": "https://whc.unesco.org/en/list/1687/maps/",
+      "normalized_url": "https://whc.unesco.org/en/list/1687/maps",
+      "inspection_status": "directly_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "BIBLIOGRAPHIC_ONLY_NO_LINKED_CONFIRMED_CLAIM",
+      "evidence_scope_status": "NO_CONFIRMED_CLAIM_TO_CLOSE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/list/1687/maps/"
+        }
+      ],
+      "linked_claim_ids": [],
+      "linked_claim_count": 0,
+      "closure_note": "Bibliographic identity and resource locator are closed; the source has no linked confirmed claim in the current queue.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "AUTH-UNESCO-JERUSALEM-DECISION-001",
+      "canonical_resource_id": "SRCRES-018",
+      "canonical_source_id": "AUTH-UNESCO-JERUSALEM-DECISION-001",
+      "alias_of_source_id": null,
+      "title": "40 COM 7A.13 - Old City of Jerusalem and its Walls",
+      "institution_or_author": "UNESCO World Heritage Committee",
+      "source_class": "official_committee_decision",
+      "url": "https://whc.unesco.org/en/decisions/6818/",
+      "normalized_url": "https://whc.unesco.org/en/decisions/6818",
+      "inspection_status": "directly_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/decisions/6818/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-4aeec5656d1d-W1-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "AUTH-UNESCO-JERUSALEM-MAP-001",
+      "canonical_resource_id": "SRCRES-022",
+      "canonical_source_id": "AUTH-UNESCO-JERUSALEM-MAP-001",
+      "alias_of_source_id": null,
+      "title": "Old City of Jerusalem and its Walls - Maps",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_property_geodata",
+      "url": "https://whc.unesco.org/en/list/148/maps/",
+      "normalized_url": "https://whc.unesco.org/en/list/148/maps",
+      "inspection_status": "directly_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "BIBLIOGRAPHIC_ONLY_NO_LINKED_CONFIRMED_CLAIM",
+      "evidence_scope_status": "NO_CONFIRMED_CLAIM_TO_CLOSE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/list/148/maps/"
+        }
+      ],
+      "linked_claim_ids": [],
+      "linked_claim_count": 0,
+      "closure_note": "Bibliographic identity and resource locator are closed; the source has no linked confirmed claim in the current queue.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "AUTH-UNESCO-NATIVITY-001",
+      "canonical_resource_id": "SRCRES-019",
+      "canonical_source_id": "AUTH-UNESCO-NATIVITY-001",
+      "alias_of_source_id": null,
+      "title": "Birthplace of Jesus: Church of the Nativity and the Pilgrimage Route, Bethlehem",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_world_heritage_record",
+      "url": "https://whc.unesco.org/en/list/1433/",
+      "normalized_url": "https://whc.unesco.org/en/list/1433",
+      "inspection_status": "directly_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/list/1433/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-4b15f14c306f-W1-C01",
+        "site-4b15f14c306f-W1-C02"
+      ],
+      "linked_claim_count": 2,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "AUTH-UNESCO-NATIVITY-MAP-001",
+      "canonical_resource_id": "SRCRES-020",
+      "canonical_source_id": "AUTH-UNESCO-NATIVITY-MAP-001",
+      "alias_of_source_id": null,
+      "title": "Church of the Nativity and the Pilgrimage Route - Maps",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_property_geodata",
+      "url": "https://whc.unesco.org/en/list/1433/maps/",
+      "normalized_url": "https://whc.unesco.org/en/list/1433/maps",
+      "inspection_status": "directly_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "BIBLIOGRAPHIC_ONLY_NO_LINKED_CONFIRMED_CLAIM",
+      "evidence_scope_status": "NO_CONFIRMED_CLAIM_TO_CLOSE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/list/1433/maps/"
+        }
+      ],
+      "linked_claim_ids": [],
+      "linked_claim_count": 0,
+      "closure_note": "Bibliographic identity and resource locator are closed; the source has no linked confirmed claim in the current queue.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "AUTH-UNESCO-PS-STATE-001",
+      "canonical_resource_id": "SRCRES-029",
+      "canonical_source_id": "AUTH-UNESCO-PS-STATE-001",
+      "alias_of_source_id": null,
+      "title": "State of Palestine - UNESCO World Heritage Convention",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_international_registry",
+      "url": "https://whc.unesco.org/en/statesparties/ps",
+      "normalized_url": "https://whc.unesco.org/en/statesparties/ps",
+      "inspection_status": "directly_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "BIBLIOGRAPHIC_ONLY_NO_LINKED_CONFIRMED_CLAIM",
+      "evidence_scope_status": "NO_CONFIRMED_CLAIM_TO_CLOSE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/statesparties/ps"
+        }
+      ],
+      "linked_claim_ids": [],
+      "linked_claim_count": 0,
+      "closure_note": "Bibliographic identity and resource locator are closed; the source has no linked confirmed claim in the current queue.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "AUTH-UNESCO-SEBASTIA-001",
+      "canonical_resource_id": "SRCRES-034",
+      "canonical_source_id": "AUTH-UNESCO-SEBASTIA-001",
+      "alias_of_source_id": null,
+      "title": "Sebastia - Tentative List",
+      "institution_or_author": "Permanent Delegation of Palestine to UNESCO / UNESCO World Heritage Centre publication",
+      "source_class": "official_state_submission_tentative_list",
+      "url": "https://whc.unesco.org/en/tentativelists/5718/",
+      "normalized_url": "https://whc.unesco.org/en/tentativelists/5718",
+      "inspection_status": "directly_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/tentativelists/5718/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-6f6afe87f969-W1-C01",
+        "site-6f6afe87f969-W1-C02",
+        "site-6f6afe87f969-W1-C03"
+      ],
+      "linked_claim_count": 3,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-ARCHNET-CITADEL-001",
+      "canonical_resource_id": "SRCRES-040",
+      "canonical_source_id": "W2-AUTH-ARCHNET-CITADEL-001",
+      "alias_of_source_id": null,
+      "title": "Qal'at al-Quds",
+      "institution_or_author": "Archnet / Aga Khan Documentation Center at MIT",
+      "source_class": "academic_architectural_record",
+      "url": "https://www.archnet.org/sites/3735",
+      "normalized_url": "https://www.archnet.org/sites/3735",
+      "inspection_status": "record_excerpt_and_metadata_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_LIMITED_RECORD_OR_EXCERPT",
+      "evidence_scope_status": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.archnet.org/sites/3735"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-83d3025c4675-W2-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "Closure is limited to the inspected metadata, excerpt, registry or institutional record and does not authorize broader claims.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-ARCHNET-QATTANIN-001",
+      "canonical_resource_id": "SRCRES-039",
+      "canonical_source_id": "W2-AUTH-ARCHNET-QATTANIN-001",
+      "alias_of_source_id": null,
+      "title": "Bab al-Qattanin / Suq al-Qattanin",
+      "institution_or_author": "Archnet / Aga Khan Documentation Center at MIT",
+      "source_class": "academic_architectural_record",
+      "url": "https://www.archnet.org/sites/3060",
+      "normalized_url": "https://www.archnet.org/sites/3060",
+      "inspection_status": "record_excerpt_and_metadata_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_LIMITED_RECORD_OR_EXCERPT",
+      "evidence_scope_status": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.archnet.org/sites/3060"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-4bbdf07d8d66-W2-C01",
+        "site-f7553f79288f-W2-C01"
+      ],
+      "linked_claim_count": 2,
+      "closure_note": "Closure is limited to the inspected metadata, excerpt, registry or institutional record and does not authorize broader claims.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-ARCHNET-SOLOMON-POOLS-001",
+      "canonical_resource_id": "SRCRES-038",
+      "canonical_source_id": "W2-AUTH-ARCHNET-SOLOMON-POOLS-001",
+      "alias_of_source_id": null,
+      "title": "Renovation of Solomon's Pool Historical Site",
+      "institution_or_author": "Archnet / Aga Khan Trust for Culture",
+      "source_class": "academic_conservation_project_record",
+      "url": "https://www.archnet.org/sites/17049",
+      "normalized_url": "https://www.archnet.org/sites/17049",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.archnet.org/sites/17049"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-37c8be50ce73-W2-C01",
+        "site-63fe9eba7871-W2-C01"
+      ],
+      "linked_claim_count": 2,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-ICOMOS-HEBRON-2017",
+      "canonical_resource_id": "SRCRES-016",
+      "canonical_source_id": "W2-AUTH-ICOMOS-HEBRON-2017",
+      "alias_of_source_id": null,
+      "title": "ICOMOS Evaluation — Hebron/Al-Khalil Old Town",
+      "institution_or_author": "ICOMOS / UNESCO World Heritage Centre",
+      "source_class": "official_advisory_body_evaluation",
+      "url": "https://whc.unesco.org/archive/2017/whc17-41com-inf8B1-Add2-en.pdf",
+      "normalized_url": "https://whc.unesco.org/archive/2017/whc17-41com-inf8B1-Add2-en.pdf",
+      "inspection_status": "relevant_pdf_passages_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_WITH_EXPLICIT_LOCATOR",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "pdf_pages",
+          "pages": [
+            6,
+            8,
+            9,
+            12,
+            16
+          ],
+          "scope": "Tell Rumeida context, Sheikh Ali al-Bakka area, nomination boundary and integrity discussion"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-63c0ba59c24e-W2-C02",
+        "site-7532d020842e-W2-C01"
+      ],
+      "linked_claim_count": 2,
+      "closure_note": "The linked claim may proceed to Arabic editorial review only within the locator and source-class limitations.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-JERUSALEM-PATRIARCHATE-ALKHADER-001",
+      "canonical_resource_id": "SRCRES-002",
+      "canonical_source_id": "W2-AUTH-JERUSALEM-PATRIARCHATE-ALKHADER-001",
+      "alias_of_source_id": null,
+      "title": "Holy Monasteries Outside Jerusalem — St George in Al-Khader",
+      "institution_or_author": "Greek Orthodox Patriarchate of Jerusalem",
+      "source_class": "official_ecclesiastical_institutional_record",
+      "url": "https://en.jerusalem-patriarchate.info/administrative-structure/holy-monasteries-and-hegoumeneia-abbots-quarters-outside-jerusalem/",
+      "normalized_url": "https://en.jerusalem-patriarchate.info/administrative-structure/holy-monasteries-and-hegoumeneia-abbots-quarters-outside-jerusalem",
+      "inspection_status": "official_page_metadata_and_excerpt_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_LIMITED_RECORD_OR_EXCERPT",
+      "evidence_scope_status": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://en.jerusalem-patriarchate.info/administrative-structure/holy-monasteries-and-hegoumeneia-abbots-quarters-outside-jerusalem/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-f97aa993c98b-W2-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "Closure is limited to the inspected metadata, excerpt, registry or institutional record and does not authorize broader claims.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-JERUSALEM-PATRIARCHATE-GETHSEMANE-001",
+      "canonical_resource_id": "SRCRES-003",
+      "canonical_source_id": "W2-AUTH-JERUSALEM-PATRIARCHATE-GETHSEMANE-001",
+      "alias_of_source_id": null,
+      "title": "Holy Gethsemane",
+      "institution_or_author": "Greek Orthodox Patriarchate of Jerusalem",
+      "source_class": "official_ecclesiastical_tradition_record",
+      "url": "https://en.jerusalem-patriarchate.info/holy-shrines/holy-gethsemane/",
+      "normalized_url": "https://en.jerusalem-patriarchate.info/holy-shrines/holy-gethsemane",
+      "inspection_status": "official_page_excerpt_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_LIMITED_RECORD_OR_EXCERPT",
+      "evidence_scope_status": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://en.jerusalem-patriarchate.info/holy-shrines/holy-gethsemane/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-8d297f3c37a9-W2-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "Closure is limited to the inspected metadata, excerpt, registry or institutional record and does not authorize broader claims.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-JERUSALEM-PATRIARCHATE-MAR-SABA-001",
+      "canonical_resource_id": "SRCRES-005",
+      "canonical_source_id": "W2-AUTH-JERUSALEM-PATRIARCHATE-MAR-SABA-001",
+      "alias_of_source_id": null,
+      "title": "Short History Account of Saint Savvas' Lavra",
+      "institution_or_author": "Greek Orthodox Patriarchate of Jerusalem",
+      "source_class": "official_ecclesiastical_history_record",
+      "url": "https://en.jerusalem-patriarchate.info/pilgrimages/short-history-account-of-saint-savvas-lavra/",
+      "normalized_url": "https://en.jerusalem-patriarchate.info/pilgrimages/short-history-account-of-saint-savvas-lavra",
+      "inspection_status": "official_page_metadata_and_excerpt_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_LIMITED_RECORD_OR_EXCERPT",
+      "evidence_scope_status": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://en.jerusalem-patriarchate.info/pilgrimages/short-history-account-of-saint-savvas-lavra/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-a8aeb054b451-W2-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "Closure is limited to the inspected metadata, excerpt, registry or institutional record and does not authorize broader claims.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-MWNF-NABI-YUNUS-001",
+      "canonical_resource_id": "SRCRES-007",
+      "canonical_source_id": "W2-AUTH-MWNF-NABI-YUNUS-001",
+      "alias_of_source_id": null,
+      "title": "Mosque of Nabi Yunus (Prophet Jonah)",
+      "institution_or_author": "Museum With No Frontiers — Discover Islamic Art",
+      "source_class": "curated_academic_museum_record",
+      "url": "https://islamicart.museumwnf.org/database_item.php?id=monument%3BISL%3Bpa%3BMon01%3B12%3Ben%3Bar",
+      "normalized_url": "https://islamicart.museumwnf.org/database_item.php?id=monument%3BISL%3Bpa%3BMon01%3B12%3Ben%3Bar",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://islamicart.museumwnf.org/database_item.php?id=monument%3BISL%3Bpa%3BMon01%3B12%3Ben%3Bar"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-cd3be04163b6-W2-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-SBF-HERODIUM-BIBLIOGRAPHY-001",
+      "canonical_resource_id": "SRCRES-014",
+      "canonical_source_id": "W2-AUTH-SBF-HERODIUM-BIBLIOGRAPHY-001",
+      "alias_of_source_id": null,
+      "title": "Herodium archaeological bibliography and final reports",
+      "institution_or_author": "Studium Biblicum Franciscanum",
+      "source_class": "academic_bibliographic_registry",
+      "url": "https://sbf.custodia.org/it/seminario-iv",
+      "normalized_url": "https://sbf.custodia.org/it/seminario-iv",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://sbf.custodia.org/it/seminario-iv"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-133155518939-W2-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-SBF-HERODIUM-CHRISTIAN-001",
+      "canonical_resource_id": "SRCRES-012",
+      "canonical_source_id": "W2-AUTH-SBF-HERODIUM-CHRISTIAN-001",
+      "alias_of_source_id": null,
+      "title": "Christian Archaeology in the Holy Land — Herodion chapters",
+      "institution_or_author": "Studium Biblicum Franciscanum",
+      "source_class": "academic_monograph_record",
+      "url": "https://sbf.custodia.org/en/publications/collectio-maior/christian-archaeology-in-the-holy-land",
+      "normalized_url": "https://sbf.custodia.org/en/publications/collectio-maior/christian-archaeology-in-the-holy-land",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://sbf.custodia.org/en/publications/collectio-maior/christian-archaeology-in-the-holy-land"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-133155518939-W2-C02"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001",
+      "canonical_resource_id": "SRCRES-011",
+      "canonical_source_id": "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001",
+      "alias_of_source_id": null,
+      "title": "General information — archaeological work of the Studium Biblicum Franciscanum",
+      "institution_or_author": "Studium Biblicum Franciscanum",
+      "source_class": "academic_institutional_archaeology_record",
+      "url": "https://sbf.custodia.org/en/general-info",
+      "normalized_url": "https://sbf.custodia.org/en/general-info",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://sbf.custodia.org/en/general-info"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-8d297f3c37a9-W2-C02",
+        "site-431ed266867b-W2-C02"
+      ],
+      "linked_claim_count": 2,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-SBF-MILK-GROTTO-001",
+      "canonical_resource_id": "SRCRES-013",
+      "canonical_source_id": "W2-AUTH-SBF-MILK-GROTTO-001",
+      "alias_of_source_id": null,
+      "title": "Bethlehem excursion record — Milk Grotto",
+      "institution_or_author": "Studium Biblicum Franciscanum",
+      "source_class": "academic_institutional_tradition_and_site_record",
+      "url": "https://sbf.custodia.org/it/escursioni/betlemme",
+      "normalized_url": "https://sbf.custodia.org/it/escursioni/betlemme",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://sbf.custodia.org/it/escursioni/betlemme"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-57adc62d6d70-W2-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-SBF-MILK-GROTTO-EXCAVATION-2005",
+      "canonical_resource_id": "SRCRES-015",
+      "canonical_source_id": "W2-AUTH-SBF-MILK-GROTTO-EXCAVATION-2005",
+      "alias_of_source_id": null,
+      "title": "SBF Notiziario 2005–2006 — emergency excavation at the Milk Grotto",
+      "institution_or_author": "Studium Biblicum Franciscanum",
+      "source_class": "academic_archaeological_activity_record",
+      "url": "https://sbf.custodia.org/sites/default/files/2019-04/SBF_Notiziario_2005-2006.pdf",
+      "normalized_url": "https://sbf.custodia.org/sites/default/files/2019-04/SBF_Notiziario_2005-2006.pdf",
+      "inspection_status": "relevant_pdf_passage_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_WITH_EXPLICIT_LOCATOR",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "pdf_page",
+          "page": 32,
+          "scope": "Emergency excavation at the Milk Grotto, 21–25 October 2005"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-57adc62d6d70-W2-C02"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The linked claim may proceed to Arabic editorial review only within the locator and source-class limitations.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-UNESCO-HEBRON-001",
+      "canonical_resource_id": "SRCRES-025",
+      "canonical_source_id": "AUTH-UNESCO-HEBRON-001",
+      "alias_of_source_id": "AUTH-UNESCO-HEBRON-001",
+      "title": "Hebron/Al-Khalil Old Town",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_world_heritage_record",
+      "url": "https://whc.unesco.org/en/list/1565/",
+      "normalized_url": "https://whc.unesco.org/en/list/1565",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/list/1565/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-63c0ba59c24e-W2-C01",
+        "site-0dc57168d963-W2-C01"
+      ],
+      "linked_claim_count": 2,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-UNESCO-JERUSALEM-001",
+      "canonical_resource_id": "SRCRES-021",
+      "canonical_source_id": "W2-AUTH-UNESCO-JERUSALEM-001",
+      "alias_of_source_id": null,
+      "title": "Old City of Jerusalem and its Walls",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_world_heritage_record",
+      "url": "https://whc.unesco.org/en/list/148/",
+      "normalized_url": "https://whc.unesco.org/en/list/148",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/list/148/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-f9067873c322-W2-C01",
+        "site-431ed266867b-W2-C01"
+      ],
+      "linked_claim_count": 2,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001",
+      "canonical_resource_id": "SRCRES-030",
+      "canonical_source_id": "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001",
+      "alias_of_source_id": null,
+      "title": "Jerusalem — Old City and Ramparts to include Mount Zion",
+      "institution_or_author": "State Party submission published by UNESCO",
+      "source_class": "official_state_submission_tentative_list",
+      "url": "https://whc.unesco.org/en/tentativelists/1483/",
+      "normalized_url": "https://whc.unesco.org/en/tentativelists/1483",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/tentativelists/1483/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-f9df0c7e708c-W2-C01",
+        "site-3a3d3669f0ba-W2-C02"
+      ],
+      "linked_claim_count": 2,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015",
+      "canonical_resource_id": "SRCRES-017",
+      "canonical_source_id": "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015",
+      "alias_of_source_id": null,
+      "title": "State of conservation of properties inscribed on the List of World Heritage in Danger — Old City of Jerusalem and its Walls",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_monitoring_document_with_party_reports",
+      "url": "https://whc.unesco.org/document/135821",
+      "normalized_url": "https://whc.unesco.org/document/135821",
+      "inspection_status": "relevant_pdf_passages_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_WITH_EXPLICIT_LOCATOR",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "pdf_pages",
+          "pages": [
+            49,
+            50
+          ],
+          "scope": "Silwan, Al-Buraq/Western Wall area and Nabi Dawoud monitoring passages; party attribution must be retained"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-f9df0c7e708c-W2-C02",
+        "site-f7553f79288f-W2-C01",
+        "site-3a3d3669f0ba-W2-C01"
+      ],
+      "linked_claim_count": 3,
+      "closure_note": "The linked claim may proceed to Arabic editorial review only within the locator and source-class limitations.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-UNISPAL-WESTERN-WALL-1930",
+      "canonical_resource_id": "SRCRES-067",
+      "canonical_source_id": "W2-AUTH-UNISPAL-WESTERN-WALL-1930",
+      "alias_of_source_id": null,
+      "title": "Report of the Commission appointed to determine rights and claims in connection with the Western or Wailing Wall at Jerusalem",
+      "institution_or_author": "League of Nations / United Nations Information System on the Question of Palestine",
+      "source_class": "official_historical_commission_report",
+      "url": "https://www.un.org/unispal/document/auto-insert-183319/",
+      "normalized_url": "https://www.un.org/unispal/document/auto-insert-183319",
+      "inspection_status": "official_record_metadata_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_LIMITED_RECORD_OR_EXCERPT",
+      "evidence_scope_status": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.un.org/unispal/document/auto-insert-183319/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-f9067873c322-W2-C02"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "Closure is limited to the inspected metadata, excerpt, registry or institutional record and does not authorize broader claims.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W2-AUTH-WAFA-NABI-NUH-2020",
+      "canonical_resource_id": "SRCRES-073",
+      "canonical_source_id": "W2-AUTH-WAFA-NABI-NUH-2020",
+      "alias_of_source_id": null,
+      "title": "تكية النبي نوح.. من فكرة فردية إلى أهم المؤسسات الخيرية والإنسانية",
+      "institution_or_author": "وكالة الأنباء والمعلومات الفلسطينية — وفا",
+      "source_class": "official_palestinian_news_and_current_use_record",
+      "url": "https://www.wafa.ps/pages/details/11353",
+      "normalized_url": "https://www.wafa.ps/pages/details/11353",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.wafa.ps/pages/details/11353"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-c9ac723c0271-W2-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W3-AUTH-BM-TELL-AJJUL-COLLECTION",
+      "canonical_resource_id": "SRCRES-041",
+      "canonical_source_id": "W3-AUTH-BM-TELL-AJJUL-COLLECTION",
+      "alias_of_source_id": null,
+      "title": "British Museum collection records — Tell el-Ajjul",
+      "institution_or_author": "The British Museum",
+      "source_class": "official_museum_collection_registry",
+      "url": "https://www.britishmuseum.org/collection/search?place=Tell+el-Ajjul",
+      "normalized_url": "https://www.britishmuseum.org/collection/search?place=Tell+el-Ajjul",
+      "inspection_status": "collection_registry_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_LIMITED_RECORD_OR_EXCERPT",
+      "evidence_scope_status": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.britishmuseum.org/collection/search?place=Tell+el-Ajjul"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-21150eefdea6-W3-C02"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "Closure is limited to the inspected metadata, excerpt, registry or institutional record and does not authorize broader claims.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W3-AUTH-JERUSALEM-PATRIARCHATE-PORPHYRIOS",
+      "canonical_resource_id": "SRCRES-004",
+      "canonical_source_id": "W3-AUTH-JERUSALEM-PATRIARCHATE-PORPHYRIOS",
+      "alias_of_source_id": null,
+      "title": "Official records concerning Saint Porphyrios of Gaza and the Gaza monastery",
+      "institution_or_author": "Greek Orthodox Patriarchate of Jerusalem",
+      "source_class": "official_ecclesiastical_institutional_record",
+      "url": "https://en.jerusalem-patriarchate.info/liturgic-life/the-feast-of-st-porphyrios-of-gaza-in-gaza/",
+      "normalized_url": "https://en.jerusalem-patriarchate.info/liturgic-life/the-feast-of-st-porphyrios-of-gaza-in-gaza",
+      "inspection_status": "official_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://en.jerusalem-patriarchate.info/liturgic-life/the-feast-of-st-porphyrios-of-gaza-in-gaza/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-e1e3de7b8519-W3-C02"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W3-AUTH-UCL-TELL-AJJUL-2021",
+      "canonical_resource_id": "SRCRES-001",
+      "canonical_source_id": "W3-AUTH-UCL-TELL-AJJUL-2021",
+      "alias_of_source_id": null,
+      "title": "Historical Methods and Mishaps: Flinders Petrie's Views on Interconnected Tell el-Ajjul and the 'Middle Sea'",
+      "institution_or_author": "University College London",
+      "source_class": "peer_reviewed_academic_research",
+      "url": "https://discovery.ucl.ac.uk/10130277/1/Sparks_interconnected%20Ajjul_Accepted%20MSS.pdf",
+      "normalized_url": "https://discovery.ucl.ac.uk/10130277/1/Sparks_interconnected%20Ajjul_Accepted%20MSS.pdf",
+      "inspection_status": "abstract_and_relevant_passage_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_WITH_EXPLICIT_LOCATOR",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "pdf_page",
+          "page": 1,
+          "scope": "Tell el-Ajjul location south of modern Gaza City and Bronze Age research context"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-21150eefdea6-W3-C02"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The linked claim may proceed to Arabic editorial review only within the locator and source-class limitations.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W3-AUTH-UNESCO-ANTHEDON-2012",
+      "canonical_resource_id": "SRCRES-035",
+      "canonical_source_id": "W3-AUTH-UNESCO-ANTHEDON-2012",
+      "alias_of_source_id": null,
+      "title": "Anthedon Harbour",
+      "institution_or_author": "State of Palestine submission published by UNESCO",
+      "source_class": "official_state_party_tentative_list_submission",
+      "url": "https://whc.unesco.org/en/tentativelists/5719/",
+      "normalized_url": "https://whc.unesco.org/en/tentativelists/5719",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/tentativelists/5719/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-99f520b3d607-W3-C02"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W3-AUTH-UNESCO-GAZA-HERITAGE-2015",
+      "canonical_resource_id": "SRCRES-070",
+      "canonical_source_id": "W3-AUTH-UNESCO-GAZA-HERITAGE-2015",
+      "alias_of_source_id": null,
+      "title": "Over 70 Palestinian Youth Volunteer for the Preservation of their Cultural Heritage",
+      "institution_or_author": "UNESCO",
+      "source_class": "official_pre_conflict_heritage_activity_record",
+      "url": "https://www.unesco.org/en/articles/over-70-palestinian-youth-volunteer-preservation-their-cultural-heritage-0",
+      "normalized_url": "https://www.unesco.org/en/articles/over-70-palestinian-youth-volunteer-preservation-their-cultural-heritage-0",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "BIBLIOGRAPHIC_ONLY_NO_LINKED_CONFIRMED_CLAIM",
+      "evidence_scope_status": "NO_CONFIRMED_CLAIM_TO_CLOSE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.unesco.org/en/articles/over-70-palestinian-youth-volunteer-preservation-their-cultural-heritage-0"
+        }
+      ],
+      "linked_claim_ids": [],
+      "linked_claim_count": 0,
+      "closure_note": "Bibliographic identity and resource locator are closed; the source has no linked confirmed claim in the current queue.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026",
+      "canonical_resource_id": "SRCRES-037",
+      "canonical_source_id": "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026",
+      "alias_of_source_id": null,
+      "title": "The Historic Centre of Gaza, including Omari Mosque and Porphyrius Church",
+      "institution_or_author": "Permanent Delegation of the State of Palestine to UNESCO",
+      "source_class": "official_state_party_tentative_list_submission",
+      "url": "https://whc.unesco.org/en/tentativelists/6955/",
+      "normalized_url": "https://whc.unesco.org/en/tentativelists/6955",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/tentativelists/6955/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-2e45744cdab4-W3-C02",
+        "site-e1e3de7b8519-W3-C02",
+        "site-015f495c4236-W3-C01"
+      ],
+      "linked_claim_count": 3,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W3-AUTH-UNESCO-GAZA-IMPACT-2026",
+      "canonical_resource_id": "SRCRES-071",
+      "canonical_source_id": "W3-AUTH-UNESCO-GAZA-IMPACT-2026",
+      "alias_of_source_id": null,
+      "title": "Impact on cultural heritage — Gaza",
+      "institution_or_author": "UNESCO",
+      "source_class": "official_damage_monitoring_record",
+      "url": "https://www.unesco.org/en/gaza/assessment",
+      "normalized_url": "https://www.unesco.org/en/gaza/assessment",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.unesco.org/en/gaza/assessment"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-2e45744cdab4-W3-C01",
+        "site-21150eefdea6-W3-C01",
+        "site-3ded44be126d-W3-C01",
+        "site-5e98cf44d976-W3-C01",
+        "site-e1e3de7b8519-W3-C01",
+        "site-015f495c4236-W3-C02",
+        "site-99f520b3d607-W3-C01",
+        "site-0a78d22c1a69-W3-C01",
+        "site-ee0e5bf1f753-W3-C01"
+      ],
+      "linked_claim_count": 9,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023",
+      "canonical_resource_id": "SRCRES-072",
+      "canonical_source_id": "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023",
+      "alias_of_source_id": null,
+      "title": "Preliminary report on cultural and historical damage in Gaza",
+      "institution_or_author": "Palestinian cultural-sector material hosted by UNESCO",
+      "source_class": "attributed_party_report_hosted_by_unesco",
+      "url": "https://www.unesco.org/sites/default/files/medias/fichiers/2024/03/16_palestine_cultural_gaza.pdf",
+      "normalized_url": "https://www.unesco.org/sites/default/files/medias/fichiers/2024/03/16_palestine_cultural_gaza.pdf",
+      "inspection_status": "relevant_pdf_passages_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_WITH_EXPLICIT_LOCATOR",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "pdf_pages",
+          "pages": [
+            67,
+            68
+          ],
+          "scope": "Great Omari Mosque and Saint Porphyrios passages"
+        },
+        {
+          "locator_type": "pdf_page",
+          "page": 69,
+          "scope": "Reported damage to historic houses including Khan Younis"
+        },
+        {
+          "locator_type": "pdf_page",
+          "page": 71,
+          "scope": "Hamam As-Samra and Qal'at Barqouq passages"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-3ded44be126d-W3-C02",
+        "site-5e98cf44d976-W3-C02",
+        "site-0a78d22c1a69-W3-C02"
+      ],
+      "linked_claim_count": 3,
+      "closure_note": "The linked claim may proceed to Arabic editorial review only within the locator and source-class limitations.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-ACADEMIC-CAMBRIDGE-TELL-FARAH",
+      "canonical_resource_id": "SRCRES-043",
+      "canonical_source_id": "W4-ACADEMIC-CAMBRIDGE-TELL-FARAH",
+      "alias_of_source_id": null,
+      "title": "The Archaeology of the Bronze Age Levant — Tell el-Far'ah North",
+      "institution_or_author": "Cambridge University Press",
+      "source_class": "academic_synthesis",
+      "url": "https://www.cambridge.org/core/books/archaeology-of-the-bronze-age-levant/urbanism-and-its-demise-in-the-early-bronze-ii-and-iii/B7CB62423B49CA8E652456E6DF436B14",
+      "normalized_url": "https://www.cambridge.org/core/books/archaeology-of-the-bronze-age-levant/urbanism-and-its-demise-in-the-early-bronze-ii-and-iii/B7CB62423B49CA8E652456E6DF436B14",
+      "inspection_status": "publisher_summary_and_relevant_record_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "OPEN_FOR_LINKED_CLAIM_SOURCE_REPLACEMENT_REQUIRED",
+      "evidence_scope_status": "NOT_CLOSED_FOR_LINKED_CLAIM",
+      "evidence_locators": [
+        {
+          "locator_type": "publisher_html_chapter",
+          "chapter": "Chapter 3 — Urbanism and Its Demise in the Early Bronze II and III",
+          "printed_page_range": "70–135",
+          "scope": "General southern-Levant Early Bronze urbanism only; no inspected Tell el-Far'ah North passage located"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-c6731a990917-W4-C02"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The chapter's accessible publisher page supports general Early Bronze urbanism but no site-specific Tell el-Far'ah North passage was located for the linked claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-ACADEMIC-EBAF-TELL-FARAH-CORPUS",
+      "canonical_resource_id": "SRCRES-044",
+      "canonical_source_id": "W4-ACADEMIC-EBAF-TELL-FARAH-CORPUS",
+      "alias_of_source_id": null,
+      "title": "Tell el-Far'ah excavation and publication corpus",
+      "institution_or_author": "École biblique et archéologique française de Jérusalem",
+      "source_class": "academic_excavation_institution_record",
+      "url": "https://www.ebaf.edu/publications-2/1144-2/",
+      "normalized_url": "https://www.ebaf.edu/publications-2/1144-2",
+      "inspection_status": "institutional_publication_record_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_WITH_EXPLICIT_LOCATOR",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "institutional_publication_registry",
+          "scope": "École biblique publication corpus and preliminary Revue Biblique reports for Tell el-Far'ah"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-c6731a990917-W4-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The linked claim may proceed to Arabic editorial review only within the locator and source-class limitations.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023",
+      "canonical_resource_id": "SRCRES-046",
+      "canonical_source_id": "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023",
+      "alias_of_source_id": null,
+      "title": "Sacred Space/Contested Place: Intergenerational Memory and the Shifting Meanings of the Shrine/Tomb of Joseph",
+      "institution_or_author": "Jerusalem Quarterly / Institute for Palestine Studies",
+      "source_class": "peer_reviewed_or_editorially_reviewed_academic_article",
+      "url": "https://www.palestine-studies.org/sites/default/files/jq-articles/Sacred%20Space-Contested%20Place%20-%20Intergenerational%20Memory%20and%20the%20Shifting%20Meanings%20of%20the%20Shrine%2C%20Tomb%20of%20Joseph.pdf",
+      "normalized_url": "https://www.palestine-studies.org/sites/default/files/jq-articles/Sacred%20Space-Contested%20Place%20-%20Intergenerational%20Memory%20and%20the%20Shifting%20Meanings%20of%20the%20Shrine%2C%20Tomb%20of%20Joseph.pdf",
+      "inspection_status": "relevant_pdf_passages_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_WITH_EXPLICIT_LOCATOR",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "pdf_pages",
+          "pages": [
+            33,
+            34
+          ],
+          "scope": "Shared/contested shrine memory and absence of archaeological proof for competing burial identifications"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-fb9a817ec94a-W4-C01",
+        "site-fb9a817ec94a-W4-C02"
+      ],
+      "linked_claim_count": 2,
+      "closure_note": "The linked claim may proceed to Arabic editorial review only within the locator and source-class limitations.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-BURQIN",
+      "canonical_resource_id": "SRCRES-061",
+      "canonical_source_id": "W4-AUTH-MOTA-BURQIN",
+      "alias_of_source_id": null,
+      "title": "Burqin Church",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal",
+      "url": "https://www.travelpalestine.ps/en/Site/38/Burqin-Church",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/38/Burqin-Church",
+      "inspection_status": "official_page_metadata_and_excerpt_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_LIMITED_RECORD_OR_EXCERPT",
+      "evidence_scope_status": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/38/Burqin-Church"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-2c1f6b6dbd51-W4-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "Closure is limited to the inspected metadata, excerpt, registry or institutional record and does not authorize broader claims.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-DEIR-ISTIYA",
+      "canonical_resource_id": "SRCRES-056",
+      "canonical_source_id": "W4-AUTH-MOTA-DEIR-ISTIYA",
+      "alias_of_source_id": null,
+      "title": "Deir Istiya",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal",
+      "url": "https://www.travelpalestine.ps/en/Site/280/Deir-Istiya",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/280/Deir-Istiya",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/280/Deir-Istiya"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-69f3ad775733-W4-C01",
+        "site-ba91049d51a9-W4-C01"
+      ],
+      "linked_claim_count": 2,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-JENIN-FATIMA-KHATUN",
+      "canonical_resource_id": "SRCRES-060",
+      "canonical_source_id": "W4-AUTH-MOTA-JENIN-FATIMA-KHATUN",
+      "alias_of_source_id": null,
+      "title": "Fatima Khatun Mosque",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal",
+      "url": "https://www.travelpalestine.ps/en/Site/37/Fatima-Khatun-Mosque",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/37/Fatima-Khatun-Mosque",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/37/Fatima-Khatun-Mosque"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-f2a7fbbda5a5-W4-C02"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-JENIN-SIBAT",
+      "canonical_resource_id": "SRCRES-063",
+      "canonical_source_id": "W4-AUTH-MOTA-JENIN-SIBAT",
+      "alias_of_source_id": null,
+      "title": "Al Sibat Souq",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal",
+      "url": "https://www.travelpalestine.ps/en/Site/46/Al-Sibat-Souq",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/46/Al-Sibat-Souq",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/46/Al-Sibat-Souq"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-f2a7fbbda5a5-W4-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-KAYED-SEBASTIA",
+      "canonical_resource_id": "SRCRES-064",
+      "canonical_source_id": "W4-AUTH-MOTA-KAYED-SEBASTIA",
+      "alias_of_source_id": null,
+      "title": "Al-Kayed Palace",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal_identity_record",
+      "url": "https://www.travelpalestine.ps/en/Site/70/Al-Kayed-Palace",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/70/Al-Kayed-Palace",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/70/Al-Kayed-Palace"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-fe1e2a1605b5-W4-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-KHAN-TUJJAR",
+      "canonical_resource_id": "SRCRES-051",
+      "canonical_source_id": "W4-AUTH-MOTA-KHAN-TUJJAR",
+      "alias_of_source_id": null,
+      "title": "Khan Al-Tujjar (Fabric Market)",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal",
+      "url": "https://www.travelpalestine.ps/en/Site/115/Khan-Al-Tujjar-%28Fabric-Market%29",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/115/Khan-Al-Tujjar-%28Fabric-Market%29",
+      "inspection_status": "direct_page_metadata_and_excerpt_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/115/Khan-Al-Tujjar-%28Fabric-Market%29"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-31c7667ff10e-W4-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-KIFL-HARIS-SHRINES",
+      "canonical_resource_id": "SRCRES-057",
+      "canonical_source_id": "W4-AUTH-MOTA-KIFL-HARIS-SHRINES",
+      "alias_of_source_id": null,
+      "title": "Kifl Haris Shrines",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal",
+      "url": "https://www.travelpalestine.ps/en/Site/283/Kifl-Haris-Shrines",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/283/Kifl-Haris-Shrines",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/283/Kifl-Haris-Shrines"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-b2a7e03ecda1-W4-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-NABLUS-OLD-CITY",
+      "canonical_resource_id": "SRCRES-066",
+      "canonical_source_id": "W4-AUTH-MOTA-NABLUS-OLD-CITY",
+      "alias_of_source_id": null,
+      "title": "The Old City of Nablus",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal",
+      "url": "https://www.travelpalestine.ps/en/Site/92/The-Old-City-of-Nablus",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/92/The-Old-City-of-Nablus",
+      "inspection_status": "direct_page_record_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/92/The-Old-City-of-Nablus"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-a9ac192e20c3-W4-C01",
+        "site-b6773e683274-W4-C01"
+      ],
+      "linked_claim_count": 2,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-NASR-CONTEXT",
+      "canonical_resource_id": "SRCRES-065",
+      "canonical_source_id": "W4-AUTH-MOTA-NASR-CONTEXT",
+      "alias_of_source_id": null,
+      "title": "Bab Al-Saha and Al-Nasr urban context",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal_context",
+      "url": "https://www.travelpalestine.ps/en/Site/87/The-Manara-Clock-Tower-and-Bab-Al-Saha-%28Quarter-of-Nablus%29",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/87/The-Manara-Clock-Tower-and-Bab-Al-Saha-%28Quarter-of-Nablus%29",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/87/The-Manara-Clock-Tower-and-Bab-Al-Saha-%28Quarter-of-Nablus%29"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-a429c345ac25-W4-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-QALQILYA-HISTORIC-VILLAGES",
+      "canonical_resource_id": "SRCRES-052",
+      "canonical_source_id": "W4-AUTH-MOTA-QALQILYA-HISTORIC-VILLAGES",
+      "alias_of_source_id": null,
+      "title": "Historical Villages in Qalqilya",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal_cluster",
+      "url": "https://www.travelpalestine.ps/en/Site/131/Historical-Villages-in-Qalqilya",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/131/Historical-Villages-in-Qalqilya",
+      "inspection_status": "official_page_metadata_and_excerpt_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "BIBLIOGRAPHIC_ONLY_NO_LINKED_CONFIRMED_CLAIM",
+      "evidence_scope_status": "NO_CONFIRMED_CLAIM_TO_CLOSE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/131/Historical-Villages-in-Qalqilya"
+        }
+      ],
+      "linked_claim_ids": [],
+      "linked_claim_count": 0,
+      "closure_note": "Bibliographic identity and resource locator are closed; the source has no linked confirmed claim in the current queue.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-TULKARM-MUSEUM",
+      "canonical_resource_id": "SRCRES-053",
+      "canonical_source_id": "W4-AUTH-MOTA-TULKARM-MUSEUM",
+      "alias_of_source_id": null,
+      "title": "The Museum of Tulkarem",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_museum_record",
+      "url": "https://www.travelpalestine.ps/en/Site/157/The-Museum-of-Tulkarem",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/157/The-Museum-of-Tulkarem",
+      "inspection_status": "official_page_metadata_and_excerpt_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_LIMITED_RECORD_OR_EXCERPT",
+      "evidence_scope_status": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/157/The-Museum-of-Tulkarem"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-be1c2ce90997-W4-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "Closure is limited to the inspected metadata, excerpt, registry or institutional record and does not authorize broader claims.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-YASMINA-ATOUT",
+      "canonical_resource_id": "SRCRES-050",
+      "canonical_source_id": "W4-AUTH-MOTA-YASMINA-ATOUT",
+      "alias_of_source_id": null,
+      "title": "Hosh Al-Atout — Al-Yasmina Quarter",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal",
+      "url": "https://www.travelpalestine.ps/en/Site/110/Hosh-Al-Atout-%28Quarter%29",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/110/Hosh-Al-Atout-%28Quarter%29",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/110/Hosh-Al-Atout-%28Quarter%29"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-160c60c7b952-W4-C01",
+        "site-160c60c7b952-W4-C02"
+      ],
+      "linked_claim_count": 2,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-RIWAQ-50-CENTRES",
+      "canonical_resource_id": "SRCRES-048",
+      "canonical_source_id": "W4-AUTH-RIWAQ-50-CENTRES",
+      "alias_of_source_id": null,
+      "title": "50 Historic Centers",
+      "institution_or_author": "Riwaq Centre for Architectural Conservation",
+      "source_class": "palestinian_architectural_heritage_registry_programme",
+      "url": "https://www.riwaq.org/page/14",
+      "normalized_url": "https://www.riwaq.org/page/14",
+      "inspection_status": "programme_record_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_LIMITED_RECORD_OR_EXCERPT",
+      "evidence_scope_status": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.riwaq.org/page/14"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-69f3ad775733-W4-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "Closure is limited to the inspected metadata, excerpt, registry or institutional record and does not authorize broader claims.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-RIWAQ-DEIR-ISTIYA-PALACES",
+      "canonical_resource_id": "SRCRES-049",
+      "canonical_source_id": "W4-AUTH-RIWAQ-DEIR-ISTIYA-PALACES",
+      "alias_of_source_id": null,
+      "title": "Deir Istiya Palaces",
+      "institution_or_author": "Riwaq Centre for Architectural Conservation",
+      "source_class": "palestinian_architectural_conservation_record",
+      "url": "https://www.riwaq.org/page/16",
+      "normalized_url": "https://www.riwaq.org/page/16",
+      "inspection_status": "search_record_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_LIMITED_RECORD_OR_EXCERPT",
+      "evidence_scope_status": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.riwaq.org/page/16"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-69f3ad775733-W4-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "Closure is limited to the inspected metadata, excerpt, registry or institutional record and does not authorize broader claims.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-UNESCO-GERIZIM-2012",
+      "canonical_resource_id": "SRCRES-031",
+      "canonical_source_id": "W4-AUTH-UNESCO-GERIZIM-2012",
+      "alias_of_source_id": null,
+      "title": "Mount Gerizim and the Samaritans",
+      "institution_or_author": "State of Palestine submission published by UNESCO",
+      "source_class": "official_state_party_tentative_list_submission",
+      "url": "https://whc.unesco.org/en/tentativelists/5706/",
+      "normalized_url": "https://whc.unesco.org/en/tentativelists/5706",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/tentativelists/5706/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-b6773e683274-W4-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-UNESCO-KHAN-WAKALA-2012",
+      "canonical_resource_id": "SRCRES-068",
+      "canonical_source_id": "W4-AUTH-UNESCO-KHAN-WAKALA-2012",
+      "alias_of_source_id": null,
+      "title": "EU and UNESCO restore Nablus' landmark Khan Al-Wakalah",
+      "institution_or_author": "UNESCO / United Nations Information System on the Question of Palestine",
+      "source_class": "official_conservation_project_record",
+      "url": "https://www.un.org/unispal/document/auto-insert-204941/",
+      "normalized_url": "https://www.un.org/unispal/document/auto-insert-204941",
+      "inspection_status": "official_record_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_LIMITED_RECORD_OR_EXCERPT",
+      "evidence_scope_status": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.un.org/unispal/document/auto-insert-204941/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-a9ac192e20c3-W4-C02"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "Closure is limited to the inspected metadata, excerpt, registry or institutional record and does not authorize broader claims.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-UNESCO-NABLUS-2012",
+      "canonical_resource_id": "SRCRES-033",
+      "canonical_source_id": "W4-AUTH-UNESCO-NABLUS-2012",
+      "alias_of_source_id": null,
+      "title": "Old Town of Nablus and its environs",
+      "institution_or_author": "State of Palestine submission published by UNESCO",
+      "source_class": "official_state_party_tentative_list_submission",
+      "url": "https://whc.unesco.org/en/tentativelists/5714/",
+      "normalized_url": "https://whc.unesco.org/en/tentativelists/5714",
+      "inspection_status": "direct_page_and_search_record_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/tentativelists/5714/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-a9ac192e20c3-W4-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W4-AUTH-UNESCO-RIWAQ-75-STEPS-2023",
+      "canonical_resource_id": "SRCRES-069",
+      "canonical_source_id": "W4-AUTH-UNESCO-RIWAQ-75-STEPS-2023",
+      "alias_of_source_id": null,
+      "title": "75 Steps Towards Preserving Palestinian Cultural Heritage",
+      "institution_or_author": "UNESCO with Riwaq and Palestinian heritage partners",
+      "source_class": "official_conservation_programme_record",
+      "url": "https://www.unesco.org/en/articles/75-steps-towards-preserving-palestinian-cultural-heritage",
+      "normalized_url": "https://www.unesco.org/en/articles/75-steps-towards-preserving-palestinian-cultural-heritage",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.unesco.org/en/articles/75-steps-towards-preserving-palestinian-cultural-heritage"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-be1c2ce90997-W4-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W5-ACADEMIC-AIN-SAMIYA-TOMB-204-001",
+      "canonical_resource_id": "SRCRES-045",
+      "canonical_source_id": "W5-ACADEMIC-AIN-SAMIYA-TOMB-204-001",
+      "alias_of_source_id": null,
+      "title": "Tomb 204 at 'Ain-Samiya",
+      "institution_or_author": "Israel Exploration Journal / JSTOR record",
+      "source_class": "academic_excavation_publication",
+      "url": "https://www.jstor.org/stable/27925264",
+      "normalized_url": "https://www.jstor.org/stable/27925264",
+      "inspection_status": "bibliographic_record_and_abstract_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_WITH_EXPLICIT_LOCATOR",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "journal_page_range",
+          "pages": "73–77",
+          "scope": "Bibliographic page range for Tomb 204 at Ain Samiya"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-2a3fdab99250-W5-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The linked claim may proceed to Arabic editorial review only within the locator and source-class limitations.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W5-ACADEMIC-CAMBRIDGE-AIN-SAMIYA-001",
+      "canonical_resource_id": "SRCRES-042",
+      "canonical_source_id": "W5-ACADEMIC-CAMBRIDGE-AIN-SAMIYA-001",
+      "alias_of_source_id": null,
+      "title": "The Archaeology of the Bronze Age Levant — Intermediate Bronze Age",
+      "institution_or_author": "Cambridge University Press",
+      "source_class": "academic_synthesis",
+      "url": "https://www.cambridge.org/core/books/archaeology-of-the-bronze-age-levant/intermediate-bronze-age/FDADC29CDE3FFAAAF16FF0DDD64B5CF6",
+      "normalized_url": "https://www.cambridge.org/core/books/archaeology-of-the-bronze-age-levant/intermediate-bronze-age/FDADC29CDE3FFAAAF16FF0DDD64B5CF6",
+      "inspection_status": "publisher_record_and_relevant_excerpt_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_WITH_EXPLICIT_LOCATOR",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "publisher_html_chapter",
+          "chapter": "Chapter 4 — The Intermediate Bronze Age",
+          "scope": "Ain Samiya goblet, cemetery and shaft-tomb discussion"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-2a3fdab99250-W5-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The linked claim may proceed to Arabic editorial review only within the locator and source-class limitations.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W5-AUTH-MOTA-ABOUD-BARBARA-001",
+      "canonical_resource_id": "SRCRES-062",
+      "canonical_source_id": "W5-AUTH-MOTA-ABOUD-BARBARA-001",
+      "alias_of_source_id": null,
+      "title": "St. Barbara Church in Aboud",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_architectural_and_archaeological_record",
+      "url": "https://www.travelpalestine.ps/en/Site/416/St-Barbara-Church-in-Aboud",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/416/St-Barbara-Church-in-Aboud",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/416/St-Barbara-Church-in-Aboud"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-014e4c4e4845-W5-C02"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W5-AUTH-MOTA-ABOUD-DORMITION-001",
+      "canonical_resource_id": "SRCRES-058",
+      "canonical_source_id": "W5-AUTH-MOTA-ABOUD-DORMITION-001",
+      "alias_of_source_id": null,
+      "title": "Dormition of the Theotokos Church — Al-Aboudieh",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_architectural_record",
+      "url": "https://www.travelpalestine.ps/en/Site/29/Dormition-of-the-Theotokos-Church---Al-Aboudieh",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/29/Dormition-of-the-Theotokos-Church---Al-Aboudieh",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/29/Dormition-of-the-Theotokos-Church---Al-Aboudieh"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-014e4c4e4845-W5-C02"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W5-AUTH-MOTA-NABI-MUSA-001",
+      "canonical_resource_id": "SRCRES-054",
+      "canonical_source_id": "W5-AUTH-MOTA-NABI-MUSA-001",
+      "alias_of_source_id": null,
+      "title": "The Shrine of Nabi Musa",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_islamic_architectural_record",
+      "url": "https://www.travelpalestine.ps/en/Site/236/The-Shrine-of-Nabi-Musa",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/236/The-Shrine-of-Nabi-Musa",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/236/The-Shrine-of-Nabi-Musa"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-ce23c41d7641-W5-C01",
+        "site-c4d8c9fdd1f0-W5-C01"
+      ],
+      "linked_claim_count": 2,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W5-AUTH-MOTA-QURUNTAL-001",
+      "canonical_resource_id": "SRCRES-055",
+      "canonical_source_id": "W5-AUTH-MOTA-QURUNTAL-001",
+      "alias_of_source_id": null,
+      "title": "Deir Quruntal — The Monastery of the Temptation",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_religious_and_architectural_record",
+      "url": "https://www.travelpalestine.ps/en/Site/239/Deir-Quruntal%2C-The-Monastery-of-the-Temptation",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/239/Deir-Quruntal%2C-The-Monastery-of-the-Temptation",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/239/Deir-Quruntal%2C-The-Monastery-of-the-Temptation"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-cc4465115964-W5-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W5-AUTH-MOTA-RAMALLAH-CONTEXT-001",
+      "canonical_resource_id": "SRCRES-059",
+      "canonical_source_id": "W5-AUTH-MOTA-RAMALLAH-CONTEXT-001",
+      "alias_of_source_id": null,
+      "title": "Ramallah Tourist Information Center — regional heritage context",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal_context",
+      "url": "https://www.travelpalestine.ps/en/Site/34/Ramallah-Tourist-Information-Center",
+      "normalized_url": "https://www.travelpalestine.ps/en/Site/34/Ramallah-Tourist-Information-Center",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.travelpalestine.ps/en/Site/34/Ramallah-Tourist-Information-Center"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-e2a5c15f76f6-W5-C02"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W5-AUTH-RIWAQ-50-CENTRES-001",
+      "canonical_resource_id": "SRCRES-048",
+      "canonical_source_id": "W4-AUTH-RIWAQ-50-CENTRES",
+      "alias_of_source_id": "W4-AUTH-RIWAQ-50-CENTRES",
+      "title": "50 Historic Centers",
+      "institution_or_author": "Riwaq Centre for Architectural Conservation",
+      "source_class": "palestinian_historic_centres_registry_programme",
+      "url": "https://www.riwaq.org/page/14",
+      "normalized_url": "https://www.riwaq.org/page/14",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.riwaq.org/page/14"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-014e4c4e4845-W5-C01",
+        "site-28dd528f5f3a-W5-C01"
+      ],
+      "linked_claim_count": 2,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W5-AUTH-RIWAQ-BIRZEIT-001",
+      "canonical_resource_id": "SRCRES-008",
+      "canonical_source_id": "W5-AUTH-RIWAQ-BIRZEIT-001",
+      "alias_of_source_id": null,
+      "title": "Birzeit — historic-centre revitalization project",
+      "institution_or_author": "Riwaq Centre for Architectural Conservation",
+      "source_class": "palestinian_architectural_conservation_record",
+      "url": "https://riwaq.org/page/1154",
+      "normalized_url": "https://riwaq.org/page/1154",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://riwaq.org/page/1154"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-e2a5c15f76f6-W5-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W5-AUTH-RIWAQ-BIRZEIT-AWARD-001",
+      "canonical_resource_id": "SRCRES-009",
+      "canonical_source_id": "W5-AUTH-RIWAQ-BIRZEIT-AWARD-001",
+      "alias_of_source_id": null,
+      "title": "Birzeit — regeneration of the historic centre",
+      "institution_or_author": "Riwaq Centre for Architectural Conservation",
+      "source_class": "palestinian_conservation_and_award_record",
+      "url": "https://riwaq.org/page/121",
+      "normalized_url": "https://riwaq.org/page/121",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://riwaq.org/page/121"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-e2a5c15f76f6-W5-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W5-AUTH-RIWAQ-DEIR-AMMAR-001",
+      "canonical_resource_id": "SRCRES-047",
+      "canonical_source_id": "W5-AUTH-RIWAQ-DEIR-AMMAR-001",
+      "alias_of_source_id": null,
+      "title": "Deir Ammar",
+      "institution_or_author": "Riwaq Centre for Architectural Conservation",
+      "source_class": "palestinian_historic_centre_registry_record",
+      "url": "https://www.riwaq.org/page/1184",
+      "normalized_url": "https://www.riwaq.org/page/1184",
+      "inspection_status": "direct_registry_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_LIMITED_RECORD_OR_EXCERPT",
+      "evidence_scope_status": "CLOSED_LIMITED_TO_INSPECTED_RECORD",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://www.riwaq.org/page/1184"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-28dd528f5f3a-W5-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "Closure is limited to the inspected metadata, excerpt, registry or institutional record and does not authorize broader claims.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W5-AUTH-RIWAQ-NABI-SALEH-001",
+      "canonical_resource_id": "SRCRES-010",
+      "canonical_source_id": "W5-AUTH-RIWAQ-NABI-SALEH-001",
+      "alias_of_source_id": null,
+      "title": "An Nabi Salih Cultural Center",
+      "institution_or_author": "Riwaq Centre for Architectural Conservation",
+      "source_class": "palestinian_conservation_project_record",
+      "url": "https://riwaq.org/page/135",
+      "normalized_url": "https://riwaq.org/page/135",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://riwaq.org/page/135"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-12fc185d4b0b-W5-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W5-AUTH-UNESCO-EL-BARIYAH-001",
+      "canonical_resource_id": "SRCRES-032",
+      "canonical_source_id": "W5-AUTH-UNESCO-EL-BARIYAH-001",
+      "alias_of_source_id": null,
+      "title": "El-Bariyah: wilderness with monasteries",
+      "institution_or_author": "State of Palestine submission published by UNESCO",
+      "source_class": "official_state_party_tentative_list_submission",
+      "url": "https://whc.unesco.org/en/tentativelists/5708/",
+      "normalized_url": "https://whc.unesco.org/en/tentativelists/5708",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/tentativelists/5708/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-7551f628d089-W5-C01",
+        "site-c4d8c9fdd1f0-W5-C02"
+      ],
+      "linked_claim_count": 2,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W5-AUTH-UNESCO-JERICHO-001",
+      "canonical_resource_id": "SRCRES-027",
+      "canonical_source_id": "AUTH-UNESCO-JERICHO-001",
+      "alias_of_source_id": "AUTH-UNESCO-JERICHO-001",
+      "title": "Ancient Jericho/Tell es-Sultan",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_world_heritage_record",
+      "url": "https://whc.unesco.org/en/list/1687/",
+      "normalized_url": "https://whc.unesco.org/en/list/1687",
+      "inspection_status": "direct_page_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_DIRECT_WEB_RECORD",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "direct_resource_record",
+          "url": "https://whc.unesco.org/en/list/1687/"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-b5f00132ee24-W5-C01"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The direct web record was inspected; source class, attribution and limitations must remain attached to the claim.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    },
+    {
+      "source_id": "W5-AUTH-WAFA-TOURIST-TRAILS-001",
+      "canonical_resource_id": "SRCRES-006",
+      "canonical_source_id": "W5-AUTH-WAFA-TOURIST-TRAILS-001",
+      "alias_of_source_id": null,
+      "title": "دليل المسارات السياحية في فلسطين",
+      "institution_or_author": "وكالة الأنباء والمعلومات الفلسطينية — وفا / Palestinian tourism information",
+      "source_class": "official_palestinian_route_and_landscape_guide",
+      "url": "https://info.wafa.ps/userfiles/server/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D9%8A%D8%A9%20%D9%81%D9%8A%20%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86.pdf",
+      "normalized_url": "https://info.wafa.ps/userfiles/server/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D9%8A%D8%A9%20%D9%81%D9%8A%20%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86.pdf",
+      "inspection_status": "relevant_pdf_index_and_route_passage_inspected",
+      "bibliographic_identity_status": "CLOSED",
+      "bibliographic_identity_basis": "Title, responsible institution/author, source class and traceable resource locator are present.",
+      "evidence_locator_status": "CLOSED_WITH_EXPLICIT_LOCATOR",
+      "evidence_scope_status": "CLOSED_WITHIN_STATED_SOURCE_SCOPE",
+      "evidence_locators": [
+        {
+          "locator_type": "pdf_pages",
+          "pages": [
+            20,
+            68
+          ],
+          "scope": "Ain Samiya route context and distinction among Ain Samiya, Khirbet Marjameh, Khirbet Samiya and the palace feature"
+        }
+      ],
+      "linked_claim_ids": [
+        "site-2a3fdab99250-W5-C02"
+      ],
+      "linked_claim_count": 1,
+      "closure_note": "The linked claim may proceed to Arabic editorial review only within the locator and source-class limitations.",
+      "text_or_media_reuse_rights": "NOT_APPROVED",
+      "publication_use": "BLOCKED_PENDING_RIGHTS_AND_EDITORIAL_REVIEW"
+    }
+  ]
+}

@@ -250,7 +250,7 @@ class PalEyesMediaStage extends StatelessWidget {
       image: true,
       label: semanticLabel,
       child: Container(
-        constraints: BoxConstraints(minHeight: height),
+        height: height,
         decoration: BoxDecoration(
           gradient: gradient,
           borderRadius: BorderRadius.circular(30),

@@ -1,0 +1,57 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_HUMAN_IDENTITY_DECISION_DOSSIER_V1",
+  "result": "PASS",
+  "counts": {
+    "queue_records_reviewed": 33,
+    "structural_change_recommendations": 23,
+    "non_structural_keep_recommendations": 10,
+    "unresolved_identity_holds": 4,
+    "relation_proposals": 9,
+    "new_record_candidates": 4
+  },
+  "decision_counts": {
+    "KEEP_CANONICAL_IDENTITY_CLAIM_ONLY": 4,
+    "RECLASSIFY_TO_GOVERNED_CLUSTER": 11,
+    "SPLIT_COMPOSITE_IDENTITY": 4,
+    "HOLD_UNRESOLVED_IDENTITY": 4,
+    "ACCEPT_COMPONENT_RELATION": 6,
+    "REASSIGN_LOCALITY_AND_LINK_CLUSTER": 1,
+    "KEEP_CANONICAL_IDENTITY_COMPLEX": 2,
+    "MERGE_ALIAS_OR_COMPONENT": 1
+  },
+  "quality_checks": {
+    "all_33_queue_records_decided": true,
+    "decision_ids_unique": true,
+    "canonical_ids_resolve": true,
+    "canonical_slugs_preserved": true,
+    "relation_targets_resolve": true,
+    "auto_apply_false": true,
+    "catalog_mutation_false": true,
+    "database_write_false": true,
+    "project_source_mutation_false": true,
+    "publication_blocked": true
+  },
+  "artifacts": [
+    {
+      "filename": "PAL_EYES_HUMAN_IDENTITY_DECISION_DOSSIER_V1.md",
+      "sha256": "2211a5ed28591a954836b6623d017ab9722a6dcc962b67b880c34e9a46a99d8f",
+      "size_bytes": 11363
+    },
+    {
+      "filename": "PAL_EYES_HUMAN_IDENTITY_DECISION_MATRIX_V1.json",
+      "sha256": "5adff5c10fe0b26d110d29b6ccac8d350d3e618a2efed4d2260941d6e5dbfe77",
+      "size_bytes": 39812
+    },
+    {
+      "filename": "PAL_EYES_IDENTITY_RELATION_PROPOSALS_EXPANDED_V1.json",
+      "sha256": "03384234681a7676d9535ab9bd94e1cc66152210dc8456fa57e62978b0bba2d4",
+      "size_bytes": 3442
+    },
+    {
+      "filename": "PAL_EYES_IDENTITY_DECISION_AUTHORIZATION_TEMPLATE_V1.md",
+      "sha256": "35b6c359f1a1c2a2411d410601fd2bbc1a51f81d4f6275fedad04cc022864d32",
+      "size_bytes": 831
+    }
+  ]
+}

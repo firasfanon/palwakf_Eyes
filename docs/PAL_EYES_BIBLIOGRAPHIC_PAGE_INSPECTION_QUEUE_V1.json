@@ -1,0 +1,1095 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_CROSS_WAVE_RECONCILIATION_AND_GOVERNED_REWRITE_V1",
+  "source_count": 76,
+  "sources": [
+    {
+      "source_id": "AUTH-UNESCO-BATTIR-001",
+      "title": "Palestine: Land of Olives and Vines – Cultural Landscape of Southern Jerusalem, Battir",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_world_heritage_record",
+      "url": "https://whc.unesco.org/en/list/1492/",
+      "inspection_status": "directly_inspected",
+      "linked_claim_ids": [
+        "site-88fede7b6df0-W1-C01",
+        "site-88fede7b6df0-W1-C02"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "AUTH-UNESCO-BATTIR-MAP-001",
+      "title": "Battir World Heritage Property - Maps",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_property_geodata",
+      "url": "https://whc.unesco.org/en/list/1492/maps/",
+      "inspection_status": "directly_inspected",
+      "linked_claim_ids": [],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "AUTH-UNESCO-HEBRON-001",
+      "title": "Hebron/Al-Khalil Old Town",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_world_heritage_record",
+      "url": "https://whc.unesco.org/en/list/1565/",
+      "inspection_status": "directly_inspected",
+      "linked_claim_ids": [
+        "site-6b6c5a396756-W1-C01",
+        "site-6b6c5a396756-W1-C02",
+        "site-6b6c5a396756-W1-C03",
+        "site-899e38be070d-W1-C01",
+        "site-899e38be070d-W1-C02"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "AUTH-UNESCO-HEBRON-MAP-001",
+      "title": "Hebron/Al-Khalil Old Town - Maps",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_property_geodata",
+      "url": "https://whc.unesco.org/en/list/1565/maps/",
+      "inspection_status": "directly_inspected",
+      "linked_claim_ids": [],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "AUTH-UNESCO-HISHAM-001",
+      "title": "Hisham’s Palace/Khirbet al-Mafjar - Tentative List",
+      "institution_or_author": "Permanent Delegation of Palestine to UNESCO / UNESCO World Heritage Centre publication",
+      "source_class": "official_state_submission_tentative_list",
+      "url": "https://whc.unesco.org/en/tentativelists/6546/",
+      "inspection_status": "directly_inspected",
+      "linked_claim_ids": [
+        "site-0285c869e647-W1-C01",
+        "site-0285c869e647-W1-C02",
+        "site-0285c869e647-W1-C03"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "AUTH-UNESCO-JERICHO-001",
+      "title": "Ancient Jericho/Tell es-Sultan",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_world_heritage_record",
+      "url": "https://whc.unesco.org/en/list/1687/",
+      "inspection_status": "directly_inspected",
+      "linked_claim_ids": [
+        "site-a86fc049d470-W1-C01",
+        "site-a86fc049d470-W1-C02",
+        "site-a86fc049d470-W1-C03"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "AUTH-UNESCO-JERICHO-MAP-001",
+      "title": "Ancient Jericho/Tell es-Sultan - Maps",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_property_geodata",
+      "url": "https://whc.unesco.org/en/list/1687/maps/",
+      "inspection_status": "directly_inspected",
+      "linked_claim_ids": [],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "AUTH-UNESCO-JERUSALEM-DECISION-001",
+      "title": "40 COM 7A.13 - Old City of Jerusalem and its Walls",
+      "institution_or_author": "UNESCO World Heritage Committee",
+      "source_class": "official_committee_decision",
+      "url": "https://whc.unesco.org/en/decisions/6818/",
+      "inspection_status": "directly_inspected",
+      "linked_claim_ids": [
+        "site-4aeec5656d1d-W1-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "AUTH-UNESCO-JERUSALEM-MAP-001",
+      "title": "Old City of Jerusalem and its Walls - Maps",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_property_geodata",
+      "url": "https://whc.unesco.org/en/list/148/maps/",
+      "inspection_status": "directly_inspected",
+      "linked_claim_ids": [],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "AUTH-UNESCO-NATIVITY-001",
+      "title": "Birthplace of Jesus: Church of the Nativity and the Pilgrimage Route, Bethlehem",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_world_heritage_record",
+      "url": "https://whc.unesco.org/en/list/1433/",
+      "inspection_status": "directly_inspected",
+      "linked_claim_ids": [
+        "site-4b15f14c306f-W1-C01",
+        "site-4b15f14c306f-W1-C02"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "AUTH-UNESCO-NATIVITY-MAP-001",
+      "title": "Church of the Nativity and the Pilgrimage Route - Maps",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_property_geodata",
+      "url": "https://whc.unesco.org/en/list/1433/maps/",
+      "inspection_status": "directly_inspected",
+      "linked_claim_ids": [],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "AUTH-UNESCO-PS-STATE-001",
+      "title": "State of Palestine - UNESCO World Heritage Convention",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_international_registry",
+      "url": "https://whc.unesco.org/en/statesparties/ps",
+      "inspection_status": "directly_inspected",
+      "linked_claim_ids": [],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "AUTH-UNESCO-SEBASTIA-001",
+      "title": "Sebastia - Tentative List",
+      "institution_or_author": "Permanent Delegation of Palestine to UNESCO / UNESCO World Heritage Centre publication",
+      "source_class": "official_state_submission_tentative_list",
+      "url": "https://whc.unesco.org/en/tentativelists/5718/",
+      "inspection_status": "directly_inspected",
+      "linked_claim_ids": [
+        "site-6f6afe87f969-W1-C01",
+        "site-6f6afe87f969-W1-C02",
+        "site-6f6afe87f969-W1-C03"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-ARCHNET-CITADEL-001",
+      "title": "Qal'at al-Quds",
+      "institution_or_author": "Archnet / Aga Khan Documentation Center at MIT",
+      "source_class": "academic_architectural_record",
+      "url": "https://www.archnet.org/sites/3735",
+      "inspection_status": "record_excerpt_and_metadata_inspected",
+      "linked_claim_ids": [
+        "site-83d3025c4675-W2-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-ARCHNET-QATTANIN-001",
+      "title": "Bab al-Qattanin / Suq al-Qattanin",
+      "institution_or_author": "Archnet / Aga Khan Documentation Center at MIT",
+      "source_class": "academic_architectural_record",
+      "url": "https://www.archnet.org/sites/3060",
+      "inspection_status": "record_excerpt_and_metadata_inspected",
+      "linked_claim_ids": [
+        "site-4bbdf07d8d66-W2-C01",
+        "site-f7553f79288f-W2-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-ARCHNET-SOLOMON-POOLS-001",
+      "title": "Renovation of Solomon's Pool Historical Site",
+      "institution_or_author": "Archnet / Aga Khan Trust for Culture",
+      "source_class": "academic_conservation_project_record",
+      "url": "https://www.archnet.org/sites/17049",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-37c8be50ce73-W2-C01",
+        "site-63fe9eba7871-W2-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-ICOMOS-HEBRON-2017",
+      "title": "ICOMOS Evaluation — Hebron/Al-Khalil Old Town",
+      "institution_or_author": "ICOMOS / UNESCO World Heritage Centre",
+      "source_class": "official_advisory_body_evaluation",
+      "url": "https://whc.unesco.org/archive/2017/whc17-41com-inf8B1-Add2-en.pdf",
+      "inspection_status": "relevant_pdf_passages_inspected",
+      "linked_claim_ids": [
+        "site-63c0ba59c24e-W2-C02",
+        "site-7532d020842e-W2-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-JERUSALEM-PATRIARCHATE-ALKHADER-001",
+      "title": "Holy Monasteries Outside Jerusalem — St George in Al-Khader",
+      "institution_or_author": "Greek Orthodox Patriarchate of Jerusalem",
+      "source_class": "official_ecclesiastical_institutional_record",
+      "url": "https://en.jerusalem-patriarchate.info/administrative-structure/holy-monasteries-and-hegoumeneia-abbots-quarters-outside-jerusalem/",
+      "inspection_status": "official_page_metadata_and_excerpt_inspected",
+      "linked_claim_ids": [
+        "site-f97aa993c98b-W2-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-JERUSALEM-PATRIARCHATE-GETHSEMANE-001",
+      "title": "Holy Gethsemane",
+      "institution_or_author": "Greek Orthodox Patriarchate of Jerusalem",
+      "source_class": "official_ecclesiastical_tradition_record",
+      "url": "https://en.jerusalem-patriarchate.info/holy-shrines/holy-gethsemane/",
+      "inspection_status": "official_page_excerpt_inspected",
+      "linked_claim_ids": [
+        "site-8d297f3c37a9-W2-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-JERUSALEM-PATRIARCHATE-MAR-SABA-001",
+      "title": "Short History Account of Saint Savvas' Lavra",
+      "institution_or_author": "Greek Orthodox Patriarchate of Jerusalem",
+      "source_class": "official_ecclesiastical_history_record",
+      "url": "https://en.jerusalem-patriarchate.info/pilgrimages/short-history-account-of-saint-savvas-lavra/",
+      "inspection_status": "official_page_metadata_and_excerpt_inspected",
+      "linked_claim_ids": [
+        "site-a8aeb054b451-W2-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-MWNF-NABI-YUNUS-001",
+      "title": "Mosque of Nabi Yunus (Prophet Jonah)",
+      "institution_or_author": "Museum With No Frontiers — Discover Islamic Art",
+      "source_class": "curated_academic_museum_record",
+      "url": "https://islamicart.museumwnf.org/database_item.php?id=monument%3BISL%3Bpa%3BMon01%3B12%3Ben%3Bar",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-cd3be04163b6-W2-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-SBF-HERODIUM-BIBLIOGRAPHY-001",
+      "title": "Herodium archaeological bibliography and final reports",
+      "institution_or_author": "Studium Biblicum Franciscanum",
+      "source_class": "academic_bibliographic_registry",
+      "url": "https://sbf.custodia.org/it/seminario-iv",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-133155518939-W2-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-SBF-HERODIUM-CHRISTIAN-001",
+      "title": "Christian Archaeology in the Holy Land — Herodion chapters",
+      "institution_or_author": "Studium Biblicum Franciscanum",
+      "source_class": "academic_monograph_record",
+      "url": "https://sbf.custodia.org/en/publications/collectio-maior/christian-archaeology-in-the-holy-land",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-133155518939-W2-C02"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001",
+      "title": "General information — archaeological work of the Studium Biblicum Franciscanum",
+      "institution_or_author": "Studium Biblicum Franciscanum",
+      "source_class": "academic_institutional_archaeology_record",
+      "url": "https://sbf.custodia.org/en/general-info",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-8d297f3c37a9-W2-C02",
+        "site-431ed266867b-W2-C02"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-SBF-MILK-GROTTO-001",
+      "title": "Bethlehem excursion record — Milk Grotto",
+      "institution_or_author": "Studium Biblicum Franciscanum",
+      "source_class": "academic_institutional_tradition_and_site_record",
+      "url": "https://sbf.custodia.org/it/escursioni/betlemme",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-57adc62d6d70-W2-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-SBF-MILK-GROTTO-EXCAVATION-2005",
+      "title": "SBF Notiziario 2005–2006 — emergency excavation at the Milk Grotto",
+      "institution_or_author": "Studium Biblicum Franciscanum",
+      "source_class": "academic_archaeological_activity_record",
+      "url": "https://sbf.custodia.org/sites/default/files/2019-04/SBF_Notiziario_2005-2006.pdf",
+      "inspection_status": "relevant_pdf_passage_inspected",
+      "linked_claim_ids": [
+        "site-57adc62d6d70-W2-C02"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-UNESCO-HEBRON-001",
+      "title": "Hebron/Al-Khalil Old Town",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_world_heritage_record",
+      "url": "https://whc.unesco.org/en/list/1565/",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-63c0ba59c24e-W2-C01",
+        "site-0dc57168d963-W2-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-UNESCO-JERUSALEM-001",
+      "title": "Old City of Jerusalem and its Walls",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_world_heritage_record",
+      "url": "https://whc.unesco.org/en/list/148/",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-f9067873c322-W2-C01",
+        "site-431ed266867b-W2-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001",
+      "title": "Jerusalem — Old City and Ramparts to include Mount Zion",
+      "institution_or_author": "State Party submission published by UNESCO",
+      "source_class": "official_state_submission_tentative_list",
+      "url": "https://whc.unesco.org/en/tentativelists/1483/",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-f9df0c7e708c-W2-C01",
+        "site-3a3d3669f0ba-W2-C02"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015",
+      "title": "State of conservation of properties inscribed on the List of World Heritage in Danger — Old City of Jerusalem and its Walls",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_monitoring_document_with_party_reports",
+      "url": "https://whc.unesco.org/document/135821",
+      "inspection_status": "relevant_pdf_passages_inspected",
+      "linked_claim_ids": [
+        "site-f9df0c7e708c-W2-C02",
+        "site-f7553f79288f-W2-C01",
+        "site-3a3d3669f0ba-W2-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-UNISPAL-WESTERN-WALL-1930",
+      "title": "Report of the Commission appointed to determine rights and claims in connection with the Western or Wailing Wall at Jerusalem",
+      "institution_or_author": "League of Nations / United Nations Information System on the Question of Palestine",
+      "source_class": "official_historical_commission_report",
+      "url": "https://www.un.org/unispal/document/auto-insert-183319/",
+      "inspection_status": "official_record_metadata_inspected",
+      "linked_claim_ids": [
+        "site-f9067873c322-W2-C02"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W2-AUTH-WAFA-NABI-NUH-2020",
+      "title": "تكية النبي نوح.. من فكرة فردية إلى أهم المؤسسات الخيرية والإنسانية",
+      "institution_or_author": "وكالة الأنباء والمعلومات الفلسطينية — وفا",
+      "source_class": "official_palestinian_news_and_current_use_record",
+      "url": "https://www.wafa.ps/pages/details/11353",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-c9ac723c0271-W2-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W3-AUTH-BM-TELL-AJJUL-COLLECTION",
+      "title": "British Museum collection records — Tell el-Ajjul",
+      "institution_or_author": "The British Museum",
+      "source_class": "official_museum_collection_registry",
+      "url": "https://www.britishmuseum.org/collection/search?place=Tell+el-Ajjul",
+      "inspection_status": "collection_registry_inspected",
+      "linked_claim_ids": [
+        "site-21150eefdea6-W3-C02"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W3-AUTH-JERUSALEM-PATRIARCHATE-PORPHYRIOS",
+      "title": "Official records concerning Saint Porphyrios of Gaza and the Gaza monastery",
+      "institution_or_author": "Greek Orthodox Patriarchate of Jerusalem",
+      "source_class": "official_ecclesiastical_institutional_record",
+      "url": "https://en.jerusalem-patriarchate.info/liturgic-life/the-feast-of-st-porphyrios-of-gaza-in-gaza/",
+      "inspection_status": "official_page_inspected",
+      "linked_claim_ids": [
+        "site-e1e3de7b8519-W3-C02"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W3-AUTH-UCL-TELL-AJJUL-2021",
+      "title": "Historical Methods and Mishaps: Flinders Petrie's Views on Interconnected Tell el-Ajjul and the 'Middle Sea'",
+      "institution_or_author": "University College London",
+      "source_class": "peer_reviewed_academic_research",
+      "url": "https://discovery.ucl.ac.uk/10130277/1/Sparks_interconnected%20Ajjul_Accepted%20MSS.pdf",
+      "inspection_status": "abstract_and_relevant_passage_inspected",
+      "linked_claim_ids": [
+        "site-21150eefdea6-W3-C02"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W3-AUTH-UNESCO-ANTHEDON-2012",
+      "title": "Anthedon Harbour",
+      "institution_or_author": "State of Palestine submission published by UNESCO",
+      "source_class": "official_state_party_tentative_list_submission",
+      "url": "https://whc.unesco.org/en/tentativelists/5719/",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-99f520b3d607-W3-C02"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W3-AUTH-UNESCO-GAZA-HERITAGE-2015",
+      "title": "Over 70 Palestinian Youth Volunteer for the Preservation of their Cultural Heritage",
+      "institution_or_author": "UNESCO",
+      "source_class": "official_pre_conflict_heritage_activity_record",
+      "url": "https://www.unesco.org/en/articles/over-70-palestinian-youth-volunteer-preservation-their-cultural-heritage-0",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026",
+      "title": "The Historic Centre of Gaza, including Omari Mosque and Porphyrius Church",
+      "institution_or_author": "Permanent Delegation of the State of Palestine to UNESCO",
+      "source_class": "official_state_party_tentative_list_submission",
+      "url": "https://whc.unesco.org/en/tentativelists/6955/",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-2e45744cdab4-W3-C02",
+        "site-e1e3de7b8519-W3-C02",
+        "site-015f495c4236-W3-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W3-AUTH-UNESCO-GAZA-IMPACT-2026",
+      "title": "Impact on cultural heritage — Gaza",
+      "institution_or_author": "UNESCO",
+      "source_class": "official_damage_monitoring_record",
+      "url": "https://www.unesco.org/en/gaza/assessment",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-2e45744cdab4-W3-C01",
+        "site-21150eefdea6-W3-C01",
+        "site-3ded44be126d-W3-C01",
+        "site-5e98cf44d976-W3-C01",
+        "site-e1e3de7b8519-W3-C01",
+        "site-015f495c4236-W3-C02",
+        "site-99f520b3d607-W3-C01",
+        "site-0a78d22c1a69-W3-C01",
+        "site-ee0e5bf1f753-W3-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023",
+      "title": "Preliminary report on cultural and historical damage in Gaza",
+      "institution_or_author": "Palestinian cultural-sector material hosted by UNESCO",
+      "source_class": "attributed_party_report_hosted_by_unesco",
+      "url": "https://www.unesco.org/sites/default/files/medias/fichiers/2024/03/16_palestine_cultural_gaza.pdf",
+      "inspection_status": "relevant_pdf_passages_inspected",
+      "linked_claim_ids": [
+        "site-3ded44be126d-W3-C02",
+        "site-5e98cf44d976-W3-C02",
+        "site-0a78d22c1a69-W3-C02"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-ACADEMIC-CAMBRIDGE-TELL-FARAH",
+      "title": "The Archaeology of the Bronze Age Levant — Tell el-Far'ah North",
+      "institution_or_author": "Cambridge University Press",
+      "source_class": "academic_synthesis",
+      "url": "https://www.cambridge.org/core/books/archaeology-of-the-bronze-age-levant/urbanism-and-its-demise-in-the-early-bronze-ii-and-iii/B7CB62423B49CA8E652456E6DF436B14",
+      "inspection_status": "publisher_summary_and_relevant_record_inspected",
+      "linked_claim_ids": [
+        "site-c6731a990917-W4-C02"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-ACADEMIC-EBAF-TELL-FARAH-CORPUS",
+      "title": "Tell el-Far'ah excavation and publication corpus",
+      "institution_or_author": "École biblique et archéologique française de Jérusalem",
+      "source_class": "academic_excavation_institution_record",
+      "url": "https://www.ebaf.edu/publications-2/1144-2/",
+      "inspection_status": "institutional_publication_record_inspected",
+      "linked_claim_ids": [
+        "site-c6731a990917-W4-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023",
+      "title": "Sacred Space/Contested Place: Intergenerational Memory and the Shifting Meanings of the Shrine/Tomb of Joseph",
+      "institution_or_author": "Jerusalem Quarterly / Institute for Palestine Studies",
+      "source_class": "peer_reviewed_or_editorially_reviewed_academic_article",
+      "url": "https://www.palestine-studies.org/sites/default/files/jq-articles/Sacred%20Space-Contested%20Place%20-%20Intergenerational%20Memory%20and%20the%20Shifting%20Meanings%20of%20the%20Shrine%2C%20Tomb%20of%20Joseph.pdf",
+      "inspection_status": "relevant_pdf_passages_inspected",
+      "linked_claim_ids": [
+        "site-fb9a817ec94a-W4-C01",
+        "site-fb9a817ec94a-W4-C02"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-BURQIN",
+      "title": "Burqin Church",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal",
+      "url": "https://www.travelpalestine.ps/en/Site/38/Burqin-Church",
+      "inspection_status": "official_page_metadata_and_excerpt_inspected",
+      "linked_claim_ids": [
+        "site-2c1f6b6dbd51-W4-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-DEIR-ISTIYA",
+      "title": "Deir Istiya",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal",
+      "url": "https://www.travelpalestine.ps/en/Site/280/Deir-Istiya",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-69f3ad775733-W4-C01",
+        "site-ba91049d51a9-W4-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-JENIN-FATIMA-KHATUN",
+      "title": "Fatima Khatun Mosque",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal",
+      "url": "https://www.travelpalestine.ps/en/Site/37/Fatima-Khatun-Mosque",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-f2a7fbbda5a5-W4-C02"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-JENIN-SIBAT",
+      "title": "Al Sibat Souq",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal",
+      "url": "https://www.travelpalestine.ps/en/Site/46/Al-Sibat-Souq",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-f2a7fbbda5a5-W4-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-KAYED-SEBASTIA",
+      "title": "Al-Kayed Palace",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal_identity_record",
+      "url": "https://www.travelpalestine.ps/en/Site/70/Al-Kayed-Palace",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-fe1e2a1605b5-W4-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-KHAN-TUJJAR",
+      "title": "Khan Al-Tujjar (Fabric Market)",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal",
+      "url": "https://www.travelpalestine.ps/en/Site/115/Khan-Al-Tujjar-%28Fabric-Market%29",
+      "inspection_status": "direct_page_metadata_and_excerpt_inspected",
+      "linked_claim_ids": [
+        "site-31c7667ff10e-W4-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-KIFL-HARIS-SHRINES",
+      "title": "Kifl Haris Shrines",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal",
+      "url": "https://www.travelpalestine.ps/en/Site/283/Kifl-Haris-Shrines",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-b2a7e03ecda1-W4-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-NABLUS-OLD-CITY",
+      "title": "The Old City of Nablus",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal",
+      "url": "https://www.travelpalestine.ps/en/Site/92/The-Old-City-of-Nablus",
+      "inspection_status": "direct_page_record_inspected",
+      "linked_claim_ids": [
+        "site-a9ac192e20c3-W4-C01",
+        "site-b6773e683274-W4-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-NASR-CONTEXT",
+      "title": "Bab Al-Saha and Al-Nasr urban context",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal_context",
+      "url": "https://www.travelpalestine.ps/en/Site/87/The-Manara-Clock-Tower-and-Bab-Al-Saha-%28Quarter-of-Nablus%29",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-a429c345ac25-W4-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-QALQILYA-HISTORIC-VILLAGES",
+      "title": "Historical Villages in Qalqilya",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal_cluster",
+      "url": "https://www.travelpalestine.ps/en/Site/131/Historical-Villages-in-Qalqilya",
+      "inspection_status": "official_page_metadata_and_excerpt_inspected",
+      "linked_claim_ids": [],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-TULKARM-MUSEUM",
+      "title": "The Museum of Tulkarem",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_museum_record",
+      "url": "https://www.travelpalestine.ps/en/Site/157/The-Museum-of-Tulkarem",
+      "inspection_status": "official_page_metadata_and_excerpt_inspected",
+      "linked_claim_ids": [
+        "site-be1c2ce90997-W4-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-MOTA-YASMINA-ATOUT",
+      "title": "Hosh Al-Atout — Al-Yasmina Quarter",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal",
+      "url": "https://www.travelpalestine.ps/en/Site/110/Hosh-Al-Atout-%28Quarter%29",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-160c60c7b952-W4-C01",
+        "site-160c60c7b952-W4-C02"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-RIWAQ-50-CENTRES",
+      "title": "50 Historic Centers",
+      "institution_or_author": "Riwaq Centre for Architectural Conservation",
+      "source_class": "palestinian_architectural_heritage_registry_programme",
+      "url": "https://www.riwaq.org/page/14",
+      "inspection_status": "programme_record_inspected",
+      "linked_claim_ids": [
+        "site-69f3ad775733-W4-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-RIWAQ-DEIR-ISTIYA-PALACES",
+      "title": "Deir Istiya Palaces",
+      "institution_or_author": "Riwaq Centre for Architectural Conservation",
+      "source_class": "palestinian_architectural_conservation_record",
+      "url": "https://www.riwaq.org/page/16",
+      "inspection_status": "search_record_inspected",
+      "linked_claim_ids": [
+        "site-69f3ad775733-W4-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-UNESCO-GERIZIM-2012",
+      "title": "Mount Gerizim and the Samaritans",
+      "institution_or_author": "State of Palestine submission published by UNESCO",
+      "source_class": "official_state_party_tentative_list_submission",
+      "url": "https://whc.unesco.org/en/tentativelists/5706/",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-b6773e683274-W4-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-UNESCO-KHAN-WAKALA-2012",
+      "title": "EU and UNESCO restore Nablus' landmark Khan Al-Wakalah",
+      "institution_or_author": "UNESCO / United Nations Information System on the Question of Palestine",
+      "source_class": "official_conservation_project_record",
+      "url": "https://www.un.org/unispal/document/auto-insert-204941/",
+      "inspection_status": "official_record_inspected",
+      "linked_claim_ids": [
+        "site-a9ac192e20c3-W4-C02"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-UNESCO-NABLUS-2012",
+      "title": "Old Town of Nablus and its environs",
+      "institution_or_author": "State of Palestine submission published by UNESCO",
+      "source_class": "official_state_party_tentative_list_submission",
+      "url": "https://whc.unesco.org/en/tentativelists/5714/",
+      "inspection_status": "direct_page_and_search_record_inspected",
+      "linked_claim_ids": [
+        "site-a9ac192e20c3-W4-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W4-AUTH-UNESCO-RIWAQ-75-STEPS-2023",
+      "title": "75 Steps Towards Preserving Palestinian Cultural Heritage",
+      "institution_or_author": "UNESCO with Riwaq and Palestinian heritage partners",
+      "source_class": "official_conservation_programme_record",
+      "url": "https://www.unesco.org/en/articles/75-steps-towards-preserving-palestinian-cultural-heritage",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-be1c2ce90997-W4-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W5-ACADEMIC-AIN-SAMIYA-TOMB-204-001",
+      "title": "Tomb 204 at 'Ain-Samiya",
+      "institution_or_author": "Israel Exploration Journal / JSTOR record",
+      "source_class": "academic_excavation_publication",
+      "url": "https://www.jstor.org/stable/27925264",
+      "inspection_status": "bibliographic_record_and_abstract_inspected",
+      "linked_claim_ids": [
+        "site-2a3fdab99250-W5-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W5-ACADEMIC-CAMBRIDGE-AIN-SAMIYA-001",
+      "title": "The Archaeology of the Bronze Age Levant — Intermediate Bronze Age",
+      "institution_or_author": "Cambridge University Press",
+      "source_class": "academic_synthesis",
+      "url": "https://www.cambridge.org/core/books/archaeology-of-the-bronze-age-levant/intermediate-bronze-age/FDADC29CDE3FFAAAF16FF0DDD64B5CF6",
+      "inspection_status": "publisher_record_and_relevant_excerpt_inspected",
+      "linked_claim_ids": [
+        "site-2a3fdab99250-W5-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W5-AUTH-MOTA-ABOUD-BARBARA-001",
+      "title": "St. Barbara Church in Aboud",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_architectural_and_archaeological_record",
+      "url": "https://www.travelpalestine.ps/en/Site/416/St-Barbara-Church-in-Aboud",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-014e4c4e4845-W5-C02"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W5-AUTH-MOTA-ABOUD-DORMITION-001",
+      "title": "Dormition of the Theotokos Church — Al-Aboudieh",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_architectural_record",
+      "url": "https://www.travelpalestine.ps/en/Site/29/Dormition-of-the-Theotokos-Church---Al-Aboudieh",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-014e4c4e4845-W5-C02"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W5-AUTH-MOTA-NABI-MUSA-001",
+      "title": "The Shrine of Nabi Musa",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_islamic_architectural_record",
+      "url": "https://www.travelpalestine.ps/en/Site/236/The-Shrine-of-Nabi-Musa",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-ce23c41d7641-W5-C01",
+        "site-c4d8c9fdd1f0-W5-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W5-AUTH-MOTA-QURUNTAL-001",
+      "title": "Deir Quruntal — The Monastery of the Temptation",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_religious_and_architectural_record",
+      "url": "https://www.travelpalestine.ps/en/Site/239/Deir-Quruntal%2C-The-Monastery-of-the-Temptation",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-cc4465115964-W5-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W5-AUTH-MOTA-RAMALLAH-CONTEXT-001",
+      "title": "Ramallah Tourist Information Center — regional heritage context",
+      "institution_or_author": "Palestinian Ministry of Tourism and Antiquities — Travel Palestine",
+      "source_class": "official_palestinian_heritage_portal_context",
+      "url": "https://www.travelpalestine.ps/en/Site/34/Ramallah-Tourist-Information-Center",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-e2a5c15f76f6-W5-C02"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W5-AUTH-RIWAQ-50-CENTRES-001",
+      "title": "50 Historic Centers",
+      "institution_or_author": "Riwaq Centre for Architectural Conservation",
+      "source_class": "palestinian_historic_centres_registry_programme",
+      "url": "https://www.riwaq.org/page/14",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-014e4c4e4845-W5-C01",
+        "site-28dd528f5f3a-W5-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W5-AUTH-RIWAQ-BIRZEIT-001",
+      "title": "Birzeit — historic-centre revitalization project",
+      "institution_or_author": "Riwaq Centre for Architectural Conservation",
+      "source_class": "palestinian_architectural_conservation_record",
+      "url": "https://riwaq.org/page/1154",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-e2a5c15f76f6-W5-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W5-AUTH-RIWAQ-BIRZEIT-AWARD-001",
+      "title": "Birzeit — regeneration of the historic centre",
+      "institution_or_author": "Riwaq Centre for Architectural Conservation",
+      "source_class": "palestinian_conservation_and_award_record",
+      "url": "https://riwaq.org/page/121",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-e2a5c15f76f6-W5-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W5-AUTH-RIWAQ-DEIR-AMMAR-001",
+      "title": "Deir Ammar",
+      "institution_or_author": "Riwaq Centre for Architectural Conservation",
+      "source_class": "palestinian_historic_centre_registry_record",
+      "url": "https://www.riwaq.org/page/1184",
+      "inspection_status": "direct_registry_page_inspected",
+      "linked_claim_ids": [
+        "site-28dd528f5f3a-W5-C01"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W5-AUTH-RIWAQ-NABI-SALEH-001",
+      "title": "An Nabi Salih Cultural Center",
+      "institution_or_author": "Riwaq Centre for Architectural Conservation",
+      "source_class": "palestinian_conservation_project_record",
+      "url": "https://riwaq.org/page/135",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-12fc185d4b0b-W5-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W5-AUTH-UNESCO-EL-BARIYAH-001",
+      "title": "El-Bariyah: wilderness with monasteries",
+      "institution_or_author": "State of Palestine submission published by UNESCO",
+      "source_class": "official_state_party_tentative_list_submission",
+      "url": "https://whc.unesco.org/en/tentativelists/5708/",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-7551f628d089-W5-C01",
+        "site-c4d8c9fdd1f0-W5-C02"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W5-AUTH-UNESCO-JERICHO-001",
+      "title": "Ancient Jericho/Tell es-Sultan",
+      "institution_or_author": "UNESCO World Heritage Centre",
+      "source_class": "official_world_heritage_record",
+      "url": "https://whc.unesco.org/en/list/1687/",
+      "inspection_status": "direct_page_inspected",
+      "linked_claim_ids": [
+        "site-b5f00132ee24-W5-C01"
+      ],
+      "page_level_inspection_required": false,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    },
+    {
+      "source_id": "W5-AUTH-WAFA-TOURIST-TRAILS-001",
+      "title": "دليل المسارات السياحية في فلسطين",
+      "institution_or_author": "وكالة الأنباء والمعلومات الفلسطينية — وفا / Palestinian tourism information",
+      "source_class": "official_palestinian_route_and_landscape_guide",
+      "url": "https://info.wafa.ps/userfiles/server/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D9%8A%D8%A9%20%D9%81%D9%8A%20%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86.pdf",
+      "inspection_status": "relevant_pdf_index_and_route_passage_inspected",
+      "linked_claim_ids": [
+        "site-2a3fdab99250-W5-C02"
+      ],
+      "page_level_inspection_required": true,
+      "bibliographic_validation": "PENDING",
+      "publication_use": "BLOCKED_PENDING_VALIDATION"
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/app_colors.dart';
+import 'package:pal_eyes/core/widgets/direct_flutter_maturity_r9.dart';
 import 'package:pal_eyes/core/widgets/draft_content_banner.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_visual_system.dart';
 import 'package:pal_eyes/features/places/application/heritage_sites_provider.dart';
@@ -48,6 +49,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
+                    PalEyesPublicIdentityStrip(
+                      active: PalEyesPublicPillar.atlas,
+                      onAtlas: () => context.go(RoutePaths.places),
+                      onMuseum: () => context.go(RoutePaths.discover),
+                      onMagazine: () => context.go(RoutePaths.stories),
+                    ),
+                    const SizedBox(height: 34),
                     const _ProductGatewaysSection(),
                     const SizedBox(height: 42),
                     _MapGateway(

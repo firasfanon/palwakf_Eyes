@@ -11,19 +11,22 @@ final supabaseBootstrapResultProvider = Provider<SupabaseBootstrapResult>(
 enum SupabaseRuntimeMode { disabled, enabled, failed }
 
 class SupabaseBootstrapResult {
-  const SupabaseBootstrapResult._({required this.mode, required this.message});
+  const SupabaseBootstrapResult._({
+    required this.mode,
+    required this.message,
+  });
 
   const SupabaseBootstrapResult.disabled({required String reason})
-    : this._(mode: SupabaseRuntimeMode.disabled, message: reason);
+      : this._(mode: SupabaseRuntimeMode.disabled, message: reason);
 
   const SupabaseBootstrapResult.enabled()
-    : this._(
-        mode: SupabaseRuntimeMode.enabled,
-        message: 'Supabase client initialized with publishable credentials.',
-      );
+      : this._(
+          mode: SupabaseRuntimeMode.enabled,
+          message: 'Supabase client initialized with publishable credentials.',
+        );
 
   const SupabaseBootstrapResult.failed({required String reason})
-    : this._(mode: SupabaseRuntimeMode.failed, message: reason);
+      : this._(mode: SupabaseRuntimeMode.failed, message: reason);
 
   final SupabaseRuntimeMode mode;
   final String message;
@@ -37,8 +40,7 @@ abstract final class SupabaseBootstrap {
   ) async {
     if (!environment.hasSupabaseConfiguration) {
       return const SupabaseBootstrapResult.disabled(
-        reason:
-            'No Supabase dart-defines were supplied; local demo mode is active.',
+        reason: 'No Supabase dart-defines were supplied; local demo mode is active.',
       );
     }
 

@@ -99,14 +99,14 @@ class MethodologyScreen extends StatelessWidget {
           ),
           const SizedBox(height: 20),
           ...steps.asMap().entries.map(
-            (entry) => _MethodStep(
-              number: entry.key + 1,
-              icon: entry.value.$1,
-              title: entry.value.$2,
-              description: entry.value.$3,
-              last: entry.key == steps.length - 1,
-            ),
-          ),
+                (entry) => _MethodStep(
+                  number: entry.key + 1,
+                  icon: entry.value.$1,
+                  title: entry.value.$2,
+                  description: entry.value.$3,
+                  last: entry.key == steps.length - 1,
+                ),
+              ),
           const SizedBox(height: 34),
           LayoutBuilder(
             builder: (context, constraints) {
@@ -218,7 +218,9 @@ class _MethodStep extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             title,
-                            style: Theme.of(context).textTheme.titleLarge
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleLarge
                                 ?.copyWith(fontWeight: FontWeight.w900),
                           ),
                           const SizedBox(height: 6),

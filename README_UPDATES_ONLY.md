@@ -1,20 +1,10 @@
-# Pal_Eyes R0.2.0 Updates-only
+# PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_R3_0_1_20260714_UPDATES_ONLY
 
-هذه الحزمة تحتوي فقط على الملفات الجديدة أو المعدلة مقارنة بـ:
+Parent: `PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_R3_0_0_20260714`
 
-`PAL_EYES_PROJECT_FOUNDATION_V0_1_0_20260713`
-
-## الاستخدام
-
-انسخ محتويات هذه الحزمة فوق مجلد Baseline V0.1.0 مع الاحتفاظ بنسخة احتياطية.
-
-## الحدود
-
-- لا Runtime source mutation.
-- لا Database mutation.
-- لا Production mutation.
-- التحديثات وثائق وأدلة وأدوات جرد فقط.
-
-## Parent SHA-256
-
-`88b87fc2e9ec5934e30f92976862808287210fb043b3d75263b3ea6417ff4b83`
+```text
+DIRECT_EXTENSION_IMPORT=ADDED
+UNUSED_IMPORTS_REMOVED=2
+CONTENT_COUNTS_UNCHANGED=TRUE
+DATABASE_MUTATION=NONE
+```

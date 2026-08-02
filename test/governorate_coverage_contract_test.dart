@@ -35,7 +35,10 @@ void main() {
         .where((item) => !item.hasExtractedSites)
         .toList(growable: false);
 
-    expect(gaps, hasLength(ContentCatalogMetrics.governoratesWithoutSiteRows));
+    expect(
+      gaps,
+      hasLength(ContentCatalogMetrics.governoratesWithoutSiteRows),
+    );
     expect(
       gaps.map((item) => item.nameAr).toSet(),
       containsAll(<String>{'شمال غزة', 'دير البلح'}),

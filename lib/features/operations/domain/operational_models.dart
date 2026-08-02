@@ -1,12 +1,15 @@
 import 'dart:convert';
 
-enum OperationalBackendMode { localFallback, supabase }
+enum OperationalBackendMode {
+  localFallback,
+  supabase,
+}
 
 extension OperationalBackendModeX on OperationalBackendMode {
   String get labelAr => switch (this) {
-    OperationalBackendMode.localFallback => 'تشغيل محلي مؤقت',
-    OperationalBackendMode.supabase => 'Supabase محكوم',
-  };
+        OperationalBackendMode.localFallback => 'تشغيل محلي مؤقت',
+        OperationalBackendMode.supabase => 'Supabase محكوم',
+      };
 }
 
 class OperationalActor {
@@ -20,7 +23,8 @@ class OperationalActor {
   final String displayName;
   final Set<String> roles;
 
-  bool hasAnyRole(Iterable<String> allowed) => allowed.any(roles.contains);
+  bool hasAnyRole(Iterable<String> allowed) =>
+      allowed.any(roles.contains);
 }
 
 class OperationalSiteRecord {
@@ -51,8 +55,7 @@ class OperationalSiteRecord {
       governorateAr: (json['governorate_ar'] ?? '') as String,
       localityAr: (json['locality_ar'] ?? '') as String,
       siteTypeAr: (json['site_type_ar'] ?? '') as String,
-      pageCategory:
-          (json['page_category'] ?? 'LIMITED_RESEARCH_PAGE') as String,
+      pageCategory: (json['page_category'] ?? 'LIMITED_RESEARCH_PAGE') as String,
       workflowStatus: (json['workflow_status'] ?? 'DRAFT') as String,
       publicationStatus: (json['publication_status'] ?? 'BLOCKED') as String,
       coordinateStatus: (json['coordinate_status'] ?? 'MISSING') as String,
@@ -62,11 +65,11 @@ class OperationalSiteRecord {
       sourceCount: (json['source_count'] as num?)?.toInt() ?? 0,
       heldClaimCount: (json['held_claim_count'] as num?)?.toInt() ?? 0,
       versionNumber: (json['version_number'] as num?)?.toInt() ?? 1,
-      updatedAt:
-          DateTime.tryParse((json['updated_at'] ?? '') as String) ??
+      updatedAt: DateTime.tryParse((json['updated_at'] ?? '') as String) ??
           DateTime.fromMillisecondsSinceEpoch(0, isUtc: true),
     );
   }
+
 
   final String id;
   final String slug;
@@ -85,7 +88,8 @@ class OperationalSiteRecord {
   final int versionNumber;
   final DateTime updatedAt;
 
-  bool get publicCoordinatesApproved => coordinateStatus == 'PUBLIC_APPROVED';
+  bool get publicCoordinatesApproved =>
+      coordinateStatus == 'PUBLIC_APPROVED';
 
   OperationalSiteRecord copyWith({
     String? workflowStatus,
@@ -118,23 +122,24 @@ class OperationalSiteRecord {
   }
 
   Map<String, Object?> toJson() => <String, Object?>{
-    'id': id,
-    'slug': slug,
-    'name_ar': nameAr,
-    'governorate_ar': governorateAr,
-    'locality_ar': localityAr,
-    'site_type_ar': siteTypeAr,
-    'page_category': pageCategory,
-    'workflow_status': workflowStatus,
-    'publication_status': publicationStatus,
-    'coordinate_status': coordinateStatus,
-    'original_draft_profile': originalDraftProfile,
-    'editorial_draft': editorialDraft,
-    'source_count': sourceCount,
-    'held_claim_count': heldClaimCount,
-    'version_number': versionNumber,
-    'updated_at': updatedAt.toIso8601String(),
-  };
+        'id': id,
+        'slug': slug,
+        'name_ar': nameAr,
+        'governorate_ar': governorateAr,
+        'locality_ar': localityAr,
+        'site_type_ar': siteTypeAr,
+        'page_category': pageCategory,
+        'workflow_status': workflowStatus,
+        'publication_status': publicationStatus,
+        'coordinate_status': coordinateStatus,
+        'original_draft_profile': originalDraftProfile,
+        'editorial_draft': editorialDraft,
+        'source_count': sourceCount,
+        'held_claim_count': heldClaimCount,
+        'version_number': versionNumber,
+        'updated_at': updatedAt.toIso8601String(),
+      };
+
 }
 
 class OperationalSourceRecord {
@@ -165,11 +170,11 @@ class OperationalSourceRecord {
           (json['public_release_status'] ?? 'BLOCKED') as String,
       linkedSiteCount: (json['linked_site_count'] as num?)?.toInt() ?? 0,
       linkedClaimCount: (json['linked_claim_count'] as num?)?.toInt() ?? 0,
-      updatedAt:
-          DateTime.tryParse((json['updated_at'] ?? '') as String) ??
+      updatedAt: DateTime.tryParse((json['updated_at'] ?? '') as String) ??
           DateTime.fromMillisecondsSinceEpoch(0, isUtc: true),
     );
   }
+
 
   final String id;
   final String title;
@@ -199,7 +204,8 @@ class OperationalSourceRecord {
       url: url,
       workflowStatus: workflowStatus ?? this.workflowStatus,
       rightsStatus: rightsStatus ?? this.rightsStatus,
-      publicReleaseStatus: publicReleaseStatus ?? this.publicReleaseStatus,
+      publicReleaseStatus:
+          publicReleaseStatus ?? this.publicReleaseStatus,
       linkedSiteCount: linkedSiteCount ?? this.linkedSiteCount,
       linkedClaimCount: linkedClaimCount ?? this.linkedClaimCount,
       updatedAt: updatedAt ?? this.updatedAt,
@@ -207,18 +213,19 @@ class OperationalSourceRecord {
   }
 
   Map<String, Object?> toJson() => <String, Object?>{
-    'id': id,
-    'title': title,
-    'attribution': attribution,
-    'source_type': sourceType,
-    'url': url,
-    'workflow_status': workflowStatus,
-    'rights_status': rightsStatus,
-    'public_release_status': publicReleaseStatus,
-    'linked_site_count': linkedSiteCount,
-    'linked_claim_count': linkedClaimCount,
-    'updated_at': updatedAt.toIso8601String(),
-  };
+        'id': id,
+        'title': title,
+        'attribution': attribution,
+        'source_type': sourceType,
+        'url': url,
+        'workflow_status': workflowStatus,
+        'rights_status': rightsStatus,
+        'public_release_status': publicReleaseStatus,
+        'linked_site_count': linkedSiteCount,
+        'linked_claim_count': linkedClaimCount,
+        'updated_at': updatedAt.toIso8601String(),
+      };
+
 }
 
 class OperationalClaimRecord {
@@ -248,11 +255,11 @@ class OperationalClaimRecord {
       evidenceStatus: (json['evidence_status'] ?? 'MISSING') as String,
       publicationUse: (json['publication_use'] ?? 'BLOCKED') as String,
       categories: List<String>.from(json['categories'] as List? ?? const []),
-      updatedAt:
-          DateTime.tryParse((json['updated_at'] ?? '') as String) ??
+      updatedAt: DateTime.tryParse((json['updated_at'] ?? '') as String) ??
           DateTime.fromMillisecondsSinceEpoch(0, isUtc: true),
     );
   }
+
 
   final String id;
   final String siteId;
@@ -288,18 +295,19 @@ class OperationalClaimRecord {
   }
 
   Map<String, Object?> toJson() => <String, Object?>{
-    'id': id,
-    'site_id': siteId,
-    'site_name_ar': siteNameAr,
-    'claim_text': claimText,
-    'priority_tier': priorityTier,
-    'priority_score': priorityScore,
-    'workflow_status': workflowStatus,
-    'evidence_status': evidenceStatus,
-    'publication_use': publicationUse,
-    'categories': categories,
-    'updated_at': updatedAt.toIso8601String(),
-  };
+        'id': id,
+        'site_id': siteId,
+        'site_name_ar': siteNameAr,
+        'claim_text': claimText,
+        'priority_tier': priorityTier,
+        'priority_score': priorityScore,
+        'workflow_status': workflowStatus,
+        'evidence_status': evidenceStatus,
+        'publication_use': publicationUse,
+        'categories': categories,
+        'updated_at': updatedAt.toIso8601String(),
+      };
+
 }
 
 class OperationalReviewTask {
@@ -326,14 +334,13 @@ class OperationalReviewTask {
       priority: (json['priority'] ?? 'NORMAL') as String,
       status: (json['status'] ?? 'OPEN') as String,
       assigneeLabel: (json['assignee_label'] ?? 'غير مسند') as String,
-      createdAt:
-          DateTime.tryParse((json['created_at'] ?? '') as String) ??
+      createdAt: DateTime.tryParse((json['created_at'] ?? '') as String) ??
           DateTime.fromMillisecondsSinceEpoch(0, isUtc: true),
-      updatedAt:
-          DateTime.tryParse((json['updated_at'] ?? '') as String) ??
+      updatedAt: DateTime.tryParse((json['updated_at'] ?? '') as String) ??
           DateTime.fromMillisecondsSinceEpoch(0, isUtc: true),
     );
   }
+
 
   final String id;
   final String entityType;
@@ -366,17 +373,18 @@ class OperationalReviewTask {
   }
 
   Map<String, Object?> toJson() => <String, Object?>{
-    'id': id,
-    'entity_type': entityType,
-    'entity_id': entityId,
-    'title': title,
-    'review_type': reviewType,
-    'priority': priority,
-    'status': status,
-    'assignee_label': assigneeLabel,
-    'created_at': createdAt.toIso8601String(),
-    'updated_at': updatedAt.toIso8601String(),
-  };
+        'id': id,
+        'entity_type': entityType,
+        'entity_id': entityId,
+        'title': title,
+        'review_type': reviewType,
+        'priority': priority,
+        'status': status,
+        'assignee_label': assigneeLabel,
+        'created_at': createdAt.toIso8601String(),
+        'updated_at': updatedAt.toIso8601String(),
+      };
+
 }
 
 class OperationalCoordinateCandidate {
@@ -393,7 +401,9 @@ class OperationalCoordinateCandidate {
     required this.updatedAt,
   });
 
-  factory OperationalCoordinateCandidate.fromJson(Map<String, Object?> json) {
+  factory OperationalCoordinateCandidate.fromJson(
+    Map<String, Object?> json,
+  ) {
     return OperationalCoordinateCandidate(
       id: json['id']! as String,
       siteId: json['site_id']! as String,
@@ -401,14 +411,16 @@ class OperationalCoordinateCandidate {
       latitude: (json['latitude'] as num).toDouble(),
       longitude: (json['longitude'] as num).toDouble(),
       sourceId: (json['source_id'] ?? '') as String,
-      verificationStatus: (json['verification_status'] ?? 'PENDING') as String,
-      promotionStatus: (json['promotion_status'] ?? 'NOT_PROMOTED') as String,
+      verificationStatus:
+          (json['verification_status'] ?? 'PENDING') as String,
+      promotionStatus:
+          (json['promotion_status'] ?? 'NOT_PROMOTED') as String,
       publicMapUse: (json['public_map_use'] ?? 'BLOCKED') as String,
-      updatedAt:
-          DateTime.tryParse((json['updated_at'] ?? '') as String) ??
+      updatedAt: DateTime.tryParse((json['updated_at'] ?? '') as String) ??
           DateTime.fromMillisecondsSinceEpoch(0, isUtc: true),
     );
   }
+
 
   final String id;
   final String siteId;
@@ -434,7 +446,8 @@ class OperationalCoordinateCandidate {
       latitude: latitude,
       longitude: longitude,
       sourceId: sourceId,
-      verificationStatus: verificationStatus ?? this.verificationStatus,
+      verificationStatus:
+          verificationStatus ?? this.verificationStatus,
       promotionStatus: promotionStatus ?? this.promotionStatus,
       publicMapUse: publicMapUse ?? this.publicMapUse,
       updatedAt: updatedAt ?? this.updatedAt,
@@ -442,17 +455,18 @@ class OperationalCoordinateCandidate {
   }
 
   Map<String, Object?> toJson() => <String, Object?>{
-    'id': id,
-    'site_id': siteId,
-    'site_name_ar': siteNameAr,
-    'latitude': latitude,
-    'longitude': longitude,
-    'source_id': sourceId,
-    'verification_status': verificationStatus,
-    'promotion_status': promotionStatus,
-    'public_map_use': publicMapUse,
-    'updated_at': updatedAt.toIso8601String(),
-  };
+        'id': id,
+        'site_id': siteId,
+        'site_name_ar': siteNameAr,
+        'latitude': latitude,
+        'longitude': longitude,
+        'source_id': sourceId,
+        'verification_status': verificationStatus,
+        'promotion_status': promotionStatus,
+        'public_map_use': publicMapUse,
+        'updated_at': updatedAt.toIso8601String(),
+      };
+
 }
 
 class OperationalMediaAsset {
@@ -476,13 +490,14 @@ class OperationalMediaAsset {
       assetType: (json['asset_type'] ?? 'image') as String,
       ownerLabel: (json['owner_label'] ?? 'غير محدد') as String,
       rightsStatus: (json['rights_status'] ?? 'PENDING') as String,
-      internalUseStatus: (json['internal_use_status'] ?? 'BLOCKED') as String,
+      internalUseStatus:
+          (json['internal_use_status'] ?? 'BLOCKED') as String,
       publicUseStatus: (json['public_use_status'] ?? 'BLOCKED') as String,
-      updatedAt:
-          DateTime.tryParse((json['updated_at'] ?? '') as String) ??
+      updatedAt: DateTime.tryParse((json['updated_at'] ?? '') as String) ??
           DateTime.fromMillisecondsSinceEpoch(0, isUtc: true),
     );
   }
+
 
   final String id;
   final String siteId;
@@ -495,16 +510,17 @@ class OperationalMediaAsset {
   final DateTime updatedAt;
 
   Map<String, Object?> toJson() => <String, Object?>{
-    'id': id,
-    'site_id': siteId,
-    'title': title,
-    'asset_type': assetType,
-    'owner_label': ownerLabel,
-    'rights_status': rightsStatus,
-    'internal_use_status': internalUseStatus,
-    'public_use_status': publicUseStatus,
-    'updated_at': updatedAt.toIso8601String(),
-  };
+        'id': id,
+        'site_id': siteId,
+        'title': title,
+        'asset_type': assetType,
+        'owner_label': ownerLabel,
+        'rights_status': rightsStatus,
+        'internal_use_status': internalUseStatus,
+        'public_use_status': publicUseStatus,
+        'updated_at': updatedAt.toIso8601String(),
+      };
+
 }
 
 class OperationalReleaseCandidate {
@@ -530,12 +546,12 @@ class OperationalReleaseCandidate {
             ) ??
             const <String, bool>{},
       ),
-      createdAt:
-          DateTime.tryParse((json['created_at'] ?? '') as String) ??
+      createdAt: DateTime.tryParse((json['created_at'] ?? '') as String) ??
           DateTime.fromMillisecondsSinceEpoch(0, isUtc: true),
       createdBy: (json['created_by_label'] ?? 'غير محدد') as String,
     );
   }
+
 
   final String id;
   final String title;
@@ -546,14 +562,15 @@ class OperationalReleaseCandidate {
   final String createdBy;
 
   Map<String, Object?> toJson() => <String, Object?>{
-    'id': id,
-    'title': title,
-    'status': status,
-    'site_ids': siteIds,
-    'gates': gates,
-    'created_at': createdAt.toIso8601String(),
-    'created_by_label': createdBy,
-  };
+        'id': id,
+        'title': title,
+        'status': status,
+        'site_ids': siteIds,
+        'gates': gates,
+        'created_at': createdAt.toIso8601String(),
+        'created_by_label': createdBy,
+      };
+
 }
 
 class OperationalAuditEvent {
@@ -579,11 +596,11 @@ class OperationalAuditEvent {
       metadata: Map<String, Object?>.from(
         json['metadata'] as Map? ?? const <String, Object?>{},
       ),
-      createdAt:
-          DateTime.tryParse((json['created_at'] ?? '') as String) ??
+      createdAt: DateTime.tryParse((json['created_at'] ?? '') as String) ??
           DateTime.fromMillisecondsSinceEpoch(0, isUtc: true),
     );
   }
+
 
   final String id;
   final String actorLabel;
@@ -595,15 +612,16 @@ class OperationalAuditEvent {
   final DateTime createdAt;
 
   Map<String, Object?> toJson() => <String, Object?>{
-    'id': id,
-    'actor_label': actorLabel,
-    'action': action,
-    'entity_type': entityType,
-    'entity_id': entityId,
-    'summary': summary,
-    'metadata': metadata,
-    'created_at': createdAt.toIso8601String(),
-  };
+        'id': id,
+        'actor_label': actorLabel,
+        'action': action,
+        'entity_type': entityType,
+        'entity_id': entityId,
+        'summary': summary,
+        'metadata': metadata,
+        'created_at': createdAt.toIso8601String(),
+      };
+
 }
 
 class OperationalSnapshot {
@@ -635,14 +653,17 @@ class OperationalSnapshot {
       .where((task) => task.status == 'OPEN' || task.status == 'IN_REVIEW')
       .length;
 
-  int get missingSourceMetadataCount =>
-      sources.where((source) => source.workflowStatus != 'VERIFIED').length;
+  int get missingSourceMetadataCount => sources
+      .where((source) => source.workflowStatus != 'VERIFIED')
+      .length;
 
-  int get coordinateGapCount =>
-      sites.where((site) => !site.publicCoordinatesApproved).length;
+  int get coordinateGapCount => sites
+      .where((site) => !site.publicCoordinatesApproved)
+      .length;
 
-  int get pendingRightsCount =>
-      mediaAssets.where((asset) => asset.publicUseStatus != 'APPROVED').length;
+  int get pendingRightsCount => mediaAssets
+      .where((asset) => asset.publicUseStatus != 'APPROVED')
+      .length;
 
   OperationalSnapshot copyWith({
     OperationalBackendMode? backendMode,
@@ -662,7 +683,8 @@ class OperationalSnapshot {
       sources: sources ?? this.sources,
       claims: claims ?? this.claims,
       reviewTasks: reviewTasks ?? this.reviewTasks,
-      coordinateCandidates: coordinateCandidates ?? this.coordinateCandidates,
+      coordinateCandidates:
+          coordinateCandidates ?? this.coordinateCandidates,
       mediaAssets: mediaAssets ?? this.mediaAssets,
       releaseCandidates: releaseCandidates ?? this.releaseCandidates,
       auditEvents: auditEvents ?? this.auditEvents,
@@ -671,17 +693,17 @@ class OperationalSnapshot {
   }
 
   String toCompactJson() => jsonEncode(<String, Object?>{
-    'backend_mode': backendMode.name,
-    'counts': <String, int>{
-      'sites': sites.length,
-      'sources': sources.length,
-      'claims': claims.length,
-      'review_tasks': reviewTasks.length,
-      'coordinate_candidates': coordinateCandidates.length,
-      'media_assets': mediaAssets.length,
-      'release_candidates': releaseCandidates.length,
-      'audit_events': auditEvents.length,
-    },
-    'loaded_at': loadedAt.toIso8601String(),
-  });
+        'backend_mode': backendMode.name,
+        'counts': <String, int>{
+          'sites': sites.length,
+          'sources': sources.length,
+          'claims': claims.length,
+          'review_tasks': reviewTasks.length,
+          'coordinate_candidates': coordinateCandidates.length,
+          'media_assets': mediaAssets.length,
+          'release_candidates': releaseCandidates.length,
+          'audit_events': auditEvents.length,
+        },
+        'loaded_at': loadedAt.toIso8601String(),
+      });
 }

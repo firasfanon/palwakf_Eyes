@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/app_colors.dart';
+import 'package:pal_eyes/core/widgets/direct_flutter_maturity_r9.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_page.dart';
 import 'package:pal_eyes/core/widgets/public_experience_maturity.dart';
 import 'package:pal_eyes/features/stories/data/editorial_story_catalog.dart';
@@ -62,6 +63,12 @@ class StoryDetailScreen extends StatelessWidget {
             readingMinutes: story.readingMinutes,
             chapterCount: story.chapters.length,
           ),
+          const SizedBox(height: 14),
+          PalEyesChapterRail(
+            titles: story.chapters
+                .map((chapter) => chapter.title)
+                .toList(growable: false),
+          ),
           const SizedBox(height: 26),
           Text(
             'فصول القصة',
@@ -119,9 +126,11 @@ class _ChapterCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 14),
-              SelectableText(
-                chapter.body,
-                style: const TextStyle(height: 1.9, fontSize: 17),
+              PalEyesReadingFrame(
+                child: SelectableText(
+                  chapter.body,
+                  style: const TextStyle(height: 1.9, fontSize: 17),
+                ),
               ),
               if (chapter.pullQuote != null) ...<Widget>[
                 const SizedBox(height: 20),

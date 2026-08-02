@@ -1,0 +1,859 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_HUMAN_IDENTITY_DECISION_DOSSIER_V1",
+  "document_status": "recommended_human_identity_decisions",
+  "decision_authority": "user_human_approval_required",
+  "governance": {
+    "auto_apply": false,
+    "canonical_catalog_mutation": false,
+    "database_write": false,
+    "project_source_mutation": false,
+    "publication_approval": "blocked"
+  },
+  "counts": {
+    "queue_records_reviewed": 33,
+    "structural_change_recommendations": 23,
+    "non_structural_keep_recommendations": 10,
+    "unresolved_identity_holds": 4,
+    "relation_proposals": 9,
+    "new_record_candidates": 4
+  },
+  "decision_counts": {
+    "KEEP_CANONICAL_IDENTITY_CLAIM_ONLY": 4,
+    "RECLASSIFY_TO_GOVERNED_CLUSTER": 11,
+    "SPLIT_COMPOSITE_IDENTITY": 4,
+    "HOLD_UNRESOLVED_IDENTITY": 4,
+    "ACCEPT_COMPONENT_RELATION": 6,
+    "REASSIGN_LOCALITY_AND_LINK_CLUSTER": 1,
+    "KEEP_CANONICAL_IDENTITY_COMPLEX": 2,
+    "MERGE_ALIAS_OR_COMPONENT": 1
+  },
+  "decisions": [
+    {
+      "decision_id": "HID-001",
+      "canonical_site_id": "site-4b15f14c306f",
+      "canonical_slug": "knys-lmhd-4b15f1",
+      "name_ar": "كنيسة المهد",
+      "governorate_ar": "بيت لحم",
+      "current_wave_status": "OFFICIAL_RECORD_PARTIALLY_VERIFIED",
+      "automated_queue_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "decision_code": "KEEP_CANONICAL_IDENTITY_CLAIM_ONLY",
+      "recommendation": "الإبقاء على هوية كنيسة المهد دون فصل أو إعادة تصنيف.",
+      "reason": "الإشكال يتعلق بصياغة تاريخ البناء ونسبة هيلانة، لا بهوية الموقع.",
+      "structural_change": false,
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-002",
+      "canonical_site_id": "site-f9df0c7e708c",
+      "canonical_slug": "bld-slwn-f9df0c",
+      "name_ar": "بلدة سلوان",
+      "governorate_ar": "القدس",
+      "current_wave_status": "CONTEXT_ONLY_OFFICIAL_SOURCE_CONFIRMED",
+      "automated_queue_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "decision_code": "KEEP_CANONICAL_IDENTITY_CLAIM_ONLY",
+      "recommendation": "الإبقاء على بلدة سلوان كسجل حاكم، مع مراجعة الادعاءات ونطاق الموقع فقط.",
+      "reason": "الحاجة إلى نسبة التقارير للأطراف لا تعني وجود تعارض في هوية سلوان.",
+      "structural_change": false,
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-003",
+      "canonical_site_id": "site-f7553f79288f",
+      "canonical_slug": "qswr-lmmlyk-shr-lwd-f7553f",
+      "name_ar": "قصور المماليك (شارع الواد)",
+      "governorate_ar": "القدس",
+      "current_wave_status": "CLUSTER_IDENTITY_REVIEW_REQUIRED",
+      "automated_queue_actions": [
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "recommendation": "إعادة تصنيف قصور المماليك في شارع الواد كعنقود معماري متعدد المكونات.",
+      "reason": "السجل يجمع قصوراً ومدارس وربطاً وخوانق ولا يمثل معلماً واحداً.",
+      "structural_change": true,
+      "target_record_type": "architectural_cluster",
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-004",
+      "canonical_site_id": "site-f60be7cd7d5e",
+      "canonical_slug": "byt-mr-khrb-lnby-mt-f60be7",
+      "name_ar": "بيت أمر (خربة النبي متى)",
+      "governorate_ar": "الخليل",
+      "current_wave_status": "SOURCE_GAP",
+      "automated_queue_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "decision_code": "SPLIT_COMPOSITE_IDENTITY",
+      "recommendation": "فصل هوية بلدة بيت أمر عن خربة/مقام النبي متى؛ إنشاء المكوّن الثاني يبقى مرهوناً بمصدر مخصص.",
+      "reason": "السجل الحالي يدمج بلدة قائمة مع خربة أو مقام غير محسوم الهوية.",
+      "structural_change": true,
+      "new_record_candidates": [
+        "بيت أمر — historic locality/settlement",
+        "خربة أو مقام النبي متى — candidate pending evidence"
+      ],
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-005",
+      "canonical_site_id": "site-2310c1600481",
+      "canonical_slug": "khn-lhtb-2310c1",
+      "name_ar": "خان الحطب",
+      "governorate_ar": "الخليل",
+      "current_wave_status": "SOURCE_GAP",
+      "automated_queue_actions": [
+        "COMPONENT_RELATION_MODELING"
+      ],
+      "decision_code": "HOLD_UNRESOLVED_IDENTITY",
+      "recommendation": "تعليق خان الحطب وعدم ربطه تلقائياً ببلدة الخليل القديمة حتى العثور على سجل معماري أو وقفي مخصص.",
+      "reason": "وجود الخانات كفئة في الخليل لا يثبت هوية هذا الخان تحديداً.",
+      "structural_change": false,
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-006",
+      "canonical_site_id": "site-d2c9e9bc9652",
+      "canonical_slug": "ql-lkrml-dyr-smt-d2c9e9",
+      "name_ar": "قلعة الكرمل (دير سامت)",
+      "governorate_ar": "الخليل",
+      "current_wave_status": "SOURCE_GAP",
+      "automated_queue_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "decision_code": "HOLD_UNRESOLVED_IDENTITY",
+      "recommendation": "تعليق سجل قلعة الكرمل/دير سامت بوصفه هوية مركبة غير محسومة.",
+      "reason": "قد يكون الاسم مركباً من موقعين أو من تسمية محلية غير موثقة.",
+      "structural_change": false,
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-007",
+      "canonical_site_id": "site-0dc57168d963",
+      "canonical_slug": "mgr-lbtrk-jz-mn-lhrm-0dc571",
+      "name_ar": "مغارة البطاركة (جزء من الحرم)",
+      "governorate_ar": "الخليل",
+      "current_wave_status": "OFFICIAL_COMPONENT_RELATION_CONFIRMED_DEDUP_REQUIRED",
+      "automated_queue_actions": [
+        "COMPONENT_RELATION_MODELING",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION"
+      ],
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "recommendation": "اعتماد مغارة البطاركة مكوّناً من مجمع الحرم الإبراهيمي ومنعها كسجل نشر أو خريطة مستقل.",
+      "reason": "المصدر الرسمي يثبت العلاقة البنيوية داخل المجمع.",
+      "structural_change": true,
+      "relation": {
+        "type": "COMPONENT_OF",
+        "target_site_id": "site-899e38be070d"
+      },
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-008",
+      "canonical_site_id": "site-63fe9eba7871",
+      "canonical_slug": "ql-lbrk-63fe9e",
+      "name_ar": "قلعة البرك",
+      "governorate_ar": "بيت لحم",
+      "current_wave_status": "COMPONENT_RELATION_CONFIRMED_DEDUP_REQUIRED",
+      "automated_queue_actions": [
+        "COMPONENT_RELATION_MODELING",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION"
+      ],
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "recommendation": "اعتماد قلعة البرك مكوّناً من مجمع برك سليمان.",
+      "reason": "سجل الترميم يعامل القلعة والبرك كموقع تاريخي مركب.",
+      "structural_change": true,
+      "relation": {
+        "type": "COMPONENT_OF",
+        "target_site_id": "site-37c8be50ce73"
+      },
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-009",
+      "canonical_site_id": "site-21150eefdea6",
+      "canonical_slug": "tl-l-jwl-mdyn-gz-lqdym-21150e",
+      "name_ar": "تل العجول (مدينة غزة القديمة)",
+      "governorate_ar": "غزة",
+      "current_wave_status": "IDENTITY_SPLIT_REQUIRED_DAMAGE_CONFIRMED",
+      "automated_queue_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "decision_code": "SPLIT_COMPOSITE_IDENTITY",
+      "recommendation": "فصل تل العجول عن مدينة غزة القديمة، والإبقاء على تل العجول موقعاً أثرياً برونزياً مستقلاً.",
+      "reason": "المصادر الأكاديمية تحدد تل العجول جنوب غزة الحديثة ولا تساويه بالمركز التاريخي.",
+      "structural_change": true,
+      "not_same_as_site_id": "site-015f495c4236",
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-010",
+      "canonical_site_id": "site-5e98cf44d976",
+      "canonical_slug": "ql-brqwq-5e98cf",
+      "name_ar": "قلعة برقوق",
+      "governorate_ar": "غزة",
+      "current_wave_status": "OFFICIAL_DAMAGE_CONFIRMED_MAMLUK_HISTORY_PARTIAL",
+      "automated_queue_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "recommendation": "الإبقاء على قلعة برقوق معلماً مستقلاً وربطها كمكوّن من عنقود خان يونس القديم.",
+      "reason": "القلعة هوية مميزة، بينما خان يونس القديم عنقود حضري أوسع.",
+      "structural_change": true,
+      "relation": {
+        "type": "COMPONENT_OF",
+        "target_site_id": "site-0a78d22c1a69"
+      },
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-011",
+      "canonical_site_id": "site-e1e3de7b8519",
+      "canonical_slug": "knys-lqdys-brfyryws-e1e3de",
+      "name_ar": "كنيسة القديس برفيريوس",
+      "governorate_ar": "غزة",
+      "current_wave_status": "OFFICIAL_DAMAGE_AND_LIVING_INSTITUTION_CONFIRMED",
+      "automated_queue_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "decision_code": "KEEP_CANONICAL_IDENTITY_CLAIM_ONLY",
+      "recommendation": "الإبقاء على هوية كنيسة القديس برفيريوس دون فصل؛ معالجة العمر والتقاليد ضمن الادعاءات.",
+      "reason": "لا يوجد تعارض هوية، بل فصل مطلوب بين التقليد الكنسي والتأريخ الأثري.",
+      "structural_change": false,
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-012",
+      "canonical_site_id": "site-015f495c4236",
+      "canonical_slug": "mdyn-gz-lqdym-015f49",
+      "name_ar": "مدينة غزة القديمة",
+      "governorate_ar": "غزة",
+      "current_wave_status": "OFFICIAL_STATE_PARTY_HISTORIC_CLUSTER_CONFIRMED",
+      "automated_queue_actions": [
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "recommendation": "إعادة تصنيف مدينة غزة القديمة كعنقود حضري تاريخي ذي مكونات.",
+      "reason": "ملف الدولة الطرف يحدد مركزاً تاريخياً واسعاً لا معلماً نقطياً.",
+      "structural_change": true,
+      "target_record_type": "historic_urban_cluster",
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-013",
+      "canonical_site_id": "site-0a78d22c1a69",
+      "canonical_slug": "khn-ywns-lqdym-0a78d2",
+      "name_ar": "خان يونس القديم",
+      "governorate_ar": "خان يونس",
+      "current_wave_status": "URBAN_CLUSTER_PARTIAL_COMPONENT_DAMAGE_CONFIRMED",
+      "automated_queue_actions": [
+        "COMPONENT_RELATION_MODELING",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "recommendation": "إعادة تصنيف خان يونس القديم كعنقود حضري تاريخي مؤقت الحدود، مع قلعة برقوق كمكوّن أول.",
+      "reason": "القلعة لا تمثل وحدها كامل البلدة القديمة، والحدود تحتاج جرداً مستقلاً.",
+      "structural_change": true,
+      "target_record_type": "provisional_historic_urban_cluster",
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-014",
+      "canonical_site_id": "site-ee0e5bf1f753",
+      "canonical_slug": "rfh-ltrykhy-ee0e5b",
+      "name_ar": "رفح التاريخية",
+      "governorate_ar": "رفح",
+      "current_wave_status": "HISTORIC_CLUSTER_IDENTITY_RECONCILIATION_REQUIRED",
+      "automated_queue_actions": [
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "recommendation": "الإبقاء على رفح التاريخية كعنقود حضري مؤقت، وإنشاء تل رفح كمكوّن أثري منفصل عند توفر هوية حاكمة.",
+      "reason": "الضرر الرسمي يتعلق بتل رفح، لا بكامل المدينة التاريخية.",
+      "structural_change": true,
+      "target_record_type": "provisional_historic_urban_cluster",
+      "new_record_candidates": [
+        "تل رفح — archaeological tell"
+      ],
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-015",
+      "canonical_site_id": "site-a9ac192e20c3",
+      "canonical_slug": "bld-nbls-lqdym-a9ac19",
+      "name_ar": "بلدة نابلس القديمة",
+      "governorate_ar": "نابلس",
+      "current_wave_status": "OFFICIAL_STATE_PARTY_URBAN_CLUSTER_CONFIRMED",
+      "automated_queue_actions": [
+        "COMPONENT_RELATION_MODELING",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "recommendation": "اعتماد بلدة نابلس القديمة عنقوداً حضرياً تاريخياً.",
+      "reason": "السجل يضم حارات وأسواقاً وخانات ومساجد وحمامات ومكونات أثرية متعددة.",
+      "structural_change": true,
+      "target_record_type": "historic_urban_cluster",
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-016",
+      "canonical_site_id": "site-160c60c7b952",
+      "canonical_slug": "hr-lysmyn-160c60",
+      "name_ar": "حارة الياسمينة",
+      "governorate_ar": "نابلس",
+      "current_wave_status": "OFFICIAL_MINISTRY_URBAN_COMPONENT_CONFIRMED",
+      "automated_queue_actions": [
+        "COMPONENT_RELATION_MODELING"
+      ],
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "recommendation": "اعتماد حارة الياسمينة مكوّناً عمرانياً من بلدة نابلس القديمة.",
+      "reason": "الحارة جزء معروف من المركز التاريخي وليست عقاراً مستقلاً عنه.",
+      "structural_change": true,
+      "relation": {
+        "type": "COMPONENT_OF",
+        "target_site_id": "site-a9ac192e20c3"
+      },
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-017",
+      "canonical_site_id": "site-31c7667ff10e",
+      "canonical_slug": "khn-ltjr-31c766",
+      "name_ar": "خان التجار",
+      "governorate_ar": "نابلس",
+      "current_wave_status": "OFFICIAL_MINISTRY_MARKET_COMPONENT_CONFIRMED",
+      "automated_queue_actions": [
+        "COMPONENT_RELATION_MODELING"
+      ],
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "recommendation": "اعتماد خان التجار مكوّناً تجارياً من بلدة نابلس القديمة، مع منعه من الدمج مع خان الوكالة.",
+      "reason": "المصدر الرسمي يثبت هويته كسوق تاريخي مستقل داخل المدينة القديمة.",
+      "structural_change": true,
+      "relation": {
+        "type": "COMPONENT_OF",
+        "target_site_id": "site-a9ac192e20c3"
+      },
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-018",
+      "canonical_site_id": "site-d00341226494",
+      "canonical_slug": "mqm-lnby-sh-yb-d00341",
+      "name_ar": "مقام النبي شعيب",
+      "governorate_ar": "نابلس",
+      "current_wave_status": "LOCALITY_CONFLICT_AND_DEDICATED_SOURCE_GAP",
+      "automated_queue_actions": [
+        "CANONICAL_IDENTITY_OR_LOCALITY_REVIEW"
+      ],
+      "decision_code": "HOLD_UNRESOLVED_IDENTITY",
+      "recommendation": "تعليق مقام النبي شعيب حتى حسم الموقع بين نابلس وسنجل وتحديد المقام المقصود.",
+      "reason": "سنجل تقع في محافظة رام الله والبيرة، والحقل الحالي متناقض مكانياً.",
+      "structural_change": false,
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-019",
+      "canonical_site_id": "site-f2a7fbbda5a5",
+      "canonical_slug": "bld-jnyn-lqdym-f2a7fb",
+      "name_ar": "بلدة جنين القديمة",
+      "governorate_ar": "جنين",
+      "current_wave_status": "OFFICIAL_MINISTRY_COMPONENTS_CONFIRMED_URBAN_CLUSTER_PARTIAL",
+      "automated_queue_actions": [
+        "COMPONENT_RELATION_MODELING",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "recommendation": "اعتماد بلدة جنين القديمة عنقوداً حضرياً تاريخياً مؤقت الحدود.",
+      "reason": "ثبتت مكونات رسمية، لكن حدود البلدة القديمة وجردها غير مكتملين.",
+      "structural_change": true,
+      "target_record_type": "provisional_historic_urban_cluster",
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-020",
+      "canonical_site_id": "site-fe1e2a1605b5",
+      "canonical_slug": "qsr-lkyd-fe1e2a",
+      "name_ar": "قصر الكايد",
+      "governorate_ar": "جنين",
+      "current_wave_status": "CANONICAL_LOCALITY_CONFLICT_REASSIGNMENT_REQUIRED",
+      "automated_queue_actions": [
+        "CANONICAL_IDENTITY_OR_LOCALITY_REVIEW",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "decision_code": "REASSIGN_LOCALITY_AND_LINK_CLUSTER",
+      "recommendation": "نقل إسناد قصر الكايد من جنين إلى سبسطية بمحافظة نابلس وربطه بعنقود سبسطية.",
+      "reason": "المصدر الرسمي الفلسطيني يحدد موقع القصر في سبسطية وتاريخ بنائه سنة 1858.",
+      "structural_change": true,
+      "target_governorate_ar": "نابلس",
+      "target_locality_ar": "سبسطية",
+      "relation": {
+        "type": "COMPONENT_OF",
+        "target_site_id": "site-6f6afe87f969"
+      },
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-021",
+      "canonical_site_id": "site-be1c2ce90997",
+      "canonical_slug": "mdyn-twlkrm-ltrykhy-be1c2c",
+      "name_ar": "مدينة طولكرم التاريخية",
+      "governorate_ar": "طولكرم",
+      "current_wave_status": "OFFICIAL_HERITAGE_ASSET_CONTEXT_ONLY_CLUSTER_UNDEFINED",
+      "automated_queue_actions": [
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "recommendation": "الإبقاء على مدينة طولكرم التاريخية كعنقود حضري مؤقت غير محدد الحدود.",
+      "reason": "ثبتت أصول تراثية منفردة، ولم يثبت بعد نطاق مركز تاريخي متكامل.",
+      "structural_change": true,
+      "target_record_type": "provisional_historic_urban_cluster",
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-022",
+      "canonical_site_id": "site-69f3ad775733",
+      "canonical_slug": "khrb-dyr-sty-69f3ad",
+      "name_ar": "خربة دير استيا",
+      "governorate_ar": "سلفيت",
+      "current_wave_status": "OFFICIAL_MINISTRY_AND_RIWAQ_HISTORIC_TOWN_CONFIRMED_IDENTITY_REFINEMENT",
+      "automated_queue_actions": [
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "recommendation": "تغيير هوية خربة دير استيا إلى بلدة دير استيا التاريخية كعنقود حي.",
+      "reason": "المصادر الرسمية وRiwaq تصف بلدة تاريخية وقصوراً ومكونات، لا خربة واحدة.",
+      "structural_change": true,
+      "target_record_type": "historic_town_cluster",
+      "recommended_name_ar": "بلدة دير استيا التاريخية",
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-023",
+      "canonical_site_id": "site-ba91049d51a9",
+      "canonical_slug": "ywn-lm-l-thry-ba9104",
+      "name_ar": "عيون الماء الأثرية",
+      "governorate_ar": "سلفيت",
+      "current_wave_status": "OFFICIAL_HYDROLOGICAL_CLUSTER_CONTEXT_ONLY",
+      "automated_queue_actions": [
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "recommendation": "إعادة تصنيف عيون الماء الأثرية كعنقود هيدرولوجي يتطلب سجلاً مستقلاً لكل نبع.",
+      "reason": "السجل بلا قائمة مكونات أو موقع دقيق ولا يجوز اعتباره معلماً واحداً.",
+      "structural_change": true,
+      "target_record_type": "hydrological_feature_cluster",
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-024",
+      "canonical_site_id": "site-bc56c2f93d66",
+      "canonical_slug": "yn-lfr-bc56c2",
+      "name_ar": "عين الفارعة",
+      "governorate_ar": "طوباس",
+      "current_wave_status": "DEDICATED_SOURCE_GAP_AND_HYDROLOGICAL_IDENTITY_REVIEW",
+      "automated_queue_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "decision_code": "HOLD_UNRESOLVED_IDENTITY",
+      "recommendation": "تعليق عين الفارعة كسجل مستقل حتى تمييزها عن وادي وتل الفارعة والمنظومة المائية الأوسع.",
+      "reason": "لا يوجد مصدر مخصص يحددها موقعاً أثرياً منفصلاً.",
+      "structural_change": false,
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-025",
+      "canonical_site_id": "site-e2a5c15f76f6",
+      "canonical_slug": "bld-byrzyt-lqdym-e2a5c1",
+      "name_ar": "بلدة بيرزيت القديمة",
+      "governorate_ar": "رام الله والبيرة",
+      "current_wave_status": "HISTORIC_URBAN_CLUSTER_CONFIRMED_RECLASSIFICATION_REQUIRED",
+      "automated_queue_actions": [
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "recommendation": "اعتماد بلدة بيرزيت القديمة عنقوداً عمرانياً تاريخياً.",
+      "reason": "Riwaq وثقت حدوداً ومباني وساحات وخطة حماية وتأهيل متكاملة.",
+      "structural_change": true,
+      "target_record_type": "historic_urban_cluster",
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-026",
+      "canonical_site_id": "site-014e4c4e4845",
+      "canonical_slug": "khrb-bwd-014e4c",
+      "name_ar": "خربة عابود",
+      "governorate_ar": "رام الله والبيرة",
+      "current_wave_status": "CANONICAL_CONFLATION_SPLIT_REQUIRED",
+      "automated_queue_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "decision_code": "SPLIT_COMPOSITE_IDENTITY",
+      "recommendation": "فصل خربة عابود إلى عنقود عابود التاريخي ومكونات مستقلة للكنائس والمقابر والمعاصر والخرب.",
+      "reason": "السجل الحالي يجمع بلدة حية ومواقع متعددة الفترات والوظائف.",
+      "structural_change": true,
+      "recommended_parent_name_ar": "عابود التاريخية",
+      "target_record_type": "historic_town_and_archaeological_landscape_cluster",
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-027",
+      "canonical_site_id": "site-28dd528f5f3a",
+      "canonical_slug": "dyr-mr-28dd52",
+      "name_ar": "دير عمار",
+      "governorate_ar": "رام الله والبيرة",
+      "current_wave_status": "HISTORIC_CENTRE_IDENTITY_CONFIRMED_SITE_TYPE_RECLASSIFICATION_REQUIRED",
+      "automated_queue_actions": [
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "recommendation": "إعادة تصنيف دير عمار كبلدة أو مركز تاريخي حي.",
+      "reason": "Riwaq تثبت هوية مركز تاريخي ولا تثبت أنه دير أو خربة منفردة.",
+      "structural_change": true,
+      "target_record_type": "historic_town_cluster",
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-028",
+      "canonical_site_id": "site-2a3fdab99250",
+      "canonical_slug": "yn-smy-2a3fda",
+      "name_ar": "عين سامية",
+      "governorate_ar": "رام الله والبيرة",
+      "current_wave_status": "ARCHAEOLOGICAL_LANDSCAPE_CONFLATION_SPLIT_REQUIRED",
+      "automated_queue_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "decision_code": "SPLIT_COMPOSITE_IDENTITY",
+      "recommendation": "فصل عين سامية إلى النبع والمقبرة البرونزية وخربة مرجمة وخربة سامية والعناصر المعمارية المرشحة.",
+      "reason": "المصادر تميز معالم متعددة داخل المشهد ولا تثبت أنها موقع واحد.",
+      "structural_change": true,
+      "target_record_type": "archaeological_and_hydrological_landscape_cluster",
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-029",
+      "canonical_site_id": "site-12fc185d4b0b",
+      "canonical_slug": "mqm-lnby-slh-12fc18",
+      "name_ar": "مقام النبي صالح",
+      "governorate_ar": "رام الله والبيرة",
+      "current_wave_status": "LIVING_SHRINE_COMPLEX_AND_CONSERVATION_CONFIRMED_PERIOD_UNVERIFIED",
+      "automated_queue_actions": [
+        "COMPONENT_RELATION_MODELING"
+      ],
+      "decision_code": "KEEP_CANONICAL_IDENTITY_COMPLEX",
+      "recommendation": "الإبقاء على مقام النبي صالح كمجمع ديني وثقافي، مع جرد مكوناته داخلياً.",
+      "reason": "ثبت وجود المجمع وترميمه، ولم يثبت تعارض في هويته الأساسية.",
+      "structural_change": false,
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-030",
+      "canonical_site_id": "site-cc4465115964",
+      "canonical_slug": "dyr-qrntl-cc4465",
+      "name_ar": "دير قرنطل",
+      "governorate_ar": "أريحا",
+      "current_wave_status": "OFFICIAL_MONASTIC_RECORD_CONFIRMED_RELIGIOUS_TRADITION_SEPARATED",
+      "automated_queue_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "decision_code": "KEEP_CANONICAL_IDENTITY_CLAIM_ONLY",
+      "recommendation": "الإبقاء على دير قرنطل دون فصل؛ نقل قصة التجربة والفترات غير المثبتة إلى طابور الادعاءات.",
+      "reason": "الإشكال تأريخي وديني وليس تعارض هوية.",
+      "structural_change": false,
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-031",
+      "canonical_site_id": "site-b5f00132ee24",
+      "canonical_slug": "yn-lsltn-b5f001",
+      "name_ar": "عين السلطان",
+      "governorate_ar": "أريحا",
+      "current_wave_status": "WORLD_HERITAGE_COMPONENT_CONFIRMED_DEDUP_RELATION_REQUIRED",
+      "automated_queue_actions": [
+        "COMPONENT_RELATION_MODELING",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION"
+      ],
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "recommendation": "اعتماد عين السلطان مكوّناً هيدرولوجياً من عقار تل السلطان ومنع المؤشر العام المكرر.",
+      "reason": "UNESCO تعرف النبع كعنصر داخل العقار العالمي.",
+      "structural_change": true,
+      "relation": {
+        "type": "COMPONENT_OF",
+        "target_site_id": "site-a86fc049d470"
+      },
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-032",
+      "canonical_site_id": "site-ce23c41d7641",
+      "canonical_slug": "qbr-lnby-mws-ce23c4",
+      "name_ar": "قبر النبي موسى",
+      "governorate_ar": "أريحا",
+      "current_wave_status": "DUPLICATE_OF_NABI_MUSA_COMPLEX_MERGE_REQUIRED",
+      "automated_queue_actions": [
+        "COMPONENT_RELATION_MODELING",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION"
+      ],
+      "decision_code": "MERGE_ALIAS_OR_COMPONENT",
+      "recommendation": "إيقاف قبر النبي موسى كسجل عام مستقل واعتماده اسماً بديلاً أو مكوّناً من مقام النبي موسى.",
+      "reason": "المصدر الرسمي يصف مجمعاً واحداً يضم القبر والمسجد والساحات والغرف.",
+      "structural_change": true,
+      "relation": {
+        "type": "COMPONENT_OR_ALIAS_OF",
+        "target_site_id": "site-c4d8c9fdd1f0"
+      },
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    },
+    {
+      "decision_id": "HID-033",
+      "canonical_site_id": "site-c4d8c9fdd1f0",
+      "canonical_slug": "mqm-lnby-mws-c4d8c9",
+      "name_ar": "مقام النبي موسى",
+      "governorate_ar": "أريحا",
+      "current_wave_status": "OFFICIAL_MAMLUK_SHRINE_COMPLEX_CONFIRMED_DUPLICATE_RECONCILIATION_REQUIRED",
+      "automated_queue_actions": [
+        "COMPONENT_RELATION_MODELING",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION",
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "decision_code": "KEEP_CANONICAL_IDENTITY_COMPLEX",
+      "recommendation": "الإبقاء على مقام النبي موسى بوصفه السجل الأب للمجمع.",
+      "reason": "هويته المعمارية والمؤسسية مثبتة، والتكرار موجود في سجل القبر لا في سجل المقام.",
+      "structural_change": false,
+      "human_decision_status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "auto_apply": false,
+      "canonical_catalog_mutation": false,
+      "database_write": false,
+      "project_source_mutation": false
+    }
+  ],
+  "relation_proposals": [
+    {
+      "relation_id": "HREL-001",
+      "source_site_id": "site-0dc57168d963",
+      "relation_type": "COMPONENT_OF",
+      "target_site_id": "site-899e38be070d",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL"
+    },
+    {
+      "relation_id": "HREL-002",
+      "source_site_id": "site-63fe9eba7871",
+      "relation_type": "COMPONENT_OF",
+      "target_site_id": "site-37c8be50ce73",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL"
+    },
+    {
+      "relation_id": "HREL-003",
+      "source_site_id": "site-5e98cf44d976",
+      "relation_type": "COMPONENT_OF",
+      "target_site_id": "site-0a78d22c1a69",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL"
+    },
+    {
+      "relation_id": "HREL-004",
+      "source_site_id": "site-160c60c7b952",
+      "relation_type": "COMPONENT_OF",
+      "target_site_id": "site-a9ac192e20c3",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL"
+    },
+    {
+      "relation_id": "HREL-005",
+      "source_site_id": "site-31c7667ff10e",
+      "relation_type": "COMPONENT_OF",
+      "target_site_id": "site-a9ac192e20c3",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL"
+    },
+    {
+      "relation_id": "HREL-006",
+      "source_site_id": "site-fe1e2a1605b5",
+      "relation_type": "COMPONENT_OF",
+      "target_site_id": "site-6f6afe87f969",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL",
+      "additional_change": "REASSIGN_GOVERNORATE_AND_LOCALITY_TO_NABLUS_SEBASTIA"
+    },
+    {
+      "relation_id": "HREL-007",
+      "source_site_id": "site-b5f00132ee24",
+      "relation_type": "COMPONENT_OF",
+      "target_site_id": "site-a86fc049d470",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL"
+    },
+    {
+      "relation_id": "HREL-008",
+      "source_site_id": "site-ce23c41d7641",
+      "relation_type": "COMPONENT_OR_ALIAS_OF",
+      "target_site_id": "site-c4d8c9fdd1f0",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL"
+    },
+    {
+      "relation_id": "HREL-009",
+      "source_site_id": "site-21150eefdea6",
+      "relation_type": "NOT_SAME_AS",
+      "target_site_id": "site-015f495c4236",
+      "status": "RECOMMENDED_PENDING_USER_APPROVAL"
+    }
+  ],
+  "new_record_candidates": [
+    {
+      "candidate_id": "NEWREC-001",
+      "parent_or_source_site_id": "site-f60be7cd7d5e",
+      "candidate_name_ar": "خربة أو مقام النبي متى",
+      "candidate_type": "shrine_or_ruin",
+      "creation_status": "BLOCKED_PENDING_DEDICATED_SOURCE"
+    },
+    {
+      "candidate_id": "NEWREC-002",
+      "parent_or_source_site_id": "site-ee0e5bf1f753",
+      "candidate_name_ar": "تل رفح",
+      "candidate_type": "archaeological_tell",
+      "creation_status": "BLOCKED_PENDING_CANONICAL_IDENTITY_AND_BOUNDARY"
+    },
+    {
+      "candidate_id": "NEWREC-003",
+      "parent_or_source_site_id": "site-014e4c4e4845",
+      "candidate_name_ar": "كنائس ومقابر ومعاصر عابود",
+      "candidate_type": "constituent_inventory",
+      "creation_status": "BLOCKED_PENDING_COMPONENT_CENSUS"
+    },
+    {
+      "candidate_id": "NEWREC-004",
+      "parent_or_source_site_id": "site-2a3fdab99250",
+      "candidate_name_ar": "مكونات مشهد عين سامية",
+      "candidate_type": "constituent_inventory",
+      "creation_status": "BLOCKED_PENDING_COMPONENT_CENSUS"
+    }
+  ]
+}

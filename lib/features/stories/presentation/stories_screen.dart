@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/app_colors.dart';
+import 'package:pal_eyes/core/widgets/direct_flutter_maturity_r9.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_page.dart';
 import 'package:pal_eyes/core/widgets/public_experience_maturity.dart';
 import 'package:pal_eyes/features/stories/data/editorial_story_catalog.dart';
@@ -35,6 +36,46 @@ class StoriesScreen extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
+          PalEyesEditorialPrelude(
+            eyebrow: 'العدد الأول • مجلة المكان',
+            title: 'ثلاث قصص تقرأ فلسطين عبر الماء والطريق والمدينة',
+            description:
+                'المجلة لا تعيد سرد بطاقات المواقع؛ بل تبني مسارات طويلة '
+                'تصل الجغرافيا بالمصدر والذاكرة المحلية.',
+            icon: Icons.auto_stories_outlined,
+            gradient: const LinearGradient(
+              begin: AlignmentDirectional.topStart,
+              end: AlignmentDirectional.bottomEnd,
+              colors: <Color>[AppColors.dusk, AppColors.sovereignBlue],
+            ),
+            metrics: const <PalEyesEditorialMetric>[
+              PalEyesEditorialMetric(
+                value: '3',
+                label: 'قصص طويلة',
+                icon: Icons.auto_stories_outlined,
+              ),
+              PalEyesEditorialMetric(
+                value: '12',
+                label: 'فصلاً',
+                icon: Icons.menu_book_outlined,
+              ),
+              PalEyesEditorialMetric(
+                value: '9',
+                label: 'مواقع مرتبطة',
+                icon: Icons.place_outlined,
+              ),
+              PalEyesEditorialMetric(
+                value: 'قيد التدقيق',
+                label: 'حالة التحرير',
+                icon: Icons.fact_check_outlined,
+              ),
+            ],
+            primaryLabel: 'تصفح الأطلس',
+            onPrimary: () => context.go(RoutePaths.places),
+            secondaryLabel: 'مكتبة المصادر',
+            onSecondary: () => context.go(RoutePaths.sources),
+          ),
+          const SizedBox(height: 26),
           _FeaturedStory(story: featured),
           const SizedBox(height: 34),
           Text(

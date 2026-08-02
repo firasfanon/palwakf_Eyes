@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/core/widgets/content_status_badge.dart';
+import 'package:pal_eyes/core/widgets/direct_flutter_maturity_r9.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_page.dart';
 import 'package:pal_eyes/core/widgets/public_experience_maturity.dart';
 import 'package:pal_eyes/features/places/application/heritage_sites_provider.dart';
@@ -280,31 +281,31 @@ class _PlaceMetrics extends StatelessWidget {
 
 class _DetailNavigation extends StatelessWidget {
   const _DetailNavigation({required this.selected, required this.onSelected});
+
   final int selected;
   final ValueChanged<int> onSelected;
+
   @override
   Widget build(BuildContext context) {
-    const labels = <String>[
-      'نظرة عامة',
-      'الحكاية المحررة',
-      'المادة التاريخية الأصلية',
-      'المصادر',
-      'أسئلة البحث',
-      'الوسائط والحقوق',
-    ];
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Wrap(
-        spacing: 8,
-        children: List<Widget>.generate(
-          labels.length,
-          (index) => ChoiceChip(
-            selected: selected == index,
-            onSelected: (_) => onSelected(index),
-            label: Text(labels[index]),
-          ),
-        ),
-      ),
+    return PalEyesContentCompass(
+      selectedIndex: selected,
+      onSelected: onSelected,
+      labels: const <String>[
+        'نظرة عامة',
+        'الحكاية المحررة',
+        'المادة التاريخية الأصلية',
+        'المصادر',
+        'أسئلة البحث',
+        'الوسائط والحقوق',
+      ],
+      icons: const <IconData>[
+        Icons.info_outline_rounded,
+        Icons.menu_book_outlined,
+        Icons.history_edu_outlined,
+        Icons.library_books_outlined,
+        Icons.pending_actions_outlined,
+        Icons.perm_media_outlined,
+      ],
     );
   }
 }

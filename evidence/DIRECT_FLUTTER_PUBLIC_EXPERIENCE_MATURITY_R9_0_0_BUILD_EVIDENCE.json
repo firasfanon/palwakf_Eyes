@@ -1,0 +1,82 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_ROUND_3_V1",
+  "target_baseline": "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0_20260802",
+  "parent_baseline": "PAL_EYES_PUBLIC_EXPERIENCE_MEDIA_STAGE_BOUNDED_LAYOUT_R8_0_2_20260802",
+  "version": "9.0.0+29",
+  "result": "PASS_STATIC_AND_PACKAGE_SELF_TEST_PENDING_LOCAL_UAT",
+  "entry_evidence": {
+    "r8_0_2_apply": "PASS",
+    "r8_0_2_static_verify": "PASS",
+    "r8_0_2_flutter_analyze": "PASS",
+    "r8_0_2_flutter_test": "PASS_58",
+    "r8_0_2_browser_runtime_smoke": "PASS",
+    "r8_0_2_visual_uat": "PENDING",
+    "osm_tile_policy_warning": "OPEN_NON_CRITICAL"
+  },
+  "design_workflow_decision": {
+    "figma_batch": "MEGA_BATCH_PAL_EYES_FIGMA_DESIGN_SYSTEM_AND_PUBLIC_EXPERIENCE_TRANSLATION_V1",
+    "status": "CLOSED_AS_NON_AUTHORITATIVE_EXPERIMENT",
+    "figma_structure_preserved": true,
+    "figma_mandatory_workflow": false,
+    "visual_source_of_truth": "ACCEPTED_FLUTTER_SCREENS",
+    "code_source_of_truth": "FLUTTER_CODEBASE"
+  },
+  "implementation": {
+    "public_identity_strip": true,
+    "atlas_editorial_prelude": true,
+    "magazine_editorial_prelude": true,
+    "place_content_compass": true,
+    "story_chapter_rail": true,
+    "long_form_reading_frame": true,
+    "map_empty_experience": true,
+    "mobile_390px_rtl_tests": true,
+    "desktop_adaptive_test": true,
+    "accessibility_focus_hardening": true
+  },
+  "local_gates": {
+    "dart_format": "PENDING",
+    "flutter_analyze": "PENDING",
+    "flutter_test": "PENDING",
+    "desktop_browser_uat": "PENDING",
+    "mobile_browser_uat": "PENDING",
+    "rtl_uat": "PENDING",
+    "accessibility_uat": "PENDING"
+  },
+  "governance": {
+    "database_write": false,
+    "supabase_apply": false,
+    "public_coordinates": 0,
+    "approved_media": 0,
+    "public_release": "BLOCKED",
+    "production_deployment": "NOT_APPROVED"
+  },
+  "build_gates": {
+    "dedicated_static_verifier": "PASS",
+    "dart_delimiter_scan": "PASS",
+    "tracker_formula_error_scan": "PASS_0",
+    "apply_package_whatif_self_test": "PASS",
+    "apply_package_apply_self_test": "PASS",
+    "apply_package_reapply_self_test": "PASS",
+    "post_apply_static_verifier": "PASS",
+    "zip_integrity": "PASS"
+  },
+  "package": {
+    "status": "BUILT_APPLY_PACKAGE_READY_FOR_LOCAL_UAT",
+    "payload_file_count": 29,
+    "created_file_count": 7,
+    "changed_file_count": 22,
+    "deleted_file_count": 0,
+    "apply_script": "Apply-PalEyesDirectFlutterPublicExperienceR9_0_0V1.ps1"
+  },
+  "static_verification": {
+    "result": "PASS",
+    "marker": "DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0_STATIC_VERIFY=PASS",
+    "check_count": 21
+  },
+  "syntax_scan": {
+    "result": "PASS",
+    "dart_file_count": 106,
+    "failures": []
+  }
+}

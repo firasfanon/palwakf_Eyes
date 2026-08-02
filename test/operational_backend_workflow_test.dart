@@ -92,7 +92,10 @@ void main() {
         actor: actor,
         title: 'مرشح غير مكتمل',
         siteIds: const <String>['site-1'],
-        gates: const <String, bool>{'editorial': true, 'sources': false},
+        gates: const <String, bool>{
+          'editorial': true,
+          'sources': false,
+        },
       ),
       throwsStateError,
     );

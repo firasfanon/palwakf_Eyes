@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
+import 'package:pal_eyes/app/theme/app_colors.dart';
+import 'package:pal_eyes/core/widgets/direct_flutter_maturity_r9.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_page.dart';
 import 'package:pal_eyes/core/widgets/public_experience_maturity.dart';
 import 'package:pal_eyes/features/places/application/heritage_sites_provider.dart';
@@ -89,6 +91,46 @@ class _PlacesScreenState extends ConsumerState<PlacesScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
+          PalEyesEditorialPrelude(
+            eyebrow: 'الأطلس الفلسطيني',
+            title: '79 موقعاً تقودك من الجغرافيا إلى الحكاية',
+            description:
+                'استكشف المدن والقرى والمياه والمقامات والطبقات الأثرية، '
+                'ثم افتح صفحة الموقع لتقرأ الرواية والمصدر وحالة التحقق.',
+            icon: Icons.account_balance_outlined,
+            gradient: const LinearGradient(
+              begin: AlignmentDirectional.topStart,
+              end: AlignmentDirectional.bottomEnd,
+              colors: <Color>[AppColors.olive, AppColors.sovereignBlue],
+            ),
+            metrics: const <PalEyesEditorialMetric>[
+              PalEyesEditorialMetric(
+                value: '79',
+                label: 'موقعاً',
+                icon: Icons.place_outlined,
+              ),
+              PalEyesEditorialMetric(
+                value: '47',
+                label: 'حكاية موسعة',
+                icon: Icons.menu_book_outlined,
+              ),
+              PalEyesEditorialMetric(
+                value: '16',
+                label: 'محافظة',
+                icon: Icons.location_city_outlined,
+              ),
+              PalEyesEditorialMetric(
+                value: '95',
+                label: 'مرجعاً',
+                icon: Icons.library_books_outlined,
+              ),
+            ],
+            primaryLabel: 'ابدأ من الخريطة',
+            onPrimary: () => context.go(RoutePaths.map),
+            secondaryLabel: 'اقرأ القصص',
+            onSecondary: () => context.go(RoutePaths.stories),
+          ),
+          const SizedBox(height: 18),
           const _CatalogSummary(),
           const SizedBox(height: 18),
           Card(

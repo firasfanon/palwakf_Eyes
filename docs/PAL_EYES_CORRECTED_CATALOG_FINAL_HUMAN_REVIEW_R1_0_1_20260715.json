@@ -1,0 +1,1146 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_CORRECTED_CATALOG_FINAL_HUMAN_REVIEW_AND_R1_0_1_REFINEMENT_V1",
+  "review_subject": "PAL_EYES_CORRECTED_CANONICAL_CATALOG_CANDIDATE_R1_0_0_20260715.json",
+  "review_subject_sha256": "303fa6dc9f33a7ac1a318d05101f1490be7298d9d5ab164548c3398b884a56a1",
+  "review_result": "PASS_AFTER_REQUIRED_NON_MUTATING_REFINEMENT",
+  "candidate_v1_decisions_reviewed": 33,
+  "relation_records_reviewed": 9,
+  "findings": [
+    {
+      "finding_id": "FHR-001",
+      "severity": "BLOCKING_FOR_CANDIDATE_ACCEPTANCE",
+      "category": "composite_identity_display_name",
+      "canonical_site_id": "site-f60be7cd7d5e",
+      "finding": "The candidate retained the composite Arabic name 'بيت أمر (خربة النبي متى)' after approving an identity split.",
+      "required_correction": "Use 'بيت أمر' as the candidate display name and preserve the prior composite name as a legacy alias.",
+      "resolution_status": "RESOLVED_IN_R1_0_1_CANDIDATE"
+    },
+    {
+      "finding_id": "FHR-002",
+      "severity": "BLOCKING_FOR_CANDIDATE_ACCEPTANCE",
+      "category": "composite_identity_display_name",
+      "canonical_site_id": "site-21150eefdea6",
+      "finding": "The candidate retained the composite Arabic name 'تل العجول (مدينة غزة القديمة)' after confirming it is not the historic centre of Gaza.",
+      "required_correction": "Use 'تل العجول' as the candidate display name and preserve the prior composite name as a legacy alias.",
+      "resolution_status": "RESOLVED_IN_R1_0_1_CANDIDATE"
+    },
+    {
+      "finding_id": "FHR-003",
+      "severity": "REQUIRED_SCHEMA_HARDENING",
+      "category": "cluster_map_semantics",
+      "canonical_site_id": null,
+      "finding": "Cluster records lacked an explicit rule preventing their fallback rendering as standalone point markers.",
+      "required_correction": "Add candidate map semantics: boundary pending, cluster/area representation, and standalone point marker disabled.",
+      "resolution_status": "RESOLVED_IN_R1_0_1_CANDIDATE"
+    },
+    {
+      "finding_id": "FHR-004",
+      "severity": "REQUIRED_SCHEMA_HARDENING",
+      "category": "reverse_constituent_links",
+      "canonical_site_id": null,
+      "finding": "Parent cluster/complex records did not expose reverse constituent references even though the relation registry contained child-to-parent links.",
+      "required_correction": "Add candidate_constituent_site_ids to target parent records without changing canonical identity.",
+      "resolution_status": "RESOLVED_IN_R1_0_1_CANDIDATE"
+    }
+  ],
+  "decision_review_before_refinement": [
+    {
+      "decision_id": "HID-001",
+      "canonical_site_id": "site-4b15f14c306f",
+      "decision_code": "KEEP_CANONICAL_IDENTITY_CLAIM_ONLY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-002",
+      "canonical_site_id": "site-f9df0c7e708c",
+      "decision_code": "KEEP_CANONICAL_IDENTITY_CLAIM_ONLY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-003",
+      "canonical_site_id": "site-f7553f79288f",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-004",
+      "canonical_site_id": "site-f60be7cd7d5e",
+      "decision_code": "SPLIT_COMPOSITE_IDENTITY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "split_flag_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-005",
+      "canonical_site_id": "site-2310c1600481",
+      "decision_code": "HOLD_UNRESOLVED_IDENTITY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "hold_status_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-006",
+      "canonical_site_id": "site-d2c9e9bc9652",
+      "decision_code": "HOLD_UNRESOLVED_IDENTITY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "hold_status_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-007",
+      "canonical_site_id": "site-0dc57168d963",
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "parent_relation_present": true,
+        "standalone_publication_false": true,
+        "standalone_map_marker_false": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-008",
+      "canonical_site_id": "site-63fe9eba7871",
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "parent_relation_present": true,
+        "standalone_publication_false": true,
+        "standalone_map_marker_false": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-009",
+      "canonical_site_id": "site-21150eefdea6",
+      "decision_code": "SPLIT_COMPOSITE_IDENTITY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "split_flag_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-010",
+      "canonical_site_id": "site-5e98cf44d976",
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "parent_relation_present": true,
+        "standalone_publication_false": true,
+        "standalone_map_marker_false": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-011",
+      "canonical_site_id": "site-e1e3de7b8519",
+      "decision_code": "KEEP_CANONICAL_IDENTITY_CLAIM_ONLY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-012",
+      "canonical_site_id": "site-015f495c4236",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-013",
+      "canonical_site_id": "site-0a78d22c1a69",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-014",
+      "canonical_site_id": "site-ee0e5bf1f753",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-015",
+      "canonical_site_id": "site-a9ac192e20c3",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-016",
+      "canonical_site_id": "site-160c60c7b952",
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "parent_relation_present": true,
+        "standalone_publication_false": true,
+        "standalone_map_marker_false": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-017",
+      "canonical_site_id": "site-31c7667ff10e",
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "parent_relation_present": true,
+        "standalone_publication_false": true,
+        "standalone_map_marker_false": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-018",
+      "canonical_site_id": "site-d00341226494",
+      "decision_code": "HOLD_UNRESOLVED_IDENTITY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "hold_status_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-019",
+      "canonical_site_id": "site-f2a7fbbda5a5",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-020",
+      "canonical_site_id": "site-fe1e2a1605b5",
+      "decision_code": "REASSIGN_LOCALITY_AND_LINK_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "governorate_corrected": true,
+        "locality_corrected": true,
+        "parent_relation_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-021",
+      "canonical_site_id": "site-be1c2ce90997",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-022",
+      "canonical_site_id": "site-69f3ad775733",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-023",
+      "canonical_site_id": "site-ba91049d51a9",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-024",
+      "canonical_site_id": "site-bc56c2f93d66",
+      "decision_code": "HOLD_UNRESOLVED_IDENTITY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "hold_status_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-025",
+      "canonical_site_id": "site-e2a5c15f76f6",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-026",
+      "canonical_site_id": "site-014e4c4e4845",
+      "decision_code": "SPLIT_COMPOSITE_IDENTITY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "split_flag_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-027",
+      "canonical_site_id": "site-28dd528f5f3a",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-028",
+      "canonical_site_id": "site-2a3fdab99250",
+      "decision_code": "SPLIT_COMPOSITE_IDENTITY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "split_flag_present": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-029",
+      "canonical_site_id": "site-12fc185d4b0b",
+      "decision_code": "KEEP_CANONICAL_IDENTITY_COMPLEX",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-030",
+      "canonical_site_id": "site-cc4465115964",
+      "decision_code": "KEEP_CANONICAL_IDENTITY_CLAIM_ONLY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-031",
+      "canonical_site_id": "site-b5f00132ee24",
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "parent_relation_present": true,
+        "standalone_publication_false": true,
+        "standalone_map_marker_false": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-032",
+      "canonical_site_id": "site-ce23c41d7641",
+      "decision_code": "MERGE_ALIAS_OR_COMPONENT",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "parent_relation_present": true,
+        "retained_not_deleted": true
+      },
+      "all_checks_pass_before_refinement": true
+    },
+    {
+      "decision_id": "HID-033",
+      "canonical_site_id": "site-c4d8c9fdd1f0",
+      "decision_code": "KEEP_CANONICAL_IDENTITY_COMPLEX",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true
+      },
+      "all_checks_pass_before_refinement": true
+    }
+  ],
+  "decision_review_after_refinement": [
+    {
+      "decision_id": "HID-001",
+      "canonical_site_id": "site-4b15f14c306f",
+      "decision_code": "KEEP_CANONICAL_IDENTITY_CLAIM_ONLY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-002",
+      "canonical_site_id": "site-f9df0c7e708c",
+      "decision_code": "KEEP_CANONICAL_IDENTITY_CLAIM_ONLY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-003",
+      "canonical_site_id": "site-f7553f79288f",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true,
+        "cluster_map_semantics_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-004",
+      "canonical_site_id": "site-f60be7cd7d5e",
+      "decision_code": "SPLIT_COMPOSITE_IDENTITY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "split_flag_present": true,
+        "display_name_split_reflected": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-005",
+      "canonical_site_id": "site-2310c1600481",
+      "decision_code": "HOLD_UNRESOLVED_IDENTITY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "hold_status_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-006",
+      "canonical_site_id": "site-d2c9e9bc9652",
+      "decision_code": "HOLD_UNRESOLVED_IDENTITY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "hold_status_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-007",
+      "canonical_site_id": "site-0dc57168d963",
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "parent_relation_present": true,
+        "standalone_publication_false": true,
+        "standalone_map_marker_false": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-008",
+      "canonical_site_id": "site-63fe9eba7871",
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "parent_relation_present": true,
+        "standalone_publication_false": true,
+        "standalone_map_marker_false": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-009",
+      "canonical_site_id": "site-21150eefdea6",
+      "decision_code": "SPLIT_COMPOSITE_IDENTITY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "split_flag_present": true,
+        "display_name_split_reflected": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-010",
+      "canonical_site_id": "site-5e98cf44d976",
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "parent_relation_present": true,
+        "standalone_publication_false": true,
+        "standalone_map_marker_false": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-011",
+      "canonical_site_id": "site-e1e3de7b8519",
+      "decision_code": "KEEP_CANONICAL_IDENTITY_CLAIM_ONLY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-012",
+      "canonical_site_id": "site-015f495c4236",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true,
+        "cluster_map_semantics_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-013",
+      "canonical_site_id": "site-0a78d22c1a69",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true,
+        "cluster_map_semantics_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-014",
+      "canonical_site_id": "site-ee0e5bf1f753",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true,
+        "cluster_map_semantics_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-015",
+      "canonical_site_id": "site-a9ac192e20c3",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true,
+        "cluster_map_semantics_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-016",
+      "canonical_site_id": "site-160c60c7b952",
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "parent_relation_present": true,
+        "standalone_publication_false": true,
+        "standalone_map_marker_false": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-017",
+      "canonical_site_id": "site-31c7667ff10e",
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "parent_relation_present": true,
+        "standalone_publication_false": true,
+        "standalone_map_marker_false": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-018",
+      "canonical_site_id": "site-d00341226494",
+      "decision_code": "HOLD_UNRESOLVED_IDENTITY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "hold_status_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-019",
+      "canonical_site_id": "site-f2a7fbbda5a5",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true,
+        "cluster_map_semantics_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-020",
+      "canonical_site_id": "site-fe1e2a1605b5",
+      "decision_code": "REASSIGN_LOCALITY_AND_LINK_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "governorate_corrected": true,
+        "locality_corrected": true,
+        "parent_relation_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-021",
+      "canonical_site_id": "site-be1c2ce90997",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true,
+        "cluster_map_semantics_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-022",
+      "canonical_site_id": "site-69f3ad775733",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true,
+        "cluster_map_semantics_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-023",
+      "canonical_site_id": "site-ba91049d51a9",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true,
+        "cluster_map_semantics_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-024",
+      "canonical_site_id": "site-bc56c2f93d66",
+      "decision_code": "HOLD_UNRESOLVED_IDENTITY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "hold_status_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-025",
+      "canonical_site_id": "site-e2a5c15f76f6",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true,
+        "cluster_map_semantics_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-026",
+      "canonical_site_id": "site-014e4c4e4845",
+      "decision_code": "SPLIT_COMPOSITE_IDENTITY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "split_flag_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-027",
+      "canonical_site_id": "site-28dd528f5f3a",
+      "decision_code": "RECLASSIFY_TO_GOVERNED_CLUSTER",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "candidate_record_type_present": true,
+        "cluster_map_semantics_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-028",
+      "canonical_site_id": "site-2a3fdab99250",
+      "decision_code": "SPLIT_COMPOSITE_IDENTITY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "split_flag_present": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-029",
+      "canonical_site_id": "site-12fc185d4b0b",
+      "decision_code": "KEEP_CANONICAL_IDENTITY_COMPLEX",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-030",
+      "canonical_site_id": "site-cc4465115964",
+      "decision_code": "KEEP_CANONICAL_IDENTITY_CLAIM_ONLY",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-031",
+      "canonical_site_id": "site-b5f00132ee24",
+      "decision_code": "ACCEPT_COMPONENT_RELATION",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "parent_relation_present": true,
+        "standalone_publication_false": true,
+        "standalone_map_marker_false": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-032",
+      "canonical_site_id": "site-ce23c41d7641",
+      "decision_code": "MERGE_ALIAS_OR_COMPONENT",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true,
+        "parent_relation_present": true,
+        "retained_not_deleted": true
+      },
+      "all_checks_pass_after_refinement": true
+    },
+    {
+      "decision_id": "HID-033",
+      "canonical_site_id": "site-c4d8c9fdd1f0",
+      "decision_code": "KEEP_CANONICAL_IDENTITY_COMPLEX",
+      "checks": {
+        "decision_id_reflected": true,
+        "decision_code_reflected": true,
+        "canonical_id_preserved": true,
+        "canonical_slug_preserved": true,
+        "publication_blocked": true,
+        "database_import_blocked": true,
+        "not_applied": true
+      },
+      "all_checks_pass_after_refinement": true
+    }
+  ],
+  "governance": {
+    "auto_apply": false,
+    "canonical_catalog_mutation": false,
+    "database_write": false,
+    "project_source_mutation": false,
+    "publication": "blocked",
+    "claim_and_bibliographic_closure_may_proceed_on_candidate_only": true
+  }
+}

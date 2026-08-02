@@ -1,0 +1,57 @@
+{
+  "result": "PASS",
+  "mode": "DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0",
+  "checks": {
+    "required_files_present": true,
+    "version_9_0_0_build_29": true,
+    "target_baseline_registered": true,
+    "parent_baseline_registered": true,
+    "figma_dependency_removed": true,
+    "atlas_museum_magazine_identity_component": true,
+    "identity_integrated_home_and_discovery": true,
+    "atlas_editorial_prelude": true,
+    "magazine_editorial_prelude": true,
+    "place_content_compass": true,
+    "story_reading_maturity": true,
+    "map_empty_experience_fail_closed": true,
+    "mobile_390px_rtl_regression": true,
+    "desktop_adaptive_regression": true,
+    "accessibility_hardening": true,
+    "static_contract_test_present": true,
+    "tracker_exact_79_rows": true,
+    "tracker_r9_status_applied": true,
+    "state_snapshot_current": true,
+    "database_write_absent_from_ui_scope": true,
+    "publication_and_production_blocked": true
+  },
+  "failures": [],
+  "target_baseline": "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0_20260802",
+  "parent_baseline": "PAL_EYES_PUBLIC_EXPERIENCE_MEDIA_STAGE_BOUNDED_LAYOUT_R8_0_2_20260802",
+  "public_experience": {
+    "identity": [
+      "atlas",
+      "museum",
+      "magazine"
+    ],
+    "site_count": 79,
+    "source_count": 95,
+    "story_count": 3,
+    "story_chapter_count": 12,
+    "public_coordinates": 0,
+    "approved_media": 0
+  },
+  "local_gates": {
+    "dart_format": "PENDING",
+    "flutter_analyze": "PENDING",
+    "flutter_test": "PENDING",
+    "desktop_browser_uat": "PENDING",
+    "mobile_browser_uat": "PENDING"
+  },
+  "governance": {
+    "figma_dependency": false,
+    "database_write": false,
+    "supabase_apply": false,
+    "public_release": "BLOCKED",
+    "production_deployment": "NOT_APPROVED"
+  }
+}

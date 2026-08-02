@@ -335,3 +335,37 @@ R5.1.3 المنشأة ملفات جديدة.
 اختبارات الواجهة العامة تتحقق من النص الذي يراه الزائر، بينما تبقى
 هوية طبقة المسودة الأصلية مثبتة في نماذج البيانات واختبارات الفصل
 الحاكم. لا يُعاد المصطلح الداخلي إلى البطاقة العامة لإرضاء اختبار قديم.
+
+## DEC-0061 — 2026-08-02 — Media stage owns a finite viewport height
+
+**القرار:** معامل `PalEyesMediaStage.height` عقد ارتفاع صريح، لا حد أدنى فقط. أي تركيب بصري قائم على `Stack` داخل صفحة قابلة للتمرير يجب أن يحصل على قيد رأسي نهائي، مع السماح لكل شاشة باختيار ارتفاع متجاوب محدود.
+
+## DEC-0062 — 2026-08-02 — Figma experiment is non-authoritative
+
+**القرار:** تُغلق الدفعة `MEGA_BATCH_PAL_EYES_FIGMA_DESIGN_SYSTEM_AND_PUBLIC_EXPERIENCE_TRANSLATION_V1` بوصفها تجربة غير حاكمة. يُحفظ ملف Figma وبنية المكونات والرحلات، لكن لا توجد بوابة اعتماد Figma إلزامية، ولا تُستبدل واجهات Flutter المقبولة بنماذج أضعف بصرياً.
+
+```text
+STATUS=CLOSED_AS_NON_AUTHORITATIVE_EXPERIMENT
+FIGMA_STRUCTURE_PRESERVED=TRUE
+FIGMA_VISUAL_APPROVAL=NOT_REQUIRED
+FIGMA_AS_MANDATORY_WORKFLOW=REJECTED
+FLUTTER_IMPLEMENTATION_REPLACEMENT=FALSE
+```
+
+## DEC-0063 — 2026-08-02 — Direct Flutter is the primary public UI workflow
+
+**القرار:** تنفذ جولة النضج الثالثة مباشرة داخل Flutter. الشاشات المقبولة هي المرجع البصري، وFlutter هو مصدر الحقيقة البرمجية. تُستخدم أدوات التصميم الخارجية اختيارياً للاستكشاف أو التوثيق فقط، ولا توقف التنفيذ ولا تمنح سلطة تلقائية على المنتج.
+
+بوابة القبول: static verifier، ثم `dart format` و`flutter analyze` و`flutter test`، ثم UAT فعلي لسطح المكتب والهاتف وRTL والوصول دون استثناءات Runtime أو Overflows.
+
+## DEC-R9-001 — 2026-08-02 — Browser UAT closure and R9.0.1 promotion
+
+**Marker:** `PAL_EYES_R9_0_1_PROMOTION_DECISION`
+
+**Decision:** Close Browser UAT and promote `PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802` as the accepted local development baseline.
+
+**Acceptance basis:** explicit operator authorization after review of desktop core/detail surfaces, Chrome and Edge runtime smoke, and narrow mobile RTL evidence.
+
+**Controlled waiver:** exact `390×844` telemetry and a standalone manual keyboard-focus capture were not separately recorded; the operator accepted this evidence gap for R9.0.1 only. No missing evidence is represented as captured.
+
+**Unchanged boundaries:** publication blocked, production not approved, database write false, Supabase apply false, public coordinates 0, OSM tile policy warning open for production readiness.

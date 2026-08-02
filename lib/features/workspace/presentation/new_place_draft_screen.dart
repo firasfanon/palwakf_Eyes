@@ -68,43 +68,43 @@ class _NewPlaceDraftScreenState extends State<NewPlaceDraftScreen> {
                   duration: const Duration(milliseconds: 200),
                   child: switch (_step) {
                     0 => TextFormField(
-                      key: const ValueKey<String>('identity'),
-                      controller: _nameController,
-                      decoration: const InputDecoration(
-                        labelText: 'اسم الموقع بالعربية',
+                        key: const ValueKey<String>('identity'),
+                        controller: _nameController,
+                        decoration: const InputDecoration(
+                          labelText: 'اسم الموقع بالعربية',
+                        ),
+                        validator: (value) =>
+                            value == null || value.trim().isEmpty
+                                ? 'اسم الموقع مطلوب.'
+                                : null,
                       ),
-                      validator: (value) =>
-                          value == null || value.trim().isEmpty
-                          ? 'اسم الموقع مطلوب.'
-                          : null,
-                    ),
                     1 => TextFormField(
-                      key: const ValueKey<String>('location'),
-                      controller: _localityController,
-                      decoration: const InputDecoration(
-                        labelText: 'البلدة أو المدينة',
+                        key: const ValueKey<String>('location'),
+                        controller: _localityController,
+                        decoration: const InputDecoration(
+                          labelText: 'البلدة أو المدينة',
+                        ),
+                        validator: (value) =>
+                            value == null || value.trim().isEmpty
+                                ? 'حدد السياق المكاني.'
+                                : null,
                       ),
-                      validator: (value) =>
-                          value == null || value.trim().isEmpty
-                          ? 'حدد السياق المكاني.'
-                          : null,
-                    ),
                     2 => TextFormField(
-                      key: const ValueKey<String>('summary'),
-                      controller: _summaryController,
-                      minLines: 5,
-                      maxLines: 8,
-                      decoration: const InputDecoration(
-                        labelText: 'ملخص تاريخي أولي',
-                        helperText:
-                            'يظهر كمسودة خاضعة للتدقيق، ولا تكتب ادعاءً قطعياً بلا مصدر.',
-                        alignLabelWithHint: true,
+                        key: const ValueKey<String>('summary'),
+                        controller: _summaryController,
+                        minLines: 5,
+                        maxLines: 8,
+                        decoration: const InputDecoration(
+                          labelText: 'ملخص تاريخي أولي',
+                          helperText:
+                              'يظهر كمسودة خاضعة للتدقيق، ولا تكتب ادعاءً قطعياً بلا مصدر.',
+                          alignLabelWithHint: true,
+                        ),
+                        validator: (value) =>
+                            value == null || value.trim().length < 30
+                                ? 'أضف ملخصاً أولياً لا يقل عن 30 حرفاً.'
+                                : null,
                       ),
-                      validator: (value) =>
-                          value == null || value.trim().length < 30
-                          ? 'أضف ملخصاً أولياً لا يقل عن 30 حرفاً.'
-                          : null,
-                    ),
                     _ => const _ReviewNotice(),
                   },
                 ),
@@ -114,9 +114,8 @@ class _NewPlaceDraftScreenState extends State<NewPlaceDraftScreen> {
             Row(
               children: <Widget>[
                 OutlinedButton(
-                  onPressed: _step == 0
-                      ? null
-                      : () => setState(() => _step -= 1),
+                  onPressed:
+                      _step == 0 ? null : () => setState(() => _step -= 1),
                   child: const Text('السابق'),
                 ),
                 const Spacer(),

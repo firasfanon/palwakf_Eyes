@@ -1,5 +1,29 @@
 # سجل التغييرات
 
+## [9.0.1] — 2026-08-02 {#PAL_EYES_R9_0_1_PROMOTION_SECTION}
+
+### Accepted
+
+- Closed Browser UAT by explicit operator authorization after desktop core, desktop detail, Chrome/Edge runtime, and narrow mobile RTL evidence.
+- Promoted `PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802` as the accepted local development baseline.
+
+### Verified
+
+- Targeted Dart format: PASS for 12 changed files; 13-file scope canonical after closure.
+- Dedicated static verifier: PASS.
+- Flutter analyze: PASS.
+- Flutter tests: PASS_65.
+- Git whitespace contract: PASS.
+- Runtime exceptions and visible render overflows: 0.
+
+### Governance
+
+- Public coordinates and markers remain 0.
+- Database write and Supabase apply remain disabled.
+- Public release and production deployment remain blocked.
+- OSM public tile policy warning remains an open production-readiness blocker.
+- Exact 390×844 telemetry and a dedicated keyboard-focus screenshot were not separately captured and were explicitly accepted by the operator as a documentation waiver for this baseline.
+
 ## [4.0.3] — 2026-07-15
 
 - Made PalEyesVisualCard height-aware through LayoutBuilder.
@@ -563,3 +587,23 @@
 - Preserved the no-overflow assertion and card dimensions.
 - Reconciled R6.0.1 and R6.0.2 historical verifiers.
 - Kept database and publication boundaries unchanged.
+
+## [8.0.2] — 2026-08-02 — Media-stage bounded layout runtime closure
+
+- Replaced the minimum-height-only media-stage contract with an explicit finite height.
+- Closed the Chrome `Stack size.isFinite` assertion under scrollable vertical constraints.
+- Added desktop and 390-pixel mobile widget regression coverage.
+- Passed static verification, Flutter analyze, and 58 tests locally.
+- Browser runtime smoke restarted without the prior rendering cascade; the OpenStreetMap tile-policy warning remains a separate non-critical production concern.
+
+## [9.0.0] — 2026-08-02 — Direct Flutter public experience maturity round 3
+
+- Closed the Figma translation batch as a preserved, non-authoritative experiment.
+- Kept accepted Flutter screens as the visual source of truth and Flutter as the code source of truth.
+- Added an explicit Atlas / Museum / Magazine identity strip to public discovery paths.
+- Added editorial preludes to the atlas and magazine with public-facing metrics and journey actions.
+- Replaced the place-detail chip row with an accessible horizontal content compass.
+- Added a chapter rail and bounded long-form reading frame to story pages.
+- Rebuilt the zero-coordinate map state as a useful atlas gateway rather than an error-like empty panel.
+- Added 390-pixel RTL widget regression coverage and theme-level focus, hover, and padded tap-target hardening.
+- Preserved zero public coordinates, zero approved media, database-write prohibition, and blocked publication.

@@ -22,18 +22,28 @@ abstract final class AppColors {
   static const LinearGradient sovereignGradient = LinearGradient(
     begin: AlignmentDirectional.topStart,
     end: AlignmentDirectional.bottomEnd,
-    colors: <Color>[midnight, sovereignBlue, deepBlue],
+    colors: <Color>[
+      midnight,
+      sovereignBlue,
+      deepBlue,
+    ],
   );
 
   static const LinearGradient heritageGradient = LinearGradient(
     begin: AlignmentDirectional.topStart,
     end: AlignmentDirectional.bottomEnd,
-    colors: <Color>[Color(0xFFE9D4A7), Color(0xFFC89A4B)],
+    colors: <Color>[
+      Color(0xFFE9D4A7),
+      Color(0xFFC89A4B),
+    ],
   );
 
   static const LinearGradient earthGradient = LinearGradient(
     begin: AlignmentDirectional.topStart,
     end: AlignmentDirectional.bottomEnd,
-    colors: <Color>[Color(0xFF6C7951), Color(0xFF3F5038)],
+    colors: <Color>[
+      Color(0xFF6C7951),
+      Color(0xFF3F5038),
+    ],
   );
 }

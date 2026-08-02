@@ -1,0 +1,3870 @@
+{
+  "project_id": "pal_eyes",
+  "batch_id": "MEGA_BATCH_PAL_EYES_CROSS_WAVE_RECONCILIATION_AND_GOVERNED_REWRITE_V1",
+  "draft_type": "human_review_only",
+  "site_count": 79,
+  "publication_ready_sites": 0,
+  "records": [
+    {
+      "canonical_site_id": "site-4aeec5656d1d",
+      "canonical_slug": "lmsjd-l-qs-lmbrk-lhrm-lqdsy-lshryf-4aeec5",
+      "name_ar": "المسجد الأقصى المبارك / الحرم القدسي الشريف",
+      "name_en": "Al-Aqsa Mosque / Al-Haram al-Sharif",
+      "governorate_ar": "القدس",
+      "locality_ar": "القدس القديمة",
+      "site_type_ar_draft": "مسجد/حرم",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 1 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-4aeec5656d1d-W1-C01",
+          "claim_text": "Al-Aqsa Mosque/Al-Haram Al-Sharif is addressed by UNESCO as a Muslim holy site of worship and an integral part of the Old City of Jerusalem World Heritage property.",
+          "verification_status": "CONFIRMED_IN_OFFICIAL_DECISION",
+          "source_ids": [
+            "AUTH-UNESCO-JERUSALEM-DECISION-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-4aeec5656d1d-W1-H01",
+          "claim_text": "claims about a Canaanite temple, exact location of ancient temples, absence/presence of archaeological evidence under the compound, and effects of excavations on foundations",
+          "status": "HOLD_SPECIALIST_REVIEW",
+          "reason": "Not established by the official sources inspected in this wave.",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-f9df0c7e708c",
+      "canonical_slug": "bld-slwn-f9df0c",
+      "name_ar": "بلدة سلوان",
+      "name_en": "",
+      "governorate_ar": "القدس",
+      "locality_ar": "سلوان",
+      "site_type_ar_draft": "بلدة قديمة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 2 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-f9df0c7e708c-W2-C01",
+          "claim_text": "Silwan is part of the geo-historic context immediately outside the Old City; the Gihon Spring is identified in a State Party submission as a focal water source in Jerusalem's development.",
+          "verification_status": "ATTRIBUTED_STATE_PARTY_CONTEXT",
+          "source_ids": [
+            "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-f9df0c7e708c-W2-C02",
+          "claim_text": "UNESCO monitoring documents record reports and concerns concerning excavation and tunnelling activities in Silwan.",
+          "verification_status": "CONFIRMED_AS_REPORTED_CONCERN_NOT_INDEPENDENT_FINDING",
+          "source_ids": [
+            "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-f9df0c7e708c-W2-H01",
+          "claim_text": "Canaanite/Roman/Islamic period sequence for the whole town",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-f9df0c7e708c-W2-H02",
+          "claim_text": "Specific excavation impacts and current physical condition",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-f9067873c322",
+      "canonical_slug": "hy-t-lbrq-f90678",
+      "name_ar": "حائط البراق",
+      "name_en": "Al-Buraq Wall",
+      "governorate_ar": "القدس",
+      "locality_ar": "القدس القديمة",
+      "site_type_ar_draft": "جدار تاريخي",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-f9067873c322-W2-C01",
+          "claim_text": "The Western/Wailing Wall is identified by UNESCO as one of the major monuments of the Old City property.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "W2-AUTH-UNESCO-JERUSALEM-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-f9067873c322-W2-C02",
+          "claim_text": "A 1930 international commission was established to determine Muslim and Jewish rights and claims connected with the Wall.",
+          "verification_status": "CONFIRMED_HISTORICAL_RECORD",
+          "source_ids": [
+            "W2-AUTH-UNISPAL-WESTERN-WALL-1930"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-f9067873c322-W2-H01",
+          "claim_text": "Exact construction phase",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-f9067873c322-W2-H02",
+          "claim_text": "Current legal/ownership adjudication",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-f9067873c322-W2-H03",
+          "claim_text": "Detailed 1967 demolition chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-9b42bff63df0",
+      "canonical_slug": "khn-ljwbr-9b42bf",
+      "name_ar": "خان الجوابرة",
+      "name_en": "",
+      "governorate_ar": "القدس",
+      "locality_ar": "القدس القديمة",
+      "site_type_ar_draft": "خان",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-9b42bff63df0-W2-H01",
+          "claim_text": "Ottoman dating",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-9b42bff63df0-W2-H02",
+          "claim_text": "Function and ownership history",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-9b42bff63df0-W2-H03",
+          "claim_text": "Exact location",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-4bbdf07d8d66",
+      "canonical_slug": "swq-lqtnyn-4bbdf0",
+      "name_ar": "سوق القطانين",
+      "name_en": "",
+      "governorate_ar": "القدس",
+      "locality_ar": "القدس القديمة",
+      "site_type_ar_draft": "سوق",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 1 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-4bbdf07d8d66-W2-C01",
+          "claim_text": "Suq al-Qattanin is a Mamluk market terminating at Tariq al-Wad and connecting through Bab al-Qattanin to the Haram al-Sharif precinct.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "W2-AUTH-ARCHNET-QATTANIN-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-4bbdf07d8d66-W2-H01",
+          "claim_text": "Exact patron and construction date pending direct bibliography inspection",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-8d297f3c37a9",
+      "canonical_slug": "qbr-lsyd-mrym-mgr-ljsmny-8d297f",
+      "name_ar": "قبر السيدة مريم (مغارة الجسمانية)",
+      "name_en": "",
+      "governorate_ar": "القدس",
+      "locality_ar": "القدس القديمة",
+      "site_type_ar_draft": "كنيسة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 2 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-8d297f3c37a9-W2-C01",
+          "claim_text": "The Greek Orthodox Patriarchate maintains the living tradition identifying the Gethsemane shrine as the Tomb of the Virgin Mary.",
+          "verification_status": "CONFIRMED_AS_RELIGIOUS_TRADITION",
+          "source_ids": [
+            "W2-AUTH-JERUSALEM-PATRIARCHATE-GETHSEMANE-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-8d297f3c37a9-W2-C02",
+          "claim_text": "The Studium Biblicum Franciscanum records archaeological excavation work at Gethsemane and the Tomb of Mary.",
+          "verification_status": "CONFIRMED_RESEARCH_CORPUS",
+          "source_ids": [
+            "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-8d297f3c37a9-W2-H01",
+          "claim_text": "Exact building chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-8d297f3c37a9-W2-H02",
+          "claim_text": "Archaeological proof of burial attribution",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-f7553f79288f",
+      "canonical_slug": "qswr-lmmlyk-shr-lwd-f7553f",
+      "name_ar": "قصور المماليك (شارع الواد)",
+      "name_en": "",
+      "governorate_ar": "القدس",
+      "locality_ar": "القدس القديمة",
+      "site_type_ar_draft": "قصر/رباط",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 2 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-f7553f79288f-W2-C01",
+          "claim_text": "Al-Wad Street contains major Mamluk architectural institutions and connects with the Qattanin market/gate complex.",
+          "verification_status": "CONFIRMED_AS_URBAN_ARCHITECTURAL_CONTEXT",
+          "source_ids": [
+            "W2-AUTH-ARCHNET-QATTANIN-001",
+            "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-f7553f79288f-W2-H01",
+          "claim_text": "Complete constituent list",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-f7553f79288f-W2-H02",
+          "claim_text": "Individual dates, patrons, coordinates, and rights",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-83d3025c4675",
+      "canonical_slug": "ql-lqds-brj-dwd-83d302",
+      "name_ar": "قلعة القدس (برج داود)",
+      "name_en": "Jerusalem Citadel",
+      "governorate_ar": "القدس",
+      "locality_ar": "القدس القديمة",
+      "site_type_ar_draft": "حصن/قلعة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 1 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-83d3025c4675-W2-C01",
+          "claim_text": "The present citadel is a multi-period composition incorporating Roman fortification and Crusader, Ayyubid, Mamluk, and Ottoman construction.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "W2-AUTH-ARCHNET-CITADEL-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-83d3025c4675-W2-H01",
+          "claim_text": "Exact attribution of each tower and phase",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-431ed266867b",
+      "canonical_slug": "knys-lqym-431ed2",
+      "name_ar": "كنيسة القيامة",
+      "name_en": "Church of the Holy Sepulchre",
+      "governorate_ar": "القدس",
+      "locality_ar": "القدس القديمة",
+      "site_type_ar_draft": "كنيسة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 2 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-431ed266867b-W2-C01",
+          "claim_text": "The Church of the Holy Sepulchre is a major monument within the Old City World Heritage property; UNESCO identifies the Resurrection rotunda as housing Christ's tomb within Christian tradition.",
+          "verification_status": "CONFIRMED_AS_HERITAGE_AND_RELIGIOUS_TRADITION",
+          "source_ids": [
+            "W2-AUTH-UNESCO-JERUSALEM-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-431ed266867b-W2-C02",
+          "claim_text": "The Studium Biblicum Franciscanum records archaeological excavation work at the Holy Sepulchre.",
+          "verification_status": "CONFIRMED_RESEARCH_CORPUS",
+          "source_ids": [
+            "W2-AUTH-SBF-JERUSALEM-EXCAVATIONS-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-431ed266867b-W2-H01",
+          "claim_text": "Full Constantinian/Byzantine/Crusader chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-431ed266867b-W2-H02",
+          "claim_text": "Status Quo governance details",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-3a3d3669f0ba",
+      "canonical_slug": "mqm-lnby-dwwd-jbl-shywn-3a3d36",
+      "name_ar": "مقام النبي داوود (جبل صهيون)",
+      "name_en": "",
+      "governorate_ar": "القدس",
+      "locality_ar": "القدس القديمة",
+      "site_type_ar_draft": "مقام/مقام إسلامي",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-3a3d3669f0ba-W2-C01",
+          "claim_text": "A UNESCO monitoring document records the Jordanian and Palestinian report describing Nabi Dawoud Mosque as an Islamic Waqf property next to the southern wall of the Old City and reporting alterations there.",
+          "verification_status": "CONFIRMED_AS_ATTRIBUTED_REPORT",
+          "source_ids": [
+            "W2-AUTH-UNESCO-JERUSALEM-MONITOR-2015"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-3a3d3669f0ba-W2-C02",
+          "claim_text": "Mount Zion forms part of the wider geo-historic and religious context described in a postponed State Party extension proposal.",
+          "verification_status": "ATTRIBUTED_STATE_PARTY_CONTEXT",
+          "source_ids": [
+            "W2-AUTH-UNESCO-JERUSALEM-EXTENSION-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-3a3d3669f0ba-W2-H01",
+          "claim_text": "Burial attribution",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-3a3d3669f0ba-W2-H02",
+          "claim_text": "Building chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-3a3d3669f0ba-W2-H03",
+          "claim_text": "Current legal and access arrangements",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-899e38be070d",
+      "canonical_slug": "lhrm-lbrhymy-899e38",
+      "name_ar": "الحرم الإبراهيمي",
+      "name_en": "Ibrahimi Mosque",
+      "governorate_ar": "الخليل",
+      "locality_ar": "الخليل",
+      "site_type_ar_draft": "مسجد/حرم",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 1 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-899e38be070d-W1-C01",
+          "claim_text": "The monumental enclosure around the sacred cave was constructed in the 1st century AD.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "AUTH-UNESCO-HEBRON-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-899e38be070d-W1-C02",
+          "claim_text": "The site is associated with traditions concerning Abraham/Ibrahim and is venerated by three monotheistic religions.",
+          "verification_status": "CONFIRMED_AS_TRADITION_AND_LIVING_HERITAGE",
+          "source_ids": [
+            "AUTH-UNESCO-HEBRON-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-899e38be070d-W1-H01",
+          "claim_text": "claim_group=claims of exclusive religious ownership, detailed modern access restrictions, the 1994 massacre and post-1994 partition arrangements | status=HOLD_FOR_DEDICATED_LEGAL_AND_CONTEMPORARY_SOURCE_WAVE",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-6b6c5a396756",
+      "canonical_slug": "bld-lkhlyl-lqdym-6b6c5a",
+      "name_ar": "بلدة الخليل القديمة",
+      "name_en": "",
+      "governorate_ar": "الخليل",
+      "locality_ar": "الخليل",
+      "site_type_ar_draft": "بلدة قديمة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 3 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-6b6c5a396756-W1-C01",
+          "claim_text": "The old town substantially preserves Mamluk urban morphology with later Ottoman additions.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "AUTH-UNESCO-HEBRON-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-6b6c5a396756-W1-C02",
+          "claim_text": "The Al-Ibrahimi Mosque/Tomb of Patriarchs monumental compound is central to the old town and the enclosure dates to the 1st century AD.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "AUTH-UNESCO-HEBRON-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-6b6c5a396756-W1-C03",
+          "claim_text": "The place is venerated by Judaism, Christianity and Islam.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "AUTH-UNESCO-HEBRON-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [],
+      "required_actions": [
+        "GOVERNED_REWRITE_ONLY"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-f60be7cd7d5e",
+      "canonical_slug": "byt-mr-khrb-lnby-mt-f60be7",
+      "name_ar": "بيت أمر (خربة النبي متى)",
+      "name_en": "",
+      "governorate_ar": "الخليل",
+      "locality_ar": "بيت أمر",
+      "site_type_ar_draft": "بلدة تاريخية/خربة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-f60be7cd7d5e-W2-H01",
+          "claim_text": "Roman/Byzantine/Islamic phases",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-f60be7cd7d5e-W2-H02",
+          "claim_text": "Prophet/saint attribution",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-f60be7cd7d5e-W2-H03",
+          "claim_text": "Exact site boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-63c0ba59c24e",
+      "canonical_slug": "tl-lrmyd-63c0ba",
+      "name_ar": "تل الرميدة",
+      "name_en": "",
+      "governorate_ar": "الخليل",
+      "locality_ar": "الخليل",
+      "site_type_ar_draft": "تل أثري",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 2 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-63c0ba59c24e-W2-C01",
+          "claim_text": "Tell Rumeida is included in the archaeological remains of the buffer-zone context of Hebron/Al-Khalil Old Town.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "W2-AUTH-UNESCO-HEBRON-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-63c0ba59c24e-W2-C02",
+          "claim_text": "ICOMOS documented that Tell Rumeida was excluded from the original nominated property boundary and discussed evidence of earlier settlement in its vicinity.",
+          "verification_status": "CONFIRMED_EVALUATION_CONTEXT",
+          "source_ids": [
+            "W2-AUTH-ICOMOS-HEBRON-2017"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-63c0ba59c24e-W2-H01",
+          "claim_text": "Complete stratigraphy",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-63c0ba59c24e-W2-H02",
+          "claim_text": "Current excavation and preservation conditions",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-cd3be04163b6",
+      "canonical_slug": "hlhwl-mqm-lnby-ywns-cd3be0",
+      "name_ar": "حلحول (مقام النبي يونس)",
+      "name_en": "",
+      "governorate_ar": "الخليل",
+      "locality_ar": "حلحول",
+      "site_type_ar_draft": "بلدة تاريخية/مقام",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 2 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-cd3be04163b6-W2-C01",
+          "claim_text": "The Nabi Yunus mosque/maqam is in old Halhul; the monument record dates it to AH 623 / AD 1226, identifies an Ayyubid patron, and records later Mamluk renovation.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "W2-AUTH-MWNF-NABI-YUNUS-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-cd3be04163b6-W2-H01",
+          "claim_text": "Pre-Islamic tomb interpretation",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-cd3be04163b6-W2-H02",
+          "claim_text": "Complete restoration history",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-2310c1600481",
+      "canonical_slug": "khn-lhtb-2310c1",
+      "name_ar": "خان الحطب",
+      "name_en": "",
+      "governorate_ar": "الخليل",
+      "locality_ar": "الخليل",
+      "site_type_ar_draft": "خان",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-2310c1600481-W2-H01",
+          "claim_text": "Exact building identity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-2310c1600481-W2-H02",
+          "claim_text": "Ottoman date",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-2310c1600481-W2-H03",
+          "claim_text": "Location and ownership",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "COMPONENT_RELATION_MODELING",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-c9ac723c0271",
+      "canonical_slug": "khrb-lnby-nwh-c9ac72",
+      "name_ar": "خربة النبي نوح",
+      "name_en": "",
+      "governorate_ar": "الخليل",
+      "locality_ar": "دورا",
+      "site_type_ar_draft": "مقام/خربة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-c9ac723c0271-W2-C01",
+          "claim_text": "WAFA documents the existence of Nabi Nuh shrine in Dura as a local religious and historical landmark and records community restoration and charitable use by 2020.",
+          "verification_status": "CONFIRMED_CURRENT_EXISTENCE_AND_USE",
+          "source_ids": [
+            "W2-AUTH-WAFA-NABI-NUH-2020"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-c9ac723c0271-W2-H01",
+          "claim_text": "Construction chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-c9ac723c0271-W2-H02",
+          "claim_text": "Archaeological phases",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-c9ac723c0271-W2-H03",
+          "claim_text": "Burial attribution",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-6162b1da6edc",
+      "canonical_slug": "yn-sr-6162b1",
+      "name_ar": "عين سارة",
+      "name_en": "",
+      "governorate_ar": "الخليل",
+      "locality_ar": "الخليل",
+      "site_type_ar_draft": "نبع/عين",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-6162b1da6edc-W2-H01",
+          "claim_text": "Periodization",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-6162b1da6edc-W2-H02",
+          "claim_text": "Hydrological history",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-6162b1da6edc-W2-H03",
+          "claim_text": "Exact coordinates",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-d2c9e9bc9652",
+      "canonical_slug": "ql-lkrml-dyr-smt-d2c9e9",
+      "name_ar": "قلعة الكرمل (دير سامت)",
+      "name_en": "",
+      "governorate_ar": "الخليل",
+      "locality_ar": "قضاء الخليل",
+      "site_type_ar_draft": "قلعة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 2 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-d2c9e9bc9652-W2-H01",
+          "claim_text": "Roman/Crusader/Ayyubid sequence",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-d2c9e9bc9652-W2-H02",
+          "claim_text": "Exact identity and location",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-0dc57168d963",
+      "canonical_slug": "mgr-lbtrk-jz-mn-lhrm-0dc571",
+      "name_ar": "مغارة البطاركة (جزء من الحرم)",
+      "name_en": "",
+      "governorate_ar": "الخليل",
+      "locality_ar": "الخليل",
+      "site_type_ar_draft": "مغارة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-0dc57168d963-W2-C01",
+          "claim_text": "UNESCO identifies the sacred Cave of Machpelah/al-Ghar al-Sharif inside the monumental Al-Ibrahimi Mosque/Tomb of Patriarchs complex and treats its burial associations as tradition.",
+          "verification_status": "CONFIRMED_AS_COMPONENT_AND_TRADITION",
+          "source_ids": [
+            "W2-AUTH-UNESCO-HEBRON-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-0dc57168d963-W2-H01",
+          "claim_text": "Independent site boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-0dc57168d963-W2-H02",
+          "claim_text": "Canaanite dating",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-0dc57168d963-W2-H03",
+          "claim_text": "Exact subterranean geometry",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "COMPONENT_RELATION_MODELING",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-7532d020842e",
+      "canonical_slug": "mqm-lshykh-ly-lbk-7532d0",
+      "name_ar": "مقام الشيخ علي البكاء",
+      "name_en": "",
+      "governorate_ar": "الخليل",
+      "locality_ar": "الخليل",
+      "site_type_ar_draft": "مقام",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-7532d020842e-W2-C01",
+          "claim_text": "ICOMOS specifically discusses the Sheikh Ali al-Bakka area as an excluded area relevant to the integrity and earlier street patterns of Hebron Old Town.",
+          "verification_status": "CONFIRMED_CONTEXT",
+          "source_ids": [
+            "W2-AUTH-ICOMOS-HEBRON-2017"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-7532d020842e-W2-H01",
+          "claim_text": "Mamluk dating",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-7532d020842e-W2-H02",
+          "claim_text": "Maqam identity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-7532d020842e-W2-H03",
+          "claim_text": "Biography and endowment history",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-37c8be50ce73",
+      "canonical_slug": "brk-slymn-37c8be",
+      "name_ar": "برك سليمان",
+      "name_en": "Solomon's Pools",
+      "governorate_ar": "بيت لحم",
+      "locality_ar": "أرطاس",
+      "site_type_ar_draft": "بركة/خزان مياه",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-37c8be50ce73-W2-C01",
+          "claim_text": "The conservation project documents three historic pools and an Ottoman Murad castle; the project was completed in 2012 using distinguishable and reversible interventions.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "W2-AUTH-ARCHNET-SOLOMON-POOLS-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-37c8be50ce73-W2-H01",
+          "claim_text": "Ancient construction chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-37c8be50ce73-W2-H02",
+          "claim_text": "Water supply route to Jerusalem",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-37c8be50ce73-W2-H03",
+          "claim_text": "Ottoman archival history",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-f97aa993c98b",
+      "canonical_slug": "dyr-ljn-lkhdr-f97aa9",
+      "name_ar": "دير الجنة (الخضر)",
+      "name_en": "",
+      "governorate_ar": "بيت لحم",
+      "locality_ar": "الخضر",
+      "site_type_ar_draft": "دير",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 2 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-f97aa993c98b-W2-C01",
+          "claim_text": "The Greek Orthodox Patriarchate officially lists a Monastery of St George in Al-Khader.",
+          "verification_status": "CONFIRMED_CURRENT_INSTITUTIONAL_IDENTITY",
+          "source_ids": [
+            "W2-AUTH-JERUSALEM-PATRIARCHATE-ALKHADER-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-f97aa993c98b-W2-H01",
+          "claim_text": "Synonymy of Deir al-Jannah and St George monastery",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-f97aa993c98b-W2-H02",
+          "claim_text": "Byzantine/Crusader dating",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-a8aeb054b451",
+      "canonical_slug": "dyr-mr-sb-a8aeb0",
+      "name_ar": "دير مار سابا",
+      "name_en": "",
+      "governorate_ar": "بيت لحم",
+      "locality_ar": "شرق بيت لحم",
+      "site_type_ar_draft": "دير",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 2 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-a8aeb054b451-W2-C01",
+          "claim_text": "The Patriarchate's institutional history places the formation of Saint Savvas' Lavra around AD 483 and describes long continuous monastic activity.",
+          "verification_status": "CONFIRMED_IN_ECCLESIASTICAL_HISTORY",
+          "source_ids": [
+            "W2-AUTH-JERUSALEM-PATRIARCHATE-MAR-SABA-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-a8aeb054b451-W2-H01",
+          "claim_text": "Detailed building chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-a8aeb054b451-W2-H02",
+          "claim_text": "Exact continuity claim and interruptions",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-88fede7b6df0",
+      "canonical_slug": "qry-btyr-88fede",
+      "name_ar": "قرية بتير",
+      "name_en": "",
+      "governorate_ar": "بيت لحم",
+      "locality_ar": "بتير",
+      "site_type_ar_draft": "بلدة قديمة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-88fede7b6df0-W1-C01",
+          "claim_text": "Battir is a Palestinian cultural landscape of dry-stone terraces and a complex irrigation system supporting olives and vegetables.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "AUTH-UNESCO-BATTIR-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-88fede7b6df0-W1-C02",
+          "claim_text": "The family water-distribution system uses a time-managed rotation and mathematical allocation.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "AUTH-UNESCO-BATTIR-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [],
+      "required_actions": [
+        "GOVERNED_REWRITE_ONLY"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-133155518939",
+      "canonical_slug": "qsr-hyrwdywn-133155",
+      "name_ar": "قصر هيروديون",
+      "name_en": "",
+      "governorate_ar": "بيت لحم",
+      "locality_ar": "شرق بيت لحم",
+      "site_type_ar_draft": "حصن/قصر",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-133155518939-W2-C01",
+          "claim_text": "A substantial published excavation corpus exists for Herodium, including Corbo's palace-fortress report and later final reports for the 1972–2010 excavations.",
+          "verification_status": "CONFIRMED_RESEARCH_CORPUS",
+          "source_ids": [
+            "W2-AUTH-SBF-HERODIUM-BIBLIOGRAPHY-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-133155518939-W2-C02",
+          "claim_text": "Published academic chapters address Byzantine churches and inscriptions at Herodion.",
+          "verification_status": "CONFIRMED_RESEARCH_CORPUS",
+          "source_ids": [
+            "W2-AUTH-SBF-HERODIUM-CHRISTIAN-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-133155518939-W2-H01",
+          "claim_text": "Construction attribution",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-133155518939-W2-H02",
+          "claim_text": "Tomb identification",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-133155518939-W2-H03",
+          "claim_text": "Detailed chronology and current access",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-63fe9eba7871",
+      "canonical_slug": "ql-lbrk-63fe9e",
+      "name_ar": "قلعة البرك",
+      "name_en": "",
+      "governorate_ar": "بيت لحم",
+      "locality_ar": "أرطاس",
+      "site_type_ar_draft": "قلعة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-63fe9eba7871-W2-C01",
+          "claim_text": "The conservation record identifies an Ottoman Murad castle as part of the Solomon's Pools historical-site complex.",
+          "verification_status": "CONFIRMED_AS_COMPONENT",
+          "source_ids": [
+            "W2-AUTH-ARCHNET-SOLOMON-POOLS-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-63fe9eba7871-W2-H01",
+          "claim_text": "Exact construction date",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-63fe9eba7871-W2-H02",
+          "claim_text": "Independent site boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-63fe9eba7871-W2-H03",
+          "claim_text": "Original function beyond protection context",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "COMPONENT_RELATION_MODELING",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-4b15f14c306f",
+      "canonical_slug": "knys-lmhd-4b15f1",
+      "name_ar": "كنيسة المهد",
+      "name_en": "Church of the Nativity",
+      "governorate_ar": "بيت لحم",
+      "locality_ar": "بيت لحم",
+      "site_type_ar_draft": "كنيسة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-4b15f14c306f-W1-C01",
+          "claim_text": "The location has been identified by Christian tradition as the birthplace of Jesus since the 2nd century.",
+          "verification_status": "CONFIRMED_AS_TRADITION",
+          "source_ids": [
+            "AUTH-UNESCO-NATIVITY-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-4b15f14c306f-W1-C02",
+          "claim_text": "A church was first completed there in AD 339; the replacement building after a 6th-century fire retains mosaics from the original.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "AUTH-UNESCO-NATIVITY-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [],
+      "required_actions": [
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-57adc62d6d70",
+      "canonical_slug": "mgr-lhlyb-57adc6",
+      "name_ar": "مغارة الحليب",
+      "name_en": "",
+      "governorate_ar": "بيت لحم",
+      "locality_ar": "بيت لحم",
+      "site_type_ar_draft": "كنيسة/مغارة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-57adc62d6d70-W2-C01",
+          "claim_text": "The Milk Grotto is a local sanctuary near the Nativity Basilica with a living devotion shared by Christian and Muslim women.",
+          "verification_status": "CONFIRMED_LIVING_TRADITION",
+          "source_ids": [
+            "W2-AUTH-SBF-MILK-GROTTO-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-57adc62d6d70-W2-C02",
+          "claim_text": "The SBF records an emergency excavation at the sanctuary in October 2005.",
+          "verification_status": "CONFIRMED_ARCHAEOLOGICAL_ACTIVITY",
+          "source_ids": [
+            "W2-AUTH-SBF-MILK-GROTTO-EXCAVATION-2005"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-57adc62d6d70-W2-H01",
+          "claim_text": "Byzantine dating",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-57adc62d6d70-W2-H02",
+          "claim_text": "Full excavation results",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-57adc62d6d70-W2-H03",
+          "claim_text": "Miraculous claims",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-e2a5c15f76f6",
+      "canonical_slug": "bld-byrzyt-lqdym-e2a5c1",
+      "name_ar": "بلدة بيرزيت القديمة",
+      "name_en": "",
+      "governorate_ar": "رام الله والبيرة",
+      "locality_ar": "بيرزيت",
+      "site_type_ar_draft": "بلدة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-e2a5c15f76f6-W5-C01",
+          "claim_text": "Birzeit contains a governed historic centre whose buildings, public spaces, infrastructure, and boundaries were documented and rehabilitated through a long-term Riwaq programme.",
+          "verification_status": "CONFIRMED_HISTORIC_CENTRE_AND_CONSERVATION_RECORD",
+          "source_ids": [
+            "W5-AUTH-RIWAQ-BIRZEIT-001",
+            "W5-AUTH-RIWAQ-BIRZEIT-AWARD-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-e2a5c15f76f6-W5-C02",
+          "claim_text": "The Palestinian Ministry of Tourism and Antiquities provides contextual reference to a fortified castle in Birzeit.",
+          "verification_status": "CONFIRMED_CONTEXT_ONLY",
+          "source_ids": [
+            "W5-AUTH-MOTA-RAMALLAH-CONTEXT-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-e2a5c15f76f6-W5-H01",
+          "claim_text": "Complete historic-centre chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-e2a5c15f76f6-W5-H02",
+          "claim_text": "Exact castle identity, date, and surviving fabric",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-e2a5c15f76f6-W5-H03",
+          "claim_text": "Publication-ready constituent inventory",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-014e4c4e4845",
+      "canonical_slug": "khrb-bwd-014e4c",
+      "name_ar": "خربة عابود",
+      "name_en": "",
+      "governorate_ar": "رام الله والبيرة",
+      "locality_ar": "عابود",
+      "site_type_ar_draft": "خربة أثرية",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-014e4c4e4845-W5-C01",
+          "claim_text": "Aboud is recognized within Riwaq's historic-centres programme.",
+          "verification_status": "CONFIRMED_HISTORIC_CENTRE_CONTEXT",
+          "source_ids": [
+            "W5-AUTH-RIWAQ-50-CENTRES-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-014e4c4e4845-W5-C02",
+          "claim_text": "The Aboud landscape includes a sixth-century St Barbara church ruin, a Roman-road and cemetery context, and a separately documented multi-phase Dormition church.",
+          "verification_status": "CONFIRMED_MULTIPLE_ARCHAEOLOGICAL_AND_ARCHITECTURAL_COMPONENTS",
+          "source_ids": [
+            "W5-AUTH-MOTA-ABOUD-BARBARA-001",
+            "W5-AUTH-MOTA-ABOUD-DORMITION-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-014e4c4e4845-W5-H01",
+          "claim_text": "Complete archaeological landscape boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-014e4c4e4845-W5-H02",
+          "claim_text": "Full component inventory",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-014e4c4e4845-W5-H03",
+          "claim_text": "Current condition and rights for each component",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-28dd528f5f3a",
+      "canonical_slug": "dyr-mr-28dd52",
+      "name_ar": "دير عمار",
+      "name_en": "",
+      "governorate_ar": "رام الله والبيرة",
+      "locality_ar": "غرب رام الله",
+      "site_type_ar_draft": "دير/خربة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-28dd528f5f3a-W5-C01",
+          "claim_text": "Riwaq recognizes Deir Ammar as a Palestinian historic-centre record.",
+          "verification_status": "CONFIRMED_CURRENT_HISTORIC_CENTRE_IDENTITY",
+          "source_ids": [
+            "W5-AUTH-RIWAQ-DEIR-AMMAR-001",
+            "W5-AUTH-RIWAQ-50-CENTRES-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-28dd528f5f3a-W5-H01",
+          "claim_text": "Roman and Byzantine evidence",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-28dd528f5f3a-W5-H02",
+          "claim_text": "Origin of the 'Deir' name",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-28dd528f5f3a-W5-H03",
+          "claim_text": "Constituent monuments and historic boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-2a3fdab99250",
+      "canonical_slug": "yn-smy-2a3fda",
+      "name_ar": "عين سامية",
+      "name_en": "",
+      "governorate_ar": "رام الله والبيرة",
+      "locality_ar": "كفر مالك",
+      "site_type_ar_draft": "نبع/خربة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-2a3fdab99250-W5-C01",
+          "claim_text": "Academic records document Intermediate/Middle Bronze Age shaft-tomb and assemblage evidence at Ain Samiya.",
+          "verification_status": "CONFIRMED_BRONZE_AGE_CEMETERY_CONTEXT",
+          "source_ids": [
+            "W5-ACADEMIC-AIN-SAMIYA-TOMB-204-001",
+            "W5-ACADEMIC-CAMBRIDGE-AIN-SAMIYA-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-2a3fdab99250-W5-C02",
+          "claim_text": "The official Palestinian route guide distinguishes Ain Samiya, Khirbet Marjameh, a palace feature, and Khirbet Samiya within the wider landscape.",
+          "verification_status": "CONFIRMED_MULTIPLE_FEATURES_IN_LANDSCAPE",
+          "source_ids": [
+            "W5-AUTH-WAFA-TOURIST-TRAILS-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-2a3fdab99250-W5-H01",
+          "claim_text": "Complete site boundaries",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-2a3fdab99250-W5-H02",
+          "claim_text": "Roman-period installations and tomb inventory",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-2a3fdab99250-W5-H03",
+          "claim_text": "Exact relation between cemetery and nearby settlement",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-78a64ec5ef15",
+      "canonical_slug": "qsr-lryn-78a64e",
+      "name_ar": "قصر الريان",
+      "name_en": "",
+      "governorate_ar": "رام الله والبيرة",
+      "locality_ar": "رام الله",
+      "site_type_ar_draft": "قصر",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 4 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-78a64ec5ef15-W5-H01",
+          "claim_text": "Existence as a historic palace",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-78a64ec5ef15-W5-H02",
+          "claim_text": "Ottoman date",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-78a64ec5ef15-W5-H03",
+          "claim_text": "Canonical name and locality",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-78a64ec5ef15-W5-H04",
+          "claim_text": "Coordinates and publication use",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-12fc185d4b0b",
+      "canonical_slug": "mqm-lnby-slh-12fc18",
+      "name_ar": "مقام النبي صالح",
+      "name_en": "",
+      "governorate_ar": "رام الله والبيرة",
+      "locality_ar": "قرب رام الله",
+      "site_type_ar_draft": "مقام",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-12fc185d4b0b-W5-C01",
+          "claim_text": "Riwaq records conservation and adaptive reuse of the An Nabi Salih Cultural Center complex completed in 2003 with a local partner.",
+          "verification_status": "CONFIRMED_CURRENT_COMPLEX_AND_CONSERVATION",
+          "source_ids": [
+            "W5-AUTH-RIWAQ-NABI-SALEH-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-12fc185d4b0b-W5-H01",
+          "claim_text": "Ayyubid foundation",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-12fc185d4b0b-W5-H02",
+          "claim_text": "Burial identity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-12fc185d4b0b-W5-H03",
+          "claim_text": "Complete architectural phase history",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "COMPONENT_RELATION_MODELING"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-a9ac192e20c3",
+      "canonical_slug": "bld-nbls-lqdym-a9ac19",
+      "name_ar": "بلدة نابلس القديمة",
+      "name_en": "",
+      "governorate_ar": "نابلس",
+      "locality_ar": "نابلس",
+      "site_type_ar_draft": "بلدة قديمة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-a9ac192e20c3-W4-C01",
+          "claim_text": "Old Nablus is a historic urban cluster with Roman, Islamic, medieval, Ottoman, religious, commercial, residential, and water-related components.",
+          "verification_status": "CONFIRMED_AS_STATE_PARTY_AND_MINISTRY_RECORD",
+          "source_ids": [
+            "W4-AUTH-UNESCO-NABLUS-2012",
+            "W4-AUTH-MOTA-NABLUS-OLD-CITY"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-a9ac192e20c3-W4-C02",
+          "claim_text": "UNESCO and partners completed restoration and adaptive reuse of Khan al-Wakala as a component of Old Nablus.",
+          "verification_status": "CONFIRMED_CONSERVATION_RECORD",
+          "source_ids": [
+            "W4-AUTH-UNESCO-KHAN-WAKALA-2012"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-a9ac192e20c3-W4-H01",
+          "claim_text": "Complete Roman-to-modern urban chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-a9ac192e20c3-W4-H02",
+          "claim_text": "Publication-ready constituent inventory",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-a9ac192e20c3-W4-H03",
+          "claim_text": "Current condition of every component",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "COMPONENT_RELATION_MODELING",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-a429c345ac25",
+      "canonical_slug": "jm-lnsr-a429c3",
+      "name_ar": "جامع النصر",
+      "name_en": "",
+      "governorate_ar": "نابلس",
+      "locality_ar": "نابلس",
+      "site_type_ar_draft": "مسجد",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-a429c345ac25-W4-C01",
+          "claim_text": "Al-Nasr Mosque is an identified spatial component bordering Bab al-Saha and Al-Nasr Street within Old Nablus.",
+          "verification_status": "CONFIRMED_CURRENT_URBAN_IDENTITY",
+          "source_ids": [
+            "W4-AUTH-MOTA-NASR-CONTEXT"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-a429c345ac25-W4-H01",
+          "claim_text": "Foundation date",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-a429c345ac25-W4-H02",
+          "claim_text": "Ayyubid/Mamluk phase attribution",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-a429c345ac25-W4-H03",
+          "claim_text": "Reconstruction history",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-b6773e683274",
+      "canonical_slug": "jbl-jrzym-b6773e",
+      "name_ar": "جبل جرزيم",
+      "name_en": "",
+      "governorate_ar": "نابلس",
+      "locality_ar": "نابلس",
+      "site_type_ar_draft": "موقع مقدس",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 2 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-b6773e683274-W4-C01",
+          "claim_text": "Mount Gerizim is the living sacred centre of the Samaritan community and contains major Hellenistic, Roman, Byzantine, and Islamic remains.",
+          "verification_status": "CONFIRMED_AS_STATE_PARTY_AND_MINISTRY_RECORD",
+          "source_ids": [
+            "W4-AUTH-UNESCO-GERIZIM-2012",
+            "W4-AUTH-MOTA-NABLUS-OLD-CITY"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-b6773e683274-W4-H01",
+          "claim_text": "Independent adjudication of religious claims",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-b6773e683274-W4-H02",
+          "claim_text": "Complete excavation chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-160c60c7b952",
+      "canonical_slug": "hr-lysmyn-160c60",
+      "name_ar": "حارة الياسمينة",
+      "name_en": "",
+      "governorate_ar": "نابلس",
+      "locality_ar": "نابلس",
+      "site_type_ar_draft": "حارة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-160c60c7b952-W4-C01",
+          "claim_text": "Al-Yasmina is one of the recognized quarters of Old Nablus; Hosh al-Atout preserves Ottoman residential courtyard fabric.",
+          "verification_status": "CONFIRMED_CURRENT_IDENTITY_AND_COMPONENT",
+          "source_ids": [
+            "W4-AUTH-MOTA-YASMINA-ATOUT"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-160c60c7b952-W4-C02",
+          "claim_text": "The official portal reports severe damage in 2002 and reconstruction completed in 2012 for Hosh al-Atout.",
+          "verification_status": "CONFIRMED_AS_MINISTRY_REPORT",
+          "source_ids": [
+            "W4-AUTH-MOTA-YASMINA-ATOUT"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-160c60c7b952-W4-H01",
+          "claim_text": "Complete quarter boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-160c60c7b952-W4-H02",
+          "claim_text": "Condition of all buildings",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-160c60c7b952-W4-H03",
+          "claim_text": "All Ottoman dates",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "COMPONENT_RELATION_MODELING"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-31c7667ff10e",
+      "canonical_slug": "khn-ltjr-31c766",
+      "name_ar": "خان التجار",
+      "name_en": "",
+      "governorate_ar": "نابلس",
+      "locality_ar": "نابلس",
+      "site_type_ar_draft": "خان",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-31c7667ff10e-W4-C01",
+          "claim_text": "Khan al-Tujjar is a recognized historic market/fabric-market component of Old Nablus.",
+          "verification_status": "CONFIRMED_CURRENT_IDENTITY",
+          "source_ids": [
+            "W4-AUTH-MOTA-KHAN-TUJJAR"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-31c7667ff10e-W4-H01",
+          "claim_text": "Exact construction date",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-31c7667ff10e-W4-H02",
+          "claim_text": "Patronage",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-31c7667ff10e-W4-H03",
+          "claim_text": "Complete commercial history",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "COMPONENT_RELATION_MODELING"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-6f6afe87f969",
+      "canonical_slug": "sbsty-shmrwn-6f6afe",
+      "name_ar": "سبسطية (شمرون)",
+      "name_en": "Sebastia",
+      "governorate_ar": "نابلس",
+      "locality_ar": "سبسطية",
+      "site_type_ar_draft": "مدينة أثرية",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 3 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-6f6afe87f969-W1-C01",
+          "claim_text": "The State of Palestine submitted Sebastia to UNESCO's Tentative List in 2012.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "AUTH-UNESCO-SEBASTIA-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-6f6afe87f969-W1-C02",
+          "claim_text": "The submission describes it as the Iron Age II capital and a major Hellenistic/Roman urban centre, and records major excavation campaigns.",
+          "verification_status": "CONFIRMED_AS_STATE_SUBMISSION",
+          "source_ids": [
+            "AUTH-UNESCO-SEBASTIA-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-6f6afe87f969-W1-C03",
+          "claim_text": "Christian and Islamic traditions associate the site with John the Baptist/Yahya.",
+          "verification_status": "CONFIRMED_AS_TRADITION",
+          "source_ids": [
+            "AUTH-UNESCO-SEBASTIA-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [],
+      "required_actions": [
+        "GOVERNED_REWRITE_ONLY"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-d00341226494",
+      "canonical_slug": "mqm-lnby-sh-yb-d00341",
+      "name_ar": "مقام النبي شعيب",
+      "name_en": "",
+      "governorate_ar": "نابلس",
+      "locality_ar": "قرب نابلس (سنجل)",
+      "site_type_ar_draft": "مقام",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 4 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-d00341226494-W4-H01",
+          "claim_text": "Canonical locality",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-d00341226494-W4-H02",
+          "claim_text": "Shrine identity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-d00341226494-W4-H03",
+          "claim_text": "Periodization",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-d00341226494-W4-H04",
+          "claim_text": "Coordinates",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CANONICAL_IDENTITY_OR_LOCALITY_REVIEW",
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-fb9a817ec94a",
+      "canonical_slug": "mqm-lnby-ywsf-blt-fb9a81",
+      "name_ar": "مقام النبي يوسف (بلاطة)",
+      "name_en": "",
+      "governorate_ar": "نابلس",
+      "locality_ar": "بلاطة",
+      "site_type_ar_draft": "مقام",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-fb9a817ec94a-W4-C01",
+          "claim_text": "Maqam Yusuf near Balata has been revered in Muslim, Christian, Jewish, and Samaritan traditions and has had changing Palestinian social and religious meanings.",
+          "verification_status": "CONFIRMED_SHARED_SHRINE_AND_MEMORY_HISTORY",
+          "source_ids": [
+            "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-fb9a817ec94a-W4-C02",
+          "claim_text": "The inspected academic article states that archaeological evidence does not verify competing burial identifications.",
+          "verification_status": "CONFIRMED_ACADEMIC_ASSESSMENT",
+          "source_ids": [
+            "W4-ACADEMIC-JQ-MAQAM-YUSUF-2023"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-fb9a817ec94a-W4-H01",
+          "claim_text": "Burial identity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-fb9a817ec94a-W4-H02",
+          "claim_text": "Foundation date",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-fb9a817ec94a-W4-H03",
+          "claim_text": "Complete architectural chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-f2a7fbbda5a5",
+      "canonical_slug": "bld-jnyn-lqdym-f2a7fb",
+      "name_ar": "بلدة جنين القديمة",
+      "name_en": "",
+      "governorate_ar": "جنين",
+      "locality_ar": "جنين",
+      "site_type_ar_draft": "بلدة قديمة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-f2a7fbbda5a5-W4-C01",
+          "claim_text": "Al-Sibat market is a late Ottoman component within Jenin's older neighbourhoods and is reported above Roman and Byzantine archaeological context.",
+          "verification_status": "CONFIRMED_AS_MINISTRY_RECORD",
+          "source_ids": [
+            "W4-AUTH-MOTA-JENIN-SIBAT"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-f2a7fbbda5a5-W4-C02",
+          "claim_text": "Fatima Khatun Mosque is a major sixteenth-century Ottoman urban component in central Jenin.",
+          "verification_status": "CONFIRMED_AS_MINISTRY_RECORD",
+          "source_ids": [
+            "W4-AUTH-MOTA-JENIN-FATIMA-KHATUN"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-f2a7fbbda5a5-W4-H01",
+          "claim_text": "Complete old-town boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-f2a7fbbda5a5-W4-H02",
+          "claim_text": "Mamluk urban fabric",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-f2a7fbbda5a5-W4-H03",
+          "claim_text": "Condition of all components",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "COMPONENT_RELATION_MODELING",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-0ae63f2b6a17",
+      "canonical_slug": "tl-jnyn-0ae63f",
+      "name_ar": "تل جنين",
+      "name_en": "",
+      "governorate_ar": "جنين",
+      "locality_ar": "جنين",
+      "site_type_ar_draft": "تل أثري",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 4 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-0ae63f2b6a17-W4-H01",
+          "claim_text": "Exact archaeological identity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-0ae63f2b6a17-W4-H02",
+          "claim_text": "Boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-0ae63f2b6a17-W4-H03",
+          "claim_text": "Chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-0ae63f2b6a17-W4-H04",
+          "claim_text": "Coordinates",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-fe1e2a1605b5",
+      "canonical_slug": "qsr-lkyd-fe1e2a",
+      "name_ar": "قصر الكايد",
+      "name_en": "",
+      "governorate_ar": "جنين",
+      "locality_ar": "جنين",
+      "site_type_ar_draft": "قصر",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 2 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-fe1e2a1605b5-W4-C01",
+          "claim_text": "The official Palestinian heritage portal locates Al-Kayed Palace in Sebastia, Nablus Governorate, and dates construction to 1858.",
+          "verification_status": "CONFIRMED_IDENTITY_CONFLICT",
+          "source_ids": [
+            "W4-AUTH-MOTA-KAYED-SEBASTIA"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-fe1e2a1605b5-W4-H01",
+          "claim_text": "Whether a separate Jenin palace with the same name exists",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-fe1e2a1605b5-W4-H02",
+          "claim_text": "Canonical reassignment decision",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CANONICAL_IDENTITY_OR_LOCALITY_REVIEW",
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-2c1f6b6dbd51",
+      "canonical_slug": "knys-brqyn-2c1f6b",
+      "name_ar": "كنيسة برقين",
+      "name_en": "",
+      "governorate_ar": "جنين",
+      "locality_ar": "برقين",
+      "site_type_ar_draft": "كنيسة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-2c1f6b6dbd51-W4-C01",
+          "claim_text": "Burqin Church is a living Greek Orthodox church in Burqin with an official Byzantine heritage attribution.",
+          "verification_status": "CONFIRMED_CURRENT_IDENTITY_AND_INSTITUTIONAL_PERIOD",
+          "source_ids": [
+            "W4-AUTH-MOTA-BURQIN"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-2c1f6b6dbd51-W4-H01",
+          "claim_text": "Saint Helena attribution",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-2c1f6b6dbd51-W4-H02",
+          "claim_text": "Global age rank",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-2c1f6b6dbd51-W4-H03",
+          "claim_text": "Complete Byzantine/Crusader/Ottoman sequence",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-fc3cde18193c",
+      "canonical_slug": "mqm-lshykh-hsn-fc3cde",
+      "name_ar": "مقام الشيخ حسن",
+      "name_en": "",
+      "governorate_ar": "جنين",
+      "locality_ar": "جنين",
+      "site_type_ar_draft": "مقام",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 4 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-fc3cde18193c-W4-H01",
+          "claim_text": "Identity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-fc3cde18193c-W4-H02",
+          "claim_text": "Location",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-fc3cde18193c-W4-H03",
+          "claim_text": "Period",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-fc3cde18193c-W4-H04",
+          "claim_text": "Current condition",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-a28891855f38",
+      "canonical_slug": "bld-dyr-lgswn-a28891",
+      "name_ar": "بلدة دير الغصون",
+      "name_en": "",
+      "governorate_ar": "طولكرم",
+      "locality_ar": "دير الغصون",
+      "site_type_ar_draft": "بلدة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-a28891855f38-W4-H01",
+          "claim_text": "Historic-centre boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-a28891855f38-W4-H02",
+          "claim_text": "Periodization",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-a28891855f38-W4-H03",
+          "claim_text": "Constituent buildings",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-7a4bd929848c",
+      "canonical_slug": "khrb-brj-l-bd-7a4bd9",
+      "name_ar": "خربة برج العبد",
+      "name_en": "",
+      "governorate_ar": "طولكرم",
+      "locality_ar": "عنبتا",
+      "site_type_ar_draft": "خربة/برج",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 4 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-7a4bd929848c-W4-H01",
+          "claim_text": "Identity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-7a4bd929848c-W4-H02",
+          "claim_text": "Location",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-7a4bd929848c-W4-H03",
+          "claim_text": "Fortification date",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-7a4bd929848c-W4-H04",
+          "claim_text": "Function",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-0c0a379f20f7",
+      "canonical_slug": "khrb-jb-0c0a37",
+      "name_ar": "خربة جبع",
+      "name_en": "",
+      "governorate_ar": "طولكرم",
+      "locality_ar": "جبع",
+      "site_type_ar_draft": "خربة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-0c0a379f20f7-W4-H01",
+          "claim_text": "Exact locality",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-0c0a379f20f7-W4-H02",
+          "claim_text": "Roman/Byzantine phases",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-0c0a379f20f7-W4-H03",
+          "claim_text": "Site boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-be1c2ce90997",
+      "canonical_slug": "mdyn-twlkrm-ltrykhy-be1c2c",
+      "name_ar": "مدينة طولكرم التاريخية",
+      "name_en": "",
+      "governorate_ar": "طولكرم",
+      "locality_ar": "طولكرم",
+      "site_type_ar_draft": "مدينة تاريخية",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-be1c2ce90997-W4-C01",
+          "claim_text": "Tulkarm contains officially recognized built heritage assets, including a museum in a 1908 Ottoman-era building and rehabilitated heritage facilities.",
+          "verification_status": "CONFIRMED_HERITAGE_ASSET_CONTEXT",
+          "source_ids": [
+            "W4-AUTH-MOTA-TULKARM-MUSEUM",
+            "W4-AUTH-UNESCO-RIWAQ-75-STEPS-2023"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-be1c2ce90997-W4-H01",
+          "claim_text": "Historic urban boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-be1c2ce90997-W4-H02",
+          "claim_text": "Roman-period city identity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-be1c2ce90997-W4-H03",
+          "claim_text": "Complete component inventory",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-95d241c30366",
+      "canonical_slug": "mqm-lshykh-shltwt-95d241",
+      "name_ar": "مقام الشيخ شلتوت",
+      "name_en": "",
+      "governorate_ar": "طولكرم",
+      "locality_ar": "طولكرم",
+      "site_type_ar_draft": "مقام",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 4 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-95d241c30366-W4-H01",
+          "claim_text": "Identity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-95d241c30366-W4-H02",
+          "claim_text": "Location",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-95d241c30366-W4-H03",
+          "claim_text": "Period",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-95d241c30366-W4-H04",
+          "claim_text": "Current condition",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-02cb039fe1eb",
+      "canonical_slug": "khrb-zwn-02cb03",
+      "name_ar": "خربة عزون",
+      "name_en": "",
+      "governorate_ar": "قلقيلية",
+      "locality_ar": "عزون",
+      "site_type_ar_draft": "خربة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-02cb039fe1eb-W4-H01",
+          "claim_text": "Exact site identity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-02cb039fe1eb-W4-H02",
+          "claim_text": "Boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-02cb039fe1eb-W4-H03",
+          "claim_text": "Periodization",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-3ab4c5b64173",
+      "canonical_slug": "khrb-qlqyly-lqdym-3ab4c5",
+      "name_ar": "خربة قلقيلية القديمة",
+      "name_en": "",
+      "governorate_ar": "قلقيلية",
+      "locality_ar": "قلقيلية",
+      "site_type_ar_draft": "خربة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 4 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-3ab4c5b64173-W4-H01",
+          "claim_text": "Identity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-3ab4c5b64173-W4-H02",
+          "claim_text": "Location",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-3ab4c5b64173-W4-H03",
+          "claim_text": "Site type",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-3ab4c5b64173-W4-H04",
+          "claim_text": "Periodization",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-a33c0a4f64fa",
+      "canonical_slug": "mqm-lnby-ymyn-a33c0a",
+      "name_ar": "مقام النبي يامين",
+      "name_en": "",
+      "governorate_ar": "قلقيلية",
+      "locality_ar": "عزون",
+      "site_type_ar_draft": "مقام",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 4 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-a33c0a4f64fa-W4-H01",
+          "claim_text": "Burial attribution",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-a33c0a4f64fa-W4-H02",
+          "claim_text": "Mamluk date",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-a33c0a4f64fa-W4-H03",
+          "claim_text": "Ownership/use history",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-a33c0a4f64fa-W4-H04",
+          "claim_text": "Coordinates",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-69f3ad775733",
+      "canonical_slug": "khrb-dyr-sty-69f3ad",
+      "name_ar": "خربة دير استيا",
+      "name_en": "",
+      "governorate_ar": "سلفيت",
+      "locality_ar": "دير استيا",
+      "site_type_ar_draft": "خربة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-69f3ad775733-W4-C01",
+          "claim_text": "Deir Istiya is a recognized Palestinian historic centre with approximately three-century-old buildings, narrow streets, palaces, springs, caves, and ruins.",
+          "verification_status": "CONFIRMED_CURRENT_HISTORIC_TOWN_IDENTITY",
+          "source_ids": [
+            "W4-AUTH-MOTA-DEIR-ISTIYA",
+            "W4-AUTH-RIWAQ-50-CENTRES",
+            "W4-AUTH-RIWAQ-DEIR-ISTIYA-PALACES"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-69f3ad775733-W4-H01",
+          "claim_text": "Roman/Byzantine chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-69f3ad775733-W4-H02",
+          "claim_text": "Complete constituent inventory",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-69f3ad775733-W4-H03",
+          "claim_text": "Exact historic boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-ba91049d51a9",
+      "canonical_slug": "ywn-lm-l-thry-ba9104",
+      "name_ar": "عيون الماء الأثرية",
+      "name_en": "",
+      "governorate_ar": "سلفيت",
+      "locality_ar": "سلفيت",
+      "site_type_ar_draft": "نبع/قناة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-ba91049d51a9-W4-C01",
+          "claim_text": "The official Deir Istiya record confirms numerous water springs and the nearby perennial Wadi Qana setting.",
+          "verification_status": "CONFIRMED_GENERAL_HYDROLOGICAL_CONTEXT",
+          "source_ids": [
+            "W4-AUTH-MOTA-DEIR-ISTIYA"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-ba91049d51a9-W4-H01",
+          "claim_text": "Spring identities",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-ba91049d51a9-W4-H02",
+          "claim_text": "Roman/Ottoman construction",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-ba91049d51a9-W4-H03",
+          "claim_text": "Exact coordinates",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-b2a7e03ecda1",
+      "canonical_slug": "ql-kfl-hrs-b2a7e0",
+      "name_ar": "قلعة كفل حارس",
+      "name_en": "",
+      "governorate_ar": "سلفيت",
+      "locality_ar": "كفل حارس",
+      "site_type_ar_draft": "قلعة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-b2a7e03ecda1-W4-C01",
+          "claim_text": "The official portal documents Ayyubid and Ottoman shrines in Kifl Haris, including inscription-bearing structures.",
+          "verification_status": "CONFIRMED_SHRINE_CLUSTER",
+          "source_ids": [
+            "W4-AUTH-MOTA-KIFL-HARIS-SHRINES"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-b2a7e03ecda1-W4-H01",
+          "claim_text": "Castle existence",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-b2a7e03ecda1-W4-H02",
+          "claim_text": "Castle boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-b2a7e03ecda1-W4-H03",
+          "claim_text": "Crusader/Mamluk dates",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-c6731a990917",
+      "canonical_slug": "tl-lfr-lmdyn-lkn-ny-c6731a",
+      "name_ar": "تل الفارعة (المدينة الكنعانية)",
+      "name_en": "",
+      "governorate_ar": "طوباس",
+      "locality_ar": "رأس الفارعة",
+      "site_type_ar_draft": "تل أثري",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-c6731a990917-W4-C01",
+          "claim_text": "Tell el-Far'ah North has a major excavation and publication corpus associated with the École biblique and nine campaigns led by Roland de Vaux.",
+          "verification_status": "CONFIRMED_RESEARCH_CORPUS",
+          "source_ids": [
+            "W4-ACADEMIC-EBAF-TELL-FARAH-CORPUS"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-c6731a990917-W4-C02",
+          "claim_text": "Academic synthesis identifies ordered and fortified Early Bronze settlement phases at Tell el-Far'ah North.",
+          "verification_status": "CONFIRMED_BRONZE_AGE_URBAN_CONTEXT",
+          "source_ids": [
+            "W4-ACADEMIC-CAMBRIDGE-TELL-FARAH"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-c6731a990917-W4-H01",
+          "claim_text": "Complete stratigraphy",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-c6731a990917-W4-H02",
+          "claim_text": "Tirzah identification",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-c6731a990917-W4-H03",
+          "claim_text": "Current condition and boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-4ab7d2100cc2",
+      "canonical_slug": "khrb-twbs-lqdym-4ab7d2",
+      "name_ar": "خربة طوباس القديمة",
+      "name_en": "",
+      "governorate_ar": "طوباس",
+      "locality_ar": "طوباس",
+      "site_type_ar_draft": "خربة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 4 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-4ab7d2100cc2-W4-H01",
+          "claim_text": "Identity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-4ab7d2100cc2-W4-H02",
+          "claim_text": "Location",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-4ab7d2100cc2-W4-H03",
+          "claim_text": "Boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-4ab7d2100cc2-W4-H04",
+          "claim_text": "Periodization",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-bc56c2f93d66",
+      "canonical_slug": "yn-lfr-bc56c2",
+      "name_ar": "عين الفارعة",
+      "name_en": "",
+      "governorate_ar": "طوباس",
+      "locality_ar": "طوباس",
+      "site_type_ar_draft": "نبع",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-bc56c2f93d66-W4-H01",
+          "claim_text": "Spring identity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-bc56c2f93d66-W4-H02",
+          "claim_text": "Roman-period installations",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-bc56c2f93d66-W4-H03",
+          "claim_text": "Hydrological relation to Tell al-Far'ah",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-a86fc049d470",
+      "canonical_slug": "tl-lsltn-ryh-lqdym-a86fc0",
+      "name_ar": "تل السلطان (أريحا القديمة)",
+      "name_en": "Tell es-Sultan",
+      "governorate_ar": "أريحا",
+      "locality_ar": "أريحا",
+      "site_type_ar_draft": "تل أثري",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 3 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-a86fc049d470-W1-C01",
+          "claim_text": "The property contains deposits of human activity dating to about 10,500 BC.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "AUTH-UNESCO-JERICHO-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-a86fc049d470-W1-C02",
+          "claim_text": "By the 9th–8th millennium BC it was a sizeable permanent settlement with surviving wall, ditch and tower.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "AUTH-UNESCO-JERICHO-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-a86fc049d470-W1-C03",
+          "claim_text": "Middle Bronze Age remains indicate a large Canaanite city-state.",
+          "verification_status": "CONFIRMED",
+          "source_ids": [
+            "AUTH-UNESCO-JERICHO-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [],
+      "required_actions": [
+        "GOVERNED_REWRITE_ONLY"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-cc4465115964",
+      "canonical_slug": "dyr-qrntl-cc4465",
+      "name_ar": "دير قرنطل",
+      "name_en": "",
+      "governorate_ar": "أريحا",
+      "locality_ar": "جبل الأربعين",
+      "site_type_ar_draft": "دير",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-cc4465115964-W5-C01",
+          "claim_text": "The official Palestinian portal documents monastic caves, a sixth-century monastery phase, and restoration in 1892 at Deir Quruntal.",
+          "verification_status": "CONFIRMED_INSTITUTIONAL_ARCHITECTURAL_HISTORY",
+          "source_ids": [
+            "W5-AUTH-MOTA-QURUNTAL-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-cc4465115964-W5-H01",
+          "claim_text": "Crusader construction phase",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-cc4465115964-W5-H02",
+          "claim_text": "Complete cave and monastery chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-cc4465115964-W5-H03",
+          "claim_text": "Current structural condition",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-b5f00132ee24",
+      "canonical_slug": "yn-lsltn-b5f001",
+      "name_ar": "عين السلطان",
+      "name_en": "",
+      "governorate_ar": "أريحا",
+      "locality_ar": "أريحا",
+      "site_type_ar_draft": "نبع",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-b5f00132ee24-W5-C01",
+          "claim_text": "Ain es-Sultan is the perennial spring adjacent to and included among the attributes of the inscribed Ancient Jericho/Tell es-Sultan property.",
+          "verification_status": "CONFIRMED_WORLD_HERITAGE_COMPONENT",
+          "source_ids": [
+            "W5-AUTH-UNESCO-JERICHO-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-b5f00132ee24-W5-H01",
+          "claim_text": "Independent site boundary outside the property",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-b5f00132ee24-W5-H02",
+          "claim_text": "Detailed hydrological chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-b5f00132ee24-W5-H03",
+          "claim_text": "Modern water-rights and engineering status",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "COMPONENT_RELATION_MODELING",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-ce23c41d7641",
+      "canonical_slug": "qbr-lnby-mws-ce23c4",
+      "name_ar": "قبر النبي موسى",
+      "name_en": "",
+      "governorate_ar": "أريحا",
+      "locality_ar": "أريحا (الطريق)",
+      "site_type_ar_draft": "مقام",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-ce23c41d7641-W5-C01",
+          "claim_text": "The official Palestinian record describes one Nabi Musa shrine complex containing a mosque, mausoleum/tomb, courtyard, rooms, and related facilities.",
+          "verification_status": "CONFIRMED_COMPONENT_WITHIN_SINGLE_COMPLEX",
+          "source_ids": [
+            "W5-AUTH-MOTA-NABI-MUSA-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-ce23c41d7641-W5-H01",
+          "claim_text": "Independent site identity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-ce23c41d7641-W5-H02",
+          "claim_text": "Burial historicity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-ce23c41d7641-W5-H03",
+          "claim_text": "Distinct coordinate or publication record",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "COMPONENT_RELATION_MODELING",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-0285c869e647",
+      "canonical_slug": "qsr-hshm-khrb-lmfjr-0285c8",
+      "name_ar": "قصر هشام (خربة المفجر)",
+      "name_en": "Hisham's Palace",
+      "governorate_ar": "أريحا",
+      "locality_ar": "أريحا",
+      "site_type_ar_draft": "قصر أموي",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 3 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-0285c869e647-W1-C01",
+          "claim_text": "The State Party submission dates the complex to 724–743 AD and says it was most likely built by Hisham and later decorated by al-Walid II.",
+          "verification_status": "CONFIRMED_AS_STATE_SUBMISSION",
+          "source_ids": [
+            "AUTH-UNESCO-HISHAM-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-0285c869e647-W1-C02",
+          "claim_text": "The submission records destruction in the 749 earthquake and excavations from 1935–1948 by the Palestinian Department of Antiquities under Dimitri Baramki with Robert Hamilton.",
+          "verification_status": "CONFIRMED_AS_STATE_SUBMISSION",
+          "source_ids": [
+            "AUTH-UNESCO-HISHAM-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-0285c869e647-W1-C03",
+          "claim_text": "The site includes a major bath complex and extensive mosaic decoration, including the Tree of Life panel.",
+          "verification_status": "CONFIRMED_AS_STATE_SUBMISSION",
+          "source_ids": [
+            "AUTH-UNESCO-HISHAM-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [],
+      "required_actions": [
+        "GOVERNED_REWRITE_ONLY"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-7551f628d089",
+      "canonical_slug": "qn-wdy-lqlt-7551f6",
+      "name_ar": "قناة وادي القلط",
+      "name_en": "",
+      "governorate_ar": "أريحا",
+      "locality_ar": "أريحا",
+      "site_type_ar_draft": "قناة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 4 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-7551f628d089-W5-C01",
+          "claim_text": "The wider El-Bariyah landscape contains permanent springs, wadis, monasteries, shrines, and long-term human adaptation to desert water resources.",
+          "verification_status": "CONFIRMED_BROAD_LANDSCAPE_CONTEXT_ONLY",
+          "source_ids": [
+            "W5-AUTH-UNESCO-EL-BARIYAH-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-7551f628d089-W5-H01",
+          "claim_text": "Exact channel identity and route",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-7551f628d089-W5-H02",
+          "claim_text": "Roman construction date",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-7551f628d089-W5-H03",
+          "claim_text": "Later Islamic repairs",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-7551f628d089-W5-H04",
+          "claim_text": "Current surviving sections and condition",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-c4d8c9fdd1f0",
+      "canonical_slug": "mqm-lnby-mws-c4d8c9",
+      "name_ar": "مقام النبي موسى",
+      "name_en": "",
+      "governorate_ar": "أريحا",
+      "locality_ar": "طريق القدس–أريحا",
+      "site_type_ar_draft": "مقام",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-c4d8c9fdd1f0-W5-C01",
+          "claim_text": "The official Palestinian portal identifies Nabi Musa as a Mamluk shrine complex associated institutionally with Sultan al-Zahir Baybars.",
+          "verification_status": "CONFIRMED_OFFICIAL_ARCHITECTURAL_IDENTITY",
+          "source_ids": [
+            "W5-AUTH-MOTA-NABI-MUSA-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-c4d8c9fdd1f0-W5-C02",
+          "claim_text": "The State of Palestine's El-Bariyah submission places Maqam an-Nabi Musa within the Islamic sacred and pilgrimage landscape.",
+          "verification_status": "CONFIRMED_AS_STATE_PARTY_LANDSCAPE_CONTEXT",
+          "source_ids": [
+            "W5-AUTH-UNESCO-EL-BARIYAH-001"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-c4d8c9fdd1f0-W5-H01",
+          "claim_text": "Complete Mamluk/Ottoman construction sequence",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-c4d8c9fdd1f0-W5-H02",
+          "claim_text": "Burial historicity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-c4d8c9fdd1f0-W5-H03",
+          "claim_text": "Exact component-by-component dates and rights",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "COMPONENT_RELATION_MODELING",
+        "DUPLICATE_OR_COMPONENT_RECONCILIATION",
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-2e45744cdab4",
+      "canonical_slug": "lmsjd-l-mry-lkbyr-2e4574",
+      "name_ar": "المسجد العمري الكبير",
+      "name_en": "Great Omari Mosque",
+      "governorate_ar": "غزة",
+      "locality_ar": "غزة (البلدة القديمة)",
+      "site_type_ar_draft": "مسجد",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-2e45744cdab4-W3-C01",
+          "claim_text": "UNESCO lists the Great Omari Mosque among the cultural properties in Gaza with verified damage.",
+          "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+          "source_ids": [
+            "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-2e45744cdab4-W3-C02",
+          "claim_text": "The 2026 State of Palestine Tentative List submission identifies it as the central congregational mosque of historic Gaza and describes Mamluk and Ottoman enlargement of a layered monument.",
+          "verification_status": "CONFIRMED_AS_STATE_PARTY_SUBMISSION",
+          "source_ids": [
+            "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-2e45744cdab4-W3-H01",
+          "claim_text": "Complete pagan/Byzantine/Crusader/Islamic building sequence",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-2e45744cdab4-W3-H02",
+          "claim_text": "Exact destruction severity and surviving fabric",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-2e45744cdab4-W3-H03",
+          "claim_text": "Current reconstruction status",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-21150eefdea6",
+      "canonical_slug": "tl-l-jwl-mdyn-gz-lqdym-21150e",
+      "name_ar": "تل العجول (مدينة غزة القديمة)",
+      "name_en": "",
+      "governorate_ar": "غزة",
+      "locality_ar": "غزة",
+      "site_type_ar_draft": "تل أثري",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-21150eefdea6-W3-C01",
+          "claim_text": "UNESCO lists Tell el-Ajjul among the archaeological sites with verified damage.",
+          "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+          "source_ids": [
+            "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-21150eefdea6-W3-C02",
+          "claim_text": "Academic and museum records identify Tell el-Ajjul as a separate Bronze Age archaeological site south of modern Gaza City, with excavated Middle and Late Bronze Age material.",
+          "verification_status": "CONFIRMED_CORE_ARCHAEOLOGICAL_IDENTITY",
+          "source_ids": [
+            "W3-AUTH-UCL-TELL-AJJUL-2021",
+            "W3-AUTH-BM-TELL-AJJUL-COLLECTION"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-21150eefdea6-W3-H01",
+          "claim_text": "Exact urban identification with ancient Gaza",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-21150eefdea6-W3-H02",
+          "claim_text": "Complete Bronze Age stratigraphy",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-21150eefdea6-W3-H03",
+          "claim_text": "Current damage severity and site boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-3ded44be126d",
+      "canonical_slug": "hmm-lsmr-3ded44",
+      "name_ar": "حمام السمرة",
+      "name_en": "",
+      "governorate_ar": "غزة",
+      "locality_ar": "غزة",
+      "site_type_ar_draft": "حمام",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-3ded44be126d-W3-C01",
+          "claim_text": "UNESCO lists Hamam As-Samra among Gaza properties with verified damage.",
+          "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+          "source_ids": [
+            "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-3ded44be126d-W3-C02",
+          "claim_text": "A Palestinian cultural-sector report hosted by UNESCO reported complete destruction on 30 December 2023 and described the bath as Gaza's last surviving historic hammam.",
+          "verification_status": "CONFIRMED_AS_ATTRIBUTED_REPORT_NOT_INDEPENDENT_FINDING",
+          "source_ids": [
+            "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-3ded44be126d-W3-H01",
+          "claim_text": "Foundation date and founder community",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-3ded44be126d-W3-H02",
+          "claim_text": "Exact destruction severity in 2026",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-3ded44be126d-W3-H03",
+          "claim_text": "Pre-damage architectural phase chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-5e98cf44d976",
+      "canonical_slug": "ql-brqwq-5e98cf",
+      "name_ar": "قلعة برقوق",
+      "name_en": "",
+      "governorate_ar": "غزة",
+      "locality_ar": "غزة",
+      "site_type_ar_draft": "قلعة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-5e98cf44d976-W3-C01",
+          "claim_text": "UNESCO lists Qal'at Barqouq in Khan Younis among properties with verified damage.",
+          "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+          "source_ids": [
+            "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-5e98cf44d976-W3-C02",
+          "claim_text": "The hosted Palestinian report attributes the castle to 1387 in the reign of Sultan Barquq and describes a caravan-route function and surviving façade.",
+          "verification_status": "CONFIRMED_AS_ATTRIBUTED_REPORT",
+          "source_ids": [
+            "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-5e98cf44d976-W3-H01",
+          "claim_text": "Exact construction date and patronage",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-5e98cf44d976-W3-H02",
+          "claim_text": "Original plan and surviving components",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-5e98cf44d976-W3-H03",
+          "claim_text": "Current structural stability",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-e1e3de7b8519",
+      "canonical_slug": "knys-lqdys-brfyryws-e1e3de",
+      "name_ar": "كنيسة القديس برفيريوس",
+      "name_en": "",
+      "governorate_ar": "غزة",
+      "locality_ar": "غزة",
+      "site_type_ar_draft": "كنيسة",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-e1e3de7b8519-W3-C01",
+          "claim_text": "UNESCO lists the Saint Porphyrios Orthodox Church Complex among the Gaza properties with verified damage.",
+          "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+          "source_ids": [
+            "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-e1e3de7b8519-W3-C02",
+          "claim_text": "The 2026 State Party submission describes an early fifth-century church that remains an active sanctuary, while the Jerusalem Patriarchate confirms the living ecclesiastical identity of the Gaza monastery.",
+          "verification_status": "CONFIRMED_AS_STATE_PARTY_AND_ECCLESIASTICAL_RECORD",
+          "source_ids": [
+            "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026",
+            "W3-AUTH-JERUSALEM-PATRIARCHATE-PORPHYRIOS"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-e1e3de7b8519-W3-H01",
+          "claim_text": "Full Byzantine/Crusader/later building chronology",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-e1e3de7b8519-W3-H02",
+          "claim_text": "Exact damage severity and casualty history",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-e1e3de7b8519-W3-H03",
+          "claim_text": "Current structural safety",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "IDENTITY_SPLIT_OR_CONFLATION_REPAIR"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-015f495c4236",
+      "canonical_slug": "mdyn-gz-lqdym-015f49",
+      "name_ar": "مدينة غزة القديمة",
+      "name_en": "Old City of Gaza",
+      "governorate_ar": "غزة",
+      "locality_ar": "البلدة القديمة",
+      "site_type_ar_draft": "مدينة تاريخية",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-015f495c4236-W3-C01",
+          "claim_text": "The State of Palestine submitted the Historic Centre of Gaza to UNESCO's Tentative List on 13 January 2026, defining a 1.7 km² historic core with four traditional quarters.",
+          "verification_status": "CONFIRMED_STATE_PARTY_SUBMISSION",
+          "source_ids": [
+            "W3-AUTH-UNESCO-GAZA-HISTORIC-CENTRE-2026"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-015f495c4236-W3-C02",
+          "claim_text": "UNESCO's March 2026 assessment verifies damage to a large number of named religious, archaeological, civic, and residential heritage properties within Gaza Governorate.",
+          "verification_status": "CONFIRMED_CURRENT_DAMAGE_CONTEXT",
+          "source_ids": [
+            "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-015f495c4236-W3-H01",
+          "claim_text": "Component-level completeness",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-015f495c4236-W3-H02",
+          "claim_text": "Current integrity of the 1.7 km² property",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-015f495c4236-W3-H03",
+          "claim_text": "Publication-ready five-millennia continuity narrative",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-a77381cd3cae",
+      "canonical_slug": "mqm-lshykh-rdwn-a77381",
+      "name_ar": "مقام الشيخ رضوان",
+      "name_en": "",
+      "governorate_ar": "غزة",
+      "locality_ar": "غزة",
+      "site_type_ar_draft": "مقام",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "لم تُثبت المراجعة الحالية ادعاءً تاريخياً مخصصاً لهذا السجل، ولذلك يبقى المحتوى التاريخي محجوباً حتى العثور على مصدر مناسب. بقي 4 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-a77381cd3cae-W3-H01",
+          "claim_text": "Exact identity and location",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-a77381cd3cae-W3-H02",
+          "claim_text": "Religious attribution",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-a77381cd3cae-W3-H03",
+          "claim_text": "Historical period",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-a77381cd3cae-W3-H04",
+          "claim_text": "Current condition",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "DEDICATED_SOURCE_DISCOVERY",
+        "NO_CONFIRMED_CLAIM_PUBLICATION_HOLD"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-99f520b3d607",
+      "canonical_slug": "myn-gz-lqdym-l-nt-99f520",
+      "name_ar": "ميناء غزة القديم (الأنطة)",
+      "name_en": "",
+      "governorate_ar": "غزة",
+      "locality_ar": "غزة",
+      "site_type_ar_draft": "ميناء",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "canonical_identity_preserved",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-99f520b3d607-W3-C01",
+          "claim_text": "UNESCO lists Anthedon Harbour among the Gaza sites with verified damage.",
+          "verification_status": "CONFIRMED_CURRENT_DAMAGE",
+          "source_ids": [
+            "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-99f520b3d607-W3-C02",
+          "claim_text": "The State Party Tentative List describes Anthedon as an ancient seaport in northwest Gaza with multi-period remains and explicitly notes uncertainty in precise site identification.",
+          "verification_status": "CONFIRMED_AS_STATE_PARTY_SUBMISSION",
+          "source_ids": [
+            "W3-AUTH-UNESCO-ANTHEDON-2012"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-99f520b3d607-W3-H01",
+          "claim_text": "Exact archaeological boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-99f520b3d607-W3-H02",
+          "claim_text": "Relationship to Maiumas",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-99f520b3d607-W3-H03",
+          "claim_text": "Current damage severity",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-0a78d22c1a69",
+      "canonical_slug": "khn-ywns-lqdym-0a78d2",
+      "name_ar": "خان يونس القديم",
+      "name_en": "",
+      "governorate_ar": "خان يونس",
+      "locality_ar": "خان يونس",
+      "site_type_ar_draft": "خان",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 2 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-0a78d22c1a69-W3-C01",
+          "claim_text": "UNESCO verifies damage to Qal'at Barqouq in Khan Younis Governorate.",
+          "verification_status": "CONFIRMED_COMPONENT_DAMAGE",
+          "source_ids": [
+            "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        },
+        {
+          "claim_id": "site-0a78d22c1a69-W3-C02",
+          "claim_text": "A Palestinian report hosted by UNESCO records damage to historic houses in Khan Younis and describes Qal'at Barqouq as a principal historic component.",
+          "verification_status": "CONFIRMED_AS_ATTRIBUTED_REPORT",
+          "source_ids": [
+            "W3-AUTH-UNESCO-PALESTINE-CULTURAL-REPORT-2023"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-0a78d22c1a69-W3-H01",
+          "claim_text": "Old-town boundary and urban fabric",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-0a78d22c1a69-W3-H02",
+          "claim_text": "Complete historical-house inventory",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-0a78d22c1a69-W3-H03",
+          "claim_text": "Current integrity of Khan Younis historic core",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "COMPONENT_RELATION_MODELING",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "canonical_site_id": "site-ee0e5bf1f753",
+      "canonical_slug": "rfh-ltrykhy-ee0e5b",
+      "name_ar": "رفح التاريخية",
+      "name_en": "Historic Rafah",
+      "governorate_ar": "رفح",
+      "locality_ar": "رفح",
+      "site_type_ar_draft": "مدينة تاريخية/محطة حدودية",
+      "display_status": "مسودة خاضعة للتدقيق",
+      "publication_status": "blocked",
+      "identity_review_status": "pending",
+      "governed_summary_ar": "أثبتت المراجعة وجود 1 ادعاء أو سياق مدعوم ضمن نطاق مصادر محددة، مع بقاء الاعتماد النهائي خاضعاً للمراجعة التاريخية والببليوغرافية. بقي 3 ادعاء أو مجموعة ادعاءات معلقة.",
+      "confirmed_claims_for_editorial_review": [
+        {
+          "claim_id": "site-ee0e5bf1f753-W3-C01",
+          "claim_text": "UNESCO verifies damage to Tell Rafah in Rafah Governorate.",
+          "verification_status": "CONFIRMED_ARCHAEOLOGICAL_DAMAGE",
+          "source_ids": [
+            "W3-AUTH-UNESCO-GAZA-IMPACT-2026"
+          ],
+          "publication_use": "BLOCKED_PENDING_ARABIC_REWRITE_AND_HUMAN_REVIEW"
+        }
+      ],
+      "held_claims_not_for_publication": [
+        {
+          "held_claim_id": "site-ee0e5bf1f753-W3-H01",
+          "claim_text": "Exact Tell Rafah chronology and boundary",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-ee0e5bf1f753-W3-H02",
+          "claim_text": "Historic urban fabric of Rafah",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        },
+        {
+          "held_claim_id": "site-ee0e5bf1f753-W3-H03",
+          "claim_text": "Current damage severity beyond UNESCO's verification",
+          "status": "HELD",
+          "publication_use": "BLOCKED"
+        }
+      ],
+      "required_actions": [
+        "CLAIM_LEVEL_REVIEW_QUEUE",
+        "SITE_TYPE_OR_CLUSTER_RECLASSIFICATION"
+      ],
+      "human_approval_required": true
+    }
+  ]
+}

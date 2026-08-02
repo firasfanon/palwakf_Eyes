@@ -54,22 +54,21 @@ final governedDraftSitesProvider = Provider<List<HeritageSite>>(
       .toList(growable: false),
 );
 
-final draftSourceRegistryProvider = Provider<List<DraftSourceRegistryEntry>>(
+final draftSourceRegistryProvider =
+    Provider<List<DraftSourceRegistryEntry>>(
   (ref) => governedSourceRegistry,
 );
 
 final governedResearchBacklogProvider =
     Provider<List<GovernedResearchBacklogItem>>(
-      (ref) => governedResearchBacklog,
-    );
+  (ref) => governedResearchBacklog,
+);
 
 final governorateCoverageProvider = Provider<List<GovernorateCoverage>>(
   (ref) => fullGovernorateCoverage,
 );
 
-final heritageSiteBySlugProvider = Provider.family<HeritageSite?, String>((
-  ref,
-  slug,
-) {
+final heritageSiteBySlugProvider =
+    Provider.family<HeritageSite?, String>((ref, slug) {
   return ref.watch(heritageSiteRepositoryProvider).findBySlug(slug);
 });

@@ -3,20 +3,23 @@ import 'package:pal_eyes/features/places/domain/draft_content_profile.dart';
 import 'package:pal_eyes/features/places/domain/historical_content.dart';
 import 'package:pal_eyes/features/places/domain/original_historical_draft_layer.dart';
 
-enum GovernedPageCategory { governedDraft, limitedResearch }
+enum GovernedPageCategory {
+  governedDraft,
+  limitedResearch,
+}
 
 extension GovernedPageCategoryX on GovernedPageCategory {
   String get labelAr => switch (this) {
-    GovernedPageCategory.governedDraft => 'صفحة مسودة محكومة',
-    GovernedPageCategory.limitedResearch => 'صفحة بحث محدودة',
-  };
+        GovernedPageCategory.governedDraft => 'صفحة مسودة محكومة',
+        GovernedPageCategory.limitedResearch => 'صفحة بحث محدودة',
+      };
 
   String get descriptionAr => switch (this) {
-    GovernedPageCategory.governedDraft =>
-      'تضم رواية عربية مراجعة تاريخياً ومتصلة بمصادر قابلة للتعقب.',
-    GovernedPageCategory.limitedResearch =>
-      'تعرض الهوية وفجوات التوثيق فقط، دون رواية تاريخية غير متحققة.',
-  };
+        GovernedPageCategory.governedDraft =>
+          'تضم رواية عربية مراجعة تاريخياً ومتصلة بمصادر قابلة للتعقب.',
+        GovernedPageCategory.limitedResearch =>
+          'تعرض الهوية وفجوات التوثيق فقط، دون رواية تاريخية غير متحققة.',
+      };
 }
 
 class HeritageSite {
@@ -107,11 +110,14 @@ class HeritageSite {
       pageCategory == GovernedPageCategory.governedDraft;
   bool get isLimitedResearch =>
       pageCategory == GovernedPageCategory.limitedResearch;
-  bool get hasOriginalHistoricalDraft => originalHistoricalDraft != null;
+  bool get hasOriginalHistoricalDraft =>
+      originalHistoricalDraft != null;
   bool get hasOriginalExpandedNarrative =>
       originalHistoricalDraft?.hasExpandedNarrative ?? false;
 
-  HeritageSite withOriginalHistoricalDraft(OriginalHistoricalDraftLayer layer) {
+  HeritageSite withOriginalHistoricalDraft(
+    OriginalHistoricalDraftLayer layer,
+  ) {
     return HeritageSite(
       id: id,
       slug: slug,
@@ -153,13 +159,15 @@ class HeritageSite {
     );
   }
 
-  int get claimCount =>
-      narrativeSections.fold(0, (total, section) => total + section.claimCount);
+  int get claimCount => narrativeSections.fold(
+        0,
+        (total, section) => total + section.claimCount,
+      );
 
   int get citedClaimCount => narrativeSections.fold(
-    0,
-    (total, section) => total + section.citedClaimCount,
-  );
+        0,
+        (total, section) => total + section.citedClaimCount,
+      );
 
   bool matches(String query) {
     final normalized = normalizeArabicSearch(query);

@@ -33,10 +33,7 @@ void main() {
     expect(source.contains("publication_status = 'PUBLISHED'"), isTrue);
     expect(source.contains('original_draft_layers'), isTrue);
     expect(source.contains('public_original_draft'), isFalse);
-    expect(
-      source.contains('grant insert on all tables in schema pal_eyes to anon'),
-      isFalse,
-    );
+    expect(source.contains('grant insert on all tables in schema pal_eyes to anon'), isFalse);
   });
 
   test('seed imports governed counts without public release', () {
@@ -62,7 +59,10 @@ void main() {
       ).allMatches(source),
       hasLength(4),
     );
-    expect(source.contains('public_map_use=excluded.public_map_use'), isTrue);
+    expect(
+      source.contains('public_map_use=excluded.public_map_use'),
+      isTrue,
+    );
     expect(source.contains('public_map_use=BLOCKED'), isFalse);
   });
 }

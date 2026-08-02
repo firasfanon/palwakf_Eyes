@@ -37,17 +37,8 @@ void main() {
         continue;
       }
       final source = file.readAsStringSync();
-      for (final marker in <String>[
-        '.insert(',
-        '.update(',
-        '.upsert(',
-        '.delete(',
-      ]) {
-        expect(
-          source.contains(marker),
-          isFalse,
-          reason: '${file.path}:$marker',
-        );
+      for (final marker in <String>['.insert(', '.update(', '.upsert(', '.delete(']) {
+        expect(source.contains(marker), isFalse, reason: '${file.path}:$marker');
       }
     }
   });

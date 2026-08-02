@@ -1,16 +1,16 @@
 project:
   id: pal_eyes
   name_ar: "بعيون فلسطينية"
-  version: "4.0.0"
-  build: 11
-  date: "2026-07-14"
-  project_root: "C:\\Users\\DELL\\StudioProjects\\Pal_Eyes"
+  version: "9.0.1"
+  build: 30
+  date: "2026-08-02"
+  project_root: "PORTABLE_GITHUB_WORKTREE"
 
 baseline:
-  current: "PAL_EYES_IMMERSIVE_PUBLIC_EXPERIENCE_AND_UNIFIED_PRODUCT_SURFACES_R4_0_0_20260715"
-  parent: "PAL_EYES_FULL_DRAFT_SITE_CATALOG_SOURCE_REGISTRY_AND_GOVERNORATE_COVERAGE_R3_0_3_20260715"
-  batch: "MEGA_BATCH_PAL_EYES_IMMERSIVE_PUBLIC_EXPERIENCE_AND_UNIFIED_PRODUCT_SURFACES_V1"
-  status: "BUILT_STATIC_VERIFIED_LOCAL_FLUTTER_VALIDATION_PENDING"
+  current: "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802"
+  parent: "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0_20260802"
+  batch: "PAL_EYES_DIRECT_FLUTTER_R9_TARGETED_FORMAT_BROWSER_UAT_AND_BASELINE_PROMOTION_CLOSURE_V1"
+  status: "SESSION_RECONSTRUCTED_GITHUB_CANDIDATE_PENDING_FORMAT_REPLAY"
 
 content:
   reference_document_sha256: "1f82a6c9941063436b40d13e258f7d03b1b3b00ef209494fe7032ee756673f6d"
@@ -82,3 +82,22 @@ immersive_ui_ux:
   responsive_mobile: true
   dark_mode_aligned: true
   static_contract: "PASS"
+
+
+r9_0_1_acceptance:
+  targeted_format: "PASS_12_FILES"
+  static_verify: "PASS"
+  flutter_analyze: "PASS"
+  flutter_test: "PASS_65"
+  git_diff_check: "PASS"
+  chrome_runtime_smoke: "PASS"
+  edge_runtime_smoke: "PASS"
+  desktop_browser_uat: "PASS"
+  desktop_detail_surfaces: "PASS"
+  narrow_mobile_visual_uat: "PASS"
+  runtime_exceptions: 0
+  visible_render_overflows: 0
+  browser_uat_closure: "EXPLICIT_OPERATOR_AUTHORIZATION"
+  exact_390x844_telemetry: "NOT_SEPARATELY_CAPTURED_ACCEPTED_BY_OPERATOR"
+  manual_keyboard_focus_capture: "NOT_SEPARATELY_CAPTURED_ACCEPTED_BY_OPERATOR"
+  osm_tile_policy_warning: "OPEN_PRODUCTION_READINESS_BLOCKER"

@@ -34,28 +34,25 @@ class _SourcesScreenState extends ConsumerState<SourcesScreen> {
   Widget build(BuildContext context) {
     final registry = ref.watch(draftSourceRegistryProvider);
     final query = _queryController.text.trim().toLowerCase();
-    final filtered = registry
-        .where((entry) {
-          final haystack = <String>[
-            entry.id,
-            entry.title,
-            entry.attribution,
-            entry.sourceTypeAr,
-            entry.note,
-            entry.url,
-          ].join(' ').toLowerCase();
-          final roleMatches =
-              _role == 'الكل' ||
-              (_role == 'مصادر القصص والمواقع'
-                  ? entry.isEditorialSource
-                  : !entry.isEditorialSource);
-          final rightsMatches =
-              _rights == 'الكل' || entry.textReuseStatus == _rights;
-          return (query.isEmpty || haystack.contains(query)) &&
-              roleMatches &&
-              rightsMatches;
-        })
-        .toList(growable: false);
+    final filtered = registry.where((entry) {
+      final haystack = <String>[
+        entry.id,
+        entry.title,
+        entry.attribution,
+        entry.sourceTypeAr,
+        entry.note,
+        entry.url,
+      ].join(' ').toLowerCase();
+      final roleMatches = _role == 'الكل' ||
+          (_role == 'مصادر القصص والمواقع'
+              ? entry.isEditorialSource
+              : !entry.isEditorialSource);
+      final rightsMatches =
+          _rights == 'الكل' || entry.textReuseStatus == _rights;
+      return (query.isEmpty || haystack.contains(query)) &&
+          roleMatches &&
+          rightsMatches;
+    }).toList(growable: false);
 
     final visible = filtered.take(_visibleCount).toList(growable: false);
     final rightsValues = <String>{
@@ -63,7 +60,8 @@ class _SourcesScreenState extends ConsumerState<SourcesScreen> {
       ...registry
           .map((entry) => entry.textReuseStatus)
           .where((value) => value.isNotEmpty),
-    }.toList()..sort();
+    }.toList()
+      ..sort();
 
     return PalEyesPage(
       title: 'مكتبة المصادر',
@@ -154,8 +152,8 @@ class _SourcesScreenState extends ConsumerState<SourcesScreen> {
               Text(
                 'المراجع',
                 style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                  fontWeight: FontWeight.w900,
-                ),
+                      fontWeight: FontWeight.w900,
+                    ),
               ),
               Chip(label: Text('${filtered.length} من ${registry.length}')),
             ],
@@ -249,7 +247,9 @@ class _SourceCard extends StatelessWidget {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  const CircleAvatar(child: Icon(Icons.library_books_outlined)),
+                  const CircleAvatar(
+                    child: Icon(Icons.library_books_outlined),
+                  ),
                   const SizedBox(width: 14),
                   Expanded(
                     child: Column(
@@ -257,15 +257,20 @@ class _SourceCard extends StatelessWidget {
                       children: <Widget>[
                         Text(
                           entry.title,
-                          style: Theme.of(context).textTheme.titleMedium
-                              ?.copyWith(fontWeight: FontWeight.w900),
+                          style:
+                              Theme.of(context).textTheme.titleMedium?.copyWith(
+                                    fontWeight: FontWeight.w900,
+                                  ),
                         ),
                         const SizedBox(height: 5),
                         Text(entry.attribution),
                       ],
                     ),
                   ),
-                  ContentStatusBadge(status: entry.status, compact: true),
+                  ContentStatusBadge(
+                    status: entry.status,
+                    compact: true,
+                  ),
                 ],
               ),
               const SizedBox(height: 10),
@@ -276,7 +281,9 @@ class _SourceCard extends StatelessWidget {
                 runSpacing: 7,
                 children: <Widget>[
                   Chip(label: Text(entry.sourceTypeAr)),
-                  Chip(label: Text('${entry.mentionedSiteCount} مواقع مرتبطة')),
+                  Chip(
+                    label: Text('${entry.mentionedSiteCount} مواقع مرتبطة'),
+                  ),
                   Chip(label: Text('النص: ${entry.textReuseStatus}')),
                 ],
               ),

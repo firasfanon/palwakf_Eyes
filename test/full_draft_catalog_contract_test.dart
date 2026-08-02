@@ -16,9 +16,8 @@ void main() {
     final expanded = fullDraftSiteCatalog
         .where((site) => site.hasExpandedNarrative)
         .length;
-    final mapped = fullDraftSiteCatalog
-        .where((site) => site.hasCoordinates)
-        .length;
+    final mapped =
+        fullDraftSiteCatalog.where((site) => site.hasCoordinates).length;
 
     expect(expanded, ContentCatalogMetrics.expandedNarrativeCount);
     expect(expanded, 47);
@@ -29,12 +28,21 @@ void main() {
   test('catalog includes key Palestinian sites from the draft', () {
     final names = fullDraftSiteCatalog.map((site) => site.nameAr).toSet();
 
-    expect(names.any((name) => name.contains('المسجد الأقصى')), isTrue);
+    expect(
+      names.any((name) => name.contains('المسجد الأقصى')),
+      isTrue,
+    );
     expect(names.contains('الحرم الإبراهيمي'), isTrue);
     expect(names.contains('كنيسة المهد'), isTrue);
     expect(names.contains('برك سليمان'), isTrue);
-    expect(names.any((name) => name.startsWith('سبسطية')), isTrue);
-    expect(names.any((name) => name.startsWith('تل السلطان')), isTrue);
+    expect(
+      names.any((name) => name.startsWith('سبسطية')),
+      isTrue,
+    );
+    expect(
+      names.any((name) => name.startsWith('تل السلطان')),
+      isTrue,
+    );
     expect(names.contains('مدينة غزة القديمة'), isTrue);
     expect(names.contains('رفح التاريخية'), isTrue);
   });
@@ -51,9 +59,8 @@ void main() {
   });
 
   test('unmapped sites remain in the catalog', () {
-    final unmapped = fullDraftSiteCatalog
-        .where((site) => !site.hasCoordinates)
-        .length;
+    final unmapped =
+        fullDraftSiteCatalog.where((site) => !site.hasCoordinates).length;
     expect(
       unmapped,
       ContentCatalogMetrics.extractedSiteCount -
