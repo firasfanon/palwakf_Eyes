@@ -2,9 +2,9 @@
   "project_id": "pal_eyes",
   "target_baseline": "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802",
   "version": "9.0.1+30",
-  "generated_at": "2026-08-02T23:36:30+03:00",
+  "generated_at": "2026-08-03T01:27:32+03:00",
   "reconstruction_mode": "SESSION_SOURCE_REPLAY",
-  "status": "ACCEPTED_LOCAL_BASELINE_AFTER_FORMAT_REPLAY",
+  "status": "ACCEPTED_GITHUB_CANDIDATE_AFTER_FORMAT_REPLAY_AND_CI",
   "inputs": {
     "r9_0_0_full_source_zip": {
       "filename": "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0_20260802_FULL(1).zip",
@@ -74,6 +74,21 @@
     "flutter_test": "PASS",
     "git_diff_check": "PASS",
     "byte_identity_to_unavailable_worktree": "NOT_ASSERTED",
-    "merge_readiness": "READY_FOR_PR_AND_GITHUB_CI"
+    "merge_readiness": "READY_FOR_FINAL_PR_ACCEPTANCE_AND_MERGE_DECISION"
+  },
+  "github_promotion": {
+    "repository": "firasfanon/Pal_Eyes",
+    "pull_request_number": 1,
+    "pull_request_state": "OPEN_DRAFT",
+    "source_candidate_head": "14e0a64d40a58b1d4cdf0e3646e001376599bc77",
+    "source_candidate_workflow_run_id": 30769326139,
+    "source_candidate_ci": "SUCCESS",
+    "metadata_closure_batch": "PAL_EYES_R9_0_1_GITHUB_METADATA_RECONCILIATION_CLOSURE_V1",
+    "metadata_only": true,
+    "metadata_closure_requires_ci_before_merge": true,
+    "merge_authorization": "NOT_YET_ISSUED",
+    "main_merged": false,
+    "next_gate": "PR_FINAL_ACCEPTANCE_AND_MERGE_DECISION",
+    "recorded_at": "2026-08-03T01:27:32+03:00"
   }
 }

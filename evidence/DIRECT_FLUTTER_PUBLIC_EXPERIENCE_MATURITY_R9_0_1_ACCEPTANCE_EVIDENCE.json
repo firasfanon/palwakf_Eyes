@@ -4,15 +4,16 @@
   "baseline": "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802",
   "parent_baseline": "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0_20260802",
   "version": "9.0.1+30",
-  "generated_at": "2026-08-02T23:36:30+03:00",
-  "result": "PASS_RECORDED_SESSION_EVIDENCE_RECONSTRUCTED_SOURCE_PENDING_FORMAT_REPLAY",
+  "generated_at": "2026-08-03T01:27:32+03:00",
+  "result": "PASS_GITHUB_CANDIDATE_AFTER_FORMAT_REPLAY_AND_CI",
   "gates": {
-    "targeted_format": "PASS_RECORDED_SESSION_EVIDENCE",
+    "targeted_format": "PASS_12_FILES",
     "static_verify": "PASS",
     "flutter_analyze": "PASS",
     "flutter_test": "PASS_65",
     "git_diff_check": "PASS",
-    "test_count": 65
+    "test_count": 65,
+    "github_ci": "SUCCESS"
   },
   "browser_uat": {
     "closure": "EXPLICIT_OPERATOR_AUTHORIZATION",
@@ -41,5 +42,20 @@
     "osm_tile_policy_warning": "OPEN_PRODUCTION_READINESS_BLOCKER"
   },
   "reconstruction_mode": "SESSION_SOURCE_REPLAY",
-  "byte_identity_to_unavailable_worktree": "UNVERIFIED"
+  "byte_identity_to_unavailable_worktree": "UNVERIFIED",
+  "github_promotion": {
+    "repository": "firasfanon/Pal_Eyes",
+    "pull_request_number": 1,
+    "pull_request_state": "OPEN_DRAFT",
+    "source_candidate_head": "14e0a64d40a58b1d4cdf0e3646e001376599bc77",
+    "source_candidate_workflow_run_id": 30769326139,
+    "source_candidate_ci": "SUCCESS",
+    "metadata_closure_batch": "PAL_EYES_R9_0_1_GITHUB_METADATA_RECONCILIATION_CLOSURE_V1",
+    "metadata_only": true,
+    "metadata_closure_requires_ci_before_merge": true,
+    "merge_authorization": "NOT_YET_ISSUED",
+    "main_merged": false,
+    "next_gate": "PR_FINAL_ACCEPTANCE_AND_MERGE_DECISION",
+    "recorded_at": "2026-08-03T01:27:32+03:00"
+  }
 }

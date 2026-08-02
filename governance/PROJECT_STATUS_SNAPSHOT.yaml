@@ -10,7 +10,7 @@ baseline:
   current: "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802"
   parent: "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0_20260802"
   batch: "PAL_EYES_DIRECT_FLUTTER_R9_TARGETED_FORMAT_BROWSER_UAT_AND_BASELINE_PROMOTION_CLOSURE_V1"
-  status: "SESSION_RECONSTRUCTED_GITHUB_CANDIDATE_PENDING_FORMAT_REPLAY"
+  status: "ACCEPTED_GITHUB_CANDIDATE_AFTER_FORMAT_REPLAY_AND_CI"
 
 content:
   reference_document_sha256: "1f82a6c9941063436b40d13e258f7d03b1b3b00ef209494fe7032ee756673f6d"
@@ -39,11 +39,11 @@ product:
 
 runtime:
   static_contract: "PASS"
-  flutter_pub_get: "PENDING_USER_ENVIRONMENT"
-  flutter_analyze: "PENDING_USER_ENVIRONMENT"
-  flutter_test: "PENDING_USER_ENVIRONMENT"
-  flutter_build_web: "PENDING_USER_ENVIRONMENT"
-  browser_uat: "PENDING_USER_ENVIRONMENT"
+  flutter_pub_get: "PASS_LOCAL_AND_CI"
+  flutter_analyze: "PASS_LOCAL_AND_CI"
+  flutter_test: "PASS_65_LOCAL_AND_CI"
+  flutter_build_web: "PASS_LOCAL"
+  browser_uat: "PASS_CLOSED_BY_EXPLICIT_OPERATOR_AUTHORIZATION"
 
 boundaries:
   database_mutation: "NONE"
@@ -101,3 +101,21 @@ r9_0_1_acceptance:
   exact_390x844_telemetry: "NOT_SEPARATELY_CAPTURED_ACCEPTED_BY_OPERATOR"
   manual_keyboard_focus_capture: "NOT_SEPARATELY_CAPTURED_ACCEPTED_BY_OPERATOR"
   osm_tile_policy_warning: "OPEN_PRODUCTION_READINESS_BLOCKER"
+
+# PAL_EYES_R9_0_1_GITHUB_METADATA_RECONCILIATION_CLOSURE_V1
+github_promotion_closure:
+  baseline: "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802"
+  status: "ACCEPTED_GITHUB_CANDIDATE_AFTER_FORMAT_REPLAY_AND_CI"
+  repository: "firasfanon/Pal_Eyes"
+  pull_request_number: 1
+  pull_request_state: "OPEN_DRAFT"
+  source_candidate_head: "14e0a64d40a58b1d4cdf0e3646e001376599bc77"
+  source_candidate_workflow_run_id: 30769326139
+  source_candidate_ci: "SUCCESS"
+  metadata_closure_batch: "PAL_EYES_R9_0_1_GITHUB_METADATA_RECONCILIATION_CLOSURE_V1"
+  metadata_only: true
+  metadata_closure_requires_ci_before_merge: true
+  merge_authorization: "NOT_YET_ISSUED"
+  main_merged: false
+  next_gate: "PR_FINAL_ACCEPTANCE_AND_MERGE_DECISION"
+  recorded_at: "2026-08-03T01:27:32+03:00"

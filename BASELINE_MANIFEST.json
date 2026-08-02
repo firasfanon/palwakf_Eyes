@@ -5,8 +5,8 @@
   "version": "9.0.1",
   "build": 30,
   "date": "2026-08-02",
-  "generated_at": "2026-08-03T01:05:08+03:00",
-  "status": "ACCEPTED_LOCAL_BASELINE_AFTER_FORMAT_REPLAY",
+  "generated_at": "2026-08-03T01:27:32+03:00",
+  "status": "ACCEPTED_GITHUB_CANDIDATE_AFTER_FORMAT_REPLAY_AND_CI",
   "reconstruction_mode": "SESSION_SOURCE_REPLAY",
   "manifest_self_excluded": true,
   "verification": {
@@ -58,8 +58,8 @@
     },
     {
       "path": "PAL_EYES_BASELINE_ID.txt",
-      "sha256": "c4fe959e5aa74b379c0d5a58d2e0d46645de4fd4a956e54e8315c3af003464d1",
-      "size_bytes": 2135
+      "sha256": "9389c8900a9c93ca78ee408ab92cf4470dc35c9c91b2c17121c83b84be80c028",
+      "size_bytes": 2731
     },
     {
       "path": "PAL_EYES_PROJECT_COMPREHENSIVE_GUIDE.md",
@@ -143,8 +143,8 @@
     },
     {
       "path": "data/governance/PAL_EYES_PROJECT_MEMORY_FILE_MANIFEST_CURRENT.json",
-      "sha256": "2d9a95ed1a0194296e0e1782c47d676d54a75184f3563799fc5ce75e6ab01b29",
-      "size_bytes": 2898
+      "sha256": "9092fb726646536fbc77d7a5af233ddbd03206a0ac8bad63fd3307007769e71a",
+      "size_bytes": 3581
     },
     {
       "path": "data/governance/PAL_EYES_PROJECT_UPDATE_LOG.jsonl",
@@ -673,13 +673,13 @@
     },
     {
       "path": "docs/SESSION_HANDOFF_20260802_R9_0_1_FINAL.md",
-      "sha256": "e6bc2ee0dd5c3ef04f9f2f0dbb662b5bd765e6928d47d6c03a87fb4fdd59d5c5",
-      "size_bytes": 1647
+      "sha256": "d0c44798d0ea885ef2301e5f2a52aacaf9d5551cf9291e5c65f20caf78cbaa6d",
+      "size_bytes": 2265
     },
     {
       "path": "docs/SESSION_RECONSTRUCTION_ATTESTATION_20260802.md",
-      "sha256": "02817f06642ac37a435086324633480a08e12d6dc1dea8280a1ac3b65480f4ad",
-      "size_bytes": 1831
+      "sha256": "0b9ea7a29f24e3301b885b1790b33bdb445f74877b293ab5553eafc20d6d119e",
+      "size_bytes": 2756
     },
     {
       "path": "docs/architecture/PAL_EYES_OPERATIONAL_BACKEND_AND_WORKFLOW_ARCHITECTURE_R7_0_0.md",
@@ -723,18 +723,18 @@
     },
     {
       "path": "docs/project_memory/PAL_EYES_PROJECT_MEMORY_CURRENT.md",
-      "sha256": "4c5c24cad0447aa103e53dc0304eea90ed25118e5aeffbe1a2d3249f774340a2",
-      "size_bytes": 8977
+      "sha256": "c613d7a0e42188c36a90dc0fe9d96990ce8c5cf4dfc312ec324f44834063cbee",
+      "size_bytes": 9608
     },
     {
       "path": "docs/project_memory/PAL_EYES_PROJECT_STATE_SNAPSHOT_CURRENT.json",
-      "sha256": "431676aaa946ec39c0e4e974a339891d296e83b1dc55a025103501a125ccfda3",
-      "size_bytes": 8111
+      "sha256": "4eab723abf8471bc83f90a297ebb9eedbd17dad0194130bb3c7246f04690707e",
+      "size_bytes": 9569
     },
     {
       "path": "docs/project_memory/PAL_EYES_SESSION_HANDOFF_CURRENT.md",
-      "sha256": "e6bc2ee0dd5c3ef04f9f2f0dbb662b5bd765e6928d47d6c03a87fb4fdd59d5c5",
-      "size_bytes": 1647
+      "sha256": "d0c44798d0ea885ef2301e5f2a52aacaf9d5551cf9291e5c65f20caf78cbaa6d",
+      "size_bytes": 2265
     },
     {
       "path": "evidence/BASELINE_INTEGRITY_REPORT.txt",
@@ -813,8 +813,8 @@
     },
     {
       "path": "evidence/DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_ACCEPTANCE_EVIDENCE.json",
-      "sha256": "e20e8596cf488364234f5d515bc65aa98294ef30c22e633299c48e940a8cfd1b",
-      "size_bytes": 1681
+      "sha256": "d62320566ca3007cd502b0ef8ab44f9f4d0ef6e6c19753298fd2b3f0a0c7ebce",
+      "size_bytes": 2321
     },
     {
       "path": "evidence/EXTENSION_IMPORT_ALIGNMENT_HOTFIX_EVIDENCE.json",
@@ -1043,8 +1043,8 @@
     },
     {
       "path": "evidence/R9_0_1_SESSION_RECONSTRUCTION_ATTESTATION.json",
-      "sha256": "4ed1f23ce0a408804391e01f37232ee1e617607ad248c0185bd408a05630313e",
-      "size_bytes": 3224
+      "sha256": "11c2af583a2c2ab8789ddd32ab4bf7e89108a4f0a9f7778ab448cfadabfcd129",
+      "size_bytes": 3909
     },
     {
       "path": "evidence/REPOSITORY_RUNTIME_DISCOVERY_EVIDENCE.json",
@@ -1088,8 +1088,8 @@
     },
     {
       "path": "governance/PROJECT_STATUS_SNAPSHOT.yaml",
-      "sha256": "e84be46fa51d60669509a665ba51f548d1288c4855dfb3bd4cbb4170c8e8523b",
-      "size_bytes": 3170
+      "sha256": "91d31b8ca90f7c7f0168b2d6fa7b81db20afe6c6a37459dcb3355f1697916d58",
+      "size_bytes": 3946
     },
     {
       "path": "lib/app/app.dart",
@@ -1791,5 +1791,20 @@
       "sha256": "0a822d581c9e867898d7bf8105b47f9198fdabdbc47e0ffabae0873802e7da50",
       "size_bytes": 356
     }
-  ]
+  ],
+  "github_promotion": {
+    "repository": "firasfanon/Pal_Eyes",
+    "pull_request_number": 1,
+    "pull_request_state": "OPEN_DRAFT",
+    "source_candidate_head": "14e0a64d40a58b1d4cdf0e3646e001376599bc77",
+    "source_candidate_workflow_run_id": 30769326139,
+    "source_candidate_ci": "SUCCESS",
+    "metadata_closure_batch": "PAL_EYES_R9_0_1_GITHUB_METADATA_RECONCILIATION_CLOSURE_V1",
+    "metadata_only": true,
+    "metadata_closure_requires_ci_before_merge": true,
+    "merge_authorization": "NOT_YET_ISSUED",
+    "main_merged": false,
+    "next_gate": "PR_FINAL_ACCEPTANCE_AND_MERGE_DECISION",
+    "recorded_at": "2026-08-03T01:27:32+03:00"
+  }
 }
