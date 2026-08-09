@@ -1,0 +1,57 @@
+name: Pal Eyes R9.0.2 OSM policy candidate
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.38.10"
+          channel: stable
+          cache: true
+
+      - name: Flutter and Dart versions
+        run: |
+          flutter --version
+          dart --version
+
+      - name: Flutter pub get
+        run: flutter pub get
+
+      - name: Targeted Dart format gate
+        run: |
+          dart format --output=none --set-exit-if-changed \
+            lib/core/config/app_environment.dart \
+            lib/core/config/map_tile_provider_policy.dart \
+            lib/core/widgets/map_tile_policy_surface.dart \
+            lib/features/map/presentation/map_screen.dart \
+            test/map_tile_provider_policy_test.dart \
+            test/map_tile_policy_surface_test.dart
+
+      - name: OSM policy verifier
+        run: python3 tools/verify_osm_tile_provider_policy_r9_0_2.py
+
+      - name: Flutter analyze
+        run: flutter analyze --no-pub
+
+      - name: Flutter tests
+        run: flutter test --no-pub --reporter expanded
+
+      - name: Flutter web release build
+        run: flutter build web --release --no-pub
+
+      - name: Whitespace gate
+        run: git diff --check

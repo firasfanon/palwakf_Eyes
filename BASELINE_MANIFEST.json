@@ -1,24 +1,14 @@
 {
   "project_id": "pal_eyes",
-  "baseline_name": "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802",
-  "parent_baseline": "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_0_20260802",
-  "version": "9.0.1",
-  "build": 30,
-  "date": "2026-08-02",
-  "generated_at": "2026-08-03T01:27:32+03:00",
-  "status": "ACCEPTED_GITHUB_CANDIDATE_AFTER_FORMAT_REPLAY_AND_CI",
-  "reconstruction_mode": "SESSION_SOURCE_REPLAY",
+  "baseline_name": "PAL_EYES_OSM_TILE_PROVIDER_POLICY_AND_PRODUCTION_READINESS_R9_0_2_20260803",
+  "parent_baseline": "PAL_EYES_DIRECT_FLUTTER_PUBLIC_EXPERIENCE_MATURITY_R9_0_1_20260802",
+  "authoritative_parent_commit": "21d70b068870be72e573140ceb7a9ba17e644da3",
+  "version": "9.0.2",
+  "build": 31,
+  "date": "2026-08-03",
+  "generated_at": "2026-08-02T23:42:28.603289+00:00",
+  "status": "BUILT_PENDING_LOCAL_VALIDATION",
   "manifest_self_excluded": true,
-  "verification": {
-    "targeted_format_replay": "PASS",
-    "static_verify": "PASS",
-    "flutter_analyze": "PASS",
-    "flutter_test": "PASS",
-    "git_diff_check": "PASS",
-    "browser_uat": "CLOSED_BY_EXPLICIT_OPERATOR_AUTHORIZATION",
-    "runtime_exceptions": 0,
-    "visible_render_overflows": 0
-  },
   "governance": {
     "database_write": false,
     "supabase_apply": false,
@@ -27,14 +17,16 @@
     "approved_media": 0,
     "publication": "BLOCKED",
     "production_deployment": "NOT_APPROVED",
-    "osm_tile_policy_warning": "OPEN_PRODUCTION_READINESS_BLOCKER"
+    "production_tile_runtime": "FAIL_CLOSED_UNTIL_APPROVED_EXTERNAL_PROVIDER",
+    "prefetch": "FORBIDDEN",
+    "offline_tile_archive": "FORBIDDEN"
   },
-  "file_count": 352,
+  "file_count": 360,
   "files": [
     {
       "path": ".env.example",
-      "sha256": "7aa2ee30114020820536ab90e90107afbd14d36c0dd7c4f2af9dc5c2edb29067",
-      "size_bytes": 154
+      "sha256": "e22ad770f59377f14caebde9350c927322f2a869dd9af2c3b8eb1863aed4d20a",
+      "size_bytes": 713
     },
     {
       "path": ".gitattributes",
@@ -42,9 +34,9 @@
       "size_bytes": 179
     },
     {
-      "path": ".github/workflows/r9_0_1_reconstructed_candidate_validation.yml",
-      "sha256": "2f7c4045e54c25bef6d34753f57d2bef5581e96b696ad9ba114614a4fab488f3",
-      "size_bytes": 1880
+      "path": ".github/workflows/r9_0_2_osm_policy_validation.yml",
+      "sha256": "cabaf9aa65522decbacbeaccb0f4f8364a6832e8406370d29fde88391518e381",
+      "size_bytes": 1430
     },
     {
       "path": ".gitignore",
@@ -58,8 +50,8 @@
     },
     {
       "path": "PAL_EYES_BASELINE_ID.txt",
-      "sha256": "9389c8900a9c93ca78ee408ab92cf4470dc35c9c91b2c17121c83b84be80c028",
-      "size_bytes": 2731
+      "sha256": "09c627996a6c6c426141e525b9577e849c991b1cf1f32d4f38a38cbd3cd84ce4",
+      "size_bytes": 1554
     },
     {
       "path": "PAL_EYES_PROJECT_COMPREHENSIVE_GUIDE.md",
@@ -168,8 +160,8 @@
     },
     {
       "path": "data/trackers/PAL_EYES_MASTER_SITE_STATUS_TRACKER_CURRENT.csv",
-      "sha256": "45ff047d32fc330d187399d8baf104ab1365060368469bd807133c7e8ae07f7f",
-      "size_bytes": 26993
+      "sha256": "18bd15be39b27bf211b3bdfb7b336c51fb9dc4384c4d7486e634aed9e95b9301",
+      "size_bytes": 26913
     },
     {
       "path": "data/trackers/PAL_EYES_MASTER_SITE_STATUS_TRACKER_CURRENT.xlsx",
@@ -352,6 +344,11 @@
       "size_bytes": 973
     },
     {
+      "path": "docs/OSM_TILE_PROVIDER_POLICY_AND_PRODUCTION_READINESS_R9_0_2.md",
+      "sha256": "6a93a409f780f56bfe32136823d62edbdae778519afc707e9eb7a5011d7f57da",
+      "size_bytes": 2489
+    },
+    {
       "path": "docs/PAL_EYES_BIBLIOGRAPHIC_PAGE_INSPECTION_QUEUE_V1.json",
       "sha256": "6a64cb544e85af25aa59d81de9f40f22b3886a43be8ed59936d6c2182f899488",
       "size_bytes": 49196
@@ -393,8 +390,8 @@
     },
     {
       "path": "docs/PAL_EYES_CONTROLLED_ASSET_INTAKE_REGISTER_V1.csv",
-      "sha256": "7e64a739edac7391755e76305cca59ca43c0dc56554a136c924bb0c085946435",
-      "size_bytes": 34746
+      "sha256": "90dd6e48d42a6f3df5ee84650050d62c320a281440c8a69d47eb7cff92327ea3",
+      "size_bytes": 34429
     },
     {
       "path": "docs/PAL_EYES_CONTROLLED_ASSET_INTAKE_REGISTRY_V1.json",
@@ -748,13 +745,13 @@
     },
     {
       "path": "evidence/BROWSER_UAT_R9_0_1/15_targeted_format_analyze_test_transcript.txt",
-      "sha256": "c83b0e563f9cd6d2c4782aafa6753994fc16c15a1cffe5b74c814a7035fbeb41",
-      "size_bytes": 36622
+      "sha256": "388c703b8d7ef1670d1fb9a106afd14f4d2915343c2fc0e73709888a69c17cc1",
+      "size_bytes": 35802
     },
     {
       "path": "evidence/BROWSER_UAT_R9_0_1/16_osm_network_request_evidence.txt",
-      "sha256": "d4c731418654ba6faefaf5ea1137578e87ee62e8fb5f9a108f029bdb0bc76259",
-      "size_bytes": 102458
+      "sha256": "c980f95bb1e4f9f4f80e664cf117f511328482f227de0691fb485190326c0619",
+      "size_bytes": 99237
     },
     {
       "path": "evidence/BROWSER_UAT_R9_0_1/17_BROWSER_RUNTIME_SESSION_RECORD.txt",
@@ -962,6 +959,11 @@
       "size_bytes": 2214
     },
     {
+      "path": "evidence/OSM_TILE_PROVIDER_POLICY_AND_PRODUCTION_READINESS_R9_0_2_ACCEPTANCE_EVIDENCE.json",
+      "sha256": "2cb0e7e7453353b1207e5f5399330a566c7ae4a47242a89606c7790a93355e82",
+      "size_bytes": 1254
+    },
+    {
       "path": "evidence/PRODUCT_UX_PHASES_1_TO_4_BUILD_EVIDENCE_R6_0_0.json",
       "sha256": "a6628ce5c140e81d872cfc0286ba15fad98cac7a2f4780ecd94fc4c92de49fe5",
       "size_bytes": 1372
@@ -1128,8 +1130,13 @@
     },
     {
       "path": "lib/core/config/app_environment.dart",
-      "sha256": "2a0e411125cbd921455b80e0cd233af25e97204b8dc581c4d8223b621eda15df",
-      "size_bytes": 1023
+      "sha256": "51ddccb9be9adac1b1d88dc6732bd3bf1e401e5c4437598dd2a960548610941d",
+      "size_bytes": 3069
+    },
+    {
+      "path": "lib/core/config/map_tile_provider_policy.dart",
+      "sha256": "2bd3e876a4982cdc015b66401959b9a4e874975d25e219486d6fbcc97d3549fa",
+      "size_bytes": 6328
     },
     {
       "path": "lib/core/content/content_review_status.dart",
@@ -1160,6 +1167,11 @@
       "path": "lib/core/widgets/draft_content_banner.dart",
       "sha256": "face3a18d397865d2e878af3762c63bf5cab6b4545e818855f10cb5264cbd808",
       "size_bytes": 2029
+    },
+    {
+      "path": "lib/core/widgets/map_tile_policy_surface.dart",
+      "sha256": "32d366a6239f49a38dea22dd6783b55b4f13acd5bb7dddad93fdb7e70c9f9d20",
+      "size_bytes": 4994
     },
     {
       "path": "lib/core/widgets/pal_eyes_page.dart",
@@ -1238,8 +1250,8 @@
     },
     {
       "path": "lib/features/map/presentation/map_screen.dart",
-      "sha256": "2bd480fe12432824011190678eb8fcfc3efb3ba201e8ec9caec124ddc2506dbf",
-      "size_bytes": 13623
+      "sha256": "8c266ebe1e56748caf6102ee682c72651230e03bbe27e1f207bee82189bb45f1",
+      "size_bytes": 14863
     },
     {
       "path": "lib/features/methodology/presentation/methodology_screen.dart",
@@ -1498,13 +1510,13 @@
     },
     {
       "path": "pubspec.lock",
-      "sha256": "4021fca7c7a9384368878f5a209307529966cadf64873d420c4afd63f8f48c65",
-      "size_bytes": 30673
+      "sha256": "fa14f6d8cfb447d733f1b801da19507a54294139f9fc91e64c358b7fe8eb57fd",
+      "size_bytes": 30676
     },
     {
       "path": "pubspec.yaml",
-      "sha256": "243675097b71d10e90407cdd327195184e07a91287ebac8269854a69c43853c2",
-      "size_bytes": 572
+      "sha256": "bc83c14bf33a965f9914dd59ead56c0824e0f20d069f624b5e4aeb440f32bce2",
+      "size_bytes": 594
     },
     {
       "path": "reference_input/PAL_EYES_REFERENCE_DRAFT_ORIGINAL.txt",
@@ -1607,6 +1619,16 @@
       "size_bytes": 2349
     },
     {
+      "path": "test/map_tile_policy_surface_test.dart",
+      "sha256": "7f12cb216deef28d89039d35c6cbf10d1eb4e0fbd25d8b99df604b97ca3d13fa",
+      "size_bytes": 2044
+    },
+    {
+      "path": "test/map_tile_provider_policy_test.dart",
+      "sha256": "8ff6c4e520ced3c409b0a86b3cd2afc444b66d54c7a314fd903380fc3909f42b",
+      "size_bytes": 3693
+    },
+    {
       "path": "test/operational_backend_sql_contract_test.dart",
       "sha256": "d8e1ad867ae2c16d51357f147aec83ea326ae39c121c3c08fcaa295aa5094e4c",
       "size_bytes": 2209
@@ -1702,6 +1724,11 @@
       "size_bytes": 3054
     },
     {
+      "path": "tools/regenerate_baseline_manifest_r9_0_2.py",
+      "sha256": "18c31c30d0f1391819512464dec806ab281bbdb80f09855ea084db61bde6293e",
+      "size_bytes": 2681
+    },
+    {
       "path": "tools/verify_direct_flutter_public_experience_maturity_r9_0_0.py",
       "sha256": "e33bd9a43510db3614427481510fa87531348b4f736ce9d9187709d4a9269640",
       "size_bytes": 7230
@@ -1747,6 +1774,11 @@
       "size_bytes": 4831
     },
     {
+      "path": "tools/verify_osm_tile_provider_policy_r9_0_2.py",
+      "sha256": "c7880eac191b05c4cbe53284c0d67804ae79c17dd3f85cb6fd36d13760bc9d9a",
+      "size_bytes": 6927
+    },
+    {
       "path": "tools/verify_product_ux_phases_1_to_4.py",
       "sha256": "9239d1ba561dceb8d9169b1e77cf724f332cd9f6ea781af9bcef14f08fbe471b",
       "size_bytes": 4488
@@ -1783,28 +1815,13 @@
     },
     {
       "path": "web/index.html",
-      "sha256": "20e776ea51cdd56b56d238739cef036d1b7d1e8e3086a6d4078dd75fa411f65a",
-      "size_bytes": 998
+      "sha256": "96cf1c7caa5121e772bda60e75195799116e10bdd24269c127e0e1db10a5c1b3",
+      "size_bytes": 1065
     },
     {
       "path": "web/manifest.json",
       "sha256": "0a822d581c9e867898d7bf8105b47f9198fdabdbc47e0ffabae0873802e7da50",
       "size_bytes": 356
     }
-  ],
-  "github_promotion": {
-    "repository": "firasfanon/Pal_Eyes",
-    "pull_request_number": 1,
-    "pull_request_state": "OPEN_DRAFT",
-    "source_candidate_head": "14e0a64d40a58b1d4cdf0e3646e001376599bc77",
-    "source_candidate_workflow_run_id": 30769326139,
-    "source_candidate_ci": "SUCCESS",
-    "metadata_closure_batch": "PAL_EYES_R9_0_1_GITHUB_METADATA_RECONCILIATION_CLOSURE_V1",
-    "metadata_only": true,
-    "metadata_closure_requires_ci_before_merge": true,
-    "merge_authorization": "NOT_YET_ISSUED",
-    "main_merged": false,
-    "next_gate": "PR_FINAL_ACCEPTANCE_AND_MERGE_DECISION",
-    "recorded_at": "2026-08-03T01:27:32+03:00"
-  }
+  ]
 }
