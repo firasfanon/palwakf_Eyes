@@ -1,0 +1,141 @@
+name: Pal Eyes governed Vercel preview
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pal-eyes-vercel-preview-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.38.10"
+          channel: stable
+          cache: true
+
+      - name: Toolchain versions
+        run: |
+          flutter --version
+          dart --version
+          python3 --version
+
+      - name: Flutter dependencies
+        run: flutter pub get
+
+      - name: Vercel preview foundation verifier
+        run: python3 tools/verify_vercel_preview_foundation.py
+
+      - name: Flutter analyze
+        run: flutter analyze --no-pub
+
+      - name: Flutter tests
+        run: flutter test --no-pub --reporter expanded
+
+      - name: Flutter web staging build
+        run: |
+          flutter build web             --release             --no-pub             --dart-define=PAL_EYES_ENV=staging             --dart-define=MAP_TILE_PROVIDER_MODE=osm_standard             --dart-define=MAP_TILE_PROVIDER_APPROVED=false
+
+      - name: Prepare Vercel Build Output API
+        run: python3 tools/prepare_vercel_build_output.py
+
+      - name: Upload governed static build
+        uses: actions/upload-artifact@v4
+        with:
+          name: pal-eyes-vercel-preview-build-${{ github.sha }}
+          path: .vercel/output
+          if-no-files-found: error
+          retention-days: 7
+
+  preview:
+    needs: validate
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: vercel-preview
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assert Vercel secrets
+        shell: bash
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          set -euo pipefail
+          test -n "$VERCEL_TOKEN" || { echo "VERCEL_TOKEN missing"; exit 1; }
+          test -n "$VERCEL_ORG_ID" || { echo "VERCEL_ORG_ID missing"; exit 1; }
+          test -n "$VERCEL_PROJECT_ID" || { echo "VERCEL_PROJECT_ID missing"; exit 1; }
+
+      - name: Download governed static build
+        uses: actions/download-artifact@v4
+        with:
+          name: pal-eyes-vercel-preview-build-${{ github.sha }}
+          path: .vercel/output
+
+      - name: Create local Vercel project link
+        shell: bash
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          set -euo pipefail
+          mkdir -p .vercel
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          Path('.vercel/project.json').write_text(
+              json.dumps({
+                  'orgId': os.environ['VERCEL_ORG_ID'],
+                  'projectId': os.environ['VERCEL_PROJECT_ID'],
+              }, indent=2) + '\n',
+              encoding='utf-8',
+          )
+          PY
+
+      - name: Install Vercel CLI and record version
+        run: |
+          npm install --global vercel@latest
+          vercel --version
+
+      - name: Deploy preview only
+        id: deploy
+        shell: bash
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+        run: |
+          set -euo pipefail
+          PREVIEW_URL="$(vercel deploy --prebuilt --yes --token="$VERCEL_TOKEN" --scope="$VERCEL_ORG_ID")"
+          echo "url=$PREVIEW_URL" >> "$GITHUB_OUTPUT"
+          echo "### Pal Eyes governed Vercel preview" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Preview URL: $PREVIEW_URL" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Commit: $GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Production deployment: NOT APPROVED" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Verify deployment is not production
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${{ steps.deploy.outputs.url }}"
+          echo "VERCEL_PREVIEW_DEPLOYMENT=CREATED"
+          echo "PRODUCTION_DEPLOYMENT=NOT_EXECUTED"
