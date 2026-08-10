@@ -124,7 +124,7 @@ jobs:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
         run: |
           set -euo pipefail
-          PREVIEW_URL="$(vercel deploy --prebuilt --yes --token="$VERCEL_TOKEN" -T "$VERCEL_ORG_ID")"
+          PREVIEW_URL="$(vercel deploy --prebuilt --yes --token="$VERCEL_TOKEN")"
           echo "url=$PREVIEW_URL" >> "$GITHUB_OUTPUT"
           echo "### Pal Eyes governed Vercel preview" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
