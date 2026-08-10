@@ -125,18 +125,115 @@ jobs:
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         run: |
           set -euo pipefail
-          PREVIEW_URL="$(vercel deploy --prebuilt --yes --token="$VERCEL_TOKEN")"
+          PREVIEW_URL="$(vercel deploy --prebuilt --yes --target=preview --token="$VERCEL_TOKEN")"
           echo "url=$PREVIEW_URL" >> "$GITHUB_OUTPUT"
-          echo "### Pal Eyes governed Vercel preview" >> "$GITHUB_STEP_SUMMARY"
-          echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Preview URL: $PREVIEW_URL" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Commit: $GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Production deployment: NOT APPROVED" >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Verify deployment is not production
+      - name: Verify deployment target is preview
         shell: bash
+        env:
+          PREVIEW_URL: ${{ steps.deploy.outputs.url }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         run: |
           set -euo pipefail
-          test -n "${{ steps.deploy.outputs.url }}"
-          echo "VERCEL_PREVIEW_DEPLOYMENT=CREATED"
-          echo "PRODUCTION_DEPLOYMENT=NOT_EXECUTED"
+
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.parse
+          import urllib.request
+
+          preview_url = os.environ["PREVIEW_URL"].strip()
+          token = os.environ["VERCEL_TOKEN"]
+          team_id = os.environ["VERCEL_ORG_ID"]
+          project_id = os.environ["VERCEL_PROJECT_ID"]
+
+          if not preview_url:
+              raise SystemExit("VERCEL_DEPLOYMENT_URL_MISSING")
+
+          parsed = urllib.parse.urlparse(
+              preview_url
+              if "://" in preview_url
+              else f"https://{preview_url}"
+          )
+
+          deployment_host = parsed.netloc.lower().rstrip(".")
+
+          if not deployment_host:
+              raise SystemExit(
+                  "VERCEL_DEPLOYMENT_HOST_INVALID"
+              )
+
+          def fetch_target(target: str) -> set[str]:
+              query = urllib.parse.urlencode(
+                  {
+                      "projectId": project_id,
+                      "teamId": team_id,
+                      "target": target,
+                      "limit": 100,
+                  }
+              )
+
+              request = urllib.request.Request(
+                  "https://api.vercel.com/v7/deployments?"
+                  + query,
+                  headers={
+                      "Authorization": f"Bearer {token}",
+                      "User-Agent":
+                          "pal-eyes-governed-preview-verifier",
+                  },
+              )
+
+              with urllib.request.urlopen(
+                  request,
+                  timeout=30,
+              ) as response:
+                  payload = json.load(response)
+
+              deployments = payload.get("deployments")
+
+              if not isinstance(deployments, list):
+                  raise SystemExit(
+                      f"VERCEL_{target.upper()}_LIST_INVALID"
+                  )
+
+              hosts: set[str] = set()
+
+              for deployment in deployments:
+                  value = deployment.get("url")
+                  if isinstance(value, str) and value:
+                      hosts.add(
+                          value.lower().rstrip(".")
+                      )
+
+              return hosts
+
+          preview_hosts = fetch_target("preview")
+          production_hosts = fetch_target("production")
+
+          if deployment_host not in preview_hosts:
+              raise SystemExit(
+                  "DEPLOYMENT_NOT_CONFIRMED_IN_PREVIEW"
+              )
+
+          if deployment_host in production_hosts:
+              raise SystemExit(
+                  "UNAUTHORIZED_PRODUCTION_DEPLOYMENT_DETECTED"
+              )
+
+          print(
+              "VERCEL_DEPLOYMENT_ENVIRONMENT="
+              "PREVIEW_CONFIRMED"
+          )
+          print(
+              "PRODUCTION_DEPLOYMENT=NOT_EXECUTED"
+          )
+          PY
+
+          echo "### Pal Eyes governed Vercel preview" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Verified Preview URL: $PREVIEW_URL" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Environment: PREVIEW_CONFIRMED" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Commit: $GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Production deployment: NOT EXECUTED" >> "$GITHUB_STEP_SUMMARY"

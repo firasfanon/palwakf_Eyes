@@ -44,6 +44,19 @@ def main() -> int:
             token not in workflow for token in ("team_8DIevPeFrbvT01rUqXDnJ0dQ", "prj_")
         ),
         "prebuilt_deployment": "deploy --prebuilt" in workflow,
+        "explicit_preview_target": (
+            "--target=preview" in workflow
+        ),
+        "runtime_preview_environment_assertion": all(
+            token in workflow
+            for token in (
+                "api.vercel.com/v7/deployments",
+                'fetch_target("preview")',
+                'fetch_target("production")',
+                "PREVIEW_CONFIRMED",
+                "UNAUTHORIZED_PRODUCTION_DEPLOYMENT_DETECTED",
+            )
+        ),
         "build_output_api_v3": '"version": 3' in prepare,
         "spa_filesystem_first": (
             '"handle": "filesystem"' in prepare
