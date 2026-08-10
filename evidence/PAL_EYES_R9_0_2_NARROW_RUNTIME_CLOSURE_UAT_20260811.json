@@ -1,0 +1,61 @@
+{
+  "event": "PAL_EYES_R9_0_2_NARROW_RUNTIME_CLOSURE",
+  "date": "2026-08-11",
+  "repository": "firasfanon/palwakf_Eyes",
+  "branch": "agent/pal-eyes-vercel-preview-foundation-v1",
+  "parent_commit": "3be00d4523184ce61d5c0b2a1fa703b2ca344c22",
+  "defects_closed": [
+    {
+      "surface": "map",
+      "symptom": "RenderFlex overflow on bottom",
+      "observed_pixels": 110,
+      "repair": "compact bottom panel scroll boundary"
+    },
+    {
+      "surface": "content_status_badge",
+      "symptom": "RenderFlex horizontal overflow",
+      "observed_pixels": [70, 129],
+      "repair": "adaptive icon-only collapse under insufficient width"
+    }
+  ],
+  "browser_uat": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "home": {
+      "renderflex_overflow": false,
+      "content_status_badge_overflow": false,
+      "runtime_exception": false
+    },
+    "map": {
+      "renderflex_overflow": false,
+      "bottom_panel_overflow": false,
+      "compact_scroll_boundary": true,
+      "osm_attribution_reachable": true,
+      "remove_child_error": false,
+      "runtime_exception": false
+    },
+    "result": "PASS"
+  },
+  "regression": {
+    "file": "test/narrow_layout_regression_test.dart",
+    "included_in_full_flutter_test": true,
+    "result": "PASS"
+  },
+  "validation": {
+    "flutter_test": "PASS",
+    "flutter_analyze": "PASS",
+    "r9_static_verifier": "PASS",
+    "vercel_governance_verifier": "PASS",
+    "web_release_build": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "deployment_governance": {
+    "vercel_development_project": "pal-eyes-development",
+    "vercel_development_deployment": "NOT_YET_REENABLED",
+    "future_production_project": "palwakf_eyes",
+    "production_deployment_approved": false
+  },
+  "runtime_blocker_status": "CLOSED_PENDING_GITHUB_CI"
+}

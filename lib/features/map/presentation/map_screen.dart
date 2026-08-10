@@ -217,42 +217,47 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                   child: PalEyesGlassPanel(
                     dark: false,
                     padding: const EdgeInsets.all(14),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        if (!tileConfiguration.tilesEnabled)
-                          PalEyesMapTileBlockedNotice(
+                    child: _CompactScrollBoundary(
+                      enabled: compact,
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: <Widget>[
+                          if (!tileConfiguration.tilesEnabled)
+                            PalEyesMapTileBlockedNotice(
+                              configuration: tileConfiguration,
+                            )
+                          else if (_selected != null)
+                            _SelectedSiteCard(
+                              site: _selected!,
+                              onClose: () => setState(() {
+                                _selected = null;
+                              }),
+                            )
+                          else if (mappedSites.isEmpty)
+                            Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: <Widget>[
+                                PalEyesMapEmptyExperience(
+                                  siteCount: allSites.length,
+                                  governorateCount: governorates.length,
+                                  onAtlas: () => context.go(RoutePaths.places),
+                                  onMethodology: () =>
+                                      context.go(RoutePaths.methodology),
+                                ),
+                                const SizedBox(height: 12),
+                                _GovernorateJourneys(
+                                  governorates: governorates,
+                                ),
+                              ],
+                            )
+                          else
+                            _GovernorateJourneys(governorates: governorates),
+                          const SizedBox(height: 10),
+                          PalEyesMapAttributionBar(
                             configuration: tileConfiguration,
-                          )
-                        else if (_selected != null)
-                          _SelectedSiteCard(
-                            site: _selected!,
-                            onClose: () => setState(() {
-                              _selected = null;
-                            }),
-                          )
-                        else if (mappedSites.isEmpty)
-                          Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: <Widget>[
-                              PalEyesMapEmptyExperience(
-                                siteCount: allSites.length,
-                                governorateCount: governorates.length,
-                                onAtlas: () => context.go(RoutePaths.places),
-                                onMethodology: () =>
-                                    context.go(RoutePaths.methodology),
-                              ),
-                              const SizedBox(height: 12),
-                              _GovernorateJourneys(governorates: governorates),
-                            ],
-                          )
-                        else
-                          _GovernorateJourneys(governorates: governorates),
-                        const SizedBox(height: 10),
-                        PalEyesMapAttributionBar(
-                          configuration: tileConfiguration,
-                        ),
-                      ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -274,6 +279,27 @@ class _MapScreenState extends ConsumerState<MapScreen> {
         .toList(growable: false);
     result.sort((a, b) => b.$2.compareTo(a.$2));
     return result.take(6).toList(growable: false);
+  }
+}
+
+class _CompactScrollBoundary extends StatelessWidget {
+  const _CompactScrollBoundary({required this.enabled, required this.child});
+
+  final bool enabled;
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    if (!enabled) {
+      return child;
+    }
+
+    return SingleChildScrollView(
+      key: const ValueKey<String>('map-compact-bottom-scroll'),
+      primary: false,
+      physics: const ClampingScrollPhysics(),
+      child: child,
+    );
   }
 }
 
