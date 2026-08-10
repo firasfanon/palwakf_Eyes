@@ -32,9 +32,8 @@ def main() -> int:
                 "verify_vercel_preview_foundation.py",
             )
         ),
-        "same_repository_pr_guard": (
-            "github.event.pull_request.head.repo.full_name == github.repository"
-            in workflow
+        "deployment_job_hard_disabled": (
+            "if: ${{ false }}" in workflow
         ),
         "required_secrets": all(
             token in workflow
@@ -69,6 +68,12 @@ def main() -> int:
         "preview_only_state": (
             "INTEGRATION_MODE=PREVIEW_ONLY" in state
             and "PRODUCTION_DEPLOYMENT=NOT_APPROVED" in state
+        ),
+        "deployment_disabled_state": (
+            "GITHUB_ACTIONS_PREVIEW_DEPLOYMENT=DISABLED_FAIL_CLOSED"
+            in state
+            and "VERCEL_REAL_APP_DEPLOYMENT=DISABLED_FAIL_CLOSED"
+            in state
         ),
         "governance_boundaries": all(
             token in state

@@ -61,9 +61,13 @@ jobs:
 
   preview:
     needs: validate
-    if: >-
-      github.event_name == 'workflow_dispatch' ||
-      github.event.pull_request.head.repo.full_name == github.repository
+
+    # Governance fail-closed:
+    # Real Vercel deployment is disabled after two first-deployment
+    # Production boundary violations. Re-enable only by explicit,
+    # reviewed governance change after a provider-safe Preview path
+    # is independently proven.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     environment:
