@@ -16,10 +16,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.38.10"
+          flutter-version: "3.44.1"
           channel: stable
           cache: true
 
@@ -29,7 +31,7 @@ jobs:
           dart --version
 
       - name: Flutter pub get
-        run: flutter pub get
+        run: flutter pub get --enforce-lockfile
 
       - name: Targeted Dart format gate
         run: |
