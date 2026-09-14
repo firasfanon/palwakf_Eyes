@@ -15,7 +15,7 @@ class PalEyesBrandMark extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = foregroundColor ?? Colors.white;
+    final color = foregroundColor ?? const Color(0xFF302F29);
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
@@ -23,39 +23,33 @@ class PalEyesBrandMark extends StatelessWidget {
           width: compact ? 38 : 46,
           height: compact ? 38 : 46,
           decoration: BoxDecoration(
-            gradient: AppColors.heritageGradient,
-            borderRadius: BorderRadius.circular(compact ? 13 : 16),
-            boxShadow: <BoxShadow>[
-              BoxShadow(
-                color: AppColors.heritageGold.withValues(alpha: 0.22),
-                blurRadius: 18,
-                offset: const Offset(0, 7),
-              ),
-            ],
+            color: const Color(0xFFF1E7CF),
+            shape: BoxShape.circle,
+            border: Border.all(color: AppColors.olive.withValues(alpha: 0.38)),
           ),
-          child: const Stack(
+          child: Stack(
             alignment: Alignment.center,
             children: <Widget>[
               Icon(
-                Icons.visibility_rounded,
-                color: AppColors.sovereignBlue,
-                size: 25,
+                Icons.park_rounded,
+                color: AppColors.olive,
+                size: compact ? 24 : 29,
               ),
               Positioned(
-                bottom: 7,
-                child: SizedBox(
-                  width: 18,
-                  child: Divider(
-                    height: 1,
-                    thickness: 2,
-                    color: AppColors.royalRed,
+                bottom: compact ? 7 : 8,
+                child: Container(
+                  width: compact ? 17 : 21,
+                  height: 2,
+                  decoration: BoxDecoration(
+                    color: AppColors.heritageGold,
+                    borderRadius: BorderRadius.circular(99),
                   ),
                 ),
               ),
             ],
           ),
         ),
-        const SizedBox(width: 11),
+        const SizedBox(width: 10),
         Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -64,17 +58,17 @@ class PalEyesBrandMark extends StatelessWidget {
               'بعيون فلسطينية',
               style: TextStyle(
                 color: color,
-                fontSize: compact ? 17 : 20,
+                fontSize: compact ? 16 : 19,
                 fontWeight: FontWeight.w900,
-                height: 1.15,
+                height: 1.05,
               ),
             ),
             if (!compact)
               Text(
-                'المكان • الرواية • الدليل',
+                'المكان · الذاكرة · الحكاية',
                 style: TextStyle(
-                  color: color.withValues(alpha: 0.68),
-                  fontSize: 11,
+                  color: color.withValues(alpha: 0.62),
+                  fontSize: 10.5,
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -99,9 +93,7 @@ class PalEyesPattern extends StatelessWidget {
   Widget build(BuildContext context) {
     return IgnorePointer(
       child: CustomPaint(
-        painter: _HeritagePatternPainter(
-          color.withValues(alpha: opacity),
-        ),
+        painter: _HeritagePatternPainter(color.withValues(alpha: opacity)),
         size: Size.infinite,
       ),
     );
@@ -160,20 +152,23 @@ class PalEyesPageHero extends StatelessWidget {
     final horizontal = width < 600 ? 16.0 : 28.0;
     return Container(
       decoration: const BoxDecoration(
-        gradient: AppColors.sovereignGradient,
+        color: AppColors.approvedIvory,
+        border: Border(bottom: BorderSide(color: AppColors.approvedOutline)),
       ),
       child: Stack(
         children: <Widget>[
-          const Positioned.fill(child: PalEyesPattern()),
           PositionedDirectional(
-            end: width < 720 ? -40 : 42,
-            top: width < 720 ? 10 : -36,
-            bottom: -70,
+            end: width < 720 ? -70 : 44,
+            top: width < 720 ? -42 : -80,
+            bottom: -110,
             child: Opacity(
-              opacity: 0.16,
+              opacity: 0.07,
               child: SizedBox(
-                width: width < 720 ? 210 : 320,
-                child: const PalestineMapArtwork(showMarkers: false),
+                width: width < 720 ? 220 : 330,
+                child: const PalestineMapArtwork(
+                  showMarkers: false,
+                  foregroundColor: AppColors.olive,
+                ),
               ),
             ),
           ),
@@ -183,9 +178,9 @@ class PalEyesPageHero extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.fromLTRB(
                   horizontal,
-                  width < 600 ? 30 : 44,
+                  width < 600 ? 26 : 36,
                   horizontal,
-                  width < 600 ? 28 : 40,
+                  width < 600 ? 24 : 32,
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -201,42 +196,63 @@ class PalEyesPageHero extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
-                              _Eyebrow(icon: icon, label: eyebrow),
-                              const SizedBox(height: 14),
-                              Text(
-                                title,
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .displaySmall
-                                    ?.copyWith(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w900,
+                              Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 11,
+                                  vertical: 6,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: AppColors.olive.withValues(
+                                    alpha: 0.08,
+                                  ),
+                                  borderRadius: BorderRadius.circular(999),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: <Widget>[
+                                    Icon(
+                                      icon,
+                                      size: 17,
+                                      color: AppColors.olive,
                                     ),
+                                    const SizedBox(width: 7),
+                                    Text(
+                                      eyebrow,
+                                      style: const TextStyle(
+                                        color: AppColors.olive,
+                                        fontWeight: FontWeight.w900,
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                               const SizedBox(height: 12),
                               Text(
-                                subtitle,
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .titleMedium
+                                title,
+                                style: Theme.of(context).textTheme.displaySmall
                                     ?.copyWith(
-                                      color: Colors.white.withValues(alpha: 0.76),
-                                      height: 1.65,
+                                      color: AppColors.ink,
+                                      fontWeight: FontWeight.w900,
+                                    ),
+                              ),
+                              const SizedBox(height: 9),
+                              Text(
+                                subtitle,
+                                style: Theme.of(context).textTheme.titleMedium
+                                    ?.copyWith(
+                                      color: AppColors.inkSoft,
+                                      height: 1.55,
                                     ),
                               ),
                             ],
                           ),
                         ),
                         if (actions.isNotEmpty)
-                          Wrap(
-                            spacing: 9,
-                            runSpacing: 9,
-                            children: actions,
-                          ),
+                          Wrap(spacing: 9, runSpacing: 9, children: actions),
                       ],
                     ),
                     if (header != null) ...<Widget>[
-                      const SizedBox(height: 24),
+                      const SizedBox(height: 20),
                       header!,
                     ],
                   ],
@@ -292,17 +308,16 @@ class PalEyesSectionHeader extends StatelessWidget {
                 ),
               Text(
                 title,
-                style: Theme.of(context)
-                    .textTheme
-                    .headlineMedium
-                    ?.copyWith(fontWeight: FontWeight.w900),
+                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                  fontWeight: FontWeight.w900,
+                ),
               ),
               const SizedBox(height: 7),
               Text(
                 subtitle,
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                      color: Theme.of(context).colorScheme.onSurfaceVariant,
-                    ),
+                  color: Theme.of(context).colorScheme.onSurfaceVariant,
+                ),
               ),
             ],
           ),
@@ -344,10 +359,7 @@ class PalEyesMetricTile extends StatelessWidget {
             ? const LinearGradient(
                 begin: AlignmentDirectional.topStart,
                 end: AlignmentDirectional.bottomEnd,
-                colors: <Color>[
-                  AppColors.sovereignBlue,
-                  AppColors.deepBlue,
-                ],
+                colors: <Color>[AppColors.sovereignBlue, AppColors.deepBlue],
               )
             : null,
         color: emphasis ? null : scheme.surface,
@@ -382,9 +394,9 @@ class PalEyesMetricTile extends StatelessWidget {
                 Text(
                   value,
                   style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                        color: emphasis ? Colors.white : null,
-                        fontWeight: FontWeight.w900,
-                      ),
+                    color: emphasis ? Colors.white : null,
+                    fontWeight: FontWeight.w900,
+                  ),
                 ),
                 Text(
                   label,
@@ -529,11 +541,11 @@ class PalEyesVisualCard extends StatelessWidget {
                           title,
                           maxLines: compact ? 1 : 2,
                           overflow: TextOverflow.ellipsis,
-                          style:
-                              Theme.of(context).textTheme.titleLarge?.copyWith(
-                                    color: foreground,
-                                    fontWeight: FontWeight.w900,
-                                  ),
+                          style: Theme.of(context).textTheme.titleLarge
+                              ?.copyWith(
+                                color: foreground,
+                                fontWeight: FontWeight.w900,
+                              ),
                         ),
                         SizedBox(height: compact ? 6 : 8),
                         Expanded(
@@ -631,10 +643,7 @@ class PalEyesTimelineBand extends StatelessWidget {
         separatorBuilder: (_, _) => SizedBox(
           width: 38,
           child: Center(
-            child: Container(
-              height: 2,
-              color: scheme.outlineVariant,
-            ),
+            child: Container(height: 2, color: scheme.outlineVariant),
           ),
         ),
         itemBuilder: (context, index) {
@@ -669,9 +678,7 @@ class PalEyesTimelineBand extends StatelessWidget {
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
-                      fontWeight: selected
-                          ? FontWeight.w900
-                          : FontWeight.w700,
+                      fontWeight: selected ? FontWeight.w900 : FontWeight.w700,
                       color: selected ? scheme.primary : null,
                     ),
                   ),
@@ -686,11 +693,7 @@ class PalEyesTimelineBand extends StatelessWidget {
 }
 
 class _Eyebrow extends StatelessWidget {
-  const _Eyebrow({
-    required this.icon,
-    required this.label,
-    this.dark = true,
-  });
+  const _Eyebrow({required this.icon, required this.label, this.dark = true});
 
   final IconData icon;
   final String label;

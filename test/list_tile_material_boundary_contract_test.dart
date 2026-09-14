@@ -51,8 +51,9 @@ void main() {
       );
     }
 
-    final workspace =
-        File('lib/core/widgets/workspace_shell.dart').readAsStringSync();
+    final workspace = File(
+      'lib/core/widgets/workspace_shell.dart',
+    ).readAsStringSync();
     expect(workspace.contains('ExpansionTile('), isTrue);
     expect(
       RegExp(
@@ -63,16 +64,11 @@ void main() {
       isTrue,
     );
 
-    final map =
-        File('lib/features/map/presentation/map_screen.dart').readAsStringSync();
+    final map = File(
+      'lib/features/map/presentation/map_screen.dart',
+    ).readAsStringSync();
     expect(map.contains('ListTile('), isFalse);
-    expect(
-      RegExp(
-        r'return\s+Material\(\s*color:\s*AppColors\.midnight,'
-        r'\s*child:\s*Stack\(',
-        multiLine: true,
-      ).hasMatch(map),
-      isTrue,
-    );
+    expect(map.contains('return ColoredBox('), isTrue);
+    expect(map.contains('color: PalEyesVisualV1.parchment'), isTrue);
   });
 }

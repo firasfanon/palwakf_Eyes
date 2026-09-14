@@ -5,13 +5,11 @@ import 'package:pal_eyes/app/router/route_paths.dart';
 
 void main() {
   test('public shell exposes five primary destinations only', () {
-    final shell = File(
-      'lib/core/widgets/public_shell.dart',
-    ).readAsStringSync();
+    final shell = File('lib/core/widgets/public_shell.dart').readAsStringSync();
 
-    expect(shell.contains('_primaryItems'), isTrue);
-    expect(shell.contains("label: 'الأطلس'"), isTrue);
-    expect(shell.contains("label: 'القصص'"), isTrue);
+    expect(shell.contains('_desktopItems'), isTrue);
+    expect(shell.contains("'الأماكن'"), isTrue);
+    expect(shell.contains("'الحكايات'"), isTrue);
     expect(shell.contains("Text('مساحة الفريق')"), isTrue);
     expect(shell.contains("label: const Text('مساحة العمل')"), isFalse);
   });
@@ -34,8 +32,8 @@ void main() {
     expect(discovery.contains('ترتيب النتائج'), isTrue);
     expect(map.contains('أطلس فلسطين'), isTrue);
     expect(map.contains('تعرض فقط المواقع ذات الإحداثيات العامة'), isTrue);
-    expect(stories.contains('مجلة المكان الفلسطيني'), isTrue);
-    expect(detail.contains('PalEyesMediaStage'), isTrue);
+    expect(stories.contains('حكايات عن المكان'), isTrue);
+    expect(detail.contains('PalEyesMediaPlaceholder'), isTrue);
     expect(detail.contains('فتح مساحة الباحث'), isFalse);
   });
 
