@@ -166,6 +166,38 @@ jobs:
           echo "deployment_url=$DEPLOYMENT_URL" >> "$GITHUB_OUTPUT"
           echo "stable_url=https://pal-eyes-development.vercel.app" >> "$GITHUB_OUTPUT"
 
+      - name: Bind canonical DEV_ONLY alias to current deployment
+        shell: bash
+        env:
+          DEPLOYMENT_URL: ${{ steps.deploy.outputs.deployment_url }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          STABLE_HOST="pal-eyes-development.vercel.app"
+
+          vercel alias set \
+            "$DEPLOYMENT_URL" \
+            "$STABLE_HOST" \
+            --token="$VERCEL_TOKEN"
+
+          INSPECT_OUTPUT="$(
+            vercel inspect \
+              "$DEPLOYMENT_URL" \
+              --token="$VERCEL_TOKEN" \
+              2>&1
+          )"
+
+          printf '%s\n' "$INSPECT_OUTPUT"
+
+          printf '%s\n' "$INSPECT_OUTPUT" \
+            | grep -Fq "https://$STABLE_HOST" || {
+              echo "DEVELOPMENT_ALIAS_TARGET_MISMATCH"
+              exit 1
+            }
+
+          echo "DEVELOPMENT_ALIAS_TARGET=CONFIRMED"
+
       - name: Verify governed development deployment
         shell: bash
         env:
