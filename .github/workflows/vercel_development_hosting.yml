@@ -1,0 +1,419 @@
+name: Pal Eyes governed development hosting
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pal-eyes-development-hosting-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.44.1"
+          channel: stable
+          cache: true
+
+      - name: Toolchain versions
+        run: |
+          flutter --version
+          dart --version
+          python3 --version
+
+      - name: Flutter dependencies
+        run: flutter pub get --enforce-lockfile
+
+      - name: Development hosting governance verifier
+        run: python3 tools/verify_vercel_development_hosting.py
+
+      - name: Flutter analyze
+        run: flutter analyze --no-pub
+
+      - name: Flutter tests
+        run: flutter test --no-pub --reporter expanded
+
+      - name: Flutter web staging build
+        run: |
+          flutter build web \
+            --release \
+            --no-pub \
+            --dart-define=PAL_EYES_ENV=staging \
+            --dart-define=MAP_TILE_PROVIDER_MODE=osm_standard \
+            --dart-define=MAP_TILE_PROVIDER_APPROVED=false
+
+      - name: Prepare Vercel Build Output API
+        run: python3 tools/prepare_vercel_build_output.py
+
+      - name: Upload governed development build
+        uses: actions/upload-artifact@v4
+        with:
+          name: pal-eyes-development-hosting-build-${{ github.sha }}
+          path: .vercel/output
+          if-no-files-found: error
+          retention-days: 7
+
+  development-hosting:
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    environment:
+      name: vercel-development-hosting
+      url: ${{ steps.deploy.outputs.stable_url }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assert Vercel credentials
+        shell: bash
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          set -euo pipefail
+
+          test -n "$VERCEL_TOKEN" || {
+            echo "VERCEL_TOKEN missing"
+            exit 1
+          }
+
+          test -n "$VERCEL_ORG_ID" || {
+            echo "VERCEL_ORG_ID missing"
+            exit 1
+          }
+
+          test -n "$VERCEL_PROJECT_ID" || {
+            echo "VERCEL_PROJECT_ID missing"
+            exit 1
+          }
+
+      - name: Download governed development build
+        uses: actions/download-artifact@v4
+        with:
+          name: pal-eyes-development-hosting-build-${{ github.sha }}
+          path: .vercel/output
+
+      - name: Create Vercel project link
+        shell: bash
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          set -euo pipefail
+
+          mkdir -p .vercel
+
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          Path(".vercel/project.json").write_text(
+              json.dumps(
+                  {
+                      "orgId": os.environ["VERCEL_ORG_ID"],
+                      "projectId": os.environ["VERCEL_PROJECT_ID"],
+                  },
+                  indent=2,
+              )
+              + "\n",
+              encoding="utf-8",
+          )
+          PY
+
+      - name: Install pinned Vercel CLI
+        run: |
+          npm install --global vercel@58.9.0
+          vercel --version
+
+      - name: Deploy development hosting
+        id: deploy
+        shell: bash
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          set -euo pipefail
+
+          DEPLOYMENT_URL="$(
+            vercel deploy \
+              --prebuilt \
+              --yes \
+              --prod \
+              --token="$VERCEL_TOKEN"
+          )"
+
+          test -n "$DEPLOYMENT_URL" || {
+            echo "VERCEL_DEPLOYMENT_URL_MISSING"
+            exit 1
+          }
+
+          echo "deployment_url=$DEPLOYMENT_URL" >> "$GITHUB_OUTPUT"
+          echo "stable_url=https://pal-eyes-development.vercel.app" >> "$GITHUB_OUTPUT"
+
+      - name: Bind canonical DEV_ONLY alias to current deployment
+        shell: bash
+        env:
+          DEPLOYMENT_URL: ${{ steps.deploy.outputs.deployment_url }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+        run: |
+          set -euo pipefail
+
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.parse
+          import urllib.request
+
+          deployment_url = os.environ["DEPLOYMENT_URL"].strip()
+          token = os.environ["VERCEL_TOKEN"]
+          team_id = os.environ["VERCEL_ORG_ID"]
+          stable_host = "pal-eyes-development.vercel.app"
+
+          parsed = urllib.parse.urlparse(
+              deployment_url
+              if "://" in deployment_url
+              else f"https://{deployment_url}"
+          )
+          deployment_host = parsed.netloc.lower().rstrip(".")
+
+          if not deployment_host:
+              raise SystemExit("VERCEL_DEPLOYMENT_HOST_INVALID")
+
+          def request_json(url, *, method="GET", payload=None):
+              data = None
+              headers = {
+                  "Authorization": f"Bearer {token}",
+                  "User-Agent": "pal-eyes-development-alias-binder",
+              }
+              if payload is not None:
+                  data = json.dumps(payload).encode("utf-8")
+                  headers["Content-Type"] = "application/json"
+              request = urllib.request.Request(
+                  url,
+                  data=data,
+                  headers=headers,
+                  method=method,
+              )
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  return json.load(response)
+
+          query = urllib.parse.urlencode({"teamId": team_id})
+          encoded_host = urllib.parse.quote(deployment_host, safe="")
+          deployment = request_json(
+              f"https://api.vercel.com/v13/deployments/{encoded_host}?{query}"
+          )
+          deployment_id = deployment.get("id")
+
+          if not isinstance(deployment_id, str) or not deployment_id:
+              raise SystemExit("VERCEL_DEPLOYMENT_ID_MISSING")
+
+          alias_endpoint = (
+              "https://api.vercel.com/v2/deployments/"
+              + urllib.parse.quote(deployment_id, safe="")
+              + "/aliases?"
+              + query
+          )
+
+          assigned = request_json(
+              alias_endpoint,
+              method="POST",
+              payload={"alias": stable_host, "redirect": None},
+          )
+
+          if assigned.get("alias") != stable_host:
+              raise SystemExit("DEVELOPMENT_ALIAS_ASSIGNMENT_MISMATCH")
+
+          alias_payload = request_json(alias_endpoint)
+          aliases = alias_payload.get("aliases")
+
+          if not isinstance(aliases, list):
+              raise SystemExit("DEVELOPMENT_ALIAS_LIST_INVALID")
+
+          if not any(
+              isinstance(item, dict)
+              and item.get("alias") == stable_host
+              for item in aliases
+          ):
+              raise SystemExit("DEVELOPMENT_ALIAS_TARGET_MISMATCH")
+
+          print(f"DEVELOPMENT_DEPLOYMENT_ID={deployment_id}")
+          print(f"DEVELOPMENT_ALIAS_TARGET={stable_host}")
+          print("DEVELOPMENT_ALIAS_TARGET=CONFIRMED")
+          PY
+
+      - name: Verify governed development deployment
+        shell: bash
+        env:
+          DEPLOYMENT_URL: ${{ steps.deploy.outputs.deployment_url }}
+          STABLE_URL: ${{ steps.deploy.outputs.stable_url }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          set -euo pipefail
+
+          python3 - <<'PY'
+          import json
+          import os
+          import time
+          import urllib.parse
+          import urllib.request
+
+          deployment_url = os.environ["DEPLOYMENT_URL"].strip()
+          stable_url = os.environ["STABLE_URL"].strip()
+          token = os.environ["VERCEL_TOKEN"]
+          team_id = os.environ["VERCEL_ORG_ID"]
+          project_id = os.environ["VERCEL_PROJECT_ID"]
+
+          if not deployment_url:
+              raise SystemExit("VERCEL_DEPLOYMENT_URL_MISSING")
+
+          parsed = urllib.parse.urlparse(
+              deployment_url
+              if "://" in deployment_url
+              else f"https://{deployment_url}"
+          )
+
+          deployment_host = parsed.netloc.lower().rstrip(".")
+
+          if not deployment_host:
+              raise SystemExit("VERCEL_DEPLOYMENT_HOST_INVALID")
+
+          query = urllib.parse.urlencode(
+              {
+                  "projectId": project_id,
+                  "teamId": team_id,
+                  "target": "production",
+                  "limit": 100,
+              }
+          )
+
+          request = urllib.request.Request(
+              "https://api.vercel.com/v7/deployments?" + query,
+              headers={
+                  "Authorization": f"Bearer {token}",
+                  "User-Agent": "pal-eyes-development-hosting-verifier",
+              },
+          )
+
+          with urllib.request.urlopen(
+              request,
+              timeout=30,
+          ) as response:
+              payload = json.load(response)
+
+          deployments = payload.get("deployments")
+
+          if not isinstance(deployments, list):
+              raise SystemExit("VERCEL_PRODUCTION_LIST_INVALID")
+
+          production_hosts = {
+              item["url"].lower().rstrip(".")
+              for item in deployments
+              if isinstance(item, dict)
+              and isinstance(item.get("url"), str)
+              and item["url"]
+          }
+
+          if deployment_host not in production_hosts:
+              raise SystemExit(
+                  "DEVELOPMENT_DEPLOYMENT_NOT_CONFIRMED_IN_TECHNICAL_PRODUCTION"
+              )
+
+          expected_stable_host = "pal-eyes-development.vercel.app"
+
+          stable_parsed = urllib.parse.urlparse(stable_url)
+
+          if stable_parsed.netloc.lower() != expected_stable_host:
+              raise SystemExit("DEVELOPMENT_STABLE_DOMAIN_MISMATCH")
+
+          last_error = None
+
+          for attempt in range(1, 7):
+              try:
+                  health_request = urllib.request.Request(
+                      stable_url,
+                      headers={
+                          "User-Agent":
+                              "pal-eyes-development-hosting-health-check"
+                      },
+                  )
+
+                  with urllib.request.urlopen(
+                      health_request,
+                      timeout=30,
+                  ) as response:
+                      status = response.status
+                      body = response.read(2048)
+
+                  if 200 <= status < 400 and body:
+                      last_error = None
+                      break
+
+                  last_error = RuntimeError(
+                      f"HTTP={status},BODY_BYTES={len(body)}"
+                  )
+
+              except Exception as error:
+                  last_error = error
+
+              if attempt < 6:
+                  time.sleep(5)
+
+          if last_error is not None:
+              raise SystemExit(
+                  "DEVELOPMENT_STABLE_URL_NOT_REACHABLE: "
+                  + str(last_error)
+              )
+
+          print("PRODUCT_LIFECYCLE=DEVELOPMENT")
+          print(
+              "VERCEL_TECHNICAL_ENVIRONMENT="
+              "PRODUCTION_CONFIRMED_DEV_ONLY"
+          )
+          print(
+              "DEVELOPMENT_HOSTING_DOMAIN="
+              "pal-eyes-development.vercel.app"
+          )
+          print("PRODUCT_PRODUCTION_RELEASE=NOT_EXECUTED")
+          PY
+
+          echo "### Pal Eyes governed development hosting" \
+            >> "$GITHUB_STEP_SUMMARY"
+
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+
+          echo "- Product lifecycle: DEVELOPMENT" \
+            >> "$GITHUB_STEP_SUMMARY"
+
+          echo "- Development URL: $STABLE_URL" \
+            >> "$GITHUB_STEP_SUMMARY"
+
+          echo "- Vercel technical environment: Production (DEV_ONLY project)" \
+            >> "$GITHUB_STEP_SUMMARY"
+
+          echo "- Flutter runtime environment: staging" \
+            >> "$GITHUB_STEP_SUMMARY"
+
+          echo "- Product production release: NOT EXECUTED" \
+            >> "$GITHUB_STEP_SUMMARY"
+
+          echo "- Commit: $GITHUB_SHA" \
+            >> "$GITHUB_STEP_SUMMARY"

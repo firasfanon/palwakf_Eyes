@@ -5,7 +5,10 @@ import 'package:go_router/go_router.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/app_colors.dart';
+import 'package:pal_eyes/core/config/app_environment.dart';
+import 'package:pal_eyes/core/config/map_tile_provider_policy.dart';
 import 'package:pal_eyes/core/widgets/direct_flutter_maturity_r9.dart';
+import 'package:pal_eyes/core/widgets/map_tile_policy_surface.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_visual_system.dart';
 import 'package:pal_eyes/features/places/application/heritage_sites_provider.dart';
 import 'package:pal_eyes/features/places/domain/heritage_site.dart';
@@ -25,6 +28,8 @@ class _MapScreenState extends ConsumerState<MapScreen> {
   Widget build(BuildContext context) {
     final allSites = ref.watch(foundationSitesProvider);
     final mappedSites = ref.watch(mappedSitesProvider);
+    final environment = ref.watch(appEnvironmentProvider);
+    final tileConfiguration = MapTileProviderPolicy.resolve(environment);
     final compact = MediaQuery.sizeOf(context).width < 720;
     final governorates = _governorateCounts(allSites);
 
@@ -41,34 +46,39 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                 initialZoom: 8.3,
               ),
               children: <Widget>[
-                TileLayer(
-                  urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-                  userAgentPackageName: 'ps.paleyes.app',
-                ),
-                MarkerLayer(
-                  markers: mappedSites
-                      .map(
-                        (site) => Marker(
-                          point: LatLng(site.latitude!, site.longitude!),
-                          width: 64,
-                          height: 64,
-                          child: Tooltip(
-                            message: site.nameAr,
-                            child: Semantics(
-                              button: true,
-                              label: 'افتح معلومات ${site.nameAr} على الخريطة',
-                              child: _MapMarker(
-                                selected: _selected?.slug == site.slug,
-                                onTap: () => setState(() {
-                                  _selected = site;
-                                }),
+                if (tileConfiguration.tilesEnabled)
+                  TileLayer(
+                    urlTemplate: tileConfiguration.urlTemplate,
+                    userAgentPackageName:
+                        tileConfiguration.userAgentPackageName,
+                    maxNativeZoom: tileConfiguration.maxNativeZoom,
+                  ),
+                if (tileConfiguration.tilesEnabled)
+                  MarkerLayer(
+                    markers: mappedSites
+                        .map(
+                          (site) => Marker(
+                            point: LatLng(site.latitude!, site.longitude!),
+                            width: 64,
+                            height: 64,
+                            child: Tooltip(
+                              message: site.nameAr,
+                              child: Semantics(
+                                button: true,
+                                label:
+                                    'افتح معلومات ${site.nameAr} على الخريطة',
+                                child: _MapMarker(
+                                  selected: _selected?.slug == site.slug,
+                                  onTap: () => setState(() {
+                                    _selected = site;
+                                  }),
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                      )
-                      .toList(growable: false),
-                ),
+                        )
+                        .toList(growable: false),
+                  ),
               ],
             ),
           ),
@@ -207,29 +217,48 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                   child: PalEyesGlassPanel(
                     dark: false,
                     padding: const EdgeInsets.all(14),
-                    child: _selected != null
-                        ? _SelectedSiteCard(
-                            site: _selected!,
-                            onClose: () => setState(() {
-                              _selected = null;
-                            }),
-                          )
-                        : mappedSites.isEmpty
-                        ? Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: <Widget>[
-                              PalEyesMapEmptyExperience(
-                                siteCount: allSites.length,
-                                governorateCount: governorates.length,
-                                onAtlas: () => context.go(RoutePaths.places),
-                                onMethodology: () =>
-                                    context.go(RoutePaths.methodology),
-                              ),
-                              const SizedBox(height: 12),
-                              _GovernorateJourneys(governorates: governorates),
-                            ],
-                          )
-                        : _GovernorateJourneys(governorates: governorates),
+                    child: _CompactScrollBoundary(
+                      enabled: compact,
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: <Widget>[
+                          if (!tileConfiguration.tilesEnabled)
+                            PalEyesMapTileBlockedNotice(
+                              configuration: tileConfiguration,
+                            )
+                          else if (_selected != null)
+                            _SelectedSiteCard(
+                              site: _selected!,
+                              onClose: () => setState(() {
+                                _selected = null;
+                              }),
+                            )
+                          else if (mappedSites.isEmpty)
+                            Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: <Widget>[
+                                PalEyesMapEmptyExperience(
+                                  siteCount: allSites.length,
+                                  governorateCount: governorates.length,
+                                  onAtlas: () => context.go(RoutePaths.places),
+                                  onMethodology: () =>
+                                      context.go(RoutePaths.methodology),
+                                ),
+                                const SizedBox(height: 12),
+                                _GovernorateJourneys(
+                                  governorates: governorates,
+                                ),
+                              ],
+                            )
+                          else
+                            _GovernorateJourneys(governorates: governorates),
+                          const SizedBox(height: 10),
+                          PalEyesMapAttributionBar(
+                            configuration: tileConfiguration,
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                 ),
               ),
@@ -250,6 +279,27 @@ class _MapScreenState extends ConsumerState<MapScreen> {
         .toList(growable: false);
     result.sort((a, b) => b.$2.compareTo(a.$2));
     return result.take(6).toList(growable: false);
+  }
+}
+
+class _CompactScrollBoundary extends StatelessWidget {
+  const _CompactScrollBoundary({required this.enabled, required this.child});
+
+  final bool enabled;
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    if (!enabled) {
+      return child;
+    }
+
+    return SingleChildScrollView(
+      key: const ValueKey<String>('map-compact-bottom-scroll'),
+      primary: false,
+      physics: const ClampingScrollPhysics(),
+      child: child,
+    );
   }
 }
 

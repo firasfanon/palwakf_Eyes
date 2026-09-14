@@ -1,0 +1,36 @@
+{
+  "project_id": "pal_eyes",
+  "batch": "PAL_EYES_OSM_TILE_PROVIDER_POLICY_AND_PRODUCTION_READINESS_CLOSURE_V1",
+  "baseline": "PAL_EYES_OSM_TILE_PROVIDER_POLICY_AND_PRODUCTION_READINESS_R9_0_2_20260803",
+  "version": "9.0.2+31",
+  "parent_commit": "21d70b068870be72e573140ceb7a9ba17e644da3",
+  "status": "BUILT_PENDING_LOCAL_VALIDATION",
+  "controls": {
+    "visible_attribution": "IMPLEMENTED_PENDING_UAT",
+    "map_issue_report_link": "IMPLEMENTED_PENDING_UAT",
+    "production_without_approved_external_provider": "FAIL_CLOSED",
+    "tile_prefetch": "FORBIDDEN",
+    "bulk_tile_download": "FORBIDDEN",
+    "offline_tile_archive": "FORBIDDEN",
+    "background_map_seeding": "FORBIDDEN"
+  },
+  "validation": {
+    "static_verify": "PENDING",
+    "flutter_analyze": "PENDING",
+    "flutter_test": "PENDING",
+    "web_release_build": "PENDING",
+    "browser_uat_desktop": "PENDING",
+    "browser_uat_narrow": "PENDING"
+  },
+  "governance": {
+    "database_write": false,
+    "supabase_apply": false,
+    "public_coordinates": 0,
+    "public_markers": 0,
+    "approved_media": 0,
+    "publication": "BLOCKED",
+    "production_deployment": "NOT_APPROVED",
+    "provider_purchase": "NOT_AUTHORIZED",
+    "provider_account_creation": "NOT_AUTHORIZED"
+  }
+}

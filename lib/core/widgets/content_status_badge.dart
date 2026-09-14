@@ -14,6 +14,15 @@ class ContentStatusBadge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final color = status.color(Theme.of(context).colorScheme);
+    final iconSize = compact ? 15.0 : 17.0;
+    final textStyle = DefaultTextStyle.of(context).style.merge(
+      TextStyle(
+        color: color,
+        fontSize: compact ? 12 : null,
+        fontWeight: FontWeight.w800,
+      ),
+    );
+
     return Semantics(
       label: 'حالة المحتوى: ${status.labelAr}',
       child: Container(
@@ -26,20 +35,32 @@ class ContentStatusBadge extends StatelessWidget {
           borderRadius: BorderRadius.circular(999),
           border: Border.all(color: color.withValues(alpha: 0.28)),
         ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            Icon(status.icon, size: compact ? 15 : 17, color: color),
-            const SizedBox(width: 6),
-            Text(
-              status.labelAr,
-              style: TextStyle(
-                color: color,
-                fontSize: compact ? 12 : null,
-                fontWeight: FontWeight.w800,
-              ),
-            ),
-          ],
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final textPainter = TextPainter(
+              text: TextSpan(text: status.labelAr, style: textStyle),
+              textDirection: Directionality.of(context),
+              textScaler: MediaQuery.textScalerOf(context),
+              maxLines: 1,
+            )..layout();
+
+            final requiredWidth = iconSize + 6 + textPainter.width;
+
+            final iconOnly =
+                constraints.hasBoundedWidth &&
+                constraints.maxWidth < requiredWidth;
+
+            return Row(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                Icon(status.icon, size: iconSize, color: color),
+                if (!iconOnly) ...<Widget>[
+                  const SizedBox(width: 6),
+                  Text(status.labelAr, maxLines: 1, style: textStyle),
+                ],
+              ],
+            );
+          },
         ),
       ),
     );

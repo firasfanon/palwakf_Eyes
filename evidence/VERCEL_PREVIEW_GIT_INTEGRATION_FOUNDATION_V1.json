@@ -1,0 +1,49 @@
+{
+    "project_id":  "pal_eyes",
+    "batch":  "PAL_EYES_VERCEL_PREVIEW_GIT_INTEGRATION_FOUNDATION_V1",
+    "date":  "2026-08-05",
+    "status":  "LOCAL_APPLY_BOOTSTRAP_AND_GITHUB_SECRETS_PASS_PENDING_FIRST_PREVIEW",
+    "vercel":  {
+                   "team_name":  "firasfanon\u0027s projects",
+                   "team_slug":  "firasfanons-projects",
+                   "team_id":  "team_8DIevPeFrbvT01rUqXDnJ0dQ",
+                   "project_name":  "pal-eyes",
+                   "project_exists_at_discovery":  false,
+                   "deployment_mode":  "PREVIEW_ONLY",
+                   "automatic_git_deployments":  false,
+                   "project_bootstrap":  "PASS",
+                   "local_link":  "PASS"
+               },
+    "github":  {
+                   "repository":  "firasfanon/palwakf_Eyes",
+                   "authoritative_source":  true,
+                   "target_branch":  "agent/pal-eyes-vercel-preview-foundation-v1",
+                   "required_secrets":  [
+                                            "VERCEL_TOKEN",
+                                            "VERCEL_ORG_ID",
+                                            "VERCEL_PROJECT_ID"
+                                        ],
+                   "secrets_configured":  true,
+                   "secret_names_verified":  [
+                                                 "VERCEL_TOKEN",
+                                                 "VERCEL_ORG_ID",
+                                                 "VERCEL_PROJECT_ID"
+                                             ]
+               },
+    "boundaries":  {
+                       "production_domain_assignment":  false,
+                       "production_alias":  false,
+                       "production_deployment":  "NOT_APPROVED",
+                       "database_write":  false,
+                       "supabase_apply":  false,
+                       "public_coordinates":  0,
+                       "public_markers":  0,
+                       "publication":  "BLOCKED"
+                   },
+    "repository":  "firasfanon/palwakf_Eyes",
+    "source_continuity":  {
+                              "branch":  "agent/pal-eyes-osm-policy-production-readiness-v1",
+                              "head":  "b39df1bb5b3efdd187033e68c342b14de64a980c",
+                              "mode":  "EXACT_REMOTE_CHECKPOINT_PARENT"
+                          }
+}

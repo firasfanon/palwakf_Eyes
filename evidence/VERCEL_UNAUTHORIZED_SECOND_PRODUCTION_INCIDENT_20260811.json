@@ -1,0 +1,32 @@
+{
+  "event": "VERCEL_EXPLICIT_PREVIEW_TARGET_STILL_ASSIGNED_PRODUCTION",
+  "date": "2026-08-11",
+  "repository": "firasfanon/palwakf_Eyes",
+  "branch": "agent/pal-eyes-vercel-preview-foundation-v1",
+  "source_commit": "d82869ae80fc4840ddd7f0f78184931fc8a9e87b",
+  "github_run_id": 31434188742,
+  "github_preview_job_id": 93604928101,
+  "requested_command_contract": {
+    "prebuilt": true,
+    "explicit_target": "preview",
+    "production_flag": false
+  },
+  "observed_provider_result": {
+    "environment": "production",
+    "production_alias_assigned": true,
+    "post_deploy_preview_assertion": "DEPLOYMENT_NOT_CONFIRMED_IN_PREVIEW"
+  },
+  "containment": {
+    "deployment_removed": true,
+    "production_deployments_after_containment": 0,
+    "pal_eyes_production_alias_after_containment": "ABSENT",
+    "status": "PASS"
+  },
+  "governance_response": {
+    "real_app_deployment": "DISABLED_FAIL_CLOSED",
+    "production_deployment_approved": false,
+    "merge_authorized": false,
+    "provider_retry_authorized": false
+  },
+  "next_gate": "LOCAL_BROWSER_UAT_AND_PRODUCT_RUNTIME_CLOSURE"
+}
