@@ -171,32 +171,92 @@ jobs:
         env:
           DEPLOYMENT_URL: ${{ steps.deploy.outputs.deployment_url }}
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
         run: |
           set -euo pipefail
 
-          STABLE_HOST="pal-eyes-development.vercel.app"
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.parse
+          import urllib.request
 
-          vercel alias set \
-            "$DEPLOYMENT_URL" \
-            "$STABLE_HOST" \
-            --token="$VERCEL_TOKEN"
+          deployment_url = os.environ["DEPLOYMENT_URL"].strip()
+          token = os.environ["VERCEL_TOKEN"]
+          team_id = os.environ["VERCEL_ORG_ID"]
+          stable_host = "pal-eyes-development.vercel.app"
 
-          INSPECT_OUTPUT="$(
-            vercel inspect \
-              "$DEPLOYMENT_URL" \
-              --token="$VERCEL_TOKEN" \
-              2>&1
-          )"
+          parsed = urllib.parse.urlparse(
+              deployment_url
+              if "://" in deployment_url
+              else f"https://{deployment_url}"
+          )
+          deployment_host = parsed.netloc.lower().rstrip(".")
 
-          printf '%s\n' "$INSPECT_OUTPUT"
+          if not deployment_host:
+              raise SystemExit("VERCEL_DEPLOYMENT_HOST_INVALID")
 
-          printf '%s\n' "$INSPECT_OUTPUT" \
-            | grep -Fq "https://$STABLE_HOST" || {
-              echo "DEVELOPMENT_ALIAS_TARGET_MISMATCH"
-              exit 1
-            }
+          def request_json(url, *, method="GET", payload=None):
+              data = None
+              headers = {
+                  "Authorization": f"Bearer {token}",
+                  "User-Agent": "pal-eyes-development-alias-binder",
+              }
+              if payload is not None:
+                  data = json.dumps(payload).encode("utf-8")
+                  headers["Content-Type"] = "application/json"
+              request = urllib.request.Request(
+                  url,
+                  data=data,
+                  headers=headers,
+                  method=method,
+              )
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  return json.load(response)
 
-          echo "DEVELOPMENT_ALIAS_TARGET=CONFIRMED"
+          query = urllib.parse.urlencode({"teamId": team_id})
+          encoded_host = urllib.parse.quote(deployment_host, safe="")
+          deployment = request_json(
+              f"https://api.vercel.com/v13/deployments/{encoded_host}?{query}"
+          )
+          deployment_id = deployment.get("id")
+
+          if not isinstance(deployment_id, str) or not deployment_id:
+              raise SystemExit("VERCEL_DEPLOYMENT_ID_MISSING")
+
+          alias_endpoint = (
+              "https://api.vercel.com/v2/deployments/"
+              + urllib.parse.quote(deployment_id, safe="")
+              + "/aliases?"
+              + query
+          )
+
+          assigned = request_json(
+              alias_endpoint,
+              method="POST",
+              payload={"alias": stable_host, "redirect": None},
+          )
+
+          if assigned.get("alias") != stable_host:
+              raise SystemExit("DEVELOPMENT_ALIAS_ASSIGNMENT_MISMATCH")
+
+          alias_payload = request_json(alias_endpoint)
+          aliases = alias_payload.get("aliases")
+
+          if not isinstance(aliases, list):
+              raise SystemExit("DEVELOPMENT_ALIAS_LIST_INVALID")
+
+          if not any(
+              isinstance(item, dict)
+              and item.get("alias") == stable_host
+              for item in aliases
+          ):
+              raise SystemExit("DEVELOPMENT_ALIAS_TARGET_MISMATCH")
+
+          print(f"DEVELOPMENT_DEPLOYMENT_ID={deployment_id}")
+          print(f"DEVELOPMENT_ALIAS_TARGET={stable_host}")
+          print("DEVELOPMENT_ALIAS_TARGET=CONFIRMED")
+          PY
 
       - name: Verify governed development deployment
         shell: bash
