@@ -11,7 +11,7 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('بعيون فلسطينية'), findsWidgets);
-    expect(find.byKey(const Key('home-governed-draft-banner')), findsOneWidget);
+    expect(find.byKey(const Key('home-governed-draft-banner')), findsNothing);
 
     final scrollable = find.byType(Scrollable).first;
     final storiesSection = find.byKey(const Key('home-stories-section'));
@@ -27,20 +27,10 @@ void main() {
     expect(storiesSection, findsOneWidget);
     expect(find.text('قصص من المكان'), findsOneWidget);
 
-    final evidenceSection = find.byKey(const Key('home-evidence-section'));
-
-    await tester.scrollUntilVisible(
-      evidenceSection,
-      520,
-      scrollable: scrollable,
-      maxScrolls: 30,
-    );
-    await tester.pumpAndSettle();
-
-    expect(evidenceSection, findsOneWidget);
+    expect(find.byKey(const Key('home-evidence-section')), findsNothing);
     expect(
       find.text('كل رواية تبدأ من دليل، وتنتهي بمراجعة بشرية'),
-      findsOneWidget,
+      findsNothing,
     );
   });
 }

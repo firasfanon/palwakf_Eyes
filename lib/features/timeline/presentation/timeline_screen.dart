@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
-import 'package:pal_eyes/core/widgets/content_status_badge.dart';
+import 'package:pal_eyes/core/presentation/public_experience_mode.dart';
 import 'package:pal_eyes/core/widgets/draft_content_banner.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_canonical_visual_v1.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_page.dart';
@@ -25,6 +25,7 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final presentationMode = ref.watch(palEyesPresentationModeProvider);
     final sites = ref.watch(foundationSitesProvider);
     final items = <_TimelineItem>[
       for (final site in sites)
@@ -59,8 +60,10 @@ class _TimelineScreenState extends ConsumerState<TimelineScreen> {
       icon: Icons.timeline_outlined,
       eyebrow: 'الذاكرة البصرية',
       subtitle:
-          'تتبع تحولات المكان الفلسطيني عبر الفترات التاريخية، من دون تحويل النقص في السجل إلى يقين مصطنع.',
-      header: const DraftContentBanner(compact: true),
+          'تتبع تحولات المكان الفلسطيني عبر الفترات التاريخية، واربط كل لحظة بالموقع والحكاية.',
+      header: presentationMode.isInternal
+          ? const DraftContentBanner(compact: true)
+          : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
@@ -542,7 +545,6 @@ class _TimelineCard extends StatelessWidget {
             spacing: 8,
             runSpacing: 8,
             children: <Widget>[
-              ContentStatusBadge(status: item.entry.status, compact: true),
               Chip(
                 label: Text(
                   '${item.site.localityAr} • ${item.site.governorateAr}',

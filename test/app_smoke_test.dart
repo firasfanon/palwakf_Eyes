@@ -10,8 +10,8 @@ void main() {
 
     expect(find.text('بعيون فلسطينية'), findsWidgets);
     expect(find.textContaining('اكتشف المكان'), findsOneWidget);
-    expect(find.byKey(const Key('home-governed-draft-banner')), findsOneWidget);
-    expect(find.text('مسودة خاضعة للتدقيق'), findsWidgets);
+    expect(find.byKey(const Key('home-governed-draft-banner')), findsNothing);
+    expect(find.text('مسودة خاضعة للتدقيق'), findsNothing);
     expect(find.text('Runtime Foundation V1'), findsNothing);
     expect(find.textContaining('لا كتابة لقاعدة البيانات'), findsNothing);
   });

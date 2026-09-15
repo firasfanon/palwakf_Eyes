@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
-import 'package:pal_eyes/core/widgets/content_status_badge.dart';
+import 'package:pal_eyes/core/presentation/public_experience_mode.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_page.dart';
 import 'package:pal_eyes/core/widgets/public_experience_maturity.dart';
 import 'package:pal_eyes/features/places/application/heritage_sites_provider.dart';
@@ -32,27 +32,31 @@ class _SourcesScreenState extends ConsumerState<SourcesScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final presentationMode = ref.watch(palEyesPresentationModeProvider);
     final registry = ref.watch(draftSourceRegistryProvider);
     final query = _queryController.text.trim().toLowerCase();
-    final filtered = registry.where((entry) {
-      final haystack = <String>[
-        entry.id,
-        entry.title,
-        entry.attribution,
-        entry.sourceTypeAr,
-        entry.note,
-        entry.url,
-      ].join(' ').toLowerCase();
-      final roleMatches = _role == 'الكل' ||
-          (_role == 'مصادر القصص والمواقع'
-              ? entry.isEditorialSource
-              : !entry.isEditorialSource);
-      final rightsMatches =
-          _rights == 'الكل' || entry.textReuseStatus == _rights;
-      return (query.isEmpty || haystack.contains(query)) &&
-          roleMatches &&
-          rightsMatches;
-    }).toList(growable: false);
+    final filtered = registry
+        .where((entry) {
+          final haystack = <String>[
+            entry.id,
+            entry.title,
+            entry.attribution,
+            entry.sourceTypeAr,
+            entry.note,
+            entry.url,
+          ].join(' ').toLowerCase();
+          final roleMatches =
+              _role == 'الكل' ||
+              (_role == 'مصادر القصص والمواقع'
+                  ? entry.isEditorialSource
+                  : !entry.isEditorialSource);
+          final rightsMatches =
+              _rights == 'الكل' || entry.textReuseStatus == _rights;
+          return (query.isEmpty || haystack.contains(query)) &&
+              roleMatches &&
+              rightsMatches;
+        })
+        .toList(growable: false);
 
     final visible = filtered.take(_visibleCount).toList(growable: false);
     final rightsValues = <String>{
@@ -60,8 +64,7 @@ class _SourcesScreenState extends ConsumerState<SourcesScreen> {
       ...registry
           .map((entry) => entry.textReuseStatus)
           .where((value) => value.isNotEmpty),
-    }.toList()
-      ..sort();
+    }.toList()..sort();
 
     return PalEyesPage(
       title: 'مكتبة المصادر',
@@ -69,17 +72,19 @@ class _SourcesScreenState extends ConsumerState<SourcesScreen> {
       eyebrow: 'اعرف ما وراء الحكاية',
       subtitle:
           '${ContentCatalogMetrics.governedSourceRegistryCount} مرجعاً وبحثاً يقود صفحات المواقع والقصص.',
-      header: PalEyesPublicDisclosure(
-        summary:
-            'وجود المرجع في المكتبة لا يعني السماح بنسخ نصه أو صوره؛ لذلك نعرض بياناته ومسار استخدامه بوضوح.',
-        details: const <String>[
-          'الاستشهاد بالمعلومة يختلف عن إعادة نشر النص أو الصورة.',
-          'تُراجع الطبعة والصفحة والرابط قبل اعتماد الاستشهاد.',
-          'حقوق الوسائط تُحسم على مستوى كل ملف.',
-        ],
-        actionLabel: 'كيف نستخدم المصادر؟',
-        onAction: () => context.go(RoutePaths.methodology),
-      ),
+      header: presentationMode.isInternal
+          ? PalEyesPublicDisclosure(
+              summary:
+                  'وجود المرجع في المكتبة لا يعني السماح بنسخ نصه أو صوره؛ لذلك نعرض بياناته ومسار استخدامه بوضوح.',
+              details: const <String>[
+                'الاستشهاد بالمعلومة يختلف عن إعادة نشر النص أو الصورة.',
+                'تُراجع الطبعة والصفحة والرابط قبل اعتماد الاستشهاد.',
+                'حقوق الوسائط تُحسم على مستوى كل ملف.',
+              ],
+              actionLabel: 'كيف نستخدم المصادر؟',
+              onAction: () => context.go(RoutePaths.methodology),
+            )
+          : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
@@ -152,8 +157,8 @@ class _SourcesScreenState extends ConsumerState<SourcesScreen> {
               Text(
                 'المراجع',
                 style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                      fontWeight: FontWeight.w900,
-                    ),
+                  fontWeight: FontWeight.w900,
+                ),
               ),
               Chip(label: Text('${filtered.length} من ${registry.length}')),
             ],
@@ -247,9 +252,7 @@ class _SourceCard extends StatelessWidget {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  const CircleAvatar(
-                    child: Icon(Icons.library_books_outlined),
-                  ),
+                  const CircleAvatar(child: Icon(Icons.library_books_outlined)),
                   const SizedBox(width: 14),
                   Expanded(
                     child: Column(
@@ -257,19 +260,13 @@ class _SourceCard extends StatelessWidget {
                       children: <Widget>[
                         Text(
                           entry.title,
-                          style:
-                              Theme.of(context).textTheme.titleMedium?.copyWith(
-                                    fontWeight: FontWeight.w900,
-                                  ),
+                          style: Theme.of(context).textTheme.titleMedium
+                              ?.copyWith(fontWeight: FontWeight.w900),
                         ),
                         const SizedBox(height: 5),
                         Text(entry.attribution),
                       ],
                     ),
-                  ),
-                  ContentStatusBadge(
-                    status: entry.status,
-                    compact: true,
                   ),
                 ],
               ),
@@ -281,16 +278,14 @@ class _SourceCard extends StatelessWidget {
                 runSpacing: 7,
                 children: <Widget>[
                   Chip(label: Text(entry.sourceTypeAr)),
-                  Chip(
-                    label: Text('${entry.mentionedSiteCount} مواقع مرتبطة'),
-                  ),
+                  Chip(label: Text('${entry.mentionedSiteCount} مواقع مرتبطة')),
                   Chip(label: Text('النص: ${entry.textReuseStatus}')),
                 ],
               ),
               ExpansionTile(
                 tilePadding: EdgeInsets.zero,
                 title: const Text(
-                  'تفاصيل الاستخدام والحقوق',
+                  'عن هذا المصدر',
                   style: TextStyle(fontWeight: FontWeight.w800),
                 ),
                 children: <Widget>[

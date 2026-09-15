@@ -11,6 +11,7 @@ void main() {
     expect(shell.contains("'الأماكن'"), isTrue);
     expect(shell.contains("'الحكايات'"), isTrue);
     expect(shell.contains("Text('مساحة الفريق')"), isTrue);
+    expect(shell.contains('presentationMode.isInternal'), isTrue);
     expect(shell.contains("label: const Text('مساحة العمل')"), isFalse);
   });
 
@@ -35,6 +36,8 @@ void main() {
     expect(stories.contains('حكايات عن المكان'), isTrue);
     expect(detail.contains('PalEyesMediaPlaceholder'), isTrue);
     expect(detail.contains('فتح مساحة الباحث'), isFalse);
+    expect(detail.contains("'عن هذه المادة'"), isTrue);
+    expect(detail.contains('_PublicPlaceExperience'), isTrue);
   });
 
   test('loading empty and error states are shared and accessible', () {

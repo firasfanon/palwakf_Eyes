@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/app_colors.dart';
+import 'package:pal_eyes/core/presentation/public_experience_mode.dart';
 import 'package:pal_eyes/core/widgets/draft_content_banner.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_canonical_visual_v1.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_visual_system.dart';
@@ -22,6 +23,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final presentationMode = ref.watch(palEyesPresentationModeProvider);
     final sites = ref.watch(foundationSitesProvider);
     final featured = ref.watch(featuredSitesProvider);
     final mapped = ref.watch(mappedSitesProvider);
@@ -40,16 +42,17 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 onMap: () => context.go(RoutePaths.map),
                 onGovernorates: () => context.go(RoutePaths.governorates),
               ),
-              Padding(
-                padding: EdgeInsets.fromLTRB(horizontal, 16, horizontal, 0),
-                child: const DraftContentBanner(
-                  key: Key('home-governed-draft-banner'),
-                  title: 'مسودة خاضعة للتدقيق',
-                  message:
-                      'كل موقع ورواية ومصدر ظاهر في هذه النسخة مادة تطويرية تحتاج مراجعة تاريخية وببليوغرافية وحقوقية.',
-                  compact: true,
+              if (presentationMode.isInternal)
+                Padding(
+                  padding: EdgeInsets.fromLTRB(horizontal, 16, horizontal, 0),
+                  child: const DraftContentBanner(
+                    key: Key('home-governed-draft-banner'),
+                    title: 'مسودة خاضعة للتدقيق',
+                    message:
+                        'كل موقع ورواية ومصدر ظاهر في هذه النسخة مادة تطويرية تحتاج مراجعة تاريخية وببليوغرافية وحقوقية.',
+                    compact: true,
+                  ),
                 ),
-              ),
             ],
           ),
         ),
@@ -159,26 +162,28 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                       icon: Icons.place_outlined,
                       title: 'اقترب من موقع واحد بكل طبقاته',
                       subtitle:
-                          'صفحة الموقع تجمع الملخص والرواية والمصادر والفترة وحالة التوثيق في تجربة قراءة واحدة.',
+                          'صفحة المكان تجمع الحكاية والزمن والصور والخريطة والمصادر في تجربة واحدة.',
                       actionLabel: 'جميع المواقع',
                       onAction: () => context.go(RoutePaths.places),
                     ),
                     const SizedBox(height: 20),
                     _SiteOfTheDay(site: siteOfTheDay),
-                    const SizedBox(height: 58),
-                    const PalEyesSectionHeader(
-                      key: Key('home-evidence-section'),
-                      eyebrow: 'المصدر خلف الرواية',
-                      icon: Icons.fact_check_outlined,
-                      title: 'كل رواية تبدأ من دليل، وتنتهي بمراجعة بشرية',
-                      subtitle:
-                          'نعرض للزائر المسار المبسط من اكتشاف المصدر إلى ربط الادعاء ومراجعة الحقوق ثم الاعتماد.',
-                    ),
-                    const SizedBox(height: 20),
-                    _EvidenceJourney(
-                      onMethodology: () => context.go(RoutePaths.methodology),
-                      onSources: () => context.go(RoutePaths.sources),
-                    ),
+                    if (presentationMode.isInternal) ...<Widget>[
+                      const SizedBox(height: 58),
+                      const PalEyesSectionHeader(
+                        key: Key('home-evidence-section'),
+                        eyebrow: 'المصدر خلف الرواية',
+                        icon: Icons.fact_check_outlined,
+                        title: 'كل رواية تبدأ من دليل، وتنتهي بمراجعة بشرية',
+                        subtitle:
+                            'مسار داخلي يوضح اكتشاف المصدر وربط الادعاء ومراجعة الحقوق قبل الاعتماد.',
+                      ),
+                      const SizedBox(height: 20),
+                      _EvidenceJourney(
+                        onMethodology: () => context.go(RoutePaths.methodology),
+                        onSources: () => context.go(RoutePaths.sources),
+                      ),
+                    ],
                     const SizedBox(height: 58),
                     _OralMemorySection(
                       onStories: () => context.go(RoutePaths.stories),
@@ -194,7 +199,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         icon: Icons.bookmarks_outlined,
                         title: 'مواقع تستحق قراءة أعمق',
                         subtitle:
-                            'مجموعة مختارة من الكتالوج الكامل، مع إبقاء حالة كل مادة ومصادرها وفجواتها واضحة.',
+                            'مجموعة مختارة من الكتالوج الكامل لتبدأ منها رحلة أعمق في المكان والحكاية.',
                         actionLabel: 'استكشف 79 موقعاً',
                         onAction: () => context.go(RoutePaths.places),
                       ),

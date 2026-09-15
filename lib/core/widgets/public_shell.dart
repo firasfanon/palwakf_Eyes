@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/application/app_settings.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
+import 'package:pal_eyes/core/presentation/public_experience_mode.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_canonical_visual_v1.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_visual_system.dart';
 
@@ -14,6 +15,7 @@ class PublicShell extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final presentationMode = ref.watch(palEyesPresentationModeProvider);
     return LayoutBuilder(
       builder: (context, constraints) {
         final wide = constraints.maxWidth >= 1040;
@@ -78,8 +80,8 @@ class PublicShell extends ConsumerWidget {
                         context.go(value);
                       }
                     },
-                    itemBuilder: (context) => const <PopupMenuEntry<String>>[
-                      PopupMenuItem<String>(
+                    itemBuilder: (context) => <PopupMenuEntry<String>>[
+                      const PopupMenuItem<String>(
                         value: RoutePaths.governorates,
                         child: ListTile(
                           contentPadding: EdgeInsets.zero,
@@ -87,7 +89,7 @@ class PublicShell extends ConsumerWidget {
                           title: Text('المحافظات'),
                         ),
                       ),
-                      PopupMenuItem<String>(
+                      const PopupMenuItem<String>(
                         value: RoutePaths.sources,
                         child: ListTile(
                           contentPadding: EdgeInsets.zero,
@@ -95,7 +97,7 @@ class PublicShell extends ConsumerWidget {
                           title: Text('المصادر'),
                         ),
                       ),
-                      PopupMenuItem<String>(
+                      const PopupMenuItem<String>(
                         value: RoutePaths.contribute,
                         child: ListTile(
                           contentPadding: EdgeInsets.zero,
@@ -103,16 +105,19 @@ class PublicShell extends ConsumerWidget {
                           title: Text('ساهم معنا'),
                         ),
                       ),
-                      PopupMenuDivider(),
-                      PopupMenuItem<String>(
-                        value: RoutePaths.workspace,
-                        child: ListTile(
-                          contentPadding: EdgeInsets.zero,
-                          leading: Icon(Icons.dashboard_customize_outlined),
-                          title: Text('مساحة الفريق'),
+                      if (presentationMode
+                          .isInternal) ...<PopupMenuEntry<String>>[
+                        const PopupMenuDivider(),
+                        const PopupMenuItem<String>(
+                          value: RoutePaths.workspace,
+                          child: ListTile(
+                            contentPadding: EdgeInsets.zero,
+                            leading: Icon(Icons.dashboard_customize_outlined),
+                            title: Text('مساحة الفريق'),
+                          ),
                         ),
-                      ),
-                      PopupMenuItem<String>(
+                      ],
+                      const PopupMenuItem<String>(
                         value: '__theme__',
                         child: ListTile(
                           contentPadding: EdgeInsets.zero,
@@ -120,7 +125,7 @@ class PublicShell extends ConsumerWidget {
                           title: Text('تبديل السمة'),
                         ),
                       ),
-                      PopupMenuItem<String>(
+                      const PopupMenuItem<String>(
                         value: '__locale__',
                         child: ListTile(
                           contentPadding: EdgeInsets.zero,
@@ -201,17 +206,19 @@ class PublicShell extends ConsumerWidget {
                                 .read(localeControllerProvider.notifier)
                                 .toggle(),
                           ),
-                          const Divider(height: 28),
-                          OutlinedButton.icon(
-                            onPressed: () {
-                              Navigator.of(context).pop();
-                              context.go(RoutePaths.workspace);
-                            },
-                            icon: const Icon(
-                              Icons.dashboard_customize_outlined,
+                          if (presentationMode.isInternal) ...<Widget>[
+                            const Divider(height: 28),
+                            OutlinedButton.icon(
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                                context.go(RoutePaths.workspace);
+                              },
+                              icon: const Icon(
+                                Icons.dashboard_customize_outlined,
+                              ),
+                              label: const Text('مساحة الفريق'),
                             ),
-                            label: const Text('مساحة الفريق'),
-                          ),
+                          ],
                         ],
                       ),
                     ),

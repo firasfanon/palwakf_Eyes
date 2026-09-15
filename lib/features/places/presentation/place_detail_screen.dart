@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
+import 'package:pal_eyes/core/presentation/public_experience_mode.dart';
 import 'package:pal_eyes/core/widgets/content_status_badge.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_canonical_visual_v1.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_page.dart';
@@ -25,12 +26,21 @@ class _PlaceDetailScreenState extends ConsumerState<PlaceDetailScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final presentationMode = ref.watch(palEyesPresentationModeProvider);
     final site = ref.watch(heritageSiteBySlugProvider(widget.slug));
     if (site == null) {
       return const PalEyesPage(
         title: 'الموقع غير موجود',
         subtitle: 'لم يُعثر على سجل مطابق.',
         child: Center(child: Icon(Icons.location_off_outlined, size: 72)),
+      );
+    }
+
+    if (presentationMode.isPublic) {
+      return _PublicPlaceExperience(
+        site: site,
+        selected: _section,
+        onSelected: (value) => setState(() => _section = value),
       );
     }
 
@@ -121,6 +131,783 @@ class _PlaceDetailScreenState extends ConsumerState<PlaceDetailScreen> {
               ),
             ],
           ),
+        ],
+      ),
+    );
+  }
+}
+
+class _PublicPlaceExperience extends ConsumerWidget {
+  const _PublicPlaceExperience({
+    required this.site,
+    required this.selected,
+    required this.onSelected,
+  });
+
+  final HeritageSite site;
+  final int selected;
+  final ValueChanged<int> onSelected;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final horizontal = MediaQuery.sizeOf(context).width < 600 ? 16.0 : 28.0;
+    return CustomScrollView(
+      slivers: <Widget>[
+        SliverToBoxAdapter(child: _PublicPlaceHero(site: site)),
+        SliverToBoxAdapter(
+          child: Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 1240),
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(horizontal, 20, horizontal, 64),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: <Widget>[
+                    _PublicPlaceMetrics(site: site),
+                    const SizedBox(height: 22),
+                    _PublicDetailNavigation(
+                      selected: selected,
+                      onSelected: onSelected,
+                    ),
+                    const SizedBox(height: 20),
+                    AnimatedSwitcher(
+                      duration: const Duration(milliseconds: 220),
+                      child: switch (selected) {
+                        0 => _PublicOverviewSection(site: site),
+                        1 => _PublicNarrativeSection(site: site),
+                        2 => _PublicTimelineSection(site: site),
+                        3 => _PublicMediaSection(site: site),
+                        4 => _PublicMapSection(site: site),
+                        5 => _PublicSourcesSection(site: site),
+                        _ => _PublicAboutMaterialSection(site: site),
+                      },
+                    ),
+                    const SizedBox(height: 28),
+                    PalEyesQuickPathBar(
+                      title: 'واصل الاستكشاف',
+                      actions: <PublicJourneyAction>[
+                        PublicJourneyAction(
+                          label: 'الأطلس',
+                          icon: Icons.account_balance_outlined,
+                          onPressed: () => context.go(RoutePaths.places),
+                        ),
+                        PublicJourneyAction(
+                          label: 'عبر الزمن',
+                          icon: Icons.timeline_outlined,
+                          onPressed: () => context.go(RoutePaths.timeline),
+                        ),
+                        PublicJourneyAction(
+                          label: 'الحكايات',
+                          icon: Icons.auto_stories_outlined,
+                          onPressed: () => context.go(RoutePaths.stories),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _PublicPlaceHero extends StatelessWidget {
+  const _PublicPlaceHero({required this.site});
+  final HeritageSite site;
+
+  @override
+  Widget build(BuildContext context) {
+    final period = site.periods.isEmpty
+        ? 'تاريخ المكان'
+        : site.periods.take(2).join(' • ');
+    return PalEyesHeritageScene(
+      height: MediaQuery.sizeOf(context).width < 720 ? 420 : 520,
+      title: site.nameAr,
+      eyebrow: site.siteTypeAr,
+      subtitle: '${site.localityAr} • ${site.governorateAr} • $period',
+    );
+  }
+}
+
+class _PublicPlaceMetrics extends StatelessWidget {
+  const _PublicPlaceMetrics({required this.site});
+  final HeritageSite site;
+
+  @override
+  Widget build(BuildContext context) {
+    final period = site.periods.isEmpty ? 'غير محدد' : site.periods.first;
+    final metrics = <(IconData, String, String)>[
+      (Icons.location_city_outlined, 'المحافظة', site.governorateAr),
+      (Icons.account_balance_outlined, 'نوع المكان', site.siteTypeAr),
+      (Icons.timeline_outlined, 'الفترة', period),
+      (Icons.library_books_outlined, 'المصادر', '${site.sources.length}'),
+    ];
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final columns = constraints.maxWidth >= 900
+            ? 4
+            : constraints.maxWidth >= 520
+            ? 2
+            : 1;
+        const gap = 10.0;
+        final width = (constraints.maxWidth - gap * (columns - 1)) / columns;
+        return Wrap(
+          spacing: gap,
+          runSpacing: gap,
+          children: metrics
+              .map(
+                (item) => SizedBox(
+                  width: width,
+                  child: PalEyesParchmentPanel(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 15,
+                      vertical: 14,
+                    ),
+                    radius: 16,
+                    child: Row(
+                      children: <Widget>[
+                        Icon(item.$1, color: PalEyesVisualV1.olive, size: 21),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                item.$2,
+                                style: const TextStyle(
+                                  color: PalEyesVisualV1.warmMuted,
+                                  fontSize: 12,
+                                ),
+                              ),
+                              const SizedBox(height: 2),
+                              Text(
+                                item.$3,
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.w900,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              )
+              .toList(growable: false),
+        );
+      },
+    );
+  }
+}
+
+class _PublicDetailNavigation extends StatelessWidget {
+  const _PublicDetailNavigation({
+    required this.selected,
+    required this.onSelected,
+  });
+  final int selected;
+  final ValueChanged<int> onSelected;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: const BoxDecoration(
+        border: Border(bottom: BorderSide(color: PalEyesVisualV1.warmLine)),
+      ),
+      child: PalEyesTabStripV1(
+        selectedIndex: selected.clamp(0, 6),
+        onSelected: onSelected,
+        labels: const <String>[
+          'نبذة',
+          'الحكاية',
+          'عبر الزمن',
+          'الصور',
+          'الخريطة',
+          'المصادر',
+          'عن هذه المادة',
+        ],
+      ),
+    );
+  }
+}
+
+class _PublicOverviewSection extends StatelessWidget {
+  const _PublicOverviewSection({required this.site});
+  final HeritageSite site;
+
+  @override
+  Widget build(BuildContext context) {
+    final periods = site.periods.isEmpty
+        ? 'غير محدد'
+        : site.periods.take(3).join(' • ');
+    return Column(
+      key: const ValueKey<String>('public-overview'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        LayoutBuilder(
+          builder: (context, constraints) {
+            final story = PalEyesParchmentPanel(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  const PalEyesSectionTitleV1(
+                    title: 'عن المكان',
+                    subtitle:
+                        'مدخل سريع إلى الموقع قبل الغوص في قصته وطبقاته التاريخية.',
+                  ),
+                  const SizedBox(height: 16),
+                  Text(
+                    site.summaryDraft,
+                    style: const TextStyle(height: 1.9, fontSize: 17),
+                  ),
+                  if (site.isLimitedResearch) ...<Widget>[
+                    const SizedBox(height: 16),
+                    const _PublicInfoNote(
+                      icon: Icons.info_outline_rounded,
+                      text:
+                          'المعلومات المتاحة عن هذا المكان محدودة حاليًا؛ نعرض ما نعرفه من دون ملء الفراغات بالتخمين.',
+                    ),
+                  ],
+                ],
+              ),
+            );
+            final facts = PalEyesParchmentPanel(
+              color: PalEyesVisualV1.parchmentDeep.withValues(alpha: 0.48),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  const Text(
+                    'في لمحة',
+                    style: TextStyle(fontWeight: FontWeight.w900, fontSize: 17),
+                  ),
+                  const SizedBox(height: 8),
+                  PalEyesFactRowV1(
+                    icon: Icons.place_outlined,
+                    label: 'المحلية',
+                    value: site.localityAr,
+                  ),
+                  PalEyesFactRowV1(
+                    icon: Icons.location_city_outlined,
+                    label: 'المحافظة',
+                    value: site.governorateAr,
+                  ),
+                  PalEyesFactRowV1(
+                    icon: Icons.account_balance_outlined,
+                    label: 'الفئة',
+                    value: site.siteTypeAr,
+                  ),
+                  PalEyesFactRowV1(
+                    icon: Icons.timeline_outlined,
+                    label: 'الفترات',
+                    value: periods,
+                  ),
+                ],
+              ),
+            );
+            if (constraints.maxWidth >= 820) {
+              return Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Expanded(flex: 7, child: story),
+                  const SizedBox(width: 16),
+                  Expanded(flex: 3, child: facts),
+                ],
+              );
+            }
+            return Column(
+              children: <Widget>[story, const SizedBox(height: 14), facts],
+            );
+          },
+        ),
+        if (site.oralHistoryCount > 0) ...<Widget>[
+          const SizedBox(height: 18),
+          PalEyesParchmentPanel(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                const Icon(
+                  Icons.record_voice_over_outlined,
+                  color: PalEyesVisualV1.olive,
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Text(
+                    'ترتبط بالمكان ${site.oralHistoryCount} مادة من الذاكرة الشفوية. ستظهر الحكايات القابلة للعرض هنا عند تجهيزها.',
+                    style: const TextStyle(height: 1.7),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+}
+
+class _PublicNarrativeSection extends StatelessWidget {
+  const _PublicNarrativeSection({required this.site});
+  final HeritageSite site;
+
+  @override
+  Widget build(BuildContext context) {
+    if (site.narrativeSections.isEmpty) {
+      return const PalEyesParchmentPanel(
+        key: ValueKey<String>('public-narrative-empty'),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            PalEyesSectionTitleV1(
+              title: 'حكاية المكان ما زالت قصيرة',
+              subtitle:
+                  'لا تتوفر بعد مادة موثقة كافية لعرض قصة تاريخية تفصيلية.',
+            ),
+            SizedBox(height: 14),
+            Text(
+              'نحتفظ بالصفحة مفتوحة للاكتشاف، ونضيف الحكاية عندما تتوفر مادة قابلة للتوثيق والعرض.',
+              style: TextStyle(height: 1.8),
+            ),
+          ],
+        ),
+      );
+    }
+    return Column(
+      key: const ValueKey<String>('public-narrative'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        const PalEyesSectionTitleV1(
+          title: 'حكاية المكان',
+          subtitle:
+              'اقرأ القصة على شكل فصول قصيرة، ثم انتقل إلى المصادر إذا أردت التعمق.',
+        ),
+        const SizedBox(height: 14),
+        ...site.narrativeSections.map(
+          (section) => Padding(
+            padding: const EdgeInsets.only(bottom: 14),
+            child: PalEyesParchmentPanel(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    section.title,
+                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    section.draftText,
+                    style: const TextStyle(height: 1.9, fontSize: 16),
+                  ),
+                  if (section.sourceIds.isNotEmpty) ...<Widget>[
+                    const SizedBox(height: 14),
+                    Text(
+                      'مرتبط بـ ${section.sourceIds.length} ${section.sourceIds.length == 1 ? 'مصدر' : 'مصادر'}',
+                      style: const TextStyle(
+                        color: PalEyesVisualV1.warmMuted,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ],
+                ],
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _PublicTimelineSection extends StatelessWidget {
+  const _PublicTimelineSection({required this.site});
+  final HeritageSite site;
+
+  @override
+  Widget build(BuildContext context) {
+    if (site.timeline.isEmpty) {
+      return PalEyesParchmentPanel(
+        key: const ValueKey<String>('public-timeline-empty'),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            const PalEyesSectionTitleV1(
+              title: 'عبر الزمن',
+              subtitle: 'لم تُجهز بعد محطات زمنية تفصيلية لهذا المكان.',
+            ),
+            if (site.periods.isNotEmpty) ...<Widget>[
+              const SizedBox(height: 14),
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: site.periods
+                    .map((period) => Chip(label: Text(period)))
+                    .toList(growable: false),
+              ),
+            ],
+          ],
+        ),
+      );
+    }
+    return Column(
+      key: const ValueKey<String>('public-timeline'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        const PalEyesSectionTitleV1(
+          title: 'عبر الزمن',
+          subtitle:
+              'محطات تساعد على رؤية كيف تغير المكان عبر الفترات التاريخية.',
+        ),
+        const SizedBox(height: 16),
+        ...site.timeline.map(
+          (entry) => Padding(
+            padding: const EdgeInsets.only(bottom: 12),
+            child: PalEyesParchmentPanel(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Container(width: 4, height: 88, color: PalEyesVisualV1.olive),
+                  const SizedBox(width: 14),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          entry.period,
+                          style: const TextStyle(
+                            color: PalEyesVisualV1.oliveDark,
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          entry.title,
+                          style: Theme.of(context).textTheme.titleMedium
+                              ?.copyWith(fontWeight: FontWeight.w900),
+                        ),
+                        const SizedBox(height: 7),
+                        Text(
+                          entry.draftText,
+                          style: const TextStyle(height: 1.75),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _PublicMediaSection extends StatelessWidget {
+  const _PublicMediaSection({required this.site});
+  final HeritageSite site;
+
+  @override
+  Widget build(BuildContext context) {
+    final visibleCount = site.approvedMediaCount > 0
+        ? site.approvedMediaCount.clamp(1, 6)
+        : 3;
+    return Column(
+      key: const ValueKey<String>('public-media'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        PalEyesSectionTitleV1(
+          title: 'صور المكان',
+          subtitle: site.approvedMediaCount > 0
+              ? 'مواد بصرية مرتبطة بالموقع.'
+              : 'نعمل على إضافة صور ووثائق بصرية صالحة للعرض.',
+        ),
+        const SizedBox(height: 14),
+        LayoutBuilder(
+          builder: (context, constraints) {
+            final columns = constraints.maxWidth >= 900
+                ? 3
+                : constraints.maxWidth >= 520
+                ? 2
+                : 1;
+            const gap = 12.0;
+            final width =
+                (constraints.maxWidth - gap * (columns - 1)) / columns;
+            return Wrap(
+              spacing: gap,
+              runSpacing: gap,
+              children: List<Widget>.generate(
+                visibleCount,
+                (index) => SizedBox(
+                  width: width,
+                  child: PalEyesMediaPlaceholder(
+                    label: site.approvedMediaCount > index
+                        ? 'صورة من المكان'
+                        : 'مادة بصرية قيد الإعداد',
+                    icon: site.approvedMediaCount > index
+                        ? Icons.photo_outlined
+                        : Icons.landscape_outlined,
+                    height: 190,
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+      ],
+    );
+  }
+}
+
+class _PublicMapSection extends StatelessWidget {
+  const _PublicMapSection({required this.site});
+  final HeritageSite site;
+
+  @override
+  Widget build(BuildContext context) {
+    return PalEyesParchmentPanel(
+      key: const ValueKey<String>('public-map'),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          const PalEyesSectionTitleV1(
+            title: 'المكان على الخريطة',
+            subtitle: 'ابدأ من الجغرافيا ثم عد إلى الحكاية.',
+          ),
+          const SizedBox(height: 16),
+          Text(
+            '${site.localityAr} • ${site.governorateAr}',
+            style: Theme.of(
+              context,
+            ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w900),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            site.hasPublicCoordinates
+                ? 'يتوفر موضع عام لهذا المكان على الأطلس.'
+                : 'نعرض التجمع والمحافظة الآن، ويُضاف الموضع الدقيق عندما تتوفر نقطة موثوقة للعرض.',
+            style: const TextStyle(height: 1.75),
+          ),
+          const SizedBox(height: 16),
+          FilledButton.tonalIcon(
+            onPressed: () => context.go(
+              site.hasPublicCoordinates
+                  ? '${RoutePaths.map}?site=${site.slug}'
+                  : RoutePaths.map,
+            ),
+            icon: const Icon(Icons.map_outlined),
+            label: Text(
+              site.hasPublicCoordinates
+                  ? 'افتح هذا المكان على الخريطة'
+                  : 'استكشف الأطلس',
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _PublicSourcesSection extends StatelessWidget {
+  const _PublicSourcesSection({required this.site});
+  final HeritageSite site;
+
+  @override
+  Widget build(BuildContext context) {
+    if (site.sources.isEmpty) {
+      return const PalEyesParchmentPanel(
+        key: ValueKey<String>('public-sources-empty'),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            PalEyesSectionTitleV1(
+              title: 'المصادر',
+              subtitle: 'لم نضف بعد قائمة مصادر قابلة للعرض لهذه الصفحة.',
+            ),
+            SizedBox(height: 12),
+            Text(
+              'ستظهر هنا الكتب والدراسات والوثائق التي يمكن للقارئ الرجوع إليها.',
+              style: TextStyle(height: 1.75),
+            ),
+          ],
+        ),
+      );
+    }
+    return Column(
+      key: const ValueKey<String>('public-sources'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        const PalEyesSectionTitleV1(
+          title: 'المصادر',
+          subtitle: 'مراجع يمكنك الرجوع إليها لمعرفة المزيد عن المكان.',
+        ),
+        const SizedBox(height: 14),
+        ...site.sources.map(
+          (source) => Padding(
+            padding: const EdgeInsets.only(bottom: 12),
+            child: PalEyesParchmentPanel(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    source.title,
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  const SizedBox(height: 5),
+                  Text(
+                    source.attribution,
+                    style: const TextStyle(
+                      color: PalEyesVisualV1.warmMuted,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  if (source.note.isNotEmpty) ...<Widget>[
+                    const SizedBox(height: 10),
+                    Text(source.note, style: const TextStyle(height: 1.7)),
+                  ],
+                  if (source.url.isNotEmpty) ...<Widget>[
+                    const SizedBox(height: 10),
+                    SelectableText(
+                      source.url,
+                      style: Theme.of(context).textTheme.bodySmall,
+                    ),
+                  ],
+                ],
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _PublicAboutMaterialSection extends ConsumerWidget {
+  const _PublicAboutMaterialSection({required this.site});
+  final HeritageSite site;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final package = ref.watch(stagingResearchPackageBySiteIdProvider(site.id));
+    final String title;
+    final String message;
+    if (package?.isStatusOnly ?? site.isLimitedResearch) {
+      title = 'المعلومات المتاحة محدودة حاليًا';
+      message =
+          'نعرف هوية المكان الأساسية، لكن المادة المتاحة لا تكفي بعد لعرض قصة تاريخية تفصيلية. لذلك نُبقي الفراغات ظاهرة بدل ملئها بالتخمين.';
+    } else if (package?.isLinkedReference ?? false) {
+      title = 'هذه الصفحة مرتبطة ببحث مستقل';
+      message =
+          'نعرض هنا ما يفيد تجربة المكان، بينما تبقى المادة البحثية التفصيلية في مسارها المتخصص.';
+    } else {
+      title = 'كيف أعددنا هذه الصفحة؟';
+      message =
+          'نبدأ من هوية المكان والمصادر المرتبطة به، ثم نبني الحكاية تدريجيًا. التفاصيل غير المحسومة لا تُقدَّم للقارئ بوصفها حقائق نهائية.';
+    }
+    return Column(
+      key: const ValueKey<String>('public-about-material'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        PalEyesParchmentPanel(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text(
+                title,
+                style: Theme.of(
+                  context,
+                ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w900),
+              ),
+              const SizedBox(height: 12),
+              Text(message, style: const TextStyle(height: 1.8)),
+              const SizedBox(height: 16),
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: <Widget>[
+                  _PublicTrustChip(
+                    icon: Icons.library_books_outlined,
+                    label: site.sources.isEmpty
+                        ? 'المصادر قيد الإضافة'
+                        : '${site.sources.length} مصادر مرتبطة',
+                  ),
+                  _PublicTrustChip(
+                    icon: Icons.auto_stories_outlined,
+                    label: site.narrativeSections.isEmpty
+                        ? 'القصة قيد الاستكمال'
+                        : '${site.narrativeSections.length} فصول',
+                  ),
+                ],
+              ),
+              const SizedBox(height: 18),
+              TextButton.icon(
+                onPressed: () => context.go(RoutePaths.methodology),
+                icon: const Icon(Icons.fact_check_outlined),
+                label: const Text('تعرّف إلى منهجية التوثيق'),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _PublicTrustChip extends StatelessWidget {
+  const _PublicTrustChip({required this.icon, required this.label});
+  final IconData icon;
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      decoration: BoxDecoration(
+        color: PalEyesVisualV1.olive.withValues(alpha: 0.08),
+        borderRadius: BorderRadius.circular(999),
+        border: Border.all(
+          color: PalEyesVisualV1.olive.withValues(alpha: 0.18),
+        ),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          Icon(icon, size: 16, color: PalEyesVisualV1.oliveDark),
+          const SizedBox(width: 6),
+          Text(label, style: const TextStyle(fontWeight: FontWeight.w800)),
+        ],
+      ),
+    );
+  }
+}
+
+class _PublicInfoNote extends StatelessWidget {
+  const _PublicInfoNote({required this.icon, required this.text});
+  final IconData icon;
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: PalEyesVisualV1.parchmentDeep.withValues(alpha: 0.45),
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Icon(icon, size: 20, color: PalEyesVisualV1.olive),
+          const SizedBox(width: 9),
+          Expanded(child: Text(text, style: const TextStyle(height: 1.7))),
         ],
       ),
     );
