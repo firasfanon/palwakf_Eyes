@@ -10,6 +10,8 @@ import 'package:pal_eyes/features/places/application/heritage_sites_provider.dar
 import 'package:pal_eyes/features/places/application/original_draft_visibility_policy.dart';
 import 'package:pal_eyes/features/places/domain/heritage_site.dart';
 import 'package:pal_eyes/features/places/domain/historical_content.dart';
+import 'package:pal_eyes/features/research/application/staging_research_corpus_provider.dart';
+import 'package:pal_eyes/features/research/presentation/staging_research_package_card.dart';
 
 class PlaceDetailScreen extends ConsumerStatefulWidget {
   const PlaceDetailScreen({required this.slug, super.key});
@@ -689,11 +691,12 @@ class _SourceCard extends StatelessWidget {
   }
 }
 
-class _ResearchSection extends StatelessWidget {
+class _ResearchSection extends ConsumerWidget {
   const _ResearchSection({required this.site});
   final HeritageSite site;
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final package = ref.watch(stagingResearchPackageBySiteIdProvider(site.id));
     return _SectionCard(
       key: const ValueKey<String>('research'),
       title: 'البحث الموازي',
@@ -701,6 +704,10 @@ class _ResearchSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
+          if (package != null) ...<Widget>[
+            StagingResearchPackageCard(package: package),
+            const SizedBox(height: 16),
+          ],
           Text(
             '${site.heldClaimCount} ادعاءً أو مجموعة ادعاءات ما زالت في طابور البحث. لا تظهر هذه المواد داخل الحكاية المحررة.',
           ),
