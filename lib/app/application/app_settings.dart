@@ -10,7 +10,9 @@ class LocaleController extends Notifier<Locale> {
   Locale build() => const Locale('ar');
 
   void toggle() {
-    state = state.languageCode == 'ar' ? const Locale('en') : const Locale('ar');
+    state = state.languageCode == 'ar'
+        ? const Locale('en')
+        : const Locale('ar');
   }
 }
 
@@ -19,7 +21,7 @@ final themeModeControllerProvider =
 
 class ThemeModeController extends Notifier<ThemeMode> {
   @override
-  ThemeMode build() => ThemeMode.light;
+  ThemeMode build() => ThemeMode.dark;
 
   void toggle() {
     state = state == ThemeMode.light ? ThemeMode.dark : ThemeMode.light;
