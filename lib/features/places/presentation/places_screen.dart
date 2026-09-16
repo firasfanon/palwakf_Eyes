@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/app_colors.dart';
+import 'package:pal_eyes/core/presentation/public_experience_mode.dart';
 import 'package:pal_eyes/core/widgets/direct_flutter_maturity_r9.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_page.dart';
 import 'package:pal_eyes/core/widgets/public_experience_maturity.dart';
@@ -33,6 +34,7 @@ class _PlacesScreenState extends ConsumerState<PlacesScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final presentationMode = ref.watch(palEyesPresentationModeProvider);
     final sites = ref.watch(foundationSitesProvider);
     final governorates = <String>{
       'الكل',
@@ -78,16 +80,18 @@ class _PlacesScreenState extends ConsumerState<PlacesScreen> {
           label: const Text('افتح الخريطة'),
         ),
       ],
-      header: PalEyesPublicDisclosure(
-        summary:
-            'كل بطاقة توضح مستوى اكتمال المادة، ويمكن أن تتغير الصياغة أو المراجع مع تقدم البحث.',
-        details: const <String>[
-          'المسودة التاريخية الأصلية محفوظة ولا تختلط بالنص المحرر.',
-          'الإحداثيات والوسائط لا تظهر للعامة قبل اعتمادها.',
-        ],
-        actionLabel: 'اقرأ منهجية التوثيق',
-        onAction: () => context.go(RoutePaths.methodology),
-      ),
+      header: presentationMode.isInternal
+          ? PalEyesPublicDisclosure(
+              summary:
+                  'كل بطاقة توضح مستوى اكتمال المادة، ويمكن أن تتغير الصياغة أو المراجع مع تقدم البحث.',
+              details: const <String>[
+                'المسودة التاريخية الأصلية محفوظة ولا تختلط بالنص المحرر.',
+                'الإحداثيات والوسائط لا تظهر للعامة قبل اعتمادها.',
+              ],
+              actionLabel: 'اقرأ منهجية التوثيق',
+              onAction: () => context.go(RoutePaths.methodology),
+            )
+          : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
@@ -96,7 +100,7 @@ class _PlacesScreenState extends ConsumerState<PlacesScreen> {
             title: '79 موقعاً تقودك من الجغرافيا إلى الحكاية',
             description:
                 'استكشف المدن والقرى والمياه والمقامات والطبقات الأثرية، '
-                'ثم افتح صفحة الموقع لتقرأ الرواية والمصدر وحالة التحقق.',
+                'ثم افتح صفحة الموقع لتقرأ الحكاية وتتابع المكان عبر الزمن وتصل إلى المصادر.',
             icon: Icons.account_balance_outlined,
             gradient: const LinearGradient(
               begin: AlignmentDirectional.topStart,
@@ -198,22 +202,23 @@ class _PlacesScreenState extends ConsumerState<PlacesScreen> {
                               }),
                             ),
                           ),
-                          SizedBox(
-                            width: width,
-                            child: _Filter(
-                              label: 'عمق الحكاية',
-                              value: _originalDraft,
-                              items: const <String>[
-                                'الكل',
-                                'حكاية تاريخية موسعة',
-                                'بطاقة أصلية',
-                              ],
-                              onChanged: (value) => setState(() {
-                                _originalDraft = value;
-                                _visibleLimit = _pageSize;
-                              }),
+                          if (presentationMode.isInternal)
+                            SizedBox(
+                              width: width,
+                              child: _Filter(
+                                label: 'طبقة المسودة الأصلية',
+                                value: _originalDraft,
+                                items: const <String>[
+                                  'الكل',
+                                  'حكاية تاريخية موسعة',
+                                  'بطاقة أصلية',
+                                ],
+                                onChanged: (value) => setState(() {
+                                  _originalDraft = value;
+                                  _visibleLimit = _pageSize;
+                                }),
+                              ),
                             ),
-                          ),
                         ],
                       );
                     },
@@ -232,8 +237,10 @@ class _PlacesScreenState extends ConsumerState<PlacesScreen> {
               const Chip(label: Text('47 حكاية موسعة')),
               const Chip(label: Text('95 مرجعاً في المكتبة')),
               const Chip(label: Text('16 محافظة')),
-              const Chip(label: Text('الخريطة العامة تعرض المعتمد فقط')),
-              const Chip(label: Text('المحتوى قيد التدقيق')),
+              if (presentationMode.isInternal) ...<Widget>[
+                const Chip(label: Text('الخريطة العامة تعرض المعتمد فقط')),
+                const Chip(label: Text('المحتوى قيد التدقيق')),
+              ],
             ],
           ),
           const SizedBox(height: 18),

@@ -106,32 +106,34 @@ class PalEyesMapTileBlockedNotice extends StatelessWidget {
           color: Theme.of(context).colorScheme.errorContainer,
           borderRadius: BorderRadius.circular(18),
         ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            Icon(
-              Icons.map_outlined,
-              color: Theme.of(context).colorScheme.onErrorContainer,
-            ),
-            const SizedBox(height: 8),
-            Text(
-              'الخريطة غير مفعّلة في هذه البيئة',
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.w900,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              Icon(
+                Icons.map_outlined,
                 color: Theme.of(context).colorScheme.onErrorContainer,
               ),
-            ),
-            const SizedBox(height: 6),
-            Text(
-              configuration.blockedReason,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Theme.of(context).colorScheme.onErrorContainer,
-                height: 1.45,
+              const SizedBox(height: 8),
+              Text(
+                'الخريطة غير مفعّلة في هذه البيئة',
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.w900,
+                  color: Theme.of(context).colorScheme.onErrorContainer,
+                ),
               ),
-            ),
-          ],
+              const SizedBox(height: 6),
+              Text(
+                configuration.blockedReason,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Theme.of(context).colorScheme.onErrorContainer,
+                  height: 1.45,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

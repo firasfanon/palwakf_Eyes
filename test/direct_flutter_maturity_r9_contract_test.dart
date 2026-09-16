@@ -36,12 +36,12 @@ void main() {
     expect(shared.contains('class PalEyesChapterRail'), isTrue);
     expect(shared.contains('class PalEyesReadingFrame'), isTrue);
 
-    expect(home.contains('PalEyesPublicIdentityStrip'), isTrue);
+    expect(home.contains('PalEyesHeritageScene'), isTrue);
     expect(discovery.contains('PalEyesPublicIdentityStrip'), isTrue);
     expect(places.contains('PalEyesEditorialPrelude'), isTrue);
-    expect(detail.contains('PalEyesContentCompass'), isTrue);
-    expect(map.contains('PalEyesMapEmptyExperience'), isTrue);
-    expect(stories.contains('PalEyesEditorialPrelude'), isTrue);
+    expect(detail.contains('PalEyesTabStripV1'), isTrue);
+    expect(map.contains('PalEyesParchmentPanel'), isTrue);
+    expect(stories.contains('PalEyesMediaPlaceholder'), isTrue);
     expect(storyDetail.contains('PalEyesChapterRail'), isTrue);
     expect(storyDetail.contains('PalEyesReadingFrame'), isTrue);
   });

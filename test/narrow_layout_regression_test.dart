@@ -61,40 +61,39 @@ void main() {
     },
   );
 
-  testWidgets(
-    'map compact bottom panel is scrollable without overflow at 390x844',
-    (WidgetTester tester) async {
-      tester.view.physicalSize = const Size(390, 844);
-      tester.view.devicePixelRatio = 1.0;
+  testWidgets('map compact category rail renders without overflow at 390x844', (
+    WidgetTester tester,
+  ) async {
+    tester.view.physicalSize = const Size(390, 844);
+    tester.view.devicePixelRatio = 1.0;
 
-      addTearDown(tester.view.resetPhysicalSize);
-      addTearDown(tester.view.resetDevicePixelRatio);
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
 
-      await tester.pumpWidget(
-        ProviderScope(
-          overrides: [
-            appEnvironmentProvider.overrideWithValue(
-              const AppEnvironment(
-                supabaseUrl: '',
-                supabasePublishableKey: '',
-                environmentName: 'production',
-              ),
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [
+          appEnvironmentProvider.overrideWithValue(
+            const AppEnvironment(
+              supabaseUrl: '',
+              supabasePublishableKey: '',
+              environmentName: 'production',
             ),
-            foundationSitesProvider.overrideWithValue(const <HeritageSite>[]),
-            mappedSitesProvider.overrideWithValue(const <HeritageSite>[]),
-          ],
-          child: const MaterialApp(home: MapScreen()),
-        ),
-      );
+          ),
+          foundationSitesProvider.overrideWithValue(const <HeritageSite>[]),
+          mappedSitesProvider.overrideWithValue(const <HeritageSite>[]),
+        ],
+        child: const MaterialApp(home: MapScreen()),
+      ),
+    );
 
-      await tester.pump();
+    await tester.pump();
 
-      expect(tester.takeException(), isNull);
+    expect(tester.takeException(), isNull);
 
-      expect(
-        find.byKey(const ValueKey<String>('map-compact-bottom-scroll')),
-        findsOneWidget,
-      );
-    },
-  );
+    expect(
+      find.byKey(const ValueKey<String>('map-compact-category-rail')),
+      findsOneWidget,
+    );
+  });
 }

@@ -3,11 +3,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/app_colors.dart';
-import 'package:pal_eyes/core/widgets/direct_flutter_maturity_r9.dart';
+import 'package:pal_eyes/core/presentation/public_experience_mode.dart';
 import 'package:pal_eyes/core/widgets/draft_content_banner.dart';
+import 'package:pal_eyes/core/widgets/pal_eyes_canonical_visual_v1.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_visual_system.dart';
 import 'package:pal_eyes/features/places/application/heritage_sites_provider.dart';
-import 'package:pal_eyes/features/places/data/content_catalog_metrics.dart';
 import 'package:pal_eyes/features/places/domain/heritage_site.dart';
 import 'package:pal_eyes/features/places/presentation/widgets/site_card.dart';
 
@@ -23,6 +23,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final presentationMode = ref.watch(palEyesPresentationModeProvider);
     final sites = ref.watch(foundationSitesProvider);
     final featured = ref.watch(featuredSitesProvider);
     final mapped = ref.watch(mappedSitesProvider);
@@ -33,11 +34,26 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     return CustomScrollView(
       slivers: <Widget>[
         SliverToBoxAdapter(
-          child: _OpeningHero(
-            mappedCount: mapped.length,
-            onDiscover: () => context.go(RoutePaths.discover),
-            onMap: () => context.go(RoutePaths.map),
-            onGovernorates: () => context.go(RoutePaths.governorates),
+          child: Column(
+            children: <Widget>[
+              _OpeningHero(
+                mappedCount: mapped.length,
+                onDiscover: () => context.go(RoutePaths.discover),
+                onMap: () => context.go(RoutePaths.map),
+                onGovernorates: () => context.go(RoutePaths.governorates),
+              ),
+              if (presentationMode.isInternal)
+                Padding(
+                  padding: EdgeInsets.fromLTRB(horizontal, 16, horizontal, 0),
+                  child: const DraftContentBanner(
+                    key: Key('home-governed-draft-banner'),
+                    title: 'مسودة خاضعة للتدقيق',
+                    message:
+                        'كل موقع ورواية ومصدر ظاهر في هذه النسخة مادة تطويرية تحتاج مراجعة تاريخية وببليوغرافية وحقوقية.',
+                    compact: true,
+                  ),
+                ),
+            ],
           ),
         ),
         SliverPadding(
@@ -49,13 +65,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
-                    PalEyesPublicIdentityStrip(
-                      active: PalEyesPublicPillar.atlas,
-                      onAtlas: () => context.go(RoutePaths.places),
-                      onMuseum: () => context.go(RoutePaths.discover),
-                      onMagazine: () => context.go(RoutePaths.stories),
-                    ),
-                    const SizedBox(height: 34),
                     const _ProductGatewaysSection(),
                     const SizedBox(height: 42),
                     _MapGateway(
@@ -153,26 +162,28 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                       icon: Icons.place_outlined,
                       title: 'اقترب من موقع واحد بكل طبقاته',
                       subtitle:
-                          'صفحة الموقع تجمع الملخص والرواية والمصادر والفترة وحالة التوثيق في تجربة قراءة واحدة.',
+                          'صفحة المكان تجمع الحكاية والزمن والصور والخريطة والمصادر في تجربة واحدة.',
                       actionLabel: 'جميع المواقع',
                       onAction: () => context.go(RoutePaths.places),
                     ),
                     const SizedBox(height: 20),
                     _SiteOfTheDay(site: siteOfTheDay),
-                    const SizedBox(height: 58),
-                    const PalEyesSectionHeader(
-                      key: Key('home-evidence-section'),
-                      eyebrow: 'المصدر خلف الرواية',
-                      icon: Icons.fact_check_outlined,
-                      title: 'كل رواية تبدأ من دليل، وتنتهي بمراجعة بشرية',
-                      subtitle:
-                          'نعرض للزائر المسار المبسط من اكتشاف المصدر إلى ربط الادعاء ومراجعة الحقوق ثم الاعتماد.',
-                    ),
-                    const SizedBox(height: 20),
-                    _EvidenceJourney(
-                      onMethodology: () => context.go(RoutePaths.methodology),
-                      onSources: () => context.go(RoutePaths.sources),
-                    ),
+                    if (presentationMode.isInternal) ...<Widget>[
+                      const SizedBox(height: 58),
+                      const PalEyesSectionHeader(
+                        key: Key('home-evidence-section'),
+                        eyebrow: 'المصدر خلف الرواية',
+                        icon: Icons.fact_check_outlined,
+                        title: 'كل رواية تبدأ من دليل، وتنتهي بمراجعة بشرية',
+                        subtitle:
+                            'مسار داخلي يوضح اكتشاف المصدر وربط الادعاء ومراجعة الحقوق قبل الاعتماد.',
+                      ),
+                      const SizedBox(height: 20),
+                      _EvidenceJourney(
+                        onMethodology: () => context.go(RoutePaths.methodology),
+                        onSources: () => context.go(RoutePaths.sources),
+                      ),
+                    ],
                     const SizedBox(height: 58),
                     _OralMemorySection(
                       onStories: () => context.go(RoutePaths.stories),
@@ -188,7 +199,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         icon: Icons.bookmarks_outlined,
                         title: 'مواقع تستحق قراءة أعمق',
                         subtitle:
-                            'مجموعة مختارة من الكتالوج الكامل، مع إبقاء حالة كل مادة ومصادرها وفجواتها واضحة.',
+                            'مجموعة مختارة من الكتالوج الكامل لتبدأ منها رحلة أعمق في المكان والحكاية.',
                         actionLabel: 'استكشف 79 موقعاً',
                         onAction: () => context.go(RoutePaths.places),
                       ),
@@ -234,253 +245,153 @@ class _OpeningHero extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final compact = MediaQuery.sizeOf(context).width < 760;
-    final horizontal = MediaQuery.sizeOf(context).width < 600 ? 16.0 : 28.0;
-    return Container(
-      decoration: const BoxDecoration(gradient: AppColors.sovereignGradient),
-      child: Stack(
-        children: <Widget>[
-          const Positioned.fill(child: PalEyesPattern(opacity: 0.045)),
-          PositionedDirectional(
-            start: -120,
-            bottom: -150,
-            child: Container(
-              width: 370,
-              height: 370,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: AppColors.olive.withValues(alpha: 0.14),
-              ),
+    final width = MediaQuery.sizeOf(context).width;
+    final compact = width < 760;
+    final horizontal = width < 600 ? 10.0 : 18.0;
+
+    return ColoredBox(
+      color: PalEyesVisualV1.parchment,
+      child: Padding(
+        padding: EdgeInsets.fromLTRB(horizontal, 12, horizontal, 0),
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(
+              maxWidth: PalEyesVisualV1.maxWidth,
             ),
-          ),
-          Center(
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 1240),
-              child: Padding(
-                padding: EdgeInsets.fromLTRB(
-                  horizontal,
-                  compact ? 34 : 64,
-                  horizontal,
-                  compact ? 44 : 70,
-                ),
-                child: LayoutBuilder(
-                  builder: (context, constraints) {
-                    final copy = _HeroCopy(
-                      onDiscover: onDiscover,
-                      onMap: onMap,
-                      onGovernorates: onGovernorates,
-                    );
-                    final visual = _HeroVisual(mappedCount: mappedCount);
-                    if (constraints.maxWidth >= 900) {
-                      return Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Expanded(flex: 6, child: copy),
-                          const SizedBox(width: 42),
-                          Expanded(flex: 4, child: visual),
-                        ],
-                      );
-                    }
-                    return Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: <Widget>[
-                        copy,
-                        const SizedBox(height: 34),
-                        visual,
+            child: PalEyesHeritageScene(
+              height: compact ? 470 : 545,
+              compact: compact,
+              child: Align(
+                alignment: compact
+                    ? AlignmentDirectional.bottomCenter
+                    : AlignmentDirectional.center,
+                child: ConstrainedBox(
+                  constraints: BoxConstraints(maxWidth: compact ? 520 : 760),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 7,
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.black.withValues(alpha: 0.26),
+                          border: Border.all(
+                            color: Colors.white.withValues(alpha: 0.24),
+                          ),
+                          borderRadius: BorderRadius.circular(999),
+                        ),
+                        child: const Text(
+                          'المكان · الحكايات · الذاكرة',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 16),
+                      Text(
+                        'بعيون فلسطينية',
+                        textAlign: TextAlign.center,
+                        style: Theme.of(context).textTheme.displayLarge
+                            ?.copyWith(
+                              color: Colors.white,
+                              fontSize: compact ? 46 : 68,
+                              fontWeight: FontWeight.w900,
+                              height: 1.05,
+                              shadows: const <Shadow>[
+                                Shadow(
+                                  color: Color(0x55000000),
+                                  blurRadius: 18,
+                                  offset: Offset(0, 4),
+                                ),
+                              ],
+                            ),
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        'اكتشف المكان كما تحفظه الحكايات، وتوثقه الذاكرة.',
+                        textAlign: TextAlign.center,
+                        style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w700,
+                          height: 1.45,
+                        ),
+                      ),
+                      const SizedBox(height: 24),
+                      FilledButton.icon(
+                        style: FilledButton.styleFrom(
+                          backgroundColor: PalEyesVisualV1.olive,
+                          foregroundColor: Colors.white,
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 26,
+                            vertical: 16,
+                          ),
+                        ),
+                        onPressed: onMap,
+                        icon: const Icon(Icons.map_outlined),
+                        label: const Text('استكشف الخريطة'),
+                      ),
+                      if (!compact) ...<Widget>[
+                        const SizedBox(height: 20),
+                        Wrap(
+                          alignment: WrapAlignment.center,
+                          spacing: 12,
+                          runSpacing: 10,
+                          children: <Widget>[
+                            _HeroMiniAction(
+                              icon: Icons.search_rounded,
+                              label: 'ابحث عن مكان',
+                              onTap: onDiscover,
+                            ),
+                            _HeroMiniAction(
+                              icon: Icons.location_city_outlined,
+                              label: 'المحافظات',
+                              onTap: onGovernorates,
+                            ),
+                            _HeroMiniAction(
+                              icon: Icons.location_on_outlined,
+                              label: '$mappedCount موقعًا موثقًا على الخريطة',
+                              onTap: onMap,
+                            ),
+                          ],
+                        ),
                       ],
-                    );
-                  },
+                    ],
+                  ),
                 ),
               ),
             ),
           ),
-        ],
+        ),
       ),
     );
   }
 }
 
-class _HeroCopy extends StatelessWidget {
-  const _HeroCopy({
-    required this.onDiscover,
-    required this.onMap,
-    required this.onGovernorates,
+class _HeroMiniAction extends StatelessWidget {
+  const _HeroMiniAction({
+    required this.icon,
+    required this.label,
+    required this.onTap,
   });
-
-  final VoidCallback onDiscover;
-  final VoidCallback onMap;
-  final VoidCallback onGovernorates;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        const DraftContentBanner(
-          key: Key('home-governed-draft-banner'),
-          title: 'مسودة خاضعة للتدقيق',
-          message:
-              'كل موقع ورواية ومصدر ظاهر في هذه النسخة مادة تطويرية تحتاج مراجعة تاريخية وببليوغرافية وحقوقية.',
-        ),
-        const SizedBox(height: 26),
-        Text(
-          'فلسطين تُروى من المكان',
-          style: Theme.of(context).textTheme.displayMedium?.copyWith(
-            color: Colors.white,
-            fontWeight: FontWeight.w900,
-          ),
-        ),
-        const SizedBox(height: 14),
-        Text(
-          'المكان الفلسطيني كما ترويه الوثيقة والدليل والخريطة والذاكرة الشفوية.',
-          style: Theme.of(context).textTheme.titleLarge?.copyWith(
-            color: Colors.white.withValues(alpha: 0.78),
-            height: 1.62,
-          ),
-        ),
-        const SizedBox(height: 24),
-        PalEyesGlassPanel(
-          padding: const EdgeInsets.all(8),
-          child: TextField(
-            readOnly: true,
-            onTap: onDiscover,
-            style: const TextStyle(color: Colors.white),
-            decoration: InputDecoration(
-              filled: false,
-              hintText: 'ابحث عن موقع، مدينة، قرية، حقبة أو مصدر…',
-              hintStyle: TextStyle(color: Colors.white.withValues(alpha: 0.65)),
-              prefixIcon: const Icon(
-                Icons.search_rounded,
-                color: AppColors.softGold,
-              ),
-              suffixIcon: IconButton(
-                tooltip: 'ابدأ الاستكشاف',
-                onPressed: onDiscover,
-                icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
-              ),
-              border: InputBorder.none,
-              enabledBorder: InputBorder.none,
-              focusedBorder: InputBorder.none,
-            ),
-          ),
-        ),
-        const SizedBox(height: 18),
-        Wrap(
-          spacing: 10,
-          runSpacing: 10,
-          children: <Widget>[
-            FilledButton.icon(
-              onPressed: onDiscover,
-              icon: const Icon(Icons.explore_rounded),
-              label: const Text('استكشف المواقع'),
-            ),
-            OutlinedButton.icon(
-              style: OutlinedButton.styleFrom(
-                foregroundColor: Colors.white,
-                side: BorderSide(color: Colors.white.withValues(alpha: 0.38)),
-              ),
-              onPressed: onMap,
-              icon: const Icon(Icons.map_outlined),
-              label: const Text('افتح الخريطة'),
-            ),
-            TextButton.icon(
-              style: TextButton.styleFrom(foregroundColor: Colors.white),
-              onPressed: onGovernorates,
-              icon: const Icon(Icons.location_city_outlined),
-              label: const Text('المحافظات'),
-            ),
-          ],
-        ),
-      ],
-    );
-  }
-}
-
-class _HeroVisual extends StatelessWidget {
-  const _HeroVisual({required this.mappedCount});
-
-  final int mappedCount;
-
-  @override
-  Widget build(BuildContext context) {
-    return PalEyesGlassPanel(
-      child: LayoutBuilder(
-        builder: (context, constraints) {
-          return Row(
-            children: <Widget>[
-              Expanded(
-                child: SizedBox(
-                  height: 330,
-                  child: const PalestineMapArtwork(),
-                ),
-              ),
-              const SizedBox(width: 14),
-              Expanded(
-                child: Column(
-                  children: <Widget>[
-                    _HeroStat(
-                      value: '${ContentCatalogMetrics.extractedSiteCount}',
-                      label: 'موقعاً',
-                    ),
-                    const SizedBox(height: 10),
-                    const _HeroStat(
-                      value: '${ContentCatalogMetrics.governedDraftPageCount}',
-                      label: 'صفحة محكومة',
-                    ),
-                    const SizedBox(height: 10),
-                    const _HeroStat(
-                      value:
-                          '${ContentCatalogMetrics.reviewedEditorialRecordCount}',
-                      label: 'مادة مراجعة',
-                    ),
-                    const SizedBox(height: 10),
-                    _HeroStat(value: '$mappedCount', label: 'مواضع عامة'),
-                  ],
-                ),
-              ),
-            ],
-          );
-        },
-      ),
-    );
-  }
-}
-
-class _HeroStat extends StatelessWidget {
-  const _HeroStat({required this.value, required this.label});
-
-  final String value;
+  final IconData icon;
   final String label;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.symmetric(horizontal: 13, vertical: 12),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.08),
-        borderRadius: BorderRadius.circular(17),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.10)),
+    return TextButton.icon(
+      onPressed: onTap,
+      style: TextButton.styleFrom(
+        foregroundColor: Colors.white,
+        backgroundColor: Colors.black.withValues(alpha: 0.20),
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 11),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(999)),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Text(
-            value,
-            style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              color: Colors.white,
-              fontWeight: FontWeight.w900,
-            ),
-          ),
-          Text(
-            label,
-            style: TextStyle(
-              color: Colors.white.withValues(alpha: 0.68),
-              fontWeight: FontWeight.w700,
-            ),
-          ),
-        ],
-      ),
+      icon: Icon(icon, size: 18),
+      label: Text(label),
     );
   }
 }
@@ -1313,96 +1224,97 @@ class _ProductGatewaysSection extends StatelessWidget {
     final items = <(String, String, IconData, String)>[
       (
         'الأماكن',
-        'المواقع التاريخية والأثرية',
-        Icons.account_balance_outlined,
+        'اكتشف القرى والمدن والمواقع',
+        Icons.location_on_outlined,
         RoutePaths.places,
       ),
-      ('الخريطة', 'استكشاف المكان بصرياً', Icons.map_outlined, RoutePaths.map),
+      ('الخريطة', 'خريطة تفاعلية للمواقع', Icons.map_outlined, RoutePaths.map),
       (
         'الخط الزمني',
-        'تصفح فلسطين عبر الحقب',
-        Icons.timeline_outlined,
+        'تابع تحولات المكان والذاكرة',
+        Icons.menu_book_outlined,
         RoutePaths.timeline,
       ),
       (
         'القصص والذاكرة',
-        'سرد موضوعي وذاكرة شفوية',
+        'اقرأ حكايات الناس والمكان',
         Icons.auto_stories_outlined,
         RoutePaths.stories,
       ),
+      (
+        'المجلة',
+        'مواد تحريرية موثقة',
+        Icons.article_outlined,
+        RoutePaths.sources,
+      ),
     ];
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: <Widget>[
-        const PalEyesSectionHeader(
-          eyebrow: 'بوابات الاستكشاف',
-          icon: Icons.explore_outlined,
-          title: 'ابدأ من المكان أو الخريطة أو الزمن أو القصة',
-          subtitle:
-              'أربع بوابات واضحة تقود إلى المحتوى دون إغراق الصفحة بالأرقام الداخلية.',
-        ),
-        const SizedBox(height: 18),
-        LayoutBuilder(
-          builder: (context, constraints) {
-            final width = constraints.maxWidth >= 900
-                ? (constraints.maxWidth - 36) / 4
-                : constraints.maxWidth >= 560
-                ? (constraints.maxWidth - 12) / 2
-                : constraints.maxWidth;
-
-            return Wrap(
-              spacing: 12,
-              runSpacing: 12,
-              children: items
-                  .map((item) {
-                    return SizedBox(
-                      width: width,
-                      child: Card(
-                        clipBehavior: Clip.antiAlias,
-                        child: InkWell(
-                          onTap: () => context.go(item.$4),
-                          child: Padding(
-                            padding: const EdgeInsets.all(20),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                CircleAvatar(child: Icon(item.$3)),
-                                const SizedBox(height: 14),
-                                Text(
-                                  item.$1,
-                                  style: const TextStyle(
-                                    fontWeight: FontWeight.w900,
-                                    fontSize: 18,
-                                  ),
-                                ),
-                                const SizedBox(height: 6),
-                                Text(item.$2),
-                                const SizedBox(height: 12),
-                                const Row(
-                                  children: <Widget>[
-                                    Text(
-                                      'استكشف',
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.w800,
-                                      ),
-                                    ),
-                                    Spacer(),
-                                    Icon(Icons.arrow_back_rounded),
-                                  ],
-                                ),
-                              ],
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final columns = constraints.maxWidth >= 1000
+            ? 5
+            : constraints.maxWidth >= 620
+            ? 3
+            : 2;
+        const gap = 12.0;
+        final itemWidth =
+            (constraints.maxWidth - gap * (columns - 1)) / columns;
+        return Wrap(
+          spacing: gap,
+          runSpacing: gap,
+          children: items
+              .map(
+                (item) => SizedBox(
+                  width: itemWidth,
+                  child: PalEyesParchmentPanel(
+                    onTap: () => context.go(item.$4),
+                    padding: const EdgeInsets.fromLTRB(14, 18, 14, 16),
+                    radius: 18,
+                    child: Column(
+                      children: <Widget>[
+                        Container(
+                          width: 44,
+                          height: 44,
+                          decoration: BoxDecoration(
+                            color: PalEyesVisualV1.parchmentDeep.withValues(
+                              alpha: 0.70,
                             ),
+                            borderRadius: BorderRadius.circular(14),
+                          ),
+                          child: Icon(
+                            item.$3,
+                            color: PalEyesVisualV1.oliveDark,
                           ),
                         ),
-                      ),
-                    );
-                  })
-                  .toList(growable: false),
-            );
-          },
-        ),
-      ],
+                        const SizedBox(height: 12),
+                        Text(
+                          item.$1,
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                            fontWeight: FontWeight.w900,
+                            fontSize: 16,
+                          ),
+                        ),
+                        const SizedBox(height: 5),
+                        Text(
+                          item.$2,
+                          textAlign: TextAlign.center,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            color: PalEyesVisualV1.warmMuted,
+                            height: 1.4,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              )
+              .toList(growable: false),
+        );
+      },
     );
   }
 }

@@ -14,7 +14,7 @@ abstract final class AppTheme {
     );
 
     return _base(scheme).copyWith(
-      scaffoldBackgroundColor: AppColors.warmCanvas,
+      scaffoldBackgroundColor: AppColors.approvedIvory,
       appBarTheme: const AppBarTheme(
         centerTitle: false,
         elevation: 0,
@@ -28,22 +28,20 @@ abstract final class AppTheme {
         margin: EdgeInsets.zero,
         clipBehavior: Clip.antiAlias,
         color: Colors.white.withValues(alpha: 0.92),
-        shadowColor: AppColors.sovereignBlue.withValues(alpha: 0.08),
+        shadowColor: AppColors.approvedNavy.withValues(alpha: 0.08),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(24),
-          side: BorderSide(
-            color: AppColors.sovereignBlue.withValues(alpha: 0.08),
-          ),
+          borderRadius: BorderRadius.circular(26),
+          side: const BorderSide(color: AppColors.approvedOutline),
         ),
       ),
       inputDecorationTheme: _inputs(
-        fill: Colors.white.withValues(alpha: 0.94),
+        fill: AppColors.approvedIvory.withValues(alpha: 0.98),
         border: AppColors.sovereignBlue.withValues(alpha: 0.10),
       ),
       navigationBarTheme: NavigationBarThemeData(
         height: 70,
         elevation: 8,
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.approvedIvory,
         surfaceTintColor: Colors.transparent,
         indicatorColor: AppColors.heritageGold.withValues(alpha: 0.22),
         labelTextStyle: WidgetStateProperty.resolveWith<TextStyle?>(
