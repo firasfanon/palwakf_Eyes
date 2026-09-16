@@ -62,6 +62,27 @@ class StagingResearchPackageManifest {
   bool get isLinkedReference =>
       packageClass == StagingResearchPackageClass.linkedResearchReference;
 
+  String get previewStatusLabelAr => switch (packageClass) {
+    StagingResearchPackageClass.governedContentReferenceManifest =>
+      'بحث مكتمل — بانتظار المراجعة',
+    StagingResearchPackageClass.statusOnlyNoNarrative =>
+      'الدليل غير كافٍ حاليًا',
+    StagingResearchPackageClass.linkedResearchReference => 'بحث مستقل مرتبط',
+    StagingResearchPackageClass.notPromotedResearchIncomplete =>
+      'بحث قيد التحقق',
+  };
+
+  String get previewStatusDescriptionAr => switch (packageClass) {
+    StagingResearchPackageClass.governedContentReferenceManifest =>
+      'البحث مكتمل ضمن البرنامج البحثي، لكنه ما زال خاضعًا للمراجعة المستقلة قبل أي اعتماد نهائي للنشر.',
+    StagingResearchPackageClass.statusOnlyNoNarrative =>
+      'تظهر حالة البحث وفجوات الدليل فقط، ولا يُعرض سرد بحثي غير متحقق.',
+    StagingResearchPackageClass.linkedResearchReference =>
+      'هذا السجل مرتبط ببحث قائم، وتبقى المراجعة لدى البحث المالك دون إنشاء سلسلة مكررة.',
+    StagingResearchPackageClass.notPromotedResearchIncomplete =>
+      'البحث لم يكتمل بعد؛ تظهر حالته للمتابعة والتدقيق دون تقديمه كحقيقة نهائية.',
+  };
+
   ResearchContentPackage? toIntegrityPackage() {
     if (catalogSiteId == null || !exposesResearchNarrativeReference) {
       return null;

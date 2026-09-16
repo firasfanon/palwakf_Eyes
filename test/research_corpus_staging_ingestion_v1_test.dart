@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pal_eyes/core/config/app_environment.dart';
+import 'package:pal_eyes/features/places/data/draft_heritage_site_repository.dart';
 import 'package:pal_eyes/features/research/application/staging_research_corpus_provider.dart';
 import 'package:pal_eyes/features/research/data/staging_research_corpus_v1.dart';
 import 'package:pal_eyes/features/research/domain/research_integrity_contracts.dart';
@@ -19,6 +20,22 @@ void main() {
     );
     expect(external.catalogSiteId, isNull);
     expect(external.isLinkedReference, isTrue);
+  });
+
+  test('every catalog place has a governed research-preview status record', () {
+    final sites = const DraftHeritageSiteRepository().listSites();
+    final packageBySiteId = <String, StagingResearchPackageManifest>{
+      for (final package in corpus)
+        if (package.catalogSiteId != null) package.catalogSiteId!: package,
+    };
+
+    expect(sites, hasLength(79));
+    expect(packageBySiteId, hasLength(79));
+    for (final site in sites) {
+      expect(packageBySiteId.containsKey(site.id), isTrue, reason: site.id);
+      expect(packageBySiteId[site.id]!.publicationEligible, isFalse);
+      expect(packageBySiteId[site.id]!.databaseMutationAllowed, isFalse);
+    }
   });
 
   test('classification counts exactly match sovereign freeze', () {
@@ -163,8 +180,9 @@ void main() {
       find.byKey(const Key('staging-research-package-card')),
       findsOneWidget,
     );
-    expect(find.text('حزمة البحث المعتمدة للمعاينة'), findsOneWidget);
-    expect(find.text('STAGING فقط'), findsOneWidget);
+    expect(find.text('معاينة البحث — قيد التدقيق'), findsOneWidget);
+    expect(find.text('بحث مكتمل — بانتظار المراجعة'), findsOneWidget);
+    expect(find.text('بيئة التطوير فقط'), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
 

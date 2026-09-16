@@ -8,8 +8,6 @@ class StagingResearchPackageCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isNarrativeReference = package.exposesResearchNarrativeReference;
-    final isStatusOnly = package.isStatusOnly;
     return PalEyesParchmentPanel(
       key: const Key('staging-research-package-card'),
       color: PalEyesVisualV1.parchmentDeep.withValues(alpha: 0.5),
@@ -26,10 +24,10 @@ class StagingResearchPackageCard extends StatelessWidget {
                 color: PalEyesVisualV1.olive,
               ),
               const Text(
-                'حزمة البحث المعتمدة للمعاينة',
+                'معاينة البحث — قيد التدقيق',
                 style: TextStyle(fontWeight: FontWeight.w900, fontSize: 17),
               ),
-              const Chip(label: Text('STAGING فقط')),
+              const Chip(label: Text('بيئة التطوير فقط')),
             ],
           ),
           const SizedBox(height: 12),
@@ -41,15 +39,12 @@ class StagingResearchPackageCard extends StatelessWidget {
               Chip(label: Text(package.censusRecordId)),
               Chip(label: Text('الدليل: ${package.evidenceGate}')),
               Chip(label: Text(_packageClassLabel(package.packageClass))),
+              Chip(label: Text(package.previewStatusLabelAr)),
             ],
           ),
           const SizedBox(height: 12),
           Text(
-            isNarrativeReference
-                ? 'البحث مكتمل ضمن البرنامج البحثي، لكنه يبقى REVIEW_DEFERRED. هذه الحزمة مرجع إدخال للمعاينة ولا تعني اعتماد الادعاءات أو النشر.'
-                : isStatusOnly
-                ? 'هذا السجل حالة بحثية فقط. لا تُعرض منه رواية تاريخية لأن الدليل غير كافٍ أو البحث لم يكتمل.'
-                : 'هذا السجل مرتبط ببحث قائم، ولا ينشئ مالكاً أو سلسلة بحث مكررة.',
+            package.previewStatusDescriptionAr,
             style: const TextStyle(height: 1.65),
           ),
           if (package.relationSummary.isNotEmpty) ...<Widget>[
@@ -63,7 +58,7 @@ class StagingResearchPackageCard extends StatelessWidget {
           const _PackageNotice(
             icon: Icons.lock_outline_rounded,
             text:
-                'النشر العام محجوب • الوسائط غير مُجازة بواسطة هذه الترقية • لا توجد كتابة لقاعدة البيانات.',
+                'هذه معاينة قابلة للتحقيق والتدقيق وليست اعتمادًا للنشر • الوسائط غير مُجازة • لا توجد كتابة لقاعدة البيانات.',
           ),
           const SizedBox(height: 10),
           Text(

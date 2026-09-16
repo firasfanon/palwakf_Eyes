@@ -3,10 +3,13 @@ import 'package:pal_eyes/core/config/app_environment.dart';
 import 'package:pal_eyes/features/research/data/staging_research_corpus_v1.dart';
 import 'package:pal_eyes/features/research/domain/staging_research_package_manifest.dart';
 
+final researchPreviewEnabledProvider = Provider<bool>((ref) {
+  return !ref.watch(appEnvironmentProvider).isProduction;
+});
+
 final frozenStagingResearchCorpusProvider =
     Provider<List<StagingResearchPackageManifest>>((ref) {
-      final environment = ref.watch(appEnvironmentProvider);
-      if (environment.isProduction) {
+      if (!ref.watch(researchPreviewEnabledProvider)) {
         return const <StagingResearchPackageManifest>[];
       }
       return buildFrozenStagingResearchCorpus();
