@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:pal_eyes/core/config/app_environment.dart';
 import 'package:pal_eyes/core/presentation/public_experience_mode.dart';
 import 'package:pal_eyes/features/places/presentation/place_detail_screen.dart';
 import 'package:pal_eyes/features/research/presentation/staging_research_package_card.dart';
@@ -11,7 +12,7 @@ void main() {
   });
 
   testWidgets(
-    'public place experience is story-first and hides governance internals',
+    'production public place experience hides research preview internals',
     (tester) async {
       tester.view.physicalSize = const Size(1440, 1000);
       tester.view.devicePixelRatio = 1;
@@ -19,8 +20,17 @@ void main() {
       addTearDown(tester.view.resetDevicePixelRatio);
 
       await tester.pumpWidget(
-        const ProviderScope(
-          child: MaterialApp(
+        ProviderScope(
+          overrides: [
+            appEnvironmentProvider.overrideWithValue(
+              const AppEnvironment(
+                supabaseUrl: '',
+                supabasePublishableKey: '',
+                environmentName: 'production',
+              ),
+            ),
+          ],
+          child: const MaterialApp(
             home: Scaffold(body: PlaceDetailScreen(slug: 'swq-lqtnyn-4bbdf0')),
           ),
         ),
@@ -42,6 +52,37 @@ void main() {
       expect(find.textContaining('PAL-EYES-CENSUS-'), findsNothing);
     },
   );
+
+  testWidgets('development public place exposes governed research preview', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(390, 844);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+
+    await tester.pumpWidget(
+      const ProviderScope(
+        child: MaterialApp(
+          home: Scaffold(body: PlaceDetailScreen(slug: 'swq-lqtnyn-4bbdf0')),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    expect(find.text('البحث'), findsOneWidget);
+    await tester.ensureVisible(find.text('البحث'));
+    await tester.tap(find.text('البحث'));
+    await tester.pumpAndSettle();
+
+    expect(find.byType(StagingResearchPackageCard), findsOneWidget);
+    expect(find.text('معاينة البحث — قيد التدقيق'), findsOneWidget);
+    expect(find.text('بحث مكتمل — بانتظار المراجعة'), findsOneWidget);
+    expect(find.text('بيئة التطوير فقط'), findsOneWidget);
+    expect(find.textContaining('RCP-V1-005'), findsWidgets);
+    expect(find.textContaining('PAL-EYES-CENSUS-005'), findsWidgets);
+    expect(tester.takeException(), isNull);
+  });
 
   testWidgets('internal inspector preserves governance-facing place surfaces', (
     tester,

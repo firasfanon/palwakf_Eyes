@@ -150,6 +150,8 @@ class _PublicPlaceExperience extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final package = ref.watch(stagingResearchPackageBySiteIdProvider(site.id));
+    final showResearchPreview = package != null;
     final horizontal = MediaQuery.sizeOf(context).width < 600 ? 16.0 : 28.0;
     return CustomScrollView(
       slivers: <Widget>[
@@ -168,6 +170,7 @@ class _PublicPlaceExperience extends ConsumerWidget {
                     _PublicDetailNavigation(
                       selected: selected,
                       onSelected: onSelected,
+                      showResearchPreview: showResearchPreview,
                     ),
                     const SizedBox(height: 20),
                     AnimatedSwitcher(
@@ -179,6 +182,8 @@ class _PublicPlaceExperience extends ConsumerWidget {
                         3 => _PublicMediaSection(site: site),
                         4 => _PublicMapSection(site: site),
                         5 => _PublicSourcesSection(site: site),
+                        6 when showResearchPreview =>
+                          _PublicResearchPreviewSection(site: site),
                         _ => _PublicAboutMaterialSection(site: site),
                       },
                     ),
@@ -310,9 +315,11 @@ class _PublicDetailNavigation extends StatelessWidget {
   const _PublicDetailNavigation({
     required this.selected,
     required this.onSelected,
+    required this.showResearchPreview,
   });
   final int selected;
   final ValueChanged<int> onSelected;
+  final bool showResearchPreview;
 
   @override
   Widget build(BuildContext context) {
@@ -321,15 +328,16 @@ class _PublicDetailNavigation extends StatelessWidget {
         border: Border(bottom: BorderSide(color: PalEyesVisualV1.warmLine)),
       ),
       child: PalEyesTabStripV1(
-        selectedIndex: selected.clamp(0, 6),
+        selectedIndex: selected.clamp(0, showResearchPreview ? 7 : 6),
         onSelected: onSelected,
-        labels: const <String>[
+        labels: <String>[
           'نبذة',
           'الحكاية',
           'عبر الزمن',
           'الصور',
           'الخريطة',
           'المصادر',
+          if (showResearchPreview) 'البحث',
           'عن هذه المادة',
         ],
       ),
@@ -783,6 +791,33 @@ class _PublicSourcesSection extends StatelessWidget {
                 ],
               ),
             ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _PublicResearchPreviewSection extends ConsumerWidget {
+  const _PublicResearchPreviewSection({required this.site});
+  final HeritageSite site;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final package = ref.watch(stagingResearchPackageBySiteIdProvider(site.id));
+    if (package == null) {
+      return const SizedBox.shrink();
+    }
+    return Column(
+      key: const ValueKey<String>('public-research-preview'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        StagingResearchPackageCard(package: package),
+        const SizedBox(height: 14),
+        const PalEyesParchmentPanel(
+          child: Text(
+            'هذه المادة ظاهرة الآن لأغراض التطوير والتحقيق والتدقيق. ظهورها في الموقع لا يحولها إلى محتوى منشور نهائي، ويمكن تصحيحها أو توسيعها قبل قرار النشر.',
+            style: TextStyle(height: 1.75),
           ),
         ),
       ],
