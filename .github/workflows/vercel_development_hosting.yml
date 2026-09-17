@@ -278,6 +278,7 @@ jobs:
           import json
           import os
           import time
+          import urllib.error
           import urllib.parse
           import urllib.request
 
@@ -349,7 +350,13 @@ jobs:
           if stable_parsed.netloc.lower() != expected_stable_host:
               raise SystemExit("DEVELOPMENT_STABLE_DOMAIN_MISMATCH")
 
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, req, fp, code, msg, headers, newurl):
+                  return None
+
+          opener = urllib.request.build_opener(NoRedirect)
           last_error = None
+          access_state = None
 
           for attempt in range(1, 7):
               try:
@@ -361,14 +368,15 @@ jobs:
                       },
                   )
 
-                  with urllib.request.urlopen(
+                  with opener.open(
                       health_request,
                       timeout=30,
                   ) as response:
                       status = response.status
                       body = response.read(2048)
 
-                  if 200 <= status < 400 and body:
+                  if 200 <= status < 300 and body:
+                      access_state = "PUBLIC_REACHABLE"
                       last_error = None
                       break
 
@@ -376,17 +384,46 @@ jobs:
                       f"HTTP={status},BODY_BYTES={len(body)}"
                   )
 
+              except urllib.error.HTTPError as error:
+                  if error.code in (401, 403):
+                      access_state = f"ACCESS_PROTECTED_HTTP_{error.code}"
+                      last_error = None
+                      break
+
+                  if error.code in (301, 302, 303, 307, 308):
+                      location = error.headers.get("Location", "")
+                      target = urllib.parse.urlparse(
+                          urllib.parse.urljoin(stable_url, location)
+                      )
+                      target_host = target.netloc.lower().rstrip(".")
+                      if (
+                          target_host == "vercel.com"
+                          or target_host.endswith(".vercel.com")
+                      ):
+                          access_state = "ACCESS_PROTECTED_VERCEL_LOGIN_REDIRECT"
+                          last_error = None
+                          break
+                      last_error = RuntimeError(
+                          "UNEXPECTED_REDIRECT=" + location
+                      )
+                  else:
+                      last_error = error
+
               except Exception as error:
                   last_error = error
 
               if attempt < 6:
                   time.sleep(5)
 
-          if last_error is not None:
+          if last_error is not None or access_state is None:
               raise SystemExit(
-                  "DEVELOPMENT_STABLE_URL_NOT_REACHABLE: "
+                  "DEVELOPMENT_STABLE_URL_VERIFICATION_FAILED: "
                   + str(last_error)
               )
+
+          print("DEVELOPMENT_HTTP_ACCESS=" + access_state)
+          if access_state != "PUBLIC_REACHABLE":
+              print("DEVELOPMENT_PRODUCT_BROWSER_UAT=NOT_CLAIMED_ACCESS_PROTECTED")
 
           print("PRODUCT_LIFECYCLE=DEVELOPMENT")
           print(
