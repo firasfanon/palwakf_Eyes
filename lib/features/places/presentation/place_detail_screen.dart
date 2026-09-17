@@ -814,6 +814,10 @@ class _PublicResearchPreviewSection extends ConsumerWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         StagingResearchPackageCard(package: package),
+        if (package.exposesResearchNarrativeReference) ...<Widget>[
+          const SizedBox(height: 14),
+          StagingResearchNarrativePanel(siteId: site.id),
+        ],
         const SizedBox(height: 14),
         const PalEyesParchmentPanel(
           child: Text(
