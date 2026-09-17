@@ -17,3 +17,10 @@ backups/
 evidence/local_r9_0_1_session_reconstruction_finalization_*/
 evidence/BROWSER_UAT_R9_0_1/*.png
 .vercel/
+
+# Derived research narrative staging artifacts (Drive remains sovereign text authority)
+.research_staging/
+research_narratives_v1.json
+research_narrative_source_manifest_v1.json
+__pycache__/
+*.pyc

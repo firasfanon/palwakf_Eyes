@@ -42,6 +42,11 @@ jobs:
       - name: Flutter analyze
         run: flutter analyze --no-pub
 
+      - name: Research narrative staging policy verifier
+        run: |
+          python3 tools/selftest_research_narrative_extractor_v1.py
+          python3 tools/verify_research_narrative_staging_v1.py
+
       - name: Flutter tests
         run: flutter test --no-pub --reporter expanded
 

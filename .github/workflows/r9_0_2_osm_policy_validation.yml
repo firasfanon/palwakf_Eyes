@@ -52,8 +52,16 @@ jobs:
       - name: Flutter tests
         run: flutter test --no-pub --reporter expanded
 
-      - name: Flutter web release build
-        run: flutter build web --release --no-pub
+      - name: Research narrative staging policy verifier
+        run: |
+          python3 tools/selftest_research_narrative_extractor_v1.py
+          python3 tools/verify_research_narrative_staging_v1.py
+
+      - name: Flutter web production release build
+        run: flutter build web --release --no-pub --dart-define=PAL_EYES_ENV=production
+
+      - name: Production research narrative absence gate
+        run: python3 tools/verify_research_narrative_staging_v1.py --production-build-dir build/web
 
       - name: Whitespace gate
         run: git diff --check
