@@ -119,9 +119,15 @@ def main() -> int:
             )
         ),
 
-        "stable_domain_health_check": (
-            "DEVELOPMENT_STABLE_URL_NOT_REACHABLE"
-            in workflow
+        "stable_domain_health_check": all(
+            token in workflow
+            for token in (
+                "DEVELOPMENT_STABLE_URL_VERIFICATION_FAILED",
+                "ACCESS_PROTECTED_HTTP_",
+                "ACCESS_PROTECTED_VERCEL_LOGIN_REDIRECT",
+                "DEVELOPMENT_PRODUCT_BROWSER_UAT=NOT_CLAIMED_ACCESS_PROTECTED",
+                "200 <= status < 300",
+            )
         ),
 
         "build_output_api_v3": (

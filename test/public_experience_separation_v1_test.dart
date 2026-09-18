@@ -4,6 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:pal_eyes/core/config/app_environment.dart';
 import 'package:pal_eyes/core/presentation/public_experience_mode.dart';
 import 'package:pal_eyes/features/places/presentation/place_detail_screen.dart';
+import 'package:pal_eyes/features/research/presentation/staging_research_narrative_panel.dart';
 import 'package:pal_eyes/features/research/presentation/staging_research_package_card.dart';
 
 void main() {
@@ -48,6 +49,7 @@ void main() {
       expect(find.text('المادة التاريخية الأصلية'), findsNothing);
       expect(find.text('البحث'), findsNothing);
       expect(find.byType(StagingResearchPackageCard), findsNothing);
+      expect(find.byType(StagingResearchNarrativePanel), findsNothing);
       expect(find.textContaining('RCP-V1-'), findsNothing);
       expect(find.textContaining('PAL-EYES-CENSUS-'), findsNothing);
     },
@@ -76,6 +78,7 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.byType(StagingResearchPackageCard), findsOneWidget);
+    expect(find.byType(StagingResearchNarrativePanel), findsOneWidget);
     expect(find.text('معاينة البحث — قيد التدقيق'), findsOneWidget);
     expect(find.text('بحث مكتمل — بانتظار المراجعة'), findsOneWidget);
     expect(find.text('بيئة التطوير فقط'), findsOneWidget);

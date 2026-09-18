@@ -12,6 +12,7 @@ import 'package:pal_eyes/features/places/application/original_draft_visibility_p
 import 'package:pal_eyes/features/places/domain/heritage_site.dart';
 import 'package:pal_eyes/features/places/domain/historical_content.dart';
 import 'package:pal_eyes/features/research/application/staging_research_corpus_provider.dart';
+import 'package:pal_eyes/features/research/presentation/staging_research_narrative_panel.dart';
 import 'package:pal_eyes/features/research/presentation/staging_research_package_card.dart';
 
 class PlaceDetailScreen extends ConsumerStatefulWidget {
@@ -813,6 +814,10 @@ class _PublicResearchPreviewSection extends ConsumerWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         StagingResearchPackageCard(package: package),
+        if (package.exposesResearchNarrativeReference) ...<Widget>[
+          const SizedBox(height: 14),
+          StagingResearchNarrativePanel(siteId: site.id),
+        ],
         const SizedBox(height: 14),
         const PalEyesParchmentPanel(
           child: Text(
@@ -1528,6 +1533,10 @@ class _ResearchSection extends ConsumerWidget {
         children: <Widget>[
           if (package != null) ...<Widget>[
             StagingResearchPackageCard(package: package),
+            if (package.exposesResearchNarrativeReference) ...<Widget>[
+              const SizedBox(height: 16),
+              StagingResearchNarrativePanel(siteId: site.id),
+            ],
             const SizedBox(height: 16),
           ],
           Text(
