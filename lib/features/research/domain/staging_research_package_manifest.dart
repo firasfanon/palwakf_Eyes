@@ -64,7 +64,7 @@ class StagingResearchPackageManifest {
 
   String get previewStatusLabelAr => switch (packageClass) {
     StagingResearchPackageClass.governedContentReferenceManifest =>
-      'بحث مكتمل — بانتظار المراجعة',
+      'اعتماد تجريبي غير إنتاجي — الدين التخصصي مفتوح',
     StagingResearchPackageClass.statusOnlyNoNarrative =>
       'الدليل غير كافٍ حاليًا',
     StagingResearchPackageClass.linkedResearchReference => 'بحث مستقل مرتبط',
@@ -74,7 +74,7 @@ class StagingResearchPackageManifest {
 
   String get previewStatusDescriptionAr => switch (packageClass) {
     StagingResearchPackageClass.governedContentReferenceManifest =>
-      'البحث مكتمل ضمن البرنامج البحثي، لكنه ما زال خاضعًا للمراجعة المستقلة قبل أي اعتماد نهائي للنشر.',
+      'اعتمدت الحزمة بشريًا للاستخدام البحثي والتجريبي غير الإنتاجي فقط. تبقى المراجعة التخصصية المطلوبة دينًا صريحًا قبل أي نشر أو إنتاج.',
     StagingResearchPackageClass.statusOnlyNoNarrative =>
       'تظهر حالة البحث وفجوات الدليل فقط، ولا يُعرض سرد بحثي غير متحقق.',
     StagingResearchPackageClass.linkedResearchReference =>

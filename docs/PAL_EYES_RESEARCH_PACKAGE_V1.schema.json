@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "PAL_EYES_RESEARCH_PACKAGE_V1",
+  "title": "Pal Eyes Research Package V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "packageId",
+    "version",
+    "siteEntityId",
+    "researchTopicId",
+    "lifecycleStage",
+    "publicationDecision",
+    "sections",
+    "sources",
+    "locators",
+    "claims",
+    "evidence",
+    "conflicts",
+    "temporalAssertions",
+    "archiveProvenance",
+    "mediaRights",
+    "reviews"
+  ],
+  "properties": {
+    "schema": { "const": "PAL_EYES_RESEARCH_PACKAGE_V1" },
+    "packageId": { "type": "string", "minLength": 1 },
+    "version": { "type": "string", "minLength": 1 },
+    "siteEntityId": { "type": "string", "minLength": 1 },
+    "researchTopicId": { "type": "string", "minLength": 1 },
+    "lifecycleStage": {
+      "enum": [
+        "researchCompleteReviewDeferred",
+        "independentReview",
+        "approvedContentPackage",
+        "previewStagingIngest",
+        "verifiedProductReadback",
+        "publicationDecision"
+      ]
+    },
+    "publicationDecision": {
+      "enum": ["pending", "approved", "rejected"]
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "order", "paragraphs"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "title": { "type": "string", "minLength": 1 },
+          "order": { "type": "integer", "minimum": 1 },
+          "paragraphs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "text", "claimIds"],
+              "properties": {
+                "id": { "type": "string", "minLength": 1 },
+                "text": { "type": "string", "minLength": 1 },
+                "claimIds": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          }
+        }
+      }
+    },
+    "sources": { "type": "array", "items": { "type": "object" } },
+    "locators": { "type": "array", "items": { "type": "object" } },
+    "claims": { "type": "array", "items": { "type": "object" } },
+    "evidence": { "type": "array", "items": { "type": "object" } },
+    "conflicts": { "type": "array", "items": { "type": "object" } },
+    "temporalAssertions": { "type": "array", "items": { "type": "object" } },
+    "archiveProvenance": { "type": "array", "items": { "type": "object" } },
+    "mediaRights": { "type": "array", "items": { "type": "object" } },
+    "reviews": { "type": "array", "items": { "type": "object" } },
+    "relations": { "type": "array", "items": { "type": "object" } },
+    "aliases": { "type": "array", "items": { "type": "object" } },
+    "boundaries": { "type": "array", "items": { "type": "object" } },
+    "currentConditions": { "type": "array", "items": { "type": "object" } }
+  },
+  "x-pal-eyes-governance": {
+    "migration": "additive-only",
+    "publicationDefault": "blocked",
+    "experimentalApprovalIsSpecialistApproval": false,
+    "sharedDatabaseMutationAuthorized": false,
+    "productionAuthorized": false
+  }
+}

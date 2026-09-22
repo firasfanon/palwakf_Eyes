@@ -24,7 +24,7 @@ class StagingResearchPackageCard extends StatelessWidget {
                 color: PalEyesVisualV1.olive,
               ),
               const Text(
-                'معاينة البحث — قيد التدقيق',
+                'معاينة البحث — غير إنتاجية',
                 style: TextStyle(fontWeight: FontWeight.w900, fontSize: 17),
               ),
               const Chip(label: Text('بيئة التطوير فقط')),

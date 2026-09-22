@@ -5,6 +5,7 @@ import 'package:pal_eyes/core/widgets/pal_eyes_page.dart';
 import 'package:pal_eyes/features/places/application/heritage_sites_provider.dart';
 import 'package:pal_eyes/features/places/data/content_catalog_metrics.dart';
 import 'package:pal_eyes/features/research/domain/governed_research_backlog_item.dart';
+import 'package:pal_eyes/features/research/presentation/research_package_workbench.dart';
 
 class ResearchWorkspaceScreen extends ConsumerStatefulWidget {
   const ResearchWorkspaceScreen({super.key});
@@ -44,6 +45,8 @@ class _ResearchWorkspaceScreenState extends ConsumerState<ResearchWorkspaceScree
       ),
       child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: <Widget>[
         const _Metrics(),
+        const SizedBox(height: 18),
+        const ResearchPackageWorkbench(),
         const SizedBox(height: 18),
         Card(child: Padding(
           padding: const EdgeInsets.all(18),

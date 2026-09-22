@@ -34,7 +34,7 @@ class ReviewQueueScreen extends ConsumerWidget {
       subtitle: 'مهام حقيقية قابلة للقرار مع سجل تدقيق لكل انتقال.',
       icon: Icons.rate_review_outlined,
       notice:
-          'القبول في المراجعة لا يعني النشر. بوابة الإصدار والنشر مستقلة ومغلقة.',
+          'قرار سير العمل لا يساوي اعتمادًا تخصصيًا أو سياديًا. الاعتماد التجريبي ≠ اعتماد الخبير، وبوابة الإصدار والنشر مستقلة ومغلقة.',
       child: snapshot.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (error, stackTrace) => PalEyesNotice(
