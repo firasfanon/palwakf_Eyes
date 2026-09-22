@@ -207,15 +207,16 @@ class PalEyesPageHero extends StatelessWidget {
                                   ),
                                   borderRadius: BorderRadius.circular(999),
                                 ),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
+                                child: Wrap(
+                                  spacing: 7,
+                                  runSpacing: 4,
+                                  crossAxisAlignment: WrapCrossAlignment.center,
                                   children: <Widget>[
                                     Icon(
                                       icon,
                                       size: 17,
                                       color: AppColors.olive,
                                     ),
-                                    const SizedBox(width: 7),
                                     Text(
                                       eyebrow,
                                       style: const TextStyle(

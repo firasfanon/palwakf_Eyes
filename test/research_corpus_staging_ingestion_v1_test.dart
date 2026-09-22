@@ -180,8 +180,8 @@ void main() {
       find.byKey(const Key('staging-research-package-card')),
       findsOneWidget,
     );
-    expect(find.text('معاينة البحث — قيد التدقيق'), findsOneWidget);
-    expect(find.text('بحث مكتمل — بانتظار المراجعة'), findsOneWidget);
+    expect(find.text('معاينة البحث — غير إنتاجية'), findsOneWidget);
+    expect(find.text('اعتماد تجريبي غير إنتاجي — الدين التخصصي مفتوح'), findsOneWidget);
     expect(find.text('بيئة التطوير فقط'), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
