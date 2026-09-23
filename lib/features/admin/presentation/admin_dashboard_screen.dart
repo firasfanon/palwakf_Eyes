@@ -108,8 +108,8 @@ class AdminDashboardScreen extends StatelessWidget {
                 crossAxisAlignment: WrapCrossAlignment.center,
                 runSpacing: 12,
                 children: <Widget>[
-                  const SizedBox(
-                    width: 720,
+                  ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 720),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
@@ -151,9 +151,9 @@ class _AdminBoundaryBanner extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.secondaryContainer.withValues(
-          alpha: 0.5,
-        ),
+        color: Theme.of(
+          context,
+        ).colorScheme.secondaryContainer.withValues(alpha: 0.5),
         borderRadius: BorderRadius.circular(18),
       ),
       child: const Row(
@@ -186,10 +186,13 @@ class _AuthorityStrip extends StatelessWidget {
     ];
     return LayoutBuilder(
       builder: (context, constraints) {
-        final columns = constraints.maxWidth >= 900 ? 4 : 2;
+        final columns = constraints.maxWidth >= 900
+            ? 4
+            : constraints.maxWidth >= 560
+            ? 2
+            : 1;
         const gap = 12.0;
-        final width =
-            (constraints.maxWidth - gap * (columns - 1)) / columns;
+        final width = (constraints.maxWidth - gap * (columns - 1)) / columns;
         return Wrap(
           spacing: gap,
           runSpacing: gap,
@@ -240,7 +243,10 @@ class _AdminControlCard extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 6),
-                    Text(control.description, style: const TextStyle(height: 1.5)),
+                    Text(
+                      control.description,
+                      style: const TextStyle(height: 1.5),
+                    ),
                   ],
                 ),
               ),

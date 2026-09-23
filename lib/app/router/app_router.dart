@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
+import 'package:pal_eyes/core/widgets/governance_shell.dart';
 import 'package:pal_eyes/core/widgets/public_shell.dart';
 import 'package:pal_eyes/core/widgets/workspace_shell.dart';
 import 'package:pal_eyes/features/admin/presentation/admin_dashboard_screen.dart';
@@ -40,16 +41,13 @@ import 'package:pal_eyes/features/workspace/presentation/workspace_today_screen.
 
 final appRouterProvider = Provider<GoRouter>(
   (ref) => GoRouter(
-    initialLocation: RoutePaths.home,
     errorBuilder: (context, state) => NotFoundScreen(
       message: state.error?.toString() ?? 'المسار المطلوب غير مسجل.',
     ),
     routes: <RouteBase>[
       ShellRoute(
-        builder: (context, state, child) => PublicShell(
-          location: state.uri.path,
-          child: child,
-        ),
+        builder: (context, state, child) =>
+            PublicShell(location: state.uri.path, child: child),
         routes: <RouteBase>[
           GoRoute(
             path: RoutePaths.home,
@@ -65,9 +63,8 @@ final appRouterProvider = Provider<GoRouter>(
           ),
           GoRoute(
             path: RoutePaths.placeDetail,
-            builder: (context, state) => PlaceDetailScreen(
-              slug: state.pathParameters['slug'] ?? '',
-            ),
+            builder: (context, state) =>
+                PlaceDetailScreen(slug: state.pathParameters['slug'] ?? ''),
           ),
           GoRoute(
             path: RoutePaths.research,
@@ -97,9 +94,8 @@ final appRouterProvider = Provider<GoRouter>(
           ),
           GoRoute(
             path: RoutePaths.storyDetail,
-            builder: (context, state) => StoryDetailScreen(
-              slug: state.pathParameters['slug'] ?? '',
-            ),
+            builder: (context, state) =>
+                StoryDetailScreen(slug: state.pathParameters['slug'] ?? ''),
           ),
           GoRoute(
             path: RoutePaths.sources,
@@ -116,10 +112,8 @@ final appRouterProvider = Provider<GoRouter>(
         ],
       ),
       ShellRoute(
-        builder: (context, state, child) => WorkspaceShell(
-          location: state.uri.path,
-          child: child,
-        ),
+        builder: (context, state, child) =>
+            WorkspaceShell(location: state.uri.path, child: child),
         routes: <RouteBase>[
           GoRoute(
             path: RoutePaths.workspace,
@@ -205,8 +199,7 @@ final appRouterProvider = Provider<GoRouter>(
             path: '/workspace/sources-legacy',
             builder: (context, state) => const WorkspaceSectionScreen(
               title: 'المصادر والأدلة',
-              subtitle:
-                  'تسجيل المراجع والحقوق ومواضع الاستشهاد قبل الاعتماد.',
+              subtitle: 'تسجيل المراجع والحقوق ومواضع الاستشهاد قبل الاعتماد.',
               icon: Icons.library_books_outlined,
               items: <String>[
                 '79 مدخلاً في سجل المصادر المسودة',
@@ -239,8 +232,7 @@ final appRouterProvider = Provider<GoRouter>(
             path: RoutePaths.workspaceOralHistory,
             builder: (context, state) => const WorkspaceSectionScreen(
               title: 'الذاكرة الشفوية',
-              subtitle:
-                  'المقابلات والتفريغ والموافقات والربط بالموقع والفترة.',
+              subtitle: 'المقابلات والتفريغ والموافقات والربط بالموقع والفترة.',
               icon: Icons.record_voice_over_outlined,
               items: <String>[
                 'روايات أهالي أرطاس — مسودة',
@@ -276,8 +268,7 @@ final appRouterProvider = Provider<GoRouter>(
             path: RoutePaths.workspaceGeography,
             builder: (context, state) => const WorkspaceSectionScreen(
               title: 'المحافظات والأسماء',
-              subtitle:
-                  'المرجع المكاني للأسماء الحالية والتاريخية والمحلية.',
+              subtitle: 'المرجع المكاني للأسماء الحالية والتاريخية والمحلية.',
               icon: Icons.location_city_outlined,
               items: <String>[
                 '16 محافظة في سجل التغطية',
@@ -291,8 +282,7 @@ final appRouterProvider = Provider<GoRouter>(
             path: RoutePaths.workspaceContributions,
             builder: (context, state) => const WorkspaceSectionScreen(
               title: 'المساهمات والبلاغات',
-              subtitle:
-                  'فرز الاقتراحات والصور والتصحيحات وبلاغات الأضرار.',
+              subtitle: 'فرز الاقتراحات والصور والتصحيحات وبلاغات الأضرار.',
               icon: Icons.volunteer_activism_outlined,
               items: <String>[
                 'اقتراح موقع جديد',
@@ -310,8 +300,7 @@ final appRouterProvider = Provider<GoRouter>(
             path: '/workspace/reviews-legacy',
             builder: (context, state) => const WorkspaceSectionScreen(
               title: 'قائمة المراجعة',
-              subtitle:
-                  'التدقيق التاريخي والتحريري ومراجعة المصادر والحقوق.',
+              subtitle: 'التدقيق التاريخي والتحريري ومراجعة المصادر والحقوق.',
               icon: Icons.rate_review_outlined,
               items: <String>[
                 'مسودة برك سليمان — تدقيق تاريخي',
@@ -351,8 +340,7 @@ final appRouterProvider = Provider<GoRouter>(
             path: RoutePaths.workspaceReports,
             builder: (context, state) => const WorkspaceSectionScreen(
               title: 'التقارير وفجوات التوثيق',
-              subtitle:
-                  'قياس اكتمال الفصول والمصادر والوسائط والمراجعات.',
+              subtitle: 'قياس اكتمال الفصول والمصادر والوسائط والمراجعات.',
               icon: Icons.analytics_outlined,
               items: <String>[
                 '76 موقعاً تحتاج إحداثيات',
@@ -363,6 +351,12 @@ final appRouterProvider = Provider<GoRouter>(
               ],
             ),
           ),
+        ],
+      ),
+      ShellRoute(
+        builder: (context, state, child) =>
+            GovernanceShell(location: state.uri.path, child: child),
+        routes: <RouteBase>[
           GoRoute(
             path: RoutePaths.admin,
             builder: (context, state) => const AdminDashboardScreen(),
@@ -393,8 +387,7 @@ final appRouterProvider = Provider<GoRouter>(
             path: RoutePaths.governanceRights,
             builder: (context, state) => const WorkspaceSectionScreen(
               title: 'الحقوق والتراخيص',
-              subtitle:
-                  'قواعد الملفات والصور والتسجيلات والاقتباسات المقيدة.',
+              subtitle: 'قواعد الملفات والصور والتسجيلات والاقتباسات المقيدة.',
               icon: Icons.gavel_outlined,
               items: <String>[
                 'ملكية عامة',
@@ -427,7 +420,6 @@ final appRouterProvider = Provider<GoRouter>(
           ),
         ],
       ),
-
     ],
   ),
 );

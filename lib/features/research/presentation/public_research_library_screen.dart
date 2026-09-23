@@ -37,23 +37,23 @@ class _PublicResearchLibraryScreenState
       for (final site in sites) site.id: site,
     };
 
-    final items = packages
-        .where((package) => package.catalogSiteId != null)
-        .map(
-          (package) => _ResearchLibraryItem(
-            package: package,
-            site: byId[package.catalogSiteId!],
-          ),
-        )
-        .where((item) => item.site != null)
-        .where(_matchesFilter)
-        .where(_matchesSearch)
-        .toList(growable: false)
-      ..sort(
-        (a, b) => a.package.censusRecordId.compareTo(
-          b.package.censusRecordId,
-        ),
-      );
+    final items =
+        packages
+            .where((package) => package.catalogSiteId != null)
+            .map(
+              (package) => _ResearchLibraryItem(
+                package: package,
+                site: byId[package.catalogSiteId!],
+              ),
+            )
+            .where((item) => item.site != null)
+            .where(_matchesFilter)
+            .where(_matchesSearch)
+            .toList(growable: false)
+          ..sort(
+            (a, b) =>
+                a.package.censusRecordId.compareTo(b.package.censusRecordId),
+          );
 
     return PalEyesPage(
       title: 'مكتبة البحوث',
@@ -96,9 +96,7 @@ class _PublicResearchLibraryScreenState
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const Text(
-                  'المراجعة التخصصية والنشر مرحلتان منفصلتان',
-                ),
+                const Text('المراجعة التخصصية والنشر مرحلتان منفصلتان'),
               ],
             ),
             const SizedBox(height: 14),
@@ -138,11 +136,13 @@ class _PublicResearchLibraryScreenState
   bool _matchesFilter(_ResearchLibraryItem item) {
     return switch (_filter) {
       'content' => item.package.exposesResearchNarrativeReference,
-      'status' => item.package.packageClass ==
-          StagingResearchPackageClass.statusOnlyNoNarrative,
+      'status' =>
+        item.package.packageClass ==
+            StagingResearchPackageClass.statusOnlyNoNarrative,
       'linked' => item.package.isLinkedReference,
-      'incomplete' => item.package.packageClass ==
-          StagingResearchPackageClass.notPromotedResearchIncomplete,
+      'incomplete' =>
+        item.package.packageClass ==
+            StagingResearchPackageClass.notPromotedResearchIncomplete,
       _ => true,
     };
   }
@@ -184,9 +184,9 @@ class _LibraryStatusStrip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.primaryContainer.withValues(
-          alpha: 0.42,
-        ),
+        color: Theme.of(
+          context,
+        ).colorScheme.primaryContainer.withValues(alpha: 0.42),
         borderRadius: BorderRadius.circular(18),
       ),
       child: Wrap(
@@ -246,10 +246,13 @@ class _MetricGrid extends StatelessWidget {
     ];
     return LayoutBuilder(
       builder: (context, constraints) {
-        final columns = constraints.maxWidth >= 980 ? 4 : 2;
+        final columns = constraints.maxWidth >= 980
+            ? 4
+            : constraints.maxWidth >= 560
+            ? 2
+            : 1;
         const gap = 12.0;
-        final width =
-            (constraints.maxWidth - gap * (columns - 1)) / columns;
+        final width = (constraints.maxWidth - gap * (columns - 1)) / columns;
         return Wrap(
           spacing: gap,
           runSpacing: gap,
@@ -370,9 +373,9 @@ class _ResearchCard extends StatelessWidget {
               const SizedBox(height: 12),
               Text(
                 site.nameAr,
-                style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                  fontWeight: FontWeight.w900,
-                ),
+                style: Theme.of(
+                  context,
+                ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w900),
               ),
               const SizedBox(height: 5),
               Text(

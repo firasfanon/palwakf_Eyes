@@ -21,6 +21,7 @@ class GovernanceShell extends ConsumerWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         final wide = constraints.maxWidth >= 980;
+        final compact = constraints.maxWidth < 720;
         final nav = _GovernanceNavigation(location: location);
         return Scaffold(
           backgroundColor: Theme.of(context).colorScheme.surfaceContainerLowest,
@@ -39,30 +40,35 @@ class GovernanceShell extends ConsumerWidget {
                       icon: const Icon(Icons.menu_rounded),
                     ),
                   ),
-            title: const Row(
+            title: Row(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                Icon(Icons.shield_outlined),
-                SizedBox(width: 10),
-                Text(
-                  'مركز الحوكمة والنظام',
-                  style: TextStyle(fontWeight: FontWeight.w900),
+                const Icon(Icons.shield_outlined),
+                const SizedBox(width: 10),
+                Flexible(
+                  child: Text(
+                    compact ? 'الحوكمة' : 'مركز الحوكمة والنظام',
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(fontWeight: FontWeight.w900),
+                  ),
                 ),
               ],
             ),
             actions: <Widget>[
-              TextButton.icon(
-                onPressed: () => context.go(RoutePaths.workspace),
-                style: TextButton.styleFrom(foregroundColor: Colors.white),
-                icon: const Icon(Icons.edit_note_outlined),
-                label: const Text('مساحة العمل'),
-              ),
-              TextButton.icon(
-                onPressed: () => context.go(RoutePaths.home),
-                style: TextButton.styleFrom(foregroundColor: Colors.white),
-                icon: const Icon(Icons.public_rounded),
-                label: const Text('الموقع العام'),
-              ),
+              if (!compact)
+                TextButton.icon(
+                  onPressed: () => context.go(RoutePaths.workspace),
+                  style: TextButton.styleFrom(foregroundColor: Colors.white),
+                  icon: const Icon(Icons.edit_note_outlined),
+                  label: const Text('مساحة العمل'),
+                ),
+              if (!compact)
+                TextButton.icon(
+                  onPressed: () => context.go(RoutePaths.home),
+                  style: TextButton.styleFrom(foregroundColor: Colors.white),
+                  icon: const Icon(Icons.public_rounded),
+                  label: const Text('الموقع العام'),
+                ),
               IconButton(
                 tooltip: 'تبديل السمة',
                 onPressed: () =>
