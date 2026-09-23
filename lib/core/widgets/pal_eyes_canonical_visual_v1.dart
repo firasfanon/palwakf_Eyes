@@ -54,7 +54,13 @@ class PalEyesParchmentPanel extends StatelessWidget {
           ),
         ],
       ),
-      child: child,
+      child: DefaultTextStyle.merge(
+        style: const TextStyle(color: PalEyesVisualV1.warmInk),
+        child: IconTheme.merge(
+          data: const IconThemeData(color: PalEyesVisualV1.olive),
+          child: child,
+        ),
+      ),
     );
     if (onTap == null) return body;
     return InkWell(

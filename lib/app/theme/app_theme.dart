@@ -169,10 +169,16 @@ abstract final class AppTheme {
         ),
       ),
       chipTheme: ChipThemeData(
+        backgroundColor: scheme.surfaceContainerHighest,
+        selectedColor: scheme.secondaryContainer,
+        checkmarkColor: scheme.onSecondaryContainer,
         side: BorderSide(color: scheme.outlineVariant.withValues(alpha: 0.60)),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(99)),
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 7),
-        labelStyle: const TextStyle(fontWeight: FontWeight.w700),
+        labelStyle: TextStyle(
+          color: scheme.onSurface,
+          fontWeight: FontWeight.w700,
+        ),
       ),
       tooltipTheme: TooltipThemeData(
         decoration: BoxDecoration(

@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/application/app_settings.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/app_colors.dart';
+import 'package:pal_eyes/core/widgets/governance_shell.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_visual_system.dart';
 
 class WorkspaceShell extends ConsumerWidget {
@@ -18,6 +19,10 @@ class WorkspaceShell extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    if (location == RoutePaths.admin ||
+        location.startsWith(RoutePaths.governance)) {
+      return GovernanceShell(location: location, child: child);
+    }
     return LayoutBuilder(
       builder: (context, constraints) {
         final wide = constraints.maxWidth >= 980;
@@ -82,6 +87,13 @@ class WorkspaceShell extends ConsumerWidget {
                     ref.read(themeModeControllerProvider.notifier).toggle(),
                 icon: const Icon(Icons.contrast_rounded),
               ),
+              if (!compact)
+                TextButton.icon(
+                  onPressed: () => context.go(RoutePaths.admin),
+                  style: TextButton.styleFrom(foregroundColor: Colors.white),
+                  icon: const Icon(Icons.shield_outlined),
+                  label: const Text('الحوكمة'),
+                ),
               if (!compact)
                 IconButton(
                   tooltip: 'تبديل اللغة',
@@ -215,6 +227,11 @@ class _WorkspaceSidebar extends StatelessWidget {
       title: 'التوثيق والمعرفة',
       icon: Icons.menu_book_outlined,
       items: <_WorkspaceItem>[
+        _WorkspaceItem(
+          path: RoutePaths.workspaceResearch,
+          label: 'مختبر البحوث',
+          icon: Icons.science_outlined,
+        ),
         _WorkspaceItem(
           path: RoutePaths.workspaceNarratives,
           label: 'الوثائق التاريخية',

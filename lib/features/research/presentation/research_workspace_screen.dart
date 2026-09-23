@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
+import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/core/widgets/draft_content_banner.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_page.dart';
 import 'package:pal_eyes/features/places/application/heritage_sites_provider.dart';
@@ -38,7 +40,19 @@ class _ResearchWorkspaceScreenState extends ConsumerState<ResearchWorkspaceScree
     return PalEyesPage(
       title: 'مساحة الباحث',
       icon: Icons.science_outlined,
-      subtitle: 'طابور البحث الموازي لا يوقف صفحات التطوير، ولا تظهر مواده بوصفها حقائق حتى إغلاقها.',
+      subtitle: 'مختبر داخلي لإدارة البحث والادعاءات وحزم المعرفة. منفصل عن مكتبة القراءة العامة وعن سلطة الحوكمة.',
+      actions: <Widget>[
+        OutlinedButton.icon(
+          onPressed: () => context.go(RoutePaths.research),
+          icon: const Icon(Icons.menu_book_outlined),
+          label: const Text('مكتبة البحوث العامة'),
+        ),
+        FilledButton.tonalIcon(
+          onPressed: () => context.go(RoutePaths.admin),
+          icon: const Icon(Icons.shield_outlined),
+          label: const Text('الحوكمة'),
+        ),
+      ],
       header: const DraftContentBanner(
         title: '211 ادعاءً في Research Backlog',
         message: 'أُغلقت مرحلة التحقق الأولى عند حد اعتماد الصفحات. يستمر البحث الميداني والقانوني وGIS والحقوق كمسارات إثراء متوازية.',

@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/core/widgets/public_shell.dart';
 import 'package:pal_eyes/core/widgets/workspace_shell.dart';
+import 'package:pal_eyes/features/admin/presentation/admin_dashboard_screen.dart';
 import 'package:pal_eyes/features/common/presentation/not_found_screen.dart';
 import 'package:pal_eyes/features/contributions/presentation/contribute_screen.dart';
 import 'package:pal_eyes/features/discovery/presentation/discovery_screen.dart';
@@ -15,6 +16,9 @@ import 'package:pal_eyes/features/map/presentation/map_screen.dart';
 import 'package:pal_eyes/features/methodology/presentation/methodology_screen.dart';
 import 'package:pal_eyes/features/places/presentation/place_detail_screen.dart';
 import 'package:pal_eyes/features/places/presentation/places_screen.dart';
+import 'package:pal_eyes/features/research/presentation/public_research_detail_screen.dart';
+import 'package:pal_eyes/features/research/presentation/public_research_library_screen.dart';
+import 'package:pal_eyes/features/research/presentation/research_workspace_screen.dart';
 import 'package:pal_eyes/features/sources/presentation/sources_screen.dart';
 import 'package:pal_eyes/features/stories/presentation/stories_screen.dart';
 import 'package:pal_eyes/features/stories/presentation/story_detail_screen.dart';
@@ -62,6 +66,16 @@ final appRouterProvider = Provider<GoRouter>(
           GoRoute(
             path: RoutePaths.placeDetail,
             builder: (context, state) => PlaceDetailScreen(
+              slug: state.pathParameters['slug'] ?? '',
+            ),
+          ),
+          GoRoute(
+            path: RoutePaths.research,
+            builder: (context, state) => const PublicResearchLibraryScreen(),
+          ),
+          GoRoute(
+            path: RoutePaths.researchDetail,
+            builder: (context, state) => PublicResearchDetailScreen(
               slug: state.pathParameters['slug'] ?? '',
             ),
           ),
@@ -141,6 +155,10 @@ final appRouterProvider = Provider<GoRouter>(
           GoRoute(
             path: RoutePaths.workspaceNewPlace,
             builder: (context, state) => const NewPlaceDraftScreen(),
+          ),
+          GoRoute(
+            path: RoutePaths.workspaceResearch,
+            builder: (context, state) => const ResearchWorkspaceScreen(),
           ),
           GoRoute(
             path: RoutePaths.workspaceNarratives,
@@ -346,6 +364,10 @@ final appRouterProvider = Provider<GoRouter>(
             ),
           ),
           GoRoute(
+            path: RoutePaths.admin,
+            builder: (context, state) => const AdminDashboardScreen(),
+          ),
+          GoRoute(
             path: RoutePaths.governance,
             builder: (context, state) => const GovernanceOverviewScreen(),
           ),
@@ -405,14 +427,7 @@ final appRouterProvider = Provider<GoRouter>(
           ),
         ],
       ),
-      GoRoute(
-        path: RoutePaths.legacyResearch,
-        redirect: (context, state) => RoutePaths.workspace,
-      ),
-      GoRoute(
-        path: RoutePaths.legacyAdmin,
-        redirect: (context, state) => RoutePaths.governance,
-      ),
+
     ],
   ),
 );

@@ -56,7 +56,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         onStories: () => context.go(RoutePaths.stories),
                         onMap: () => context.go(RoutePaths.map),
                         onPlaces: () => context.go(RoutePaths.places),
-                        onMemory: () => context.go(RoutePaths.stories),
+                        onResearch: () => context.go(RoutePaths.research),
+                        onMemory: () => context.go(RoutePaths.timeline),
                         onSources: () => context.go(RoutePaths.sources),
                       ),
                       const SizedBox(height: 18),
@@ -351,6 +352,7 @@ class _ProductGatewaysSection extends StatelessWidget {
     required this.onStories,
     required this.onMap,
     required this.onPlaces,
+    required this.onResearch,
     required this.onMemory,
     required this.onSources,
   });
@@ -358,6 +360,7 @@ class _ProductGatewaysSection extends StatelessWidget {
   final VoidCallback onStories;
   final VoidCallback onMap;
   final VoidCallback onPlaces;
+  final VoidCallback onResearch;
   final VoidCallback onMemory;
   final VoidCallback onSources;
 
@@ -378,6 +381,11 @@ class _ProductGatewaysSection extends StatelessWidget {
         asset: ApprovedReferenceDesign.gatewayAssets[2],
         label: 'الأماكن',
         onTap: onPlaces,
+      ),
+      (
+        asset: ApprovedReferenceDesign.gatewayAssets[4],
+        label: 'مكتبة البحوث',
+        onTap: onResearch,
       ),
       (
         asset: ApprovedReferenceDesign.gatewayAssets[3],
@@ -409,7 +417,7 @@ class _ProductGatewaysSection extends StatelessWidget {
           );
         }
         final gap = 12.0;
-        final width = (constraints.maxWidth - gap * 4) / 5;
+        final width = (constraints.maxWidth - gap * 5) / 6;
         return Row(
           textDirection: TextDirection.ltr,
           children: <Widget>[

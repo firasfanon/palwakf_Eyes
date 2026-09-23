@@ -101,6 +101,12 @@ class WorkspaceDashboardScreen extends ConsumerWidget {
                       RoutePaths.workspacePlaces,
                       '${sites.length} كيان',
                     ),
+                    const _Module(
+                      'مختبر البحوث',
+                      Icons.science_outlined,
+                      RoutePaths.workspaceResearch,
+                      'Knowledge workbench',
+                    ),
                     _Module(
                       'الادعاءات',
                       Icons.fact_check_outlined,
@@ -157,7 +163,7 @@ class WorkspaceDashboardScreen extends ConsumerWidget {
                   sourceCount: sources.length,
                   onMap: () => context.go(RoutePaths.workspaceMapEditor),
                   onSources: () => context.go(RoutePaths.workspaceSources),
-                  onResearch: () => context.go(RoutePaths.workspaceReviews),
+                  onResearch: () => context.go(RoutePaths.workspaceResearch),
                 ),
                 const SizedBox(height: 22),
                 const _ReleaseGuard(),

@@ -26,7 +26,11 @@ void main() {
     }
   });
 
-  test('place helper creates a stable detail path', () {
+  test('place and research helpers create stable public detail paths', () {
     expect(RoutePaths.place('solomons-pools'), '/places/solomons-pools');
+    expect(RoutePaths.researchItem('solomons-pools'), '/research/solomons-pools');
+    expect(RoutePaths.publicRoutes, contains(RoutePaths.research));
+    expect(RoutePaths.workspaceRoutes, contains(RoutePaths.workspaceResearch));
+    expect(RoutePaths.admin, '/admin');
   });
 }

@@ -12,6 +12,7 @@ import 'package:pal_eyes/features/places/application/original_draft_visibility_p
 import 'package:pal_eyes/features/places/domain/heritage_site.dart';
 import 'package:pal_eyes/features/places/domain/historical_content.dart';
 import 'package:pal_eyes/features/research/application/staging_research_corpus_provider.dart';
+import 'package:pal_eyes/features/research/domain/staging_research_package_manifest.dart';
 import 'package:pal_eyes/features/research/presentation/staging_research_narrative_panel.dart';
 import 'package:pal_eyes/features/research/presentation/staging_research_package_card.dart';
 
@@ -167,6 +168,10 @@ class _PublicPlaceExperience extends ConsumerWidget {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
                     _PublicPlaceMetrics(site: site),
+                    if (package != null) ...<Widget>[
+                      const SizedBox(height: 18),
+                      _PublicResearchBridge(site: site, package: package),
+                    ],
                     const SizedBox(height: 22),
                     _PublicDetailNavigation(
                       selected: selected,
@@ -308,6 +313,96 @@ class _PublicPlaceMetrics extends StatelessWidget {
               .toList(growable: false),
         );
       },
+    );
+  }
+}
+
+class _PublicResearchBridge extends StatelessWidget {
+  const _PublicResearchBridge({required this.site, required this.package});
+
+  final HeritageSite site;
+  final StagingResearchPackageManifest package;
+
+  @override
+  Widget build(BuildContext context) {
+    final full = package.exposesResearchNarrativeReference;
+    return Container(
+      padding: const EdgeInsets.all(18),
+      decoration: BoxDecoration(
+        color: PalEyesVisualV1.parchmentDeep.withValues(alpha: 0.45),
+        borderRadius: BorderRadius.circular(22),
+        border: Border.all(color: PalEyesVisualV1.warmLine),
+      ),
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          final actions = Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: <Widget>[
+              FilledButton.icon(
+                onPressed: () => context.go(RoutePaths.researchItem(site.slug)),
+                icon: Icon(
+                  full
+                      ? Icons.menu_book_outlined
+                      : Icons.pending_actions_outlined,
+                ),
+                label: Text(
+                  full ? 'اقرأ البحث الكامل' : 'عرض حالة البحث',
+                ),
+              ),
+              OutlinedButton.icon(
+                onPressed: () => context.go(RoutePaths.research),
+                icon: const Icon(Icons.library_books_outlined),
+                label: const Text('مكتبة البحوث'),
+              ),
+            ],
+          );
+          final copy = Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text(
+                full ? 'بحث مستقل مرتبط بهذا المكان' : 'حالة البحث المرتبط',
+                style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+              const SizedBox(height: 6),
+              Text(
+                package.previewStatusDescriptionAr,
+                style: const TextStyle(height: 1.6),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                package.packageId,
+                style: Theme.of(context).textTheme.bodySmall,
+              ),
+            ],
+          );
+          if (constraints.maxWidth < 760) {
+            return Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                copy,
+                const SizedBox(height: 14),
+                actions,
+              ],
+            );
+          }
+          return Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              const CircleAvatar(
+                radius: 25,
+                child: Icon(Icons.menu_book_outlined),
+              ),
+              const SizedBox(width: 14),
+              Expanded(child: copy),
+              const SizedBox(width: 16),
+              actions,
+            ],
+          );
+        },
+      ),
     );
   }
 }
