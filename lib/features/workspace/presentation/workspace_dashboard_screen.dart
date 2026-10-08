@@ -406,7 +406,7 @@ class _WorkflowBoard extends StatelessWidget {
         children: <Widget>[
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-            reverse: true,
+            reverse: false,
             child: Row(
               textDirection: TextDirection.rtl,
               children: <Widget>[

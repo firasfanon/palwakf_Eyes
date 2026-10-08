@@ -98,11 +98,7 @@ class PublicResearchDetailScreen extends ConsumerWidget {
           if (!wide) {
             return Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                main,
-                const SizedBox(height: 18),
-                aside,
-              ],
+              children: <Widget>[main, const SizedBox(height: 18), aside],
             );
           }
           return Row(
@@ -137,19 +133,39 @@ class _ResearchIdentityStrip extends StatelessWidget {
       runSpacing: 8,
       crossAxisAlignment: WrapCrossAlignment.center,
       children: <Widget>[
-        Chip(
-          avatar: const Icon(Icons.inventory_2_outlined, size: 17),
-          label: Text(packageId),
-        ),
-        Chip(
-          avatar: const Icon(Icons.fact_check_outlined, size: 17),
-          label: Text(status),
-        ),
-        Chip(
-          avatar: const Icon(Icons.location_on_outlined, size: 17),
-          label: Text(location),
-        ),
+        _ResearchMetaChip(icon: Icons.inventory_2_outlined, label: packageId),
+        _ResearchMetaChip(icon: Icons.fact_check_outlined, label: status),
+        _ResearchMetaChip(icon: Icons.location_on_outlined, label: location),
       ],
+    );
+  }
+}
+
+class _ResearchMetaChip extends StatelessWidget {
+  const _ResearchMetaChip({required this.icon, required this.label});
+
+  final IconData icon;
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    final mobile = MediaQuery.sizeOf(context).width < 600;
+    return Chip(
+      backgroundColor: const Color(0xFFF1E8D7),
+      side: const BorderSide(color: Color(0xFFD8C9AD)),
+      avatar: Icon(icon, size: 17, color: const Color(0xFF676B3C)),
+      label: ConstrainedBox(
+        constraints: BoxConstraints(maxWidth: mobile ? 250 : 320),
+        child: Text(
+          label,
+          softWrap: true,
+          style: const TextStyle(
+            color: Color(0xFF302B24),
+            fontWeight: FontWeight.w800,
+            height: 1.35,
+          ),
+        ),
+      ),
     );
   }
 }
@@ -282,7 +298,10 @@ class _Fact extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 3),
-          SelectableText(value, style: const TextStyle(fontWeight: FontWeight.w700)),
+          SelectableText(
+            value,
+            style: const TextStyle(fontWeight: FontWeight.w700),
+          ),
         ],
       ),
     );
@@ -307,9 +326,9 @@ class _StatusOnlyPanel extends StatelessWidget {
             const SizedBox(height: 14),
             Text(
               title,
-              style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.w900,
-              ),
+              style: Theme.of(
+                context,
+              ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w900),
             ),
             const SizedBox(height: 8),
             Text(description, style: const TextStyle(height: 1.7)),
