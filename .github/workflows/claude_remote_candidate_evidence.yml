@@ -1,0 +1,149 @@
+name: Pal Eyes remote candidate evidence (Claude task branches)
+
+# Evidence-only pipeline for remote Claude candidate branches.
+# - Runs only on pushes to task/pal-eyes-claude-** branches.
+# - Never deploys, never touches Vercel, Supabase or main.
+# - Publishes gate logs and offline-capable web builds to a dedicated
+#   evidence/<branch> ref so a remote reviewer without Actions artifact
+#   access can inspect them with plain git.
+
+on:
+  push:
+    branches:
+      - "task/pal-eyes-claude-**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: claude-candidate-evidence-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.44.1"
+          channel: stable
+          cache: true
+
+      - name: Prepare evidence directory
+        run: |
+          mkdir -p "$RUNNER_TEMP/evidence"
+          {
+            echo "SOURCE_BRANCH=${GITHUB_REF_NAME}"
+            echo "SOURCE_SHA=$(git rev-parse HEAD)"
+            echo "SOURCE_TREE=$(git rev-parse HEAD^{tree})"
+            echo "MAIN_SHA=$(git rev-parse origin/main)"
+            echo "MAIN_TREE=$(git rev-parse origin/main^{tree})"
+            echo "RUN_ID=${GITHUB_RUN_ID}"
+            flutter --version --machine | tr -d '\n'; echo
+          } > "$RUNNER_TEMP/evidence/IDENTITY.txt"
+          git diff --stat origin/main...HEAD > "$RUNNER_TEMP/evidence/DIFF_STAT.txt" || true
+
+      - name: Flutter pub get
+        run: flutter pub get --enforce-lockfile 2>&1 | tee "$RUNNER_TEMP/evidence/pub_get.log"
+
+      - name: Gates (format of changed Dart files, analyze, tests, verifiers)
+        id: gates
+        shell: bash
+        run: |
+          set +e
+          E="$RUNNER_TEMP/evidence"
+          CHANGED=$(git diff --name-only --diff-filter=AMR origin/main...HEAD -- '*.dart')
+          if [ -n "$CHANGED" ]; then
+            dart format --output=none --set-exit-if-changed $CHANGED > "$E/format.log" 2>&1
+            FORMAT=$?
+          else
+            echo "NO_CHANGED_DART_FILES" > "$E/format.log"; FORMAT=0
+          fi
+          flutter analyze --no-pub > "$E/analyze.log" 2>&1; ANALYZE=$?
+          flutter test --no-pub --reporter expanded > "$E/test.log" 2>&1; TEST=$?
+          python3 tools/verify_osm_tile_provider_policy_r9_0_2.py > "$E/verify_osm.log" 2>&1; OSM=$?
+          python3 tools/verify_vercel_development_hosting.py > "$E/verify_hosting.log" 2>&1; HOSTING=$?
+          { python3 tools/selftest_research_narrative_extractor_v1.py && python3 tools/verify_research_narrative_staging_v1.py; } > "$E/verify_research_staging.log" 2>&1; RSTAGE=$?
+          git diff --check origin/main...HEAD > "$E/diff_check.log" 2>&1; DIFFCHECK=$?
+          {
+            echo "FORMAT_EXIT=$FORMAT"
+            echo "ANALYZE_EXIT=$ANALYZE"
+            echo "TEST_EXIT=$TEST"
+            echo "VERIFY_OSM_EXIT=$OSM"
+            echo "VERIFY_HOSTING_EXIT=$HOSTING"
+            echo "VERIFY_RESEARCH_STAGING_EXIT=$RSTAGE"
+            echo "DIFF_CHECK_EXIT=$DIFFCHECK"
+          } > "$E/GATES.txt"
+          cat "$E/GATES.txt"
+          tail -n 5 "$E/test.log"
+          if [ $((FORMAT+ANALYZE+TEST+OSM+HOSTING+RSTAGE+DIFFCHECK)) -ne 0 ]; then
+            echo "failed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build candidate web (public experience, staging, offline resources)
+        shell: bash
+        run: |
+          set -o pipefail
+          flutter build web --release --no-pub --no-web-resources-cdn \
+            --dart-define=PAL_EYES_ENV=staging \
+            --dart-define=PAL_EYES_PRESENTATION_MODE=public \
+            --dart-define=MAP_TILE_PROVIDER_MODE=osm_standard \
+            --dart-define=MAP_TILE_PROVIDER_APPROVED=false \
+            2>&1 | tee "$RUNNER_TEMP/evidence/build_public.log"
+          tar -C build -czf "$RUNNER_TEMP/evidence/web_public.tgz" web
+
+      - name: Build candidate web (internal inspector, staging, offline resources)
+        shell: bash
+        run: |
+          set -o pipefail
+          flutter build web --release --no-pub --no-web-resources-cdn \
+            --dart-define=PAL_EYES_ENV=staging \
+            --dart-define=PAL_EYES_PRESENTATION_MODE=internal \
+            --dart-define=MAP_TILE_PROVIDER_MODE=osm_standard \
+            --dart-define=MAP_TILE_PROVIDER_APPROVED=false \
+            2>&1 | tee "$RUNNER_TEMP/evidence/build_internal.log"
+          tar -C build -czf "$RUNNER_TEMP/evidence/web_internal.tgz" web
+
+      - name: Build accepted main baseline web for before/after comparison
+        shell: bash
+        run: |
+          set -o pipefail
+          git worktree add "$RUNNER_TEMP/main" origin/main
+          cd "$RUNNER_TEMP/main"
+          flutter pub get --enforce-lockfile
+          flutter build web --release --no-pub --no-web-resources-cdn \
+            --dart-define=PAL_EYES_ENV=staging \
+            --dart-define=PAL_EYES_PRESENTATION_MODE=public \
+            --dart-define=MAP_TILE_PROVIDER_MODE=osm_standard \
+            --dart-define=MAP_TILE_PROVIDER_APPROVED=false \
+            2>&1 | tee "$RUNNER_TEMP/evidence/build_main_baseline.log"
+          tar -C build -czf "$RUNNER_TEMP/evidence/web_main_baseline.tgz" web
+
+      - name: Publish evidence ref
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          SRC_SHA=$(git rev-parse HEAD)
+          EVIDENCE_REF="evidence/${GITHUB_REF_NAME#task/}"
+          cd "$RUNNER_TEMP/evidence"
+          git init -q
+          git config user.name "pal-eyes-evidence-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -q -b evidence
+          git add -A
+          git commit -q -m "evidence for ${GITHUB_REF_NAME}@${SRC_SHA} run ${GITHUB_RUN_ID}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/${EVIDENCE_REF}"
+          echo "EVIDENCE_REF=${EVIDENCE_REF}"
+
+      - name: Fail when any gate failed
+        if: steps.gates.outputs.failed == 'true'
+        run: |
+          cat "$RUNNER_TEMP/evidence/GATES.txt"
+          exit 1
