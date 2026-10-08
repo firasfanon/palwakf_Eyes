@@ -5,6 +5,13 @@ import 'package:pal_eyes/features/research/application/staging_research_narrativ
 import 'package:pal_eyes/features/research/domain/staging_research_narrative.dart';
 
 void main() {
+  test('sidecar URL stays at same-origin root from nested public routes', () {
+    final uri = resolveResearchNarrativeSidecarUri(
+      Uri.parse('http://127.0.0.1:8800/research/swq-lqtnyn-4bbdf0?x=1#part'),
+    );
+    expect(uri.toString(), 'http://127.0.0.1:8800/research_narratives_v1.json');
+  });
+
   test('sidecar parser preserves paragraph styles and provenance', () {
     final sidecar = ResearchNarrativeSidecar.fromJsonString(r'''
 {

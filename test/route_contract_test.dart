@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 
@@ -26,7 +28,20 @@ void main() {
     }
   });
 
-  test('place helper creates a stable detail path', () {
+  test('place and research helpers create stable public detail paths', () {
     expect(RoutePaths.place('solomons-pools'), '/places/solomons-pools');
+    expect(
+      RoutePaths.researchItem('solomons-pools'),
+      '/research/solomons-pools',
+    );
+    expect(RoutePaths.publicRoutes, contains(RoutePaths.research));
+    expect(RoutePaths.workspaceRoutes, contains(RoutePaths.workspaceResearch));
+    expect(RoutePaths.admin, '/admin');
+  });
+  test('web router preserves direct deep links instead of forcing home', () {
+    final router = File('lib/app/router/app_router.dart').readAsStringSync();
+    final main = File('lib/main.dart').readAsStringSync();
+    expect(router.contains('initialLocation: RoutePaths.home'), isFalse);
+    expect(main.contains('usePathUrlStrategy();'), isTrue);
   });
 }

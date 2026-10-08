@@ -8,6 +8,8 @@ abstract final class RoutePaths {
   static const String governorates = '/governorates';
   static const String stories = '/stories';
   static const String storyDetail = '/stories/:slug';
+  static const String research = '/research';
+  static const String researchDetail = '/research/:slug';
   static const String sources = '/sources';
   static const String contribute = '/contribute';
   static const String methodology = '/methodology';
@@ -19,6 +21,7 @@ abstract final class RoutePaths {
   static const String workspaceNewPlace = '/workspace/places/new';
   static const String workspaceSiteEditor = '/workspace/places/editor';
   static const String workspaceNarratives = '/workspace/narratives';
+  static const String workspaceResearch = '/workspace/research';
   static const String workspaceClaims = '/workspace/claims';
   static const String workspaceSources = '/workspace/sources';
   static const String workspaceSourceRegistry = '/workspace/source-registry';
@@ -34,6 +37,7 @@ abstract final class RoutePaths {
   static const String workspaceAudit = '/workspace/audit';
   static const String workspaceReports = '/workspace/reports';
 
+  static const String admin = '/admin';
   static const String governance = '/admin/governance';
   static const String governanceWorkflows = '/admin/governance/workflows';
   static const String governanceRights = '/admin/governance/rights';
@@ -41,11 +45,9 @@ abstract final class RoutePaths {
   static const String governanceSystemStatus =
       '/admin/governance/system-status';
 
-  static const String legacyResearch = '/research';
-  static const String legacyAdmin = '/admin';
-
   static String place(String slug) => '/places/$slug';
   static String story(String slug) => '/stories/$slug';
+  static String researchItem(String slug) => '/research/$slug';
 
   static const List<String> publicRoutes = <String>[
     home,
@@ -55,6 +57,7 @@ abstract final class RoutePaths {
     timeline,
     governorates,
     stories,
+    research,
     sources,
     contribute,
     methodology,
@@ -68,6 +71,7 @@ abstract final class RoutePaths {
     workspaceNewPlace,
     workspaceSiteEditor,
     workspaceNarratives,
+    workspaceResearch,
     workspaceClaims,
     workspaceSources,
     workspaceSourceRegistry,

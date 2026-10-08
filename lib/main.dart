@@ -1,11 +1,13 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:pal_eyes/app/app.dart';
 import 'package:pal_eyes/core/config/app_environment.dart';
 import 'package:pal_eyes/core/supabase/supabase_bootstrap.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  usePathUrlStrategy();
 
   const environment = AppEnvironment.fromCompileTime();
   final supabaseResult = await SupabaseBootstrap.initialize(environment);

@@ -27,7 +27,7 @@ class StagingResearchPackageCard extends StatelessWidget {
                 'معاينة البحث — غير إنتاجية',
                 style: TextStyle(fontWeight: FontWeight.w900, fontSize: 17),
               ),
-              const Chip(label: Text('بيئة التطوير فقط')),
+              const _PackageMetaChip(label: 'بيئة التطوير فقط'),
             ],
           ),
           const SizedBox(height: 12),
@@ -35,11 +35,11 @@ class StagingResearchPackageCard extends StatelessWidget {
             spacing: 8,
             runSpacing: 8,
             children: <Widget>[
-              Chip(label: Text(package.packageId)),
-              Chip(label: Text(package.censusRecordId)),
-              Chip(label: Text('الدليل: ${package.evidenceGate}')),
-              Chip(label: Text(_packageClassLabel(package.packageClass))),
-              Chip(label: Text(package.previewStatusLabelAr)),
+              _PackageMetaChip(label: package.packageId),
+              _PackageMetaChip(label: package.censusRecordId),
+              _PackageMetaChip(label: 'الدليل: ${package.evidenceGate}'),
+              _PackageMetaChip(label: _packageClassLabel(package.packageClass)),
+              _PackageMetaChip(label: package.previewStatusLabelAr),
             ],
           ),
           const SizedBox(height: 12),
@@ -63,9 +63,10 @@ class StagingResearchPackageCard extends StatelessWidget {
           const SizedBox(height: 10),
           Text(
             'مرجع المصدر: ${package.sourceReference}',
-            style: Theme.of(
-              context,
-            ).textTheme.bodySmall?.copyWith(color: PalEyesVisualV1.warmMuted),
+            style: Theme.of(context).textTheme.bodySmall?.copyWith(
+              color: const Color(0xFF4A4338),
+              fontWeight: FontWeight.w600,
+            ),
           ),
         ],
       ),
@@ -94,16 +95,53 @@ class _PackageNotice extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.surfaceContainerHighest,
+        color: const Color(0xFFF5EDDD),
         borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: const Color(0xFFD8C9AD)),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Icon(icon, size: 19),
+          Icon(icon, size: 19, color: const Color(0xFF676B3C)),
           const SizedBox(width: 8),
-          Expanded(child: Text(text)),
+          Expanded(
+            child: Text(
+              text,
+              style: const TextStyle(
+                color: Color(0xFF302B24),
+                fontWeight: FontWeight.w700,
+                height: 1.45,
+              ),
+            ),
+          ),
         ],
+      ),
+    );
+  }
+}
+
+class _PackageMetaChip extends StatelessWidget {
+  const _PackageMetaChip({required this.label});
+
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    final mobile = MediaQuery.sizeOf(context).width < 600;
+    return Chip(
+      backgroundColor: const Color(0xFFF1E8D7),
+      side: const BorderSide(color: Color(0xFFD8C9AD)),
+      label: ConstrainedBox(
+        constraints: BoxConstraints(maxWidth: mobile ? 250 : 320),
+        child: Text(
+          label,
+          softWrap: true,
+          style: const TextStyle(
+            color: Color(0xFF302B24),
+            fontWeight: FontWeight.w800,
+            height: 1.35,
+          ),
+        ),
       ),
     );
   }

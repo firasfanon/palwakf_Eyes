@@ -17,7 +17,7 @@ class PublicShell extends ConsumerWidget {
     final presentationMode = ref.watch(palEyesPresentationModeProvider);
     return LayoutBuilder(
       builder: (context, constraints) {
-        final wide = constraints.maxWidth >= 1050;
+        final wide = constraints.maxWidth >= 1180;
         return Scaffold(
           extendBodyBehindAppBar: location == RoutePaths.home,
           backgroundColor: ApprovedReferenceDesign.pageBackground(context),
@@ -114,7 +114,12 @@ class _ReferenceHeader extends ConsumerWidget {
                         .toList(growable: false),
                   ),
                 ),
-                const SizedBox(width: 18),
+                const SizedBox(width: 8),
+                _MoreMenu(
+                  foreground: foreground,
+                  onSelected: (path) => context.go(path),
+                ),
+                const SizedBox(width: 10),
                 _HeaderSearch(onTap: () => context.go(RoutePaths.discover)),
                 const SizedBox(width: 10),
                 TextButton.icon(
@@ -163,7 +168,19 @@ class _ReferenceHeader extends ConsumerWidget {
                       Icons.dashboard_customize_outlined,
                       size: 18,
                     ),
-                    label: const Text('مساحة الفريق'),
+                    label: const Text('مساحة العمل'),
+                  ),
+                  const SizedBox(width: 6),
+                  IconButton.outlined(
+                    tooltip: 'الحوكمة والإدارة',
+                    onPressed: () => context.go(RoutePaths.admin),
+                    style: IconButton.styleFrom(
+                      foregroundColor: ApprovedReferenceDesign.goldSoft,
+                      side: const BorderSide(
+                        color: ApprovedReferenceDesign.gold,
+                      ),
+                    ),
+                    icon: const Icon(Icons.shield_outlined, size: 18),
                   ),
                 ],
               ] else ...<Widget>[
@@ -325,6 +342,75 @@ class _HeaderNavButton extends StatelessWidget {
   }
 }
 
+class _MoreMenu extends StatelessWidget {
+  const _MoreMenu({required this.foreground, required this.onSelected});
+
+  final Color foreground;
+  final ValueChanged<String> onSelected;
+
+  @override
+  Widget build(BuildContext context) {
+    return PopupMenuButton<String>(
+      tooltip: 'المزيد',
+      onSelected: onSelected,
+      itemBuilder: (context) => const <PopupMenuEntry<String>>[
+        PopupMenuItem<String>(
+          value: RoutePaths.timeline,
+          child: ListTile(
+            leading: Icon(Icons.history_toggle_off_outlined),
+            title: Text('عبر الزمن'),
+          ),
+        ),
+        PopupMenuItem<String>(
+          value: RoutePaths.governorates,
+          child: ListTile(
+            leading: Icon(Icons.location_city_outlined),
+            title: Text('المحافظات'),
+          ),
+        ),
+        PopupMenuItem<String>(
+          value: RoutePaths.sources,
+          child: ListTile(
+            leading: Icon(Icons.library_books_outlined),
+            title: Text('المصادر'),
+          ),
+        ),
+        PopupMenuItem<String>(
+          value: RoutePaths.methodology,
+          child: ListTile(
+            leading: Icon(Icons.fact_check_outlined),
+            title: Text('المنهجية'),
+          ),
+        ),
+        PopupMenuItem<String>(
+          value: RoutePaths.contribute,
+          child: ListTile(
+            leading: Icon(Icons.volunteer_activism_outlined),
+            title: Text('ساهم في الذاكرة'),
+          ),
+        ),
+      ],
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            Text(
+              'المزيد',
+              style: TextStyle(
+                color: foreground,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+            const SizedBox(width: 4),
+            Icon(Icons.expand_more_rounded, color: foreground, size: 18),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 class _PublicDrawer extends ConsumerWidget {
   const _PublicDrawer({required this.internal});
 
@@ -381,7 +467,16 @@ class _PublicDrawer extends ConsumerWidget {
                   context.go(RoutePaths.workspace);
                 },
                 icon: const Icon(Icons.dashboard_customize_outlined),
-                label: const Text('فتح لوحة الإدارة'),
+                label: const Text('فتح مساحة العمل'),
+              ),
+              const SizedBox(height: 8),
+              OutlinedButton.icon(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                  context.go(RoutePaths.admin);
+                },
+                icon: const Icon(Icons.shield_outlined),
+                label: const Text('لوحة الحوكمة والإدارة'),
               ),
             ],
             const SizedBox(height: 10),
@@ -413,14 +508,9 @@ class _PublicItem {
 
 const List<_PublicItem> _desktopItems = <_PublicItem>[
   _PublicItem(RoutePaths.home, 'الرئيسية', Icons.home_outlined),
+  _PublicItem(RoutePaths.discover, 'استكشف', Icons.travel_explore_outlined),
   _PublicItem(RoutePaths.places, 'الأماكن', Icons.place_outlined),
+  _PublicItem(RoutePaths.research, 'البحوث', Icons.menu_book_outlined),
   _PublicItem(RoutePaths.map, 'الخريطة', Icons.map_outlined),
   _PublicItem(RoutePaths.stories, 'الحكايات', Icons.auto_stories_outlined),
-  _PublicItem(
-    RoutePaths.timeline,
-    'الذاكرة',
-    Icons.history_toggle_off_outlined,
-  ),
-  _PublicItem(RoutePaths.sources, 'المصادر', Icons.library_books_outlined),
-  _PublicItem(RoutePaths.methodology, 'عن المشروع', Icons.info_outline_rounded),
 ];

@@ -60,6 +60,9 @@ class PalEyesPage extends StatelessWidget {
   }
 
   IconData _iconForTitle(String value) {
+    if (value.contains('بحث') || value.contains('بحوث')) {
+      return Icons.menu_book_outlined;
+    }
     if (value.contains('مصدر') || value.contains('مراجع')) {
       return Icons.library_books_outlined;
     }
@@ -91,6 +94,9 @@ class PalEyesPage extends StatelessWidget {
   }
 
   String _eyebrowForTitle(String value) {
+    if (value.contains('بحث') || value.contains('بحوث')) {
+      return 'البحث • الدليل • المكان';
+    }
     if (value.contains('عمل') || value.contains('إدارة')) {
       return 'مساحة العمل';
     }

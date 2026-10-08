@@ -5,7 +5,10 @@ import 'package:http/http.dart' as http;
 import 'package:pal_eyes/core/config/app_environment.dart';
 import 'package:pal_eyes/features/research/domain/staging_research_narrative.dart';
 
-const String researchNarrativeSidecarPath = 'research_narratives_v1.json';
+const String researchNarrativeSidecarPath = '/research_narratives_v1.json';
+
+Uri resolveResearchNarrativeSidecarUri(Uri base) =>
+    base.resolve(researchNarrativeSidecarPath);
 
 final researchNarrativeSidecarProvider =
     FutureProvider<ResearchNarrativeSidecar?>((ref) async {
@@ -14,7 +17,7 @@ final researchNarrativeSidecarProvider =
         return null;
       }
 
-      final uri = Uri.base.resolve(researchNarrativeSidecarPath);
+      final uri = resolveResearchNarrativeSidecarUri(Uri.base);
       final response = await http.get(
         uri,
         headers: const <String, String>{'Cache-Control': 'no-cache'},

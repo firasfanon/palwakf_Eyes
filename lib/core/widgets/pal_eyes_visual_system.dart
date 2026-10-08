@@ -192,7 +192,9 @@ class PalEyesPageHero extends StatelessWidget {
                       runSpacing: 18,
                       children: <Widget>[
                         ConstrainedBox(
-                          constraints: const BoxConstraints(maxWidth: 820),
+                          constraints: BoxConstraints(
+                            maxWidth: math.min(820, width - horizontal * 2),
+                          ),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[

@@ -4,15 +4,17 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 
 void main() {
-  test('public shell exposes five primary destinations only', () {
+  test('public shell exposes the V2 discovery architecture', () {
     final shell = File('lib/core/widgets/public_shell.dart').readAsStringSync();
 
     expect(shell.contains('_desktopItems'), isTrue);
+    expect(shell.contains("'استكشف'"), isTrue);
     expect(shell.contains("'الأماكن'"), isTrue);
+    expect(shell.contains("'البحوث'"), isTrue);
     expect(shell.contains("'الحكايات'"), isTrue);
-    expect(shell.contains("Text('مساحة الفريق')"), isTrue);
     expect(shell.contains('presentationMode.isInternal'), isTrue);
-    expect(shell.contains("label: const Text('مساحة العمل')"), isFalse);
+    expect(shell.contains("label: const Text('مساحة العمل')"), isTrue);
+    expect(shell.contains("tooltip: 'الحوكمة والإدارة'"), isTrue);
   });
 
   test('public experience has atlas museum and magazine surfaces', () {

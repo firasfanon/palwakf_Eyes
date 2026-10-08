@@ -130,6 +130,11 @@ class _DiscoveryScreenState extends ConsumerState<DiscoveryScreen> {
                 onPressed: () => context.go(RoutePaths.stories),
               ),
               PublicJourneyAction(
+                label: 'من بحث',
+                icon: Icons.menu_book_outlined,
+                onPressed: () => context.go(RoutePaths.research),
+              ),
+              PublicJourneyAction(
                 label: 'من مصدر',
                 icon: Icons.library_books_outlined,
                 onPressed: () => context.go(RoutePaths.sources),
