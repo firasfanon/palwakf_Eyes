@@ -1,284 +1,523 @@
-diff --git a/lib/core/access/pal_eyes_auth_gateway.dart b/lib/core/access/pal_eyes_auth_gateway.dart
-index 46e50ed..571b037 100644
---- a/lib/core/access/pal_eyes_auth_gateway.dart
-+++ b/lib/core/access/pal_eyes_auth_gateway.dart
-@@ -39,7 +39,10 @@ abstract interface class PalEyesAuthGateway {
-   String? get currentUserId;
-   String get assuranceLevel;
- 
--  Future<SignInOutcome> signIn({required String email, required String password});
-+  Future<SignInOutcome> signIn({
-+    required String email,
-+    required String password,
-+  });
-   Future<bool> verifyTotp(String code);
-   Future<void> requestPasswordReset(String email);
-   Future<void> signOut();
-@@ -189,9 +192,9 @@ class SupabaseAuthGateway implements PalEyesAuthGateway {
+diff --git a/lib/app/localization/pal_eyes_localizations.dart b/lib/app/localization/pal_eyes_localizations.dart
+index 9e32054..392899b 100644
+--- a/lib/app/localization/pal_eyes_localizations.dart
++++ b/lib/app/localization/pal_eyes_localizations.dart
+@@ -68,10 +68,9 @@ class _PalEyesLocalizationsDelegate
+   const _PalEyesLocalizationsDelegate();
  
    @override
-   Future<List<DirectoryUser>> listUsers() async {
--    final rows = await _client.schema('pal_eyes').rpc<Object?>(
--      'admin_list_users',
--    );
-+    final rows = await _client
-+        .schema('pal_eyes')
-+        .rpc<Object?>('admin_list_users');
-     final users = <DirectoryUser>[];
-     if (rows is! List<Object?>) return users;
-     for (final row in rows) {
-diff --git a/lib/features/admin/presentation/admin_users_screen.dart b/lib/features/admin/presentation/admin_users_screen.dart
-index 0e20164..d24ffd3 100644
---- a/lib/features/admin/presentation/admin_users_screen.dart
-+++ b/lib/features/admin/presentation/admin_users_screen.dart
-@@ -43,7 +43,9 @@ class _AdminUsersScreenState extends ConsumerState<AdminUsersScreen> {
-     try {
-       await gateway.setRole(userId: user.userId, role: role, active: active);
-       if (!mounted) return;
--      setState(() => _message = 'تم تحديث دور ${_roleLabels[role]} لـ ${user.email}.');
-+      setState(
-+        () => _message = 'تم تحديث دور ${_roleLabels[role]} لـ ${user.email}.',
-+      );
-       _load(gateway);
-     } on Object {
-       if (!mounted) return;
-@@ -113,11 +115,9 @@ class _AdminUsersScreenState extends ConsumerState<AdminUsersScreen> {
-                               FilterChip(
-                                 label: Text(_roleLabels[role]!),
-                                 selected: user.roles.contains(role),
--                                onSelected:
--                                    user.userId == gateway.currentUserId
-+                                onSelected: user.userId == gateway.currentUserId
-                                     ? null
--                                    : (on) =>
--                                          _toggle(gateway, user, role, on),
-+                                    : (on) => _toggle(gateway, user, role, on),
-                               ),
-                           ],
-                         ),
-diff --git a/lib/features/auth/presentation/account_security_screen.dart b/lib/features/auth/presentation/account_security_screen.dart
-index 161bf4c..6c7424a 100644
---- a/lib/features/auth/presentation/account_security_screen.dart
-+++ b/lib/features/auth/presentation/account_security_screen.dart
-@@ -116,9 +116,8 @@ class _AccountSecurityScreenState extends ConsumerState<AccountSecurityScreen> {
-               Align(
-                 alignment: AlignmentDirectional.centerStart,
-                 child: TextButton.icon(
--                  onPressed: () => Clipboard.setData(
--                    ClipboardData(text: _enrollment!.uri),
--                  ),
-+                  onPressed: () =>
-+                      Clipboard.setData(ClipboardData(text: _enrollment!.uri)),
-                   icon: const Icon(Icons.copy_outlined),
-                   label: const Text('نسخ رابط otpauth'),
-                 ),
-diff --git a/lib/features/auth/presentation/sign_in_screen.dart b/lib/features/auth/presentation/sign_in_screen.dart
-index afdacf5..fbc6710 100644
---- a/lib/features/auth/presentation/sign_in_screen.dart
-+++ b/lib/features/auth/presentation/sign_in_screen.dart
-@@ -200,8 +200,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
-                 autofillHints: const <String>[AutofillHints.password],
-                 textDirection: TextDirection.ltr,
-                 decoration: const InputDecoration(labelText: 'كلمة المرور'),
--                validator: (v) =>
--                    (v ?? '').isEmpty ? 'أدخل كلمة المرور' : null,
-+                validator: (v) => (v ?? '').isEmpty ? 'أدخل كلمة المرور' : null,
-                 onFieldSubmitted: (_) => _submit(gateway),
-               ),
-               const SizedBox(height: PalEyesTokens.space4),
-diff --git a/lib/features/operations/application/operational_providers.dart b/lib/features/operations/application/operational_providers.dart
-index 446f30e..be517e8 100644
---- a/lib/features/operations/application/operational_providers.dart
-+++ b/lib/features/operations/application/operational_providers.dart
-@@ -53,8 +53,9 @@ final operationalDataBackendProvider = Provider<OperationalDataBackend>((ref) {
-   return LocalOperationalDataBackend(snapshot);
- });
- 
--final operationalWorkspaceStoreProvider =
--    Provider<OperationalWorkspaceStore>((ref) {
-+final operationalWorkspaceStoreProvider = Provider<OperationalWorkspaceStore>((
-+  ref,
-+) {
-   final store = OperationalWorkspaceStore(
-     backend: ref.watch(operationalDataBackendProvider),
-     actor: ref.watch(operationalActorProvider),
-diff --git a/test/auth_and_user_admin_test.dart b/test/auth_and_user_admin_test.dart
-index 2caf9ac..17c67d6 100644
---- a/test/auth_and_user_admin_test.dart
-+++ b/test/auth_and_user_admin_test.dart
-@@ -57,8 +57,11 @@ class FakeGateway implements PalEyesAuthGateway {
-   @override
-   Future<void> signOut() async => calls.add('signOut');
-   @override
--  Future<TotpEnrollment> enrollTotp() async =>
--      const TotpEnrollment(factorId: 'f1', secret: 'JBSWY3DP', uri: 'otpauth://x');
-+  Future<TotpEnrollment> enrollTotp() async => const TotpEnrollment(
-+    factorId: 'f1',
-+    secret: 'JBSWY3DP',
-+    uri: 'otpauth://x',
-+  );
-   @override
-   Future<bool> confirmTotpEnrollment({
-     required String factorId,
-@@ -133,7 +136,10 @@ void main() {
-     final container = ProviderContainer();
-     addTearDown(container.dispose);
-     await tester.pumpWidget(
--      UncontrolledProviderScope(container: container, child: const PalEyesApp()),
-+      UncontrolledProviderScope(
-+        container: container,
-+        child: const PalEyesApp(),
-+      ),
-     );
-     await _go(tester, container, '/sign-in');
-     expect(find.byKey(const Key('sign-in-unavailable')), findsOneWidget);
-@@ -148,7 +154,10 @@ void main() {
-     await _go(tester, c, '/sign-in');
-     expect(find.textContaining('إنشاء حساب'), findsNothing);
-     expect(find.textContaining('تسجيل جديد'), findsNothing);
--    expect(find.text('الحسابات بالدعوة فقط. لا يوجد تسجيل عام.'), findsOneWidget);
-+    expect(
-+      find.text('الحسابات بالدعوة فقط. لا يوجد تسجيل عام.'),
-+      findsOneWidget,
-+    );
-   });
- 
-   testWidgets('valid credentials open the workspace for a role holder', (
-diff --git a/test/operational_backend_sql_contract_test.dart b/test/operational_backend_sql_contract_test.dart
-index 55c33c0..1f77628 100644
---- a/test/operational_backend_sql_contract_test.dart
-+++ b/test/operational_backend_sql_contract_test.dart
-@@ -33,7 +33,10 @@ void main() {
-     expect(source.contains("publication_status = 'PUBLISHED'"), isTrue);
-     expect(source.contains('original_draft_layers'), isTrue);
-     expect(source.contains('public_original_draft'), isFalse);
--    expect(source.contains('grant insert on all tables in schema pal_eyes to anon'), isFalse);
-+    expect(
-+      source.contains('grant insert on all tables in schema pal_eyes to anon'),
-+      isFalse,
-+    );
-   });
- 
-   test('seed imports governed counts without public release', () {
-@@ -59,10 +62,7 @@ void main() {
-       ).allMatches(source),
-       hasLength(4),
-     );
--    expect(
--      source.contains('public_map_use=excluded.public_map_use'),
--      isTrue,
--    );
-+    expect(source.contains('public_map_use=excluded.public_map_use'), isTrue);
-     expect(source.contains('public_map_use=BLOCKED'), isFalse);
-     // An unquoted literal in ON CONFLICT is parsed as a column name and
-     // aborts the whole seed (found by the rollback-cycle run, 2026-10-09).
-diff --git a/test/published_content_and_observability_test.dart b/test/published_content_and_observability_test.dart
-index f04b6a3..e196f0d 100644
---- a/test/published_content_and_observability_test.dart
-+++ b/test/published_content_and_observability_test.dart
-@@ -9,14 +9,20 @@ void main() {
-     test('defaults to the governed catalog unless explicitly published', () {
-       expect(publicContentSourceFrom(''), PublicContentSource.catalog);
-       expect(publicContentSourceFrom('catalog'), PublicContentSource.catalog);
--      expect(publicContentSourceFrom('PUBLISHED'), PublicContentSource.published);
-+      expect(
-+        publicContentSourceFrom('PUBLISHED'),
-+        PublicContentSource.published,
-+      );
-     });
- 
--    test('no backend means empty and notConfigured, never the catalog', () async {
--      final load = await loadPublishedSites(null);
--      expect(load.status, PublishedContentStatus.notConfigured);
--      expect(load.sites, isEmpty);
--    });
-+    test(
-+      'no backend means empty and notConfigured, never the catalog',
-+      () async {
-+        final load = await loadPublishedSites(null);
-+        expect(load.status, PublishedContentStatus.notConfigured);
-+        expect(load.sites, isEmpty);
-+      },
-+    );
- 
-     test('backend failure is fail-closed', () async {
-       final load = await loadPublishedSites(
-@@ -26,33 +32,39 @@ void main() {
-       expect(load.sites, isEmpty);
-     });
- 
--    test('maps public view rows without inventing coordinates or drafts', () async {
--      final load = await loadPublishedSites(
--        () async => <Map<String, Object?>>[
--          <String, Object?>{
--            'id': 'site-1',
--            'slug': 'synthetic-published',
--            'name_ar': 'موقع منشور اصطناعي',
--            'name_en': 'Synthetic',
--            'governorate_ar': 'القدس',
--            'locality_ar': 'القدس القديمة',
--            'site_type_ar': 'مسجد',
--            'editorial_draft': 'نص معتمد للنشر',
--            'coordinate_status': 'PUBLIC_APPROVED',
--          },
--          <String, Object?>{'id': 'broken', 'slug': ''},
--        ],
+-  bool isSupported(Locale locale) =>
+-      PalEyesLocalizations.supportedLocales.any(
+-        (supported) => supported.languageCode == locale.languageCode,
 -      );
--      expect(load.status, PublishedContentStatus.loaded);
--      expect(load.sites, hasLength(1));
--      final site = load.sites.single;
--      expect(site.status, ContentReviewStatus.published);
--      expect(site.publicationBlocked, isFalse);
--      expect(site.latitude, isNull);
--      expect(site.longitude, isNull);
--      expect(site.originalHistoricalDraft, isNull);
--      expect(PublishedSiteRepository(load.sites).findBySlug('synthetic-published'), isNotNull);
--    });
-+    test(
-+      'maps public view rows without inventing coordinates or drafts',
-+      () async {
-+        final load = await loadPublishedSites(
-+          () async => <Map<String, Object?>>[
-+            <String, Object?>{
-+              'id': 'site-1',
-+              'slug': 'synthetic-published',
-+              'name_ar': 'موقع منشور اصطناعي',
-+              'name_en': 'Synthetic',
-+              'governorate_ar': 'القدس',
-+              'locality_ar': 'القدس القديمة',
-+              'site_type_ar': 'مسجد',
-+              'editorial_draft': 'نص معتمد للنشر',
-+              'coordinate_status': 'PUBLIC_APPROVED',
-+            },
-+            <String, Object?>{'id': 'broken', 'slug': ''},
-+          ],
-+        );
-+        expect(load.status, PublishedContentStatus.loaded);
-+        expect(load.sites, hasLength(1));
-+        final site = load.sites.single;
-+        expect(site.status, ContentReviewStatus.published);
-+        expect(site.publicationBlocked, isFalse);
-+        expect(site.latitude, isNull);
-+        expect(site.longitude, isNull);
-+        expect(site.originalHistoricalDraft, isNull);
-+        expect(
-+          PublishedSiteRepository(load.sites).findBySlug('synthetic-published'),
-+          isNotNull,
-+        );
-+      },
-+    );
-   });
++  bool isSupported(Locale locale) => PalEyesLocalizations.supportedLocales.any(
++    (supported) => supported.languageCode == locale.languageCode,
++  );
  
-   group('error reporting seam', () {
-@@ -63,7 +75,10 @@ void main() {
-         ErrorReporting.capture(StateError('e$i'), null, 'test');
-       }
-       expect(ErrorReporting.recent, hasLength(ErrorReporting.capacity));
--      expect(ErrorReporting.recent.last.message, contains('e${ErrorReporting.capacity + 4}'));
-+      expect(
-+        ErrorReporting.recent.last.message,
-+        contains('e${ErrorReporting.capacity + 4}'),
-+      );
-     });
+   @override
+   Future<PalEyesLocalizations> load(Locale locale) {
+diff --git a/lib/features/map/presentation/map_screen.dart b/lib/features/map/presentation/map_screen.dart
+index 7d1503f..2874aa7 100644
+--- a/lib/features/map/presentation/map_screen.dart
++++ b/lib/features/map/presentation/map_screen.dart
+@@ -82,7 +82,8 @@ class _MapScreenState extends ConsumerState<MapScreen> {
+                   counts: categoryCounts,
+                   onSelected: (index) => setState(() {
+                     _categoryIndex = index;
+-                    if (_selected != null && !mapCategories[index].matches(_selected!)) {
++                    if (_selected != null &&
++                        !mapCategories[index].matches(_selected!)) {
+                       _selected = null;
+                     }
+                   }),
+@@ -361,7 +362,10 @@ class _CategoryRail extends StatelessWidget {
+           separatorBuilder: (context, index) => const SizedBox(height: 5),
+           itemBuilder: (context, index) {
+             final category = mapCategories[index];
+-            final item = (category.icon, '${category.labelAr} (${counts[index]})');
++            final item = (
++              category.icon,
++              '${category.labelAr} (${counts[index]})',
++            );
+             final selected = selectedIndex == index;
+             return Tooltip(
+               message: item.$2,
+@@ -370,55 +374,55 @@ class _CategoryRail extends StatelessWidget {
+                 selected: selected,
+                 label: 'تصفية الأطلس: ${item.$2}',
+                 child: InkWell(
+-                key: ValueKey<String>('map-category-${category.key}'),
+-                borderRadius: BorderRadius.circular(12),
+-                onTap: () => onSelected(index),
+-                child: Container(
+-                  padding: EdgeInsets.symmetric(
+-                    horizontal: compact ? 7 : 8,
+-                    vertical: 9,
+-                  ),
+-                  decoration: BoxDecoration(
+-                    color: selected
+-                        ? PalEyesVisualV1.olive.withValues(alpha: 0.12)
+-                        : Colors.transparent,
+-                    borderRadius: BorderRadius.circular(12),
+-                  ),
+-                  child: compact
+-                      ? Icon(
+-                          item.$1,
+-                          size: 21,
+-                          color: selected
+-                              ? PalEyesVisualV1.oliveDark
+-                              : PalEyesVisualV1.warmMuted,
+-                        )
+-                      : Row(
+-                          children: <Widget>[
+-                            Icon(
+-                              item.$1,
+-                              size: 20,
+-                              color: selected
+-                                  ? PalEyesVisualV1.oliveDark
+-                                  : PalEyesVisualV1.warmMuted,
+-                            ),
+-                            const SizedBox(width: 7),
+-                            Expanded(
+-                              child: Text(
+-                                item.$2,
+-                                style: TextStyle(
+-                                  fontSize: 12,
+-                                  fontWeight: selected
+-                                      ? FontWeight.w900
+-                                      : FontWeight.w700,
+-                                  color: PalEyesVisualV1.warmInk,
++                  key: ValueKey<String>('map-category-${category.key}'),
++                  borderRadius: BorderRadius.circular(12),
++                  onTap: () => onSelected(index),
++                  child: Container(
++                    padding: EdgeInsets.symmetric(
++                      horizontal: compact ? 7 : 8,
++                      vertical: 9,
++                    ),
++                    decoration: BoxDecoration(
++                      color: selected
++                          ? PalEyesVisualV1.olive.withValues(alpha: 0.12)
++                          : Colors.transparent,
++                      borderRadius: BorderRadius.circular(12),
++                    ),
++                    child: compact
++                        ? Icon(
++                            item.$1,
++                            size: 21,
++                            color: selected
++                                ? PalEyesVisualV1.oliveDark
++                                : PalEyesVisualV1.warmMuted,
++                          )
++                        : Row(
++                            children: <Widget>[
++                              Icon(
++                                item.$1,
++                                size: 20,
++                                color: selected
++                                    ? PalEyesVisualV1.oliveDark
++                                    : PalEyesVisualV1.warmMuted,
++                              ),
++                              const SizedBox(width: 7),
++                              Expanded(
++                                child: Text(
++                                  item.$2,
++                                  style: TextStyle(
++                                    fontSize: 12,
++                                    fontWeight: selected
++                                        ? FontWeight.w900
++                                        : FontWeight.w700,
++                                    color: PalEyesVisualV1.warmInk,
++                                  ),
+                                 ),
+                               ),
+-                            ),
+-                          ],
+-                        ),
++                            ],
++                          ),
++                  ),
+                 ),
+               ),
+-              ),
+             );
+           },
+         ),
+diff --git a/lib/features/operations/data/supabase_operational_data_backend.dart b/lib/features/operations/data/supabase_operational_data_backend.dart
+index 63cacd7..881ebc3 100644
+--- a/lib/features/operations/data/supabase_operational_data_backend.dart
++++ b/lib/features/operations/data/supabase_operational_data_backend.dart
+@@ -27,35 +27,28 @@ class SupabaseOperationalDataBackend implements OperationalDataBackend {
+     required String summary,
+     Map<String, Object?> metadata = const <String, Object?>{},
+   }) async {
+-    await _client.schema('pal_eyes').from('audit_events').insert(
+-      <String, Object?>{
+-        'id': _nextId('audit'),
+-        'actor_id': _client.auth.currentUser?.id,
+-        'actor_label': actor.displayName,
+-        'action': action,
+-        'entity_type': entityType,
+-        'entity_id': entityId,
+-        'summary': summary,
+-        'metadata': metadata,
+-      },
+-    );
++    await _client
++        .schema('pal_eyes')
++        .from('audit_events')
++        .insert(<String, Object?>{
++          'id': _nextId('audit'),
++          'actor_id': _client.auth.currentUser?.id,
++          'actor_label': actor.displayName,
++          'action': action,
++          'entity_type': entityType,
++          'entity_id': entityId,
++          'summary': summary,
++          'metadata': metadata,
++        });
+   }
  
-     test('no third-party vendor is wired before decision D6', () {
+   @override
+   Future<OperationalSnapshot> loadSnapshot() async {
+     final siteRows = _rows(
+-      await _client
+-          .schema('pal_eyes')
+-          .from('sites')
+-          .select()
+-          .order('name_ar'),
++      await _client.schema('pal_eyes').from('sites').select().order('name_ar'),
+     );
+     final sourceRows = _rows(
+-      await _client
+-          .schema('pal_eyes')
+-          .from('sources')
+-          .select()
+-          .order('title'),
++      await _client.schema('pal_eyes').from('sources').select().order('title'),
+     );
+     final claimRows = _rows(
+       await _client
+@@ -111,8 +104,9 @@ class SupabaseOperationalDataBackend implements OperationalDataBackend {
+           .map(OperationalCoordinateCandidate.fromJson)
+           .toList(),
+       mediaAssets: mediaRows.map(OperationalMediaAsset.fromJson).toList(),
+-      releaseCandidates:
+-          releaseRows.map(OperationalReleaseCandidate.fromJson).toList(),
++      releaseCandidates: releaseRows
++          .map(OperationalReleaseCandidate.fromJson)
++          .toList(),
+       auditEvents: auditRows.map(OperationalAuditEvent.fromJson).toList(),
+       loadedAt: DateTime.now().toUtc(),
+     );
+@@ -136,14 +130,16 @@ class SupabaseOperationalDataBackend implements OperationalDataBackend {
+         ? 1
+         : ((current.first['version_number'] as num?)?.toInt() ?? 1) + 1;
+ 
+-    await _client.schema('pal_eyes').from('sites').update(
+-      <String, Object?>{
+-        'editorial_draft': editorialDraft,
+-        'workflow_status': 'DRAFT_UPDATED',
+-        'version_number': version,
+-        'updated_by': _client.auth.currentUser?.id,
+-      },
+-    ).eq('id', siteId);
++    await _client
++        .schema('pal_eyes')
++        .from('sites')
++        .update(<String, Object?>{
++          'editorial_draft': editorialDraft,
++          'workflow_status': 'DRAFT_UPDATED',
++          'version_number': version,
++          'updated_by': _client.auth.currentUser?.id,
++        })
++        .eq('id', siteId);
+ 
+     await _client.schema('pal_eyes').from('content_versions').insert(
+       <String, Object?>{
+@@ -186,26 +182,29 @@ class SupabaseOperationalDataBackend implements OperationalDataBackend {
+         ? siteId
+         : (siteRows.first['name_ar'] ?? siteId).toString();
+ 
+-    await _client.schema('pal_eyes').from('sites').update(
+-      <String, Object?>{
+-        'workflow_status': 'SUBMITTED_FOR_REVIEW',
+-        'updated_by': _client.auth.currentUser?.id,
+-      },
+-    ).eq('id', siteId);
++    await _client
++        .schema('pal_eyes')
++        .from('sites')
++        .update(<String, Object?>{
++          'workflow_status': 'SUBMITTED_FOR_REVIEW',
++          'updated_by': _client.auth.currentUser?.id,
++        })
++        .eq('id', siteId);
+ 
+-    await _client.schema('pal_eyes').from('review_tasks').insert(
+-      <String, Object?>{
+-        'id': _nextId('review-site'),
+-        'entity_type': 'site',
+-        'entity_id': siteId,
+-        'title': 'مراجعة تحريرية: $name',
+-        'review_type': 'EDITORIAL',
+-        'priority': 'P1_HIGH',
+-        'status': 'OPEN',
+-        'assignee_label': 'غير مسند',
+-        'created_by': _client.auth.currentUser?.id,
+-      },
+-    );
++    await _client
++        .schema('pal_eyes')
++        .from('review_tasks')
++        .insert(<String, Object?>{
++          'id': _nextId('review-site'),
++          'entity_type': 'site',
++          'entity_id': siteId,
++          'title': 'مراجعة تحريرية: $name',
++          'review_type': 'EDITORIAL',
++          'priority': 'P1_HIGH',
++          'status': 'OPEN',
++          'assignee_label': 'غير مسند',
++          'created_by': _client.auth.currentUser?.id,
++        });
+ 
+     await _insertAudit(
+       actor: actor,
+@@ -226,20 +225,18 @@ class SupabaseOperationalDataBackend implements OperationalDataBackend {
+     required String url,
+   }) async {
+     final id = _nextId('source');
+-    await _client.schema('pal_eyes').from('sources').insert(
+-      <String, Object?>{
+-        'id': id,
+-        'title': title,
+-        'attribution': attribution,
+-        'source_type': sourceType,
+-        'url': url,
+-        'workflow_status': 'METADATA_REVIEW',
+-        'rights_status': 'PENDING',
+-        'public_release_status': 'BLOCKED',
+-        'created_by': _client.auth.currentUser?.id,
+-        'updated_by': _client.auth.currentUser?.id,
+-      },
+-    );
++    await _client.schema('pal_eyes').from('sources').insert(<String, Object?>{
++      'id': id,
++      'title': title,
++      'attribution': attribution,
++      'source_type': sourceType,
++      'url': url,
++      'workflow_status': 'METADATA_REVIEW',
++      'rights_status': 'PENDING',
++      'public_release_status': 'BLOCKED',
++      'created_by': _client.auth.currentUser?.id,
++      'updated_by': _client.auth.currentUser?.id,
++    });
+     await _insertAudit(
+       actor: actor,
+       action: 'SOURCE_REGISTERED',
+@@ -257,13 +254,15 @@ class SupabaseOperationalDataBackend implements OperationalDataBackend {
+     required String workflowStatus,
+     required String evidenceStatus,
+   }) async {
+-    await _client.schema('pal_eyes').from('claims').update(
+-      <String, Object?>{
+-        'workflow_status': workflowStatus,
+-        'evidence_status': evidenceStatus,
+-        'updated_by': _client.auth.currentUser?.id,
+-      },
+-    ).eq('id', claimId);
++    await _client
++        .schema('pal_eyes')
++        .from('claims')
++        .update(<String, Object?>{
++          'workflow_status': workflowStatus,
++          'evidence_status': evidenceStatus,
++          'updated_by': _client.auth.currentUser?.id,
++        })
++        .eq('id', claimId);
+     await _insertAudit(
+       actor: actor,
+       action: 'CLAIM_STATUS_CHANGED',
+@@ -285,23 +284,26 @@ class SupabaseOperationalDataBackend implements OperationalDataBackend {
+     required String decision,
+     required String note,
+   }) async {
+-    await _client.schema('pal_eyes').from('review_tasks').update(
+-      <String, Object?>{
+-        'status': decision,
+-        'decision_note': note,
+-        'decided_by': _client.auth.currentUser?.id,
+-        'decided_at': DateTime.now().toUtc().toIso8601String(),
+-      },
+-    ).eq('id', taskId);
+-    await _client.schema('pal_eyes').from('review_decisions').insert(
+-      <String, Object?>{
+-        'id': _nextId('decision'),
+-        'review_task_id': taskId,
+-        'decision': decision,
+-        'note': note,
+-        'decided_by': _client.auth.currentUser?.id,
+-      },
+-    );
++    await _client
++        .schema('pal_eyes')
++        .from('review_tasks')
++        .update(<String, Object?>{
++          'status': decision,
++          'decision_note': note,
++          'decided_by': _client.auth.currentUser?.id,
++          'decided_at': DateTime.now().toUtc().toIso8601String(),
++        })
++        .eq('id', taskId);
++    await _client
++        .schema('pal_eyes')
++        .from('review_decisions')
++        .insert(<String, Object?>{
++          'id': _nextId('decision'),
++          'review_task_id': taskId,
++          'decision': decision,
++          'note': note,
++          'decided_by': _client.auth.currentUser?.id,
++        });
+     await _insertAudit(
+       actor: actor,
+       action: 'REVIEW_DECISION_RECORDED',
+@@ -323,21 +325,22 @@ class SupabaseOperationalDataBackend implements OperationalDataBackend {
+     required String sourceId,
+   }) async {
+     final id = _nextId('coordinate');
+-    await _client.schema('pal_eyes').from('coordinate_candidates').insert(
+-      <String, Object?>{
+-        'id': id,
+-        'site_id': siteId,
+-        'site_name_ar': siteNameAr,
+-        'latitude': latitude,
+-        'longitude': longitude,
+-        'source_id': sourceId,
+-        'verification_status': 'PENDING_GIS_REVIEW',
+-        'promotion_status': 'NOT_PROMOTED',
+-        'public_map_use': 'BLOCKED',
+-        'created_by': _client.auth.currentUser?.id,
+-        'updated_by': _client.auth.currentUser?.id,
+-      },
+-    );
++    await _client
++        .schema('pal_eyes')
++        .from('coordinate_candidates')
++        .insert(<String, Object?>{
++          'id': id,
++          'site_id': siteId,
++          'site_name_ar': siteNameAr,
++          'latitude': latitude,
++          'longitude': longitude,
++          'source_id': sourceId,
++          'verification_status': 'PENDING_GIS_REVIEW',
++          'promotion_status': 'NOT_PROMOTED',
++          'public_map_use': 'BLOCKED',
++          'created_by': _client.auth.currentUser?.id,
++          'updated_by': _client.auth.currentUser?.id,
++        });
+     await _insertAudit(
+       actor: actor,
+       action: 'COORDINATE_CANDIDATE_ADDED',
+@@ -357,20 +360,21 @@ class SupabaseOperationalDataBackend implements OperationalDataBackend {
+     required String ownerLabel,
+   }) async {
+     final id = _nextId('media');
+-    await _client.schema('pal_eyes').from('media_assets').insert(
+-      <String, Object?>{
+-        'id': id,
+-        'site_id': siteId,
+-        'title': title,
+-        'asset_type': assetType,
+-        'owner_label': ownerLabel,
+-        'rights_status': 'PENDING_RIGHTS_REVIEW',
+-        'internal_use_status': 'BLOCKED',
+-        'public_use_status': 'BLOCKED',
+-        'created_by': _client.auth.currentUser?.id,
+-        'updated_by': _client.auth.currentUser?.id,
+-      },
+-    );
++    await _client
++        .schema('pal_eyes')
++        .from('media_assets')
++        .insert(<String, Object?>{
++          'id': id,
++          'site_id': siteId,
++          'title': title,
++          'asset_type': assetType,
++          'owner_label': ownerLabel,
++          'rights_status': 'PENDING_RIGHTS_REVIEW',
++          'internal_use_status': 'BLOCKED',
++          'public_use_status': 'BLOCKED',
++          'created_by': _client.auth.currentUser?.id,
++          'updated_by': _client.auth.currentUser?.id,
++        });
+     await _insertAudit(
+       actor: actor,
+       action: 'MEDIA_ASSET_REGISTERED',
+@@ -392,17 +396,18 @@ class SupabaseOperationalDataBackend implements OperationalDataBackend {
+       throw StateError('RELEASE_CANDIDATE_GATES_INCOMPLETE');
+     }
+     final id = _nextId('release');
+-    await _client.schema('pal_eyes').from('release_candidates').insert(
+-      <String, Object?>{
+-        'id': id,
+-        'title': title,
+-        'status': 'CANDIDATE_FROZEN_PUBLICATION_BLOCKED',
+-        'site_ids': siteIds,
+-        'gates': gates,
+-        'created_by': _client.auth.currentUser?.id,
+-        'created_by_label': actor.displayName,
+-      },
+-    );
++    await _client
++        .schema('pal_eyes')
++        .from('release_candidates')
++        .insert(<String, Object?>{
++          'id': id,
++          'title': title,
++          'status': 'CANDIDATE_FROZEN_PUBLICATION_BLOCKED',
++          'site_ids': siteIds,
++          'gates': gates,
++          'created_by': _client.auth.currentUser?.id,
++          'created_by_label': actor.displayName,
++        });
+     await _insertAudit(
+       actor: actor,
+       action: 'RELEASE_CANDIDATE_CREATED',
+@@ -424,12 +429,9 @@ Future<void> writeUserRoleGrant(
+   required String roleKey,
+   required bool active,
+ }) async {
+-  await client.schema('pal_eyes').from('user_roles').upsert(
+-    <String, Object?>{
+-      'user_id': userId,
+-      'role_key': roleKey,
+-      'is_active': active,
+-    },
+-    onConflict: 'user_id,role_key',
+-  );
++  await client.schema('pal_eyes').from('user_roles').upsert(<String, Object?>{
++    'user_id': userId,
++    'role_key': roleKey,
++    'is_active': active,
++  }, onConflict: 'user_id,role_key');
+ }
+diff --git a/test/map_category_filter_test.dart b/test/map_category_filter_test.dart
+index fce919d..3ebf0e1 100644
+--- a/test/map_category_filter_test.dart
++++ b/test/map_category_filter_test.dart
+@@ -13,9 +13,7 @@ void main() {
+     for (final category in mapCategories.skip(1)) {
+       final filtered = category.apply(sites);
+       expect(
+-        filtered.every(
+-          (s) => category.typeKeywords.any(s.siteTypeAr.contains),
+-        ),
++        filtered.every((s) => category.typeKeywords.any(s.siteTypeAr.contains)),
+         isTrue,
+         reason: category.key,
+       );

@@ -1,19 +1,29 @@
  .../workflows/claude_remote_candidate_evidence.yml |  265 ++++-
+ .github/workflows/supabase_staging_migrations.yml  |  110 ++
  assets/fonts/FONT_PROVENANCE.md                    |   30 +-
  assets/fonts/amiri/Amiri-Bold.ttf                  |  Bin 413480 -> 384696 bytes
  assets/fonts/amiri/Amiri-Regular.ttf               |  Bin 431116 -> 378496 bytes
+ .../ADR_D5_PUBLIC_INDEXING_TECHNICAL_ASSESSMENT.md |   44 +
+ ...ESEARCH_SOURCE_OF_TRUTH_AND_OPERATIONAL_COPY.md |   35 +
+ docs/decisions/D4_MAP_PROVIDER_COMPARISON.md       |   44 +
+ .../PAL_EYES_OPERATIONS_BACKUP_RECOVERY_RUNBOOK.md |   53 +
+ lib/app/localization/pal_eyes_localizations.dart   |   43 +
  lib/app/router/app_router.dart                     |   15 +
  lib/app/router/route_paths.dart                    |    4 +
  lib/core/access/pal_eyes_access.dart               |   14 +-
- lib/core/access/pal_eyes_auth_gateway.dart         |  244 +++++
+ lib/core/access/pal_eyes_auth_gateway.dart         |  248 +++++
  lib/core/observability/error_reporting.dart        |   88 ++
  lib/core/widgets/governance_shell.dart             |   16 +
+ lib/core/widgets/public_shell.dart                 |   79 +-
  lib/core/widgets/workspace_shell.dart              |   16 +
  .../admin/presentation/admin_users_screen.dart     |  169 ++++
- .../auth/presentation/account_security_screen.dart |  169 ++++
- lib/features/auth/presentation/sign_in_screen.dart |  283 ++++++
+ .../auth/presentation/account_security_screen.dart |  168 ++++
+ lib/features/auth/presentation/sign_in_screen.dart |  282 ++++++
  .../presentation/access_restricted_screen.dart     |   18 +-
- .../application/operational_providers.dart         |    6 +-
+ lib/features/map/domain/map_category_filter.dart   |   94 ++
+ lib/features/map/presentation/map_screen.dart      |  126 ++-
+ .../application/operational_providers.dart         |   11 +-
+ .../data/supabase_operational_data_backend.dart    |   19 +
  .../places/data/published_content_source.dart      |  117 +++
  lib/main.dart                                      |   45 +-
  supabase/config.toml                               |   66 ++
@@ -21,20 +31,25 @@
  supabase/rollback/202610090003_down.sql            |   24 +
  supabase/rollback/202610090004_down.sql            |   65 ++
  .../seed/202607190001_pal_eyes_r7_0_0_seed.sql     | 1050 ++++++++++----------
- test/auth_and_user_admin_test.dart                 |  336 +++++++
- test/operational_backend_sql_contract_test.dart    |    8 +
- test/published_content_and_observability_test.dart |   75 ++
+ test/auth_and_user_admin_test.dart                 |  348 +++++++
+ test/map_category_filter_test.dart                 |   36 +
+ test/operational_backend_sql_contract_test.dart    |   16 +-
+ test/public_shell_english_labels_test.dart         |   52 +
+ test/published_content_and_observability_test.dart |   90 ++
  .../operational_backend_live_test.dart             |  130 +++
  tools/browser_e2e/journeys_internal.json           |   14 +
- tools/browser_e2e/journeys_public.json             |   25 +
- tools/browser_e2e/run_browser_e2e.py               |  155 +++
+ tools/browser_e2e/journeys_public.json             |   98 ++
+ tools/browser_e2e/run_browser_e2e.py               |  172 ++++
  tools/fonts/build_font_subsets.py                  |   73 ++
  tools/rls_boundary/rls_boundary_tests.sql          |  121 ++-
  tools/rls_boundary/run_local_rls_boundary_tests.sh |   47 +-
+ tools/seo/generate_prerender.py                    |  153 +++
+ tools/seo/public_routes.json                       |   18 +
+ tools/seo/verify_prerender.py                      |   58 ++
  tools/supabase_local_e2e/api_e2e.py                |  262 +++++
  web/flutter_bootstrap.js                           |   10 +
  web/fonts/fallback/notosansarabic/OFL.txt          |   93 ++
  ...J_sS6tlqHHFlhQ5l3sQWIHPqzCfyGyvvnCBFQLaig.woff2 |  Bin 0 -> 127612 bytes
  web/fonts/fallback/roboto/OFL.txt                  |   93 ++
  .../roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2    |  Bin 0 -> 37928 bytes
- 39 files changed, 3886 insertions(+), 605 deletions(-)
+ 54 files changed, 4928 insertions(+), 659 deletions(-)

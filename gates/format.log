@@ -1,9 +1,5 @@
-Changed lib/core/access/pal_eyes_auth_gateway.dart
-Changed lib/features/admin/presentation/admin_users_screen.dart
-Changed lib/features/auth/presentation/account_security_screen.dart
-Changed lib/features/auth/presentation/sign_in_screen.dart
-Changed lib/features/operations/application/operational_providers.dart
-Changed test/auth_and_user_admin_test.dart
-Changed test/operational_backend_sql_contract_test.dart
-Changed test/published_content_and_observability_test.dart
-Formatted 18 files (8 changed) in 0.10 seconds.
+Changed lib/app/localization/pal_eyes_localizations.dart
+Changed lib/features/map/presentation/map_screen.dart
+Changed lib/features/operations/data/supabase_operational_data_backend.dart
+Changed test/map_category_filter_test.dart
+Formatted 25 files (4 changed) in 0.18 seconds.
