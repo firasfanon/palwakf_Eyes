@@ -820,27 +820,32 @@ class _FeaturedStoryCard extends StatelessWidget {
                             mainAxisSize: MainAxisSize.min,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
-                            const _Pill(label: 'قصة من فلسطين', onDark: true),
-                            const SizedBox(height: 12),
-                            Text(
-                              story.title,
-                              maxLines: 2,
-                              overflow: TextOverflow.ellipsis,
-                              style: Theme.of(context).textTheme.headlineMedium
-                                  ?.copyWith(color: PalEyesTokens.inkOnDark),
-                            ),
-                            const SizedBox(height: 8),
-                            ConstrainedBox(
-                              constraints: const BoxConstraints(maxWidth: 380),
-                              child: Text(
-                                story.summary,
-                                maxLines: 3,
+                              const _Pill(label: 'قصة من فلسطين', onDark: true),
+                              const SizedBox(height: 12),
+                              Text(
+                                story.title,
+                                maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
-                                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                  color: PalEyesTokens.inkOnDarkMuted,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .headlineMedium
+                                    ?.copyWith(color: PalEyesTokens.inkOnDark),
+                              ),
+                              const SizedBox(height: 8),
+                              ConstrainedBox(
+                                constraints: const BoxConstraints(
+                                  maxWidth: 380,
+                                ),
+                                child: Text(
+                                  story.summary,
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: Theme.of(context).textTheme.bodyMedium
+                                      ?.copyWith(
+                                        color: PalEyesTokens.inkOnDarkMuted,
+                                      ),
                                 ),
                               ),
-                            ),
                             ],
                           ),
                         ),
@@ -914,63 +919,63 @@ class _SourceRecordCard extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                  const _Pill(label: 'من السجل المصدري'),
-                  const SizedBox(height: 12),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Container(
-                        width: 64,
-                        height: 84,
-                        decoration: BoxDecoration(
-                          color: PalEyesTokens.cream,
-                          borderRadius: BorderRadius.circular(8),
-                          border: Border.all(color: PalEyesTokens.lineStrong),
+                    const _Pill(label: 'من السجل المصدري'),
+                    const SizedBox(height: 12),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Container(
+                          width: 64,
+                          height: 84,
+                          decoration: BoxDecoration(
+                            color: PalEyesTokens.cream,
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(color: PalEyesTokens.lineStrong),
+                          ),
+                          child: const Icon(
+                            Icons.description_outlined,
+                            color: PalEyesTokens.goldDeep,
+                            semanticLabel: 'صورة الوثيقة غير معروضة',
+                          ),
                         ),
-                        child: const Icon(
-                          Icons.description_outlined,
-                          color: PalEyesTokens.goldDeep,
-                          semanticLabel: 'صورة الوثيقة غير معروضة',
-                        ),
-                      ),
-                      const SizedBox(width: 14),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            Text(
-                              entry?.title ?? 'لا يوجد سجل مصدري متاح',
-                              maxLines: 3,
-                              overflow: TextOverflow.ellipsis,
-                              style: theme.textTheme.titleMedium?.copyWith(
-                                color: PalEyesTokens.text(context),
-                              ),
-                            ),
-                            if (entry != null) ...<Widget>[
-                              const SizedBox(height: 4),
+                        const SizedBox(width: 14),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
                               Text(
-                                entry.attribution,
-                                maxLines: 1,
+                                entry?.title ?? 'لا يوجد سجل مصدري متاح',
+                                maxLines: 3,
                                 overflow: TextOverflow.ellipsis,
-                                style: theme.textTheme.bodySmall?.copyWith(
-                                  color: PalEyesTokens.textMuted(context),
+                                style: theme.textTheme.titleMedium?.copyWith(
+                                  color: PalEyesTokens.text(context),
                                 ),
                               ),
+                              if (entry != null) ...<Widget>[
+                                const SizedBox(height: 4),
+                                Text(
+                                  entry.attribution,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: theme.textTheme.bodySmall?.copyWith(
+                                    color: PalEyesTokens.textMuted(context),
+                                  ),
+                                ),
+                              ],
                             ],
-                          ],
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 12),
-                  Text(
-                    'لا تُعرض صورة أي وثيقة قبل التحقق من أصلها وحقوقها. هذا سجل مرجعي حقيقي قيد المراجعة، وليس وثيقة أرشيفية معتمدة للنشر.',
-                    maxLines: 3,
-                    overflow: TextOverflow.ellipsis,
-                    style: theme.textTheme.bodySmall?.copyWith(
-                      color: PalEyesTokens.textMuted(context),
+                      ],
                     ),
-                  ),
+                    const SizedBox(height: 12),
+                    Text(
+                      'لا تُعرض صورة أي وثيقة قبل التحقق من أصلها وحقوقها. هذا سجل مرجعي حقيقي قيد المراجعة، وليس وثيقة أرشيفية معتمدة للنشر.',
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        color: PalEyesTokens.textMuted(context),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -1040,47 +1045,48 @@ class _MapTeaserCard extends StatelessWidget {
                         mainAxisSize: MainAxisSize.min,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                        Text(
-                          'استكشف على الخريطة',
-                          style: theme.textTheme.titleLarge?.copyWith(
-                            color: PalEyesTokens.text(context),
-                          ),
-                        ),
-                        const SizedBox(height: 6),
-                        Text(
-                          '${sites.length} موقعاً في الأطلس • $mappedCount بإحداثيات عامة معتمدة',
-                          style: theme.textTheme.bodySmall?.copyWith(
-                            color: PalEyesTokens.textMuted(context),
-                          ),
-                        ),
-                        const SizedBox(height: 10),
-                        for (var i = 0; i < top.length && i < 4; i++)
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 4),
-                            child: Row(
-                              children: <Widget>[
-                                Container(
-                                  width: 9,
-                                  height: 9,
-                                  decoration: BoxDecoration(
-                                    color: dots[i],
-                                    shape: BoxShape.circle,
-                                  ),
-                                ),
-                                const SizedBox(width: 8),
-                                Expanded(
-                                  child: Text(
-                                    '${top[i].key} (${top[i].value})',
-                                    maxLines: 1,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: theme.textTheme.bodySmall?.copyWith(
-                                      color: PalEyesTokens.text(context),
-                                    ),
-                                  ),
-                                ),
-                              ],
+                          Text(
+                            'استكشف على الخريطة',
+                            style: theme.textTheme.titleLarge?.copyWith(
+                              color: PalEyesTokens.text(context),
                             ),
                           ),
+                          const SizedBox(height: 6),
+                          Text(
+                            '${sites.length} موقعاً في الأطلس • $mappedCount بإحداثيات عامة معتمدة',
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: PalEyesTokens.textMuted(context),
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          for (var i = 0; i < top.length && i < 4; i++)
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 4),
+                              child: Row(
+                                children: <Widget>[
+                                  Container(
+                                    width: 9,
+                                    height: 9,
+                                    decoration: BoxDecoration(
+                                      color: dots[i],
+                                      shape: BoxShape.circle,
+                                    ),
+                                  ),
+                                  const SizedBox(width: 8),
+                                  Expanded(
+                                    child: Text(
+                                      '${top[i].key} (${top[i].value})',
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: theme.textTheme.bodySmall
+                                          ?.copyWith(
+                                            color: PalEyesTokens.text(context),
+                                          ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
                         ],
                       ),
                     ),
