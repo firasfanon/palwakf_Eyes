@@ -3,7 +3,7 @@ PASS desktop discover_query -> /discover?q=%D8%A7%D9%84%D9%82%D8%AF%D8%B3 {'fina
 PASS desktop places -> /places {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
 PASS desktop place_detail -> /places/swq-lqtnyn-4bbdf0 {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
 PASS desktop research -> /research {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
-BLOCKED_EXTERNAL_INPUT desktop research_detail -> /research/swq-lqtnyn-4bbdf0 {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True} blocked=['404 http://127.0.0.1:37843/research_narratives_v1.json']
+BLOCKED_EXTERNAL_INPUT desktop research_detail -> /research/swq-lqtnyn-4bbdf0 {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True} blocked=['404 http://127.0.0.1:43181/research_narratives_v1.json']
 PASS desktop stories -> /stories {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
 PASS desktop story_detail -> /stories/water-memory-south-jerusalem {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
 PASS desktop map -> /map {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
@@ -24,7 +24,7 @@ PASS mobile390 discover_query -> /discover?q=%D8%A7%D9%84%D9%82%D8%AF%D8%B3 {'fi
 PASS mobile390 places -> /places {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
 PASS mobile390 place_detail -> /places/swq-lqtnyn-4bbdf0 {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
 PASS mobile390 research -> /research {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
-BLOCKED_EXTERNAL_INPUT mobile390 research_detail -> /research/swq-lqtnyn-4bbdf0 {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True} blocked=['404 http://127.0.0.1:37843/research_narratives_v1.json']
+BLOCKED_EXTERNAL_INPUT mobile390 research_detail -> /research/swq-lqtnyn-4bbdf0 {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True} blocked=['404 http://127.0.0.1:43181/research_narratives_v1.json']
 PASS mobile390 stories -> /stories {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
 PASS mobile390 story_detail -> /stories/water-memory-south-jerusalem {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
 PASS mobile390 map -> /map {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}

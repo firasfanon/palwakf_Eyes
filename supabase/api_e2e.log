@@ -1,4 +1,4 @@
-::add-mask::Synthetic-Only-34228825acafc51b
+::add-mask::Synthetic-Only-98c87dc0e7d0b944
 PASS T01 public sign-up is disabled (invite-only)
 PASS T02 anon reads public_sites_v1: 200 and empty (nothing published)
 PASS T03 anon reads public_research_v1: 200 and empty

@@ -2,7 +2,7 @@
 7229467 build/web/canvaskit/canvaskit.wasm
 5760502 build/web/canvaskit/chromium/canvaskit.wasm
 5172643 build/web/canvaskit/skwasm_heavy.wasm
-4937783 build/web/main.dart.js
+4937891 build/web/main.dart.js
 4138344 build/web/canvaskit/experimental_webparagraph/canvaskit.wasm
 3580947 build/web/canvaskit/skwasm.wasm
 3513876 build/web/canvaskit/wimp.wasm

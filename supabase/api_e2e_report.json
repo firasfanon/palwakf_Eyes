@@ -43,7 +43,7 @@
     {
       "test": "T08 editor saves draft with version bump; updated_by is server-stamped",
       "passed": true,
-      "detail": "200 897ec1b2-2289-484b-b18d-f70c1688ae2e"
+      "detail": "200 867d16fb-7c8f-4e3c-835f-8cec74c8868f"
     },
     {
       "test": "T09 stale concurrent save is rejected (VERSION_CONFLICT)",
@@ -68,7 +68,7 @@
     {
       "test": "T13 audit actor is server-stamped",
       "passed": true,
-      "detail": "201 [{'id': 'ci-audit-1', 'actor_id': '47504515-ad8c-4718-975d-9de7a51aed54', 'actor_label': '', 'action': 'NOTE', 'entity_type': 'site', 'entity_id': 'site-014e4c4e4845', 'summary': '', 'metadata': {}, 'created_at': '2026-10-09T11:16:20.83921+00:00'}]"
+      "detail": "201 [{'id': 'ci-audit-1', 'actor_id': 'aa995772-4eb2-4e03-8dea-281fd8988b67', 'actor_label': '', 'action': 'NOTE', 'entity_type': 'site', 'entity_id': 'site-014e4c4e4845', 'summary': '', 'metadata': {}, 'created_at': '2026-10-09T11:30:27.381938+00:00'}]"
     },
     {
       "test": "T14 audit log is append-only even for system_admin",
@@ -78,7 +78,7 @@
     {
       "test": "T15 editor submits a review task",
       "passed": true,
-      "detail": "201 [{'id': 'ci-review-1', 'entity_type': 'site', 'entity_id': 'site-014e4c4e4845', 'title': 'مراجعة اصطناعية', 'review_type': 'EDITORIAL', 'priority': 'P2_NORMAL', 'status': 'OPEN', 'assignee_id': None, 'assignee_label': 'غير مسند', 'decision_note': '', 'created_by': '897ec1b2-2289-484b-b18d-f70c16"
+      "detail": "201 [{'id': 'ci-review-1', 'entity_type': 'site', 'entity_id': 'site-014e4c4e4845', 'title': 'مراجعة اصطناعية', 'review_type': 'EDITORIAL', 'priority': 'P2_NORMAL', 'status': 'OPEN', 'assignee_id': None, 'assignee_label': 'غير مسند', 'decision_note': '', 'created_by': '867d16fb-7c8f-4e3c-835f-8cec74"
     },
     {
       "test": "T16 researcher cannot decide a review",
@@ -88,7 +88,7 @@
     {
       "test": "T17 reviewer decides another author's task",
       "passed": true,
-      "detail": "200 [{'id': 'ci-review-1', 'entity_type': 'site', 'entity_id': 'site-014e4c4e4845', 'title': 'مراجعة اصطناعية', 'review_type': 'EDITORIAL', 'priority': 'P2_NORMAL', 'status': 'ACCEPT', 'assignee_id': None, 'assignee_label': 'غير مسند', 'decision_note': 'ci', 'created_by': '897ec1b2-2289-484b-b18d-f7"
+      "detail": "200 [{'id': 'ci-review-1', 'entity_type': 'site', 'entity_id': 'site-014e4c4e4845', 'title': 'مراجعة اصطناعية', 'review_type': 'EDITORIAL', 'priority': 'P2_NORMAL', 'status': 'ACCEPT', 'assignee_id': None, 'assignee_label': 'غير مسند', 'decision_note': 'ci', 'created_by': '867d16fb-7c8f-4e3c-835f-8c"
     },
     {
       "test": "T18 researcher cannot list users",
@@ -128,7 +128,7 @@
     {
       "test": "T25 release candidate with MFA is created BLOCKED",
       "passed": true,
-      "detail": "201 [{'id': 'ci-rc-2', 'title': 'مرشح اصطناعي', 'status': 'CANDIDATE_FROZEN_PUBLICATION_BLOCKED', 'site_ids': [], 'gates': {}, 'frozen_snapshot': {}, 'publication_status': 'BLOCKED', 'created_by': 'c9f7f2da-f532-458c-a141-349c37f242bc', 'created_by_label': '', 'created_at': '2026-10-09T11:16:21.2946"
+      "detail": "201 [{'id': 'ci-rc-2', 'title': 'مرشح اصطناعي', 'status': 'CANDIDATE_FROZEN_PUBLICATION_BLOCKED', 'site_ids': [], 'gates': {}, 'frozen_snapshot': {}, 'publication_status': 'BLOCKED', 'created_by': 'd4908801-8f7e-43a7-ae25-811b041a459f', 'created_by_label': '', 'created_at': '2026-10-09T11:30:27.7416"
     },
     {
       "test": "T26 release candidate cannot be created PUBLISHED",
