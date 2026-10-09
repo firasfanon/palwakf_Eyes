@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
+import 'package:pal_eyes/core/access/pal_eyes_access.dart';
 import 'package:pal_eyes/core/widgets/governance_shell.dart';
 import 'package:pal_eyes/core/widgets/public_shell.dart';
 import 'package:pal_eyes/core/widgets/workspace_shell.dart';
 import 'package:pal_eyes/features/admin/presentation/admin_dashboard_screen.dart';
+import 'package:pal_eyes/features/common/presentation/access_restricted_screen.dart';
 import 'package:pal_eyes/features/common/presentation/not_found_screen.dart';
 import 'package:pal_eyes/features/contributions/presentation/contribute_screen.dart';
 import 'package:pal_eyes/features/discovery/presentation/discovery_screen.dart';
@@ -39,8 +41,39 @@ import 'package:pal_eyes/features/workspace/presentation/workspace_places_screen
 import 'package:pal_eyes/features/workspace/presentation/workspace_section_screen.dart';
 import 'package:pal_eyes/features/workspace/presentation/workspace_today_screen.dart';
 
-final appRouterProvider = Provider<GoRouter>(
-  (ref) => GoRouter(
+/// Pure redirect used by the router gate (exported for tests).
+String? palEyesAccessRedirect({
+  required Uri uri,
+  required PalEyesAccessIdentity identity,
+}) {
+  final decision = PalEyesAccessPolicy.decide(
+    path: uri.path,
+    identity: identity,
+  );
+  if (decision.allowed) return null;
+  final reason = decision.outcome == PalEyesAccessOutcome.insufficientRole
+      ? 'role'
+      : 'sign-in';
+  return Uri(
+    path: RoutePaths.accessRestricted,
+    queryParameters: <String, String>{'reason': reason},
+  ).toString();
+}
+
+final appRouterProvider = Provider<GoRouter>((ref) {
+  final refresh = ValueNotifier<int>(0);
+  ref.listen<PalEyesAccessIdentity>(
+    palEyesAccessIdentityProvider,
+    (previous, next) => refresh.value++,
+  );
+  ref.onDispose(refresh.dispose);
+
+  return GoRouter(
+    refreshListenable: refresh,
+    redirect: (context, state) => palEyesAccessRedirect(
+      uri: state.uri,
+      identity: ref.read(palEyesAccessIdentityProvider),
+    ),
     errorBuilder: (context, state) => NotFoundScreen(
       message: state.error?.toString() ?? 'المسار المطلوب غير مسجل.',
     ),
@@ -55,7 +88,9 @@ final appRouterProvider = Provider<GoRouter>(
           ),
           GoRoute(
             path: RoutePaths.discover,
-            builder: (context, state) => const DiscoveryScreen(),
+            builder: (context, state) => DiscoveryScreen(
+              initialQuery: state.uri.queryParameters['q'] ?? '',
+            ),
           ),
           GoRoute(
             path: RoutePaths.places,
@@ -108,6 +143,12 @@ final appRouterProvider = Provider<GoRouter>(
           GoRoute(
             path: RoutePaths.methodology,
             builder: (context, state) => const MethodologyScreen(),
+          ),
+          GoRoute(
+            path: RoutePaths.accessRestricted,
+            builder: (context, state) => AccessRestrictedScreen(
+              reason: state.uri.queryParameters['reason'] ?? 'sign-in',
+            ),
           ),
         ],
       ),
@@ -421,5 +462,5 @@ final appRouterProvider = Provider<GoRouter>(
         ],
       ),
     ],
-  ),
-);
+  );
+});

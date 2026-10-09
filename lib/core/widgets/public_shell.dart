@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/application/app_settings.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/approved_reference_design.dart';
+import 'package:pal_eyes/app/theme/pal_eyes_design_tokens.dart';
 import 'package:pal_eyes/core/presentation/public_experience_mode.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_visual_system.dart';
 
@@ -57,12 +58,9 @@ class _ReferenceHeader extends ConsumerWidget {
     final homeOverlay = location == RoutePaths.home;
     final background = dark
         ? ApprovedReferenceDesign.night.withValues(alpha: 0.97)
-        : const Color(0xFFF7F0E4).withValues(alpha: 0.98);
-    final foreground = homeOverlay
-        ? ApprovedReferenceDesign.cream
-        : dark
-        ? ApprovedReferenceDesign.cream
-        : const Color(0xFF25231E);
+        : PalEyesTokens.ivory.withValues(alpha: 0.98);
+    final onDark = homeOverlay || dark;
+    final foreground = onDark ? PalEyesTokens.inkOnDark : PalEyesTokens.ink;
 
     return SafeArea(
       bottom: false,
@@ -70,7 +68,11 @@ class _ReferenceHeader extends ConsumerWidget {
         height: ApprovedReferenceDesign.headerHeight,
         padding: EdgeInsets.symmetric(horizontal: wide ? 34 : 12),
         decoration: BoxDecoration(
-          color: homeOverlay ? Colors.transparent : background,
+          // Over the home hero the bar is a solid deep-green band so it
+          // stays legible once content scrolls beneath it.
+          color: homeOverlay
+              ? PalEyesTokens.green950.withValues(alpha: 0.94)
+              : background,
           border: homeOverlay
               ? null
               : Border(
@@ -102,16 +104,20 @@ class _ReferenceHeader extends ConsumerWidget {
               if (wide) ...<Widget>[
                 const SizedBox(width: 24),
                 Expanded(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: _desktopItems
-                        .map(
-                          (item) => _HeaderNavButton(
-                            item: item,
-                            selected: _selected(location, item.path),
-                          ),
-                        )
-                        .toList(growable: false),
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: _desktopItems
+                          .map(
+                            (item) => _HeaderNavButton(
+                              item: item,
+                              selected: _selected(location, item.path),
+                              foreground: foreground,
+                            ),
+                          )
+                          .toList(growable: false),
+                    ),
                   ),
                 ),
                 const SizedBox(width: 8),
@@ -120,7 +126,10 @@ class _ReferenceHeader extends ConsumerWidget {
                   onSelected: (path) => context.go(path),
                 ),
                 const SizedBox(width: 10),
-                _HeaderSearch(onTap: () => context.go(RoutePaths.discover)),
+                _HeaderSearch(
+                  onDark: onDark,
+                  onTap: () => context.go(RoutePaths.discover),
+                ),
                 const SizedBox(width: 10),
                 TextButton.icon(
                   onPressed: () =>
@@ -159,7 +168,9 @@ class _ReferenceHeader extends ConsumerWidget {
                   OutlinedButton.icon(
                     onPressed: () => context.go(RoutePaths.workspace),
                     style: OutlinedButton.styleFrom(
-                      foregroundColor: ApprovedReferenceDesign.goldSoft,
+                      foregroundColor: onDark
+                          ? ApprovedReferenceDesign.goldSoft
+                          : PalEyesTokens.goldDeep,
                       side: const BorderSide(
                         color: ApprovedReferenceDesign.gold,
                       ),
@@ -175,7 +186,9 @@ class _ReferenceHeader extends ConsumerWidget {
                     tooltip: 'الحوكمة والإدارة',
                     onPressed: () => context.go(RoutePaths.admin),
                     style: IconButton.styleFrom(
-                      foregroundColor: ApprovedReferenceDesign.goldSoft,
+                      foregroundColor: onDark
+                          ? ApprovedReferenceDesign.goldSoft
+                          : PalEyesTokens.goldDeep,
                       side: const BorderSide(
                         color: ApprovedReferenceDesign.gold,
                       ),
@@ -255,9 +268,10 @@ class _ApprovedReferenceBrandMark extends StatelessWidget {
 }
 
 class _HeaderSearch extends StatelessWidget {
-  const _HeaderSearch({required this.onTap});
+  const _HeaderSearch({required this.onTap, required this.onDark});
 
   final VoidCallback onTap;
+  final bool onDark;
 
   @override
   Widget build(BuildContext context) => InkWell(
@@ -268,17 +282,25 @@ class _HeaderSearch extends StatelessWidget {
       height: 42,
       padding: const EdgeInsets.symmetric(horizontal: 16),
       decoration: BoxDecoration(
-        color: Colors.black.withValues(alpha: 0.18),
+        color: onDark
+            ? Colors.black.withValues(alpha: 0.18)
+            : PalEyesTokens.paper,
         borderRadius: BorderRadius.circular(99),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.22)),
+        border: Border.all(
+          color: onDark
+              ? Colors.white.withValues(alpha: 0.22)
+              : PalEyesTokens.line,
+        ),
       ),
       child: Row(
         textDirection: TextDirection.rtl,
         children: <Widget>[
-          const Icon(
+          Icon(
             Icons.search_rounded,
             size: 20,
-            color: ApprovedReferenceDesign.goldSoft,
+            color: onDark
+                ? ApprovedReferenceDesign.goldSoft
+                : PalEyesTokens.goldDeep,
           ),
           const SizedBox(width: 8),
           Expanded(
@@ -287,7 +309,9 @@ class _HeaderSearch extends StatelessWidget {
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
-                color: ApprovedReferenceDesign.cream.withValues(alpha: 0.72),
+                color: onDark
+                    ? ApprovedReferenceDesign.cream.withValues(alpha: 0.72)
+                    : PalEyesTokens.inkMuted,
                 fontSize: 12,
               ),
             ),
@@ -299,22 +323,27 @@ class _HeaderSearch extends StatelessWidget {
 }
 
 class _HeaderNavButton extends StatelessWidget {
-  const _HeaderNavButton({required this.item, required this.selected});
+  const _HeaderNavButton({
+    required this.item,
+    required this.selected,
+    required this.foreground,
+  });
 
   final _PublicItem item;
   final bool selected;
+  final Color foreground;
 
   @override
   Widget build(BuildContext context) {
-    final foreground = Theme.of(context).brightness == Brightness.dark
-        ? ApprovedReferenceDesign.cream
-        : const Color(0xFF2B2821);
+    final selectedColor = foreground == PalEyesTokens.ink
+        ? PalEyesTokens.goldDeep
+        : ApprovedReferenceDesign.gold;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 2),
       child: TextButton(
         onPressed: () => context.go(item.path),
         style: TextButton.styleFrom(
-          foregroundColor: selected ? ApprovedReferenceDesign.gold : foreground,
+          foregroundColor: selected ? selectedColor : foreground,
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
           shape: const RoundedRectangleBorder(),
           side: BorderSide.none,
@@ -333,7 +362,7 @@ class _HeaderNavButton extends StatelessWidget {
               duration: const Duration(milliseconds: 180),
               width: selected ? 34 : 0,
               height: 2,
-              color: ApprovedReferenceDesign.gold,
+              color: selectedColor,
             ),
           ],
         ),
@@ -397,10 +426,7 @@ class _MoreMenu extends StatelessWidget {
           children: <Widget>[
             Text(
               'المزيد',
-              style: TextStyle(
-                color: foreground,
-                fontWeight: FontWeight.w700,
-              ),
+              style: TextStyle(color: foreground, fontWeight: FontWeight.w700),
             ),
             const SizedBox(width: 4),
             Icon(Icons.expand_more_rounded, color: foreground, size: 18),
@@ -418,9 +444,7 @@ class _PublicDrawer extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final dark = Theme.of(context).brightness == Brightness.dark;
-    final foreground = dark
-        ? ApprovedReferenceDesign.cream
-        : const Color(0xFF2A2721);
+    final foreground = dark ? PalEyesTokens.inkOnDark : PalEyesTokens.ink;
     return Drawer(
       backgroundColor: ApprovedReferenceDesign.panelBackground(context),
       child: SafeArea(

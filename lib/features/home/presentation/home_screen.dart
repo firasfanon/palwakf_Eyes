@@ -3,9 +3,21 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/approved_reference_design.dart';
+import 'package:pal_eyes/app/theme/pal_eyes_design_tokens.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_canonical_visual_v1.dart';
+import 'package:pal_eyes/core/widgets/pal_eyes_visual_system.dart';
 import 'package:pal_eyes/features/places/application/heritage_sites_provider.dart';
+import 'package:pal_eyes/features/places/domain/heritage_site.dart';
+import 'package:pal_eyes/features/research/application/staging_research_corpus_provider.dart';
+import 'package:pal_eyes/features/sources/domain/draft_source_registry_entry.dart';
+import 'package:pal_eyes/features/stories/data/editorial_story_catalog.dart';
+import 'package:pal_eyes/features/stories/domain/editorial_story.dart';
 
+/// Public homepage — editorial Palestinian cultural-research atlas.
+///
+/// Refines the existing homepage (same sections, same routes, same data
+/// providers) into live, accessible widgets: no text baked into images,
+/// no invented records, no provisional public map points.
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
 
@@ -20,7 +32,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   Widget build(BuildContext context) {
     final sites = ref.watch(foundationSitesProvider);
     final mapped = ref.watch(mappedSitesProvider);
-    final featured = ref.watch(featuredSitesProvider);
+    final sources = ref.watch(draftSourceRegistryProvider);
+    final packages = ref.watch(frozenStagingResearchCorpusProvider);
     final viewportWidth = MediaQuery.sizeOf(context).width;
     final horizontal = viewportWidth < 620
         ? 12.0
@@ -28,53 +41,70 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         ? 20.0
         : 44.0;
 
+    final siteById = <String, HeritageSite>{
+      for (final site in sites) site.id: site,
+    };
+    final research =
+        packages
+            .where((package) => siteById.containsKey(package.catalogSiteId))
+            .toList(growable: false)
+          ..sort((a, b) => a.censusRecordId.compareTo(b.censusRecordId));
+    final researchItems = research
+        .take(3)
+        .map(
+          (package) => _ResearchTeaser(
+            site: siteById[package.catalogSiteId]!,
+            statusLabel: package.previewStatusLabelAr,
+          ),
+        )
+        .toList(growable: false);
+
     return ColoredBox(
       color: ApprovedReferenceDesign.pageBackground(context),
       child: CustomScrollView(
         slivers: <Widget>[
           SliverToBoxAdapter(
             child: _ReferenceHero(
-              siteCount: sites.length,
-              mappedCount: mapped.length,
-              onDiscover: () => context.go(RoutePaths.discover),
-              onMap: () => context.go(RoutePaths.map),
-              onStories: () => context.go(RoutePaths.stories),
+              onSearch: (query) => context.go(RoutePaths.discoverQuery(query)),
             ),
           ),
           SliverPadding(
-            padding: EdgeInsets.fromLTRB(horizontal, 0, horizontal, 72),
+            padding: EdgeInsets.fromLTRB(horizontal, 22, horizontal, 40),
             sliver: SliverToBoxAdapter(
               child: Center(
                 child: ConstrainedBox(
                   constraints: const BoxConstraints(
-                    maxWidth: ApprovedReferenceDesign.maxWidth,
+                    maxWidth: PalEyesTokens.maxContentWidth,
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[
                       _ProductGatewaysSection(
-                        onStories: () => context.go(RoutePaths.stories),
-                        onMap: () => context.go(RoutePaths.map),
                         onPlaces: () => context.go(RoutePaths.places),
                         onResearch: () => context.go(RoutePaths.research),
-                        onMemory: () => context.go(RoutePaths.timeline),
-                        onSources: () => context.go(RoutePaths.sources),
-                      ),
-                      const SizedBox(height: 18),
-                      _FeatureTriad(
-                        activeEra: _activeEra,
-                        onEraAdvance: () => setState(() {
-                          _activeEra = (_activeEra + 1) % 8;
-                        }),
-                        onTimeline: () => context.go(RoutePaths.timeline),
+                        onStories: () => context.go(RoutePaths.stories),
                         onMap: () => context.go(RoutePaths.map),
-                        onFeatured: featured.isEmpty
-                            ? () => context.go(RoutePaths.places)
-                            : () => context.go(
-                                RoutePaths.place(featured.first.slug),
-                              ),
                       ),
-                      const SizedBox(height: 5),
+                      const SizedBox(height: 22),
+                      _FeatureTriad(
+                        story: editorialStoryCatalog.first,
+                        source: _featuredSource(sources),
+                        sites: sites,
+                        mappedCount: mapped.length,
+                        onStory: () => context.go(
+                          RoutePaths.story(editorialStoryCatalog.first.slug),
+                        ),
+                        onSources: () => context.go(RoutePaths.sources),
+                        onMap: () => context.go(RoutePaths.map),
+                      ),
+                      const SizedBox(height: 22),
+                      _RecentResearchSection(
+                        items: researchItems,
+                        onAll: () => context.go(RoutePaths.research),
+                        onOpen: (slug) =>
+                            context.go(RoutePaths.researchItem(slug)),
+                      ),
+                      const SizedBox(height: 26),
                       KeyedSubtree(
                         key: const Key('home-stories-section'),
                         child: _StoryStrip(
@@ -88,84 +118,132 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               ),
             ),
           ),
+          SliverToBoxAdapter(
+            child: _TimelineBand(
+              activeEra: _activeEra,
+              horizontal: horizontal,
+              onEra: (index) => setState(() => _activeEra = index),
+              onTimeline: () => context.go(RoutePaths.timeline),
+            ),
+          ),
+          SliverToBoxAdapter(child: _HomeFooter(horizontal: horizontal)),
         ],
       ),
     );
   }
+
+  /// Picks a real governed source record. Never fabricates an archival
+  /// document; when no archival record exists the card says so.
+  DraftSourceRegistryEntry? _featuredSource(
+    List<DraftSourceRegistryEntry> sources,
+  ) {
+    for (final source in sources) {
+      if (source.sourceTypeAr.contains('architectural_record')) return source;
+    }
+    for (final source in sources) {
+      if (source.isEditorialSource) return source;
+    }
+    return sources.isEmpty ? null : sources.first;
+  }
 }
 
-class _ReferenceHero extends StatelessWidget {
-  const _ReferenceHero({
-    required this.siteCount,
-    required this.mappedCount,
-    required this.onDiscover,
-    required this.onMap,
-    required this.onStories,
-  });
+// ---------------------------------------------------------------------------
+// Hero
+// ---------------------------------------------------------------------------
 
-  final int siteCount;
-  final int mappedCount;
-  final VoidCallback onDiscover;
-  final VoidCallback onMap;
-  final VoidCallback onStories;
+const List<String> _heroLocations = <String>[
+  'القدس',
+  'الخليل',
+  'نابلس',
+  'يافا',
+  'غزة',
+  'بيت لحم',
+  'اللد',
+  'الرملة',
+];
+
+class _ReferenceHero extends StatelessWidget {
+  const _ReferenceHero({required this.onSearch});
+
+  final ValueChanged<String> onSearch;
 
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.sizeOf(context).width;
-    final desktop = width >= 980;
-    if (!desktop) {
+    if (width < 980) {
       return Padding(
         padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            _HeroImage(height: width < 560 ? 265 : 330),
-            const SizedBox(height: 18),
-            _HeroCopy(
-              siteCount: siteCount,
-              mappedCount: mappedCount,
-              onDiscover: onDiscover,
-              onMap: onMap,
-              onStories: onStories,
+            ClipRRect(
+              borderRadius: BorderRadius.circular(PalEyesTokens.radiusLarge),
+              child: SizedBox(
+                height: width < 560 ? 300 : 360,
+                child: Stack(
+                  fit: StackFit.expand,
+                  children: <Widget>[
+                    const _HeroImage(),
+                    const _HeroScrim(),
+                    PositionedDirectional(
+                      start: 18,
+                      end: 18,
+                      bottom: 18,
+                      child: _HeroTitle(compact: width < 560),
+                    ),
+                  ],
+                ),
+              ),
             ),
+            const SizedBox(height: 16),
+            Text(
+              'حكايات الناس وذاكرة الأرض في رحلة بصرية تفاعلية',
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                color: PalEyesTokens.text(context),
+              ),
+            ),
+            const SizedBox(height: 14),
+            _HeroSearch(onSearch: onSearch, onDark: false),
+            const SizedBox(height: 12),
+            _LocationChips(onSearch: onSearch, onDark: false),
           ],
         ),
       );
     }
 
     return SizedBox(
-      height: 462,
+      height: 560,
       child: Stack(
         fit: StackFit.expand,
         children: <Widget>[
-          const Positioned.fill(
-            child: ColoredBox(color: ApprovedReferenceDesign.night),
-          ),
-          const Positioned(
-            left: 0,
-            top: 0,
-            bottom: 0,
-            width: 1010,
-            child: _HeroImage(height: 462, radius: 0),
-          ),
-          Positioned.fill(
-            child: IgnorePointer(
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  gradient: ApprovedReferenceDesign.heroFade(),
+          const _HeroImage(),
+          const _HeroScrim(),
+          Align(
+            alignment: const Alignment(0, 0.28),
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 680),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    const _HeroTitle(compact: false, centered: true),
+                    const SizedBox(height: 12),
+                    Text(
+                      'حكايات الناس وذاكرة الأرض في رحلة بصرية تفاعلية',
+                      textAlign: TextAlign.center,
+                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        color: PalEyesTokens.inkOnDark,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    const SizedBox(height: 22),
+                    _HeroSearch(onSearch: onSearch, onDark: true),
+                    const SizedBox(height: 14),
+                    _LocationChips(onSearch: onSearch, onDark: true),
+                  ],
                 ),
               ),
-            ),
-          ),
-          Positioned(
-            right: 130,
-            top: 105,
-            width: 500,
-            child: _HeroCopy(
-              siteCount: siteCount,
-              mappedCount: mappedCount,
-              onDiscover: onDiscover,
-              onMap: onMap,
-              onStories: onStories,
             ),
           ),
         ],
@@ -175,26 +253,42 @@ class _ReferenceHero extends StatelessWidget {
 }
 
 class _HeroImage extends StatelessWidget {
-  const _HeroImage({required this.height, this.radius = 22});
-
-  final double height;
-  final double radius;
+  const _HeroImage();
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(radius),
-      child: SizedBox(
-        width: double.infinity,
-        height: height,
-        child: Image.asset(
-          ApprovedReferenceDesign.hero,
-          fit: BoxFit.cover,
-          alignment: Alignment.center,
-          filterQuality: FilterQuality.high,
-          errorBuilder: (context, error, stackTrace) => PalEyesHeritageScene(
-            height: height,
-            compact: MediaQuery.sizeOf(context).width < 760,
+    return Image.asset(
+      ApprovedReferenceDesign.hero,
+      fit: BoxFit.cover,
+      alignment: const Alignment(0.2, 0),
+      filterQuality: FilterQuality.high,
+      semanticLabel: 'مشهد للقدس القديمة وقبة الصخرة عند الغروب',
+      errorBuilder: (context, error, stackTrace) => PalEyesHeritageScene(
+        height: 360,
+        compact: MediaQuery.sizeOf(context).width < 760,
+      ),
+    );
+  }
+}
+
+class _HeroScrim extends StatelessWidget {
+  const _HeroScrim();
+
+  @override
+  Widget build(BuildContext context) {
+    return IgnorePointer(
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: <Color>[
+              PalEyesTokens.green950.withValues(alpha: 0.62),
+              PalEyesTokens.green950.withValues(alpha: 0.18),
+              PalEyesTokens.green950.withValues(alpha: 0.48),
+              PalEyesTokens.green950.withValues(alpha: 0.86),
+            ],
+            stops: const <double>[0, 0.32, 0.62, 1],
           ),
         ),
       ),
@@ -202,383 +296,1022 @@ class _HeroImage extends StatelessWidget {
   }
 }
 
-class _HeroCopy extends StatelessWidget {
-  const _HeroCopy({
-    required this.siteCount,
-    required this.mappedCount,
-    required this.onDiscover,
-    required this.onMap,
-    required this.onStories,
-  });
+class _HeroTitle extends StatelessWidget {
+  const _HeroTitle({required this.compact, this.centered = false});
 
-  final int siteCount;
-  final int mappedCount;
-  final VoidCallback onDiscover;
-  final VoidCallback onMap;
-  final VoidCallback onStories;
+  final bool compact;
+  final bool centered;
 
   @override
   Widget build(BuildContext context) {
-    final compact = MediaQuery.sizeOf(context).width < 620;
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: <Widget>[
-        Text(
-          'فلسطين..\nأكثر من مكان',
-          textAlign: TextAlign.start,
-          style: Theme.of(context).textTheme.displayLarge?.copyWith(
-            color: ApprovedReferenceDesign.cream,
-            fontSize: compact ? 42 : 60,
-            height: 1.05,
-            letterSpacing: -1.4,
+    final base = Theme.of(context).textTheme.displayLarge?.copyWith(
+      fontSize: compact ? 40 : 64,
+      height: 1.18,
+      color: PalEyesTokens.inkOnDark,
+      shadows: <Shadow>[
+        Shadow(
+          color: PalEyesTokens.green950.withValues(alpha: 0.55),
+          blurRadius: 18,
+        ),
+      ],
+    );
+    return Text.rich(
+      TextSpan(
+        style: base,
+        children: const <InlineSpan>[
+          TextSpan(text: 'فلسطين..\n'),
+          TextSpan(
+            text: 'أكثر من مكان',
+            style: TextStyle(color: PalEyesTokens.goldSoft),
+          ),
+        ],
+      ),
+      textAlign: centered ? TextAlign.center : TextAlign.start,
+    );
+  }
+}
+
+class _HeroSearch extends StatelessWidget {
+  const _HeroSearch({required this.onSearch, required this.onDark});
+
+  final ValueChanged<String> onSearch;
+  final bool onDark;
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      button: true,
+      label: 'ابحث في الأماكن والحكايات والبحوث',
+      child: Material(
+        color: PalEyesTokens.paper,
+        shape: StadiumBorder(
+          side: BorderSide(
+            color: onDark
+                ? PalEyesTokens.goldSoft.withValues(alpha: 0.6)
+                : PalEyesTokens.lineStrong,
           ),
         ),
-        const SizedBox(height: 14),
-        Text(
-          'حكايات الناس، وذاكرة الأرض، في رحلة بصرية تفاعلية.',
-          style: Theme.of(context).textTheme.titleMedium?.copyWith(
-            color: ApprovedReferenceDesign.cream.withValues(alpha: 0.88),
-          ),
-        ),
-        const SizedBox(height: 22),
-        Align(
-          alignment: AlignmentDirectional.centerStart,
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          onTap: () => onSearch(''),
           child: SizedBox(
-            width: compact ? double.infinity : 390,
-            child: Semantics(
-              button: true,
-              label: 'اكتشف المكان في فلسطين',
-              child: InkWell(
-                onTap: onDiscover,
-                borderRadius: BorderRadius.circular(99),
-                child: Container(
-                  height: 58,
-                  padding: const EdgeInsets.symmetric(horizontal: 22),
-                  decoration: BoxDecoration(
-                    color: ApprovedReferenceDesign.cream,
-                    borderRadius: BorderRadius.circular(99),
-                    border: Border.all(
-                      color: ApprovedReferenceDesign.gold.withValues(
-                        alpha: 0.45,
-                      ),
+            height: 58,
+            child: Row(
+              children: <Widget>[
+                const SizedBox(width: 20),
+                const Icon(Icons.search_rounded, color: PalEyesTokens.inkMuted),
+                const SizedBox(width: 10),
+                const Expanded(
+                  child: Text(
+                    'اكتشف المكان في فلسطين: مكان، حكاية أو بحث…',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      color: PalEyesTokens.inkMuted,
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
-                  child: const Row(
-                    children: <Widget>[
-                      Expanded(
-                        child: Text(
-                          'اكتشف المكان في فلسطين...',
-                          style: TextStyle(
-                            color: ApprovedReferenceDesign.night,
-                            fontWeight: FontWeight.w800,
+                ),
+                Padding(
+                  padding: const EdgeInsetsDirectional.only(end: 6),
+                  child: Container(
+                    width: 46,
+                    height: 46,
+                    decoration: const BoxDecoration(
+                      color: PalEyesTokens.green900,
+                      shape: BoxShape.circle,
+                    ),
+                    child: const Icon(
+                      Icons.travel_explore_rounded,
+                      color: PalEyesTokens.goldSoft,
+                      size: 22,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _LocationChips extends StatelessWidget {
+  const _LocationChips({required this.onSearch, required this.onDark});
+
+  final ValueChanged<String> onSearch;
+  final bool onDark;
+
+  @override
+  Widget build(BuildContext context) {
+    return Wrap(
+      alignment: onDark ? WrapAlignment.center : WrapAlignment.start,
+      spacing: 8,
+      runSpacing: 8,
+      children: _heroLocations
+          .map(
+            (label) => ActionChip(
+              onPressed: () => onSearch(label),
+              tooltip: 'ابحث عن $label',
+              label: Text(label),
+              labelStyle: TextStyle(
+                fontFamily: PalEyesTokens.fontBody,
+                color: onDark ? PalEyesTokens.inkOnDark : PalEyesTokens.ink,
+                fontWeight: FontWeight.w600,
+              ),
+              backgroundColor: onDark
+                  ? PalEyesTokens.green950.withValues(alpha: 0.55)
+                  : PalEyesTokens.paper,
+              side: BorderSide(
+                color: onDark
+                    ? PalEyesTokens.goldSoft.withValues(alpha: 0.45)
+                    : PalEyesTokens.line,
+              ),
+              shape: const StadiumBorder(),
+            ),
+          )
+          .toList(growable: false),
+    );
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Four entry points
+// ---------------------------------------------------------------------------
+
+class _Gateway {
+  const _Gateway({
+    required this.title,
+    required this.subtitle,
+    required this.semantic,
+    required this.icon,
+    required this.asset,
+    required this.onTap,
+  });
+
+  final String title;
+  final String subtitle;
+  final String semantic;
+  final IconData icon;
+  final String asset;
+  final VoidCallback onTap;
+}
+
+class _ProductGatewaysSection extends StatelessWidget {
+  const _ProductGatewaysSection({
+    required this.onPlaces,
+    required this.onResearch,
+    required this.onStories,
+    required this.onMap,
+  });
+
+  final VoidCallback onPlaces;
+  final VoidCallback onResearch;
+  final VoidCallback onStories;
+  final VoidCallback onMap;
+
+  @override
+  Widget build(BuildContext context) {
+    final items = <_Gateway>[
+      _Gateway(
+        title: 'الأماكن',
+        subtitle: 'اكتشف المدن والقرى والمواقع',
+        semantic: 'الأماكن: اكتشف المدن والقرى والمواقع',
+        icon: Icons.account_balance_outlined,
+        asset: ApprovedReferenceDesign.gatewayAssets[2],
+        onTap: onPlaces,
+      ),
+      _Gateway(
+        title: 'البحوث',
+        subtitle: 'دراسات ومراجع موثقة',
+        semantic: 'البحوث: دراسات ومراجع موثقة',
+        icon: Icons.menu_book_outlined,
+        asset: ApprovedReferenceDesign.gatewayAssets[4],
+        onTap: onResearch,
+      ),
+      _Gateway(
+        title: 'الحكايات',
+        subtitle: 'قصص الناس والأماكن',
+        semantic: 'القصص والذاكرة: قصص الناس والأماكن',
+        icon: Icons.auto_stories_outlined,
+        asset: ApprovedReferenceDesign.gatewayAssets[0],
+        onTap: onStories,
+      ),
+      _Gateway(
+        title: 'الخريطة التفاعلية',
+        subtitle: 'استكشف فلسطين بصرياً',
+        semantic: 'الخريطة التفاعلية: استكشف فلسطين بصرياً',
+        icon: Icons.map_outlined,
+        asset: ApprovedReferenceDesign.gatewayAssets[1],
+        onTap: onMap,
+      ),
+    ];
+
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final columns = constraints.maxWidth >= 1000
+            ? 4
+            : constraints.maxWidth >= 600
+            ? 2
+            : 1;
+        const gap = 14.0;
+        final width = (constraints.maxWidth - gap * (columns - 1)) / columns;
+        return Wrap(
+          spacing: gap,
+          runSpacing: gap,
+          children: items
+              .map(
+                (item) => SizedBox(
+                  width: width,
+                  height: columns == 1 ? 112 : 128,
+                  child: _GatewayCard(item: item),
+                ),
+              )
+              .toList(growable: false),
+        );
+      },
+    );
+  }
+}
+
+/// 0.48 of the 2.38:1 gateway asset width, expressed against its height.
+const double _gatewayPhotoWidthFactor = 1.14;
+
+class _GatewayCard extends StatelessWidget {
+  const _GatewayCard({required this.item});
+
+  final _Gateway item;
+
+  @override
+  Widget build(BuildContext context) {
+    return _HoverLift(
+      child: Semantics(
+        button: true,
+        label: item.semantic,
+        excludeSemantics: true,
+        child: Material(
+          color: PalEyesTokens.green900,
+          borderRadius: BorderRadius.circular(PalEyesTokens.radius),
+          clipBehavior: Clip.antiAlias,
+          child: InkWell(
+            onTap: item.onTap,
+            child: Stack(
+              fit: StackFit.expand,
+              children: <Widget>[
+                // Photographic half of the reference crop only; the baked
+                // caption half (right side of the asset) is never shown.
+                // The asset is scaled to the card height (aspect 2.38) and
+                // only its left 48% is revealed.
+                LayoutBuilder(
+                  builder: (context, box) => Align(
+                    alignment: AlignmentDirectional.centerEnd,
+                    child: SizedBox(
+                      width: box.maxHeight * _gatewayPhotoWidthFactor,
+                      height: box.maxHeight,
+                      child: ClipRect(
+                        child: OverflowBox(
+                          alignment: Alignment.centerLeft,
+                          minWidth: 0,
+                          maxWidth: double.infinity,
+                          child: Image.asset(
+                            item.asset,
+                            height: box.maxHeight,
+                            fit: BoxFit.fitHeight,
+                            filterQuality: FilterQuality.high,
+                            excludeFromSemantics: true,
                           ),
                         ),
                       ),
-                      Icon(
-                        Icons.search_rounded,
-                        color: ApprovedReferenceDesign.night,
+                    ),
+                  ),
+                ),
+                DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: AlignmentDirectional.centerStart,
+                      end: AlignmentDirectional.centerEnd,
+                      colors: <Color>[
+                        PalEyesTokens.green900,
+                        PalEyesTokens.green900.withValues(alpha: 0.92),
+                        PalEyesTokens.green900.withValues(alpha: 0.05),
+                      ],
+                      stops: const <double>[0, 0.45, 1],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 18,
+                    vertical: 14,
+                  ),
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        width: 44,
+                        height: 44,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: PalEyesTokens.gold.withValues(alpha: 0.7),
+                          ),
+                        ),
+                        child: Icon(item.icon, color: PalEyesTokens.goldSoft),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              item.title,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: Theme.of(context).textTheme.titleLarge
+                                  ?.copyWith(color: PalEyesTokens.inkOnDark),
+                            ),
+                            const SizedBox(height: 2),
+                            Text(
+                              item.subtitle,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: Theme.of(context).textTheme.bodyMedium
+                                  ?.copyWith(
+                                    color: PalEyesTokens.inkOnDarkMuted,
+                                  ),
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
                 ),
-              ),
+                const PositionedDirectional(
+                  end: 14,
+                  bottom: 12,
+                  child: _ArrowBadge(),
+                ),
+              ],
             ),
           ),
         ),
-        const SizedBox(height: 14),
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          children:
-              <String>['القدس', 'الخليل', 'نابلس', 'غزة', 'يافا', 'بيت لحم']
-                  .map((label) => _CityChip(label: label, onTap: onDiscover))
-                  .toList(growable: false),
+      ),
+    );
+  }
+}
+
+class _ArrowBadge extends StatelessWidget {
+  const _ArrowBadge();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 30,
+      height: 30,
+      decoration: const BoxDecoration(
+        color: PalEyesTokens.gold,
+        shape: BoxShape.circle,
+      ),
+      child: const Icon(
+        Icons.arrow_forward_rounded,
+        size: 18,
+        color: PalEyesTokens.green950,
+      ),
+    );
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Story · source record · map
+// ---------------------------------------------------------------------------
+
+class _FeatureTriad extends StatelessWidget {
+  const _FeatureTriad({
+    required this.story,
+    required this.source,
+    required this.sites,
+    required this.mappedCount,
+    required this.onStory,
+    required this.onSources,
+    required this.onMap,
+  });
+
+  final EditorialStory story;
+  final DraftSourceRegistryEntry? source;
+  final List<HeritageSite> sites;
+  final int mappedCount;
+  final VoidCallback onStory;
+  final VoidCallback onSources;
+  final VoidCallback onMap;
+
+  @override
+  Widget build(BuildContext context) {
+    final panels = <Widget>[
+      _FeaturedStoryCard(story: story, onTap: onStory),
+      _SourceRecordCard(source: source, onTap: onSources),
+      _MapTeaserCard(sites: sites, mappedCount: mappedCount, onTap: onMap),
+    ];
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth < 1000) {
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              for (var index = 0; index < panels.length; index++) ...<Widget>[
+                if (index > 0) const SizedBox(height: 14),
+                SizedBox(
+                  height: const <double>[300, 320, 280][index],
+                  child: panels[index],
+                ),
+              ],
+            ],
+          );
+        }
+        return SizedBox(
+          height: 300,
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Expanded(flex: 13, child: panels[0]),
+              const SizedBox(width: 14),
+              Expanded(flex: 11, child: panels[1]),
+              const SizedBox(width: 14),
+              Expanded(flex: 11, child: panels[2]),
+            ],
+          ),
+        );
+      },
+    );
+  }
+}
+
+class _Pill extends StatelessWidget {
+  const _Pill({required this.label, this.onDark = false});
+
+  final String label;
+  final bool onDark;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+      decoration: BoxDecoration(
+        color: onDark
+            ? PalEyesTokens.gold.withValues(alpha: 0.22)
+            : PalEyesTokens.goldWash,
+        borderRadius: BorderRadius.circular(PalEyesTokens.radiusPill),
+        border: Border.all(
+          color: onDark
+              ? PalEyesTokens.goldSoft.withValues(alpha: 0.6)
+              : PalEyesTokens.goldSoft,
         ),
-        const SizedBox(height: 14),
-        Wrap(
-          spacing: 12,
-          runSpacing: 10,
-          crossAxisAlignment: WrapCrossAlignment.center,
-          children: <Widget>[
-            OutlinedButton.icon(
-              onPressed: onStories,
-              style: OutlinedButton.styleFrom(
-                foregroundColor: ApprovedReferenceDesign.cream,
-                side: BorderSide(
-                  color: ApprovedReferenceDesign.cream.withValues(alpha: 0.32),
+      ),
+      child: Text(
+        label,
+        style: TextStyle(
+          color: onDark ? PalEyesTokens.goldSoft : PalEyesTokens.goldDeep,
+          fontSize: 12,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
+    );
+  }
+}
+
+class _FeaturedStoryCard extends StatelessWidget {
+  const _FeaturedStoryCard({required this.story, required this.onTap});
+
+  final EditorialStory story;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return _HoverLift(
+      child: Material(
+        color: PalEyesTokens.green900,
+        borderRadius: BorderRadius.circular(PalEyesTokens.radiusLarge),
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          onTap: onTap,
+          child: Stack(
+            fit: StackFit.expand,
+            children: <Widget>[
+              Image.asset(
+                ApprovedReferenceDesign.hero,
+                fit: BoxFit.cover,
+                alignment: Alignment.centerRight,
+                excludeFromSemantics: true,
+              ),
+              DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: AlignmentDirectional.centerStart,
+                    end: AlignmentDirectional.centerEnd,
+                    colors: <Color>[
+                      PalEyesTokens.green950.withValues(alpha: 0.95),
+                      PalEyesTokens.green950.withValues(alpha: 0.7),
+                      PalEyesTokens.green950.withValues(alpha: 0.1),
+                    ],
+                  ),
                 ),
               ),
-              icon: const Icon(Icons.play_arrow_rounded),
-              label: const Text('شاهد الحكايات'),
-            ),
-            TextButton.icon(
-              onPressed: onMap,
-              style: TextButton.styleFrom(
-                foregroundColor: ApprovedReferenceDesign.goldSoft,
+              Padding(
+                padding: const EdgeInsets.all(22),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Expanded(
+                      child: ClipRect(
+                        child: SingleChildScrollView(
+                          physics: const NeverScrollableScrollPhysics(),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              const _Pill(label: 'قصة من فلسطين', onDark: true),
+                              const SizedBox(height: 12),
+                              Text(
+                                story.title,
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .headlineMedium
+                                    ?.copyWith(color: PalEyesTokens.inkOnDark),
+                              ),
+                              const SizedBox(height: 8),
+                              ConstrainedBox(
+                                constraints: const BoxConstraints(
+                                  maxWidth: 380,
+                                ),
+                                child: Text(
+                                  story.summary,
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: Theme.of(context).textTheme.bodyMedium
+                                      ?.copyWith(
+                                        color: PalEyesTokens.inkOnDarkMuted,
+                                      ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    OutlinedButton.icon(
+                      onPressed: onTap,
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: PalEyesTokens.goldSoft,
+                        side: const BorderSide(color: PalEyesTokens.gold),
+                        shape: const StadiumBorder(),
+                      ),
+                      icon: const Icon(Icons.arrow_forward_rounded, size: 18),
+                      label: Text('اقرأ القصة • ${story.readingMinutes} دقائق'),
+                    ),
+                  ],
+                ),
               ),
-              icon: const Icon(Icons.arrow_back_rounded),
-              label: Text(
-                'استكشف الخريطة • $mappedCount/$siteCount موضعاً مدققاً',
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _PaperCard extends StatelessWidget {
+  const _PaperCard({required this.child, this.onTap});
+
+  final Widget child;
+  final VoidCallback? onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: PalEyesTokens.panel(context),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(PalEyesTokens.radiusLarge),
+        side: BorderSide(color: PalEyesTokens.border(context)),
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        onTap: onTap,
+        child: Padding(padding: const EdgeInsets.all(20), child: child),
+      ),
+    );
+  }
+}
+
+class _SourceRecordCard extends StatelessWidget {
+  const _SourceRecordCard({required this.source, required this.onTap});
+
+  final DraftSourceRegistryEntry? source;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final entry = source;
+    return _PaperCard(
+      onTap: onTap,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Expanded(
+            child: ClipRect(
+              child: SingleChildScrollView(
+                physics: const NeverScrollableScrollPhysics(),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    const _Pill(label: 'من السجل المصدري'),
+                    const SizedBox(height: 12),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Container(
+                          width: 64,
+                          height: 84,
+                          decoration: BoxDecoration(
+                            color: PalEyesTokens.cream,
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(color: PalEyesTokens.lineStrong),
+                          ),
+                          child: const Icon(
+                            Icons.description_outlined,
+                            color: PalEyesTokens.goldDeep,
+                            semanticLabel: 'صورة الوثيقة غير معروضة',
+                          ),
+                        ),
+                        const SizedBox(width: 14),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                entry?.title ?? 'لا يوجد سجل مصدري متاح',
+                                maxLines: 3,
+                                overflow: TextOverflow.ellipsis,
+                                style: theme.textTheme.titleMedium?.copyWith(
+                                  color: PalEyesTokens.text(context),
+                                ),
+                              ),
+                              if (entry != null) ...<Widget>[
+                                const SizedBox(height: 4),
+                                Text(
+                                  entry.attribution,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: theme.textTheme.bodySmall?.copyWith(
+                                    color: PalEyesTokens.textMuted(context),
+                                  ),
+                                ),
+                              ],
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 12),
+                    Text(
+                      'لا تُعرض صورة أي وثيقة قبل التحقق من أصلها وحقوقها. هذا سجل مرجعي حقيقي قيد المراجعة، وليس وثيقة أرشيفية معتمدة للنشر.',
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        color: PalEyesTokens.textMuted(context),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
-          ],
+          ),
+          const SizedBox(height: 10),
+          FilledButton.tonalIcon(
+            onPressed: onTap,
+            style: FilledButton.styleFrom(
+              backgroundColor: PalEyesTokens.goldWash,
+              foregroundColor: PalEyesTokens.goldDeep,
+              shape: const StadiumBorder(),
+              minimumSize: const Size(0, 44),
+            ),
+            icon: const Icon(Icons.arrow_forward_rounded, size: 18),
+            label: const Text('سجل المصادر'),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _MapTeaserCard extends StatelessWidget {
+  const _MapTeaserCard({
+    required this.sites,
+    required this.mappedCount,
+    required this.onTap,
+  });
+
+  final List<HeritageSite> sites;
+  final int mappedCount;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final byType = <String, int>{};
+    for (final site in sites) {
+      final key = site.siteTypeAr.trim().isEmpty ? 'غير مصنف' : site.siteTypeAr;
+      byType[key] = (byType[key] ?? 0) + 1;
+    }
+    final top = byType.entries.toList(growable: false)
+      ..sort((a, b) => b.value.compareTo(a.value));
+    const dots = <Color>[
+      PalEyesTokens.gold,
+      PalEyesTokens.green500,
+      PalEyesTokens.terracotta,
+      PalEyesTokens.sea,
+    ];
+
+    return _PaperCard(
+      onTap: onTap,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Expanded(
+            flex: 3,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Expanded(
+                  child: ClipRect(
+                    child: SingleChildScrollView(
+                      physics: const NeverScrollableScrollPhysics(),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            'استكشف على الخريطة',
+                            style: theme.textTheme.titleLarge?.copyWith(
+                              color: PalEyesTokens.text(context),
+                            ),
+                          ),
+                          const SizedBox(height: 6),
+                          Text(
+                            '${sites.length} موقعاً في الأطلس • $mappedCount بإحداثيات عامة معتمدة',
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: PalEyesTokens.textMuted(context),
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          for (var i = 0; i < top.length && i < 4; i++)
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 4),
+                              child: Row(
+                                children: <Widget>[
+                                  Container(
+                                    width: 9,
+                                    height: 9,
+                                    decoration: BoxDecoration(
+                                      color: dots[i],
+                                      shape: BoxShape.circle,
+                                    ),
+                                  ),
+                                  const SizedBox(width: 8),
+                                  Expanded(
+                                    child: Text(
+                                      '${top[i].key} (${top[i].value})',
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: theme.textTheme.bodySmall
+                                          ?.copyWith(
+                                            color: PalEyesTokens.text(context),
+                                          ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 10),
+                FilledButton.icon(
+                  onPressed: onTap,
+                  style: FilledButton.styleFrom(
+                    backgroundColor: PalEyesTokens.green800,
+                    foregroundColor: PalEyesTokens.inkOnDark,
+                    shape: const StadiumBorder(),
+                    minimumSize: const Size(0, 44),
+                  ),
+                  icon: const Icon(Icons.arrow_forward_rounded, size: 18),
+                  label: const Text('فتح الخريطة'),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+            flex: 2,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(PalEyesTokens.radius),
+              child: LayoutBuilder(
+                builder: (context, box) => OverflowBox(
+                  alignment: Alignment.centerLeft,
+                  minWidth: 0,
+                  maxWidth: double.infinity,
+                  child: Image.asset(
+                    ApprovedReferenceDesign.gatewayAssets[1],
+                    height: box.maxHeight,
+                    fit: BoxFit.fitHeight,
+                    semanticLabel: 'صورة جوية لساحل فلسطين',
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Recent research
+// ---------------------------------------------------------------------------
+
+class _ResearchTeaser {
+  const _ResearchTeaser({required this.site, required this.statusLabel});
+
+  final HeritageSite site;
+  final String statusLabel;
+}
+
+class _SectionHeading extends StatelessWidget {
+  const _SectionHeading({
+    required this.title,
+    required this.actionLabel,
+    required this.onAction,
+  });
+
+  final String title;
+  final String actionLabel;
+  final VoidCallback onAction;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: <Widget>[
+        Expanded(
+          child: Text(
+            title,
+            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+              color: PalEyesTokens.text(context),
+            ),
+          ),
+        ),
+        TextButton.icon(
+          onPressed: onAction,
+          style: TextButton.styleFrom(
+            foregroundColor: PalEyesTokens.accentText(context),
+          ),
+          icon: const Icon(Icons.arrow_forward_rounded, size: 18),
+          label: Text(actionLabel),
         ),
       ],
     );
   }
 }
 
-class _CityChip extends StatelessWidget {
-  const _CityChip({required this.label, required this.onTap});
-
-  final String label;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) => ActionChip(
-    onPressed: onTap,
-    label: Text(label),
-    labelStyle: const TextStyle(
-      color: ApprovedReferenceDesign.cream,
-      fontWeight: FontWeight.w800,
-    ),
-    backgroundColor: ApprovedReferenceDesign.surface.withValues(alpha: 0.82),
-    side: const BorderSide(color: ApprovedReferenceDesign.line),
-  );
-}
-
-class _ProductGatewaysSection extends StatelessWidget {
-  const _ProductGatewaysSection({
-    required this.onStories,
-    required this.onMap,
-    required this.onPlaces,
-    required this.onResearch,
-    required this.onMemory,
-    required this.onSources,
+class _RecentResearchSection extends StatelessWidget {
+  const _RecentResearchSection({
+    required this.items,
+    required this.onAll,
+    required this.onOpen,
   });
 
-  final VoidCallback onStories;
-  final VoidCallback onMap;
-  final VoidCallback onPlaces;
-  final VoidCallback onResearch;
-  final VoidCallback onMemory;
-  final VoidCallback onSources;
+  final List<_ResearchTeaser> items;
+  final VoidCallback onAll;
+  final ValueChanged<String> onOpen;
 
   @override
   Widget build(BuildContext context) {
-    final items = <({String asset, String label, VoidCallback onTap})>[
-      (
-        asset: ApprovedReferenceDesign.gatewayAssets[0],
-        label: 'القصص والذاكرة',
-        onTap: onStories,
-      ),
-      (
-        asset: ApprovedReferenceDesign.gatewayAssets[1],
-        label: 'الخريطة',
-        onTap: onMap,
-      ),
-      (
-        asset: ApprovedReferenceDesign.gatewayAssets[2],
-        label: 'الأماكن',
-        onTap: onPlaces,
-      ),
-      (
-        asset: ApprovedReferenceDesign.gatewayAssets[4],
-        label: 'مكتبة البحوث',
-        onTap: onResearch,
-      ),
-      (
-        asset: ApprovedReferenceDesign.gatewayAssets[3],
-        label: 'الخط الزمني',
-        onTap: onMemory,
-      ),
-      (
-        asset: ApprovedReferenceDesign.gatewayAssets[4],
-        label: 'المصادر',
-        onTap: onSources,
-      ),
-    ];
-
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        if (constraints.maxWidth < 900) {
-          return SizedBox(
-            height: 132,
-            child: ListView.separated(
-              scrollDirection: Axis.horizontal,
-              reverse: true,
-              itemCount: items.length,
-              separatorBuilder: (_, _) => const SizedBox(width: 12),
-              itemBuilder: (context, index) => SizedBox(
-                width: 282,
-                child: _ImageActionCard(item: items[index]),
-              ),
-            ),
-          );
-        }
-        final gap = 12.0;
-        final width = (constraints.maxWidth - gap * 5) / 6;
-        return Row(
-          textDirection: TextDirection.ltr,
-          children: <Widget>[
-            for (var index = 0; index < items.length; index++) ...<Widget>[
-              if (index > 0) const SizedBox(width: 12),
-              SizedBox(
-                width: width,
-                child: _ImageActionCard(item: items[index]),
-              ),
-            ],
-          ],
-        );
-      },
-    );
-  }
-}
-
-class _ImageActionCard extends StatelessWidget {
-  const _ImageActionCard({required this.item});
-
-  final ({String asset, String label, VoidCallback onTap}) item;
-
-  @override
-  Widget build(BuildContext context) {
-    return _HoverLift(
-      child: Semantics(
-        button: true,
-        label: item.label,
-        child: InkWell(
-          onTap: item.onTap,
-          borderRadius: BorderRadius.circular(18),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(18),
-            child: AspectRatio(
-              aspectRatio: 2.38,
-              child: Image.asset(
-                item.asset,
-                fit: BoxFit.cover,
-                filterQuality: FilterQuality.high,
-              ),
-            ),
-          ),
+    final theme = Theme.of(context);
+    return Column(
+      key: const Key('home-research-section'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        _SectionHeading(
+          title: 'أحدث البحوث',
+          actionLabel: 'مكتبة البحوث',
+          onAction: onAll,
         ),
-      ),
-    );
-  }
-}
-
-class _FeatureTriad extends StatelessWidget {
-  const _FeatureTriad({
-    required this.activeEra,
-    required this.onEraAdvance,
-    required this.onTimeline,
-    required this.onMap,
-    required this.onFeatured,
-  });
-
-  final int activeEra;
-  final VoidCallback onEraAdvance;
-  final VoidCallback onTimeline;
-  final VoidCallback onMap;
-  final VoidCallback onFeatured;
-
-  static const List<String> _eras = <String>[
-    'القديم',
-    'الروماني',
-    'البيزنطي',
-    'الإسلامي',
-    'المملوكي',
-    'العثماني',
-    'الانتداب',
-    'المعاصر',
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        final panels = <Widget>[
-          _ReferencePanel(
-            asset: ApprovedReferenceDesign.timeline,
-            label: 'رحلة عبر الزمن • ${_eras[activeEra]}',
-            onTap: onEraAdvance,
-            secondaryAction: onTimeline,
-          ),
-          _ReferencePanel(
-            asset: ApprovedReferenceDesign.map,
-            label: 'اكتشف فلسطين على الخريطة',
-            onTap: onMap,
-          ),
-          _ReferencePanel(
-            asset: ApprovedReferenceDesign.featured,
-            label: 'مكان مميز هذا الأسبوع',
-            onTap: onFeatured,
-          ),
-        ];
-        if (constraints.maxWidth < 980) {
-          return Column(
-            children: <Widget>[
-              for (var index = 0; index < panels.length; index++) ...<Widget>[
-                if (index > 0) const SizedBox(height: 14),
-                SizedBox(height: 255, child: panels[index]),
-              ],
-            ],
-          );
-        }
-        return SizedBox(
-          height: 259,
-          child: Row(
-            textDirection: TextDirection.ltr,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              Expanded(flex: 525, child: panels[0]),
-              const SizedBox(width: 14),
-              Expanded(flex: 470, child: panels[1]),
-              const SizedBox(width: 14),
-              Expanded(flex: 417, child: panels[2]),
-            ],
-          ),
-        );
-      },
-    );
-  }
-}
-
-class _ReferencePanel extends StatelessWidget {
-  const _ReferencePanel({
-    required this.asset,
-    required this.label,
-    required this.onTap,
-    this.secondaryAction,
-  });
-
-  final String asset;
-  final String label;
-  final VoidCallback onTap;
-  final VoidCallback? secondaryAction;
-
-  @override
-  Widget build(BuildContext context) {
-    return _HoverLift(
-      child: Semantics(
-        button: true,
-        label: label,
-        child: InkWell(
-          onTap: onTap,
-          onLongPress: secondaryAction,
-          borderRadius: BorderRadius.circular(20),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(20),
-            child: Image.asset(
-              asset,
-              fit: BoxFit.cover,
-              filterQuality: FilterQuality.high,
+        const SizedBox(height: 10),
+        if (items.isEmpty)
+          _PaperCard(
+            onTap: onAll,
+            child: Text(
+              'تظهر البحوث هنا بعد اكتمال المراجعة التخصصية واعتماد النشر.',
+              style: theme.textTheme.bodyMedium?.copyWith(
+                color: PalEyesTokens.textMuted(context),
+              ),
             ),
+          )
+        else
+          LayoutBuilder(
+            builder: (context, constraints) {
+              final columns = constraints.maxWidth >= 1000
+                  ? 3
+                  : constraints.maxWidth >= 640
+                  ? 2
+                  : 1;
+              const gap = 14.0;
+              final width =
+                  (constraints.maxWidth - gap * (columns - 1)) / columns;
+              return Wrap(
+                spacing: gap,
+                runSpacing: gap,
+                children: items
+                    .map(
+                      (item) => SizedBox(
+                        width: width,
+                        child: _PaperCard(
+                          onTap: () => onOpen(item.site.slug),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Container(
+                                width: 56,
+                                height: 56,
+                                decoration: BoxDecoration(
+                                  color: PalEyesTokens.green100,
+                                  borderRadius: BorderRadius.circular(
+                                    PalEyesTokens.radiusSmall,
+                                  ),
+                                ),
+                                child: const Icon(
+                                  Icons.menu_book_outlined,
+                                  color: PalEyesTokens.green700,
+                                ),
+                              ),
+                              const SizedBox(width: 14),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    _Pill(label: item.statusLabel),
+                                    const SizedBox(height: 8),
+                                    Text(
+                                      item.site.nameAr,
+                                      maxLines: 2,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: theme.textTheme.titleMedium
+                                          ?.copyWith(
+                                            color: PalEyesTokens.text(context),
+                                          ),
+                                    ),
+                                    const SizedBox(height: 2),
+                                    Text(
+                                      <String>[
+                                        item.site.governorateAr,
+                                        item.site.siteTypeAr,
+                                      ].where((v) => v.isNotEmpty).join(' • '),
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: theme.textTheme.bodySmall
+                                          ?.copyWith(
+                                            color: PalEyesTokens.textMuted(
+                                              context,
+                                            ),
+                                          ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    )
+                    .toList(growable: false),
+              );
+            },
           ),
-        ),
-      ),
+      ],
     );
   }
 }
+
+// ---------------------------------------------------------------------------
+// Stories strip (existing approved story imagery)
+// ---------------------------------------------------------------------------
 
 class _StoryStrip extends StatelessWidget {
   const _StoryStrip({required this.onStories, required this.onAbout});
@@ -591,11 +1324,12 @@ class _StoryStrip extends StatelessWidget {
     final cards = ApprovedReferenceDesign.storyAssets
         .map(
           (asset) => _HoverLift(
-            child: InkWell(
-              onTap: onStories,
-              borderRadius: BorderRadius.circular(18),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(18),
+            child: Material(
+              color: PalEyesTokens.green900,
+              borderRadius: BorderRadius.circular(PalEyesTokens.radius),
+              clipBehavior: Clip.antiAlias,
+              child: InkWell(
+                onTap: onStories,
                 child: Image.asset(
                   asset,
                   fit: BoxFit.cover,
@@ -609,24 +1343,22 @@ class _StoryStrip extends StatelessWidget {
 
     return LayoutBuilder(
       builder: (context, constraints) {
+        final heading = Text(
+          'قصص من المكان',
+          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+            color: PalEyesTokens.text(context),
+          ),
+        );
         if (constraints.maxWidth < 920) {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Text(
-                'قصص من المكان',
-                textAlign: TextAlign.start,
-                style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                  color: ApprovedReferenceDesign.goldSoft,
-                  fontWeight: FontWeight.w900,
-                ),
-              ),
+              heading,
               const SizedBox(height: 12),
               SizedBox(
                 height: 145,
                 child: ListView.separated(
                   scrollDirection: Axis.horizontal,
-                  reverse: true,
                   itemCount: cards.length,
                   separatorBuilder: (_, _) => const SizedBox(width: 12),
                   itemBuilder: (_, index) =>
@@ -638,75 +1370,44 @@ class _StoryStrip extends StatelessWidget {
             ],
           );
         }
-        return Row(
-          textDirection: TextDirection.ltr,
-          crossAxisAlignment: CrossAxisAlignment.center,
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            SizedBox(
-              width: 140,
-              child: _StoryDiscoveryControl(onTap: onStories),
-            ),
-            const SizedBox(width: 14),
-            ...<Widget>[
-              for (var index = 0; index < cards.length; index++) ...<Widget>[
-                if (index > 0) const SizedBox(width: 12),
-                SizedBox(width: 164, height: 128, child: cards[index]),
+            Row(
+              children: <Widget>[
+                Expanded(child: heading),
+                TextButton.icon(
+                  onPressed: onStories,
+                  style: TextButton.styleFrom(
+                    foregroundColor: PalEyesTokens.accentText(context),
+                  ),
+                  icon: const Icon(Icons.arrow_forward_rounded, size: 18),
+                  label: const Text('كل الحكايات'),
+                ),
               ],
-            ],
-            const SizedBox(width: 20),
-            Expanded(child: _MemoryCta(onTap: onAbout)),
+            ),
+            const SizedBox(height: 12),
+            SizedBox(
+              height: 136,
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  for (
+                    var index = 0;
+                    index < cards.length;
+                    index++
+                  ) ...<Widget>[
+                    if (index > 0) const SizedBox(width: 12),
+                    Expanded(child: cards[index]),
+                  ],
+                  const SizedBox(width: 16),
+                  Expanded(flex: 2, child: _MemoryCta(onTap: onAbout)),
+                ],
+              ),
+            ),
           ],
         );
       },
-    );
-  }
-}
-
-class _StoryDiscoveryControl extends StatelessWidget {
-  const _StoryDiscoveryControl({required this.onTap});
-
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 128,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Text(
-            'قصص من المكان',
-            style: Theme.of(context).textTheme.titleSmall?.copyWith(
-              color: ApprovedReferenceDesign.cream,
-              fontWeight: FontWeight.w900,
-            ),
-          ),
-          const SizedBox(height: 4),
-          Text(
-            'اكتشف المزيد من القصص',
-            style: Theme.of(context).textTheme.bodySmall?.copyWith(
-              color: ApprovedReferenceDesign.muted,
-            ),
-          ),
-          const SizedBox(height: 12),
-          Row(
-            children: <Widget>[
-              IconButton.outlined(
-                onPressed: onTap,
-                icon: const Icon(Icons.arrow_back_rounded),
-                color: ApprovedReferenceDesign.gold,
-              ),
-              const SizedBox(width: 8),
-              IconButton.outlined(
-                onPressed: onTap,
-                icon: const Icon(Icons.arrow_forward_rounded),
-                color: ApprovedReferenceDesign.gold,
-              ),
-            ],
-          ),
-        ],
-      ),
     );
   }
 }
@@ -721,15 +1422,16 @@ class _MemoryCta extends StatelessWidget {
     child: Semantics(
       button: true,
       label: 'معاً نحفظ الذاكرة لأجيال قادمة',
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(18),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(18),
+      child: Material(
+        color: PalEyesTokens.cream,
+        borderRadius: BorderRadius.circular(PalEyesTokens.radius),
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          onTap: onTap,
           child: Image.asset(
             ApprovedReferenceDesign.memoryCta,
             fit: BoxFit.cover,
-            height: 128,
+            height: 136,
             width: double.infinity,
             filterQuality: FilterQuality.high,
           ),
@@ -738,6 +1440,219 @@ class _MemoryCta extends StatelessWidget {
     ),
   );
 }
+
+// ---------------------------------------------------------------------------
+// Timeline band
+// ---------------------------------------------------------------------------
+
+class _TimelineBand extends StatelessWidget {
+  const _TimelineBand({
+    required this.activeEra,
+    required this.horizontal,
+    required this.onEra,
+    required this.onTimeline,
+  });
+
+  final int activeEra;
+  final double horizontal;
+  final ValueChanged<int> onEra;
+  final VoidCallback onTimeline;
+
+  static const List<String> _eras = <String>[
+    'القديم',
+    'الروماني',
+    'البيزنطي',
+    'الإسلامي المبكر',
+    'المملوكي',
+    'العثماني',
+    'الانتداب',
+    'المعاصر',
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final narrow = MediaQuery.sizeOf(context).width < 760;
+    return Container(
+      key: const Key('home-timeline-band'),
+      decoration: const BoxDecoration(
+        gradient: PalEyesTokens.structureGradient,
+      ),
+      padding: EdgeInsets.fromLTRB(horizontal, 30, horizontal, 30),
+      child: Center(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(
+            maxWidth: PalEyesTokens.maxContentWidth,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Wrap(
+                alignment: WrapAlignment.spaceBetween,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                runSpacing: 12,
+                spacing: 12,
+                children: <Widget>[
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Text(
+                        'رحلة عبر الزمن',
+                        style: theme.textTheme.headlineMedium?.copyWith(
+                          color: PalEyesTokens.inkOnDark,
+                        ),
+                      ),
+                      Text(
+                        'تعرّف على المراحل التاريخية التي شكّلت فلسطين عبر العصور.',
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          color: PalEyesTokens.inkOnDarkMuted,
+                        ),
+                      ),
+                    ],
+                  ),
+                  OutlinedButton.icon(
+                    onPressed: onTimeline,
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: PalEyesTokens.goldSoft,
+                      side: const BorderSide(color: PalEyesTokens.gold),
+                      shape: const StadiumBorder(),
+                    ),
+                    icon: const Icon(Icons.arrow_forward_rounded, size: 18),
+                    label: const Text('استكشف الخط الزمني'),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 20),
+              SizedBox(
+                height: 64,
+                child: ListView.separated(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: _eras.length,
+                  separatorBuilder: (_, _) => Center(
+                    child: Container(
+                      width: narrow ? 18 : 34,
+                      height: 1,
+                      color: PalEyesTokens.gold.withValues(alpha: 0.5),
+                    ),
+                  ),
+                  itemBuilder: (context, index) {
+                    final selected = index == activeEra;
+                    return Semantics(
+                      button: true,
+                      selected: selected,
+                      label: 'العصر ${_eras[index]}',
+                      excludeSemantics: true,
+                      child: InkWell(
+                        onTap: () => onEra(index),
+                        borderRadius: BorderRadius.circular(12),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 6,
+                            vertical: 6,
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              AnimatedContainer(
+                                duration: const Duration(milliseconds: 180),
+                                width: selected ? 18 : 12,
+                                height: selected ? 18 : 12,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: selected
+                                      ? PalEyesTokens.gold
+                                      : Colors.transparent,
+                                  border: Border.all(
+                                    color: PalEyesTokens.gold,
+                                    width: 2,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(height: 6),
+                              Text(
+                                _eras[index],
+                                style: TextStyle(
+                                  color: selected
+                                      ? PalEyesTokens.goldSoft
+                                      : PalEyesTokens.inkOnDark,
+                                  fontWeight: selected
+                                      ? FontWeight.w700
+                                      : FontWeight.w500,
+                                  fontSize: 13,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Footer
+// ---------------------------------------------------------------------------
+
+class _HomeFooter extends StatelessWidget {
+  const _HomeFooter({required this.horizontal});
+
+  final double horizontal;
+
+  @override
+  Widget build(BuildContext context) {
+    final links = <(String, String)>[
+      ('المنهجية', RoutePaths.methodology),
+      ('المصادر', RoutePaths.sources),
+      ('ساهم في الذاكرة', RoutePaths.contribute),
+      ('المحافظات', RoutePaths.governorates),
+    ];
+    return Container(
+      color: PalEyesTokens.green950,
+      padding: EdgeInsets.fromLTRB(horizontal, 22, horizontal, 26),
+      child: Center(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(
+            maxWidth: PalEyesTokens.maxContentWidth,
+          ),
+          child: Wrap(
+            alignment: WrapAlignment.spaceBetween,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            spacing: 16,
+            runSpacing: 12,
+            children: <Widget>[
+              const PalEyesBrandMark(foregroundColor: PalEyesTokens.inkOnDark),
+              Wrap(
+                spacing: 4,
+                children: links
+                    .map(
+                      (link) => TextButton(
+                        onPressed: () => context.go(link.$2),
+                        style: TextButton.styleFrom(
+                          foregroundColor: PalEyesTokens.inkOnDarkMuted,
+                        ),
+                        child: Text(link.$1),
+                      ),
+                    )
+                    .toList(growable: false),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ---------------------------------------------------------------------------
 
 class _HoverLift extends StatefulWidget {
   const _HoverLift({required this.child});
@@ -756,27 +1671,15 @@ class _HoverLiftState extends State<_HoverLift> {
     return MouseRegion(
       onEnter: (_) => setState(() => _hovered = true),
       onExit: (_) => setState(() => _hovered = false),
-      child: AnimatedScale(
-        scale: _hovered ? 1.018 : 1,
+      child: AnimatedContainer(
         duration: const Duration(milliseconds: 180),
         curve: Curves.easeOutCubic,
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 180),
-          curve: Curves.easeOutCubic,
-          transform: Matrix4.translationValues(0, _hovered ? -5 : 0, 0),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            boxShadow: <BoxShadow>[
-              BoxShadow(
-                color: ApprovedReferenceDesign.gold.withValues(
-                  alpha: _hovered ? 0.16 : 0,
-                ),
-                blurRadius: 28,
-              ),
-            ],
-          ),
-          child: widget.child,
+        transform: Matrix4.translationValues(0, _hovered ? -4 : 0, 0),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(PalEyesTokens.radiusLarge),
+          boxShadow: PalEyesTokens.softShadow(strength: _hovered ? 2 : 0.6),
         ),
+        child: widget.child,
       ),
     );
   }

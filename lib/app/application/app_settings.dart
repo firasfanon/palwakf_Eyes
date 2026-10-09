@@ -21,7 +21,7 @@ final themeModeControllerProvider =
 
 class ThemeModeController extends Notifier<ThemeMode> {
   @override
-  ThemeMode build() => ThemeMode.dark;
+  ThemeMode build() => ThemeMode.light;
 
   void toggle() {
     state = state == ThemeMode.light ? ThemeMode.dark : ThemeMode.light;

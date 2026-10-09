@@ -659,27 +659,30 @@ class _AttentionPanel extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           ...items.map(
-            (item) => ListTile(
-              contentPadding: const EdgeInsets.symmetric(
-                horizontal: 4,
-                vertical: 4,
-              ),
-              leading: Icon(item.icon, color: ApprovedReferenceDesign.gold),
-              title: Text(
-                item.title,
-                style: TextStyle(
-                  color: ApprovedReferenceDesign.foreground(context),
-                  fontWeight: FontWeight.w800,
+            (item) => Material(
+              color: Colors.transparent,
+              child: ListTile(
+                contentPadding: const EdgeInsets.symmetric(
+                  horizontal: 4,
+                  vertical: 4,
                 ),
-              ),
-              subtitle: Text(
-                item.note,
-                style: TextStyle(
-                  color: ApprovedReferenceDesign.secondaryForeground(context),
+                leading: Icon(item.icon, color: ApprovedReferenceDesign.gold),
+                title: Text(
+                  item.title,
+                  style: TextStyle(
+                    color: ApprovedReferenceDesign.foreground(context),
+                    fontWeight: FontWeight.w800,
+                  ),
                 ),
+                subtitle: Text(
+                  item.note,
+                  style: TextStyle(
+                    color: ApprovedReferenceDesign.secondaryForeground(context),
+                  ),
+                ),
+                trailing: const Icon(Icons.arrow_back_rounded),
+                onTap: item.action,
               ),
-              trailing: const Icon(Icons.arrow_back_rounded),
-              onTap: item.action,
             ),
           ),
         ],

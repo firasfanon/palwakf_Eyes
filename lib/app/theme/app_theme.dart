@@ -1,42 +1,56 @@
 import 'package:flutter/material.dart';
 import 'package:pal_eyes/app/theme/app_colors.dart';
+import 'package:pal_eyes/app/theme/pal_eyes_design_tokens.dart';
 
 abstract final class AppTheme {
   static ThemeData light() {
     final scheme = ColorScheme.fromSeed(
-      seedColor: AppColors.sovereignBlue,
+      seedColor: PalEyesTokens.green800,
       brightness: Brightness.light,
-      primary: AppColors.sovereignBlue,
-      secondary: AppColors.heritageGold,
-      tertiary: AppColors.olive,
-      error: AppColors.royalRed,
-      surface: AppColors.warmCanvas,
+      primary: PalEyesTokens.green800,
+      onPrimary: PalEyesTokens.inkOnDark,
+      primaryContainer: PalEyesTokens.green100,
+      onPrimaryContainer: PalEyesTokens.green900,
+      secondary: PalEyesTokens.goldDeep,
+      onSecondary: Colors.white,
+      secondaryContainer: PalEyesTokens.goldWash,
+      onSecondaryContainer: PalEyesTokens.ink,
+      tertiary: PalEyesTokens.green600,
+      tertiaryContainer: PalEyesTokens.cream,
+      onTertiaryContainer: PalEyesTokens.ink,
+      surfaceContainerHighest: PalEyesTokens.cream,
+      error: PalEyesTokens.alert,
+      surface: PalEyesTokens.paper,
+      onSurface: PalEyesTokens.ink,
+      onSurfaceVariant: PalEyesTokens.inkMuted,
+      outline: PalEyesTokens.lineStrong,
+      outlineVariant: PalEyesTokens.line,
     );
 
     return _base(scheme).copyWith(
-      scaffoldBackgroundColor: AppColors.approvedIvory,
+      scaffoldBackgroundColor: PalEyesTokens.ivory,
       appBarTheme: const AppBarTheme(
         centerTitle: false,
         elevation: 0,
         scrolledUnderElevation: 0,
-        backgroundColor: AppColors.midnight,
-        foregroundColor: Colors.white,
+        backgroundColor: PalEyesTokens.green900,
+        foregroundColor: PalEyesTokens.inkOnDark,
         surfaceTintColor: Colors.transparent,
       ),
       cardTheme: CardThemeData(
         elevation: 0,
         margin: EdgeInsets.zero,
         clipBehavior: Clip.antiAlias,
-        color: Colors.white.withValues(alpha: 0.92),
-        shadowColor: AppColors.approvedNavy.withValues(alpha: 0.08),
+        color: PalEyesTokens.paper,
+        shadowColor: PalEyesTokens.green950.withValues(alpha: 0.08),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(26),
+          borderRadius: BorderRadius.circular(PalEyesTokens.radiusLarge),
           side: const BorderSide(color: AppColors.approvedOutline),
         ),
       ),
       inputDecorationTheme: _inputs(
-        fill: AppColors.approvedIvory.withValues(alpha: 0.98),
-        border: AppColors.sovereignBlue.withValues(alpha: 0.10),
+        fill: PalEyesTokens.paper,
+        border: PalEyesTokens.line,
       ),
       navigationBarTheme: NavigationBarThemeData(
         height: 70,
@@ -46,6 +60,7 @@ abstract final class AppTheme {
         indicatorColor: AppColors.heritageGold.withValues(alpha: 0.22),
         labelTextStyle: WidgetStateProperty.resolveWith<TextStyle?>(
           (states) => TextStyle(
+            fontFamily: PalEyesTokens.fontBody,
             fontWeight: states.contains(WidgetState.selected)
                 ? FontWeight.w900
                 : FontWeight.w700,
@@ -57,22 +72,25 @@ abstract final class AppTheme {
 
   static ThemeData dark() {
     final scheme = ColorScheme.fromSeed(
-      seedColor: AppColors.heritageGold,
+      seedColor: PalEyesTokens.green600,
       brightness: Brightness.dark,
-      primary: AppColors.softGold,
-      secondary: AppColors.heritageGold,
-      tertiary: AppColors.oliveLight,
-      error: const Color(0xFFFF8E8E),
-      surface: AppColors.midnight,
+      primary: PalEyesTokens.goldSoft,
+      onPrimary: PalEyesTokens.green950,
+      secondary: PalEyesTokens.gold,
+      tertiary: PalEyesTokens.green500,
+      error: const Color(0xFFFF9A8A),
+      surface: PalEyesTokens.nightSurface,
+      onSurface: PalEyesTokens.inkOnDark,
+      onSurfaceVariant: PalEyesTokens.inkOnDarkMuted,
     );
 
     return _base(scheme).copyWith(
-      scaffoldBackgroundColor: const Color(0xFF071724),
+      scaffoldBackgroundColor: PalEyesTokens.nightBase,
       appBarTheme: const AppBarTheme(
         centerTitle: false,
         elevation: 0,
         scrolledUnderElevation: 0,
-        backgroundColor: Color(0xFF061522),
+        backgroundColor: PalEyesTokens.green950,
         foregroundColor: Colors.white,
         surfaceTintColor: Colors.transparent,
       ),
@@ -80,7 +98,7 @@ abstract final class AppTheme {
         elevation: 0,
         margin: EdgeInsets.zero,
         clipBehavior: Clip.antiAlias,
-        color: const Color(0xFF0D2233),
+        color: PalEyesTokens.nightSurface,
         shadowColor: Colors.black.withValues(alpha: 0.28),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
@@ -88,13 +106,13 @@ abstract final class AppTheme {
         ),
       ),
       inputDecorationTheme: _inputs(
-        fill: const Color(0xFF10283A),
+        fill: PalEyesTokens.nightRaised,
         border: Colors.white.withValues(alpha: 0.10),
       ),
       navigationBarTheme: NavigationBarThemeData(
         height: 70,
         elevation: 8,
-        backgroundColor: const Color(0xFF0A1E2E),
+        backgroundColor: PalEyesTokens.nightSurface,
         surfaceTintColor: Colors.transparent,
         indicatorColor: AppColors.heritageGold.withValues(alpha: 0.20),
       ),
@@ -102,31 +120,47 @@ abstract final class AppTheme {
   }
 
   static ThemeData _base(ColorScheme scheme) {
+    const display = PalEyesTokens.fontDisplay;
     final textTheme = const TextTheme(
       displayLarge: TextStyle(
-        fontWeight: FontWeight.w900,
-        height: 1.16,
-        letterSpacing: -0.6,
+        fontFamily: display,
+        fontWeight: FontWeight.w700,
+        height: 1.25,
       ),
       displayMedium: TextStyle(
-        fontWeight: FontWeight.w900,
-        height: 1.20,
-        letterSpacing: -0.4,
+        fontFamily: display,
+        fontWeight: FontWeight.w700,
+        height: 1.28,
       ),
-      displaySmall: TextStyle(fontWeight: FontWeight.w900, height: 1.24),
-      headlineLarge: TextStyle(fontWeight: FontWeight.w900, height: 1.28),
-      headlineMedium: TextStyle(fontWeight: FontWeight.w900, height: 1.30),
-      headlineSmall: TextStyle(fontWeight: FontWeight.w900, height: 1.32),
-      titleLarge: TextStyle(fontWeight: FontWeight.w900, height: 1.38),
-      titleMedium: TextStyle(fontWeight: FontWeight.w800, height: 1.42),
-      bodyLarge: TextStyle(height: 1.72),
-      bodyMedium: TextStyle(height: 1.65),
-      labelLarge: TextStyle(fontWeight: FontWeight.w800),
+      displaySmall: TextStyle(
+        fontFamily: display,
+        fontWeight: FontWeight.w700,
+        height: 1.3,
+      ),
+      headlineLarge: TextStyle(
+        fontFamily: display,
+        fontWeight: FontWeight.w700,
+        height: 1.34,
+      ),
+      headlineMedium: TextStyle(
+        fontFamily: display,
+        fontWeight: FontWeight.w700,
+        height: 1.36,
+      ),
+      headlineSmall: TextStyle(fontWeight: FontWeight.w700, height: 1.4),
+      titleLarge: TextStyle(fontWeight: FontWeight.w700, height: 1.42),
+      titleMedium: TextStyle(fontWeight: FontWeight.w600, height: 1.46),
+      titleSmall: TextStyle(fontWeight: FontWeight.w600, height: 1.46),
+      bodyLarge: TextStyle(height: 1.75),
+      bodyMedium: TextStyle(height: 1.7),
+      bodySmall: TextStyle(height: 1.6),
+      labelLarge: TextStyle(fontWeight: FontWeight.w600),
     );
 
     return ThemeData(
       useMaterial3: true,
       colorScheme: scheme,
+      fontFamily: PalEyesTokens.fontBody,
       textTheme: textTheme,
       visualDensity: VisualDensity.standard,
       materialTapTargetSize: MaterialTapTargetSize.padded,
@@ -145,7 +179,10 @@ abstract final class AppTheme {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
           ),
-          textStyle: const TextStyle(fontWeight: FontWeight.w900),
+          textStyle: const TextStyle(
+            fontFamily: PalEyesTokens.fontBody,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
@@ -156,7 +193,10 @@ abstract final class AppTheme {
             borderRadius: BorderRadius.circular(16),
           ),
           side: BorderSide(color: scheme.outline.withValues(alpha: 0.45)),
-          textStyle: const TextStyle(fontWeight: FontWeight.w900),
+          textStyle: const TextStyle(
+            fontFamily: PalEyesTokens.fontBody,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ),
       textButtonTheme: TextButtonThemeData(
@@ -165,7 +205,10 @@ abstract final class AppTheme {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(14),
           ),
-          textStyle: const TextStyle(fontWeight: FontWeight.w900),
+          textStyle: const TextStyle(
+            fontFamily: PalEyesTokens.fontBody,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ),
       chipTheme: ChipThemeData(
@@ -176,6 +219,7 @@ abstract final class AppTheme {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(99)),
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 7),
         labelStyle: TextStyle(
+          fontFamily: PalEyesTokens.fontBody,
           color: scheme.onSurface,
           fontWeight: FontWeight.w700,
         ),
@@ -185,7 +229,10 @@ abstract final class AppTheme {
           color: AppColors.ink,
           borderRadius: BorderRadius.circular(10),
         ),
-        textStyle: const TextStyle(color: Colors.white),
+        textStyle: const TextStyle(
+          fontFamily: PalEyesTokens.fontBody,
+          color: Colors.white,
+        ),
       ),
     );
   }
@@ -208,7 +255,10 @@ abstract final class AppTheme {
       focusedBorder: outline(AppColors.heritageGold),
       errorBorder: outline(AppColors.royalRed),
       focusedErrorBorder: outline(AppColors.royalRed),
-      floatingLabelStyle: const TextStyle(fontWeight: FontWeight.w900),
+      floatingLabelStyle: const TextStyle(
+        fontFamily: PalEyesTokens.fontBody,
+        fontWeight: FontWeight.w700,
+      ),
     );
   }
 }

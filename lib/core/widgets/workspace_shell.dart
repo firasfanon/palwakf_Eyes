@@ -4,8 +4,10 @@ import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/application/app_settings.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/app_colors.dart';
+import 'package:pal_eyes/app/theme/pal_eyes_design_tokens.dart';
 import 'package:pal_eyes/core/widgets/governance_shell.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_visual_system.dart';
+import 'package:pal_eyes/core/widgets/pal_eyes_zone_strip.dart';
 
 class WorkspaceShell extends ConsumerWidget {
   const WorkspaceShell({
@@ -30,11 +32,10 @@ class WorkspaceShell extends ConsumerWidget {
         final sidebar = _WorkspaceSidebar(location: location);
         return Scaffold(
           appBar: AppBar(
+            bottom: const PalEyesZoneStrip(zone: PalEyesZone.workspace),
             toolbarHeight: 74,
             flexibleSpace: const DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: AppColors.sovereignGradient,
-              ),
+              decoration: BoxDecoration(gradient: AppColors.sovereignGradient),
               child: PalEyesPattern(opacity: 0.03),
             ),
             leading: wide
@@ -49,14 +50,13 @@ class WorkspaceShell extends ConsumerWidget {
             title: Row(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                const PalEyesBrandMark(compact: true),
+                const PalEyesBrandMark(
+                  compact: true,
+                  foregroundColor: PalEyesTokens.inkOnDark,
+                ),
                 if (!compact) ...<Widget>[
                   const SizedBox(width: 16),
-                  Container(
-                    width: 1,
-                    height: 30,
-                    color: Colors.white24,
-                  ),
+                  Container(width: 1, height: 30, color: Colors.white24),
                   const SizedBox(width: 14),
                   Text(
                     location.startsWith(RoutePaths.governance)
@@ -156,10 +156,7 @@ class _WorkspaceSidebar extends StatelessWidget {
                     SizedBox(height: 7),
                     Text(
                       'المواقع، التوثيق، المساهمات والمراجعات في مسار واحد واضح.',
-                      style: TextStyle(
-                        color: Colors.white70,
-                        height: 1.5,
-                      ),
+                      style: TextStyle(color: Colors.white70, height: 1.5),
                     ),
                   ],
                 ),
@@ -168,10 +165,7 @@ class _WorkspaceSidebar extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           ..._groups.map(
-            (group) => _NavigationGroupTile(
-              group: group,
-              location: location,
-            ),
+            (group) => _NavigationGroupTile(group: group, location: location),
           ),
         ],
       ),
@@ -363,10 +357,7 @@ class _WorkspaceSidebar extends StatelessWidget {
 }
 
 class _NavigationGroupTile extends StatelessWidget {
-  const _NavigationGroupTile({
-    required this.group,
-    required this.location,
-  });
+  const _NavigationGroupTile({required this.group, required this.location});
 
   final _WorkspaceGroup group;
   final String location;

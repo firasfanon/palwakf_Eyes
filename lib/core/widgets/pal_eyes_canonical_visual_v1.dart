@@ -1,23 +1,24 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:pal_eyes/app/theme/pal_eyes_design_tokens.dart';
 
 abstract final class PalEyesVisualV1 {
   static const double maxWidth = 1320;
   static const double radiusLarge = 28;
   static const double radiusMedium = 18;
-  static const Color parchment = Color(0xFFF6F0E4);
-  static const Color parchmentDeep = Color(0xFFE9DFC9);
-  static const Color paper = Color(0xFFFCF9F2);
-  static const Color olive = Color(0xFF5E6336);
-  static const Color oliveDark = Color(0xFF3D4327);
-  static const Color warmInk = Color(0xFF2A2923);
-  static const Color warmMuted = Color(0xFF756B5E);
-  static const Color warmLine = Color(0xFFD9CEB8);
+  static const Color parchment = PalEyesTokens.cream;
+  static const Color parchmentDeep = PalEyesTokens.line;
+  static const Color paper = PalEyesTokens.paper;
+  static const Color olive = PalEyesTokens.green700;
+  static const Color oliveDark = PalEyesTokens.green900;
+  static const Color warmInk = PalEyesTokens.ink;
+  static const Color warmMuted = PalEyesTokens.inkMuted;
+  static const Color warmLine = PalEyesTokens.line;
   static const Color mapSea = Color(0xFFB8D2CF);
   static const Color mapLand = Color(0xFFE7D8B5);
   static const Color terracotta = Color(0xFFA96E43);
-  static const Color sandGold = Color(0xFFC6A361);
+  static const Color sandGold = PalEyesTokens.gold;
 }
 
 class PalEyesParchmentPanel extends StatelessWidget {
