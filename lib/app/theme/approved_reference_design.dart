@@ -23,10 +23,10 @@ abstract final class ApprovedReferenceDesign {
 
   static const String assetRoot = 'assets/visual_reference_v1';
   static const String reference = '$assetRoot/approved_home_reference_v1.png';
-  static const String hero = '$assetRoot/hero_city.png';
-  static const String timeline = '$assetRoot/timeline_panel.png';
-  static const String map = '$assetRoot/map_panel.png';
-  static const String featured = '$assetRoot/featured_panel.png';
+  static const String hero = '$assetRoot/hero_city.jpg';
+  static const String timeline = '$assetRoot/timeline_panel.jpg';
+  static const String map = '$assetRoot/map_panel.jpg';
+  static const String featured = '$assetRoot/featured_panel.jpg';
   static const List<String> gatewayAssets = <String>[
     '$assetRoot/gateway_stories.png',
     '$assetRoot/gateway_map.png',
