@@ -49,13 +49,42 @@ insert into pal_eyes.audit_events (id, action, entity_type, entity_id, summary)
 values ('synthetic-audit-1', 'CREATE', 'site', 'synthetic-site-1', 'synthetic')
 on conflict do nothing;
 
+insert into pal_eyes.review_tasks (id, entity_type, entity_id, title, review_type, created_by) values
+  ('synthetic-review-1', 'site', 'synthetic-site-1', 'مراجعة اصطناعية ١', 'EDITORIAL', '00000000-0000-4000-8000-000000000003'),
+  ('synthetic-review-2', 'site', 'synthetic-site-1', 'مراجعة اصطناعية ٢', 'RIGHTS', '00000000-0000-4000-8000-000000000006')
+on conflict do nothing;
+
+do $fixture$
+begin
+  if to_regclass('pal_eyes.research_packages') is not null then
+    insert into pal_eyes.research_packages (record_id, package_id, version, site_entity_id, research_topic_id)
+    values ('synthetic-pkg-1', 'SYN-PKG-1', 'v1', 'synthetic-site-1', 'synthetic-topic')
+    on conflict do nothing;
+  end if;
+  if exists (select 1 from information_schema.columns
+              where table_schema = 'pal_eyes' and table_name = 'narrative_documents'
+                and column_name = 'approval_state') then
+    insert into pal_eyes.narrative_documents (id, research_package_id, title, approval_state)
+    values ('synthetic-doc-approved', 'synthetic-pkg-1', 'وثيقة معتمدة اصطناعية', 'APPROVED_FOR_PUBLICATION')
+    on conflict do nothing;
+    insert into pal_eyes.narrative_sections (id, narrative_document_id, section_order, title)
+    values ('synthetic-sec-approved', 'synthetic-doc-approved', 1, 'قسم')
+    on conflict do nothing;
+    insert into pal_eyes.narrative_paragraphs (id, narrative_section_id, paragraph_order, paragraph_text)
+    values ('synthetic-par-approved', 'synthetic-sec-approved', 1, 'فقرة معتمدة')
+    on conflict do nothing;
+  end if;
+end;
+$fixture$;
+
 create or replace function rls_test.probe(
   p_probe text,
   p_actor text,
   p_role text,
   p_sub uuid,
   p_sql text,
-  p_expect text  -- 'error' | 'ok' | 'rows=N' | 'rows>0' | 'affected=N'
+  p_expect text,  -- 'error' | 'ok' | 'rows=N' | 'rows>0' | 'affected=N'
+  p_aal text default 'aal2'
 )
 returns void
 language plpgsql
@@ -68,6 +97,8 @@ declare
 begin
   begin
     perform set_config('request.jwt.claim.sub', coalesce(p_sub::text, ''), true);
+    perform set_config('request.jwt.claims',
+      case when p_sub is null then '' else json_build_object('sub', p_sub, 'aal', p_aal)::text end, true);
     execute format('set local role %I', p_role);
     if p_expect like 'rows%' then
       execute 'select count(*) from (' || p_sql || ') q' into v_rows;
@@ -152,7 +183,7 @@ select rls_test.probe('C9 researcher appends an audit event (positive)', 'resear
 
 -- D. Editor
 select rls_test.probe('D1 editor updates draft text (positive CRUD)', 'editor', 'authenticated', :EDITOR,
-  $q$update pal_eyes.sites set editorial_draft = 'نص اصطناعي' where id = 'synthetic-site-1'$q$, 'affected=1');
+  $q$update pal_eyes.sites set editorial_draft = 'نص اصطناعي', version_number = version_number + 1 where id = 'synthetic-site-1'$q$, 'affected=1');
 select rls_test.probe('D2 editor publishes a site directly', 'editor', 'authenticated', :EDITOR,
   $q$update pal_eyes.sites set publication_status = 'PUBLISHED' where id = 'synthetic-site-1'$q$, 'error');
 select rls_test.probe('D2b editor promotes a site to CANDIDATE', 'editor', 'authenticated', :EDITOR,
@@ -187,6 +218,92 @@ select rls_test.probe('G1b system admin publishes a site (explicit authority)', 
   $q$update pal_eyes.sites set publication_status = 'PUBLISHED' where id = 'synthetic-site-1'$q$, 'affected=1');
 select rls_test.probe('G2 system admin rewrites an audit event', 'system-admin', 'authenticated', :ADMIN,
   $q$update pal_eyes.audit_events set summary = 'rewritten' where id = 'synthetic-audit-1'$q$, 'error');
+
+
+-- H. Workflow integrity and provenance (migration 0004)
+select rls_test.probe('H1 editor saves draft without version bump (lost update)', 'editor', 'authenticated', :EDITOR,
+  $q$update pal_eyes.sites set editorial_draft = 'stale' where id = 'synthetic-site-1'$q$, 'error');
+select rls_test.probe('H2 stale concurrent save is rejected', 'editor', 'authenticated', :EDITOR,
+  $q$do $d$ begin
+     update pal_eyes.sites set editorial_draft = 'first', version_number = 2 where id = 'synthetic-site-1';
+     update pal_eyes.sites set editorial_draft = 'second', version_number = 2 where id = 'synthetic-site-1';
+   end $d$$q$, 'error');
+select rls_test.probe('H3 editor cannot spoof created_by', 'editor', 'authenticated', :EDITOR,
+  $q$do $d$ begin
+     insert into pal_eyes.sources (id, title, created_by) values ('syn-src-spoof', 'x', '00000000-0000-4000-8000-000000000005');
+     if (select created_by from pal_eyes.sources where id = 'syn-src-spoof') is distinct from auth.uid() then
+       raise exception 'CREATED_BY_SPOOF_ACCEPTED';
+     end if;
+   end $d$$q$, 'ok');
+select rls_test.probe('H4 researcher cannot spoof audit actor', 'researcher', 'authenticated', :RESEARCHER,
+  $q$do $d$ begin
+     insert into pal_eyes.audit_events (id, action, entity_type, entity_id, actor_id)
+       values ('syn-audit-spoof', 'NOTE', 'site', 'synthetic-site-1', '00000000-0000-4000-8000-000000000005');
+     if (select actor_id from pal_eyes.audit_events where id = 'syn-audit-spoof') is distinct from auth.uid() then
+       raise exception 'ACTOR_SPOOF_ACCEPTED';
+     end if;
+   end $d$$q$, 'ok');
+select rls_test.probe('H5 system admin cannot grant a role to self', 'system-admin', 'authenticated', :ADMIN,
+  $q$insert into pal_eyes.user_roles (user_id, role_key) values ('00000000-0000-4000-8000-000000000005','release_manager')$q$, 'error');
+select rls_test.probe('H6 system admin cannot deactivate own role', 'system-admin', 'authenticated', :ADMIN,
+  $q$update pal_eyes.user_roles set is_active = false where user_id = '00000000-0000-4000-8000-000000000005'$q$, 'affected=0');
+select rls_test.probe('H6b system admin deactivates another user''s role (positive)', 'system-admin', 'authenticated', :ADMIN,
+  $q$update pal_eyes.user_roles set is_active = false where user_id = '00000000-0000-4000-8000-000000000003'$q$, 'affected=1');
+select rls_test.probe('H6c roles are never hard-deleted by API roles', 'system-admin', 'authenticated', :ADMIN,
+  $q$delete from pal_eyes.user_roles where user_id = '00000000-0000-4000-8000-000000000003'$q$, 'error');
+select rls_test.probe('H7 researcher cannot decide a review', 'researcher', 'authenticated', :RESEARCHER,
+  $q$update pal_eyes.review_tasks set status = 'ACCEPT' where id = 'synthetic-review-1'$q$, 'error');
+select rls_test.probe('H8 rights reviewer decides another author''s review (positive)', 'rights-reviewer', 'authenticated', :RIGHTS,
+  $q$update pal_eyes.review_tasks set status = 'ACCEPT' where id = 'synthetic-review-1'$q$, 'affected=1');
+select rls_test.probe('H9 rights reviewer cannot review own task', 'rights-reviewer', 'authenticated', :RIGHTS,
+  $q$update pal_eyes.review_tasks set status = 'ACCEPT' where id = 'synthetic-review-2'$q$, 'error');
+select rls_test.probe('H10 researcher cannot record a review decision', 'researcher', 'authenticated', :RESEARCHER,
+  $q$insert into pal_eyes.review_decisions (id, review_task_id, decision) values ('syn-dec-1','synthetic-review-1','ACCEPT')$q$, 'error');
+select rls_test.probe('H11 editor cannot mark a site APPROVED', 'editor', 'authenticated', :EDITOR,
+  $q$update pal_eyes.sites set workflow_status = 'EDITORIALLY_APPROVED' where id = 'synthetic-site-1'$q$, 'error');
+select rls_test.probe('H12 editor submits for review (positive)', 'editor', 'authenticated', :EDITOR,
+  $q$update pal_eyes.sites set workflow_status = 'SUBMITTED_FOR_REVIEW' where id = 'synthetic-site-1'$q$, 'affected=1');
+select rls_test.probe('H13 editor cannot list users', 'editor', 'authenticated', :EDITOR,
+  $q$select * from pal_eyes.admin_list_users()$q$, 'error');
+select rls_test.probe('H14 system admin lists users (positive)', 'system-admin', 'authenticated', :ADMIN,
+  $q$select * from pal_eyes.admin_list_users()$q$, 'rows>0');
+select rls_test.probe('H15 anon cannot list users', 'anon', 'anon', null,
+  $q$select * from pal_eyes.admin_list_users()$q$, 'error');
+select rls_test.probe('H16 anon reads public sites view (nothing published)', 'anon', 'anon', null,
+  $q$select * from pal_eyes.public_sites_v1$q$, 'rows=0');
+select rls_test.probe('H17 anon reads public research view (nothing approved)', 'anon', 'anon', null,
+  $q$select * from pal_eyes.public_research_v1$q$, 'rows=0');
+select rls_test.probe('H18 anon still cannot read draft columns', 'anon', 'anon', null,
+  $q$select workflow_status from pal_eyes.sites$q$, 'error');
+select rls_test.probe('H19 full operational copy without provenance', 'researcher', 'authenticated', :RESEARCHER,
+  $q$insert into pal_eyes.narrative_documents (id, research_package_id, title, copy_kind) values ('syn-doc-x','synthetic-pkg-1','x','FULL_OPERATIONAL_COPY')$q$, 'error');
+select rls_test.probe('H20 full operational copy with Drive provenance (positive)', 'researcher', 'authenticated', :RESEARCHER,
+  $q$insert into pal_eyes.narrative_documents (id, research_package_id, title, copy_kind, sovereign_file_id, sovereign_revision_id, content_sha256)
+     values ('syn-doc-y','synthetic-pkg-1','y','FULL_OPERATIONAL_COPY','drive-file-synthetic','rev-1', repeat('a', 64))$q$, 'ok');
+select rls_test.probe('H21 researcher cannot approve a narrative', 'researcher', 'authenticated', :RESEARCHER,
+  $q$insert into pal_eyes.narrative_documents (id, research_package_id, title, approval_state) values ('syn-doc-z','synthetic-pkg-1','z','APPROVED_FOR_PUBLICATION')$q$, 'error');
+select rls_test.probe('H22 approved narrative paragraph is immutable', 'researcher', 'authenticated', :RESEARCHER,
+  $q$update pal_eyes.narrative_paragraphs set paragraph_text = 'تحريف' where id = 'synthetic-par-approved'$q$, 'error');
+select rls_test.probe('H23 researcher cannot delete a site', 'researcher', 'authenticated', :RESEARCHER,
+  $q$delete from pal_eyes.sites where id = 'synthetic-site-1'$q$, 'error');
+select rls_test.probe('H24 editor full save-draft flow as the app runs it (positive)', 'editor', 'authenticated', :EDITOR,
+  $q$do $d$ declare v int; begin
+     select version_number into v from pal_eyes.sites where id = 'synthetic-site-1';
+     update pal_eyes.sites set editorial_draft = 'مسودة', workflow_status = 'DRAFT_UPDATED', version_number = v + 1 where id = 'synthetic-site-1';
+     insert into pal_eyes.content_versions (id, entity_type, entity_id, version_number, snapshot)
+       values ('syn-ver-1', 'site', 'synthetic-site-1', v + 1, '{"publication_status":"BLOCKED"}');
+     insert into pal_eyes.audit_events (id, action, entity_type, entity_id) values ('syn-audit-save', 'SITE_DRAFT_SAVED', 'site', 'synthetic-site-1');
+   end $d$$q$, 'ok');
+
+-- I. Second factor (aal2) for sensitive authority
+select rls_test.probe('I1 release manager without MFA cannot create candidate', 'release-manager', 'authenticated', :RELEASE,
+  $q$insert into pal_eyes.release_candidates (id, title) values ('rc-aal1','x')$q$, 'error', 'aal1');
+select rls_test.probe('I2 system admin without MFA cannot publish', 'system-admin', 'authenticated', :ADMIN,
+  $q$update pal_eyes.sites set publication_status = 'PUBLISHED' where id = 'synthetic-site-1'$q$, 'error', 'aal1');
+select rls_test.probe('I3 system admin without MFA cannot grant roles', 'system-admin', 'authenticated', :ADMIN,
+  $q$insert into pal_eyes.user_roles (user_id, role_key) values ('00000000-0000-4000-8000-000000000001','editor')$q$, 'error', 'aal1');
+select rls_test.probe('I4 editor drafting needs no second factor (positive)', 'editor', 'authenticated', :EDITOR,
+  $q$update pal_eyes.sites set editorial_draft = 'x', version_number = version_number + 1 where id = 'synthetic-site-1'$q$, 'affected=1', 'aal1');
 
 \o
 \pset footer off

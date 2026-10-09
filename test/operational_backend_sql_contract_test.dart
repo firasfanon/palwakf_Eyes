@@ -64,5 +64,13 @@ void main() {
       isTrue,
     );
     expect(source.contains('public_map_use=BLOCKED'), isFalse);
+    // An unquoted literal in ON CONFLICT is parsed as a column name and
+    // aborts the whole seed (found by the rollback-cycle run, 2026-10-09).
+    expect(source.contains('public_release_status=BLOCKED'), isFalse);
+    expect(
+      RegExp(r'[a-z_]+=[A-Z][A-Z_]+[,;]').hasMatch(source),
+      isFalse,
+      reason: 'ON CONFLICT assignments must use excluded.<column> or quotes',
+    );
   });
 }
