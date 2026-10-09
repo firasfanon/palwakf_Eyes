@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pal_eyes/app/localization/pal_eyes_localizations.dart';
 
@@ -7,8 +8,9 @@ Widget _probe(Locale locale, String arabic) => MaterialApp(
   supportedLocales: PalEyesLocalizations.supportedLocales,
   localizationsDelegates: const <LocalizationsDelegate<dynamic>>[
     PalEyesLocalizations.delegate,
-    DefaultMaterialLocalizations.delegate,
-    DefaultWidgetsLocalizations.delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
   ],
   home: Builder(builder: (context) => Text(tr(context, arabic))),
 );

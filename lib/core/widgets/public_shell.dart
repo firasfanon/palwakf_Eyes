@@ -185,11 +185,11 @@ class _ReferenceHeader extends ConsumerWidget {
                       Icons.dashboard_customize_outlined,
                       size: 18,
                     ),
-                    label: Text(tr(context, 'مساحة العمل')),
+                    label: const Text('مساحة العمل'),
                   ),
                   const SizedBox(width: 6),
                   IconButton.outlined(
-                    tooltip: tr(context, 'الحوكمة والإدارة'),
+                    tooltip: 'الحوكمة والإدارة',
                     onPressed: () => context.go(RoutePaths.admin),
                     style: IconButton.styleFrom(
                       foregroundColor: onDark

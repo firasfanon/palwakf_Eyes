@@ -82,7 +82,8 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                   counts: categoryCounts,
                   onSelected: (index) => setState(() {
                     _categoryIndex = index;
-                    if (_selected != null && !mapCategories[index].matches(_selected!)) {
+                    if (_selected != null &&
+                        !mapCategories[index].matches(_selected!)) {
                       _selected = null;
                     }
                   }),
@@ -361,7 +362,10 @@ class _CategoryRail extends StatelessWidget {
           separatorBuilder: (context, index) => const SizedBox(height: 5),
           itemBuilder: (context, index) {
             final category = mapCategories[index];
-            final item = (category.icon, '${category.labelAr} (${counts[index]})');
+            final item = (
+              category.icon,
+              '${category.labelAr} (${counts[index]})',
+            );
             final selected = selectedIndex == index;
             return Tooltip(
               message: item.$2,
@@ -370,54 +374,54 @@ class _CategoryRail extends StatelessWidget {
                 selected: selected,
                 label: 'تصفية الأطلس: ${item.$2}',
                 child: InkWell(
-                key: ValueKey<String>('map-category-${category.key}'),
-                borderRadius: BorderRadius.circular(12),
-                onTap: () => onSelected(index),
-                child: Container(
-                  padding: EdgeInsets.symmetric(
-                    horizontal: compact ? 7 : 8,
-                    vertical: 9,
-                  ),
-                  decoration: BoxDecoration(
-                    color: selected
-                        ? PalEyesVisualV1.olive.withValues(alpha: 0.12)
-                        : Colors.transparent,
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: compact
-                      ? Icon(
-                          item.$1,
-                          size: 21,
-                          color: selected
-                              ? PalEyesVisualV1.oliveDark
-                              : PalEyesVisualV1.warmMuted,
-                        )
-                      : Row(
-                          children: <Widget>[
-                            Icon(
-                              item.$1,
-                              size: 20,
-                              color: selected
-                                  ? PalEyesVisualV1.oliveDark
-                                  : PalEyesVisualV1.warmMuted,
-                            ),
-                            const SizedBox(width: 7),
-                            Expanded(
-                              child: Text(
-                                item.$2,
-                                style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: selected
-                                      ? FontWeight.w900
-                                      : FontWeight.w700,
-                                  color: PalEyesVisualV1.warmInk,
+                  key: ValueKey<String>('map-category-${category.key}'),
+                  borderRadius: BorderRadius.circular(12),
+                  onTap: () => onSelected(index),
+                  child: Container(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: compact ? 7 : 8,
+                      vertical: 9,
+                    ),
+                    decoration: BoxDecoration(
+                      color: selected
+                          ? PalEyesVisualV1.olive.withValues(alpha: 0.12)
+                          : Colors.transparent,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: compact
+                        ? Icon(
+                            item.$1,
+                            size: 21,
+                            color: selected
+                                ? PalEyesVisualV1.oliveDark
+                                : PalEyesVisualV1.warmMuted,
+                          )
+                        : Row(
+                            children: <Widget>[
+                              Icon(
+                                item.$1,
+                                size: 20,
+                                color: selected
+                                    ? PalEyesVisualV1.oliveDark
+                                    : PalEyesVisualV1.warmMuted,
+                              ),
+                              const SizedBox(width: 7),
+                              Expanded(
+                                child: Text(
+                                  item.$2,
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: selected
+                                        ? FontWeight.w900
+                                        : FontWeight.w700,
+                                    color: PalEyesVisualV1.warmInk,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
-                        ),
+                            ],
+                          ),
+                  ),
                 ),
-              ),
               ),
             );
           },
@@ -460,15 +464,32 @@ class _SiteList extends StatelessWidget {
           itemCount: sites.length,
           itemBuilder: (context, index) {
             final site = sites[index];
-            return ListTile(
-              dense: true,
-              contentPadding: EdgeInsets.zero,
-              title: Text(
-                site.nameAr,
-                style: const TextStyle(fontWeight: FontWeight.w800),
+            return Semantics(
+              button: true,
+              label: 'فتح صفحة ${site.nameAr}',
+              child: InkWell(
+                borderRadius: BorderRadius.circular(10),
+                onTap: () => onOpen(site),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 7),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        site.nameAr,
+                        style: const TextStyle(fontWeight: FontWeight.w800),
+                      ),
+                      Text(
+                        '${site.siteTypeAr} • ${site.governorateAr}',
+                        style: const TextStyle(
+                          color: PalEyesVisualV1.warmMuted,
+                          fontSize: 12,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
-              subtitle: Text('${site.siteTypeAr} • ${site.governorateAr}'),
-              onTap: () => onOpen(site),
             );
           },
         ),

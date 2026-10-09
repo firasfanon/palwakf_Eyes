@@ -13,9 +13,7 @@ void main() {
     for (final category in mapCategories.skip(1)) {
       final filtered = category.apply(sites);
       expect(
-        filtered.every(
-          (s) => category.typeKeywords.any(s.siteTypeAr.contains),
-        ),
+        filtered.every((s) => category.typeKeywords.any(s.siteTypeAr.contains)),
         isTrue,
         reason: category.key,
       );
