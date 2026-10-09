@@ -2,7 +2,7 @@
 7229467 build/web/canvaskit/canvaskit.wasm
 5760502 build/web/canvaskit/chromium/canvaskit.wasm
 5172643 build/web/canvaskit/skwasm_heavy.wasm
-4839612 build/web/main.dart.js
+4930408 build/web/main.dart.js
 4138344 build/web/canvaskit/experimental_webparagraph/canvaskit.wasm
 3580947 build/web/canvaskit/skwasm.wasm
 3513876 build/web/canvaskit/wimp.wasm
@@ -15,8 +15,8 @@
 1274971 build/web/canvaskit/chromium/canvaskit.js.symbols
 1004464 build/web/canvaskit/experimental_webparagraph/canvaskit.js.symbols
 916577 build/web/assets/assets/visual_reference_v1/hero_city.png
-431116 build/web/assets/assets/fonts/amiri/Amiri-Regular.ttf
-413480 build/web/assets/assets/fonts/amiri/Amiri-Bold.ttf
+384696 build/web/assets/assets/fonts/amiri/Amiri-Bold.ttf
+378496 build/web/assets/assets/fonts/amiri/Amiri-Regular.ttf
 246992 build/web/assets/assets/fonts/ibm_plex_sans_arabic/IBMPlexSansArabic-Bold.ttf
 244616 build/web/assets/assets/fonts/ibm_plex_sans_arabic/IBMPlexSansArabic-SemiBold.ttf
 242100 build/web/assets/assets/fonts/ibm_plex_sans_arabic/IBMPlexSansArabic-Medium.ttf

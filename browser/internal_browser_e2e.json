@@ -1,0 +1,366 @@
+{
+  "total": 20,
+  "failed": 0,
+  "results": [
+    {
+      "label": "internal",
+      "profile": "desktop",
+      "journey": "workspace",
+      "path": "/workspace",
+      "final_path": "/workspace",
+      "expected_path": "/workspace",
+      "seconds": 7.2,
+      "screenshot": "internal_desktop_workspace.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "desktop",
+      "journey": "workspace_research",
+      "path": "/workspace/research",
+      "final_path": "/workspace/research",
+      "expected_path": "/workspace/research",
+      "seconds": 7.4,
+      "screenshot": "internal_desktop_workspace_research.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "desktop",
+      "journey": "workspace_places",
+      "path": "/workspace/places",
+      "final_path": "/workspace/places",
+      "expected_path": "/workspace/places",
+      "seconds": 7.4,
+      "screenshot": "internal_desktop_workspace_places.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "desktop",
+      "journey": "workspace_site_editor",
+      "path": "/workspace/places/editor",
+      "final_path": "/workspace/places/editor",
+      "expected_path": "/workspace/places/editor",
+      "seconds": 7.1,
+      "screenshot": "internal_desktop_workspace_site_editor.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "desktop",
+      "journey": "workspace_reviews",
+      "path": "/workspace/reviews",
+      "final_path": "/workspace/reviews",
+      "expected_path": "/workspace/reviews",
+      "seconds": 7.0,
+      "screenshot": "internal_desktop_workspace_reviews.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "desktop",
+      "journey": "workspace_release",
+      "path": "/workspace/release-control",
+      "final_path": "/workspace/release-control",
+      "expected_path": "/workspace/release-control",
+      "seconds": 7.0,
+      "screenshot": "internal_desktop_workspace_release.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "desktop",
+      "journey": "admin",
+      "path": "/admin",
+      "final_path": "/admin",
+      "expected_path": "/admin",
+      "seconds": 7.1,
+      "screenshot": "internal_desktop_admin.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "desktop",
+      "journey": "admin_governance",
+      "path": "/admin/governance",
+      "final_path": "/admin/governance",
+      "expected_path": "/admin/governance",
+      "seconds": 7.1,
+      "screenshot": "internal_desktop_admin_governance.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "desktop",
+      "journey": "admin_users",
+      "path": "/admin/users",
+      "final_path": "/admin/users",
+      "expected_path": "/admin/users",
+      "seconds": 7.0,
+      "screenshot": "internal_desktop_admin_users.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "desktop",
+      "journey": "network-policy",
+      "external_requests_blocked": [],
+      "disallowed_external": [],
+      "google_fonts_requests": [],
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "mobile390",
+      "journey": "workspace",
+      "path": "/workspace",
+      "final_path": "/workspace",
+      "expected_path": "/workspace",
+      "seconds": 7.2,
+      "screenshot": "internal_mobile390_workspace.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "mobile390",
+      "journey": "workspace_research",
+      "path": "/workspace/research",
+      "final_path": "/workspace/research",
+      "expected_path": "/workspace/research",
+      "seconds": 7.3,
+      "screenshot": "internal_mobile390_workspace_research.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "mobile390",
+      "journey": "workspace_places",
+      "path": "/workspace/places",
+      "final_path": "/workspace/places",
+      "expected_path": "/workspace/places",
+      "seconds": 7.5,
+      "screenshot": "internal_mobile390_workspace_places.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "mobile390",
+      "journey": "workspace_site_editor",
+      "path": "/workspace/places/editor",
+      "final_path": "/workspace/places/editor",
+      "expected_path": "/workspace/places/editor",
+      "seconds": 7.2,
+      "screenshot": "internal_mobile390_workspace_site_editor.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "mobile390",
+      "journey": "workspace_reviews",
+      "path": "/workspace/reviews",
+      "final_path": "/workspace/reviews",
+      "expected_path": "/workspace/reviews",
+      "seconds": 7.0,
+      "screenshot": "internal_mobile390_workspace_reviews.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "mobile390",
+      "journey": "workspace_release",
+      "path": "/workspace/release-control",
+      "final_path": "/workspace/release-control",
+      "expected_path": "/workspace/release-control",
+      "seconds": 7.0,
+      "screenshot": "internal_mobile390_workspace_release.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "mobile390",
+      "journey": "admin",
+      "path": "/admin",
+      "final_path": "/admin",
+      "expected_path": "/admin",
+      "seconds": 7.2,
+      "screenshot": "internal_mobile390_admin.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "mobile390",
+      "journey": "admin_governance",
+      "path": "/admin/governance",
+      "final_path": "/admin/governance",
+      "expected_path": "/admin/governance",
+      "seconds": 7.0,
+      "screenshot": "internal_mobile390_admin_governance.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "mobile390",
+      "journey": "admin_users",
+      "path": "/admin/users",
+      "final_path": "/admin/users",
+      "expected_path": "/admin/users",
+      "seconds": 7.0,
+      "screenshot": "internal_mobile390_admin_users.png",
+      "page_errors": [],
+      "same_origin_4xx": [],
+      "checks": {
+        "final_path": true,
+        "no_page_errors": true,
+        "not_blank": true,
+        "no_same_origin_4xx": true
+      },
+      "passed": true
+    },
+    {
+      "label": "internal",
+      "profile": "mobile390",
+      "journey": "network-policy",
+      "external_requests_blocked": [],
+      "disallowed_external": [],
+      "google_fonts_requests": [],
+      "passed": true
+    }
+  ]
+}

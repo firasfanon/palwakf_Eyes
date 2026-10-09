@@ -1,0 +1,43 @@
+PASS desktop home -> / {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop discover_query -> /discover?q=%D8%A7%D9%84%D9%82%D8%AF%D8%B3 {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop places -> /places {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop place_detail -> /places/swq-lqtnyn-4bbdf0 {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop research -> /research {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+FAIL desktop research_detail -> /research/swq-lqtnyn-4bbdf0 {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': False}
+PASS desktop stories -> /stories {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop story_detail -> /stories/water-memory-south-jerusalem {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop map -> /map {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop timeline -> /timeline {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop governorates -> /governorates {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop sources -> /sources {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop methodology -> /methodology {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop contribute -> /contribute {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop sign_in -> /sign-in {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop workspace_denied -> /access-restricted?reason=sign-in {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop release_denied -> /access-restricted?reason=sign-in {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop admin_denied -> /access-restricted?reason=sign-in {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop admin_users_denied -> /access-restricted?reason=sign-in {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop unknown_route -> /no-such-page {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop network-policy fonts=0 disallowed=0
+PASS mobile390 home -> / {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 discover_query -> /discover?q=%D8%A7%D9%84%D9%82%D8%AF%D8%B3 {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 places -> /places {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 place_detail -> /places/swq-lqtnyn-4bbdf0 {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 research -> /research {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+FAIL mobile390 research_detail -> /research/swq-lqtnyn-4bbdf0 {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': False}
+PASS mobile390 stories -> /stories {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 story_detail -> /stories/water-memory-south-jerusalem {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 map -> /map {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 timeline -> /timeline {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 governorates -> /governorates {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 sources -> /sources {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 methodology -> /methodology {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 contribute -> /contribute {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 sign_in -> /sign-in {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 workspace_denied -> /access-restricted?reason=sign-in {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 release_denied -> /access-restricted?reason=sign-in {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 admin_denied -> /access-restricted?reason=sign-in {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 admin_users_denied -> /access-restricted?reason=sign-in {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 unknown_route -> /no-such-page {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 network-policy fonts=0 disallowed=0
+BROWSER_E2E_PUBLIC_TOTAL=42 FAILED=2
