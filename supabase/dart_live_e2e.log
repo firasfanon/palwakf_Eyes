@@ -1,0 +1,10 @@
+00:00 +0: loading /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/supabase_live/operational_backend_live_test.dart
+Warning: A tag was used that wasn't specified in dart_test.yaml.
+  supabase-live was used in the suite itself
+
+00:00 +0: (setUpAll)
+00:00 +0: editor draft, source and review flow persists through the real backend
+00:00 +1: researcher cannot take a review decision through the real backend
+00:00 +2: release candidate needs MFA even for a release manager
+00:00 +3: (tearDownAll)
+00:00 +3: All tests passed!

@@ -1,0 +1,144 @@
+{
+  "summary": {
+    "total": 27,
+    "passed": 27,
+    "failed": 0
+  },
+  "results": [
+    {
+      "test": "T01 public sign-up is disabled (invite-only)",
+      "passed": true,
+      "detail": "422 {'code': 422, 'error_code': 'signup_disabled', 'msg': 'Signups not allowed for this instance'}"
+    },
+    {
+      "test": "T02 anon reads public_sites_v1: 200 and empty (nothing published)",
+      "passed": true,
+      "detail": "200 []"
+    },
+    {
+      "test": "T03 anon reads public_research_v1: 200 and empty",
+      "passed": true,
+      "detail": "200 []"
+    },
+    {
+      "test": "T04 anon reads zero draft site rows (RLS: PUBLISHED only)",
+      "passed": true,
+      "detail": "200 []"
+    },
+    {
+      "test": "T05 anon cannot read original drafts",
+      "passed": true,
+      "detail": "401 {'code': '42501', 'details': None, 'hint': 'Grant the required privileges to the current role with: GRANT SELECT ON pal_eyes.original_draft_layers TO anon;', 'message': 'permission denied for table original_draft_layers'}"
+    },
+    {
+      "test": "T06 account without role sees zero internal rows",
+      "passed": true,
+      "detail": "200 0"
+    },
+    {
+      "test": "T07 researcher sees the 79 governed sites",
+      "passed": true,
+      "detail": "200 79"
+    },
+    {
+      "test": "T08 editor saves draft with version bump; updated_by is server-stamped",
+      "passed": true,
+      "detail": "200 897ec1b2-2289-484b-b18d-f70c1688ae2e"
+    },
+    {
+      "test": "T09 stale concurrent save is rejected (VERSION_CONFLICT)",
+      "passed": true,
+      "detail": "500 {'code': '40001', 'details': None, 'hint': None, 'message': 'VERSION_CONFLICT: site site-014e4c4e4845 is at version 2'}"
+    },
+    {
+      "test": "T10 editor cannot publish",
+      "passed": true,
+      "detail": "403 {'code': '42501', 'details': None, 'hint': None, 'message': 'PUBLICATION_FAIL_CLOSED: sites.publication_status -> PUBLISHED requires release authority'}"
+    },
+    {
+      "test": "T11 editor cannot delete a site",
+      "passed": true,
+      "detail": "403 {'code': '42501', 'details': None, 'hint': 'Grant the required privileges to the current role with: GRANT DELETE ON pal_eyes.sites TO authenticated;', 'message': 'permission denied for table sites'}"
+    },
+    {
+      "test": "T12 researcher adds a source; created_by cannot be spoofed",
+      "passed": true,
+      "detail": "201 [{'id': 'ci-source-1', 'title': 'مصدر اصطناعي', 'attribution': '', 'source_type': 'reference', 'url': '', 'workflow_status': 'METADATA_REVIEW', 'rights_status': 'PENDING', 'public_release_status': 'BLOCKED', 'linked_site_count': 0, 'linked_claim_count': 0, 'bibliographic_data': {}, 'rights_data'"
+    },
+    {
+      "test": "T13 audit actor is server-stamped",
+      "passed": true,
+      "detail": "201 [{'id': 'ci-audit-1', 'actor_id': '47504515-ad8c-4718-975d-9de7a51aed54', 'actor_label': '', 'action': 'NOTE', 'entity_type': 'site', 'entity_id': 'site-014e4c4e4845', 'summary': '', 'metadata': {}, 'created_at': '2026-10-09T11:16:20.83921+00:00'}]"
+    },
+    {
+      "test": "T14 audit log is append-only even for system_admin",
+      "passed": true,
+      "detail": "403 {'code': '42501', 'details': None, 'hint': 'Grant the required privileges to the current role with: GRANT UPDATE ON pal_eyes.audit_events TO authenticated;', 'message': 'permission denied for table audit_events'}"
+    },
+    {
+      "test": "T15 editor submits a review task",
+      "passed": true,
+      "detail": "201 [{'id': 'ci-review-1', 'entity_type': 'site', 'entity_id': 'site-014e4c4e4845', 'title': 'مراجعة اصطناعية', 'review_type': 'EDITORIAL', 'priority': 'P2_NORMAL', 'status': 'OPEN', 'assignee_id': None, 'assignee_label': 'غير مسند', 'decision_note': '', 'created_by': '897ec1b2-2289-484b-b18d-f70c16"
+    },
+    {
+      "test": "T16 researcher cannot decide a review",
+      "passed": true,
+      "detail": "403 {'code': '42501', 'details': None, 'hint': None, 'message': 'REVIEW_AUTHORITY_REQUIRED'}"
+    },
+    {
+      "test": "T17 reviewer decides another author's task",
+      "passed": true,
+      "detail": "200 [{'id': 'ci-review-1', 'entity_type': 'site', 'entity_id': 'site-014e4c4e4845', 'title': 'مراجعة اصطناعية', 'review_type': 'EDITORIAL', 'priority': 'P2_NORMAL', 'status': 'ACCEPT', 'assignee_id': None, 'assignee_label': 'غير مسند', 'decision_note': 'ci', 'created_by': '897ec1b2-2289-484b-b18d-f7"
+    },
+    {
+      "test": "T18 researcher cannot list users",
+      "passed": true,
+      "detail": "403 {'code': '42501', 'details': None, 'hint': None, 'message': 'SYSTEM_ADMIN_REQUIRED'}"
+    },
+    {
+      "test": "T19 system admin lists synthetic users",
+      "passed": true,
+      "detail": "200 7"
+    },
+    {
+      "test": "T20 role grant without MFA (aal1) is refused",
+      "passed": true,
+      "detail": "403 {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table \"user_roles\"'}"
+    },
+    {
+      "test": "T21 system admin completes TOTP step-up to aal2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "T22 role grant with MFA (aal2) succeeds",
+      "passed": true,
+      "detail": "201 None"
+    },
+    {
+      "test": "T23 admin cannot grant a role to self even with MFA",
+      "passed": true,
+      "detail": "403 {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table \"user_roles\"'}"
+    },
+    {
+      "test": "T24 release candidate without MFA is refused",
+      "passed": true,
+      "detail": "403 {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table \"release_candidates\"'}"
+    },
+    {
+      "test": "T25 release candidate with MFA is created BLOCKED",
+      "passed": true,
+      "detail": "201 [{'id': 'ci-rc-2', 'title': 'مرشح اصطناعي', 'status': 'CANDIDATE_FROZEN_PUBLICATION_BLOCKED', 'site_ids': [], 'gates': {}, 'frozen_snapshot': {}, 'publication_status': 'BLOCKED', 'created_by': 'c9f7f2da-f532-458c-a141-349c37f242bc', 'created_by_label': '', 'created_at': '2026-10-09T11:16:21.2946"
+    },
+    {
+      "test": "T26 release candidate cannot be created PUBLISHED",
+      "passed": true,
+      "detail": "403 {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table \"release_candidates\"'}"
+    },
+    {
+      "test": "T27 after all operations the public surface is still empty",
+      "passed": true,
+      "detail": "200 []"
+    }
+  ]
+}

@@ -2,4 +2,4 @@ Changed lib/app/localization/pal_eyes_localizations.dart
 Changed lib/features/map/presentation/map_screen.dart
 Changed lib/features/operations/data/supabase_operational_data_backend.dart
 Changed test/map_category_filter_test.dart
-Formatted 25 files (4 changed) in 0.18 seconds.
+Formatted 27 files (4 changed) in 0.15 seconds.

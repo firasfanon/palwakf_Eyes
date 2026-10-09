@@ -1,0 +1,21 @@
+PASS desktop workspace -> /workspace {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop workspace_research -> /workspace/research {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop workspace_places -> /workspace/places {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop workspace_site_editor -> /workspace/places/editor {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop workspace_reviews -> /workspace/reviews {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop workspace_release -> /workspace/release-control {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop admin -> /admin {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop admin_governance -> /admin/governance {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop admin_users -> /admin/users {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS desktop network-policy fonts=0 disallowed=0
+PASS mobile390 workspace -> /workspace {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 workspace_research -> /workspace/research {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 workspace_places -> /workspace/places {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 workspace_site_editor -> /workspace/places/editor {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 workspace_reviews -> /workspace/reviews {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 workspace_release -> /workspace/release-control {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 admin -> /admin {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 admin_governance -> /admin/governance {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 admin_users -> /admin/users {'final_path': True, 'no_page_errors': True, 'not_blank': True, 'no_same_origin_4xx': True}
+PASS mobile390 network-policy fonts=0 disallowed=0
+BROWSER_E2E_INTERNAL_TOTAL=20 FAILED=0 BLOCKED_EXTERNAL_INPUT=0

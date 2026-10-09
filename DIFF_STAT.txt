@@ -3,6 +3,14 @@
  assets/fonts/FONT_PROVENANCE.md                    |   30 +-
  assets/fonts/amiri/Amiri-Bold.ttf                  |  Bin 413480 -> 384696 bytes
  assets/fonts/amiri/Amiri-Regular.ttf               |  Bin 431116 -> 378496 bytes
+ assets/visual_reference_v1/featured_panel.jpg      |  Bin 0 -> 28161 bytes
+ assets/visual_reference_v1/featured_panel.png      |  Bin 160822 -> 0 bytes
+ assets/visual_reference_v1/hero_city.jpg           |  Bin 0 -> 148866 bytes
+ assets/visual_reference_v1/hero_city.png           |  Bin 916577 -> 0 bytes
+ assets/visual_reference_v1/map_panel.jpg           |  Bin 0 -> 33585 bytes
+ assets/visual_reference_v1/map_panel.png           |  Bin 200423 -> 0 bytes
+ assets/visual_reference_v1/timeline_panel.jpg      |  Bin 0 -> 31319 bytes
+ assets/visual_reference_v1/timeline_panel.png      |  Bin 173374 -> 0 bytes
  .../ADR_D5_PUBLIC_INDEXING_TECHNICAL_ASSESSMENT.md |   44 +
  ...ESEARCH_SOURCE_OF_TRUTH_AND_OPERATIONAL_COPY.md |   35 +
  docs/decisions/D4_MAP_PROVIDER_COMPARISON.md       |   44 +
@@ -10,6 +18,7 @@
  lib/app/localization/pal_eyes_localizations.dart   |   43 +
  lib/app/router/app_router.dart                     |   15 +
  lib/app/router/route_paths.dart                    |    4 +
+ lib/app/theme/approved_reference_design.dart       |    8 +-
  lib/core/access/pal_eyes_access.dart               |   14 +-
  lib/core/access/pal_eyes_auth_gateway.dart         |  248 +++++
  lib/core/observability/error_reporting.dart        |   88 ++
@@ -31,6 +40,7 @@
  supabase/rollback/202610090003_down.sql            |   24 +
  supabase/rollback/202610090004_down.sql            |   65 ++
  .../seed/202607190001_pal_eyes_r7_0_0_seed.sql     | 1050 ++++++++++----------
+ test/asset_size_budget_test.dart                   |   25 +
  test/auth_and_user_admin_test.dart                 |  348 +++++++
  test/map_category_filter_test.dart                 |   36 +
  test/operational_backend_sql_contract_test.dart    |   16 +-
@@ -52,4 +62,4 @@
  ...J_sS6tlqHHFlhQ5l3sQWIHPqzCfyGyvvnCBFQLaig.woff2 |  Bin 0 -> 127612 bytes
  web/fonts/fallback/roboto/OFL.txt                  |   93 ++
  .../roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2    |  Bin 0 -> 37928 bytes
- 54 files changed, 4928 insertions(+), 659 deletions(-)
+ 64 files changed, 4957 insertions(+), 663 deletions(-)

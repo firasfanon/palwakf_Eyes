@@ -13,8 +13,9 @@
 00:04 +11: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_home_refinement_test.dart: desktop home exposes the four live entry points in order
 00:04 +12: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_home_refinement_test.dart: desktop home exposes the four live entry points in order
 00:04 +13: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_home_refinement_test.dart: desktop home exposes the four live entry points in order
-00:05 +13 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_home_refinement_test.dart: desktop home exposes the four live entry points in order
-00:05 +13 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/list_tile_material_boundary_contract_test.dart: ListTile and ExpansionTile surfaces own painted Material canvases [E]
+00:05 +14: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_home_refinement_test.dart: home reading order: story, source record, map, research
+00:05 +14 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_home_refinement_test.dart: home reading order: story, source record, map, research
+00:05 +14 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/list_tile_material_boundary_contract_test.dart: ListTile and ExpansionTile surfaces own painted Material canvases [E]
   Expected: false
     Actual: <true>
   lib/features/map/presentation/map_screen.dart must not place ListTile/ExpansionTile below ColoredBox
@@ -23,13 +24,12 @@
   package:flutter_test/src/widget_tester.dart 473:18        expect
   test/list_tile_material_boundary_contract_test.dart 46:7  main.<fn>
   
-00:05 +14 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_home_refinement_test.dart: desktop home exposes the four live entry points in order
-00:05 +15 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_home_refinement_test.dart: desktop home exposes the four live entry points in order
-00:05 +16 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_home_refinement_test.dart: desktop home exposes the four live entry points in order
-00:05 +17 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_home_refinement_test.dart: desktop home exposes the four live entry points in order
-00:06 +18 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_home_refinement_test.dart: home reading order: story, source record, map, research
-00:06 +19 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_home_refinement_test.dart: home reaches timeline band without overflow at 390x844
-00:06 +20 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_shell_english_labels_test.dart: Arabic locale keeps the Arabic source label
+00:05 +15 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_home_refinement_test.dart: home reaches timeline band without overflow at 390x844
+00:06 +16 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_narrative_sidecar_test.dart: sidecar URL stays at same-origin root from nested public routes
+00:06 +17 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_narrative_sidecar_test.dart: sidecar parser preserves paragraph styles and provenance
+00:06 +18 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_narrative_sidecar_test.dart: sidecar parser rejects duplicate catalog site ids
+00:06 +19 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_narrative_sidecar_test.dart: production environment never loads a research narrative sidecar
+00:07 +20 -1: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_shell_english_labels_test.dart: Arabic locale keeps the Arabic source label
 ══╡ EXCEPTION CAUGHT BY WIDGETS ╞═══════════════════════════════════════════════════════════════════
 The following message was thrown:
 Warning: This application's locale, ar, is not supported by all of its localization delegates.
@@ -56,77 +56,173 @@ locale, supportedLocales, and localizationsDelegates parameters.
 00:07 +27 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/route_contract_test.dart: web router preserves direct deep links instead of forcing home
 00:08 +28 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/operational_workspace_ui_binding_contract_test.dart: workspace screens consume the operational snapshot provider
 00:08 +29 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/operational_workspace_ui_binding_contract_test.dart: writes are confined to the governed Supabase adapter
-00:08 +30 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: Arabic fonts are bundled and declared, never CDN-dependent
-00:08 +31 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: themes resolve Arabic body and display families in both modes
-00:08 +32 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: component text styles carry the bundled family (no CDN fallback)
-00:08 +33 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: unified tokens: one editorial palette, no navy authority
-00:08 +34 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: default appearance is the light ivory editorial theme
-00:08 +35 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: research library Arabic renders with the bundled family
-00:08 +36 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: research library Arabic renders with the bundled family
-00:08 +37 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: research library Arabic renders with the bundled family
-00:08 +38 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: research library Arabic renders with the bundled family
-00:09 +39 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/site_card_dual_narrative_badge_layout_test.dart: site card fits the immersive home boundary with public story badge
-00:10 +40 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/pal_eyes_visual_card_layout_test.dart: visual card fits compact story height without overflow
-00:10 +41 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/product_ux_phases_1_to_4_contract_test.dart: all four product UX phases are routed
-00:10 +42 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/product_ux_phases_1_to_4_contract_test.dart: publication remains disabled until all local gates are checked
-00:10 +43 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/product_ux_phases_1_to_4_contract_test.dart: site editor has persistent primary actions
-00:10 +44 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/product_ux_phases_1_to_4_contract_test.dart: public home exposes four product gateways
-00:11 +45 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: review deferred can never be publication eligible
-00:11 +46 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: publication approval is accepted only at publication decision
-00:11 +47 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: existing-owner linking prevents duplicate owner creation
-00:11 +48 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: component-of relation preserves component and whole identities
-00:11 +49 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: probable identification stays explicitly non-certain
-00:11 +50 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: shared aliases require disambiguation and never imply merge
-00:11 +51 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: ambiguous alias without notes is rejected
-00:11 +52 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: source claim and media states remain independent
-00:11 +53 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: boundary semantics never imply legal status
-00:11 +54 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: component damage cannot be generalized to whole entity
-00:11 +55 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_home_mobile_boundary_test.dart: public home stays inside 390x844 mobile viewport
-00:11 +56 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_home_mobile_boundary_test.dart: public home stays inside 390x844 mobile viewport
-00:11 +57 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_home_mobile_boundary_test.dart: public home stays inside 390x844 mobile viewport
-00:11 +58 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_home_mobile_boundary_test.dart: public home stays inside 390x844 mobile viewport
-00:11 +59 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_home_mobile_boundary_test.dart: public home stays inside 390x844 mobile viewport
-00:11 +60 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_home_mobile_boundary_test.dart: public home stays inside 390x844 mobile viewport
-00:11 +61 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_home_mobile_boundary_test.dart: public home stays inside 390x844 mobile viewport
-00:13 +62 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_workspace_operationalization_test.dart: research workspace operationalization renders on desktop
-00:14 +63 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/map_tile_policy_surface_test.dart: OSM attribution and issue links remain visibly rendered
-00:14 +64 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_workspace_operationalization_test.dart: research workspace operationalization renders at 390px RTL
-00:14 +65 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_workspace_operationalization_test.dart: research workspace operationalization renders at 390px RTL
-00:15 +66 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: Qattanin pilot preserves 12-section document structure on round-trip
-00:15 +67 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: Qattanin pilot validates without flattening evidence semantics
-00:15 +68 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: claim confidence source role and evidence relation remain separate
-00:15 +69 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: experimental human approval cannot resolve a publication snapshot
-00:15 +70 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: publication approval without specialist authority fails closed
-00:15 +71 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: approved-only resolver requires every authority and public media rights
-00:15 +72 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: all 62 promoted staging packages remain compatible and non-public
-00:15 +73 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: JSON schema and additive migration are present and fail closed
-00:15 +74 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: research package workbench renders at 390px RTL without overflow
+00:08 +30 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/asset_size_budget_test.dart: rendered artwork respects the 200 KB per-image budget
+00:09 +31 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: Arabic fonts are bundled and declared, never CDN-dependent
+00:09 +32 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: themes resolve Arabic body and display families in both modes
+00:09 +33 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: component text styles carry the bundled family (no CDN fallback)
+00:09 +34 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: unified tokens: one editorial palette, no navy authority
+00:09 +35 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: default appearance is the light ivory editorial theme
+00:09 +36 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: research library Arabic renders with the bundled family
+00:10 +37 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: research library Arabic renders with the bundled family
+00:10 +38 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: research library Arabic renders with the bundled family
+00:10 +39 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/arabic_typography_and_tokens_test.dart: research library Arabic renders with the bundled family
+00:11 +40 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/site_card_dual_narrative_badge_layout_test.dart: site card fits the immersive home boundary with public story badge
+00:11 +41 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/pal_eyes_visual_card_layout_test.dart: visual card fits compact story height without overflow
+00:12 +42 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/product_ux_phases_1_to_4_contract_test.dart: all four product UX phases are routed
+00:12 +43 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/product_ux_phases_1_to_4_contract_test.dart: publication remains disabled until all local gates are checked
+00:12 +44 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/product_ux_phases_1_to_4_contract_test.dart: site editor has persistent primary actions
+00:12 +45 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/product_ux_phases_1_to_4_contract_test.dart: public home exposes four product gateways
+00:12 +46 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: review deferred can never be publication eligible
+00:12 +47 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: publication approval is accepted only at publication decision
+00:12 +48 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: existing-owner linking prevents duplicate owner creation
+00:12 +49 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: component-of relation preserves component and whole identities
+00:12 +50 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: probable identification stays explicitly non-certain
+00:13 +51 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: shared aliases require disambiguation and never imply merge
+00:13 +52 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: ambiguous alias without notes is rejected
+00:13 +53 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: source claim and media states remain independent
+00:13 +54 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: boundary semantics never imply legal status
+00:13 +55 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_integrity_contracts_test.dart: component damage cannot be generalized to whole entity
+00:13 +56 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_home_mobile_boundary_test.dart: public home stays inside 390x844 mobile viewport
+00:13 +57 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_home_mobile_boundary_test.dart: public home stays inside 390x844 mobile viewport
+00:13 +58 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_home_mobile_boundary_test.dart: public home stays inside 390x844 mobile viewport
+00:13 +59 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_home_mobile_boundary_test.dart: public home stays inside 390x844 mobile viewport
+00:13 +60 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_home_mobile_boundary_test.dart: public home stays inside 390x844 mobile viewport
+00:13 +61 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_home_mobile_boundary_test.dart: public home stays inside 390x844 mobile viewport
+00:13 +62 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_home_mobile_boundary_test.dart: public home stays inside 390x844 mobile viewport
+00:14 +63 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_workspace_operationalization_test.dart: research workspace operationalization renders on desktop
+00:15 +64 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_workspace_operationalization_test.dart: research workspace operationalization renders on desktop
+00:15 +65 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_workspace_operationalization_test.dart: research workspace operationalization renders on desktop
+00:16 +66 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_workspace_operationalization_test.dart: research workspace operationalization renders at 390px RTL
+00:16 +67 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: Qattanin pilot preserves 12-section document structure on round-trip
+00:16 +68 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: Qattanin pilot validates without flattening evidence semantics
+00:16 +69 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: claim confidence source role and evidence relation remain separate
+00:16 +70 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: experimental human approval cannot resolve a publication snapshot
+00:16 +71 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: publication approval without specialist authority fails closed
+00:16 +72 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: approved-only resolver requires every authority and public media rights
+00:16 +73 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: all 62 promoted staging packages remain compatible and non-public
+00:16 +74 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: JSON schema and additive migration are present and fail closed
 00:16 +75 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: research package workbench renders at 390px RTL without overflow
-00:16 +76 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: research package workbench renders at 390px RTL without overflow
-00:16 +77 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: research package workbench renders at 390px RTL without overflow
-00:16 +78 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: research package workbench renders at 390px RTL without overflow
-00:16 +79 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_story_catalog_contract_test.dart: editorial magazine exposes three traceable long-form stories
-00:16 +80 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_story_catalog_contract_test.dart: every related story place resolves in the current atlas
-00:16 +81 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_story_catalog_contract_test.dart: story lookup is stable and fail-closed
-00:17 +82 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/narrow_layout_regression_test.dart: content status badge does not overflow when constrained to 60 pixels
-00:17 +83 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/narrow_layout_regression_test.dart: content status badge does not overflow when constrained to 60 pixels
-00:17 +84 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/narrow_layout_regression_test.dart: content status badge does not overflow when constrained to 60 pixels
-00:17 +85 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/narrow_layout_regression_test.dart: content status badge does not overflow when constrained to 60 pixels
-00:17 +86 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/narrow_layout_regression_test.dart: content status badge does not overflow when constrained to 60 pixels
-00:17 +87 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/narrow_layout_regression_test.dart: content status badge keeps its label when sufficient width is available
-00:17 +88 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/narrow_layout_regression_test.dart: map compact category rail renders without overflow at 390x844
-00:18 +89 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library renders the governed corpus on desktop
-00:18 +90 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library renders the governed corpus on desktop
-00:18 +91 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library renders the governed corpus on desktop
-00:18 +92 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library renders the governed corpus on desktop
-00:18 +93 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library renders the governed corpus on desktop
-00:19 +94 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library renders the governed corpus on desktop
-00:19 +95 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library renders the governed corpus on desktop
+00:17 +76 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: research package workbench renders at 390px RTL without overflow
+00:17 +77 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: research package workbench renders at 390px RTL without overflow
+00:17 +78 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: research package workbench renders at 390px RTL without overflow
+00:17 +79 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_package_v1_test.dart: research package workbench renders at 390px RTL without overflow
+00:18 +80 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_story_catalog_contract_test.dart: editorial magazine exposes three traceable long-form stories
+00:18 +81 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_story_catalog_contract_test.dart: every related story place resolves in the current atlas
+00:18 +82 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/editorial_story_catalog_contract_test.dart: story lookup is stable and fail-closed
+00:18 +83 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/narrow_layout_regression_test.dart: content status badge does not overflow when constrained to 60 pixels
+00:18 +84 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/narrow_layout_regression_test.dart: content status badge does not overflow when constrained to 60 pixels
+00:18 +85 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/narrow_layout_regression_test.dart: content status badge does not overflow when constrained to 60 pixels
+00:18 +86 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/narrow_layout_regression_test.dart: content status badge does not overflow when constrained to 60 pixels
+00:18 +87 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/narrow_layout_regression_test.dart: content status badge does not overflow when constrained to 60 pixels
+00:19 +88 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/narrow_layout_regression_test.dart: content status badge keeps its label when sufficient width is available
+00:19 +89 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/narrow_layout_regression_test.dart: map compact category rail renders without overflow at 390x844
+00:19 +90 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library renders the governed corpus on desktop
+00:20 +91 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library renders the governed corpus on desktop
+00:20 +92 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library renders the governed corpus on desktop
+00:20 +93 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library renders the governed corpus on desktop
+00:20 +94 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library renders the governed corpus on desktop
+00:20 +95 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library renders the governed corpus on desktop
 00:20 +96 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library renders the governed corpus on desktop
-00:20 +97 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library renders the governed corpus on desktop
-00:20 +98 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library remains bounded at 390px RTL
+00:21 +97 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library remains bounded at 390px RTL
+00:21 +98 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library remains bounded at 390px RTL
 00:21 +99 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library remains bounded at 390px RTL
-00:21 +100 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library remains bounded at 390px RTL
-00:21 +101 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library remains bounded at 390px RTL
-00:21 +102 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library remains bounded at 390px RTL
-00:21 +103 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: public research library remains bounded at 390px RTL
+00:21 +100 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_research_library_v2_test.dart: production library stays fail closed
+00:22 +101 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/full_draft_catalog_contract_test.dart: full document site catalog has the governed size
+00:22 +102 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/full_draft_catalog_contract_test.dart: expanded narrative and coordinate counts match evidence
+00:22 +103 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/full_draft_catalog_contract_test.dart: catalog includes key Palestinian sites from the draft
+00:22 +104 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/full_draft_catalog_contract_test.dart: catalog contains no approved or published fixture
+00:22 +105 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/full_draft_catalog_contract_test.dart: unmapped sites remain in the catalog
+00:23 +106 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: sign-in is honest when no identity backend is configured
+00:23 +107 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: sign-in is honest when no identity backend is configured
+00:23 +108 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: sign-in is honest when no identity backend is configured
+00:23 +109 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: sign-in is honest when no identity backend is configured
+00:24 +110 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: sign-in is honest when no identity backend is configured
+00:24 +111 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: sign-in is honest when no identity backend is configured
+00:24 +112 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: invite-only: no sign-up affordance anywhere on sign-in
+00:25 +113 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: valid credentials open the workspace for a role holder
+00:25 +114 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: valid credentials open the workspace for a role holder
+00:26 +115 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/direct_flutter_maturity_r9_widget_test.dart: editorial prelude adapts from desktop to mobile without overflow
+00:26 +116 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: wrong credentials show a neutral error and stay outside
+00:26 +117 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: wrong credentials show a neutral error and stay outside
+00:26 +118 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: wrong credentials show a neutral error and stay outside
+00:26 +119 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: MFA-enrolled account must pass the TOTP step
+00:27 +120 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: MFA-enrolled account must pass the TOTP step
+00:27 +121 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/legacy_narrative_metric_and_expansion_tile_material_canvas_contract_test.dart: workspace ExpansionTile headers sit below a Material canvas
+00:27 +122 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: password reset is neutral about account existence
+00:27 +123 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: user administration is system-admin only
+00:27 +124 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: system admin manages others but never own roles
+00:28 +125 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:28 +126 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:28 +127 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/immersive_home_contract_test.dart: immersive home renders the Palestinian place gateway
+00:29 +128 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/auth_and_user_admin_test.dart: TOTP enrollment confirms with a valid code
+00:29 +129 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/governed_content_adoption_contract_test.dart: governed content adoption counts and publication gates are exact
+00:29 +130 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/governed_content_adoption_contract_test.dart: limited pages do not expose historical narrative
+00:29 +131 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/governed_content_adoption_contract_test.dart: every adopted narrative source resolves in the governed registry
+00:30 +132 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: frozen corpus has exactly 79 catalog rows plus one external link
+00:30 +133 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: every catalog place has a governed research-preview status record
+00:30 +134 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: classification counts exactly match sovereign freeze
+00:30 +135 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: publication media and database gates remain closed for all packages
+00:30 +136 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: unresolved and incomplete rows never expose narrative references
+00:30 +137 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: all promoted content manifests pass integrity validation
+00:30 +138 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: Nabi Musa existing owner link is preserved without duplicate chain
+00:30 +139 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: whole component and separation relations survive staging
+00:30 +140 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: staging package card fits 390px and exposes governed state
+00:30 +141 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: staging package card fits 390px and exposes governed state
+00:30 +142 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: staging package card fits 390px and exposes governed state
+00:30 +143 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: staging package card fits 390px and exposes governed state
+00:30 +144 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: staging package card fits 390px and exposes governed state
+00:30 +145 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: staging package card fits 390px and exposes governed state
+00:30 +146 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: staging package card fits 390px and exposes governed state
+00:30 +147 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: staging package card fits 390px and exposes governed state
+00:30 +148 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: staging package card fits 390px and exposes governed state
+00:30 +149 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/research_corpus_staging_ingestion_v1_test.dart: staging package card fits 390px and exposes governed state
+00:30 +150 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/privileged_access_gate_test.dart: router gate (widget) public visitor cannot open workspace or governance
+00:30 +151 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/privileged_access_gate_test.dart: router gate (widget) public visitor cannot open workspace or governance
+00:31 +152 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/privileged_access_gate_test.dart: router gate (widget) public visitor cannot open workspace or governance
+00:31 +153 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/privileged_access_gate_test.dart: router gate (widget) public visitor cannot open workspace or governance
+00:32 +154 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/privileged_access_gate_test.dart: router gate (widget) production build ignores internal presentation request
+00:32 +155 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:33 +156 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/app_smoke_test.dart: public home renders productive Arabic surface
+00:33 +157 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/privileged_access_gate_test.dart: router gate (widget) non-production internal inspector sees synthetic zone label
+00:34 +158 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/operational_backend_workflow_test.dart: saving a site draft increments version and records audit
+00:34 +159 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/operational_backend_workflow_test.dart: submitting a site creates a review task
+00:34 +160 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/operational_backend_workflow_test.dart: release candidate requires every human gate
+00:35 +161 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_separation_v1_test.dart: production public place experience hides research preview internals
+00:35 +161 -2: loading /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/supabase_live/operational_backend_live_test.dart
+Warning: A tag was used that wasn't specified in dart_test.yaml.
+  supabase-live was used in the suite itself
+
+00:35 +161 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_separation_v1_test.dart: production public place experience hides research preview internals
+00:35 +161 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/supabase_live/operational_backend_live_test.dart: editor draft, source and review flow persists through the real backend
+  Skip: PAL_EYES_LIVE_SUPABASE_URL not set
+00:35 +161 ~1 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_separation_v1_test.dart: production public place experience hides research preview internals
+00:35 +161 ~1 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/supabase_live/operational_backend_live_test.dart: researcher cannot take a review decision through the real backend
+  Skip: PAL_EYES_LIVE_SUPABASE_URL not set
+00:35 +161 ~2 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_separation_v1_test.dart: production public place experience hides research preview internals
+00:35 +161 ~2 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/supabase_live/operational_backend_live_test.dart: release candidate needs MFA even for a release manager
+  Skip: PAL_EYES_LIVE_SUPABASE_URL not set
+00:35 +161 ~3 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_separation_v1_test.dart: production public place experience hides research preview internals
+00:35 +162 ~3 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_separation_v1_test.dart: development public place exposes governed research preview
+00:36 +163 ~3 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_separation_v1_test.dart: development public place exposes governed research preview
+00:36 +164 ~3 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_separation_v1_test.dart: development public place exposes governed research preview
+00:36 +165 ~3 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_separation_v1_test.dart: development public place exposes governed research preview
+00:36 +166 ~3 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_separation_v1_test.dart: development research detail owns the full governed narrative surface
+00:36 +167 ~3 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_separation_v1_test.dart: internal inspector preserves governance-facing place surfaces
+00:36 +168 ~3 -2: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_maturity_contract_test.dart: public shell exposes the V2 discovery architecture
+00:36 +168 ~3 -3: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_maturity_contract_test.dart: public shell exposes the V2 discovery architecture [E]
+  Expected: true
+    Actual: <false>
+  
+  package:matcher                                          expect
+  package:flutter_test/src/widget_tester.dart 473:18       expect
+  test/public_experience_maturity_contract_test.dart 16:5  main.<fn>
+  
+00:36 +168 ~3 -3: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_maturity_contract_test.dart: public experience has atlas museum and magazine surfaces
+00:36 +169 ~3 -3: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_maturity_contract_test.dart: loading empty and error states are shared and accessible
+00:36 +170 ~3 -3: /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_maturity_contract_test.dart: story detail route and helper are stable
+00:36 +171 ~3 -3: Some tests failed.
+
+Failing tests:
+  /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/list_tile_material_boundary_contract_test.dart: ListTile and ExpansionTile surfaces own painted Material canvases
+  /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_experience_maturity_contract_test.dart: public shell exposes the V2 discovery architecture
+  /home/runner/work/palwakf_Eyes/palwakf_Eyes/test/public_shell_english_labels_test.dart: Arabic locale keeps the Arabic source label

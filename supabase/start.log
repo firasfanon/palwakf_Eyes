@@ -1,31 +1,168 @@
 WARN: config section [inbucket] is deprecated. Please use [local_smtp] instead.
+v16.4: Pulling from supabase/postgrest
 2.8.1: Pulling from supabase/kong
+v1.31.3: Pulling from supabase/mailpit
+17.11.0.004: Pulling from supabase/postgres
+v2.197.0: Pulling from supabase/gotrue
+213ec9aee27d: Pulling fs layer
+a70653f7a2d5: Pulling fs layer
+531e3bd93090: Pulling fs layer
+814dd06d26c7: Pulling fs layer
+814dd06d26c7: Waiting
 Error response from daemon: toomanyrequests: Rate exceeded
 Retrying after 4s: public.ecr.aws/supabase/storage-api:v1.79.36
-v1.31.3: Pulling from supabase/mailpit
-Error response from daemon: toomanyrequests: Rate exceeded
-Retrying after 4s: public.ecr.aws/supabase/postgrest:v16.4
-v2.197.0: Pulling from supabase/gotrue
-17.11.0.004: Pulling from supabase/postgres
 toomanyrequests: Rate exceeded
-Retrying after 4s: public.ecr.aws/supabase/kong:2.8.1
-toomanyrequests: Rate exceeded
-Retrying after 4s: public.ecr.aws/supabase/gotrue:v2.197.0
-e2de96513ba9: Already exists
-0a0b1cce89bf: Pulling fs layer
-6c11b30372ef: Pulling fs layer
-toomanyrequests: Rate exceeded
-Retrying after 4s: public.ecr.aws/supabase/postgres:17.11.0.004
-6c11b30372ef: Verifying Checksum
-6c11b30372ef: Download complete
-0a0b1cce89bf: Download complete
-v1.79.36: Pulling from supabase/storage-api
-v2.197.0: Pulling from supabase/gotrue
-Error response from daemon: toomanyrequests: Rate exceeded
-Error response from daemon: toomanyrequests: Rate exceeded
-Retrying after 8s: public.ecr.aws/supabase/kong:2.8.1
-Retrying after 8s: public.ecr.aws/supabase/postgrest:v16.4
+Retrying after 4s: public.ecr.aws/supabase/mailpit:v1.31.3
+9d7a4870f477: Pulling fs layer
+9d7a4870f477: Waiting
 d0c1d894c237: Pulling fs layer
+5cf28f105869: Pulling fs layer
+1a9e682628cb: Pulling fs layer
+43735ba4f30d: Pulling fs layer
+51f23b99e4a3: Pulling fs layer
+d0c1d894c237: Waiting
+40372fae5294: Pulling fs layer
+5ccb9367156d: Pulling fs layer
+0dd5a94004df: Pulling fs layer
+a48842864032: Pulling fs layer
+9005a6945685: Pulling fs layer
+5cf28f105869: Waiting
+328e0b3331b4: Pulling fs layer
+91bfd1c8cab7: Pulling fs layer
+1a9e682628cb: Waiting
+a23edf8f81d7: Pulling fs layer
+43735ba4f30d: Waiting
+eac09143570a: Pulling fs layer
+a1d230f0e554: Pulling fs layer
+452cef34484a: Pulling fs layer
+eeb5336451ed: Pulling fs layer
+307e4246aff6: Pulling fs layer
+5ccb9367156d: Waiting
+00d155684986: Pulling fs layer
+0dd5a94004df: Waiting
+8da71f92e18b: Pulling fs layer
+fbe0d6445ecd: Pulling fs layer
+a48842864032: Waiting
+7102497fb037: Pulling fs layer
+9005a6945685: Waiting
+db7948e1c6a1: Pulling fs layer
+bf900ae624e1: Pulling fs layer
+6f59b56c3042: Pulling fs layer
+328e0b3331b4: Waiting
+51f23b99e4a3: Waiting
+40372fae5294: Waiting
+474923b67587: Pulling fs layer
+1c35b45899a8: Pulling fs layer
+dfd05d548524: Pulling fs layer
+91bfd1c8cab7: Waiting
+f7548fe51e6c: Pulling fs layer
+a1d230f0e554: Waiting
+eac09143570a: Waiting
+452cef34484a: Waiting
+db7948e1c6a1: Waiting
+eeb5336451ed: Waiting
+1c35b45899a8: Waiting
+bf900ae624e1: Waiting
+dfd05d548524: Waiting
+307e4246aff6: Waiting
+00d155684986: Waiting
+f7548fe51e6c: Waiting
+8da71f92e18b: Waiting
+6f59b56c3042: Waiting
+474923b67587: Waiting
+fbe0d6445ecd: Waiting
+a23edf8f81d7: Waiting
+55afa1ecc21d: Already exists
+71eb50013731: Pulling fs layer
+74c409e3506a: Pulling fs layer
+e5d190db8191: Pulling fs layer
+f30f4fcb85f4: Pulling fs layer
+c0cb7126d877: Pulling fs layer
+71eb50013731: Waiting
+74c409e3506a: Waiting
+e5d190db8191: Waiting
+c0cb7126d877: Waiting
+a70653f7a2d5: Verifying Checksum
+a70653f7a2d5: Download complete
+213ec9aee27d: Verifying Checksum
+213ec9aee27d: Download complete
+814dd06d26c7: Verifying Checksum
+814dd06d26c7: Download complete
+213ec9aee27d: Pull complete
+531e3bd93090: Verifying Checksum
+531e3bd93090: Download complete
+9d7a4870f477: Verifying Checksum
+9d7a4870f477: Download complete
+d0c1d894c237: Download complete
+5cf28f105869: Verifying Checksum
+5cf28f105869: Download complete
+1a9e682628cb: Download complete
+51f23b99e4a3: Verifying Checksum
+51f23b99e4a3: Download complete
+40372fae5294: Verifying Checksum
+40372fae5294: Download complete
+5ccb9367156d: Verifying Checksum
+5ccb9367156d: Download complete
+0dd5a94004df: Verifying Checksum
+0dd5a94004df: Download complete
+9d7a4870f477: Pull complete
+a48842864032: Verifying Checksum
+a48842864032: Download complete
+d0c1d894c237: Pull complete
+9005a6945685: Verifying Checksum
+9005a6945685: Download complete
+328e0b3331b4: Download complete
+Digest: sha256:d155c6718ed9a9f990d159a2ab7c0a3f16944dbb6d0a0344557421042acfe0df
+91bfd1c8cab7: Verifying Checksum
+91bfd1c8cab7: Download complete
+Status: Downloaded newer image for public.ecr.aws/supabase/postgrest:v16.4
+public.ecr.aws/supabase/postgrest:v16.4
+a23edf8f81d7: Verifying Checksum
+a23edf8f81d7: Download complete
+eac09143570a: Download complete
+a1d230f0e554: Verifying Checksum
+a1d230f0e554: Download complete
+452cef34484a: Verifying Checksum
+452cef34484a: Download complete
+eeb5336451ed: Verifying Checksum
+eeb5336451ed: Download complete
+307e4246aff6: Verifying Checksum
+307e4246aff6: Download complete
+00d155684986: Download complete
+8da71f92e18b: Verifying Checksum
+8da71f92e18b: Download complete
+fbe0d6445ecd: Verifying Checksum
+fbe0d6445ecd: Download complete
+43735ba4f30d: Verifying Checksum
+43735ba4f30d: Download complete
+7102497fb037: Verifying Checksum
+7102497fb037: Download complete
+db7948e1c6a1: Verifying Checksum
+db7948e1c6a1: Download complete
+6f59b56c3042: Verifying Checksum
+6f59b56c3042: Download complete
+bf900ae624e1: Verifying Checksum
+bf900ae624e1: Download complete
+474923b67587: Verifying Checksum
+474923b67587: Download complete
+1c35b45899a8: Download complete
+dfd05d548524: Verifying Checksum
+dfd05d548524: Download complete
+f7548fe51e6c: Verifying Checksum
+f7548fe51e6c: Download complete
+71eb50013731: Verifying Checksum
+71eb50013731: Download complete
+74c409e3506a: Download complete
+f30f4fcb85f4: Download complete
+c0cb7126d877: Verifying Checksum
+c0cb7126d877: Download complete
+e5d190db8191: Verifying Checksum
+e5d190db8191: Download complete
+71eb50013731: Pull complete
+Error response from daemon: toomanyrequests: Rate exceeded
+Retrying after 8s: public.ecr.aws/supabase/mailpit:v1.31.3
+v1.79.36: Pulling from supabase/storage-api
+d0c1d894c237: Already exists
 f0bff0b17bb6: Pulling fs layer
 bf5074c0b7fa: Pulling fs layer
 76bc8d85aed0: Pulling fs layer
@@ -40,95 +177,33 @@ fb772985a92d: Pulling fs layer
 4c76576d4885: Pulling fs layer
 fb9dd83d9835: Pulling fs layer
 fb772985a92d: Waiting
-2923bc55a2bd: Waiting
-23af072915d6: Waiting
-9f5e13364d13: Waiting
-76bc8d85aed0: Waiting
-4c76576d4885: Waiting
-fb9dd83d9835: Waiting
 8039b21a00ac: Waiting
+2923bc55a2bd: Waiting
 0c91f59dd719: Waiting
 6a5c742fadca: Waiting
 018eaf08b9fd: Waiting
-toomanyrequests: Rate exceeded
-Retrying after 8s: public.ecr.aws/supabase/gotrue:v2.197.0
-17.11.0.004: Pulling from supabase/postgres
-bf5074c0b7fa: Verifying Checksum
-bf5074c0b7fa: Download complete
-d0c1d894c237: Download complete
+9f5e13364d13: Waiting
+4c76576d4885: Waiting
+fb9dd83d9835: Waiting
+23af072915d6: Waiting
 76bc8d85aed0: Verifying Checksum
 76bc8d85aed0: Download complete
+bf5074c0b7fa: Verifying Checksum
+bf5074c0b7fa: Download complete
+0c91f59dd719: Download complete
 f0bff0b17bb6: Verifying Checksum
 f0bff0b17bb6: Download complete
-d0c1d894c237: Pulling fs layer
-5cf28f105869: Pulling fs layer
-1a9e682628cb: Pulling fs layer
-43735ba4f30d: Pulling fs layer
-51f23b99e4a3: Pulling fs layer
-40372fae5294: Pulling fs layer
-5ccb9367156d: Pulling fs layer
-0dd5a94004df: Pulling fs layer
-a48842864032: Pulling fs layer
-9005a6945685: Pulling fs layer
-328e0b3331b4: Pulling fs layer
-91bfd1c8cab7: Pulling fs layer
-a23edf8f81d7: Pulling fs layer
-eac09143570a: Pulling fs layer
-43735ba4f30d: Waiting
-a1d230f0e554: Pulling fs layer
-51f23b99e4a3: Waiting
-452cef34484a: Pulling fs layer
-40372fae5294: Waiting
-eeb5336451ed: Pulling fs layer
-307e4246aff6: Pulling fs layer
-00d155684986: Pulling fs layer
-5ccb9367156d: Waiting
-8da71f92e18b: Pulling fs layer
-0dd5a94004df: Waiting
-fbe0d6445ecd: Pulling fs layer
-7102497fb037: Pulling fs layer
-db7948e1c6a1: Pulling fs layer
-a48842864032: Waiting
-bf900ae624e1: Pulling fs layer
-6f59b56c3042: Pulling fs layer
-9005a6945685: Waiting
-474923b67587: Pulling fs layer
-1c35b45899a8: Pulling fs layer
-328e0b3331b4: Waiting
-dfd05d548524: Pulling fs layer
-f7548fe51e6c: Pulling fs layer
-91bfd1c8cab7: Waiting
-a23edf8f81d7: Waiting
-a1d230f0e554: Waiting
-eac09143570a: Waiting
-452cef34484a: Waiting
-bf900ae624e1: Waiting
-eeb5336451ed: Waiting
-6f59b56c3042: Waiting
-474923b67587: Waiting
-1c35b45899a8: Waiting
-307e4246aff6: Waiting
-dfd05d548524: Waiting
-f7548fe51e6c: Waiting
-00d155684986: Waiting
-8da71f92e18b: Waiting
-fbe0d6445ecd: Waiting
-7102497fb037: Waiting
-db7948e1c6a1: Waiting
-5cf28f105869: Waiting
-1a9e682628cb: Waiting
-d0c1d894c237: Pull complete
-d0c1d894c237: Pull complete
+018eaf08b9fd: Verifying Checksum
+018eaf08b9fd: Download complete
 6a5c742fadca: Verifying Checksum
 6a5c742fadca: Download complete
-018eaf08b9fd: Download complete
-0c91f59dd719: Verifying Checksum
-0c91f59dd719: Download complete
+2923bc55a2bd: Verifying Checksum
+2923bc55a2bd: Download complete
 8039b21a00ac: Verifying Checksum
 8039b21a00ac: Download complete
 fb772985a92d: Verifying Checksum
 fb772985a92d: Download complete
-2923bc55a2bd: Download complete
+4c76576d4885: Verifying Checksum
 4c76576d4885: Download complete
 9f5e13364d13: Verifying Checksum
 9f5e13364d13: Download complete
@@ -136,132 +211,42 @@ fb772985a92d: Download complete
 23af072915d6: Download complete
 fb9dd83d9835: Verifying Checksum
 fb9dd83d9835: Download complete
-0a0b1cce89bf: Pull complete
-5cf28f105869: Verifying Checksum
-5cf28f105869: Download complete
-1a9e682628cb: Verifying Checksum
-1a9e682628cb: Download complete
-51f23b99e4a3: Verifying Checksum
-51f23b99e4a3: Download complete
-40372fae5294: Verifying Checksum
-40372fae5294: Download complete
-5ccb9367156d: Verifying Checksum
-5ccb9367156d: Download complete
-0dd5a94004df: Verifying Checksum
-0dd5a94004df: Download complete
-a48842864032: Verifying Checksum
-a48842864032: Download complete
-9005a6945685: Download complete
-328e0b3331b4: Verifying Checksum
-328e0b3331b4: Download complete
-91bfd1c8cab7: Download complete
-a23edf8f81d7: Verifying Checksum
-a23edf8f81d7: Download complete
-eac09143570a: Verifying Checksum
-eac09143570a: Download complete
-a1d230f0e554: Verifying Checksum
-a1d230f0e554: Download complete
-452cef34484a: Verifying Checksum
-452cef34484a: Download complete
-eeb5336451ed: Verifying Checksum
-eeb5336451ed: Download complete
-307e4246aff6: Verifying Checksum
-307e4246aff6: Download complete
-00d155684986: Verifying Checksum
-00d155684986: Download complete
-8da71f92e18b: Download complete
-fbe0d6445ecd: Verifying Checksum
-fbe0d6445ecd: Download complete
-43735ba4f30d: Verifying Checksum
-43735ba4f30d: Download complete
-7102497fb037: Verifying Checksum
-7102497fb037: Download complete
-db7948e1c6a1: Download complete
-f0bff0b17bb6: Pull complete
-bf900ae624e1: Verifying Checksum
-bf900ae624e1: Download complete
-6f59b56c3042: Verifying Checksum
-6f59b56c3042: Download complete
-474923b67587: Verifying Checksum
-474923b67587: Download complete
-1c35b45899a8: Verifying Checksum
-1c35b45899a8: Download complete
-dfd05d548524: Verifying Checksum
-dfd05d548524: Download complete
-f7548fe51e6c: Verifying Checksum
-f7548fe51e6c: Download complete
-bf5074c0b7fa: Pull complete
-76bc8d85aed0: Pull complete
-6c11b30372ef: Pull complete
-Digest: sha256:ed9b00c609e77e99c79b93f1178255ebc271868920f2c69a8d166bd5634ed10d
-5cf28f105869: Pull complete
-Status: Downloaded newer image for public.ecr.aws/supabase/mailpit:v1.31.3
-public.ecr.aws/supabase/mailpit:v1.31.3
-1a9e682628cb: Pull complete
-2.8.1: Pulling from supabase/kong
-v2.197.0: Pulling from supabase/gotrue
-v16.4: Pulling from supabase/postgrest
-213ec9aee27d: Pulling fs layer
-a70653f7a2d5: Pulling fs layer
-531e3bd93090: Pulling fs layer
-814dd06d26c7: Pulling fs layer
-814dd06d26c7: Waiting
-55afa1ecc21d: Already exists
-71eb50013731: Pulling fs layer
-74c409e3506a: Pulling fs layer
-e5d190db8191: Pulling fs layer
-f30f4fcb85f4: Pulling fs layer
-c0cb7126d877: Pulling fs layer
-71eb50013731: Waiting
-74c409e3506a: Waiting
-e5d190db8191: Waiting
-f30f4fcb85f4: Waiting
-c0cb7126d877: Waiting
-a70653f7a2d5: Verifying Checksum
-a70653f7a2d5: Download complete
-213ec9aee27d: Verifying Checksum
-213ec9aee27d: Download complete
-814dd06d26c7: Verifying Checksum
-814dd06d26c7: Download complete
-531e3bd93090: Verifying Checksum
-531e3bd93090: Download complete
-71eb50013731: Download complete
-9d7a4870f477: Pulling fs layer
-9d7a4870f477: Waiting
-f30f4fcb85f4: Download complete
-74c409e3506a: Verifying Checksum
-74c409e3506a: Download complete
-71eb50013731: Pull complete
-c0cb7126d877: Verifying Checksum
-c0cb7126d877: Download complete
-213ec9aee27d: Pull complete
-e5d190db8191: Verifying Checksum
-e5d190db8191: Download complete
-9d7a4870f477: Verifying Checksum
-9d7a4870f477: Download complete
-9d7a4870f477: Pull complete
-Digest: sha256:d155c6718ed9a9f990d159a2ab7c0a3f16944dbb6d0a0344557421042acfe0df
-Status: Downloaded newer image for public.ecr.aws/supabase/postgrest:v16.4
-public.ecr.aws/supabase/postgrest:v16.4
-8039b21a00ac: Pull complete
-0c91f59dd719: Pull complete
-6a5c742fadca: Pull complete
-018eaf08b9fd: Pull complete
 a70653f7a2d5: Pull complete
 74c409e3506a: Pull complete
+5cf28f105869: Pull complete
+f0bff0b17bb6: Pull complete
+1a9e682628cb: Pull complete
+bf5074c0b7fa: Pull complete
+76bc8d85aed0: Pull complete
 e5d190db8191: Pull complete
+v1.31.3: Pulling from supabase/mailpit
+e2de96513ba9: Already exists
+0a0b1cce89bf: Pulling fs layer
+6c11b30372ef: Pulling fs layer
+6c11b30372ef: Verifying Checksum
+6c11b30372ef: Download complete
+0a0b1cce89bf: Download complete
+531e3bd93090: Pull complete
 f30f4fcb85f4: Pull complete
+0a0b1cce89bf: Pull complete
+8039b21a00ac: Pull complete
+814dd06d26c7: Pull complete
+Digest: sha256:1b53405d8680a09d6f44494b7990bf7da2ea43f84a258c59717d4539abf09f6d
 c0cb7126d877: Pull complete
+0c91f59dd719: Pull complete
+Status: Downloaded newer image for public.ecr.aws/supabase/kong:2.8.1
+public.ecr.aws/supabase/kong:2.8.1
 Digest: sha256:1736a63078f5922b198c4cbe50f80ab9a2d3b54fe8b7b6cfb2e9dc5dbbc12c6b
 Status: Downloaded newer image for public.ecr.aws/supabase/gotrue:v2.197.0
 public.ecr.aws/supabase/gotrue:v2.197.0
+6a5c742fadca: Pull complete
+018eaf08b9fd: Pull complete
+6c11b30372ef: Pull complete
+Digest: sha256:ed9b00c609e77e99c79b93f1178255ebc271868920f2c69a8d166bd5634ed10d
+Status: Downloaded newer image for public.ecr.aws/supabase/mailpit:v1.31.3
+public.ecr.aws/supabase/mailpit:v1.31.3
 fb772985a92d: Pull complete
 2923bc55a2bd: Pull complete
-531e3bd93090: Pull complete
-814dd06d26c7: Pull complete
-Digest: sha256:1b53405d8680a09d6f44494b7990bf7da2ea43f84a258c59717d4539abf09f6d
-Status: Downloaded newer image for public.ecr.aws/supabase/kong:2.8.1
-public.ecr.aws/supabase/kong:2.8.1
 43735ba4f30d: Pull complete
 51f23b99e4a3: Pull complete
 40372fae5294: Pull complete
@@ -299,3 +284,54 @@ Digest: sha256:6a32896ae2d1ae2ea2d05ecaf6ed6c8a6b091739b469a8cf860ee89b2604d28f
 Status: Downloaded newer image for public.ecr.aws/supabase/storage-api:v1.79.36
 public.ecr.aws/supabase/storage-api:v1.79.36
 Starting database...
+Initialising schema...
+Seeding globals from roles.sql...
+Applying migration 202607190001_pal_eyes_operational_backend.sql...
+Applying migration 202609220002_pal_eyes_research_knowledge_model_v1.sql...
+Applying migration 202610090003_pal_eyes_publication_fail_closed_guard.sql...
+Applying migration 202610090004_pal_eyes_workflow_integrity_and_provenance.sql...
+Seeding data from supabase/seed/202607190001_pal_eyes_r7_0_0_seed.sql...
+Starting containers...
+Waiting for health checks...
+Started supabase local development setup.
+
+╭──────────────────────────────────╮
+│ 🔧 Development Tools             │
+├─────────┬────────────────────────┤
+│ Mailpit │ http://127.0.0.1:54324 │
+╰─────────┴────────────────────────╯
+
+╭─────────────────────────────────────────────────╮
+│ 🌐 APIs                                         │
+├─────────────┬───────────────────────────────────┤
+│ Project URL │ http://127.0.0.1:54321            │
+│ REST        │ http://127.0.0.1:54321/rest/v1    │
+│ GraphQL     │ http://127.0.0.1:54321/graphql/v1 │
+╰─────────────┴───────────────────────────────────╯
+
+╭───────────────────────────────────────────────────────────────╮
+│ ⛁ Database                                                    │
+├─────┬─────────────────────────────────────────────────────────┤
+│ URL │ postgresql://postgres:postgres@127.0.0.1:54322/postgres │
+╰─────┴─────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────────────────╮
+│ 🔑 Authentication Keys                                       │
+├─────────────┬────────────────────────────────────────────────┤
+│ Publishable │ sb_publishable_ACJWlzQHlZjBrEguHvfOxg_3BJgxAaH │
+│ Secret      │ sb_secret_N7UND0UgjKTVK-Uodkm0Hg_xSvEMPvz      │
+╰─────────────┴────────────────────────────────────────────────╯
+
+╭───────────────────────────────────────────────────────────────────────────────╮
+│ 📦 Storage (S3)                                                               │
+├────────────┬──────────────────────────────────────────────────────────────────┤
+│ URL        │ http://127.0.0.1:54321/storage/v1/s3                             │
+│ Access Key │ 625729a08b95bf1b7ff351a663f3a23c                                 │
+│ Secret Key │ 850181e4652dd023b7a98c58ae0d2d34bd487ee0cc3254aed6eda37307425907 │
+│ Region     │ local                                                            │
+╰────────────┴──────────────────────────────────────────────────────────────────╯
+Local dev security notice
+All services bind to 0.0.0.0 (network-accessible, not just localhost)
+API keys and JWT secrets are shared defaults. Do not use in production
+Studio, pgMeta (/pg/*), and analytics have no authentication
+
