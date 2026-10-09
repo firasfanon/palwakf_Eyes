@@ -1,0 +1,43 @@
+ .../workflows/claude_remote_candidate_evidence.yml |  154 ++
+ assets/fonts/FONT_PROVENANCE.md                    |   21 +
+ assets/fonts/amiri/Amiri-Bold.ttf                  |  Bin 0 -> 413480 bytes
+ assets/fonts/amiri/Amiri-Regular.ttf               |  Bin 0 -> 431116 bytes
+ assets/fonts/amiri/OFL.txt                         |   93 +
+ .../IBMPlexSansArabic-Bold.ttf                     |  Bin 0 -> 246992 bytes
+ .../IBMPlexSansArabic-Medium.ttf                   |  Bin 0 -> 242100 bytes
+ .../IBMPlexSansArabic-Regular.ttf                  |  Bin 0 -> 235924 bytes
+ .../IBMPlexSansArabic-SemiBold.ttf                 |  Bin 0 -> 244616 bytes
+ assets/fonts/ibm_plex_sans_arabic/OFL.txt          |   93 +
+ lib/app/app.dart                                   |    5 +-
+ lib/app/application/app_settings.dart              |    2 +-
+ lib/app/router/app_router.dart                     |   51 +-
+ lib/app/router/route_paths.dart                    |    7 +
+ lib/app/theme/app_colors.dart                      |   79 +-
+ lib/app/theme/app_theme.dart                       |  142 +-
+ lib/app/theme/approved_reference_design.dart       |   37 +-
+ lib/app/theme/pal_eyes_design_tokens.dart          |  117 ++
+ lib/core/access/pal_eyes_access.dart               |  224 +++
+ lib/core/access/supabase_access_identity.dart      |   61 +
+ lib/core/widgets/governance_shell.dart             |    2 +
+ lib/core/widgets/pal_eyes_canonical_visual_v1.dart |   19 +-
+ lib/core/widgets/pal_eyes_zone_strip.dart          |   84 +
+ lib/core/widgets/public_shell.dart                 |  102 +-
+ lib/core/widgets/workspace_shell.dart              |   33 +-
+ .../presentation/access_restricted_screen.dart     |   79 +
+ .../discovery/presentation/discovery_screen.dart   |   20 +-
+ lib/features/home/presentation/home_screen.dart    | 1799 +++++++++++++++-----
+ lib/features/map/presentation/map_screen.dart      |    6 +-
+ .../stories/presentation/stories_screen.dart       |    2 +
+ .../presentation/workspace_dashboard_screen.dart   |   39 +-
+ pubspec.yaml                                       |   19 +
+ ...0003_pal_eyes_publication_fail_closed_guard.sql |  129 ++
+ test/arabic_typography_and_tokens_test.dart        |  108 ++
+ test/editorial_home_refinement_test.dart           |   80 +
+ test/privileged_access_gate_test.dart              |  337 ++++
+ ...ublication_fail_closed_guard_contract_test.dart |   55 +
+ tools/rls_boundary/rls_boundary_tests.sql          |  200 +++
+ tools/rls_boundary/run_local_rls_boundary_tests.sh |   52 +
+ tools/rls_boundary/supabase_auth_stub.sql          |   36 +
+ web/index.html                                     |    2 +-
+ web/manifest.json                                  |    4 +-
+ 42 files changed, 3639 insertions(+), 654 deletions(-)

@@ -1,0 +1,104 @@
+[
+  {
+    "label": "candidate_internal",
+    "profile": "desktop",
+    "route": "/workspace",
+    "file": "candidate_internal_desktop_workspace.png",
+    "final_url": "http://127.0.0.1:8703/workspace",
+    "seconds": 9.4,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_internal",
+    "profile": "desktop",
+    "route": "/workspace/research",
+    "file": "candidate_internal_desktop_workspace_research.png",
+    "final_url": "http://127.0.0.1:8703/workspace/research",
+    "seconds": 10.1,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_internal",
+    "profile": "desktop",
+    "route": "/admin",
+    "file": "candidate_internal_desktop_admin.png",
+    "final_url": "http://127.0.0.1:8703/admin",
+    "seconds": 9.3,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_internal",
+    "profile": "desktop",
+    "route": "/admin/governance",
+    "file": "candidate_internal_desktop_admin_governance.png",
+    "final_url": "http://127.0.0.1:8703/admin/governance",
+    "seconds": 9.2,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_internal",
+    "profile": "desktop",
+    "blocked_external_requests": [
+      "https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2"
+    ]
+  },
+  {
+    "label": "candidate_internal",
+    "profile": "mobile390",
+    "route": "/workspace",
+    "file": "candidate_internal_mobile390_workspace.png",
+    "final_url": "http://127.0.0.1:8703/workspace",
+    "seconds": 9.7,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_internal",
+    "profile": "mobile390",
+    "route": "/workspace/research",
+    "file": "candidate_internal_mobile390_workspace_research.png",
+    "final_url": "http://127.0.0.1:8703/workspace/research",
+    "seconds": 9.9,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_internal",
+    "profile": "mobile390",
+    "route": "/admin",
+    "file": "candidate_internal_mobile390_admin.png",
+    "final_url": "http://127.0.0.1:8703/admin",
+    "seconds": 9.2,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_internal",
+    "profile": "mobile390",
+    "route": "/admin/governance",
+    "file": "candidate_internal_mobile390_admin_governance.png",
+    "final_url": "http://127.0.0.1:8703/admin/governance",
+    "seconds": 9.3,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_internal",
+    "profile": "mobile390",
+    "blocked_external_requests": [
+      "https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2"
+    ]
+  }
+]

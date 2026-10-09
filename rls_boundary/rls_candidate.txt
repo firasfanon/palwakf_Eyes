@@ -1,0 +1,39 @@
+ seq | result |                         probe                          | expectation |    outcome    |                                                detail                                                
+-----+--------+--------------------------------------------------------+-------------+---------------+------------------------------------------------------------------------------------------------------
+   1 | PASS   | A1 anon reads internal sites table                     | error       | error         | 42501 permission denied for schema pal_eyes
+   2 | PASS   | A2 anon reads original draft layers                    | error       | error         | 42501 permission denied for schema pal_eyes
+   3 | PASS   | A3 anon inserts a site                                 | error       | error         | 42501 permission denied for schema pal_eyes
+   4 | PASS   | A4 anon reads audit events                             | error       | error         | 42501 permission denied for schema pal_eyes
+   5 | PASS   | B1 no-role reads sites (RLS hides rows)                | rows=0      | rows=0        | 
+   6 | PASS   | B2 no-role inserts a site                              | error       | error         | 42501 new row violates row-level security policy for table "sites"
+   7 | PASS   | B3 no-role self-grants system_admin                    | error       | error         | 42501 new row violates row-level security policy for table "user_roles"
+   8 | PASS   | B4 no-role updates a site (zero rows visible)          | affected=0  | ok affected=0 | 
+   9 | PASS   | C1 researcher reads sites                              | rows>0      | rows=1        | 
+  10 | PASS   | C2 researcher inserts a site (editor-only)             | error       | error         | 42501 new row violates row-level security policy for table "sites"
+  11 | PASS   | C3 researcher creates release candidate                | error       | error         | 42501 new row violates row-level security policy for table "release_candidates"
+  12 | PASS   | C4 researcher self-grants system_admin                 | error       | error         | 42501 new row violates row-level security policy for table "user_roles"
+  13 | PASS   | C5 researcher creates source (positive CRUD)           | ok          | ok affected=1 | 
+  14 | PASS   | C6 researcher marks source PUBLISHED                   | error       | error         | 42501 PUBLICATION_FAIL_CLOSED: sources.public_release_status -> PUBLISHED requires release authority
+  15 | PASS   | C7 researcher rewrites an audit event                  | error       | error         | 42501 permission denied for table audit_events
+  16 | PASS   | C8 researcher deletes an audit event                   | error       | error         | 42501 permission denied for table audit_events
+  17 | PASS   | C9 researcher appends an audit event (positive)        | ok          | ok affected=1 | 
+  18 | PASS   | D1 editor updates draft text (positive CRUD)           | affected=1  | ok affected=1 | 
+  19 | PASS   | D2 editor publishes a site directly                    | error       | error         | 42501 PUBLICATION_FAIL_CLOSED: sites.publication_status -> PUBLISHED requires release authority
+  20 | PASS   | D2b editor promotes a site to CANDIDATE                | error       | error         | 42501 PUBLICATION_FAIL_CLOSED: sites.publication_status -> CANDIDATE requires release authority
+  21 | PASS   | D3 editor inserts an already-PUBLISHED site            | error       | error         | 42501 PUBLICATION_FAIL_CLOSED: sites.publication_status -> PUBLISHED requires release authority
+  22 | PASS   | D4 editor approves coordinates for public              | error       | error         | 42501 PUBLICATION_FAIL_CLOSED: sites.coordinate_status -> PUBLIC_APPROVED requires release authority
+  23 | PASS   | D5 editor creates release candidate                    | error       | error         | 42501 new row violates row-level security policy for table "release_candidates"
+  24 | PASS   | D6 editor creates a new BLOCKED site (positive CRUD)   | ok          | ok affected=1 | 
+  25 | PASS   | E1 rights reviewer edits a site                        | affected=0  | ok affected=0 | 
+  26 | PASS   | F1 release manager creates BLOCKED candidate           | ok          | ok affected=1 | 
+  27 | PASS   | F2 release manager creates PUBLISHED candidate         | error       | error         | 42501 new row violates row-level security policy for table "release_candidates"
+  28 | PASS   | F3 release manager has no direct site write            | affected=0  | ok affected=0 | 
+  29 | PASS   | F4 release manager rewrites an audit event             | error       | error         | 42501 permission denied for table audit_events
+  30 | PASS   | G1 system admin grants a role                          | ok          | ok affected=1 | 
+  31 | PASS   | G1b system admin publishes a site (explicit authority) | affected=1  | ok affected=1 | 
+  32 | PASS   | G2 system admin rewrites an audit event                | error       | error         | 42501 permission denied for table audit_events
+
+ passed | failed | total 
+--------+--------+-------
+     32 |      0 |    32
+

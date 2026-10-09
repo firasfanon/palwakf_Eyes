@@ -1,0 +1,273 @@
+[
+  {
+    "label": "candidate_public",
+    "profile": "desktop",
+    "route": "/",
+    "file": "candidate_public_desktop_home.png",
+    "final_url": "http://127.0.0.1:8702/",
+    "seconds": 10.0,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "desktop",
+    "route": "/research",
+    "file": "candidate_public_desktop_research.png",
+    "final_url": "http://127.0.0.1:8702/research",
+    "seconds": 10.2,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "desktop",
+    "route": "/research/swq-lqtnyn-4bbdf0",
+    "file": "candidate_public_desktop_research_swq-lqtnyn-4bbdf0.png",
+    "final_url": "http://127.0.0.1:8702/research/swq-lqtnyn-4bbdf0",
+    "seconds": 9.4,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "desktop",
+    "route": "/places",
+    "file": "candidate_public_desktop_places.png",
+    "final_url": "http://127.0.0.1:8702/places",
+    "seconds": 10.2,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "desktop",
+    "route": "/map",
+    "file": "candidate_public_desktop_map.png",
+    "final_url": "http://127.0.0.1:8702/map",
+    "seconds": 9.2,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "desktop",
+    "route": "/stories",
+    "file": "candidate_public_desktop_stories.png",
+    "final_url": "http://127.0.0.1:8702/stories",
+    "seconds": 9.7,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "desktop",
+    "route": "/workspace",
+    "file": "candidate_public_desktop_workspace.png",
+    "final_url": "http://127.0.0.1:8702/access-restricted?reason=sign-in",
+    "seconds": 8.5,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "desktop",
+    "route": "/admin",
+    "file": "candidate_public_desktop_admin.png",
+    "final_url": "http://127.0.0.1:8702/access-restricted?reason=sign-in",
+    "seconds": 8.6,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "desktop",
+    "blocked_external_requests": [
+      "https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2",
+      "https://tile.openstreetmap.org/8/149/101.png",
+      "https://tile.openstreetmap.org/8/149/102.png",
+      "https://tile.openstreetmap.org/8/149/103.png",
+      "https://tile.openstreetmap.org/8/149/104.png",
+      "https://tile.openstreetmap.org/8/149/105.png",
+      "https://tile.openstreetmap.org/8/149/106.png",
+      "https://tile.openstreetmap.org/8/150/101.png",
+      "https://tile.openstreetmap.org/8/150/102.png",
+      "https://tile.openstreetmap.org/8/150/103.png",
+      "https://tile.openstreetmap.org/8/150/104.png",
+      "https://tile.openstreetmap.org/8/150/105.png",
+      "https://tile.openstreetmap.org/8/150/106.png",
+      "https://tile.openstreetmap.org/8/151/101.png",
+      "https://tile.openstreetmap.org/8/151/102.png",
+      "https://tile.openstreetmap.org/8/151/103.png",
+      "https://tile.openstreetmap.org/8/151/104.png",
+      "https://tile.openstreetmap.org/8/151/105.png",
+      "https://tile.openstreetmap.org/8/151/106.png",
+      "https://tile.openstreetmap.org/8/152/101.png",
+      "https://tile.openstreetmap.org/8/152/102.png",
+      "https://tile.openstreetmap.org/8/152/103.png",
+      "https://tile.openstreetmap.org/8/152/104.png",
+      "https://tile.openstreetmap.org/8/152/105.png",
+      "https://tile.openstreetmap.org/8/152/106.png",
+      "https://tile.openstreetmap.org/8/153/101.png",
+      "https://tile.openstreetmap.org/8/153/102.png",
+      "https://tile.openstreetmap.org/8/153/103.png",
+      "https://tile.openstreetmap.org/8/153/104.png",
+      "https://tile.openstreetmap.org/8/153/105.png",
+      "https://tile.openstreetmap.org/8/153/106.png",
+      "https://tile.openstreetmap.org/8/154/101.png",
+      "https://tile.openstreetmap.org/8/154/102.png",
+      "https://tile.openstreetmap.org/8/154/103.png",
+      "https://tile.openstreetmap.org/8/154/104.png",
+      "https://tile.openstreetmap.org/8/154/105.png",
+      "https://tile.openstreetmap.org/8/154/106.png",
+      "https://tile.openstreetmap.org/8/155/101.png",
+      "https://tile.openstreetmap.org/8/155/102.png",
+      "https://tile.openstreetmap.org/8/155/103.png"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "mobile390",
+    "route": "/",
+    "file": "candidate_public_mobile390_home.png",
+    "final_url": "http://127.0.0.1:8702/",
+    "seconds": 10.0,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "mobile390",
+    "route": "/research",
+    "file": "candidate_public_mobile390_research.png",
+    "final_url": "http://127.0.0.1:8702/research",
+    "seconds": 10.0,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "mobile390",
+    "route": "/research/swq-lqtnyn-4bbdf0",
+    "file": "candidate_public_mobile390_research_swq-lqtnyn-4bbdf0.png",
+    "final_url": "http://127.0.0.1:8702/research/swq-lqtnyn-4bbdf0",
+    "seconds": 9.7,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "mobile390",
+    "route": "/places",
+    "file": "candidate_public_mobile390_places.png",
+    "final_url": "http://127.0.0.1:8702/places",
+    "seconds": 10.4,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "mobile390",
+    "route": "/map",
+    "file": "candidate_public_mobile390_map.png",
+    "final_url": "http://127.0.0.1:8702/map",
+    "seconds": 9.9,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "mobile390",
+    "route": "/stories",
+    "file": "candidate_public_mobile390_stories.png",
+    "final_url": "http://127.0.0.1:8702/stories",
+    "seconds": 9.6,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "mobile390",
+    "route": "/workspace",
+    "file": "candidate_public_mobile390_workspace.png",
+    "final_url": "http://127.0.0.1:8702/access-restricted?reason=sign-in",
+    "seconds": 8.7,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "mobile390",
+    "route": "/admin",
+    "file": "candidate_public_mobile390_admin.png",
+    "final_url": "http://127.0.0.1:8702/access-restricted?reason=sign-in",
+    "seconds": 8.7,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "candidate_public",
+    "profile": "mobile390",
+    "blocked_external_requests": [
+      "https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2",
+      "https://tile.openstreetmap.org/8/151/101.png",
+      "https://tile.openstreetmap.org/8/151/102.png",
+      "https://tile.openstreetmap.org/8/151/103.png",
+      "https://tile.openstreetmap.org/8/151/104.png",
+      "https://tile.openstreetmap.org/8/151/105.png",
+      "https://tile.openstreetmap.org/8/151/106.png",
+      "https://tile.openstreetmap.org/8/152/101.png",
+      "https://tile.openstreetmap.org/8/152/102.png",
+      "https://tile.openstreetmap.org/8/152/103.png",
+      "https://tile.openstreetmap.org/8/152/104.png",
+      "https://tile.openstreetmap.org/8/152/105.png",
+      "https://tile.openstreetmap.org/8/152/106.png",
+      "https://tile.openstreetmap.org/8/153/101.png",
+      "https://tile.openstreetmap.org/8/153/102.png",
+      "https://tile.openstreetmap.org/8/153/103.png",
+      "https://tile.openstreetmap.org/8/153/104.png",
+      "https://tile.openstreetmap.org/8/153/105.png",
+      "https://tile.openstreetmap.org/8/153/106.png",
+      "https://tile.openstreetmap.org/8/154/101.png",
+      "https://tile.openstreetmap.org/8/154/102.png",
+      "https://tile.openstreetmap.org/8/154/103.png",
+      "https://tile.openstreetmap.org/8/154/104.png",
+      "https://tile.openstreetmap.org/8/154/105.png",
+      "https://tile.openstreetmap.org/8/154/106.png"
+    ]
+  }
+]

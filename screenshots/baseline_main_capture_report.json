@@ -1,0 +1,180 @@
+[
+  {
+    "label": "baseline_main",
+    "profile": "desktop",
+    "route": "/",
+    "file": "baseline_main_desktop_home.png",
+    "final_url": "http://127.0.0.1:8701/",
+    "seconds": 9.5,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "baseline_main",
+    "profile": "desktop",
+    "route": "/research",
+    "file": "baseline_main_desktop_research.png",
+    "final_url": "http://127.0.0.1:8701/research",
+    "seconds": 10.4,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "baseline_main",
+    "profile": "desktop",
+    "route": "/workspace",
+    "file": "baseline_main_desktop_workspace.png",
+    "final_url": "http://127.0.0.1:8701/workspace",
+    "seconds": 9.5,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "baseline_main",
+    "profile": "desktop",
+    "route": "/admin",
+    "file": "baseline_main_desktop_admin.png",
+    "final_url": "http://127.0.0.1:8701/admin",
+    "seconds": 9.2,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "baseline_main",
+    "profile": "desktop",
+    "blocked_external_requests": [
+      "https://fonts.gstatic.com/s/notosansarabic/v28/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfyGyvvnCBFQLaig.woff2",
+      "https://fonts.gstatic.com/s/notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.90.woff2",
+      "https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2"
+    ]
+  },
+  {
+    "label": "baseline_main",
+    "profile": "mobile390",
+    "route": "/",
+    "file": "baseline_main_mobile390_home.png",
+    "final_url": "http://127.0.0.1:8701/",
+    "seconds": 9.5,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "baseline_main",
+    "profile": "mobile390",
+    "route": "/research",
+    "file": "baseline_main_mobile390_research.png",
+    "final_url": "http://127.0.0.1:8701/research",
+    "seconds": 10.9,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "baseline_main",
+    "profile": "mobile390",
+    "route": "/workspace",
+    "file": "baseline_main_mobile390_workspace.png",
+    "final_url": "http://127.0.0.1:8701/workspace",
+    "seconds": 10.3,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "baseline_main",
+    "profile": "mobile390",
+    "route": "/admin",
+    "file": "baseline_main_mobile390_admin.png",
+    "final_url": "http://127.0.0.1:8701/admin",
+    "seconds": 9.9,
+    "page_errors": [
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED",
+      "console.error: Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "label": "baseline_main",
+    "profile": "mobile390",
+    "blocked_external_requests": [
+      "https://fonts.gstatic.com/s/notosansarabic/v28/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfyGyvvnCBFQLaig.woff2",
+      "https://fonts.gstatic.com/s/notosanssc/v37/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYkldv7JjxkkgFsFSSOPMOkySAZ73y9ViAt3acb8NexQ2w.90.woff2",
+      "https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2"
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+9e21e1e fix(workspace): legible brand mark on the deep-green workspace bar
+893d88b fix(ui): RTL forward arrows, solid home header band, real aerial crop instead of schematic map silhouette, map atlas panel no longer overlaps category rail
+59b5292 fix(theme): bundled family on component text styles; editorial container colors; gateway photo crop excludes baked captions
+5d0befd style: apply dart format
+47c1ab3 fix(workspace): give dashboard attention ListTiles their own Material canvas; apply formatter
+799c900 fix: harden home card layouts, scale header nav, apply formatter, clean license whitespace
+7884f55 feat: editorial unification, Arabic font fix, privileged route gate, publication guard
+b18d815 ci: add evidence-only pipeline for remote Claude candidate branches
