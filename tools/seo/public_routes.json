@@ -1,0 +1,18 @@
+{
+  "site_name_ar": "بعيون فلسطينية",
+  "site_name_en": "Palestinian Eyes",
+  "routes": [
+    {"path": "/", "title_ar": "بعيون فلسطينية — المكان والذاكرة والحكاية", "title_en": "Palestinian Eyes — place, memory and story", "description_ar": "أطلس تحريري للمواقع التاريخية والأثرية الفلسطينية، مرتبط بالمصادر والأدلة والخرائط والذاكرة.", "description_en": "An editorial atlas of Palestinian historic and archaeological sites, linked to sources, evidence, maps and memory."},
+    {"path": "/places", "title_ar": "الأماكن — بعيون فلسطينية", "title_en": "Places — Palestinian Eyes", "description_ar": "دليل المدن والقرى والمواقع الفلسطينية التاريخية مع حالة التوثيق والمراجعة.", "description_en": "A guide to Palestinian historic cities, villages and sites with documentation and review status."},
+    {"path": "/research", "title_ar": "مكتبة البحوث — بعيون فلسطينية", "title_en": "Research library — Palestinian Eyes", "description_ar": "بحوث مرتبطة بالأماكن الفلسطينية مع إظهار حالة المراجعة واليقين والمصدر.", "description_en": "Research linked to Palestinian places, showing review status, certainty and source."},
+    {"path": "/stories", "title_ar": "الحكايات — بعيون فلسطينية", "title_en": "Stories — Palestinian Eyes", "description_ar": "حكايات عن المكان الفلسطيني والناس والذاكرة.", "description_en": "Stories of Palestinian places, people and memory."},
+    {"path": "/map", "title_ar": "الأطلس التفاعلي — بعيون فلسطينية", "title_en": "Interactive atlas — Palestinian Eyes", "description_ar": "خريطة المواقع ذات الإحداثيات العامة المعتمدة فقط.", "description_en": "A map of sites with approved public coordinates only."},
+    {"path": "/timeline", "title_ar": "عبر الزمن — بعيون فلسطينية", "title_en": "Through time — Palestinian Eyes", "description_ar": "المراحل التاريخية التي شكّلت فلسطين عبر العصور.", "description_en": "The historical periods that shaped Palestine."},
+    {"path": "/governorates", "title_ar": "المحافظات — بعيون فلسطينية", "title_en": "Governorates — Palestinian Eyes", "description_ar": "تغطية المواقع حسب المحافظات الفلسطينية.", "description_en": "Site coverage by Palestinian governorate."},
+    {"path": "/sources", "title_ar": "المصادر — بعيون فلسطينية", "title_en": "Sources — Palestinian Eyes", "description_ar": "سجل المراجع والمصادر المحكومة التي تقود صفحات المواقع والقصص.", "description_en": "The governed register of references behind site and story pages."},
+    {"path": "/methodology", "title_ar": "المنهجية — بعيون فلسطينية", "title_en": "Methodology — Palestinian Eyes", "description_ar": "كيف نوثّق ونراجع وننشر: من الدليل إلى المراجعة البشرية.", "description_en": "How we document, review and publish: from evidence to human review."},
+    {"path": "/contribute", "title_ar": "ساهم في الذاكرة — بعيون فلسطينية", "title_en": "Contribute — Palestinian Eyes", "description_ar": "شارك صوراً وروايات وتصحيحات تخضع للمراجعة قبل أي نشر.", "description_en": "Share photos, accounts and corrections, reviewed before any publication."},
+    {"path": "/discover", "title_ar": "استكشف — بعيون فلسطينية", "title_en": "Discover — Palestinian Eyes", "description_ar": "ابحث في الأماكن والحكايات والبحوث.", "description_en": "Search places, stories and research."}
+  ],
+  "never_indexed_prefixes": ["/workspace", "/admin", "/sign-in", "/access-restricted"]
+}

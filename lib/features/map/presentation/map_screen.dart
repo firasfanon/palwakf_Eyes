@@ -9,6 +9,7 @@ import 'package:pal_eyes/core/config/map_tile_provider_policy.dart';
 import 'package:pal_eyes/core/widgets/map_tile_policy_surface.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_canonical_visual_v1.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_visual_system.dart';
+import 'package:pal_eyes/features/map/domain/map_category_filter.dart';
 import 'package:pal_eyes/features/places/application/heritage_sites_provider.dart';
 import 'package:pal_eyes/features/places/domain/heritage_site.dart';
 
@@ -22,11 +23,17 @@ class MapScreen extends ConsumerStatefulWidget {
 class _MapScreenState extends ConsumerState<MapScreen> {
   HeritageSite? _selected;
   int _categoryIndex = 0;
+  bool _listOpen = false;
 
   @override
   Widget build(BuildContext context) {
     final allSites = ref.watch(foundationSitesProvider);
-    final mappedSites = ref.watch(mappedSitesProvider);
+    final allMappedSites = ref.watch(mappedSitesProvider);
+    final category = mapCategories[_categoryIndex];
+    final mappedSites = category.apply(allMappedSites);
+    final categoryCounts = <int>[
+      for (final c in mapCategories) c.apply(allMappedSites).length,
+    ];
     final environment = ref.watch(appEnvironmentProvider);
     final configuration = MapTileProviderPolicy.resolve(environment);
 
@@ -72,7 +79,13 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                       : null,
                   compact: compact,
                   selectedIndex: _categoryIndex,
-                  onSelected: (index) => setState(() => _categoryIndex = index),
+                  counts: categoryCounts,
+                  onSelected: (index) => setState(() {
+                    _categoryIndex = index;
+                    if (_selected != null && !mapCategories[index].matches(_selected!)) {
+                      _selected = null;
+                    }
+                  }),
                 ),
               ),
               // The category rail is pinned physically left; the atlas panel
@@ -124,10 +137,37 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                           spacing: 7,
                           runSpacing: 7,
                           children: <Widget>[
-                            _CountPill('${mappedSites.length}', 'موقعًا'),
+                            _CountPill(
+                              '${mappedSites.length}',
+                              category.typeKeywords.isEmpty
+                                  ? 'موقعًا على الخريطة'
+                                  : 'في «${category.labelAr}»',
+                              key: const ValueKey<String>('map-filtered-count'),
+                            ),
                             _CountPill('${allSites.length}', 'في الكتالوج'),
                           ],
                         ),
+                        const SizedBox(height: 8),
+                        TextButton.icon(
+                          key: const ValueKey<String>('map-list-toggle'),
+                          onPressed: () =>
+                              setState(() => _listOpen = !_listOpen),
+                          icon: Icon(
+                            _listOpen
+                                ? Icons.map_outlined
+                                : Icons.format_list_bulleted_rounded,
+                          ),
+                          label: Text(
+                            _listOpen ? 'إخفاء القائمة' : 'عرض كقائمة',
+                          ),
+                        ),
+                        if (_listOpen)
+                          _SiteList(
+                            sites: mappedSites,
+                            maxHeight: compact ? 220 : 320,
+                            onOpen: (site) =>
+                                context.go(RoutePaths.place(site.slug)),
+                          ),
                       ],
                     ),
                   ),
@@ -298,24 +338,15 @@ class _CategoryRail extends StatelessWidget {
   const _CategoryRail({
     required this.compact,
     required this.selectedIndex,
+    required this.counts,
     required this.onSelected,
     super.key,
   });
 
   final bool compact;
   final int selectedIndex;
+  final List<int> counts;
   final ValueChanged<int> onSelected;
-
-  static const items = <(IconData, String)>[
-    (Icons.location_on_outlined, 'أماكن'),
-    (Icons.location_city_outlined, 'قرى'),
-    (Icons.account_balance_outlined, 'آثار'),
-    (Icons.mosque_outlined, 'مقامات'),
-    (Icons.water_drop_outlined, 'مياه'),
-    (Icons.route_outlined, 'طرق'),
-    (Icons.auto_stories_outlined, 'حكايات'),
-    (Icons.description_outlined, 'وثائق'),
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -326,14 +357,20 @@ class _CategoryRail extends StatelessWidget {
       child: Material(
         color: Colors.transparent,
         child: ListView.separated(
-          itemCount: items.length,
+          itemCount: mapCategories.length,
           separatorBuilder: (context, index) => const SizedBox(height: 5),
           itemBuilder: (context, index) {
-            final item = items[index];
+            final category = mapCategories[index];
+            final item = (category.icon, '${category.labelAr} (${counts[index]})');
             final selected = selectedIndex == index;
             return Tooltip(
               message: item.$2,
-              child: InkWell(
+              child: Semantics(
+                button: true,
+                selected: selected,
+                label: 'تصفية الأطلس: ${item.$2}',
+                child: InkWell(
+                key: ValueKey<String>('map-category-${category.key}'),
                 borderRadius: BorderRadius.circular(12),
                 onTap: () => onSelected(index),
                 child: Container(
@@ -381,6 +418,57 @@ class _CategoryRail extends StatelessWidget {
                         ),
                 ),
               ),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class _SiteList extends StatelessWidget {
+  const _SiteList({
+    required this.sites,
+    required this.maxHeight,
+    required this.onOpen,
+  });
+
+  final List<HeritageSite> sites;
+  final double maxHeight;
+  final ValueChanged<HeritageSite> onOpen;
+
+  @override
+  Widget build(BuildContext context) {
+    if (sites.isEmpty) {
+      return const Padding(
+        key: ValueKey<String>('map-list-empty'),
+        padding: EdgeInsets.symmetric(vertical: 8),
+        child: Text(
+          'لا توجد مواقع ذات إحداثيات عامة معتمدة في هذه الفئة بعد.',
+          style: TextStyle(color: PalEyesVisualV1.warmMuted),
+        ),
+      );
+    }
+    return ConstrainedBox(
+      key: const ValueKey<String>('map-site-list'),
+      constraints: BoxConstraints(maxHeight: maxHeight),
+      child: Material(
+        color: Colors.transparent,
+        child: ListView.builder(
+          shrinkWrap: true,
+          itemCount: sites.length,
+          itemBuilder: (context, index) {
+            final site = sites[index];
+            return ListTile(
+              dense: true,
+              contentPadding: EdgeInsets.zero,
+              title: Text(
+                site.nameAr,
+                style: const TextStyle(fontWeight: FontWeight.w800),
+              ),
+              subtitle: Text('${site.siteTypeAr} • ${site.governorateAr}'),
+              onTap: () => onOpen(site),
             );
           },
         ),
@@ -482,7 +570,7 @@ class _SelectedSiteCard extends StatelessWidget {
             child: FilledButton.icon(
               onPressed: onOpen,
               icon: const Icon(Icons.arrow_back_rounded),
-              label: const Text('عودة إلى الأطلس'),
+              label: const Text('فتح صفحة الموقع'),
             ),
           ),
         ],
@@ -492,7 +580,7 @@ class _SelectedSiteCard extends StatelessWidget {
 }
 
 class _CountPill extends StatelessWidget {
-  const _CountPill(this.value, this.label);
+  const _CountPill(this.value, this.label, {super.key});
   final String value;
   final String label;
 

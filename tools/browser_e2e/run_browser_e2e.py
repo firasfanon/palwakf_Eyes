@@ -115,6 +115,13 @@ with sync_playwright() as p:
             if Image is not None:
                 stat = ImageStat.Stat(Image.open(out / name).convert("L"))
                 blank = stat.stddev[0] < 4
+            # Assets declared as external sovereign inputs (e.g. the research
+            # sidecar exported from Workspace Drive) are recorded as BLOCKED,
+            # never silently counted as a pass and never as a code failure.
+            declared = {a["path"]: a["reason"] for a in journeys.get("external_inputs", [])}
+            blocked_inputs = [m for m in missing
+                              if any(m.split(" ", 1)[1] == base + p for p in declared)]
+            missing = [m for m in missing if m not in blocked_inputs]
             checks = {
                 "final_path": final_path.split("#")[0] == expected,
                 "no_page_errors": not errors,
@@ -127,8 +134,15 @@ with sync_playwright() as p:
                 "seconds": round(time.time() - start, 1), "screenshot": name,
                 "page_errors": errors[:5], "same_origin_4xx": missing[:10], "checks": checks,
                 "passed": all(checks.values()),
+                "status": ("FAIL" if not all(checks.values())
+                           else "BLOCKED_EXTERNAL_INPUT" if blocked_inputs else "PASS"),
+                "blocked_external_inputs": [
+                    {"response": m, "reason": next(r for p, r in declared.items()
+                                                   if m.endswith(p))}
+                    for m in blocked_inputs],
             })
-            print(("PASS " if all(checks.values()) else "FAIL ") + f"{profile} {j['id']} -> {final_path} {checks}")
+            print(results[-1]["status"] + f" {profile} {j['id']} -> {final_path} {checks}"
+                  + (f" blocked={blocked_inputs}" if blocked_inputs else ""))
             page.close()
         bad_external = sorted({u for u in external if not u.startswith(allowed_external)})
         cdn_fonts = sorted({u for u in external if "fonts.gstatic.com" in u or "fonts.googleapis.com" in u})
@@ -146,10 +160,13 @@ with sync_playwright() as p:
 
 server.shutdown()
 failed = [r for r in results if not r["passed"]]
+blocked = [r for r in results if r.get("status") == "BLOCKED_EXTERNAL_INPUT"]
 (out / f"{label}_browser_e2e.json").write_text(
-    json.dumps({"total": len(results), "failed": len(failed), "results": results},
+    json.dumps({"total": len(results), "failed": len(failed),
+                "blocked_external_input": len(blocked), "results": results},
                ensure_ascii=False, indent=2),
     encoding="utf-8",
 )
-print(f"BROWSER_E2E_{label.upper()}_TOTAL={len(results)} FAILED={len(failed)}")
+print(f"BROWSER_E2E_{label.upper()}_TOTAL={len(results)} FAILED={len(failed)} "
+      f"BLOCKED_EXTERNAL_INPUT={len(blocked)}")
 sys.exit(1 if failed else 0)

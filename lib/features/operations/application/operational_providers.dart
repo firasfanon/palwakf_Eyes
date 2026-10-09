@@ -53,8 +53,9 @@ final operationalDataBackendProvider = Provider<OperationalDataBackend>((ref) {
   return LocalOperationalDataBackend(snapshot);
 });
 
-final operationalWorkspaceStoreProvider =
-    Provider<OperationalWorkspaceStore>((ref) {
+final operationalWorkspaceStoreProvider = Provider<OperationalWorkspaceStore>((
+  ref,
+) {
   final store = OperationalWorkspaceStore(
     backend: ref.watch(operationalDataBackendProvider),
     actor: ref.watch(operationalActorProvider),

@@ -2,6 +2,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pal_eyes/core/access/pal_eyes_access.dart';
 import 'package:pal_eyes/core/access/supabase_access_identity.dart';
 import 'package:pal_eyes/core/supabase/supabase_bootstrap.dart';
+import 'package:pal_eyes/features/operations/data/supabase_operational_data_backend.dart'
+    show writeUserRoleGrant;
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 enum SignInOutcome { signedIn, mfaRequired, invalidCredentials, unavailable }
@@ -39,7 +41,10 @@ abstract interface class PalEyesAuthGateway {
   String? get currentUserId;
   String get assuranceLevel;
 
-  Future<SignInOutcome> signIn({required String email, required String password});
+  Future<SignInOutcome> signIn({
+    required String email,
+    required String password,
+  });
   Future<bool> verifyTotp(String code);
   Future<void> requestPasswordReset(String email);
   Future<void> signOut();
@@ -189,9 +194,9 @@ class SupabaseAuthGateway implements PalEyesAuthGateway {
 
   @override
   Future<List<DirectoryUser>> listUsers() async {
-    final rows = await _client.schema('pal_eyes').rpc<Object?>(
-      'admin_list_users',
-    );
+    final rows = await _client
+        .schema('pal_eyes')
+        .rpc<Object?>('admin_list_users');
     final users = <DirectoryUser>[];
     if (rows is! List<Object?>) return users;
     for (final row in rows) {
@@ -225,13 +230,12 @@ class SupabaseAuthGateway implements PalEyesAuthGateway {
     required PalEyesRole role,
     required bool active,
   }) async {
-    await _client.schema('pal_eyes').from('user_roles').upsert(
-      <String, Object?>{
-        'user_id': userId,
-        'role_key': role.key,
-        'is_active': active,
-      },
-      onConflict: 'user_id,role_key',
+    // All table writes go through the single governed Supabase adapter.
+    await writeUserRoleGrant(
+      _client,
+      userId: userId,
+      roleKey: role.key,
+      active: active,
     );
   }
 }

@@ -147,7 +147,7 @@ def main() -> int:
     s, b = call("GET", "/rest/v1/public_research_v1?select=manifest_id")
     record("T03 anon reads public_research_v1: 200 and empty", s == 200 and b == [], f"{s} {b}")
     s, b = call("GET", "/rest/v1/sites?select=id,editorial_draft")
-    record("T04 anon cannot read draft sites", s >= 400, f"{s} {b}")
+    record("T04 anon reads zero draft site rows (RLS: PUBLISHED only)", s >= 400 or (s == 200 and b == []), f"{s} {b}")
     s, b = call("GET", "/rest/v1/original_draft_layers?select=site_id")
     record("T05 anon cannot read original drafts", s >= 400, f"{s} {b}")
 

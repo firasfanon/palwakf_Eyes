@@ -1,0 +1,110 @@
+name: Pal Eyes staging migrations (manual, owner-approved)
+
+# Applies supabase/migrations to an ISOLATED, NON-PRODUCTION Supabase staging
+# project only. It never runs automatically. Secrets live only in the protected
+# GitHub environment `pal-eyes-staging`; if any is missing the run stops as
+# BLOCKED (fail-closed) instead of guessing a target.
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "false = dry-run + backup only; true = apply after dry-run"
+        required: true
+        default: "false"
+        type: choice
+        options: ["false", "true"]
+      confirm_non_production:
+        description: "Type STAGING_ONLY to confirm the target is not production"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pal-eyes-staging-migrations
+  cancel-in-progress: false
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    environment: pal-eyes-staging
+    timeout-minutes: 30
+    env:
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_STAGING_DB_PASSWORD }}
+      PROJECT_REF: ${{ secrets.SUPABASE_STAGING_PROJECT_REF }}
+      FORBIDDEN_REFS: ${{ vars.PAL_EYES_FORBIDDEN_PROJECT_REFS }}
+    steps:
+      - name: Fail closed on missing confirmation or secrets
+        run: |
+          set -euo pipefail
+          if [ "${{ inputs.confirm_non_production }}" != "STAGING_ONLY" ]; then
+            echo "BLOCKED: confirmation STAGING_ONLY not given"; exit 1
+          fi
+          for v in SUPABASE_ACCESS_TOKEN SUPABASE_DB_PASSWORD PROJECT_REF; do
+            if [ -z "${!v:-}" ]; then
+              echo "BLOCKED_WITH_EVIDENCE: secret for $v is not configured in environment pal-eyes-staging"
+              exit 1
+            fi
+          done
+          # Never touch a project the owner listed as belonging to another system.
+          for ref in ${FORBIDDEN_REFS//,/ }; do
+            if [ "$ref" = "$PROJECT_REF" ]; then
+              echo "BLOCKED: target project is on the forbidden list"; exit 1
+            fi
+          done
+          echo "Target project ref accepted (value masked)."
+
+      - uses: actions/checkout@v4
+
+      - uses: supabase/setup-cli@v1
+        with:
+          version: 2.120.0
+
+      - name: Verify migration order and integrity
+        run: |
+          set -euo pipefail
+          ls supabase/migrations/*.sql | sort > /tmp/order.txt
+          ls supabase/migrations/*.sql > /tmp/listed.txt
+          diff /tmp/order.txt /tmp/listed.txt
+          sha256sum supabase/migrations/*.sql | tee /tmp/migrations.sha256
+          for f in supabase/migrations/*.sql; do
+            ts=$(basename "$f" .sql); ts=${ts%%_*}
+            case "$ts" in
+              202607190001|202609220002) ;;  # pre-program baseline, restore via dump
+              *) test -f "supabase/rollback/${ts}_down.sql" || { echo "MISSING_ROLLBACK $ts"; exit 1; } ;;
+            esac
+          done
+
+      - name: Link (no output of secrets)
+        run: supabase link --project-ref "$PROJECT_REF" --password "$SUPABASE_DB_PASSWORD" >/dev/null
+
+      - name: Restore point — schema + data dump
+        run: |
+          set -euo pipefail
+          mkdir -p restore_point
+          supabase db dump --linked -f restore_point/schema.sql
+          supabase db dump --linked --data-only -f restore_point/data.sql
+          sha256sum restore_point/*.sql | tee restore_point/SHA256SUMS
+          test -s restore_point/schema.sql
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: staging-restore-point-${{ github.run_id }}
+          path: restore_point/
+          retention-days: 30
+
+      - name: Dry run
+        run: supabase db push --linked --dry-run --password "$SUPABASE_DB_PASSWORD" | tee dry_run.txt
+
+      - name: Apply (only when apply=true)
+        if: ${{ inputs.apply == 'true' }}
+        run: supabase db push --linked --password "$SUPABASE_DB_PASSWORD" | tee apply.txt
+
+      - name: Post-apply invariant checks
+        if: ${{ inputs.apply == 'true' }}
+        run: |
+          set -euo pipefail
+          supabase db lint --linked --level error
+          echo "Run tools/supabase_local_e2e/api_e2e.py against staging only with synthetic invite accounts created by the owner."

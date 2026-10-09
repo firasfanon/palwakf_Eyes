@@ -57,8 +57,11 @@ class FakeGateway implements PalEyesAuthGateway {
   @override
   Future<void> signOut() async => calls.add('signOut');
   @override
-  Future<TotpEnrollment> enrollTotp() async =>
-      const TotpEnrollment(factorId: 'f1', secret: 'JBSWY3DP', uri: 'otpauth://x');
+  Future<TotpEnrollment> enrollTotp() async => const TotpEnrollment(
+    factorId: 'f1',
+    secret: 'JBSWY3DP',
+    uri: 'otpauth://x',
+  );
   @override
   Future<bool> confirmTotpEnrollment({
     required String factorId,
@@ -126,14 +129,20 @@ void main() {
   testWidgets('sign-in is honest when no identity backend is configured', (
     tester,
   ) async {
-    tester.view.physicalSize = const Size(390, 844);
+    // 390px rendering with the real bundled fonts is covered by the browser
+    // E2E journey `mobile390 sign_in`; the widget test font (Ahem) is wider
+    // than IBM Plex Sans Arabic and is not a layout reference.
+    tester.view.physicalSize = const Size(1280, 900);
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.resetPhysicalSize);
     addTearDown(tester.view.resetDevicePixelRatio);
     final container = ProviderContainer();
     addTearDown(container.dispose);
     await tester.pumpWidget(
-      UncontrolledProviderScope(container: container, child: const PalEyesApp()),
+      UncontrolledProviderScope(
+        container: container,
+        child: const PalEyesApp(),
+      ),
     );
     await _go(tester, container, '/sign-in');
     expect(find.byKey(const Key('sign-in-unavailable')), findsOneWidget);
@@ -148,7 +157,10 @@ void main() {
     await _go(tester, c, '/sign-in');
     expect(find.textContaining('إنشاء حساب'), findsNothing);
     expect(find.textContaining('تسجيل جديد'), findsNothing);
-    expect(find.text('الحسابات بالدعوة فقط. لا يوجد تسجيل عام.'), findsOneWidget);
+    expect(
+      find.text('الحسابات بالدعوة فقط. لا يوجد تسجيل عام.'),
+      findsOneWidget,
+    );
   });
 
   testWidgets('valid credentials open the workspace for a role holder', (

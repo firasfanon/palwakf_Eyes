@@ -9,14 +9,20 @@ void main() {
     test('defaults to the governed catalog unless explicitly published', () {
       expect(publicContentSourceFrom(''), PublicContentSource.catalog);
       expect(publicContentSourceFrom('catalog'), PublicContentSource.catalog);
-      expect(publicContentSourceFrom('PUBLISHED'), PublicContentSource.published);
+      expect(
+        publicContentSourceFrom('PUBLISHED'),
+        PublicContentSource.published,
+      );
     });
 
-    test('no backend means empty and notConfigured, never the catalog', () async {
-      final load = await loadPublishedSites(null);
-      expect(load.status, PublishedContentStatus.notConfigured);
-      expect(load.sites, isEmpty);
-    });
+    test(
+      'no backend means empty and notConfigured, never the catalog',
+      () async {
+        final load = await loadPublishedSites(null);
+        expect(load.status, PublishedContentStatus.notConfigured);
+        expect(load.sites, isEmpty);
+      },
+    );
 
     test('backend failure is fail-closed', () async {
       final load = await loadPublishedSites(
@@ -26,33 +32,39 @@ void main() {
       expect(load.sites, isEmpty);
     });
 
-    test('maps public view rows without inventing coordinates or drafts', () async {
-      final load = await loadPublishedSites(
-        () async => <Map<String, Object?>>[
-          <String, Object?>{
-            'id': 'site-1',
-            'slug': 'synthetic-published',
-            'name_ar': 'موقع منشور اصطناعي',
-            'name_en': 'Synthetic',
-            'governorate_ar': 'القدس',
-            'locality_ar': 'القدس القديمة',
-            'site_type_ar': 'مسجد',
-            'editorial_draft': 'نص معتمد للنشر',
-            'coordinate_status': 'PUBLIC_APPROVED',
-          },
-          <String, Object?>{'id': 'broken', 'slug': ''},
-        ],
-      );
-      expect(load.status, PublishedContentStatus.loaded);
-      expect(load.sites, hasLength(1));
-      final site = load.sites.single;
-      expect(site.status, ContentReviewStatus.published);
-      expect(site.publicationBlocked, isFalse);
-      expect(site.latitude, isNull);
-      expect(site.longitude, isNull);
-      expect(site.originalHistoricalDraft, isNull);
-      expect(PublishedSiteRepository(load.sites).findBySlug('synthetic-published'), isNotNull);
-    });
+    test(
+      'maps public view rows without inventing coordinates or drafts',
+      () async {
+        final load = await loadPublishedSites(
+          () async => <Map<String, Object?>>[
+            <String, Object?>{
+              'id': 'site-1',
+              'slug': 'synthetic-published',
+              'name_ar': 'موقع منشور اصطناعي',
+              'name_en': 'Synthetic',
+              'governorate_ar': 'القدس',
+              'locality_ar': 'القدس القديمة',
+              'site_type_ar': 'مسجد',
+              'editorial_draft': 'نص معتمد للنشر',
+              'coordinate_status': 'PUBLIC_APPROVED',
+            },
+            <String, Object?>{'id': 'broken', 'slug': ''},
+          ],
+        );
+        expect(load.status, PublishedContentStatus.loaded);
+        expect(load.sites, hasLength(1));
+        final site = load.sites.single;
+        expect(site.status, ContentReviewStatus.published);
+        expect(site.publicationBlocked, isFalse);
+        expect(site.latitude, isNull);
+        expect(site.longitude, isNull);
+        expect(site.originalHistoricalDraft, isNull);
+        expect(
+          PublishedSiteRepository(load.sites).findBySlug('synthetic-published'),
+          isNotNull,
+        );
+      },
+    );
   });
 
   group('error reporting seam', () {
@@ -63,7 +75,10 @@ void main() {
         ErrorReporting.capture(StateError('e$i'), null, 'test');
       }
       expect(ErrorReporting.recent, hasLength(ErrorReporting.capacity));
-      expect(ErrorReporting.recent.last.message, contains('e${ErrorReporting.capacity + 4}'));
+      expect(
+        ErrorReporting.recent.last.message,
+        contains('e${ErrorReporting.capacity + 4}'),
+      );
     });
 
     test('no third-party vendor is wired before decision D6', () {

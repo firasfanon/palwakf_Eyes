@@ -414,3 +414,22 @@ class SupabaseOperationalDataBackend implements OperationalDataBackend {
     return loadSnapshot();
   }
 }
+
+/// Role grant/deactivation for the user administration screen. The database
+/// enforces system_admin + aal2 + no self-grant (`user_roles_admin_write`);
+/// this adapter only performs the write and lets refusals surface.
+Future<void> writeUserRoleGrant(
+  SupabaseClient client, {
+  required String userId,
+  required String roleKey,
+  required bool active,
+}) async {
+  await client.schema('pal_eyes').from('user_roles').upsert(
+    <String, Object?>{
+      'user_id': userId,
+      'role_key': roleKey,
+      'is_active': active,
+    },
+    onConflict: 'user_id,role_key',
+  );
+}

@@ -200,8 +200,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
                 autofillHints: const <String>[AutofillHints.password],
                 textDirection: TextDirection.ltr,
                 decoration: const InputDecoration(labelText: 'كلمة المرور'),
-                validator: (v) =>
-                    (v ?? '').isEmpty ? 'أدخل كلمة المرور' : null,
+                validator: (v) => (v ?? '').isEmpty ? 'أدخل كلمة المرور' : null,
                 onFieldSubmitted: (_) => _submit(gateway),
               ),
               const SizedBox(height: PalEyesTokens.space4),

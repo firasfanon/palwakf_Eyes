@@ -116,9 +116,8 @@ class _AccountSecurityScreenState extends ConsumerState<AccountSecurityScreen> {
               Align(
                 alignment: AlignmentDirectional.centerStart,
                 child: TextButton.icon(
-                  onPressed: () => Clipboard.setData(
-                    ClipboardData(text: _enrollment!.uri),
-                  ),
+                  onPressed: () =>
+                      Clipboard.setData(ClipboardData(text: _enrollment!.uri)),
                   icon: const Icon(Icons.copy_outlined),
                   label: const Text('نسخ رابط otpauth'),
                 ),

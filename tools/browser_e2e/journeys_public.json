@@ -1,25 +1,98 @@
 {
-  "allowed_external_prefixes": ["https://tile.openstreetmap.org/"],
+  "allowed_external_prefixes": [
+    "https://tile.openstreetmap.org/"
+  ],
   "journeys": [
-    {"id": "home", "path": "/"},
-    {"id": "discover_query", "path": "/discover?q=%D8%A7%D9%84%D9%82%D8%AF%D8%B3", "expect_path": "/discover?q=%D8%A7%D9%84%D9%82%D8%AF%D8%B3"},
-    {"id": "places", "path": "/places"},
-    {"id": "place_detail", "path": "/places/swq-lqtnyn-4bbdf0"},
-    {"id": "research", "path": "/research"},
-    {"id": "research_detail", "path": "/research/swq-lqtnyn-4bbdf0"},
-    {"id": "stories", "path": "/stories"},
-    {"id": "story_detail", "path": "/stories/water-memory-south-jerusalem"},
-    {"id": "map", "path": "/map"},
-    {"id": "timeline", "path": "/timeline"},
-    {"id": "governorates", "path": "/governorates"},
-    {"id": "sources", "path": "/sources"},
-    {"id": "methodology", "path": "/methodology"},
-    {"id": "contribute", "path": "/contribute"},
-    {"id": "sign_in", "path": "/sign-in"},
-    {"id": "workspace_denied", "path": "/workspace", "expect_path": "/access-restricted?reason=sign-in"},
-    {"id": "release_denied", "path": "/workspace/release-control", "expect_path": "/access-restricted?reason=sign-in"},
-    {"id": "admin_denied", "path": "/admin", "expect_path": "/access-restricted?reason=sign-in"},
-    {"id": "admin_users_denied", "path": "/admin/users", "expect_path": "/access-restricted?reason=sign-in"},
-    {"id": "unknown_route", "path": "/no-such-page"}
+    {
+      "id": "home",
+      "path": "/"
+    },
+    {
+      "id": "discover_query",
+      "path": "/discover?q=%D8%A7%D9%84%D9%82%D8%AF%D8%B3",
+      "expect_path": "/discover?q=%D8%A7%D9%84%D9%82%D8%AF%D8%B3"
+    },
+    {
+      "id": "places",
+      "path": "/places"
+    },
+    {
+      "id": "place_detail",
+      "path": "/places/swq-lqtnyn-4bbdf0"
+    },
+    {
+      "id": "research",
+      "path": "/research"
+    },
+    {
+      "id": "research_detail",
+      "path": "/research/swq-lqtnyn-4bbdf0"
+    },
+    {
+      "id": "stories",
+      "path": "/stories"
+    },
+    {
+      "id": "story_detail",
+      "path": "/stories/water-memory-south-jerusalem"
+    },
+    {
+      "id": "map",
+      "path": "/map"
+    },
+    {
+      "id": "timeline",
+      "path": "/timeline"
+    },
+    {
+      "id": "governorates",
+      "path": "/governorates"
+    },
+    {
+      "id": "sources",
+      "path": "/sources"
+    },
+    {
+      "id": "methodology",
+      "path": "/methodology"
+    },
+    {
+      "id": "contribute",
+      "path": "/contribute"
+    },
+    {
+      "id": "sign_in",
+      "path": "/sign-in"
+    },
+    {
+      "id": "workspace_denied",
+      "path": "/workspace",
+      "expect_path": "/access-restricted?reason=sign-in"
+    },
+    {
+      "id": "release_denied",
+      "path": "/workspace/release-control",
+      "expect_path": "/access-restricted?reason=sign-in"
+    },
+    {
+      "id": "admin_denied",
+      "path": "/admin",
+      "expect_path": "/access-restricted?reason=sign-in"
+    },
+    {
+      "id": "admin_users_denied",
+      "path": "/admin/users",
+      "expect_path": "/access-restricted?reason=sign-in"
+    },
+    {
+      "id": "unknown_route",
+      "path": "/no-such-page"
+    }
+  ],
+  "external_inputs": [
+    {
+      "path": "/research_narratives_v1.json",
+      "reason": "Research narrative sidecar is exported from the sovereign Workspace Drive (RESEARCH_SOURCE_OF_TRUTH=WORKSPACE_DRIVE) and injected only into non-production builds by tools/inject_research_narrative_sidecar_v1.py; it is not in the repository and Claude has no Drive export permission."
+    }
   ]
 }

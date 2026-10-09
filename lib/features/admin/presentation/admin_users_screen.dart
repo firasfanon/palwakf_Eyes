@@ -43,7 +43,9 @@ class _AdminUsersScreenState extends ConsumerState<AdminUsersScreen> {
     try {
       await gateway.setRole(userId: user.userId, role: role, active: active);
       if (!mounted) return;
-      setState(() => _message = 'تم تحديث دور ${_roleLabels[role]} لـ ${user.email}.');
+      setState(
+        () => _message = 'تم تحديث دور ${_roleLabels[role]} لـ ${user.email}.',
+      );
       _load(gateway);
     } on Object {
       if (!mounted) return;
@@ -113,11 +115,9 @@ class _AdminUsersScreenState extends ConsumerState<AdminUsersScreen> {
                               FilterChip(
                                 label: Text(_roleLabels[role]!),
                                 selected: user.roles.contains(role),
-                                onSelected:
-                                    user.userId == gateway.currentUserId
+                                onSelected: user.userId == gateway.currentUserId
                                     ? null
-                                    : (on) =>
-                                          _toggle(gateway, user, role, on),
+                                    : (on) => _toggle(gateway, user, role, on),
                               ),
                           ],
                         ),

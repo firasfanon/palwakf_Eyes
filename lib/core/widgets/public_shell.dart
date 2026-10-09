@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/application/app_settings.dart';
+import 'package:pal_eyes/app/localization/pal_eyes_localizations.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/approved_reference_design.dart';
 import 'package:pal_eyes/app/theme/pal_eyes_design_tokens.dart';
@@ -136,10 +137,15 @@ class _ReferenceHeader extends ConsumerWidget {
                       ref.read(localeControllerProvider.notifier).toggle(),
                   style: TextButton.styleFrom(foregroundColor: foreground),
                   icon: const Icon(Icons.language_rounded, size: 18),
-                  label: const Text('AR'),
+                  label: Text(
+                    Localizations.maybeLocaleOf(context)?.languageCode == 'en'
+                        ? 'العربية'
+                        : 'English',
+                    key: const ValueKey<String>('public-language-toggle'),
+                  ),
                 ),
                 IconButton.outlined(
-                  tooltip: 'تبديل المظهر',
+                  tooltip: tr(context, 'تبديل المظهر'),
                   style: IconButton.styleFrom(
                     foregroundColor: homeOverlay
                         ? ApprovedReferenceDesign.goldSoft
@@ -179,11 +185,11 @@ class _ReferenceHeader extends ConsumerWidget {
                       Icons.dashboard_customize_outlined,
                       size: 18,
                     ),
-                    label: const Text('مساحة العمل'),
+                    label: Text(tr(context, 'مساحة العمل')),
                   ),
                   const SizedBox(width: 6),
                   IconButton.outlined(
-                    tooltip: 'الحوكمة والإدارة',
+                    tooltip: tr(context, 'الحوكمة والإدارة'),
                     onPressed: () => context.go(RoutePaths.admin),
                     style: IconButton.styleFrom(
                       foregroundColor: onDark
@@ -199,7 +205,7 @@ class _ReferenceHeader extends ConsumerWidget {
               ] else ...<Widget>[
                 const Spacer(),
                 IconButton(
-                  tooltip: 'تبديل المظهر',
+                  tooltip: tr(context, 'تبديل المظهر'),
                   color: foreground,
                   onPressed: () =>
                       ref.read(themeModeControllerProvider.notifier).toggle(),
@@ -208,7 +214,7 @@ class _ReferenceHeader extends ConsumerWidget {
                   ),
                 ),
                 IconButton(
-                  tooltip: 'القائمة',
+                  tooltip: tr(context, 'القائمة'),
                   color: foreground,
                   onPressed: Scaffold.of(scaffoldContext).openDrawer,
                   icon: const Icon(Icons.menu_rounded),
@@ -243,7 +249,7 @@ class _ApprovedReferenceBrandMark extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              'بعيون فلسطينية',
+              tr(context, 'بعيون فلسطينية'),
               style: TextStyle(
                 color: ApprovedReferenceDesign.cream,
                 fontSize: compact ? 16 : 19,
@@ -253,7 +259,7 @@ class _ApprovedReferenceBrandMark extends StatelessWidget {
             ),
             if (!compact)
               Text(
-                'المكان · الذاكرة · الحكاية',
+                tr(context, 'المكان · الذاكرة · الحكاية'),
                 style: TextStyle(
                   color: ApprovedReferenceDesign.cream.withValues(alpha: 0.62),
                   fontSize: 10.5,
@@ -305,7 +311,7 @@ class _HeaderSearch extends StatelessWidget {
           const SizedBox(width: 8),
           Expanded(
             child: Text(
-              'ابحث عن مكان، حكاية أو موضوع...',
+              tr(context, 'ابحث عن مكان، حكاية أو موضوع...'),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
@@ -352,7 +358,7 @@ class _HeaderNavButton extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Text(
-              item.label,
+              tr(context, item.label),
               style: TextStyle(
                 fontWeight: selected ? FontWeight.w900 : FontWeight.w700,
               ),
@@ -380,42 +386,42 @@ class _MoreMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PopupMenuButton<String>(
-      tooltip: 'المزيد',
+      tooltip: tr(context, 'المزيد'),
       onSelected: onSelected,
-      itemBuilder: (context) => const <PopupMenuEntry<String>>[
+      itemBuilder: (context) => <PopupMenuEntry<String>>[
         PopupMenuItem<String>(
           value: RoutePaths.timeline,
           child: ListTile(
-            leading: Icon(Icons.history_toggle_off_outlined),
-            title: Text('عبر الزمن'),
+            leading: const Icon(Icons.history_toggle_off_outlined),
+            title: Text(tr(context, 'عبر الزمن')),
           ),
         ),
         PopupMenuItem<String>(
           value: RoutePaths.governorates,
           child: ListTile(
-            leading: Icon(Icons.location_city_outlined),
-            title: Text('المحافظات'),
+            leading: const Icon(Icons.location_city_outlined),
+            title: Text(tr(context, 'المحافظات')),
           ),
         ),
         PopupMenuItem<String>(
           value: RoutePaths.sources,
           child: ListTile(
-            leading: Icon(Icons.library_books_outlined),
-            title: Text('المصادر'),
+            leading: const Icon(Icons.library_books_outlined),
+            title: Text(tr(context, 'المصادر')),
           ),
         ),
         PopupMenuItem<String>(
           value: RoutePaths.methodology,
           child: ListTile(
-            leading: Icon(Icons.fact_check_outlined),
-            title: Text('المنهجية'),
+            leading: const Icon(Icons.fact_check_outlined),
+            title: Text(tr(context, 'المنهجية')),
           ),
         ),
         PopupMenuItem<String>(
           value: RoutePaths.contribute,
           child: ListTile(
-            leading: Icon(Icons.volunteer_activism_outlined),
-            title: Text('ساهم في الذاكرة'),
+            leading: const Icon(Icons.volunteer_activism_outlined),
+            title: Text(tr(context, 'ساهم في الذاكرة')),
           ),
         ),
       ],
@@ -425,7 +431,7 @@ class _MoreMenu extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Text(
-              'المزيد',
+              tr(context, 'المزيد'),
               style: TextStyle(color: foreground, fontWeight: FontWeight.w700),
             ),
             const SizedBox(width: 4),
@@ -458,7 +464,10 @@ class _PublicDrawer extends ConsumerWidget {
                 color: Colors.transparent,
                 child: ListTile(
                   leading: Icon(item.icon, color: ApprovedReferenceDesign.gold),
-                  title: Text(item.label, style: TextStyle(color: foreground)),
+                  title: Text(
+                    tr(context, item.label),
+                    style: TextStyle(color: foreground),
+                  ),
                   onTap: () {
                     Navigator.of(context).pop();
                     context.go(item.path);
@@ -469,7 +478,7 @@ class _PublicDrawer extends ConsumerWidget {
             const Divider(height: 28),
             ListTile(
               leading: const Icon(Icons.location_city_outlined),
-              title: const Text('المحافظات'),
+              title: Text(tr(context, 'المحافظات')),
               onTap: () {
                 Navigator.of(context).pop();
                 context.go(RoutePaths.governorates);
@@ -477,7 +486,7 @@ class _PublicDrawer extends ConsumerWidget {
             ),
             ListTile(
               leading: const Icon(Icons.volunteer_activism_outlined),
-              title: const Text('ساهم في الذاكرة'),
+              title: Text(tr(context, 'ساهم في الذاكرة')),
               onTap: () {
                 Navigator.of(context).pop();
                 context.go(RoutePaths.contribute);
@@ -491,7 +500,7 @@ class _PublicDrawer extends ConsumerWidget {
                   context.go(RoutePaths.workspace);
                 },
                 icon: const Icon(Icons.dashboard_customize_outlined),
-                label: const Text('فتح مساحة العمل'),
+                label: Text(tr(context, 'فتح مساحة العمل')),
               ),
               const SizedBox(height: 8),
               OutlinedButton.icon(
@@ -500,7 +509,7 @@ class _PublicDrawer extends ConsumerWidget {
                   context.go(RoutePaths.admin);
                 },
                 icon: const Icon(Icons.shield_outlined),
-                label: const Text('لوحة الحوكمة والإدارة'),
+                label: Text(tr(context, 'لوحة الحوكمة والإدارة')),
               ),
             ],
             const SizedBox(height: 10),
@@ -510,7 +519,19 @@ class _PublicDrawer extends ConsumerWidget {
               icon: Icon(
                 dark ? Icons.light_mode_outlined : Icons.dark_mode_outlined,
               ),
-              label: Text(dark ? 'الوضع الفاتح' : 'الوضع الداكن'),
+              label: Text(tr(context, dark ? 'الوضع الفاتح' : 'الوضع الداكن')),
+            ),
+            const SizedBox(height: 8),
+            OutlinedButton.icon(
+              key: const ValueKey<String>('drawer-language-toggle'),
+              onPressed: () =>
+                  ref.read(localeControllerProvider.notifier).toggle(),
+              icon: const Icon(Icons.language_rounded),
+              label: Text(
+                Localizations.maybeLocaleOf(context)?.languageCode == 'en'
+                    ? 'العربية'
+                    : 'English',
+              ),
             ),
           ],
         ),
