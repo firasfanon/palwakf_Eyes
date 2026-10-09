@@ -1,16 +1,19 @@
 name: Pal Eyes remote candidate evidence (Claude task branches)
 
 # Evidence-only pipeline for remote Claude candidate branches.
-# - Runs only on pushes to task/pal-eyes-claude-** branches.
-# - Never deploys, never touches Vercel, Supabase or main.
-# - Publishes gate logs and offline-capable web builds to a dedicated
-#   evidence/<branch> ref so a remote reviewer without Actions artifact
-#   access can inspect them with plain git.
+# - Runs only on pushes to Claude task branches.
+# - Never deploys, never touches Vercel, hosted Supabase projects or main.
+# - The Supabase job runs a LOCAL stack (supabase start) with synthetic
+#   identities; nothing leaves the runner.
+# - Evidence is appended (fast-forward, never force-pushed) to
+#   evidence/<branch> so reviewers without Actions artifact access can read it
+#   with plain git.
 
 on:
   push:
     branches:
       - "task/pal-eyes-claude-**"
+      - "task/pal-eyes-integrated-**"
   workflow_dispatch:
 
 permissions:
@@ -20,10 +23,15 @@ concurrency:
   group: claude-candidate-evidence-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  FLUTTER_VERSION: "3.44.1"
+
 jobs:
-  evidence:
+  gates:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    outputs:
+      failed: ${{ steps.gates.outputs.failed }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -31,13 +39,13 @@ jobs:
 
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.44.1"
+          flutter-version: ${{ env.FLUTTER_VERSION }}
           channel: stable
           cache: true
 
-      - name: Prepare evidence directory
+      - name: Identity
         run: |
-          mkdir -p "$RUNNER_TEMP/evidence"
+          mkdir -p "$RUNNER_TEMP/evidence/gates"
           {
             echo "SOURCE_BRANCH=${GITHUB_REF_NAME}"
             echo "SOURCE_SHA=$(git rev-parse HEAD)"
@@ -50,14 +58,14 @@ jobs:
           git diff --stat origin/main...HEAD > "$RUNNER_TEMP/evidence/DIFF_STAT.txt" || true
 
       - name: Flutter pub get
-        run: flutter pub get --enforce-lockfile 2>&1 | tee "$RUNNER_TEMP/evidence/pub_get.log"
+        run: flutter pub get --enforce-lockfile 2>&1 | tee "$RUNNER_TEMP/evidence/gates/pub_get.log"
 
-      - name: Gates (format of changed Dart files, analyze, tests, verifiers)
+      - name: Gates (format, analyze, tests, verifiers)
         id: gates
         shell: bash
         run: |
           set +e
-          E="$RUNNER_TEMP/evidence"
+          E="$RUNNER_TEMP/evidence/gates"
           CHANGED=$(git diff --name-only --diff-filter=AMR origin/main...HEAD -- '*.dart')
           if [ -n "$CHANGED" ]; then
             dart format --output=none --set-exit-if-changed $CHANGED > "$E/format.log" 2>&1
@@ -91,64 +99,211 @@ jobs:
             echo "failed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Build candidate web (public experience, staging, offline resources)
+      - name: Build web (public + internal, staging, offline resources, SEO prerender)
         shell: bash
         run: |
           set -o pipefail
-          flutter build web --release --no-pub --no-web-resources-cdn \
-            --dart-define=PAL_EYES_ENV=staging \
-            --dart-define=PAL_EYES_PRESENTATION_MODE=public \
-            --dart-define=MAP_TILE_PROVIDER_MODE=osm_standard \
-            --dart-define=MAP_TILE_PROVIDER_APPROVED=false \
-            2>&1 | tee "$RUNNER_TEMP/evidence/build_public.log"
-          tar -C build -czf "$RUNNER_TEMP/evidence/web_public.tgz" web
+          E="$RUNNER_TEMP/evidence/gates"
+          for MODE in public internal; do
+            flutter build web --release --no-pub --no-web-resources-cdn \
+              --dart-define=PAL_EYES_ENV=staging \
+              --dart-define=PAL_EYES_PRESENTATION_MODE=$MODE \
+              --dart-define=MAP_TILE_PROVIDER_MODE=osm_standard \
+              --dart-define=MAP_TILE_PROVIDER_APPROVED=false \
+              2>&1 | tee "$E/build_$MODE.log"
+            if [ -f tools/seo/generate_prerender.py ]; then
+              python3 tools/seo/generate_prerender.py --build-dir build/web --environment staging \
+                2>&1 | tee "$E/seo_prerender_$MODE.log"
+            fi
+            du -sh build/web > "$E/build_size_$MODE.txt"
+            find build/web -type f -printf '%s %p\n' | sort -rn | head -25 >> "$E/build_size_$MODE.txt"
+            mkdir -p "$RUNNER_TEMP/web/$MODE"
+            cp -r build/web "$RUNNER_TEMP/web/$MODE/"
+          done
 
-      - name: Build candidate web (internal inspector, staging, offline resources)
-        shell: bash
-        run: |
-          set -o pipefail
-          flutter build web --release --no-pub --no-web-resources-cdn \
-            --dart-define=PAL_EYES_ENV=staging \
-            --dart-define=PAL_EYES_PRESENTATION_MODE=internal \
-            --dart-define=MAP_TILE_PROVIDER_MODE=osm_standard \
-            --dart-define=MAP_TILE_PROVIDER_APPROVED=false \
-            2>&1 | tee "$RUNNER_TEMP/evidence/build_internal.log"
-          tar -C build -czf "$RUNNER_TEMP/evidence/web_internal.tgz" web
-
-      - name: Build accepted main baseline web for before/after comparison
-        shell: bash
-        run: |
-          set -o pipefail
-          git worktree add "$RUNNER_TEMP/main" origin/main
-          cd "$RUNNER_TEMP/main"
-          flutter pub get --enforce-lockfile
-          flutter build web --release --no-pub --no-web-resources-cdn \
-            --dart-define=PAL_EYES_ENV=staging \
-            --dart-define=PAL_EYES_PRESENTATION_MODE=public \
-            --dart-define=MAP_TILE_PROVIDER_MODE=osm_standard \
-            --dart-define=MAP_TILE_PROVIDER_APPROVED=false \
-            2>&1 | tee "$RUNNER_TEMP/evidence/build_main_baseline.log"
-          tar -C build -czf "$RUNNER_TEMP/evidence/web_main_baseline.tgz" web
-
-      - name: Publish evidence ref
+      - uses: actions/upload-artifact@v4
         if: always()
+        with:
+          name: gates-evidence
+          path: ${{ runner.temp }}/evidence
+          retention-days: 7
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: web-builds
+          path: ${{ runner.temp }}/web
+          retention-days: 7
+
+  rls-boundary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: RLS boundary + rollback cycle on isolated Postgres 17
         shell: bash
+        env:
+          PGHOST: 127.0.0.1
+          PGPORT: "5432"
+          PGUSER: postgres
+          PGPASSWORD: postgres
+        run: |
+          set -o pipefail
+          mkdir -p "$RUNNER_TEMP/evidence/rls"
+          RLS_REPORT="$RUNNER_TEMP/evidence/rls/rls_rollback_cycle_report.txt" \
+            tools/rls_boundary/run_local_rls_boundary_tests.sh --rollback-cycle \
+            2>&1 | tee "$RUNNER_TEMP/evidence/rls/rls_rollback_cycle.log"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rls-evidence
+          path: ${{ runner.temp }}/evidence
+          retention-days: 7
+
+  supabase-local:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+
+      - name: Start local Supabase stack (migrations + seed applied)
+        shell: bash
+        run: |
+          set -o pipefail
+          mkdir -p "$RUNNER_TEMP/evidence/supabase"
+          supabase --version | tee "$RUNNER_TEMP/evidence/supabase/cli_version.txt"
+          supabase start -x studio,imgproxy,realtime,edge-runtime,logflare,vector,supavisor \
+            2>&1 | tee "$RUNNER_TEMP/evidence/supabase/start.log"
+          supabase status -o env > "$RUNNER_TEMP/supabase.env"
+          grep -E '^(API_URL|DB_URL)=' "$RUNNER_TEMP/supabase.env" | tee "$RUNNER_TEMP/evidence/supabase/endpoints.txt"
+          psql "$(grep '^DB_URL=' "$RUNNER_TEMP/supabase.env" | cut -d= -f2- | tr -d '"')" -tAc \
+            "select 'sites=' || count(*) || ' non_blocked=' || count(*) filter (where publication_status <> 'BLOCKED') from pal_eyes.sites" \
+            | tee "$RUNNER_TEMP/evidence/supabase/seed_check.txt"
+
+      - name: API E2E (GoTrue + PostgREST + RLS, synthetic identities)
+        shell: bash
+        run: |
+          set -a; source "$RUNNER_TEMP/supabase.env"; set +a
+          E2E_REPORT="$RUNNER_TEMP/evidence/supabase/api_e2e_report.json" \
+            python3 tools/supabase_local_e2e/api_e2e.py 2>&1 | tee "$RUNNER_TEMP/evidence/supabase/api_e2e.log"
+          echo "PAL_EYES_LIVE_SUPABASE_URL=$API_URL" >> "$GITHUB_ENV"
+          echo "PAL_EYES_LIVE_ANON_KEY=$ANON_KEY" >> "$GITHUB_ENV"
+
+      - name: Dart live E2E (app's SupabaseOperationalDataBackend)
+        shell: bash
+        run: |
+          flutter pub get --enforce-lockfile
+          flutter test --no-pub --reporter expanded test/supabase_live \
+            2>&1 | tee "$RUNNER_TEMP/evidence/supabase/dart_live_e2e.log"
+
+      - name: Stop stack
+        if: always()
+        run: supabase stop --no-backup || true
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: supabase-evidence
+          path: ${{ runner.temp }}/evidence
+          retention-days: 7
+
+  browser-e2e:
+    needs: gates
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: web-builds
+          path: ${{ runner.temp }}/web
+      - name: Install Playwright Chromium
+        run: |
+          python3 -m pip install --quiet playwright pillow
+          python3 -m playwright install --with-deps chromium
+      - name: Browser E2E (desktop 1440 + true 390x844 emulation)
+        shell: bash
+        run: |
+          set +e
+          O="$RUNNER_TEMP/evidence/browser"
+          mkdir -p "$O"
+          python3 tools/browser_e2e/run_browser_e2e.py "$RUNNER_TEMP/web/public/web" "$O" public tools/browser_e2e/journeys_public.json | tee "$O/public.log"; A=${PIPESTATUS[0]}
+          python3 tools/browser_e2e/run_browser_e2e.py "$RUNNER_TEMP/web/internal/web" "$O" internal tools/browser_e2e/journeys_internal.json | tee "$O/internal.log"; B=${PIPESTATUS[0]}
+          if [ -f tools/seo/verify_prerender.py ]; then
+            python3 tools/seo/verify_prerender.py "$RUNNER_TEMP/web/public/web" | tee "$O/seo_verify.log"; C=${PIPESTATUS[0]}
+          else C=0; fi
+          echo "BROWSER_PUBLIC_EXIT=$A BROWSER_INTERNAL_EXIT=$B SEO_VERIFY_EXIT=$C" | tee "$O/BROWSER_GATES.txt"
+          exit $((A+B+C))
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-evidence
+          path: ${{ runner.temp }}/evidence
+          retention-days: 7
+
+  publish-evidence:
+    needs: [gates, rls-boundary, supabase-local, browser-e2e]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: "*-evidence"
+          path: ${{ runner.temp }}/collected
+          merge-multiple: true
+      - name: Append evidence commit (fast-forward, no force push)
+        shell: bash
+        env:
+          GATES: ${{ needs.gates.result }}
+          GATES_FAILED: ${{ needs.gates.outputs.failed }}
+          RLS: ${{ needs.rls-boundary.result }}
+          SUPA: ${{ needs.supabase-local.result }}
+          BROWSER: ${{ needs.browser-e2e.result }}
         run: |
           set -euo pipefail
-          SRC_SHA=$(git rev-parse HEAD)
           EVIDENCE_REF="evidence/${GITHUB_REF_NAME#task/}"
-          cd "$RUNNER_TEMP/evidence"
-          git init -q
+          REMOTE="https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git"
+          {
+            echo "JOB_GATES=$GATES"
+            echo "JOB_GATES_FAILED_FLAG=${GATES_FAILED:-false}"
+            echo "JOB_RLS_BOUNDARY=$RLS"
+            echo "JOB_SUPABASE_LOCAL=$SUPA"
+            echo "JOB_BROWSER_E2E=$BROWSER"
+          } > "$RUNNER_TEMP/collected/JOBS.txt"
+          cd "$RUNNER_TEMP"
+          if git ls-remote --exit-code "$REMOTE" "refs/heads/$EVIDENCE_REF" >/dev/null 2>&1; then
+            git clone -q --depth 1 -b "$EVIDENCE_REF" "$REMOTE" ev
+          else
+            git init -q ev && git -C ev checkout -q -b "$EVIDENCE_REF"
+          fi
+          cd ev
+          git rm -q -r --ignore-unmatch . >/dev/null 2>&1 || true
+          cp -r "$RUNNER_TEMP/collected/." .
           git config user.name "pal-eyes-evidence-bot"
           git config user.email "actions@users.noreply.github.com"
-          git checkout -q -b evidence
           git add -A
-          git commit -q -m "evidence for ${GITHUB_REF_NAME}@${SRC_SHA} run ${GITHUB_RUN_ID}"
-          git push -f "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/${EVIDENCE_REF}"
-          echo "EVIDENCE_REF=${EVIDENCE_REF}"
-
-      - name: Fail when any gate failed
-        if: steps.gates.outputs.failed == 'true'
-        run: |
-          cat "$RUNNER_TEMP/evidence/GATES.txt"
-          exit 1
+          git commit -q -m "evidence for ${GITHUB_REF_NAME}@${GITHUB_SHA} run ${GITHUB_RUN_ID}"
+          git push -q "$REMOTE" "HEAD:refs/heads/$EVIDENCE_REF"
+          echo "EVIDENCE_REF=$EVIDENCE_REF"
+          cat "$RUNNER_TEMP/collected/JOBS.txt"
+      - name: Fail when any job failed
+        if: needs.gates.outputs.failed == 'true' || needs.gates.result != 'success' || needs.rls-boundary.result != 'success' || needs.supabase-local.result != 'success' || needs.browser-e2e.result != 'success'
+        run: exit 1

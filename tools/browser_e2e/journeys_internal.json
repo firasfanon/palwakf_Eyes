@@ -1,0 +1,14 @@
+{
+  "allowed_external_prefixes": ["https://tile.openstreetmap.org/"],
+  "journeys": [
+    {"id": "workspace", "path": "/workspace"},
+    {"id": "workspace_research", "path": "/workspace/research"},
+    {"id": "workspace_places", "path": "/workspace/places"},
+    {"id": "workspace_site_editor", "path": "/workspace/places/editor"},
+    {"id": "workspace_reviews", "path": "/workspace/reviews"},
+    {"id": "workspace_release", "path": "/workspace/release-control"},
+    {"id": "admin", "path": "/admin"},
+    {"id": "admin_governance", "path": "/admin/governance"},
+    {"id": "admin_users", "path": "/admin/users"}
+  ]
+}
