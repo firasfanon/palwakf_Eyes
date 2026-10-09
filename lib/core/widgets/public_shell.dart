@@ -68,17 +68,11 @@ class _ReferenceHeader extends ConsumerWidget {
         height: ApprovedReferenceDesign.headerHeight,
         padding: EdgeInsets.symmetric(horizontal: wide ? 34 : 12),
         decoration: BoxDecoration(
-          color: homeOverlay ? null : background,
-          gradient: homeOverlay
-              ? LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: <Color>[
-                    PalEyesTokens.green950.withValues(alpha: 0.82),
-                    PalEyesTokens.green950.withValues(alpha: 0.0),
-                  ],
-                )
-              : null,
+          // Over the home hero the bar is a solid deep-green band so it
+          // stays legible once content scrolls beneath it.
+          color: homeOverlay
+              ? PalEyesTokens.green950.withValues(alpha: 0.94)
+              : background,
           border: homeOverlay
               ? null
               : Border(

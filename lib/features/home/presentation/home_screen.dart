@@ -675,7 +675,7 @@ class _ArrowBadge extends StatelessWidget {
         shape: BoxShape.circle,
       ),
       child: const Icon(
-        Icons.arrow_back_rounded,
+        Icons.arrow_forward_rounded,
         size: 18,
         color: PalEyesTokens.green950,
       ),
@@ -869,7 +869,7 @@ class _FeaturedStoryCard extends StatelessWidget {
                         side: const BorderSide(color: PalEyesTokens.gold),
                         shape: const StadiumBorder(),
                       ),
-                      icon: const Icon(Icons.arrow_back_rounded, size: 18),
+                      icon: const Icon(Icons.arrow_forward_rounded, size: 18),
                       label: Text('اقرأ القصة • ${story.readingMinutes} دقائق'),
                     ),
                   ],
@@ -1000,7 +1000,7 @@ class _SourceRecordCard extends StatelessWidget {
               shape: const StadiumBorder(),
               minimumSize: const Size(0, 44),
             ),
-            icon: const Icon(Icons.arrow_back_rounded, size: 18),
+            icon: const Icon(Icons.arrow_forward_rounded, size: 18),
             label: const Text('سجل المصادر'),
           ),
         ],
@@ -1111,20 +1111,29 @@ class _MapTeaserCard extends StatelessWidget {
                     shape: const StadiumBorder(),
                     minimumSize: const Size(0, 44),
                   ),
-                  icon: const Icon(Icons.arrow_back_rounded, size: 18),
+                  icon: const Icon(Icons.arrow_forward_rounded, size: 18),
                   label: const Text('فتح الخريطة'),
                 ),
               ],
             ),
           ),
           const SizedBox(width: 10),
-          const Expanded(
+          Expanded(
             flex: 2,
-            child: Center(
-              child: PalestineMapArtwork(
-                compact: true,
-                showMarkers: false,
-                foregroundColor: PalEyesTokens.green600,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(PalEyesTokens.radius),
+              child: LayoutBuilder(
+                builder: (context, box) => OverflowBox(
+                  alignment: Alignment.centerLeft,
+                  minWidth: 0,
+                  maxWidth: double.infinity,
+                  child: Image.asset(
+                    ApprovedReferenceDesign.gatewayAssets[1],
+                    height: box.maxHeight,
+                    fit: BoxFit.fitHeight,
+                    semanticLabel: 'صورة جوية لساحل فلسطين',
+                  ),
+                ),
               ),
             ),
           ),
@@ -1173,7 +1182,7 @@ class _SectionHeading extends StatelessWidget {
           style: TextButton.styleFrom(
             foregroundColor: PalEyesTokens.accentText(context),
           ),
-          icon: const Icon(Icons.arrow_back_rounded, size: 18),
+          icon: const Icon(Icons.arrow_forward_rounded, size: 18),
           label: Text(actionLabel),
         ),
       ],
@@ -1372,7 +1381,7 @@ class _StoryStrip extends StatelessWidget {
                   style: TextButton.styleFrom(
                     foregroundColor: PalEyesTokens.accentText(context),
                   ),
-                  icon: const Icon(Icons.arrow_back_rounded, size: 18),
+                  icon: const Icon(Icons.arrow_forward_rounded, size: 18),
                   label: const Text('كل الحكايات'),
                 ),
               ],
@@ -1509,7 +1518,7 @@ class _TimelineBand extends StatelessWidget {
                       side: const BorderSide(color: PalEyesTokens.gold),
                       shape: const StadiumBorder(),
                     ),
-                    icon: const Icon(Icons.arrow_back_rounded, size: 18),
+                    icon: const Icon(Icons.arrow_forward_rounded, size: 18),
                     label: const Text('استكشف الخط الزمني'),
                   ),
                 ],

@@ -75,9 +75,11 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                   onSelected: (index) => setState(() => _categoryIndex = index),
                 ),
               ),
+              // The category rail is pinned physically left; the atlas panel
+              // sits at the reading start so they never overlap in RTL.
               PositionedDirectional(
                 top: compact ? 20 : 30,
-                end: compact ? 18 : 28,
+                start: compact ? 18 : 28,
                 child: ConstrainedBox(
                   constraints: BoxConstraints(maxWidth: compact ? 236 : 360),
                   child: PalEyesParchmentPanel(
@@ -133,7 +135,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
               ),
               if (_selected != null)
                 PositionedDirectional(
-                  end: compact ? 18 : 28,
+                  start: compact ? 18 : 28,
                   bottom: compact ? 102 : 38,
                   child: ConstrainedBox(
                     constraints: BoxConstraints(maxWidth: compact ? 290 : 380),
