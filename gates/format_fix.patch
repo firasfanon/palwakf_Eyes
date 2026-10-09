@@ -1,0 +1,28 @@
+diff --git a/test/operational_backend_sql_contract_test.dart b/test/operational_backend_sql_contract_test.dart
+index 55c33c0..1f77628 100644
+--- a/test/operational_backend_sql_contract_test.dart
++++ b/test/operational_backend_sql_contract_test.dart
+@@ -33,7 +33,10 @@ void main() {
+     expect(source.contains("publication_status = 'PUBLISHED'"), isTrue);
+     expect(source.contains('original_draft_layers'), isTrue);
+     expect(source.contains('public_original_draft'), isFalse);
+-    expect(source.contains('grant insert on all tables in schema pal_eyes to anon'), isFalse);
++    expect(
++      source.contains('grant insert on all tables in schema pal_eyes to anon'),
++      isFalse,
++    );
+   });
+ 
+   test('seed imports governed counts without public release', () {
+@@ -59,10 +62,7 @@ void main() {
+       ).allMatches(source),
+       hasLength(4),
+     );
+-    expect(
+-      source.contains('public_map_use=excluded.public_map_use'),
+-      isTrue,
+-    );
++    expect(source.contains('public_map_use=excluded.public_map_use'), isTrue);
+     expect(source.contains('public_map_use=BLOCKED'), isFalse);
+     // An unquoted literal in ON CONFLICT is parsed as a column name and
+     // aborts the whole seed (found by the rollback-cycle run, 2026-10-09).

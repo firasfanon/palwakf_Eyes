@@ -1,0 +1,254 @@
+APPLY 202607190001_pal_eyes_operational_backend.sql
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:414: NOTICE:  trigger "set_updated_at" for relation "pal_eyes.sites" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:414: NOTICE:  trigger "set_updated_at" for relation "pal_eyes.site_relationships" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:414: NOTICE:  trigger "set_updated_at" for relation "pal_eyes.original_draft_layers" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:414: NOTICE:  trigger "set_updated_at" for relation "pal_eyes.sources" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:414: NOTICE:  trigger "set_updated_at" for relation "pal_eyes.editorial_records" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:414: NOTICE:  trigger "set_updated_at" for relation "pal_eyes.claims" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:414: NOTICE:  trigger "set_updated_at" for relation "pal_eyes.claim_evidence_links" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:414: NOTICE:  trigger "set_updated_at" for relation "pal_eyes.timeline_events" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:414: NOTICE:  trigger "set_updated_at" for relation "pal_eyes.coordinate_candidates" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:414: NOTICE:  trigger "set_updated_at" for relation "pal_eyes.media_assets" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:414: NOTICE:  trigger "set_updated_at" for relation "pal_eyes.media_rights" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:414: NOTICE:  trigger "set_updated_at" for relation "pal_eyes.review_tasks" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:451: NOTICE:  policy "user_roles_self_read" for relation "pal_eyes.user_roles" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:456: NOTICE:  policy "user_roles_admin_write" for relation "pal_eyes.user_roles" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.sites" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.site_names" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.site_relationships" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.original_draft_layers" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.sources" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.source_representations" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.editorial_records" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.site_source_links" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.claims" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.claim_evidence_links" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.timeline_events" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.coordinate_candidates" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.media_assets" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.media_rights" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.review_tasks" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.review_decisions" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.content_versions" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.release_candidates" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:482: NOTICE:  policy "internal_read" for relation "pal_eyes.audit_events" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:485: NOTICE:  policy "sites_editor_write" for relation "pal_eyes.sites" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:491: NOTICE:  policy "editorial_editor_write" for relation "pal_eyes.editorial_records" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:497: NOTICE:  policy "original_draft_research_write" for relation "pal_eyes.original_draft_layers" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:520: NOTICE:  policy "research_write" for relation "pal_eyes.sources" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:520: NOTICE:  policy "research_write" for relation "pal_eyes.source_representations" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:520: NOTICE:  policy "research_write" for relation "pal_eyes.site_source_links" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:520: NOTICE:  policy "research_write" for relation "pal_eyes.claims" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:520: NOTICE:  policy "research_write" for relation "pal_eyes.claim_evidence_links" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:520: NOTICE:  policy "research_write" for relation "pal_eyes.timeline_events" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:536: NOTICE:  policy "gis_write" for relation "pal_eyes.coordinate_candidates" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:536: NOTICE:  policy "gis_write" for relation "pal_eyes.site_relationships" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:536: NOTICE:  policy "gis_write" for relation "pal_eyes.site_names" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:552: NOTICE:  policy "rights_write" for relation "pal_eyes.media_assets" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:552: NOTICE:  policy "rights_write" for relation "pal_eyes.media_rights" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:568: NOTICE:  policy "workflow_write" for relation "pal_eyes.review_tasks" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:568: NOTICE:  policy "workflow_write" for relation "pal_eyes.review_decisions" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:568: NOTICE:  policy "workflow_write" for relation "pal_eyes.content_versions" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:568: NOTICE:  policy "workflow_write" for relation "pal_eyes.audit_events" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:571: NOTICE:  policy "release_candidate_write" for relation "pal_eyes.release_candidates" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:615: NOTICE:  policy "public_sites_published_read" for relation "pal_eyes.sites" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202607190001_pal_eyes_operational_backend.sql:620: NOTICE:  policy "public_sources_published_read" for relation "pal_eyes.sources" does not exist, skipping
+APPLY 202609220002_pal_eyes_research_knowledge_model_v1.sql
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_internal_read" for relation "pal_eyes.research_packages" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_governed_write" for relation "pal_eyes.research_packages" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_internal_read" for relation "pal_eyes.narrative_documents" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_governed_write" for relation "pal_eyes.narrative_documents" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_internal_read" for relation "pal_eyes.narrative_sections" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_governed_write" for relation "pal_eyes.narrative_sections" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_internal_read" for relation "pal_eyes.narrative_paragraphs" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_governed_write" for relation "pal_eyes.narrative_paragraphs" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_internal_read" for relation "pal_eyes.paragraph_claim_links" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_governed_write" for relation "pal_eyes.paragraph_claim_links" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_internal_read" for relation "pal_eyes.legacy_source_mentions" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_governed_write" for relation "pal_eyes.legacy_source_mentions" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_internal_read" for relation "pal_eyes.source_locators" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_governed_write" for relation "pal_eyes.source_locators" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_internal_read" for relation "pal_eyes.claim_conflicts" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_governed_write" for relation "pal_eyes.claim_conflicts" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_internal_read" for relation "pal_eyes.temporal_assertions" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_governed_write" for relation "pal_eyes.temporal_assertions" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_internal_read" for relation "pal_eyes.archive_provenance" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_governed_write" for relation "pal_eyes.archive_provenance" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_internal_read" for relation "pal_eyes.research_entity_relations" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_governed_write" for relation "pal_eyes.research_entity_relations" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_internal_read" for relation "pal_eyes.research_aliases" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_governed_write" for relation "pal_eyes.research_aliases" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_internal_read" for relation "pal_eyes.spatial_boundary_observations" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_governed_write" for relation "pal_eyes.spatial_boundary_observations" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_internal_read" for relation "pal_eyes.current_condition_observations" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:307: NOTICE:  policy "research_governed_write" for relation "pal_eyes.current_condition_observations" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:314: NOTICE:  policy "review_adjudications_internal_read" for relation "pal_eyes.review_adjudications" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:322: NOTICE:  policy "review_adjudications_governed_write" for relation "pal_eyes.review_adjudications" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:335: NOTICE:  policy "publication_manifest_internal_read" for relation "pal_eyes.publication_manifests" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202609220002_pal_eyes_research_knowledge_model_v1.sql:345: NOTICE:  policy "publication_manifest_release_manager_write" for relation "pal_eyes.publication_manifests" does not exist, skipping
+APPLY 202610090003_pal_eyes_publication_fail_closed_guard.sql
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql:98: NOTICE:  trigger "guard_public_publication_status" for relation "pal_eyes.sites" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql:98: NOTICE:  trigger "guard_public_coordinate_status" for relation "pal_eyes.sites" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql:98: NOTICE:  trigger "guard_public_public_release_status" for relation "pal_eyes.sources" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql:98: NOTICE:  trigger "guard_public_public_release_status" for relation "pal_eyes.original_draft_layers" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql:98: NOTICE:  trigger "guard_public_publication_status" for relation "pal_eyes.editorial_records" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql:98: NOTICE:  trigger "guard_public_publication_status" for relation "pal_eyes.site_source_links" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql:98: NOTICE:  trigger "guard_public_publication_status" for relation "pal_eyes.timeline_events" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql:117: NOTICE:  trigger "audit_events_append_only" for relation "pal_eyes.audit_events" does not exist, skipping
+APPLY 202610090004_pal_eyes_workflow_integrity_and_provenance.sql
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.sites" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.site_names" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.site_relationships" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.sources" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.source_representations" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.editorial_records" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.site_source_links" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.claims" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.claim_evidence_links" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.timeline_events" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.coordinate_candidates" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.media_assets" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.review_tasks" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.review_decisions" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.content_versions" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.release_candidates" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.audit_events" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.research_packages" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.review_adjudications" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.publication_manifests" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:131: NOTICE:  trigger "b_enforce_site_version" for relation "pal_eyes.sites" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:175: NOTICE:  trigger "c_review_decision_authority" for relation "pal_eyes.review_decisions" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:180: NOTICE:  trigger "c_review_task_decision_authority" for relation "pal_eyes.review_tasks" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:208: NOTICE:  trigger "c_site_workflow_authority" for relation "pal_eyes.sites" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:254: NOTICE:  constraint "narrative_documents_copy_provenance" of relation "narrative_documents" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:302: NOTICE:  trigger "d_protect_approved_doc" for relation "pal_eyes.narrative_documents" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:306: NOTICE:  trigger "d_protect_approved_section" for relation "pal_eyes.narrative_sections" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:310: NOTICE:  trigger "d_protect_approved_paragraph" for relation "pal_eyes.narrative_paragraphs" does not exist, skipping
+SEED 202607190001_pal_eyes_r7_0_0_seed.sql
+ROLLBACK 202610090004_down.sql
+ROLLBACK 202610090003_down.sql
+REAPPLY 202610090003_pal_eyes_publication_fail_closed_guard.sql
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql:98: NOTICE:  trigger "guard_public_publication_status" for relation "pal_eyes.sites" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql:98: NOTICE:  trigger "guard_public_coordinate_status" for relation "pal_eyes.sites" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql:98: NOTICE:  trigger "guard_public_public_release_status" for relation "pal_eyes.sources" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql:98: NOTICE:  trigger "guard_public_public_release_status" for relation "pal_eyes.original_draft_layers" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql:98: NOTICE:  trigger "guard_public_publication_status" for relation "pal_eyes.editorial_records" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql:98: NOTICE:  trigger "guard_public_publication_status" for relation "pal_eyes.site_source_links" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql:98: NOTICE:  trigger "guard_public_publication_status" for relation "pal_eyes.timeline_events" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql:117: NOTICE:  trigger "audit_events_append_only" for relation "pal_eyes.audit_events" does not exist, skipping
+REAPPLY 202610090004_pal_eyes_workflow_integrity_and_provenance.sql
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.sites" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.site_names" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.site_relationships" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.sources" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.source_representations" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.editorial_records" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.site_source_links" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.claims" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.claim_evidence_links" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.timeline_events" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.coordinate_candidates" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.media_assets" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.review_tasks" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.review_decisions" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.content_versions" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.release_candidates" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.audit_events" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.research_packages" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.review_adjudications" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:104: NOTICE:  trigger "a_stamp_actor" for relation "pal_eyes.publication_manifests" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:131: NOTICE:  trigger "b_enforce_site_version" for relation "pal_eyes.sites" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:175: NOTICE:  trigger "c_review_decision_authority" for relation "pal_eyes.review_decisions" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:180: NOTICE:  trigger "c_review_task_decision_authority" for relation "pal_eyes.review_tasks" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:208: NOTICE:  trigger "c_site_workflow_authority" for relation "pal_eyes.sites" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:251: NOTICE:  column "sovereign_store" of relation "narrative_documents" already exists, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:251: NOTICE:  column "sovereign_file_id" of relation "narrative_documents" already exists, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:251: NOTICE:  column "sovereign_revision_id" of relation "narrative_documents" already exists, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:251: NOTICE:  column "sovereign_url" of relation "narrative_documents" already exists, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:251: NOTICE:  column "content_sha256" of relation "narrative_documents" already exists, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:251: NOTICE:  column "copy_kind" of relation "narrative_documents" already exists, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:251: NOTICE:  column "derived_from_document_id" of relation "narrative_documents" already exists, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:251: NOTICE:  column "approval_state" of relation "narrative_documents" already exists, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:254: NOTICE:  constraint "narrative_documents_copy_provenance" of relation "narrative_documents" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:302: NOTICE:  trigger "d_protect_approved_doc" for relation "pal_eyes.narrative_documents" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:306: NOTICE:  trigger "d_protect_approved_section" for relation "pal_eyes.narrative_sections" does not exist, skipping
+psql:/home/runner/work/palwakf_Eyes/palwakf_Eyes/supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql:310: NOTICE:  trigger "d_protect_approved_paragraph" for relation "pal_eyes.narrative_paragraphs" does not exist, skipping
+SEED_AGAIN 202607190001_pal_eyes_r7_0_0_seed.sql
+FINGERPRINT_AFTER_RESEED=2108d924ec6768386d8472bd3b280f1d
+SEED_SITES=79
+SEED_NON_BLOCKED_SITES=0
+FINGERPRINT_BEFORE=2108d924ec6768386d8472bd3b280f1d
+FINGERPRINT_AFTER_ROLLBACK=2108d924ec6768386d8472bd3b280f1d
+FINGERPRINT_AFTER_REAPPLY=2108d924ec6768386d8472bd3b280f1d
+ROLLBACK_DATA_INTEGRITY=PASS
+ seq | result |                             probe                             | expectation |    outcome    |                                                      detail                                                      
+-----+--------+---------------------------------------------------------------+-------------+---------------+------------------------------------------------------------------------------------------------------------------
+   1 | PASS   | A1 anon reads internal sites table                            | error       | error         | 42501 permission denied for table sites
+   2 | PASS   | A2 anon reads original draft layers                           | error       | error         | 42501 permission denied for table original_draft_layers
+   3 | PASS   | A3 anon inserts a site                                        | error       | error         | 42501 permission denied for table sites
+   4 | PASS   | A4 anon reads audit events                                    | error       | error         | 42501 permission denied for table audit_events
+   5 | PASS   | B1 no-role reads sites (RLS hides rows)                       | rows=0      | rows=0        | 
+   6 | PASS   | B2 no-role inserts a site                                     | error       | error         | 42501 new row violates row-level security policy for table "sites"
+   7 | PASS   | B3 no-role self-grants system_admin                           | error       | error         | 42501 new row violates row-level security policy for table "user_roles"
+   8 | PASS   | B4 no-role updates a site (zero rows visible)                 | affected=0  | ok affected=0 | 
+   9 | PASS   | C1 researcher reads sites                                     | rows>0      | rows=80       | 
+  10 | PASS   | C2 researcher inserts a site (editor-only)                    | error       | error         | 42501 new row violates row-level security policy for table "sites"
+  11 | PASS   | C3 researcher creates release candidate                       | error       | error         | 42501 new row violates row-level security policy for table "release_candidates"
+  12 | PASS   | C4 researcher self-grants system_admin                        | error       | error         | 42501 new row violates row-level security policy for table "user_roles"
+  13 | PASS   | C5 researcher creates source (positive CRUD)                  | ok          | ok affected=1 | 
+  14 | PASS   | C6 researcher marks source PUBLISHED                          | error       | error         | 42501 PUBLICATION_FAIL_CLOSED: sources.public_release_status -> PUBLISHED requires release authority
+  15 | PASS   | C7 researcher rewrites an audit event                         | error       | error         | 42501 permission denied for table audit_events
+  16 | PASS   | C8 researcher deletes an audit event                          | error       | error         | 42501 permission denied for table audit_events
+  17 | PASS   | C9 researcher appends an audit event (positive)               | ok          | ok affected=1 | 
+  18 | PASS   | D1 editor updates draft text (positive CRUD)                  | affected=1  | ok affected=1 | 
+  19 | PASS   | D2 editor publishes a site directly                           | error       | error         | 42501 PUBLICATION_FAIL_CLOSED: sites.publication_status -> PUBLISHED requires release authority
+  20 | PASS   | D2b editor promotes a site to CANDIDATE                       | error       | error         | 42501 PUBLICATION_FAIL_CLOSED: sites.publication_status -> CANDIDATE requires release authority
+  21 | PASS   | D3 editor inserts an already-PUBLISHED site                   | error       | error         | 42501 PUBLICATION_FAIL_CLOSED: sites.publication_status -> PUBLISHED requires release authority
+  22 | PASS   | D4 editor approves coordinates for public                     | error       | error         | 42501 PUBLICATION_FAIL_CLOSED: sites.coordinate_status -> PUBLIC_APPROVED requires release authority
+  23 | PASS   | D5 editor creates release candidate                           | error       | error         | 42501 new row violates row-level security policy for table "release_candidates"
+  24 | PASS   | D6 editor creates a new BLOCKED site (positive CRUD)          | ok          | ok affected=1 | 
+  25 | PASS   | E1 rights reviewer edits a site                               | affected=0  | ok affected=0 | 
+  26 | PASS   | F1 release manager creates BLOCKED candidate                  | ok          | ok affected=1 | 
+  27 | PASS   | F2 release manager creates PUBLISHED candidate                | error       | error         | 42501 new row violates row-level security policy for table "release_candidates"
+  28 | PASS   | F3 release manager has no direct site write                   | affected=0  | ok affected=0 | 
+  29 | PASS   | F4 release manager rewrites an audit event                    | error       | error         | 42501 permission denied for table audit_events
+  30 | PASS   | G1 system admin grants a role                                 | ok          | ok affected=1 | 
+  31 | PASS   | G1b system admin publishes a site (explicit authority)        | affected=1  | ok affected=1 | 
+  32 | PASS   | G2 system admin rewrites an audit event                       | error       | error         | 42501 permission denied for table audit_events
+  33 | PASS   | H1 editor saves draft without version bump (lost update)      | error       | error         | 40001 VERSION_CONFLICT: site synthetic-site-1 is at version 1
+  34 | PASS   | H2 stale concurrent save is rejected                          | error       | error         | 40001 VERSION_CONFLICT: site synthetic-site-1 is at version 2
+  35 | PASS   | H3 editor cannot spoof created_by                             | ok          | ok affected=0 | 
+  36 | PASS   | H4 researcher cannot spoof audit actor                        | ok          | ok affected=0 | 
+  37 | PASS   | H5 system admin cannot grant a role to self                   | error       | error         | 42501 new row violates row-level security policy for table "user_roles"
+  38 | PASS   | H6 system admin cannot deactivate own role                    | affected=0  | ok affected=0 | 
+  39 | PASS   | H6b system admin deactivates another user's role (positive)   | affected=1  | ok affected=1 | 
+  40 | PASS   | H6c roles are never hard-deleted by API roles                 | error       | error         | 42501 permission denied for table user_roles
+  41 | PASS   | H7 researcher cannot decide a review                          | error       | error         | 42501 REVIEW_AUTHORITY_REQUIRED
+  42 | PASS   | H8 rights reviewer decides another author's review (positive) | affected=1  | ok affected=1 | 
+  43 | PASS   | H9 rights reviewer cannot review own task                     | error       | error         | 42501 SELF_REVIEW_FORBIDDEN
+  44 | PASS   | H10 researcher cannot record a review decision                | error       | error         | 42501 REVIEW_AUTHORITY_REQUIRED
+  45 | PASS   | H11 editor cannot mark a site APPROVED                        | error       | error         | 42501 WORKFLOW_AUTHORITY_REQUIRED: EDITORIALLY_APPROVED
+  46 | PASS   | H12 editor submits for review (positive)                      | affected=1  | ok affected=1 | 
+  47 | PASS   | H13 editor cannot list users                                  | error       | error         | 42501 SYSTEM_ADMIN_REQUIRED
+  48 | PASS   | H14 system admin lists users (positive)                       | rows>0      | rows=6        | 
+  49 | PASS   | H15 anon cannot list users                                    | error       | error         | 42501 permission denied for function admin_list_users
+  50 | PASS   | H16 anon reads public sites view (nothing published)          | rows=0      | rows=0        | 
+  51 | PASS   | H17 anon reads public research view (nothing approved)        | rows=0      | rows=0        | 
+  52 | PASS   | H18 anon still cannot read draft columns                      | error       | error         | 42501 permission denied for table sites
+  53 | PASS   | H19 full operational copy without provenance                  | error       | error         | 23514 new row for relation "narrative_documents" violates check constraint "narrative_documents_copy_provenance"
+  54 | PASS   | H20 full operational copy with Drive provenance (positive)    | ok          | ok affected=1 | 
+  55 | PASS   | H21 researcher cannot approve a narrative                     | error       | error         | 42501 NARRATIVE_APPROVAL_AUTHORITY_REQUIRED
+  56 | PASS   | H22 approved narrative paragraph is immutable                 | error       | error         | 42501 APPROVED_NARRATIVE_IMMUTABLE
+  57 | PASS   | H23 researcher cannot delete a site                           | error       | error         | 42501 permission denied for table sites
+  58 | PASS   | H24 editor full save-draft flow as the app runs it (positive) | ok          | ok affected=0 | 
+  59 | PASS   | I1 release manager without MFA cannot create candidate        | error       | error         | 42501 new row violates row-level security policy for table "release_candidates"
+  60 | PASS   | I2 system admin without MFA cannot publish                    | error       | error         | 42501 PUBLICATION_FAIL_CLOSED: sites.publication_status -> PUBLISHED requires release authority
+  61 | PASS   | I3 system admin without MFA cannot grant roles                | error       | error         | 42501 new row violates row-level security policy for table "user_roles"
+  62 | PASS   | I4 editor drafting needs no second factor (positive)          | affected=1  | ok affected=1 | 
+
+ passed | failed | total 
+--------+--------+-------
+     62 |      0 |    62
+
+RLS_BOUNDARY_TOTAL=62
+RLS_BOUNDARY_FAILED=0
