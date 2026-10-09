@@ -416,6 +416,7 @@ class _LocationChips extends StatelessWidget {
               tooltip: 'ابحث عن $label',
               label: Text(label),
               labelStyle: TextStyle(
+                fontFamily: PalEyesTokens.fontBody,
                 color: onDark ? PalEyesTokens.inkOnDark : PalEyesTokens.ink,
                 fontWeight: FontWeight.w600,
               ),
@@ -534,6 +535,9 @@ class _ProductGatewaysSection extends StatelessWidget {
   }
 }
 
+/// 0.48 of the 2.38:1 gateway asset width, expressed against its height.
+const double _gatewayPhotoWidthFactor = 1.14;
+
 class _GatewayCard extends StatelessWidget {
   const _GatewayCard({required this.item});
 
@@ -556,22 +560,28 @@ class _GatewayCard extends StatelessWidget {
               fit: StackFit.expand,
               children: <Widget>[
                 // Photographic half of the reference crop only; the baked
-                // caption half is never shown.
-                PositionedDirectional(
-                  top: 0,
-                  bottom: 0,
-                  end: 0,
-                  width: 190,
-                  child: ClipRect(
-                    child: Align(
-                      alignment: Alignment.centerLeft,
-                      widthFactor: 0.5,
-                      child: Image.asset(
-                        item.asset,
-                        fit: BoxFit.cover,
-                        height: 140,
-                        filterQuality: FilterQuality.high,
-                        excludeFromSemantics: true,
+                // caption half (right side of the asset) is never shown.
+                // The asset is scaled to the card height (aspect 2.38) and
+                // only its left 48% is revealed.
+                LayoutBuilder(
+                  builder: (context, box) => Align(
+                    alignment: AlignmentDirectional.centerEnd,
+                    child: SizedBox(
+                      width: box.maxHeight * _gatewayPhotoWidthFactor,
+                      height: box.maxHeight,
+                      child: ClipRect(
+                        child: OverflowBox(
+                          alignment: Alignment.centerLeft,
+                          minWidth: 0,
+                          maxWidth: double.infinity,
+                          child: Image.asset(
+                            item.asset,
+                            height: box.maxHeight,
+                            fit: BoxFit.fitHeight,
+                            filterQuality: FilterQuality.high,
+                            excludeFromSemantics: true,
+                          ),
+                        ),
                       ),
                     ),
                   ),
@@ -791,7 +801,7 @@ class _FeaturedStoryCard extends StatelessWidget {
               Image.asset(
                 ApprovedReferenceDesign.hero,
                 fit: BoxFit.cover,
-                alignment: const Alignment(0.55, 0),
+                alignment: Alignment.centerRight,
                 excludeFromSemantics: true,
               ),
               DecoratedBox(

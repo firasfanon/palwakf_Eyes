@@ -9,11 +9,16 @@ abstract final class AppTheme {
       brightness: Brightness.light,
       primary: PalEyesTokens.green800,
       onPrimary: PalEyesTokens.inkOnDark,
+      primaryContainer: PalEyesTokens.green100,
+      onPrimaryContainer: PalEyesTokens.green900,
       secondary: PalEyesTokens.goldDeep,
       onSecondary: Colors.white,
       secondaryContainer: PalEyesTokens.goldWash,
       onSecondaryContainer: PalEyesTokens.ink,
       tertiary: PalEyesTokens.green600,
+      tertiaryContainer: PalEyesTokens.cream,
+      onTertiaryContainer: PalEyesTokens.ink,
+      surfaceContainerHighest: PalEyesTokens.cream,
       error: PalEyesTokens.alert,
       surface: PalEyesTokens.paper,
       onSurface: PalEyesTokens.ink,
@@ -55,6 +60,7 @@ abstract final class AppTheme {
         indicatorColor: AppColors.heritageGold.withValues(alpha: 0.22),
         labelTextStyle: WidgetStateProperty.resolveWith<TextStyle?>(
           (states) => TextStyle(
+            fontFamily: PalEyesTokens.fontBody,
             fontWeight: states.contains(WidgetState.selected)
                 ? FontWeight.w900
                 : FontWeight.w700,
@@ -173,7 +179,10 @@ abstract final class AppTheme {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
           ),
-          textStyle: const TextStyle(fontWeight: FontWeight.w900),
+          textStyle: const TextStyle(
+            fontFamily: PalEyesTokens.fontBody,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
@@ -184,7 +193,10 @@ abstract final class AppTheme {
             borderRadius: BorderRadius.circular(16),
           ),
           side: BorderSide(color: scheme.outline.withValues(alpha: 0.45)),
-          textStyle: const TextStyle(fontWeight: FontWeight.w900),
+          textStyle: const TextStyle(
+            fontFamily: PalEyesTokens.fontBody,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ),
       textButtonTheme: TextButtonThemeData(
@@ -193,7 +205,10 @@ abstract final class AppTheme {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(14),
           ),
-          textStyle: const TextStyle(fontWeight: FontWeight.w900),
+          textStyle: const TextStyle(
+            fontFamily: PalEyesTokens.fontBody,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ),
       chipTheme: ChipThemeData(
@@ -204,6 +219,7 @@ abstract final class AppTheme {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(99)),
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 7),
         labelStyle: TextStyle(
+          fontFamily: PalEyesTokens.fontBody,
           color: scheme.onSurface,
           fontWeight: FontWeight.w700,
         ),
@@ -213,7 +229,10 @@ abstract final class AppTheme {
           color: AppColors.ink,
           borderRadius: BorderRadius.circular(10),
         ),
-        textStyle: const TextStyle(color: Colors.white),
+        textStyle: const TextStyle(
+          fontFamily: PalEyesTokens.fontBody,
+          color: Colors.white,
+        ),
       ),
     );
   }
@@ -236,7 +255,10 @@ abstract final class AppTheme {
       focusedBorder: outline(AppColors.heritageGold),
       errorBorder: outline(AppColors.royalRed),
       focusedErrorBorder: outline(AppColors.royalRed),
-      floatingLabelStyle: const TextStyle(fontWeight: FontWeight.w900),
+      floatingLabelStyle: const TextStyle(
+        fontFamily: PalEyesTokens.fontBody,
+        fontWeight: FontWeight.w700,
+      ),
     );
   }
 }

@@ -44,6 +44,22 @@ void main() {
     }
   });
 
+  test('component text styles carry the bundled family (no CDN fallback)', () {
+    for (final theme in <ThemeData>[AppTheme.light(), AppTheme.dark()]) {
+      final styles = <TextStyle?>[
+        theme.filledButtonTheme.style?.textStyle?.resolve(<WidgetState>{}),
+        theme.outlinedButtonTheme.style?.textStyle?.resolve(<WidgetState>{}),
+        theme.textButtonTheme.style?.textStyle?.resolve(<WidgetState>{}),
+        theme.chipTheme.labelStyle,
+        theme.tooltipTheme.textStyle,
+        theme.inputDecorationTheme.floatingLabelStyle,
+      ];
+      for (final style in styles) {
+        expect(style?.fontFamily, PalEyesTokens.fontBody);
+      }
+    }
+  });
+
   test('unified tokens: one editorial palette, no navy authority', () {
     expect(AppColors.sovereignBlue, PalEyesTokens.green800);
     expect(AppColors.approvedNavy, PalEyesTokens.green800);

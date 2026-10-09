@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
+import 'package:pal_eyes/app/theme/pal_eyes_design_tokens.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_canonical_visual_v1.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_page.dart';
 import 'package:pal_eyes/core/widgets/public_experience_maturity.dart';
@@ -146,6 +147,7 @@ class _StoryFilters extends StatelessWidget {
             onSelected: (_) => onSelected(i),
             selectedColor: PalEyesVisualV1.olive,
             labelStyle: TextStyle(
+              fontFamily: PalEyesTokens.fontBody,
               color: selected == i ? Colors.white : PalEyesVisualV1.warmInk,
               fontWeight: FontWeight.w800,
             ),

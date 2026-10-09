@@ -23,7 +23,7 @@ void main() {
     expect(home.contains('ApprovedReferenceDesign.map,'), isFalse);
     expect(home.contains('ApprovedReferenceDesign.featured'), isFalse);
     expect(home.contains('showMarkers: false'), isTrue);
-    expect(home.contains('widthFactor: 0.5'), isTrue);
+    expect(home.contains('_gatewayPhotoWidthFactor'), isTrue);
   });
 
   testWidgets('desktop home exposes the four live entry points in order', (
