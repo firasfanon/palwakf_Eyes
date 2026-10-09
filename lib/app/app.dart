@@ -19,7 +19,8 @@ class PalEyesApp extends ConsumerWidget {
 
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      onGenerateTitle: (context) => PalEyesLocalizations.of(context).text('appName'),
+      onGenerateTitle: (context) =>
+          PalEyesLocalizations.of(context).text('appName'),
       locale: locale,
       supportedLocales: PalEyesLocalizations.supportedLocales,
       localizationsDelegates: const <LocalizationsDelegate<dynamic>>[

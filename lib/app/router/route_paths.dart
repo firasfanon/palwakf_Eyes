@@ -49,9 +49,10 @@ abstract final class RoutePaths {
   static String place(String slug) => '/places/$slug';
   static String discoverQuery(String query) => query.trim().isEmpty
       ? discover
-      : Uri(path: discover, queryParameters: <String, String>{
-          'q': query.trim(),
-        }).toString();
+      : Uri(
+          path: discover,
+          queryParameters: <String, String>{'q': query.trim()},
+        ).toString();
   static String story(String slug) => '/stories/$slug';
   static String researchItem(String slug) => '/research/$slug';
 

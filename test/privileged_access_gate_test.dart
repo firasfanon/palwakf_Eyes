@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pal_eyes/app/app.dart';
 import 'package:pal_eyes/app/router/app_router.dart';
@@ -62,21 +63,24 @@ void main() {
       }
     });
 
-    test('public routes stay public and look-alike paths are not privileged', () {
-      for (final route in <String>[
-        ...RoutePaths.publicRoutes,
-        RoutePaths.accessRestricted,
-        '/places/workspace',
-        '/workspaces-guide',
-        '/administration',
-      ]) {
-        expect(
-          PalEyesAccessPolicy.areaFor(route),
-          PalEyesAccessArea.public,
-          reason: route,
-        );
-      }
-    });
+    test(
+      'public routes stay public and look-alike paths are not privileged',
+      () {
+        for (final route in <String>[
+          ...RoutePaths.publicRoutes,
+          RoutePaths.accessRestricted,
+          '/places/workspace',
+          '/workspaces-guide',
+          '/administration',
+        ]) {
+          expect(
+            PalEyesAccessPolicy.areaFor(route),
+            PalEyesAccessArea.public,
+            reason: route,
+          );
+        }
+      },
+    );
 
     test('anonymous visitor is denied every privileged path', () {
       for (final path in _privilegedSamples) {
@@ -212,9 +216,7 @@ void main() {
         ProviderScope(overrides: overrides, child: const PalEyesApp()),
       );
       await tester.pumpAndSettle();
-      return ProviderScope.containerOf(
-        tester.element(find.byType(PalEyesApp)),
-      );
+      return ProviderScope.containerOf(tester.element(find.byType(PalEyesApp)));
     }
 
     Future<void> go(
@@ -237,11 +239,20 @@ void main() {
         '/admin/governance/rights',
       ]) {
         await go(tester, container, path);
-        expect(find.byType(AccessRestrictedScreen), findsOneWidget, reason: path);
+        expect(
+          find.byType(AccessRestrictedScreen),
+          findsOneWidget,
+          reason: path,
+        );
         expect(find.byType(WorkspaceShell), findsNothing, reason: path);
         expect(find.byType(GovernanceShell), findsNothing, reason: path);
         expect(
-          container.read(appRouterProvider).routerDelegate.currentConfiguration.uri.path,
+          container
+              .read(appRouterProvider)
+              .routerDelegate
+              .currentConfiguration
+              .uri
+              .path,
           RoutePaths.accessRestricted,
           reason: path,
         );
@@ -266,36 +277,44 @@ void main() {
       expect(find.byType(WorkspaceShell), findsNothing);
     });
 
-    testWidgets('authenticated editor is refused governance but not workspace', (
-      tester,
-    ) async {
-      final container = await pumpApp(tester);
-      container
-          .read(authenticatedAccessIdentityProvider.notifier)
-          .signedIn(
-            userId: 'synthetic-editor',
-            roles: const <PalEyesRole>{PalEyesRole.editor},
-          );
-      await tester.pumpAndSettle();
+    testWidgets(
+      'authenticated editor is refused governance but not workspace',
+      (tester) async {
+        final container = await pumpApp(tester);
+        container
+            .read(authenticatedAccessIdentityProvider.notifier)
+            .signedIn(
+              userId: 'synthetic-editor',
+              roles: const <PalEyesRole>{PalEyesRole.editor},
+            );
+        await tester.pumpAndSettle();
 
-      await go(tester, container, '/admin');
-      expect(find.byType(AccessRestrictedScreen), findsOneWidget);
-      expect(find.text('هذه المنطقة مخصصة لفريق العمل'), findsOneWidget);
-      expect(
-        container.read(appRouterProvider).routerDelegate.currentConfiguration.uri.queryParameters['reason'],
-        'role',
-      );
+        await go(tester, container, '/admin');
+        expect(find.byType(AccessRestrictedScreen), findsOneWidget);
+        expect(find.text('هذه المنطقة مخصصة لفريق العمل'), findsOneWidget);
+        expect(
+          container
+              .read(appRouterProvider)
+              .routerDelegate
+              .currentConfiguration
+              .uri
+              .queryParameters['reason'],
+          'role',
+        );
 
-      await go(tester, container, '/workspace');
-      expect(find.byType(WorkspaceShell), findsOneWidget);
-      expect(find.byType(AccessRestrictedScreen), findsNothing);
+        await go(tester, container, '/workspace');
+        expect(find.byType(WorkspaceShell), findsOneWidget);
+        expect(find.byType(AccessRestrictedScreen), findsNothing);
 
-      // Signing out while inside the workspace re-evaluates the gate.
-      container.read(authenticatedAccessIdentityProvider.notifier).signedOut();
-      await tester.pumpAndSettle();
-      expect(find.byType(WorkspaceShell), findsNothing);
-      expect(find.byType(AccessRestrictedScreen), findsOneWidget);
-    });
+        // Signing out while inside the workspace re-evaluates the gate.
+        container
+            .read(authenticatedAccessIdentityProvider.notifier)
+            .signedOut();
+        await tester.pumpAndSettle();
+        expect(find.byType(WorkspaceShell), findsNothing);
+        expect(find.byType(AccessRestrictedScreen), findsOneWidget);
+      },
+    );
 
     testWidgets('non-production internal inspector sees synthetic zone label', (
       tester,

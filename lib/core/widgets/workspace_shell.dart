@@ -34,9 +34,7 @@ class WorkspaceShell extends ConsumerWidget {
             bottom: const PalEyesZoneStrip(zone: PalEyesZone.workspace),
             toolbarHeight: 74,
             flexibleSpace: const DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: AppColors.sovereignGradient,
-              ),
+              decoration: BoxDecoration(gradient: AppColors.sovereignGradient),
               child: PalEyesPattern(opacity: 0.03),
             ),
             leading: wide
@@ -54,11 +52,7 @@ class WorkspaceShell extends ConsumerWidget {
                 const PalEyesBrandMark(compact: true),
                 if (!compact) ...<Widget>[
                   const SizedBox(width: 16),
-                  Container(
-                    width: 1,
-                    height: 30,
-                    color: Colors.white24,
-                  ),
+                  Container(width: 1, height: 30, color: Colors.white24),
                   const SizedBox(width: 14),
                   Text(
                     location.startsWith(RoutePaths.governance)
@@ -158,10 +152,7 @@ class _WorkspaceSidebar extends StatelessWidget {
                     SizedBox(height: 7),
                     Text(
                       'المواقع، التوثيق، المساهمات والمراجعات في مسار واحد واضح.',
-                      style: TextStyle(
-                        color: Colors.white70,
-                        height: 1.5,
-                      ),
+                      style: TextStyle(color: Colors.white70, height: 1.5),
                     ),
                   ],
                 ),
@@ -170,10 +161,7 @@ class _WorkspaceSidebar extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           ..._groups.map(
-            (group) => _NavigationGroupTile(
-              group: group,
-              location: location,
-            ),
+            (group) => _NavigationGroupTile(group: group, location: location),
           ),
         ],
       ),
@@ -365,10 +353,7 @@ class _WorkspaceSidebar extends StatelessWidget {
 }
 
 class _NavigationGroupTile extends StatelessWidget {
-  const _NavigationGroupTile({
-    required this.group,
-    required this.location,
-  });
+  const _NavigationGroupTile({required this.group, required this.location});
 
   final _WorkspaceGroup group;
   final String location;

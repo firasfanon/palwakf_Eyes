@@ -11,10 +11,20 @@ void main() {
     expect(guard.existsSync(), isTrue);
     final source = guard.readAsStringSync();
     expect(source, contains('SOURCE-ONLY CANDIDATE MIGRATION'));
-    expect(source, contains("pal_eyes.has_any_role(array['release_manager', 'system_admin'])"));
+    expect(
+      source,
+      contains(
+        "pal_eyes.has_any_role(array['release_manager', 'system_admin'])",
+      ),
+    );
     expect(source, contains('PUBLICATION_FAIL_CLOSED'));
     expect(source, contains('AUDIT_LOG_APPEND_ONLY'));
-    expect(source, contains('revoke update, delete on pal_eyes.audit_events from authenticated'));
+    expect(
+      source,
+      contains(
+        'revoke update, delete on pal_eyes.audit_events from authenticated',
+      ),
+    );
     for (final guarded in <String>[
       "('sites', 'publication_status', 'CANDIDATE,PUBLISHED')",
       "('sites', 'coordinate_status', 'PUBLIC_APPROVED')",

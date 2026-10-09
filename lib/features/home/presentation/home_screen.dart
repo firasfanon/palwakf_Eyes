@@ -523,7 +523,7 @@ class _ProductGatewaysSection extends StatelessWidget {
               .map(
                 (item) => SizedBox(
                   width: width,
-                  height: columns == 1 ? 104 : 124,
+                  height: columns == 1 ? 112 : 128,
                   child: _GatewayCard(item: item),
                 ),
               )
@@ -611,11 +611,14 @@ class _GatewayCard extends StatelessWidget {
                       const SizedBox(width: 12),
                       Expanded(
                         child: Column(
+                          mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Text(
                               item.title,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               style: Theme.of(context).textTheme.titleLarge
                                   ?.copyWith(color: PalEyesTokens.inkOnDark),
                             ),
@@ -809,27 +812,41 @@ class _FeaturedStoryCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    const _Pill(label: 'قصة من فلسطين', onDark: true),
-                    const SizedBox(height: 12),
-                    Text(
-                      story.title,
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context).textTheme.headlineMedium
-                          ?.copyWith(color: PalEyesTokens.inkOnDark),
-                    ),
-                    const SizedBox(height: 8),
-                    ConstrainedBox(
-                      constraints: const BoxConstraints(maxWidth: 380),
-                      child: Text(
-                        story.summary,
-                        maxLines: 3,
-                        overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.bodyMedium
-                            ?.copyWith(color: PalEyesTokens.inkOnDarkMuted),
+                    Expanded(
+                      child: ClipRect(
+                        child: SingleChildScrollView(
+                          physics: const NeverScrollableScrollPhysics(),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                            const _Pill(label: 'قصة من فلسطين', onDark: true),
+                            const SizedBox(height: 12),
+                            Text(
+                              story.title,
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                              style: Theme.of(context).textTheme.headlineMedium
+                                  ?.copyWith(color: PalEyesTokens.inkOnDark),
+                            ),
+                            const SizedBox(height: 8),
+                            ConstrainedBox(
+                              constraints: const BoxConstraints(maxWidth: 380),
+                              child: Text(
+                                story.summary,
+                                maxLines: 3,
+                                overflow: TextOverflow.ellipsis,
+                                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                                  color: PalEyesTokens.inkOnDarkMuted,
+                                ),
+                              ),
+                            ),
+                            ],
+                          ),
+                        ),
                       ),
                     ),
-                    const Spacer(),
+                    const SizedBox(height: 10),
                     OutlinedButton.icon(
                       onPressed: onTap,
                       style: OutlinedButton.styleFrom(
@@ -889,64 +906,77 @@ class _SourceRecordCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          const _Pill(label: 'من السجل المصدري'),
-          const SizedBox(height: 12),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Container(
-                width: 64,
-                height: 84,
-                decoration: BoxDecoration(
-                  color: PalEyesTokens.cream,
-                  borderRadius: BorderRadius.circular(8),
-                  border: Border.all(color: PalEyesTokens.lineStrong),
-                ),
-                child: const Icon(
-                  Icons.description_outlined,
-                  color: PalEyesTokens.goldDeep,
-                  semanticLabel: 'صورة الوثيقة غير معروضة',
-                ),
-              ),
-              const SizedBox(width: 14),
-              Expanded(
+          Expanded(
+            child: ClipRect(
+              child: SingleChildScrollView(
+                physics: const NeverScrollableScrollPhysics(),
                 child: Column(
+                  mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(
-                      entry?.title ?? 'لا يوجد سجل مصدري متاح',
-                      maxLines: 3,
-                      overflow: TextOverflow.ellipsis,
-                      style: theme.textTheme.titleMedium?.copyWith(
-                        color: PalEyesTokens.text(context),
+                  const _Pill(label: 'من السجل المصدري'),
+                  const SizedBox(height: 12),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Container(
+                        width: 64,
+                        height: 84,
+                        decoration: BoxDecoration(
+                          color: PalEyesTokens.cream,
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(color: PalEyesTokens.lineStrong),
+                        ),
+                        child: const Icon(
+                          Icons.description_outlined,
+                          color: PalEyesTokens.goldDeep,
+                          semanticLabel: 'صورة الوثيقة غير معروضة',
+                        ),
                       ),
-                    ),
-                    if (entry != null) ...<Widget>[
-                      const SizedBox(height: 4),
-                      Text(
-                        entry.attribution,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: theme.textTheme.bodySmall?.copyWith(
-                          color: PalEyesTokens.textMuted(context),
+                      const SizedBox(width: 14),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              entry?.title ?? 'لا يوجد سجل مصدري متاح',
+                              maxLines: 3,
+                              overflow: TextOverflow.ellipsis,
+                              style: theme.textTheme.titleMedium?.copyWith(
+                                color: PalEyesTokens.text(context),
+                              ),
+                            ),
+                            if (entry != null) ...<Widget>[
+                              const SizedBox(height: 4),
+                              Text(
+                                entry.attribution,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: theme.textTheme.bodySmall?.copyWith(
+                                  color: PalEyesTokens.textMuted(context),
+                                ),
+                              ),
+                            ],
+                          ],
                         ),
                       ),
                     ],
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    'لا تُعرض صورة أي وثيقة قبل التحقق من أصلها وحقوقها. هذا سجل مرجعي حقيقي قيد المراجعة، وليس وثيقة أرشيفية معتمدة للنشر.',
+                    maxLines: 3,
+                    overflow: TextOverflow.ellipsis,
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: PalEyesTokens.textMuted(context),
+                    ),
+                  ),
                   ],
                 ),
               ),
-            ],
-          ),
-          const SizedBox(height: 12),
-          Text(
-            'لا تُعرض صورة أي وثيقة قبل التحقق من أصلها وحقوقها. هذا سجل مرجعي حقيقي قيد المراجعة، وليس وثيقة أرشيفية معتمدة للنشر.',
-            maxLines: 3,
-            overflow: TextOverflow.ellipsis,
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: PalEyesTokens.textMuted(context),
             ),
           ),
-          const Spacer(),
+          const SizedBox(height: 10),
           FilledButton.tonalIcon(
             onPressed: onTap,
             style: FilledButton.styleFrom(
@@ -1002,48 +1032,61 @@ class _MapTeaserCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Text(
-                  'استكشف على الخريطة',
-                  style: theme.textTheme.titleLarge?.copyWith(
-                    color: PalEyesTokens.text(context),
-                  ),
-                ),
-                const SizedBox(height: 6),
-                Text(
-                  '${sites.length} موقعاً في الأطلس • $mappedCount بإحداثيات عامة معتمدة',
-                  style: theme.textTheme.bodySmall?.copyWith(
-                    color: PalEyesTokens.textMuted(context),
+                Expanded(
+                  child: ClipRect(
+                    child: SingleChildScrollView(
+                      physics: const NeverScrollableScrollPhysics(),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                        Text(
+                          'استكشف على الخريطة',
+                          style: theme.textTheme.titleLarge?.copyWith(
+                            color: PalEyesTokens.text(context),
+                          ),
+                        ),
+                        const SizedBox(height: 6),
+                        Text(
+                          '${sites.length} موقعاً في الأطلس • $mappedCount بإحداثيات عامة معتمدة',
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: PalEyesTokens.textMuted(context),
+                          ),
+                        ),
+                        const SizedBox(height: 10),
+                        for (var i = 0; i < top.length && i < 4; i++)
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 4),
+                            child: Row(
+                              children: <Widget>[
+                                Container(
+                                  width: 9,
+                                  height: 9,
+                                  decoration: BoxDecoration(
+                                    color: dots[i],
+                                    shape: BoxShape.circle,
+                                  ),
+                                ),
+                                const SizedBox(width: 8),
+                                Expanded(
+                                  child: Text(
+                                    '${top[i].key} (${top[i].value})',
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: theme.textTheme.bodySmall?.copyWith(
+                                      color: PalEyesTokens.text(context),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                 ),
                 const SizedBox(height: 10),
-                for (var i = 0; i < top.length && i < 4; i++)
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 4),
-                    child: Row(
-                      children: <Widget>[
-                        Container(
-                          width: 9,
-                          height: 9,
-                          decoration: BoxDecoration(
-                            color: dots[i],
-                            shape: BoxShape.circle,
-                          ),
-                        ),
-                        const SizedBox(width: 8),
-                        Expanded(
-                          child: Text(
-                            '${top[i].key} (${top[i].value})',
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            style: theme.textTheme.bodySmall?.copyWith(
-                              color: PalEyesTokens.text(context),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                const Spacer(),
                 FilledButton.icon(
                   onPressed: onTap,
                   style: FilledButton.styleFrom(
@@ -1324,7 +1367,11 @@ class _StoryStrip extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
-                  for (var index = 0; index < cards.length; index++) ...<Widget>[
+                  for (
+                    var index = 0;
+                    index < cards.length;
+                    index++
+                  ) ...<Widget>[
                     if (index > 0) const SizedBox(width: 12),
                     Expanded(child: cards[index]),
                   ],
@@ -1403,7 +1450,9 @@ class _TimelineBand extends StatelessWidget {
     final narrow = MediaQuery.sizeOf(context).width < 760;
     return Container(
       key: const Key('home-timeline-band'),
-      decoration: const BoxDecoration(gradient: PalEyesTokens.structureGradient),
+      decoration: const BoxDecoration(
+        gradient: PalEyesTokens.structureGradient,
+      ),
       padding: EdgeInsets.fromLTRB(horizontal, 30, horizontal, 30),
       child: Center(
         child: ConstrainedBox(

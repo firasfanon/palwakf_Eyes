@@ -110,17 +110,20 @@ class _ReferenceHeader extends ConsumerWidget {
               if (wide) ...<Widget>[
                 const SizedBox(width: 24),
                 Expanded(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: _desktopItems
-                        .map(
-                          (item) => _HeaderNavButton(
-                            item: item,
-                            selected: _selected(location, item.path),
-                            foreground: foreground,
-                          ),
-                        )
-                        .toList(growable: false),
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: _desktopItems
+                          .map(
+                            (item) => _HeaderNavButton(
+                              item: item,
+                              selected: _selected(location, item.path),
+                              foreground: foreground,
+                            ),
+                          )
+                          .toList(growable: false),
+                    ),
                   ),
                 ),
                 const SizedBox(width: 8),
@@ -429,10 +432,7 @@ class _MoreMenu extends StatelessWidget {
           children: <Widget>[
             Text(
               'المزيد',
-              style: TextStyle(
-                color: foreground,
-                fontWeight: FontWeight.w700,
-              ),
+              style: TextStyle(color: foreground, fontWeight: FontWeight.w700),
             ),
             const SizedBox(width: 4),
             Icon(Icons.expand_more_rounded, color: foreground, size: 18),

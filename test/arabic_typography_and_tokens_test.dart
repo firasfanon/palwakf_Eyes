@@ -21,21 +21,18 @@ void main() {
       expect(file.existsSync(), isTrue, reason: asset);
       expect(file.lengthSync(), greaterThan(100000), reason: asset);
     }
-    expect(File('assets/fonts/ibm_plex_sans_arabic/OFL.txt').existsSync(), isTrue);
+    expect(
+      File('assets/fonts/ibm_plex_sans_arabic/OFL.txt').existsSync(),
+      isTrue,
+    );
     expect(File('assets/fonts/amiri/OFL.txt').existsSync(), isTrue);
     expect(File('assets/fonts/FONT_PROVENANCE.md').existsSync(), isTrue);
   });
 
   test('themes resolve Arabic body and display families in both modes', () {
     for (final theme in <ThemeData>[AppTheme.light(), AppTheme.dark()]) {
-      expect(
-        theme.textTheme.bodyMedium?.fontFamily,
-        PalEyesTokens.fontBody,
-      );
-      expect(
-        theme.textTheme.labelLarge?.fontFamily,
-        PalEyesTokens.fontBody,
-      );
+      expect(theme.textTheme.bodyMedium?.fontFamily, PalEyesTokens.fontBody);
+      expect(theme.textTheme.labelLarge?.fontFamily, PalEyesTokens.fontBody);
       expect(
         theme.textTheme.displayLarge?.fontFamily,
         PalEyesTokens.fontDisplay,
@@ -56,7 +53,12 @@ void main() {
     expect(ApprovedReferenceDesign.night, PalEyesTokens.nightBase);
     expect(AppTheme.light().scaffoldBackgroundColor, PalEyesTokens.ivory);
     expect(AppTheme.light().colorScheme.primary, PalEyesTokens.green800);
-    for (final legacyNavy in <int>[0xFF0B2742, 0xFF08243D, 0xFF041A2D, 0xFF071A2B]) {
+    for (final legacyNavy in <int>[
+      0xFF0B2742,
+      0xFF08243D,
+      0xFF041A2D,
+      0xFF071A2B,
+    ]) {
       expect(
         File('lib/app/theme/app_colors.dart').readAsStringSync(),
         isNot(contains(legacyNavy.toRadixString(16).toUpperCase())),

@@ -192,8 +192,10 @@ abstract final class PalEyesAccessPolicy {
 /// Identity established by a real backend session (roles read from the
 /// backing service). `null` means no authenticated session.
 final authenticatedAccessIdentityProvider =
-    NotifierProvider<AuthenticatedAccessIdentityController,
-        PalEyesAccessIdentity?>(AuthenticatedAccessIdentityController.new);
+    NotifierProvider<
+      AuthenticatedAccessIdentityController,
+      PalEyesAccessIdentity?
+    >(AuthenticatedAccessIdentityController.new);
 
 class AuthenticatedAccessIdentityController
     extends Notifier<PalEyesAccessIdentity?> {
