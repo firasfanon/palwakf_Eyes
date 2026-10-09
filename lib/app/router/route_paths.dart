@@ -13,6 +13,7 @@ abstract final class RoutePaths {
   static const String sources = '/sources';
   static const String contribute = '/contribute';
   static const String methodology = '/methodology';
+  static const String accessRestricted = '/access-restricted';
 
   static const String workspace = '/workspace';
   static const String workspaceToday = '/workspace/today';
@@ -46,6 +47,11 @@ abstract final class RoutePaths {
       '/admin/governance/system-status';
 
   static String place(String slug) => '/places/$slug';
+  static String discoverQuery(String query) => query.trim().isEmpty
+      ? discover
+      : Uri(path: discover, queryParameters: <String, String>{
+          'q': query.trim(),
+        }).toString();
   static String story(String slug) => '/stories/$slug';
   static String researchItem(String slug) => '/research/$slug';
 

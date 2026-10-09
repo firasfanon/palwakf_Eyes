@@ -62,6 +62,11 @@ jobs:
           if [ -n "$CHANGED" ]; then
             dart format --output=none --set-exit-if-changed $CHANGED > "$E/format.log" 2>&1
             FORMAT=$?
+            if [ $FORMAT -ne 0 ]; then
+              dart format $CHANGED > /dev/null 2>&1
+              git diff > "$E/format_fix.patch"
+              git checkout -- .
+            fi
           else
             echo "NO_CHANGED_DART_FILES" > "$E/format.log"; FORMAT=0
           fi

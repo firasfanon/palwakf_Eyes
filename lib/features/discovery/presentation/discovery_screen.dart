@@ -11,7 +11,10 @@ import 'package:pal_eyes/features/places/domain/heritage_site.dart';
 import 'package:pal_eyes/features/places/presentation/widgets/site_card.dart';
 
 class DiscoveryScreen extends ConsumerStatefulWidget {
-  const DiscoveryScreen({super.key});
+  const DiscoveryScreen({this.initialQuery = '', super.key});
+
+  /// Optional query carried from site-wide search (`/discover?q=`).
+  final String initialQuery;
 
   @override
   ConsumerState<DiscoveryScreen> createState() => _DiscoveryScreenState();
@@ -28,6 +31,21 @@ class _DiscoveryScreenState extends ConsumerState<DiscoveryScreen> {
   String _contentProfile = 'الكل';
   String _sort = 'الأبرز';
   int _visibleCount = _pageSize;
+
+  @override
+  void initState() {
+    super.initState();
+    _queryController.text = widget.initialQuery.trim();
+  }
+
+  @override
+  void didUpdateWidget(covariant DiscoveryScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.initialQuery != widget.initialQuery) {
+      _queryController.text = widget.initialQuery.trim();
+      _visibleCount = _pageSize;
+    }
+  }
 
   @override
   void dispose() {

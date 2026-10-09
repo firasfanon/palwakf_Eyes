@@ -5,12 +5,14 @@ import 'package:pal_eyes/app/application/app_settings.dart';
 import 'package:pal_eyes/app/localization/pal_eyes_localizations.dart';
 import 'package:pal_eyes/app/router/app_router.dart';
 import 'package:pal_eyes/app/theme/app_theme.dart';
+import 'package:pal_eyes/core/access/supabase_access_identity.dart';
 
 class PalEyesApp extends ConsumerWidget {
   const PalEyesApp({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    ref.watch(supabaseAccessBindingProvider);
     final router = ref.watch(appRouterProvider);
     final locale = ref.watch(localeControllerProvider);
     final themeMode = ref.watch(themeModeControllerProvider);

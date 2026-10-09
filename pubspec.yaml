@@ -31,3 +31,22 @@ flutter:
   uses-material-design: true
   assets:
     - assets/visual_reference_v1/
+  # Bundled OFL Arabic typefaces. The web build must never depend on the
+  # Google Fonts CDN for Arabic glyphs (confirmed tofu/blank regression).
+  fonts:
+    - family: IBMPlexSansArabic
+      fonts:
+        - asset: assets/fonts/ibm_plex_sans_arabic/IBMPlexSansArabic-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/ibm_plex_sans_arabic/IBMPlexSansArabic-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/ibm_plex_sans_arabic/IBMPlexSansArabic-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/ibm_plex_sans_arabic/IBMPlexSansArabic-Bold.ttf
+          weight: 700
+    - family: Amiri
+      fonts:
+        - asset: assets/fonts/amiri/Amiri-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/amiri/Amiri-Bold.ttf
+          weight: 700

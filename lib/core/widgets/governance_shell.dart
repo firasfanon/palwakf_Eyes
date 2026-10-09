@@ -5,6 +5,7 @@ import 'package:pal_eyes/app/application/app_settings.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/app_colors.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_visual_system.dart';
+import 'package:pal_eyes/core/widgets/pal_eyes_zone_strip.dart';
 
 class GovernanceShell extends ConsumerWidget {
   const GovernanceShell({
@@ -26,6 +27,7 @@ class GovernanceShell extends ConsumerWidget {
         return Scaffold(
           backgroundColor: Theme.of(context).colorScheme.surfaceContainerLowest,
           appBar: AppBar(
+            bottom: const PalEyesZoneStrip(zone: PalEyesZone.governance),
             toolbarHeight: 76,
             flexibleSpace: const DecoratedBox(
               decoration: BoxDecoration(gradient: AppColors.sovereignGradient),

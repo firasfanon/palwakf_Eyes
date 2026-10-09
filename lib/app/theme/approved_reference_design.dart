@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:pal_eyes/app/theme/pal_eyes_design_tokens.dart';
 
 abstract final class ApprovedReferenceDesign {
-  static const Color night = Color(0xFF07110F);
-  static const Color nightDeep = Color(0xFF030A09);
-  static const Color surface = Color(0xFF0D1C19);
-  static const Color surfaceRaised = Color(0xFF132521);
-  static const Color surfaceSoft = Color(0xFF1A2C27);
-  static const Color gold = Color(0xFFE0B866);
-  static const Color goldSoft = Color(0xFFF1D39A);
-  static const Color cream = Color(0xFFF7F0E4);
-  static const Color muted = Color(0xFFBBB6AC);
-  static const Color olive = Color(0xFF8D8A56);
-  static const Color red = Color(0xFFC85B55);
-  static const Color green = Color(0xFF7DA56A);
-  static const Color line = Color(0x33FFFFFF);
+  static const Color night = PalEyesTokens.nightBase;
+  static const Color nightDeep = PalEyesTokens.green950;
+  static const Color surface = PalEyesTokens.nightSurface;
+  static const Color surfaceRaised = PalEyesTokens.nightRaised;
+  static const Color surfaceSoft = PalEyesTokens.green800;
+  static const Color gold = PalEyesTokens.gold;
+  static const Color goldSoft = PalEyesTokens.goldSoft;
+  static const Color cream = PalEyesTokens.inkOnDark;
+  static const Color muted = PalEyesTokens.inkOnDarkMuted;
+  static const Color olive = PalEyesTokens.green500;
+  static const Color red = PalEyesTokens.alert;
+  static const Color green = PalEyesTokens.green500;
+  static const Color line = PalEyesTokens.nightLine;
 
   static const double maxWidth = 1480;
   static const double radius = 22;
@@ -46,21 +47,21 @@ abstract final class ApprovedReferenceDesign {
   static Color pageBackground(BuildContext context) =>
       Theme.of(context).brightness == Brightness.dark
       ? night
-      : const Color(0xFFF6F0E4);
+      : PalEyesTokens.ivory;
 
   static Color panelBackground(BuildContext context) =>
       Theme.of(context).brightness == Brightness.dark
       ? surface
-      : const Color(0xFFFCF9F2);
+      : PalEyesTokens.paper;
 
   static Color foreground(BuildContext context) =>
       Theme.of(context).brightness == Brightness.dark
       ? cream
-      : const Color(0xFF27251F);
+      : PalEyesTokens.ink;
   static Color secondaryForeground(BuildContext context) =>
       Theme.of(context).brightness == Brightness.dark
       ? muted
-      : const Color(0xFF6E675D);
+      : PalEyesTokens.inkMuted;
 
   static BoxDecoration glassDecoration(
     BuildContext context, {
@@ -72,7 +73,7 @@ abstract final class ApprovedReferenceDesign {
           ? surface.withValues(alpha: 0.88)
           : Colors.white.withValues(alpha: 0.90),
       borderRadius: BorderRadius.circular(radius),
-      border: Border.all(color: dark ? line : const Color(0xFFD8CBB7)),
+      border: Border.all(color: dark ? line : PalEyesTokens.line),
       boxShadow: <BoxShadow>[
         BoxShadow(
           color: Colors.black.withValues(alpha: dark ? 0.28 : 0.08),
