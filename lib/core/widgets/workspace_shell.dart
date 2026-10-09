@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/application/app_settings.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/app_colors.dart';
+import 'package:pal_eyes/app/theme/pal_eyes_design_tokens.dart';
 import 'package:pal_eyes/core/widgets/governance_shell.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_visual_system.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_zone_strip.dart';
@@ -49,7 +50,10 @@ class WorkspaceShell extends ConsumerWidget {
             title: Row(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                const PalEyesBrandMark(compact: true),
+                const PalEyesBrandMark(
+                  compact: true,
+                  foregroundColor: PalEyesTokens.inkOnDark,
+                ),
                 if (!compact) ...<Widget>[
                   const SizedBox(width: 16),
                   Container(width: 1, height: 30, color: Colors.white24),
