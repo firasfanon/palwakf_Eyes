@@ -7,6 +7,9 @@ import 'package:pal_eyes/core/widgets/governance_shell.dart';
 import 'package:pal_eyes/core/widgets/public_shell.dart';
 import 'package:pal_eyes/core/widgets/workspace_shell.dart';
 import 'package:pal_eyes/features/admin/presentation/admin_dashboard_screen.dart';
+import 'package:pal_eyes/features/admin/presentation/admin_users_screen.dart';
+import 'package:pal_eyes/features/auth/presentation/account_security_screen.dart';
+import 'package:pal_eyes/features/auth/presentation/sign_in_screen.dart';
 import 'package:pal_eyes/features/common/presentation/access_restricted_screen.dart';
 import 'package:pal_eyes/features/common/presentation/not_found_screen.dart';
 import 'package:pal_eyes/features/contributions/presentation/contribute_screen.dart';
@@ -143,6 +146,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           GoRoute(
             path: RoutePaths.methodology,
             builder: (context, state) => const MethodologyScreen(),
+          ),
+          GoRoute(
+            path: RoutePaths.signIn,
+            builder: (context, state) => const SignInScreen(),
           ),
           GoRoute(
             path: RoutePaths.accessRestricted,
@@ -355,6 +362,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
             builder: (context, state) => const ReleaseControlScreen(),
           ),
           GoRoute(
+            path: RoutePaths.workspaceSecurity,
+            builder: (context, state) => const AccountSecurityScreen(),
+          ),
+          GoRoute(
             path: RoutePaths.workspaceAudit,
             builder: (context, state) => const AuditLogScreen(),
           ),
@@ -454,6 +465,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                 'اعتماد إصدار',
               ],
             ),
+          ),
+          GoRoute(
+            path: RoutePaths.adminUsers,
+            builder: (context, state) => const AdminUsersScreen(),
           ),
           GoRoute(
             path: RoutePaths.governanceSystemStatus,

@@ -38,6 +38,11 @@ class SpaHandler(http.server.SimpleHTTPRequestHandler):
         if os.path.isdir(path) and os.path.exists(os.path.join(path, "index.html")):
             self.path = self.path.split("?")[0].rstrip("/") + "/index.html"
         elif not os.path.exists(path):
+            last = self.path.split("?")[0].rstrip("/").rsplit("/", 1)[-1]
+            if "." in last:
+                # A missing asset is a real 404, never the SPA shell.
+                self.send_error(404)
+                return None
             self.path = "/index.html"
         return super().send_head()
 
@@ -78,18 +83,23 @@ with sync_playwright() as p:
         context = browser.new_context(locale="ar", **options)
         external: list[str] = []
 
-        def route(r, external=external):
-            url = r.request.url
-            if url.startswith(base):
-                return r.continue_()
-            external.append(url)
-            return r.abort()
+        def make_router(sink: list[str]):
+            def handle(r):
+                url = r.request.url
+                if url.startswith(base):
+                    return r.continue_()
+                sink.append(url)
+                return r.abort()
+            return handle
 
-        context.route("**/*", route)
+        context.route("**/*", make_router(external))
         for j in journeys["journeys"]:
             page = context.new_page()
             errors: list[str] = []
-            page.on("pageerror", lambda e, errors=errors: errors.append(str(e)))
+            missing: list[str] = []
+            page.on("response", (lambda sink: lambda r: sink.append(f"{r.status} {r.url}")
+                                 if r.url.startswith(base) and r.status >= 400 else None)(missing))
+            page.on("pageerror", (lambda sink: lambda e: sink.append(str(e)))(errors))
             start = time.time()
             page.goto(base + j["path"], wait_until="load")
             try:
@@ -109,12 +119,13 @@ with sync_playwright() as p:
                 "final_path": final_path.split("#")[0] == expected,
                 "no_page_errors": not errors,
                 "not_blank": not blank,
+                "no_same_origin_4xx": not missing,
             }
             results.append({
                 "label": label, "profile": profile, "journey": j["id"],
                 "path": j["path"], "final_path": final_path, "expected_path": expected,
                 "seconds": round(time.time() - start, 1), "screenshot": name,
-                "page_errors": errors[:5], "checks": checks,
+                "page_errors": errors[:5], "same_origin_4xx": missing[:10], "checks": checks,
                 "passed": all(checks.values()),
             })
             print(("PASS " if all(checks.values()) else "FAIL ") + f"{profile} {j['id']} -> {final_path} {checks}")

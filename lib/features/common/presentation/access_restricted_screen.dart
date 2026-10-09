@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/pal_eyes_design_tokens.dart';
+import 'package:pal_eyes/core/access/pal_eyes_auth_gateway.dart';
 
 /// Shown when a visitor requests a workspace or governance route without the
 /// required authenticated role. Deliberately reveals nothing about the
 /// requested internal screen.
-class AccessRestrictedScreen extends StatelessWidget {
+class AccessRestrictedScreen extends ConsumerWidget {
   const AccessRestrictedScreen({required this.reason, super.key});
 
   /// `sign-in` or `role`.
   final String reason;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final signIn = reason != 'role';
+    final canSignIn = ref.watch(palEyesAuthGatewayProvider).available;
     final theme = Theme.of(context);
     return ColoredBox(
       color: PalEyesTokens.page(context),
@@ -62,7 +65,16 @@ class AccessRestrictedScreen extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: PalEyesTokens.space5),
-                    FilledButton.icon(
+                    if (signIn && canSignIn) ...<Widget>[
+                      FilledButton.icon(
+                        key: const Key('access-restricted-sign-in'),
+                        onPressed: () => context.go(RoutePaths.signIn),
+                        icon: const Icon(Icons.login_rounded),
+                        label: const Text('تسجيل دخول فريق العمل'),
+                      ),
+                      const SizedBox(height: PalEyesTokens.space2),
+                    ],
+                    OutlinedButton.icon(
                       onPressed: () => context.go(RoutePaths.home),
                       icon: const Icon(Icons.home_outlined),
                       label: const Text('العودة إلى الموقع العام'),

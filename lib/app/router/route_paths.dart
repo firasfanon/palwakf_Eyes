@@ -14,6 +14,7 @@ abstract final class RoutePaths {
   static const String contribute = '/contribute';
   static const String methodology = '/methodology';
   static const String accessRestricted = '/access-restricted';
+  static const String signIn = '/sign-in';
 
   static const String workspace = '/workspace';
   static const String workspaceToday = '/workspace/today';
@@ -37,6 +38,7 @@ abstract final class RoutePaths {
   static const String workspaceReleaseControl = '/workspace/release-control';
   static const String workspaceAudit = '/workspace/audit';
   static const String workspaceReports = '/workspace/reports';
+  static const String workspaceSecurity = '/workspace/security';
 
   static const String admin = '/admin';
   static const String governance = '/admin/governance';
@@ -45,6 +47,7 @@ abstract final class RoutePaths {
   static const String governanceAudit = '/admin/governance/audit';
   static const String governanceSystemStatus =
       '/admin/governance/system-status';
+  static const String adminUsers = '/admin/users';
 
   static String place(String slug) => '/places/$slug';
   static String discoverQuery(String query) => query.trim().isEmpty
@@ -93,6 +96,7 @@ abstract final class RoutePaths {
     workspaceReleaseControl,
     workspaceAudit,
     workspaceReports,
+    workspaceSecurity,
   ];
 
   static const List<String> governanceRoutes = <String>[

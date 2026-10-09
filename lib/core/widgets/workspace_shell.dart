@@ -5,6 +5,8 @@ import 'package:pal_eyes/app/application/app_settings.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/app_colors.dart';
 import 'package:pal_eyes/app/theme/pal_eyes_design_tokens.dart';
+import 'package:pal_eyes/core/access/pal_eyes_access.dart';
+import 'package:pal_eyes/core/access/pal_eyes_auth_gateway.dart';
 import 'package:pal_eyes/core/widgets/governance_shell.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_visual_system.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_zone_strip.dart';
@@ -93,6 +95,15 @@ class WorkspaceShell extends ConsumerWidget {
                   style: TextButton.styleFrom(foregroundColor: Colors.white),
                   icon: const Icon(Icons.shield_outlined),
                   label: const Text('الحوكمة'),
+                ),
+              if (ref.watch(palEyesAccessIdentityProvider).source ==
+                  PalEyesIdentitySource.authenticatedSession)
+                IconButton(
+                  key: const Key('workspace-sign-out'),
+                  tooltip: 'تسجيل الخروج',
+                  onPressed: () =>
+                      ref.read(palEyesAuthGatewayProvider).signOut(),
+                  icon: const Icon(Icons.logout_rounded),
                 ),
               if (!compact)
                 IconButton(
@@ -192,6 +203,11 @@ class _WorkspaceSidebar extends StatelessWidget {
           path: RoutePaths.workspaceTasks,
           label: 'مهامي والإشعارات',
           icon: Icons.task_alt_outlined,
+        ),
+        _WorkspaceItem(
+          path: RoutePaths.workspaceSecurity,
+          label: 'أمان الحساب',
+          icon: Icons.verified_user_outlined,
         ),
       ],
     ),

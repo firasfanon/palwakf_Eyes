@@ -203,7 +203,7 @@ jobs:
         run: |
           set -a; source "$RUNNER_TEMP/supabase.env"; set +a
           E2E_REPORT="$RUNNER_TEMP/evidence/supabase/api_e2e_report.json" \
-            python3 tools/supabase_local_e2e/api_e2e.py 2>&1 | tee "$RUNNER_TEMP/evidence/supabase/api_e2e.log"
+            python3 -u tools/supabase_local_e2e/api_e2e.py 2>&1 | tee "$RUNNER_TEMP/evidence/supabase/api_e2e.log"
           echo "PAL_EYES_LIVE_SUPABASE_URL=$API_URL" >> "$GITHUB_ENV"
           echo "PAL_EYES_LIVE_ANON_KEY=$ANON_KEY" >> "$GITHUB_ENV"
 
@@ -245,8 +245,8 @@ jobs:
           set +e
           O="$RUNNER_TEMP/evidence/browser"
           mkdir -p "$O"
-          python3 tools/browser_e2e/run_browser_e2e.py "$RUNNER_TEMP/web/public/web" "$O" public tools/browser_e2e/journeys_public.json | tee "$O/public.log"; A=${PIPESTATUS[0]}
-          python3 tools/browser_e2e/run_browser_e2e.py "$RUNNER_TEMP/web/internal/web" "$O" internal tools/browser_e2e/journeys_internal.json | tee "$O/internal.log"; B=${PIPESTATUS[0]}
+          python3 -u tools/browser_e2e/run_browser_e2e.py "$RUNNER_TEMP/web/public/web" "$O" public tools/browser_e2e/journeys_public.json 2>&1 | tee "$O/public.log"; A=${PIPESTATUS[0]}
+          python3 -u tools/browser_e2e/run_browser_e2e.py "$RUNNER_TEMP/web/internal/web" "$O" internal tools/browser_e2e/journeys_internal.json 2>&1 | tee "$O/internal.log"; B=${PIPESTATUS[0]}
           if [ -f tools/seo/verify_prerender.py ]; then
             python3 tools/seo/verify_prerender.py "$RUNNER_TEMP/web/public/web" | tee "$O/seo_verify.log"; C=${PIPESTATUS[0]}
           else C=0; fi

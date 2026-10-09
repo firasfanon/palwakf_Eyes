@@ -4,6 +4,8 @@ import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/application/app_settings.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/app_colors.dart';
+import 'package:pal_eyes/core/access/pal_eyes_access.dart';
+import 'package:pal_eyes/core/access/pal_eyes_auth_gateway.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_visual_system.dart';
 import 'package:pal_eyes/core/widgets/pal_eyes_zone_strip.dart';
 
@@ -71,6 +73,15 @@ class GovernanceShell extends ConsumerWidget {
                   icon: const Icon(Icons.public_rounded),
                   label: const Text('الموقع العام'),
                 ),
+              if (ref.watch(palEyesAccessIdentityProvider).source ==
+                  PalEyesIdentitySource.authenticatedSession)
+                IconButton(
+                  key: const Key('governance-sign-out'),
+                  tooltip: 'تسجيل الخروج',
+                  onPressed: () =>
+                      ref.read(palEyesAuthGatewayProvider).signOut(),
+                  icon: const Icon(Icons.logout_rounded),
+                ),
               IconButton(
                 tooltip: 'تبديل السمة',
                 onPressed: () =>
@@ -129,6 +140,11 @@ class _GovernanceNavigation extends StatelessWidget {
         RoutePaths.governanceAudit,
         'سجل التدقيق',
         Icons.history_outlined,
+      ),
+      _GovernanceItem(
+        RoutePaths.adminUsers,
+        'المستخدمون والأدوار',
+        Icons.manage_accounts_outlined,
       ),
       _GovernanceItem(
         RoutePaths.governanceSystemStatus,

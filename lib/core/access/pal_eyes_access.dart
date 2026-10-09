@@ -28,7 +28,13 @@ enum PalEyesRole {
 }
 
 /// Route areas with distinct authority requirements.
-enum PalEyesAccessArea { public, workspace, releaseControl, governance }
+enum PalEyesAccessArea {
+  public,
+  workspace,
+  releaseControl,
+  governance,
+  userAdministration,
+}
 
 enum PalEyesIdentitySource {
   /// No session. Public visitor.
@@ -121,6 +127,9 @@ abstract final class PalEyesAccessPolicy {
 
   static PalEyesAccessArea areaFor(String path) {
     final normalized = _normalize(path);
+    if (_within(normalized, RoutePaths.adminUsers)) {
+      return PalEyesAccessArea.userAdministration;
+    }
     if (_within(normalized, RoutePaths.admin)) {
       return PalEyesAccessArea.governance;
     }
@@ -140,6 +149,9 @@ abstract final class PalEyesAccessPolicy {
         PalEyesAccessArea.workspace => workspaceRoles,
         PalEyesAccessArea.releaseControl => releaseRoles,
         PalEyesAccessArea.governance => governanceRoles,
+        PalEyesAccessArea.userAdministration => const <PalEyesRole>{
+          PalEyesRole.systemAdmin,
+        },
       };
 
   static PalEyesAccessDecision decide({

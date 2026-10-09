@@ -1,4 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:pal_eyes/core/access/pal_eyes_access.dart';
 import 'package:pal_eyes/core/supabase/supabase_bootstrap.dart';
 import 'package:pal_eyes/features/operations/application/operational_workspace_store.dart';
 import 'package:pal_eyes/features/operations/data/local_operational_data_backend.dart';
@@ -13,10 +14,13 @@ final operationalActorProvider = Provider<OperationalActor>((ref) {
   final bootstrap = ref.watch(supabaseBootstrapResultProvider);
   if (bootstrap.isEnabled) {
     final user = Supabase.instance.client.auth.currentUser;
+    // Roles come from pal_eyes.user_roles via the session binding; the
+    // server re-checks every write regardless of what the client believes.
+    final identity = ref.watch(palEyesAccessIdentityProvider);
     return OperationalActor(
       id: user?.id ?? 'authenticated-operator',
       displayName: user?.email ?? 'مستخدم مصادق عليه',
-      roles: const <String>{'authenticated'},
+      roles: identity.roles.map((role) => role.key).toSet(),
     );
   }
 
