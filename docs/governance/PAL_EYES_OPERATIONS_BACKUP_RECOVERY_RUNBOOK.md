@@ -1,53 +1,77 @@
-# دليل التشغيل: Staging، النسخ الاحتياطي، الاستعادة، التراجع، المراقبة
+# بعيون فلسطينية — Staging / Backup / Recovery Security Runbook
 
-الحالة: **جاهز إجرائيًا؛ التنفيذ على Staging حقيقي BLOCKED** (D1/D2: لا يمكن إنشاء مشروع Supabase ثالث مجاني دون تغيير خطة أو مساس بمشاريع أنظمة أخرى).
+## Status (2026-10-09)
 
-## 1. البيئات
+Hosted Staging exists but migration preflight remains in PREFLIGHT_HOLD.
 
-| البيئة | قاعدة البيانات | المصادقة | الفهرسة | الخريطة |
-|---|---|---|---|---|
-| local / CI | Supabase CLI محلي (`supabase/config.toml`) + Postgres 17 | حسابات اصطناعية `@synthetic.example.invalid` | noindex | OSM للتطوير |
-| staging | مشروع Supabase مستقل غير إنتاجي (لم يُنشأ — BLOCKED) | دعوات فقط، MFA للأدوار الحساسة | noindex + robots Disallow | OSM/مزود تجريبي |
-| production | غير موجود — يتطلب قرارًا سياديًا | دعوات فقط، MFA إلزامي للنشر والأدوار | indexable للمنشور فقط | Fail-Closed حتى D4 |
+- Sovereign main SHA: bb3c58c24103dda1b058b8016ef1ccfe42239a76.
+- Accepted candidate SHA: 1dfb308f243ac53e0524e3ac2c7a9a9b144e5c01.
+- Repair branch: task/pal-eyes-staging-p0-hardening-v1, isolated from accepted candidate and main.
+- Supabase org: Futuer_IT / iffwrnhqiwyallmkceca / Free.
+- Supabase staging: esojldjeisjgzievhgyj / ACTIVE_HEALTHY / Sydney / PostgreSQL 17.
+- Applied migrations: 0. No user-created application tables.
+- GitHub environment: pal-eyes-staging, exact repair-branch deployment policy, admin bypass disabled.
+- Required reviewers: NOT configured; nominate a distinct approved reviewer if GitHub plan/features permit.
+- Environment secrets: NONE; fail-closed until configured.
+- Hosted Staging SQL apply: NOT AUTHORIZED, NOT EXECUTED.
 
-## 2. تطبيق migrations على Staging
+## 1. Exact target and protection
 
-1. المالك ينشئ بيئة GitHub محمية `pal-eyes-staging` بمراجع مطلوب، ويضيف الأسرار:
-   `SUPABASE_ACCESS_TOKEN`, `SUPABASE_STAGING_PROJECT_REF`, `SUPABASE_STAGING_DB_PASSWORD`،
-   والمتغير `PAL_EYES_FORBIDDEN_PROJECT_REFS` (معرّفات مشاريع الأنظمة الأخرى مفصولة بفواصل).
-2. تشغيل `Pal Eyes staging migrations` يدويًا بـ `apply=false` و`STAGING_ONLY` → يتحقق من الترتيب والبصمات وملفات rollback، يأخذ **نقطة استعادة** (dump مخطط + بيانات كـ artifact مع SHA256)، ثم dry-run.
-3. مراجعة `dry_run.txt`، ثم إعادة التشغيل بـ `apply=true`.
-4. بعد التطبيق: تشغيل `tools/supabase_local_e2e/api_e2e.py` ضد staging (يرفض حاليًا غير loopback — يجب إضافة allowlist صريحة لمرجع staging عند الإنشاء) وسيناريوهات RLS السلبية.
+Only esojldjeisjgzievhgyj may be connected, queried, backed up, dry-run or eventually migrated under separately authorized operations. Never use or mutate the waqf and manasakna databases.
 
-## 3. التراجع (Rollback)
+Verified GitHub environment variables:
+- PAL_EYES_STAGING_PROJECT_REF = esojldjeisjgzievhgyj
+- PAL_EYES_FORBIDDEN_PROJECT_REFS = nghxemiygpjywkodrdwx,lyeryfsrhrxuepuqepgi,kzcpnyvrgxphgbwhyntr
+- PAL_EYES_STAGING_SQL_APPLY_ALLOWED = false
+- PAL_EYES_STAGING_BACKUP_AGE_RECIPIENT = NOT YET CONFIGURED
 
-ترتيب عكسي:
+Unconfigured environment secrets required only for later separately authorized execution:
+- SUPABASE_ACCESS_TOKEN: credential for independent Futuer_IT staging account only.
+- SUPABASE_STAGING_DB_PASSWORD: only the isolated staging database password.
+- SUPABASE_STAGING_PROJECT_REF: exact staging project reference; rechecked against fixed hardcoded allowlist and GitHub variable.
 
-```
-psql "$DB_URL" -v ON_ERROR_STOP=1 -f supabase/rollback/202610090004_down.sql
-psql "$DB_URL" -v ON_ERROR_STOP=1 -f supabase/rollback/202610090003_down.sql
-```
+Configure secrets only through the GitHub protected environment UI or a controlled credential manager. Never paste values into chats, code, git files, terminal logs, Drive or artifacts. Read back secret names only.
 
-- `0004_down` يُبقي أعمدة provenance (لا فقد بيانات) ويزيل المحفزات والسياسات والدوال.
-- تم إثبات الدورة كاملة محليًا وفي CI: seed → بصمة md5 → down 0004/0003 → re-apply → reseed → **بصمة مطابقة** و0 مواقع غير محجوبة (`tools/rls_boundary/run_local_rls_boundary_tests.sh --rollback-cycle`).
-- التراجع عن الواجهة: إعادة نشر بناء الويب السابق (artifact `web-builds` من التشغيل السابق)؛ لا يوجد نشر إنتاجي حاليًا.
+## 2. Encryption and recoverability
 
-## 4. الاستعادة من نقطة الاستعادة
+Before uploading any backup, workflow installs age on a pinned Ubuntu runner, writes plaintext backups inside runner temporary storage, encrypts the archive with an offline-owned age PUBLIC recipient, and uploads ONLY encrypted restore.tar.age plus encrypted-file SHA256SUMS (7-day retention). Plaintext backup files are removed in a shell EXIT trap.
 
-```
-psql "$DB_URL" -v ON_ERROR_STOP=1 -f restore_point/schema.sql
-psql "$DB_URL" -v ON_ERROR_STOP=1 -f restore_point/data.sql
-sha256sum -c restore_point/SHA256SUMS
-```
+Owner must generate and securely retain the age PRIVATE identity outside GitHub, on a protected workstation or approved vault. Never supply the private identity to CI. Configure only public age1... recipient as PAL_EYES_STAGING_BACKUP_AGE_RECIPIENT GitHub environment variable.
 
-اختبار الاستعادة على Staging الحقيقي: **BLOCKED** حتى إنشاء المشروع. النسخ الاحتياطي اليومي المُدار وPITR يتطلبان خطة Supabase مدفوعة — قرار مالي.
+A real decryption and restoration test in an isolated environment remains REQUIRED before claiming recovery readiness. Merely uploading encrypted artifacts does not satisfy this gate.
 
-## 5. المراقبة (D6 معلّق)
+## 3. Workflow security and execution boundaries
 
-- `lib/core/observability/error_reporting.dart`: التقاط أخطاء Flutter وأخطاء المنصة في مخزن دائري (50) مع `ConsoleErrorSink`؛ الوضع عبر `PAL_EYES_ERROR_REPORTING`.
-- ربط مزود خارجي (Sentry/غيره) = تنفيذ `ErrorSink` جديد فقط — **BLOCKED** على اختيار المزود والموافقة (D6).
-- سجلات قاعدة البيانات: جدول التدقيق append-only (`pal_eyes.audit_events`) يسجل كل تغيير تشغيلي مع الفاعل المختوم من الخادم.
+The hardened workflow is .github/workflows/supabase_staging_migrations.yml on the isolated repair branch. It:
+1. Allows workflow_dispatch only, defaults apply to false, requires STAGING_ONLY confirmation.
+2. Rejects any ref, organization, branch or status mismatch before database access.
+3. Requires nonempty exact positive allowlist and forbidden-project registry; blocks all previously known other-project refs.
+4. Validates source ancestry, migration ordering, checksums and rollback-file presence.
+5. Avoids interpolating untrusted workflow inputs into bash commands.
+6. Encrypts backup before artifact upload. Never uploads raw schema.sql or data.sql.
+7. Uses set -euo pipefail on critical steps.
+8. Requires separate apply=true operator phrase and PAL_EYES_STAGING_SQL_APPLY_ALLOWED=true (CURRENTLY FALSE).
 
-## 6. ملاحظة Vercel
+IMPORTANT: The workflow exists only on a non-default branch. Manual workflow registration and execution from the GitHub default branch have NOT been proven. Any default-branch admission needs an independent merge authorization, not given here.
 
-`vercel.json` يعطّل النشر التلقائي من git. عند تفعيل المعاينة: إعادة كتابة SPA ترجع `index.html` حتى للأصول المفقودة (`.js`/`.woff2`) فتخفي أخطاء 404؛ يجب استثناء المسارات ذات الامتدادات من إعادة الكتابة، واستخدام ملفات `<route>/index.html` المولدة لـ SEO بدل إعادة الكتابة للمسارات العامة.
+## 4. Test and evidence ledger
+
+- Static YAML and fail-closed security probes: 15/15 PASS.
+- Synthetic no-network bash behavior probes: 8/8 PASS (no hosted database contact).
+- Hosted Staging migration, hosted auth/RLS/CRUD E2E, actual encrypted backup/restore: NOT EXECUTED.
+- GitHub environment: branch allowlist exact, admin bypass=false, variables set, secrets absent and reviewer pending.
+- Production data mutation: NO.
+- Sovereign baseline promotion: NO.
+- main merge: NO.
+- Production deployment and publication: NO.
+
+## 5. Next governed actions
+
+1. Review security repair branch, tests and evidence; keep source candidate immutable.
+2. Owner nominates separate trusted GitHub reviewer if possible, then configure environment protected reviewers and read back.
+3. Owner securely establishes age keypair and retains private identity offline; publish public recipient into GitHub environment variables only.
+4. Configure account-scoped Supabase secrets inside GitHub environment without exposing values.
+5. Obtain explicit separate approval for preflight/dry-run on hosted staging.
+6. Obtain another separate approval before ANY migration SQL apply.
+7. After approved apply, run real Staging auth/MFA/RLS/CRUD tests and recoverability proof; keep public content and production release blocked.
+END RUNBOOK
