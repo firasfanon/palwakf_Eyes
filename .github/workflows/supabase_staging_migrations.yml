@@ -45,13 +45,16 @@ jobs:
       FORBIDDEN_REFS: ${{ vars.PAL_EYES_FORBIDDEN_PROJECT_REFS }}
       BACKUP_AGE_RECIPIENT: ${{ vars.PAL_EYES_STAGING_BACKUP_AGE_RECIPIENT }}
       ALLOW_SQL_APPLY: ${{ vars.PAL_EYES_STAGING_SQL_APPLY_ALLOWED }}
+      INPUT_CONFIRMATION: ${{ inputs.confirm_non_production }}
+      INPUT_APPLY: ${{ inputs.apply }}
+      INPUT_APPLY_AUTHORIZATION: ${{ inputs.exact_apply_authorization }}
     steps:
       - name: Hard fail-closed preflight (before any database access)
         shell: bash
         run: |
           set -euo pipefail
-          test "${{ inputs.confirm_non_production }}" = "STAGING_ONLY" || { echo "BLOCKED: STAGING_ONLY required"; exit 1; }
-          test "${{ github.ref_name }}" = "task/pal-eyes-staging-p0-hardening-v1" || { echo "BLOCKED: unapproved workflow branch"; exit 1; }
+          test "$INPUT_CONFIRMATION" = "STAGING_ONLY" || { echo "BLOCKED: STAGING_ONLY required"; exit 1; }
+          test "$GITHUB_REF_NAME" = "task/pal-eyes-staging-p0-hardening-v1" || { echo "BLOCKED: unapproved workflow branch"; exit 1; }
           for name in SUPABASE_ACCESS_TOKEN SUPABASE_DB_PASSWORD PROJECT_REF PROJECT_REF_ALLOWLIST FORBIDDEN_REFS BACKUP_AGE_RECIPIENT; do
             test -n "${!name:-}" || { echo "BLOCKED: missing environment configuration for $name"; exit 1; }
           done
@@ -66,8 +69,8 @@ jobs:
           done
           [[ "$normalized" != *" $EXPECTED_STAGING_REF "* ]] || { echo "BLOCKED: contradictory forbidden-ref policy"; exit 1; }
           [[ "$BACKUP_AGE_RECIPIENT" =~ ^age1[a-z0-9]{58}$ ]] || { echo "BLOCKED: valid offline-owned age recipient required"; exit 1; }
-          if [ "${{ inputs.apply }}" = "true" ]; then
-            test "${{ inputs.exact_apply_authorization }}" = "APPROVE_PAL_EYES_STAGING_SQL_APPLY" || { echo "BLOCKED: explicit apply phrase required"; exit 1; }
+          if [ "$INPUT_APPLY" = "true" ]; then
+            test "$INPUT_APPLY_AUTHORIZATION" = "APPROVE_PAL_EYES_STAGING_SQL_APPLY" || { echo "BLOCKED: explicit apply phrase required"; exit 1; }
             test "$ALLOW_SQL_APPLY" = "true" || { echo "BLOCKED: separate owner migration approval not admitted in environment"; exit 1; }
           fi
           echo "PREFLIGHT_CONFIG_CHECK=PASS (target identifiers not printed)"
@@ -176,7 +179,7 @@ jobs:
         run: |
           set -euo pipefail
           test "$ALLOW_SQL_APPLY" = "true"
-          test "${{ inputs.exact_apply_authorization }}" = "APPROVE_PAL_EYES_STAGING_SQL_APPLY"
+          test "$INPUT_APPLY_AUTHORIZATION" = "APPROVE_PAL_EYES_STAGING_SQL_APPLY"
           supabase db push --linked --password "$SUPABASE_DB_PASSWORD" \
             | tee "$RUNNER_TEMP/pal_eyes_apply.log"
 
