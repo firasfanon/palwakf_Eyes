@@ -45,6 +45,8 @@ jobs:
       FORBIDDEN_REFS: ${{ vars.PAL_EYES_FORBIDDEN_PROJECT_REFS }}
       BACKUP_AGE_RECIPIENT: ${{ vars.PAL_EYES_STAGING_BACKUP_AGE_RECIPIENT }}
       ALLOW_SQL_APPLY: ${{ vars.PAL_EYES_STAGING_SQL_APPLY_ALLOWED }}
+      SESSION_POOLER_HOST: ${{ vars.PAL_EYES_STAGING_SESSION_POOLER_HOST }}
+      VERIFIED_SESSION_POOLER_HOST: aws-0-ap-southeast-2.pooler.supabase.com # confirmed from project Session Pooler host and IPv4 DNS/TCP
       INPUT_CONFIRMATION: ${{ inputs.confirm_non_production }}
       INPUT_APPLY: ${{ inputs.apply }}
       INPUT_APPLY_AUTHORIZATION: ${{ inputs.exact_apply_authorization }}
@@ -69,6 +71,10 @@ jobs:
           done
           [[ "$normalized" != *" $EXPECTED_STAGING_REF "* ]] || { echo "BLOCKED: contradictory forbidden-ref policy"; exit 1; }
           [[ "$BACKUP_AGE_RECIPIENT" =~ ^age1[a-z0-9]{58}$ ]] || { echo "BLOCKED: valid offline-owned age recipient required"; exit 1; }
+          test -n "$VERIFIED_SESSION_POOLER_HOST" || { echo "BLOCKED: Staging session Pooler exact host is not verified"; exit 1; }
+          test "$SESSION_POOLER_HOST" = "$VERIFIED_SESSION_POOLER_HOST" || { echo "BLOCKED: Staging session Pooler host mismatch"; exit 1; }
+          [[ "$SESSION_POOLER_HOST" =~ ^aws-[0-9]+-[a-z0-9-]+[.]pooler[.]supabase[.]com$ ]] || { echo "BLOCKED: unexpected Pooler domain"; exit 1; }
+          getent ahostsv4 "$SESSION_POOLER_HOST" >/dev/null || { echo "BLOCKED: session Pooler IPv4 address is not resolvable"; exit 1; }
           if [ "$INPUT_APPLY" = "true" ]; then
             test "$INPUT_APPLY_AUTHORIZATION" = "APPROVE_PAL_EYES_STAGING_SQL_APPLY" || { echo "BLOCKED: explicit apply phrase required"; exit 1; }
             test "$ALLOW_SQL_APPLY" = "true" || { echo "BLOCKED: separate owner migration approval not admitted in environment"; exit 1; }
@@ -136,6 +142,29 @@ jobs:
           set -euo pipefail
           supabase link --project-ref "$EXPECTED_STAGING_REF" --password "$SUPABASE_DB_PASSWORD" >/dev/null
 
+      - name: Prepare masked Staging IPv4 session connection (non-apply only)
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$VERIFIED_SESSION_POOLER_HOST"
+          test "$SESSION_POOLER_HOST" = "$VERIFIED_SESSION_POOLER_HOST"
+          session_url="$(python3 - <<'PY'
+          import os
+          from urllib.parse import quote
+          ref = os.environ["EXPECTED_STAGING_REF"]
+          host = os.environ["SESSION_POOLER_HOST"]
+          password = os.environ["SUPABASE_DB_PASSWORD"]
+          assert ref == "esojldjeisjgzievhgyj"
+          assert host == os.environ["VERIFIED_SESSION_POOLER_HOST"]
+          print(f"postgresql://postgres.{ref}:{quote(password, safe='')}@{host}:5432/postgres?sslmode=require")
+          PY
+          )"
+          test -n "$session_url"
+          echo "::add-mask::$session_url"
+          echo "SESSION_URL=$session_url" >> "$GITHUB_ENV"
+          unset session_url
+          echo "STAGING_IPV4_SESSION_CONNECTION_PREPARED=PASS"
+
       - name: Create an encrypted restore point in ephemeral runner storage
         shell: bash
         run: |
@@ -143,8 +172,8 @@ jobs:
           private_dir="$(mktemp -d "$RUNNER_TEMP/paleyes-restore.XXXXXXXX")"
           trap 'rm -rf "$private_dir"' EXIT
           mkdir -p "$RUNNER_TEMP/encrypted-restore-point"
-          supabase db dump --linked -f "$private_dir/schema.sql"
-          supabase db dump --linked --data-only -f "$private_dir/data.sql"
+          supabase db dump --db-url "$SESSION_URL" -f "$private_dir/schema.sql"
+          supabase db dump --db-url "$SESSION_URL" --data-only -f "$private_dir/data.sql"
           test -s "$private_dir/schema.sql"
           test -s "$private_dir/data.sql"
           sha256sum "$private_dir/schema.sql" "$private_dir/data.sql" \
@@ -171,7 +200,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          supabase db push --linked --dry-run --password "$SUPABASE_DB_PASSWORD" \
+          supabase db push --db-url "$SESSION_URL" --dry-run \
             | tee "$RUNNER_TEMP/pal_eyes_dry_run.log"
 
       - name: Migration apply (separately authorized ONLY)
