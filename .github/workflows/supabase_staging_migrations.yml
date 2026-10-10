@@ -1,21 +1,26 @@
-name: Pal Eyes staging migrations (manual, owner-approved)
+name: Pal Eyes staging migrations (owner-approved, guarded)
 
-# Applies supabase/migrations to an ISOLATED, NON-PRODUCTION Supabase staging
-# project only. It never runs automatically. Secrets live only in the protected
-# GitHub environment `pal-eyes-staging`; if any is missing the run stops as
-# BLOCKED (fail-closed) instead of guessing a target.
+# SECURITY: exact Pal_Eyes staging project ONLY. No automated trigger.
+# The workflow is held until GitHub environment secrets, protected branch,
+# public age recipient and separate migration authorization are installed.
+# Private backup decryption keys must NEVER be placed in GitHub.
 on:
   workflow_dispatch:
     inputs:
       apply:
-        description: "false = dry-run + backup only; true = apply after dry-run"
+        description: "false = read-only preflight/backup/dry-run; true = separately owner-authorized apply"
         required: true
         default: "false"
         type: choice
         options: ["false", "true"]
       confirm_non_production:
-        description: "Type STAGING_ONLY to confirm the target is not production"
+        description: "Type STAGING_ONLY"
         required: true
+        type: string
+      exact_apply_authorization:
+        description: "For apply=true only: paste exact phrase APPROVE_PAL_EYES_STAGING_SQL_APPLY"
+        required: false
+        default: ""
         type: string
 
 permissions:
@@ -27,84 +32,192 @@ concurrency:
 
 jobs:
   migrate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment: pal-eyes-staging
-    timeout-minutes: 30
+    timeout-minutes: 35
     env:
+      EXPECTED_STAGING_REF: esojldjeisjgzievhgyj
+      EXPECTED_ORG_ID: iffwrnhqiwyallmkceca
       SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
       SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_STAGING_DB_PASSWORD }}
       PROJECT_REF: ${{ secrets.SUPABASE_STAGING_PROJECT_REF }}
+      PROJECT_REF_ALLOWLIST: ${{ vars.PAL_EYES_STAGING_PROJECT_REF }}
       FORBIDDEN_REFS: ${{ vars.PAL_EYES_FORBIDDEN_PROJECT_REFS }}
+      BACKUP_AGE_RECIPIENT: ${{ vars.PAL_EYES_STAGING_BACKUP_AGE_RECIPIENT }}
+      ALLOW_SQL_APPLY: ${{ vars.PAL_EYES_STAGING_SQL_APPLY_ALLOWED }}
+      SESSION_POOLER_HOST: ${{ vars.PAL_EYES_STAGING_SESSION_POOLER_HOST }}
+      VERIFIED_SESSION_POOLER_HOST: aws-0-ap-southeast-2.pooler.supabase.com # confirmed from project Session Pooler host and IPv4 DNS/TCP
+      INPUT_CONFIRMATION: ${{ inputs.confirm_non_production }}
+      INPUT_APPLY: ${{ inputs.apply }}
+      INPUT_APPLY_AUTHORIZATION: ${{ inputs.exact_apply_authorization }}
     steps:
-      - name: Fail closed on missing confirmation or secrets
+      - name: Hard fail-closed preflight (before any database access)
+        shell: bash
         run: |
           set -euo pipefail
-          if [ "${{ inputs.confirm_non_production }}" != "STAGING_ONLY" ]; then
-            echo "BLOCKED: confirmation STAGING_ONLY not given"; exit 1
+          test "$INPUT_CONFIRMATION" = "STAGING_ONLY" || { echo "BLOCKED: STAGING_ONLY required"; exit 1; }
+          test "$GITHUB_REF_NAME" = "task/pal-eyes-staging-p0-hardening-v1" || { echo "BLOCKED: unapproved workflow branch"; exit 1; }
+          for name in SUPABASE_ACCESS_TOKEN SUPABASE_DB_PASSWORD PROJECT_REF PROJECT_REF_ALLOWLIST FORBIDDEN_REFS BACKUP_AGE_RECIPIENT; do
+            test -n "${!name:-}" || { echo "BLOCKED: missing environment configuration for $name"; exit 1; }
+          done
+          test "$PROJECT_REF" = "$EXPECTED_STAGING_REF" || { echo "BLOCKED: secret target is not the exact Pal_Eyes staging ref"; exit 1; }
+          test "$PROJECT_REF_ALLOWLIST" = "$EXPECTED_STAGING_REF" || { echo "BLOCKED: allowlist does not match exact staging ref"; exit 1; }
+          test "$PROJECT_REF" != "nghxemiygpjywkodrdwx" || exit 1
+          test "$PROJECT_REF" != "lyeryfsrhrxuepuqepgi" || exit 1
+          test "$PROJECT_REF" != "kzcpnyvrgxphgbwhyntr" || exit 1
+          normalized=" $(echo "$FORBIDDEN_REFS" | tr ',' ' ') "
+          for prohibited in nghxemiygpjywkodrdwx lyeryfsrhrxuepuqepgi kzcpnyvrgxphgbwhyntr; do
+            [[ "$normalized" == *" $prohibited "* ]] || { echo "BLOCKED: forbidden ref registry is incomplete"; exit 1; }
+          done
+          [[ "$normalized" != *" $EXPECTED_STAGING_REF "* ]] || { echo "BLOCKED: contradictory forbidden-ref policy"; exit 1; }
+          [[ "$BACKUP_AGE_RECIPIENT" =~ ^age1[a-z0-9]{58}$ ]] || { echo "BLOCKED: valid offline-owned age recipient required"; exit 1; }
+          test -n "$VERIFIED_SESSION_POOLER_HOST" || { echo "BLOCKED: Staging session Pooler exact host is not verified"; exit 1; }
+          test "$SESSION_POOLER_HOST" = "$VERIFIED_SESSION_POOLER_HOST" || { echo "BLOCKED: Staging session Pooler host mismatch"; exit 1; }
+          [[ "$SESSION_POOLER_HOST" =~ ^aws-[0-9]+-[a-z0-9-]+[.]pooler[.]supabase[.]com$ ]] || { echo "BLOCKED: unexpected Pooler domain"; exit 1; }
+          getent ahostsv4 "$SESSION_POOLER_HOST" >/dev/null || { echo "BLOCKED: session Pooler IPv4 address is not resolvable"; exit 1; }
+          if [ "$INPUT_APPLY" = "true" ]; then
+            test "$INPUT_APPLY_AUTHORIZATION" = "APPROVE_PAL_EYES_STAGING_SQL_APPLY" || { echo "BLOCKED: explicit apply phrase required"; exit 1; }
+            test "$ALLOW_SQL_APPLY" = "true" || { echo "BLOCKED: separate owner migration approval not admitted in environment"; exit 1; }
           fi
-          for v in SUPABASE_ACCESS_TOKEN SUPABASE_DB_PASSWORD PROJECT_REF; do
-            if [ -z "${!v:-}" ]; then
-              echo "BLOCKED_WITH_EVIDENCE: secret for $v is not configured in environment pal-eyes-staging"
-              exit 1
-            fi
-          done
-          # Never touch a project the owner listed as belonging to another system.
-          for ref in ${FORBIDDEN_REFS//,/ }; do
-            if [ "$ref" = "$PROJECT_REF" ]; then
-              echo "BLOCKED: target project is on the forbidden list"; exit 1
-            fi
-          done
-          echo "Target project ref accepted (value masked)."
+          echo "PREFLIGHT_CONFIG_CHECK=PASS (target identifiers not printed)"
 
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
 
-      - uses: supabase/setup-cli@v1
+      - name: Verify exact audited source and migration files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git merge-base --is-ancestor 1dfb308f243ac53e0524e3ac2c7a9a9b144e5c01 HEAD || { echo "BLOCKED: source no longer descends from accepted candidate"; exit 1; }
+          test -z "$(git status --porcelain)" || exit 1
+          test -f supabase/migrations/202610090003_pal_eyes_publication_fail_closed_guard.sql
+          test -f supabase/migrations/202610090004_pal_eyes_workflow_integrity_and_provenance.sql
+          ls supabase/migrations/*.sql | sort > /tmp/pal_eyes_migration_order.txt
+          ls supabase/migrations/*.sql > /tmp/pal_eyes_migration_list.txt
+          diff /tmp/pal_eyes_migration_order.txt /tmp/pal_eyes_migration_list.txt
+          for file in supabase/migrations/*.sql; do
+            stamp=$(basename "$file" .sql)
+            stamp=${stamp%%_*}
+            case "$stamp" in
+              202607190001|202609220002) ;;
+              *) test -f "supabase/rollback/${stamp}_down.sql" || { echo "BLOCKED: missing rollback"; exit 1; } ;;
+            esac
+          done
+          sha256sum supabase/migrations/*.sql > "$RUNNER_TEMP/migration_sha256.txt"
+          echo "SOURCE_AND_MIGRATIONS=PASS"
+
+      - name: Install pinned Supabase CLI and age
+        uses: supabase/setup-cli@v1
         with:
           version: 2.120.0
 
-      - name: Verify migration order and integrity
+      - name: Install age from Ubuntu repository
+        shell: bash
         run: |
           set -euo pipefail
-          ls supabase/migrations/*.sql | sort > /tmp/order.txt
-          ls supabase/migrations/*.sql > /tmp/listed.txt
-          diff /tmp/order.txt /tmp/listed.txt
-          sha256sum supabase/migrations/*.sql | tee /tmp/migrations.sha256
-          for f in supabase/migrations/*.sql; do
-            ts=$(basename "$f" .sql); ts=${ts%%_*}
-            case "$ts" in
-              202607190001|202609220002) ;;  # pre-program baseline, restore via dump
-              *) test -f "supabase/rollback/${ts}_down.sql" || { echo "MISSING_ROLLBACK $ts"; exit 1; } ;;
-            esac
-          done
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq age
+          age --version
 
-      - name: Link (no output of secrets)
-        run: supabase link --project-ref "$PROJECT_REF" --password "$SUPABASE_DB_PASSWORD" >/dev/null
-
-      - name: Restore point — schema + data dump
+      - name: Verify hosted project identity against Supabase management API
+        shell: bash
         run: |
           set -euo pipefail
-          mkdir -p restore_point
-          supabase db dump --linked -f restore_point/schema.sql
-          supabase db dump --linked --data-only -f restore_point/data.sql
-          sha256sum restore_point/*.sql | tee restore_point/SHA256SUMS
-          test -s restore_point/schema.sql
+          response="$(mktemp)"
+          trap 'rm -f "$response"' EXIT
+          curl --fail --silent --show-error --max-time 30 \
+            -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" \
+            "https://api.supabase.com/v1/projects/$EXPECTED_STAGING_REF" -o "$response"
+          jq -e --arg ref "$EXPECTED_STAGING_REF" --arg org "$EXPECTED_ORG_ID" \
+            '(.id == $ref or .ref == $ref) and .organization_id == $org and .status == "ACTIVE_HEALTHY"' "$response" >/dev/null || {
+              echo "BLOCKED: unexpected live project, owner or status"; exit 1;
+            }
+          echo "HOSTED_STAGING_IDENTITY=PASS"
 
-      - uses: actions/upload-artifact@v4
+      - name: Link ONLY the verified nonproduction staging project
+        shell: bash
+        run: |
+          set -euo pipefail
+          supabase link --project-ref "$EXPECTED_STAGING_REF" --password "$SUPABASE_DB_PASSWORD" >/dev/null
+
+      - name: Prepare masked Staging IPv4 session connection (non-apply only)
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$VERIFIED_SESSION_POOLER_HOST"
+          test "$SESSION_POOLER_HOST" = "$VERIFIED_SESSION_POOLER_HOST"
+          session_url="$(python3 - <<'PY'
+          import os
+          from urllib.parse import quote
+          ref = os.environ["EXPECTED_STAGING_REF"]
+          host = os.environ["SESSION_POOLER_HOST"]
+          password = os.environ["SUPABASE_DB_PASSWORD"]
+          assert ref == "esojldjeisjgzievhgyj"
+          assert host == os.environ["VERIFIED_SESSION_POOLER_HOST"]
+          print(f"postgresql://postgres.{ref}:{quote(password, safe='')}@{host}:5432/postgres?sslmode=require")
+          PY
+          )"
+          test -n "$session_url"
+          echo "::add-mask::$session_url"
+          echo "SESSION_URL=$session_url" >> "$GITHUB_ENV"
+          unset session_url
+          echo "STAGING_IPV4_SESSION_CONNECTION_PREPARED=PASS"
+
+      - name: Create an encrypted restore point in ephemeral runner storage
+        shell: bash
+        run: |
+          set -euo pipefail
+          private_dir="$(mktemp -d "$RUNNER_TEMP/paleyes-restore.XXXXXXXX")"
+          trap 'rm -rf "$private_dir"' EXIT
+          mkdir -p "$RUNNER_TEMP/encrypted-restore-point"
+          supabase db dump --db-url "$SESSION_URL" -f "$private_dir/schema.sql"
+          supabase db dump --db-url "$SESSION_URL" --data-only -f "$private_dir/data.sql"
+          test -s "$private_dir/schema.sql"
+          test -s "$private_dir/data.sql"
+          sha256sum "$private_dir/schema.sql" "$private_dir/data.sql" \
+            | sed "s#$private_dir/##g" > "$private_dir/SHA256SUMS"
+          tar -C "$private_dir" -cf - schema.sql data.sql SHA256SUMS \
+            | age --encrypt -r "$BACKUP_AGE_RECIPIENT" \
+                -o "$RUNNER_TEMP/encrypted-restore-point/restore.tar.age"
+          test -s "$RUNNER_TEMP/encrypted-restore-point/restore.tar.age"
+          sha256sum "$RUNNER_TEMP/encrypted-restore-point/restore.tar.age" \
+            > "$RUNNER_TEMP/encrypted-restore-point/ENCRYPTED_SHA256SUMS"
+          echo "ENCRYPTED_RESTORE_POINT_CREATED=PASS"
+          # The plaintext files never enter GitHub artifact uploads.
+          # Decryption key is user-owned and NEVER on the Actions runner.
+
+      - name: Upload encrypted restore artifact only
+        uses: actions/upload-artifact@v4
         with:
-          name: staging-restore-point-${{ github.run_id }}
-          path: restore_point/
-          retention-days: 30
+          name: pal-eyes-staging-encrypted-restore-${{ github.run_id }}
+          path: ${{ runner.temp }}/encrypted-restore-point/
+          if-no-files-found: error
+          retention-days: 7
 
-      - name: Dry run
-        run: supabase db push --linked --dry-run --password "$SUPABASE_DB_PASSWORD" | tee dry_run.txt
+      - name: Supabase migration dry run (no apply)
+        shell: bash
+        run: |
+          set -euo pipefail
+          supabase db push --db-url "$SESSION_URL" --dry-run \
+            | tee "$RUNNER_TEMP/pal_eyes_dry_run.log"
 
-      - name: Apply (only when apply=true)
+      - name: Migration apply (separately authorized ONLY)
         if: ${{ inputs.apply == 'true' }}
-        run: supabase db push --linked --password "$SUPABASE_DB_PASSWORD" | tee apply.txt
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$ALLOW_SQL_APPLY" = "true"
+          test "$INPUT_APPLY_AUTHORIZATION" = "APPROVE_PAL_EYES_STAGING_SQL_APPLY"
+          supabase db push --linked --password "$SUPABASE_DB_PASSWORD" \
+            | tee "$RUNNER_TEMP/pal_eyes_apply.log"
 
-      - name: Post-apply invariant checks
+      - name: Post-apply database lint (does not claim E2E success)
         if: ${{ inputs.apply == 'true' }}
+        shell: bash
         run: |
           set -euo pipefail
           supabase db lint --linked --level error
-          echo "Run tools/supabase_local_e2e/api_e2e.py against staging only with synthetic invite accounts created by the owner."
+          echo "DATABASE_LINT_COMPLETE=PASS"
+          echo "HOSTED_AUTH_RLS_CRUD_E2E=PENDING_SEPARATE_BOUNDED_TEST"
