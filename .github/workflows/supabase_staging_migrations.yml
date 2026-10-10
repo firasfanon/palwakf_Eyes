@@ -46,7 +46,7 @@ jobs:
       BACKUP_AGE_RECIPIENT: ${{ vars.PAL_EYES_STAGING_BACKUP_AGE_RECIPIENT }}
       ALLOW_SQL_APPLY: ${{ vars.PAL_EYES_STAGING_SQL_APPLY_ALLOWED }}
       SESSION_POOLER_HOST: ${{ vars.PAL_EYES_STAGING_SESSION_POOLER_HOST }}
-      VERIFIED_SESSION_POOLER_HOST: "" # HOLD: exact project Pooler host not yet verified
+      VERIFIED_SESSION_POOLER_HOST: aws-0-ap-southeast-2.pooler.supabase.com # confirmed from project Session Pooler host and IPv4 DNS/TCP
       INPUT_CONFIRMATION: ${{ inputs.confirm_non_production }}
       INPUT_APPLY: ${{ inputs.apply }}
       INPUT_APPLY_AUTHORIZATION: ${{ inputs.exact_apply_authorization }}
