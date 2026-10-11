@@ -3,6 +3,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pal_eyes/app/router/route_paths.dart';
 import 'package:pal_eyes/app/theme/approved_reference_design.dart';
+import 'package:pal_eyes/core/supabase/supabase_bootstrap.dart';
+import 'package:pal_eyes/features/operations/application/operational_providers.dart';
+import 'package:pal_eyes/features/operations/domain/operational_models.dart';
 import 'package:pal_eyes/features/places/application/heritage_sites_provider.dart';
 import 'package:pal_eyes/features/research/data/staging_research_corpus_v1.dart';
 
@@ -16,6 +19,21 @@ class WorkspaceDashboardScreen extends ConsumerWidget {
     final expanded = ref.watch(expandedNarrativeSitesProvider);
     final sources = ref.watch(draftSourceRegistryProvider);
     final coordinateGaps = sites.length - mapped.length;
+    final liveMode = ref.watch(supabaseBootstrapResultProvider).isEnabled;
+    final liveState = liveMode ? ref.watch(operationalSnapshotProvider) : null;
+    final liveSnapshot = liveState?.asData?.value;
+    final liveLoading = liveSnapshot == null;
+    final liveReadError = liveState?.hasError ?? false;
+    final liveDraftCount = liveSnapshot?.sites
+        .where((site) => site.publicationStatus != 'PUBLISHED')
+        .length;
+    final livePublishedCount = liveSnapshot?.sites
+        .where((site) => site.publicationStatus == 'PUBLISHED')
+        .length;
+    final liveReviewCount = liveSnapshot?.reviewTasks
+        .where((task) => task.status == 'OPEN')
+        .length;
+
     final stagingReferences =
         researchCorpusCompletedCount +
         researchCorpusInsufficientCount +
@@ -36,39 +54,96 @@ class WorkspaceDashboardScreen extends ConsumerWidget {
                   onReviews: () => context.go(RoutePaths.workspaceReviews),
                 ),
                 const SizedBox(height: 22),
+                if (liveMode) ...<Widget>[
+                  const Card(
+                    child: Padding(
+                      padding: EdgeInsets.all(14),
+                      child: Text(
+                        'اتصال Staging فعلي — الأرقام أدناه تُقرأ من Supabase. '
+                        'يبقى المحتوى البحثي مسودة قابلة للتدقيق؛ لا نشر تلقائي. '
+                        'أما المواد المرجعية المدمجة في التطبيق فهي فهرس محلي مستقل.',
+                        key: Key('staging-live-dashboard-notice'),
+                      ),
+                    ),
+                  ),
+                  if (liveReadError)
+                    const Text(
+                      'تعذر جلب أرقام Staging. لم نستبدلها بالبيانات المحلية.',
+                      key: Key('staging-live-dashboard-error'),
+                    ),
+                  const SizedBox(height: 12),
+                ],
+
                 _MetricGrid(
-                  items: <_Metric>[
-                    _Metric(
-                      'البحث المحكوم',
-                      '$researchCorpusTotalCount',
-                      'إجمالي عناصر corpus',
-                    ),
-                    _Metric(
-                      'مكتمل بحثياً',
-                      '$researchCorpusCompletedCount',
-                      'REVIEW_DEFERRED',
-                    ),
-                    _Metric(
-                      'دليل غير كافٍ',
-                      '$researchCorpusInsufficientCount',
-                      'Status-only',
-                    ),
-                    _Metric(
-                      'بحوث مرتبطة',
-                      '$researchCorpusLinkedCount',
-                      'بدون تكرار Owner',
-                    ),
-                    _Metric(
-                      'غير مكتمل',
-                      '$researchCorpusIncompleteCount',
-                      '001–003',
-                    ),
-                    _Metric(
-                      'الكتالوج',
-                      '${sites.length}',
-                      '${expanded.length} روايات موسعة',
-                    ),
-                  ],
+                  items: liveMode
+                      ? <_Metric>[
+                          _Metric(
+                            'مواقع في Staging',
+                            liveLoading ? '…' : '${liveSnapshot.sites.length}',
+                            'من قاعدة البيانات',
+                          ),
+                          _Metric(
+                            'مصادر موثقة',
+                            liveLoading
+                                ? '…'
+                                : '${liveSnapshot.sources.length}',
+                            'قابلة للمراجعة',
+                          ),
+                          _Metric(
+                            'مسودات غير منشورة',
+                            liveLoading ? '…' : '$liveDraftCount',
+                            'BLOCKED / DRAFT',
+                          ),
+                          _Metric(
+                            'مهام مراجعة مفتوحة',
+                            liveLoading ? '…' : '$liveReviewCount',
+                            'قبل الاعتماد',
+                          ),
+                          _Metric(
+                            'سجلات تدقيق حديثة',
+                            liveLoading
+                                ? '…'
+                                : '${liveSnapshot.auditEvents.length}',
+                            'سجل الأحداث الحي',
+                          ),
+                          _Metric(
+                            'مواقع منشورة',
+                            liveLoading ? '…' : '$livePublishedCount',
+                            'النشر مغلق حتى الاعتماد',
+                          ),
+                        ]
+                      : <_Metric>[
+                          _Metric(
+                            'البحث المحكوم',
+                            '$researchCorpusTotalCount',
+                            'إجمالي عناصر corpus',
+                          ),
+                          _Metric(
+                            'مكتمل بحثياً',
+                            '$researchCorpusCompletedCount',
+                            'REVIEW_DEFERRED',
+                          ),
+                          _Metric(
+                            'دليل غير كافٍ',
+                            '$researchCorpusInsufficientCount',
+                            'Status-only',
+                          ),
+                          _Metric(
+                            'بحوث مرتبطة',
+                            '$researchCorpusLinkedCount',
+                            'بدون تكرار Owner',
+                          ),
+                          _Metric(
+                            'غير مكتمل',
+                            '$researchCorpusIncompleteCount',
+                            '001–003',
+                          ),
+                          _Metric(
+                            'الكتالوج',
+                            '${sites.length}',
+                            '${expanded.length} روايات موسعة',
+                          ),
+                        ],
                 ),
                 const SizedBox(height: 30),
                 _SectionTitle(
@@ -80,6 +155,9 @@ class WorkspaceDashboardScreen extends ConsumerWidget {
                 const SizedBox(height: 16),
                 _WorkflowBoard(
                   mappedCount: mapped.length,
+                  liveMode: liveMode,
+                  liveSnapshot: liveSnapshot,
+
                   stagingReferences: stagingReferences,
                   onReview: () => context.go(RoutePaths.workspaceReviews),
                   onRelease: () =>
@@ -362,41 +440,91 @@ class _SectionTitle extends StatelessWidget {
 class _WorkflowBoard extends StatelessWidget {
   const _WorkflowBoard({
     required this.mappedCount,
+    required this.liveMode,
+    required this.liveSnapshot,
+
     required this.stagingReferences,
     required this.onReview,
     required this.onRelease,
   });
 
   final int mappedCount;
+  final bool liveMode;
+  final OperationalSnapshot? liveSnapshot;
+
   final int stagingReferences;
   final VoidCallback onReview;
   final VoidCallback onRelease;
   @override
   Widget build(BuildContext context) {
-    final stages = <_WorkflowStage>[
-      const _WorkflowStage(
-        '1',
-        'البحث',
-        '$researchCorpusTotalCount',
-        'Corpus مجمّد ومقبول',
-      ),
-      const _WorkflowStage(
-        '2',
-        'التحرير',
-        '$researchCorpusCompletedCount',
-        'REVIEW_DEFERRED',
-      ),
-      const _WorkflowStage(
-        '3',
-        'الفجوات',
-        '${researchCorpusInsufficientCount + researchCorpusIncompleteCount}',
-        'دليل غير كافٍ / غير مكتمل',
-      ),
-      const _WorkflowStage('4', 'المراجعة', '0', 'لا اعتماد نهائي بعد'),
-      _WorkflowStage('5', 'الوسائط وGIS', '$mappedCount', 'مواضع مدققة'),
-      _WorkflowStage('6', 'Staging', '$stagingReferences', 'مراجع وحزم معاينة'),
-      const _WorkflowStage('7', 'قرار النشر', '0', 'محجوب حالياً'),
-    ];
+    final stages = liveMode
+        ? <_WorkflowStage>[
+            _WorkflowStage(
+              '1',
+              'المواقع',
+              '${liveSnapshot?.sites.length ?? '…'}',
+              'بيانات Staging',
+            ),
+            _WorkflowStage(
+              '2',
+              'مسودات محجوبة',
+              '${liveSnapshot?.sites.where((item) => item.publicationStatus != 'PUBLISHED').length ?? '…'}',
+              'قابلة للتحرير',
+            ),
+            _WorkflowStage(
+              '3',
+              'مراجعات مفتوحة',
+              '${liveSnapshot?.reviewTasks.where((item) => item.status == 'OPEN').length ?? '…'}',
+              'يلزم تدقيق بشري',
+            ),
+            _WorkflowStage(
+              '4',
+              'المصادر',
+              '${liveSnapshot?.sources.length ?? '…'}',
+              'مصادر Staging',
+            ),
+            _WorkflowStage(
+              '5',
+              'التدقيق',
+              '${liveSnapshot?.auditEvents.length ?? '…'}',
+              'أدلة تشغيل',
+            ),
+            _WorkflowStage(
+              '6',
+              'منشور',
+              '${liveSnapshot?.sites.where((item) => item.publicationStatus == 'PUBLISHED').length ?? '…'}',
+              'لا يُنشر قبل الاعتماد',
+            ),
+          ]
+        : <_WorkflowStage>[
+            const _WorkflowStage(
+              '1',
+              'البحث',
+              '$researchCorpusTotalCount',
+              'Corpus مجمّد ومقبول',
+            ),
+            const _WorkflowStage(
+              '2',
+              'التحرير',
+              '$researchCorpusCompletedCount',
+              'REVIEW_DEFERRED',
+            ),
+            const _WorkflowStage(
+              '3',
+              'الفجوات',
+              '${researchCorpusInsufficientCount + researchCorpusIncompleteCount}',
+              'دليل غير كافٍ / غير مكتمل',
+            ),
+            const _WorkflowStage('4', 'المراجعة', '0', 'لا اعتماد نهائي بعد'),
+            _WorkflowStage('5', 'الوسائط وGIS', '$mappedCount', 'مواضع مدققة'),
+            _WorkflowStage(
+              '6',
+              'Staging',
+              '$stagingReferences',
+              'مراجع وحزم معاينة',
+            ),
+            const _WorkflowStage('7', 'قرار النشر', '0', 'محجوب حالياً'),
+          ];
 
     return Container(
       padding: const EdgeInsets.all(18),

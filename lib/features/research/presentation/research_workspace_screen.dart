@@ -8,6 +8,7 @@ import 'package:pal_eyes/features/places/application/heritage_sites_provider.dar
 import 'package:pal_eyes/features/places/data/content_catalog_metrics.dart';
 import 'package:pal_eyes/features/research/domain/governed_research_backlog_item.dart';
 import 'package:pal_eyes/features/research/presentation/research_package_workbench.dart';
+import 'package:pal_eyes/features/research/presentation/staging_research_live_panel.dart';
 
 class ResearchWorkspaceScreen extends ConsumerStatefulWidget {
   const ResearchWorkspaceScreen({super.key});
@@ -74,6 +75,14 @@ class _ResearchWorkspaceScreenState
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           const _Metrics(),
+          const SizedBox(height: 12),
+          const StagingResearchLivePanel(),
+          const SizedBox(height: 12),
+          const Text(
+            'القائمة البحثية التالية مرجع محلي غير منشور وليست سجلات قاعدة Staging.',
+            key: Key('research-local-corpus-disclaimer'),
+          ),
+
           const SizedBox(height: 18),
           const ResearchPackageWorkbench(),
           const SizedBox(height: 18),

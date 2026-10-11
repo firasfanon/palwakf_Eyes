@@ -7,10 +7,12 @@ class OperationalWorkspaceStore {
   OperationalWorkspaceStore({
     required OperationalDataBackend backend,
     required this.actor,
+    this.stagingDraftWritesEnabled = false,
   }) : _backend = backend;
 
   final OperationalDataBackend _backend;
   final OperationalActor actor;
+  final bool stagingDraftWritesEnabled;
   final StreamController<OperationalSnapshot> _controller =
       StreamController<OperationalSnapshot>.broadcast(sync: true);
 
@@ -39,15 +41,40 @@ class OperationalWorkspaceStore {
     return snapshot;
   }
 
-  Future<void> _run(
-    Future<OperationalSnapshot> Function() operation,
-  ) async {
+  Future<void> _run(Future<OperationalSnapshot> Function() operation) async {
     final snapshot = await operation();
     _snapshot = snapshot;
     _controller.add(snapshot);
   }
 
   Future<void> refresh() => _run(_backend.loadSnapshot);
+
+  Future<void> createSiteDraft({
+    required String nameAr,
+    required String governorateAr,
+    required String localityAr,
+    required String editorialDraft,
+    required String sourceLocator,
+  }) {
+    if (!stagingDraftWritesEnabled ||
+        _backend.mode != OperationalBackendMode.supabase) {
+      throw StateError('STAGING_DRAFT_WRITES_DISABLED');
+    }
+    if (!actor.roles.contains('editor') &&
+        !actor.roles.contains('system_admin')) {
+      throw StateError('EDITOR_OR_ADMIN_ROLE_REQUIRED');
+    }
+    return _run(
+      () => _backend.createSiteDraft(
+        actor: actor,
+        nameAr: nameAr,
+        governorateAr: governorateAr,
+        localityAr: localityAr,
+        editorialDraft: editorialDraft,
+        sourceLocator: sourceLocator,
+      ),
+    );
+  }
 
   Future<void> saveSiteDraft({
     required String siteId,
@@ -64,10 +91,7 @@ class OperationalWorkspaceStore {
 
   Future<void> submitSiteForReview(String siteId) {
     return _run(
-      () => _backend.submitSiteForReview(
-        actor: actor,
-        siteId: siteId,
-      ),
+      () => _backend.submitSiteForReview(actor: actor, siteId: siteId),
     );
   }
 

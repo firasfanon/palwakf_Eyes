@@ -5,6 +5,15 @@ abstract interface class OperationalDataBackend {
 
   Future<OperationalSnapshot> loadSnapshot();
 
+  Future<OperationalSnapshot> createSiteDraft({
+    required OperationalActor actor,
+    required String nameAr,
+    required String governorateAr,
+    required String localityAr,
+    required String editorialDraft,
+    required String sourceLocator,
+  });
+
   Future<OperationalSnapshot> saveSiteDraft({
     required OperationalActor actor,
     required String siteId,

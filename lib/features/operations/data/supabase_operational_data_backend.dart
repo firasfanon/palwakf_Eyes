@@ -1,5 +1,7 @@
+import 'dart:math';
 import 'package:pal_eyes/features/operations/data/operational_data_backend.dart';
 import 'package:pal_eyes/features/operations/domain/operational_models.dart';
+import 'package:pal_eyes/features/operations/domain/staging_site_draft.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class SupabaseOperationalDataBackend implements OperationalDataBackend {
@@ -110,6 +112,49 @@ class SupabaseOperationalDataBackend implements OperationalDataBackend {
       auditEvents: auditRows.map(OperationalAuditEvent.fromJson).toList(),
       loadedAt: DateTime.now().toUtc(),
     );
+  }
+
+  @override
+  Future<OperationalSnapshot> createSiteDraft({
+    required OperationalActor actor,
+    required String nameAr,
+    required String governorateAr,
+    required String localityAr,
+    required String editorialDraft,
+    required String sourceLocator,
+  }) async {
+    final userId = _client.auth.currentUser?.id;
+    if (userId == null) throw StateError('STAGING_AUTH_SESSION_REQUIRED');
+    final nonce = Random.secure().nextInt(0x7fffffff);
+    final id =
+        'staging-draft-${DateTime.now().toUtc().microsecondsSinceEpoch}-$nonce';
+    final row = StagingSiteDraft(
+      nameAr: nameAr,
+      governorateAr: governorateAr,
+      localityAr: localityAr,
+      editorialDraft: editorialDraft,
+      sourceLocator: sourceLocator,
+    ).toInsertRow(id: id, authorId: userId);
+    // The server's RLS and publication-state guard enforce this independently.
+    await _client.schema('pal_eyes').from('sites').insert(row);
+    try {
+      await _insertAudit(
+        actor: actor,
+        action: 'GOVERNED_RESEARCH_DRAFT_CREATED',
+        entityType: 'site',
+        entityId: id,
+        summary: 'إنشاء مسودة بحثية غير منشورة وقابلة للتدقيق.',
+        metadata: <String, Object?>{
+          'publication': 'BLOCKED',
+          'human_review_required': true,
+          'source_locator_supplied': sourceLocator.trim().isNotEmpty,
+        },
+      );
+    } on Object {
+      // The site may have been written. Never silently retry and duplicate it.
+      throw StateError('DRAFT_CREATED_AUDIT_UNCONFIRMED_CHECK_BEFORE_RETRY');
+    }
+    return loadSnapshot();
   }
 
   @override

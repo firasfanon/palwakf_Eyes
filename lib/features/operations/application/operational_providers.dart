@@ -1,5 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pal_eyes/core/access/pal_eyes_access.dart';
+import 'package:pal_eyes/core/config/app_environment.dart';
 import 'package:pal_eyes/core/supabase/supabase_bootstrap.dart';
 import 'package:pal_eyes/features/operations/application/operational_workspace_store.dart';
 import 'package:pal_eyes/features/operations/data/local_operational_data_backend.dart';
@@ -59,6 +60,9 @@ final operationalWorkspaceStoreProvider = Provider<OperationalWorkspaceStore>((
   final store = OperationalWorkspaceStore(
     backend: ref.watch(operationalDataBackendProvider),
     actor: ref.watch(operationalActorProvider),
+    stagingDraftWritesEnabled:
+        ref.watch(appEnvironmentProvider).environmentName == 'staging' &&
+        ref.watch(supabaseBootstrapResultProvider).isEnabled,
   );
   ref.onDispose(store.dispose);
   return store;
