@@ -215,49 +215,18 @@ class SupabaseOperationalDataBackend implements OperationalDataBackend {
     required OperationalActor actor,
     required String siteId,
   }) async {
-    final siteRows = _rows(
-      await _client
-          .schema('pal_eyes')
-          .from('sites')
-          .select('name_ar')
-          .eq('id', siteId)
-          .limit(1),
-    );
-    final name = siteRows.isEmpty
-        ? siteId
-        : (siteRows.first['name_ar'] ?? siteId).toString();
-
+    if (_client.auth.currentUser == null) {
+      throw StateError('STAGING_AUTH_SESSION_REQUIRED');
+    }
+    // A single database transaction serializes submissions for this site
+    // and maintains one OPEN editorial task, with a unique partial index.
+    // No client-side read-then-write race and no duplicate audit event.
     await _client
         .schema('pal_eyes')
-        .from('sites')
-        .update(<String, Object?>{
-          'workflow_status': 'SUBMITTED_FOR_REVIEW',
-          'updated_by': _client.auth.currentUser?.id,
-        })
-        .eq('id', siteId);
-
-    await _client
-        .schema('pal_eyes')
-        .from('review_tasks')
-        .insert(<String, Object?>{
-          'id': _nextId('review-site'),
-          'entity_type': 'site',
-          'entity_id': siteId,
-          'title': 'مراجعة تحريرية: $name',
-          'review_type': 'EDITORIAL',
-          'priority': 'P1_HIGH',
-          'status': 'OPEN',
-          'assignee_label': 'غير مسند',
-          'created_by': _client.auth.currentUser?.id,
-        });
-
-    await _insertAudit(
-      actor: actor,
-      action: 'SITE_SUBMITTED_FOR_REVIEW',
-      entityType: 'site',
-      entityId: siteId,
-      summary: 'إرسال الموقع إلى قائمة المراجعة البشرية.',
-    );
+        .rpc<List<dynamic>>(
+          'submit_site_for_review_v1',
+          params: <String, Object?>{'p_site_id': siteId},
+        );
     return loadSnapshot();
   }
 
