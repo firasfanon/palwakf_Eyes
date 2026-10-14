@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+normalized*.json
+pending_source_linkage_review*.csv
+editorial_evidence_validation*.json
+independent_acceptance_audit*.json

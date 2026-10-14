@@ -29,6 +29,9 @@ def build_linkage_review(sites_doc, sources_doc):
             "review_decision": "PENDING_HUMAN_LINKAGE",
             "evidence_locator": "",
             "reviewer": "",
+            "independent_reviewer": "",
+            "independent_review_decision": "",
+            "review_notes": "",
             "verification_status": "PENDING_HUMAN_REVIEW",
             "publication_status": "BLOCKED"
         })
