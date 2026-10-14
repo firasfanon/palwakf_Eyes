@@ -10,7 +10,11 @@ class ReviewableNarrative {
     required this.title,
     required this.status,
     required this.sections,
+    this.sourcePath = '',
+    this.sourceGitBlob = '',
   });
+  final String sourcePath;
+  final String sourceGitBlob;
   final String id;
   final String title;
   final String status;
@@ -36,7 +40,9 @@ final reviewableDraftNarrativesProvider =
       final narratives = await client
           .schema('pal_eyes')
           .from('draft_research_narratives_v1')
-          .select('id,title,research_status,publication_status')
+          .select(
+            'id,title,research_status,publication_status,original_source_path,source_git_blob',
+          )
           .eq('publication_status', 'BLOCKED')
           .order('title')
           .limit(60);
@@ -59,6 +65,8 @@ final reviewableDraftNarrativesProvider =
               id: narrativeId,
               title: (n['title'] ?? '').toString(),
               status: (n['research_status'] ?? '').toString(),
+              sourcePath: (n['original_source_path'] ?? '').toString(),
+              sourceGitBlob: (n['source_git_blob'] ?? '').toString(),
               sections: sections
                   .where((s) => s['narrative_id'] == narrativeId)
                   .map(
@@ -163,6 +171,14 @@ class _GovernedResearchDraftReaderState
                             title: Text(item.title),
                             subtitle: Text('${item.status} — غير معتمد للنشر'),
                             children: [
+                              if (item.sourcePath.isNotEmpty)
+                                SelectableText(
+                                  'مصدر المسودة: ${item.sourcePath}',
+                                ),
+                              if (item.sourceGitBlob.isNotEmpty)
+                                SelectableText(
+                                  'بصمة المصدر Git: ${item.sourceGitBlob}',
+                                ),
                               for (final sec in item.sections)
                                 Padding(
                                   padding: const EdgeInsets.symmetric(
