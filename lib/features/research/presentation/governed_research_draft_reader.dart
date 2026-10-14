@@ -76,10 +76,43 @@ final reviewableDraftNarrativesProvider =
           .toList(growable: false);
     });
 
-class GovernedResearchDraftReader extends ConsumerWidget {
+List<ReviewableNarrative> filterReviewableNarratives(
+  List<ReviewableNarrative> records,
+  String search,
+) {
+  final query = search.trim().toLowerCase();
+  if (query.isEmpty) return records;
+  return records
+      .where((record) {
+        final searchable = '${record.id} ${record.title} ${record.status}'
+            .toLowerCase();
+        return searchable.contains(query);
+      })
+      .toList(growable: false);
+}
+
+class GovernedResearchDraftReader extends ConsumerStatefulWidget {
   const GovernedResearchDraftReader({super.key});
+
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<GovernedResearchDraftReader> createState() =>
+      _GovernedResearchDraftReaderState();
+}
+
+class _GovernedResearchDraftReaderState
+    extends ConsumerState<GovernedResearchDraftReader> {
+  static const int _pageSize = 12;
+  final TextEditingController _searchController = TextEditingController();
+  int _visibleCount = _pageSize;
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final records = ref.watch(reviewableDraftNarrativesProvider);
     return Card(
       key: const Key('internal-draft-review-reader'),
@@ -97,6 +130,17 @@ class GovernedResearchDraftReader extends ConsumerWidget {
               'هذه مواد داخلية قيد التحقق العلمي. الحجب عن النشر العام لا يمنع '
               'الباحث والمراجع المخوّل من قراءة نصوصها وأقسامها ومناقشة أدلتها.',
             ),
+            const SizedBox(height: 12),
+            TextField(
+              key: const Key('internal-draft-review-search'),
+              controller: _searchController,
+              onChanged: (_) => setState(() => _visibleCount = _pageSize),
+              decoration: const InputDecoration(
+                labelText: 'بحث في السرديات غير المنشورة',
+                prefixIcon: Icon(Icons.search),
+              ),
+            ),
+            const SizedBox(height: 12),
             records.when(
               loading: () => const LinearProgressIndicator(),
               error: (_, stack) => const Text(
@@ -107,8 +151,13 @@ class GovernedResearchDraftReader extends ConsumerWidget {
                   ? const Text('لا توجد سرديات داخلية ظاهرة لهذه الجلسة.')
                   : Column(
                       children: [
-                        Text('سرديات مسودة: ${items.length}'),
-                        for (final item in items)
+                        Text(
+                          'السرديات المطابقة: ${filterReviewableNarratives(items, _searchController.text).length} من ${items.length} — غير منشورة',
+                        ),
+                        for (final item in filterReviewableNarratives(
+                          items,
+                          _searchController.text,
+                        ).take(_visibleCount))
                           ExpansionTile(
                             key: ValueKey(item.id),
                             title: Text(item.title),
@@ -141,6 +190,17 @@ class GovernedResearchDraftReader extends ConsumerWidget {
                                   ),
                                 ),
                             ],
+                          ),
+                        if (filterReviewableNarratives(
+                              items,
+                              _searchController.text,
+                            ).length >
+                            _visibleCount)
+                          TextButton.icon(
+                            onPressed: () =>
+                                setState(() => _visibleCount += _pageSize),
+                            icon: const Icon(Icons.expand_more),
+                            label: const Text('إظهار المزيد من المسودات'),
                           ),
                       ],
                     ),
