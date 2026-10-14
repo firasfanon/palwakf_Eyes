@@ -7,6 +7,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from normalize import normalize
+from review_linkage import build_linkage_review
 
 ROOT = Path(__file__).resolve().parents[2]
 SITES = json.loads((ROOT / "content_seed/PAL_EYES_DRAFT_SITE_CATALOG_V1.json").read_text(encoding="utf-8"))
@@ -30,6 +31,15 @@ class NormalizeCorpusTests(unittest.TestCase):
                             for l in graph["source_links"]))
         self.assertFalse(graph["controls"]["database_applied"])
         self.assertFalse(graph["controls"]["public_preview_allowed"])
+
+    def test_linkage_review_has_no_fabricated_site_assignments(self):
+        rows = build_linkage_review(SITES, SOURCES)
+        self.assertEqual(len(rows), 11)
+        self.assertEqual(len({row['source_id'] for row in rows}), 11)
+        self.assertTrue(all(not row['candidate_site_id'] and not row['evidence_locator']
+                            for row in rows))
+        self.assertTrue(all(row['review_decision'] == 'PENDING_HUMAN_LINKAGE'
+                            and row['publication_status'] == 'BLOCKED' for row in rows))
 
     def test_deterministic(self):
         self.assertEqual(normalize(SITES, SOURCES), normalize(SITES, SOURCES))
