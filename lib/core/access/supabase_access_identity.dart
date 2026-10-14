@@ -34,12 +34,18 @@ final supabaseAccessBindingProvider = Provider<void>((ref) {
   final client = Supabase.instance.client;
   final controller = ref.read(authenticatedAccessIdentityProvider.notifier);
 
+  var generation = 0;
+  var disposed = false;
   Future<void> resolve(Session? session) async {
+    if (disposed) return;
+    final currentGeneration = ++generation;
     final user = session?.user;
     if (user == null) {
       controller.signedOut();
       return;
     }
+    // A valid session alone does not authorize access. Resolve roles first.
+    controller.loading(userId: user.id);
     try {
       final rows = await client
           .schema('pal_eyes')
@@ -47,15 +53,26 @@ final supabaseAccessBindingProvider = Provider<void>((ref) {
           .select('role_key, is_active')
           .eq('user_id', user.id)
           .eq('is_active', true);
+      if (currentGeneration != generation) return;
       controller.signedIn(userId: user.id, roles: parseRoleRows(rows));
     } on Object {
-      controller.signedIn(userId: user.id, roles: const <PalEyesRole>{});
+      if (currentGeneration != generation) return;
+      controller.failed(userId: user.id);
     }
   }
 
   final subscription = client.auth.onAuthStateChange.listen(
     (state) => unawaited(resolve(state.session)),
   );
-  unawaited(resolve(client.auth.currentSession));
-  ref.onDispose(subscription.cancel);
+  // Never synchronously mutate another provider while this provider builds.
+  // Deferring the initial session read also permits onDispose to invalidate it.
+  scheduleMicrotask(() {
+    if (disposed) return;
+    unawaited(resolve(client.auth.currentSession));
+  });
+  ref.onDispose(() {
+    disposed = true;
+    generation++;
+    subscription.cancel();
+  });
 });

@@ -49,26 +49,43 @@ class WorkspaceShell extends ConsumerWidget {
                       icon: const Icon(Icons.menu_rounded),
                     ),
                   ),
-            title: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                const PalEyesBrandMark(
-                  compact: true,
-                  foregroundColor: PalEyesTokens.inkOnDark,
-                ),
-                if (!compact) ...<Widget>[
-                  const SizedBox(width: 16),
-                  Container(width: 1, height: 30, color: Colors.white24),
-                  const SizedBox(width: 14),
-                  Text(
-                    location.startsWith(RoutePaths.governance)
-                        ? 'الحوكمة والنظام'
-                        : 'مساحة العمل',
-                    style: const TextStyle(fontWeight: FontWeight.w900),
+            title: compact
+                ? const FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: AlignmentDirectional.centerStart,
+                    child: PalEyesBrandMark(
+                      compact: true,
+                      foregroundColor: PalEyesTokens.inkOnDark,
+                    ),
+                  )
+                : FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: AlignmentDirectional.centerStart,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        const PalEyesBrandMark(
+                          compact: true,
+                          foregroundColor: PalEyesTokens.inkOnDark,
+                        ),
+                        if (!compact) ...<Widget>[
+                          const SizedBox(width: 16),
+                          Container(
+                            width: 1,
+                            height: 30,
+                            color: Colors.white24,
+                          ),
+                          const SizedBox(width: 14),
+                          Text(
+                            location.startsWith(RoutePaths.governance)
+                                ? 'الحوكمة والنظام'
+                                : 'مساحة العمل',
+                            style: const TextStyle(fontWeight: FontWeight.w900),
+                          ),
+                        ],
+                      ],
+                    ),
                   ),
-                ],
-              ],
-            ),
             actions: <Widget>[
               if (compact)
                 IconButton(

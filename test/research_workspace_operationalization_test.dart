@@ -27,6 +27,11 @@ void main() {
     tester,
   ) async {
     await _pumpWorkspace(tester, size: const Size(1440, 1000));
+    await tester.ensureVisible(
+      find.byKey(const Key('research-workspace-tab-3')),
+    );
+    await tester.tap(find.byKey(const Key('research-workspace-tab-3')));
+    await tester.pumpAndSettle();
 
     expect(find.text('مساحة الباحث'), findsOneWidget);
     expect(find.text('نموذج المعرفة البحثية — تشغيل تجريبي'), findsOneWidget);
@@ -39,8 +44,13 @@ void main() {
     tester,
   ) async {
     await _pumpWorkspace(tester, size: const Size(390, 844));
-
     expect(find.text('مساحة الباحث'), findsOneWidget);
+    await tester.ensureVisible(
+      find.byKey(const Key('research-workspace-tab-3')),
+    );
+    await tester.tap(find.byKey(const Key('research-workspace-tab-3')));
+    await tester.pumpAndSettle();
+
     expect(find.text('نموذج المعرفة البحثية — تشغيل تجريبي'), findsOneWidget);
     expect(find.text('ACCEPT — غير إنتاجي فقط'), findsOneWidget);
     expect(find.text('مفتوح قبل النشر/الإنتاج'), findsOneWidget);

@@ -38,10 +38,16 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
   Future<void> _enterWorkspace() async {
     for (var i = 0; i < 50; i++) {
       if (!mounted) return;
-      if (ref.read(authenticatedAccessIdentityProvider) != null) break;
+      final identity = ref.read(authenticatedAccessIdentityProvider);
+      if (identity?.roleResolution == PalEyesRoleResolution.ready) {
+        if (identity!.hasAny(PalEyesAccessPolicy.workspaceRoles)) {
+          context.go(RoutePaths.workspace);
+        }
+        return;
+      }
+      if (identity?.roleResolution == PalEyesRoleResolution.failed) return;
       await Future<void>.delayed(const Duration(milliseconds: 100));
     }
-    if (mounted) context.go(RoutePaths.workspace);
   }
 
   Future<void> _submit(PalEyesAuthGateway gateway) async {
@@ -128,6 +134,25 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
           ),
         ],
       );
+    } else if (identity.source == PalEyesIdentitySource.authenticatedSession &&
+        identity.roleResolution != PalEyesRoleResolution.ready) {
+      body = Column(
+        key: const Key('sign-in-role-resolution'),
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Text(
+            identity.roleResolution == PalEyesRoleResolution.loading
+                ? 'جارٍ التحقق من أدوار الحساب...'
+                : 'تعذّر التحقق من صلاحيات الحساب. لا يمكن فتح مساحة العمل.',
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: PalEyesTokens.space3),
+          OutlinedButton(
+            onPressed: () => gateway.signOut(),
+            child: const Text('تسجيل الخروج'),
+          ),
+        ],
+      );
     } else if (identity.source == PalEyesIdentitySource.authenticatedSession) {
       body = Column(
         key: const Key('sign-in-already'),
@@ -145,10 +170,11 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
             style: theme.textTheme.bodyMedium,
           ),
           const SizedBox(height: PalEyesTokens.space5),
-          FilledButton(
-            onPressed: () => context.go(RoutePaths.workspace),
-            child: const Text('فتح مساحة العمل'),
-          ),
+          if (identity.hasAny(PalEyesAccessPolicy.workspaceRoles))
+            FilledButton(
+              onPressed: () => context.go(RoutePaths.workspace),
+              child: const Text('فتح مساحة العمل'),
+            ),
           const SizedBox(height: PalEyesTokens.space2),
           OutlinedButton(
             onPressed: () => gateway.signOut(),

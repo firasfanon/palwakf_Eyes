@@ -50,17 +50,21 @@ enum PalEyesIdentitySource {
   syntheticInspector,
 }
 
+enum PalEyesRoleResolution { loading, ready, failed }
+
 class PalEyesAccessIdentity {
   const PalEyesAccessIdentity({
     required this.source,
     this.userId,
     this.roles = const <PalEyesRole>{},
+    this.roleResolution = PalEyesRoleResolution.ready,
   });
 
   const PalEyesAccessIdentity.anonymous()
     : source = PalEyesIdentitySource.anonymous,
       userId = null,
-      roles = const <PalEyesRole>{};
+      roles = const <PalEyesRole>{},
+      roleResolution = PalEyesRoleResolution.ready;
 
   const PalEyesAccessIdentity.syntheticInspector()
     : source = PalEyesIdentitySource.syntheticInspector,
@@ -74,11 +78,13 @@ class PalEyesAccessIdentity {
         PalEyesRole.reviewManager,
         PalEyesRole.releaseManager,
         PalEyesRole.systemAdmin,
-      };
+      },
+      roleResolution = PalEyesRoleResolution.ready;
 
   final PalEyesIdentitySource source;
   final String? userId;
   final Set<PalEyesRole> roles;
+  final PalEyesRoleResolution roleResolution;
 
   bool get isAnonymous => source == PalEyesIdentitySource.anonymous;
   bool get isSynthetic => source == PalEyesIdentitySource.syntheticInspector;
@@ -221,6 +227,18 @@ class AuthenticatedAccessIdentityController
       roles: Set<PalEyesRole>.unmodifiable(roles),
     );
   }
+
+  void loading({required String userId}) => state = PalEyesAccessIdentity(
+    source: PalEyesIdentitySource.authenticatedSession,
+    userId: userId,
+    roleResolution: PalEyesRoleResolution.loading,
+  );
+
+  void failed({required String userId}) => state = PalEyesAccessIdentity(
+    source: PalEyesIdentitySource.authenticatedSession,
+    userId: userId,
+    roleResolution: PalEyesRoleResolution.failed,
+  );
 
   void signedOut() => state = null;
 }

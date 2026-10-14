@@ -49,6 +49,48 @@ String? palEyesAccessRedirect({
   required Uri uri,
   required PalEyesAccessIdentity identity,
 }) {
+  // While roles load, keep protected content completely out of the widget tree.
+  // A public waiting route retains only an internal return destination.
+  if (uri.path == RoutePaths.accessRestricted &&
+      uri.queryParameters['reason'] == 'loading') {
+    final requested = uri.queryParameters['next'];
+    final target = requested == null ? null : Uri.tryParse(requested);
+    if (target == null ||
+        target.hasScheme ||
+        target.hasAuthority ||
+        !target.path.startsWith('/') ||
+        target.path.startsWith('//') ||
+        PalEyesAccessPolicy.areaFor(target.path) == PalEyesAccessArea.public) {
+      return RoutePaths.signIn;
+    }
+    if (identity.source == PalEyesIdentitySource.authenticatedSession &&
+        identity.roleResolution == PalEyesRoleResolution.loading) {
+      return null;
+    }
+    final result = PalEyesAccessPolicy.decide(
+      path: target.path,
+      identity: identity,
+    );
+    if (result.allowed) return target.toString();
+    final reason = result.outcome == PalEyesAccessOutcome.signInRequired
+        ? 'sign-in'
+        : 'role';
+    return Uri(
+      path: RoutePaths.accessRestricted,
+      queryParameters: <String, String>{'reason': reason},
+    ).toString();
+  }
+  if (PalEyesAccessPolicy.areaFor(uri.path) != PalEyesAccessArea.public &&
+      identity.source == PalEyesIdentitySource.authenticatedSession &&
+      identity.roleResolution == PalEyesRoleResolution.loading) {
+    return Uri(
+      path: RoutePaths.accessRestricted,
+      queryParameters: <String, String>{
+        'reason': 'loading',
+        'next': uri.toString(),
+      },
+    ).toString();
+  }
   final decision = PalEyesAccessPolicy.decide(
     path: uri.path,
     identity: identity,

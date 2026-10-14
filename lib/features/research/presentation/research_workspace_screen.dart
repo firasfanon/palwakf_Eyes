@@ -7,7 +7,9 @@ import 'package:pal_eyes/core/widgets/pal_eyes_page.dart';
 import 'package:pal_eyes/features/places/application/heritage_sites_provider.dart';
 import 'package:pal_eyes/features/places/data/content_catalog_metrics.dart';
 import 'package:pal_eyes/features/research/domain/governed_research_backlog_item.dart';
+import 'package:pal_eyes/features/research/presentation/governed_research_draft_reader.dart';
 import 'package:pal_eyes/features/research/presentation/research_package_workbench.dart';
+import 'package:pal_eyes/features/research/presentation/research_preview_visibility_panel.dart';
 import 'package:pal_eyes/features/research/presentation/staging_research_live_panel.dart';
 
 class ResearchWorkspaceScreen extends ConsumerStatefulWidget {
@@ -23,6 +25,7 @@ class _ResearchWorkspaceScreenState
   final TextEditingController _controller = TextEditingController();
   String _tier = 'الكل';
   int _visible = _pageSize;
+  int _selectedTab = 0;
 
   @override
   void dispose() {
@@ -74,96 +77,147 @@ class _ResearchWorkspaceScreenState
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          const _Metrics(),
-          const SizedBox(height: 12),
-          const StagingResearchLivePanel(),
-          const SizedBox(height: 12),
-          const Text(
-            'القائمة البحثية التالية مرجع محلي غير منشور وليست سجلات قاعدة Staging.',
-            key: Key('research-local-corpus-disclaimer'),
-          ),
-
-          const SizedBox(height: 18),
-          const ResearchPackageWorkbench(),
-          const SizedBox(height: 18),
-          Card(
-            child: Padding(
-              padding: const EdgeInsets.all(18),
-              child: Column(
-                children: <Widget>[
-                  TextField(
-                    controller: _controller,
-                    onChanged: (_) => setState(() {
-                      _visible = _pageSize;
-                    }),
-                    decoration: const InputDecoration(
-                      labelText: 'البحث في الادعاءات المفتوحة',
-                      prefixIcon: Icon(Icons.search_rounded),
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  DropdownButtonFormField<String>(
-                    initialValue: _tier,
-                    decoration: const InputDecoration(labelText: 'الأولوية'),
-                    items:
-                        const <String>[
-                              'الكل',
-                              'P0_IMMEDIATE',
-                              'P1_HIGH',
-                              'P2_MEDIUM',
-                              'P3_LONG_TAIL',
-                            ]
-                            .map(
-                              (item) => DropdownMenuItem<String>(
-                                value: item,
-                                child: Text(item),
-                              ),
-                            )
-                            .toList(growable: false),
-                    onChanged: (value) {
-                      if (value != null) {
-                        setState(() {
-                          _tier = value;
-                          _visible = _pageSize;
-                        });
-                      }
-                    },
-                  ),
-                ],
-              ),
-            ),
+          ResearchWorkspaceTabs(
+            selectedIndex: _selectedTab,
+            onSelected: (index) => setState(() => _selectedTab = index),
           ),
           const SizedBox(height: 16),
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: <Widget>[
-              Chip(label: Text('${filtered.length} نتيجة')),
-              Chip(label: Text('${visible.length} ظاهرة')),
-              const Chip(label: Text('القبول التلقائي: محظور')),
-              const Chip(label: Text('النشر: محظور')),
-            ],
-          ),
-          const SizedBox(height: 14),
-          ...visible.map(
-            (item) => Padding(
-              padding: const EdgeInsets.only(bottom: 10),
-              child: _BacklogCard(item: item),
+          if (_selectedTab == 0) ...<Widget>[
+            const _Metrics(),
+            const SizedBox(height: 12),
+            const StagingResearchLivePanel(),
+          ],
+          if (_selectedTab == 1) const GovernedResearchDraftReader(),
+          if (_selectedTab == 2) const ResearchPreviewVisibilityPanel(),
+          if (_selectedTab == 3) const ResearchPackageWorkbench(),
+          if (_selectedTab == 4) ...<Widget>[
+            const Text(
+              'القائمة البحثية التالية مرجع محلي غير منشور وليست سجلات قاعدة Staging.',
+              key: Key('research-local-corpus-disclaimer'),
             ),
-          ),
-          if (visible.length < filtered.length)
-            Center(
-              child: FilledButton.tonalIcon(
-                onPressed: () => setState(() {
-                  _visible += _pageSize;
-                }),
-                icon: const Icon(Icons.expand_more_rounded),
-                label: Text(
-                  'إظهار المزيد (${filtered.length - visible.length})',
+            const SizedBox(height: 18),
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(18),
+                child: Column(
+                  children: <Widget>[
+                    TextField(
+                      controller: _controller,
+                      onChanged: (_) => setState(() {
+                        _visible = _pageSize;
+                      }),
+                      decoration: const InputDecoration(
+                        labelText: 'البحث في الادعاءات المفتوحة',
+                        prefixIcon: Icon(Icons.search_rounded),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    DropdownButtonFormField<String>(
+                      initialValue: _tier,
+                      decoration: const InputDecoration(labelText: 'الأولوية'),
+                      items:
+                          const <String>[
+                                'الكل',
+                                'P0_IMMEDIATE',
+                                'P1_HIGH',
+                                'P2_MEDIUM',
+                                'P3_LONG_TAIL',
+                              ]
+                              .map(
+                                (item) => DropdownMenuItem<String>(
+                                  value: item,
+                                  child: Text(item),
+                                ),
+                              )
+                              .toList(growable: false),
+                      onChanged: (value) {
+                        if (value != null) {
+                          setState(() {
+                            _tier = value;
+                            _visible = _pageSize;
+                          });
+                        }
+                      },
+                    ),
+                  ],
                 ),
               ),
             ),
+            const SizedBox(height: 16),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: <Widget>[
+                Chip(label: Text('${filtered.length} نتيجة')),
+                Chip(label: Text('${visible.length} ظاهرة')),
+                const Chip(label: Text('القبول التلقائي: محظور')),
+                const Chip(label: Text('النشر: محظور')),
+              ],
+            ),
+            const SizedBox(height: 14),
+            ...visible.map(
+              (item) => Padding(
+                padding: const EdgeInsets.only(bottom: 10),
+                child: _BacklogCard(item: item),
+              ),
+            ),
+            if (visible.length < filtered.length)
+              Center(
+                child: FilledButton.tonalIcon(
+                  onPressed: () => setState(() {
+                    _visible += _pageSize;
+                  }),
+                  icon: const Icon(Icons.expand_more_rounded),
+                  label: Text(
+                    'إظهار المزيد (${filtered.length - visible.length})',
+                  ),
+                ),
+              ),
+          ],
         ],
+      ),
+    );
+  }
+}
+
+class ResearchWorkspaceTabs extends StatelessWidget {
+  const ResearchWorkspaceTabs({
+    super.key,
+    required this.selectedIndex,
+    required this.onSelected,
+  });
+
+  final int selectedIndex;
+  final ValueChanged<int> onSelected;
+
+  static const labels = <String>[
+    'نظرة عامة',
+    'السرديات',
+    'المعاينات والنشر',
+    'الحزم البحثية',
+    'قائمة الادعاءات',
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      label: 'تبويبات مساحة الباحث',
+      child: SingleChildScrollView(
+        key: const Key('research-workspace-tabs-scroll'),
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          children: <Widget>[
+            for (var index = 0; index < labels.length; index++) ...<Widget>[
+              ChoiceChip(
+                key: Key('research-workspace-tab-$index'),
+                label: Text(labels[index]),
+                selected: selectedIndex == index,
+                onSelected: (_) => onSelected(index),
+              ),
+              if (index < labels.length - 1) const SizedBox(width: 8),
+            ],
+          ],
+        ),
       ),
     );
   }

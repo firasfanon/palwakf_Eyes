@@ -48,6 +48,84 @@ const List<String> _privilegedSamples = <String>[
 ];
 
 void main() {
+  test('role-loading route waits without exposing protected workspace', () {
+    final loading = PalEyesAccessIdentity(
+      source: PalEyesIdentitySource.authenticatedSession,
+      userId: 'synthetic-user',
+      roleResolution: PalEyesRoleResolution.loading,
+    );
+    final path = palEyesAccessRedirect(
+      uri: Uri.parse('/workspace/research?tab=2'),
+      identity: loading,
+    )!;
+    final wait = Uri.parse(path);
+    expect(wait.path, RoutePaths.accessRestricted);
+    expect(wait.queryParameters['reason'], 'loading');
+    expect(wait.queryParameters['next'], '/workspace/research?tab=2');
+    expect(palEyesAccessRedirect(uri: wait, identity: loading), isNull);
+    final allowed = PalEyesAccessIdentity(
+      source: PalEyesIdentitySource.authenticatedSession,
+      userId: 'synthetic-user',
+      roles: const <PalEyesRole>{PalEyesRole.editor},
+    );
+    expect(
+      palEyesAccessRedirect(uri: wait, identity: allowed),
+      '/workspace/research?tab=2',
+    );
+    final denied = PalEyesAccessIdentity(
+      source: PalEyesIdentitySource.authenticatedSession,
+      userId: 'synthetic-user',
+      roleResolution: PalEyesRoleResolution.failed,
+    );
+    expect(
+      palEyesAccessRedirect(uri: wait, identity: denied),
+      '/access-restricted?reason=role',
+    );
+    expect(
+      palEyesAccessRedirect(
+        uri: Uri.parse(
+          '/access-restricted?reason=loading&next=https%3A%2F%2Fevil.example',
+        ),
+        identity: allowed,
+      ),
+      RoutePaths.signIn,
+    );
+  });
+
+  test(
+    'unresolved and failed role identities never grant workspace access',
+    () {
+      for (final state in <PalEyesRoleResolution>[
+        PalEyesRoleResolution.loading,
+        PalEyesRoleResolution.failed,
+      ]) {
+        final identity = PalEyesAccessIdentity(
+          source: PalEyesIdentitySource.authenticatedSession,
+          userId: 'synthetic-user',
+          roleResolution: state,
+        );
+        expect(identity.roles, isEmpty);
+        expect(
+          palEyesAccessRedirect(
+            uri: Uri.parse('/workspace/research'),
+            identity: identity,
+          ),
+          state == PalEyesRoleResolution.loading
+              ? '/access-restricted?reason=loading&next=%2Fworkspace%2Fresearch'
+              : '/access-restricted?reason=role',
+        );
+      }
+      final ready = _session(<PalEyesRole>{PalEyesRole.editor});
+      expect(
+        palEyesAccessRedirect(
+          uri: Uri.parse('/workspace/research'),
+          identity: ready,
+        ),
+        isNull,
+      );
+    },
+  );
+
   group('access policy (pure)', () {
     test('every registered workspace and governance route is privileged', () {
       for (final route in <String>[

@@ -16,7 +16,8 @@ class AccessRestrictedScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final signIn = reason != 'role';
+    final loading = reason == 'loading';
+    final signIn = reason == 'sign-in';
     final canSignIn = ref.watch(palEyesAuthGatewayProvider).available;
     final theme = Theme.of(context);
     return ColoredBox(
@@ -56,7 +57,9 @@ class AccessRestrictedScreen extends ConsumerWidget {
                     ),
                     const SizedBox(height: PalEyesTokens.space3),
                     Text(
-                      signIn
+                      loading
+                          ? 'جارٍ التحقق من صلاحيات الجلسة. الرجاء الانتظار.'
+                          : signIn
                           ? 'يتطلب الوصول إلى مساحة العمل والحوكمة جلسة دخول موثقة بدور مخوّل. لا تُعرض أي أدوات داخلية للزوار.'
                           : 'حسابك الحالي لا يحمل الدور المطلوب لهذه الصفحة. تواصل مع مسؤول النظام لمراجعة الصلاحيات.',
                       textAlign: TextAlign.center,
@@ -65,6 +68,10 @@ class AccessRestrictedScreen extends ConsumerWidget {
                       ),
                     ),
                     const SizedBox(height: PalEyesTokens.space5),
+                    if (loading) ...<Widget>[
+                      const Center(child: CircularProgressIndicator()),
+                      const SizedBox(height: PalEyesTokens.space2),
+                    ],
                     if (signIn && canSignIn) ...<Widget>[
                       FilledButton.icon(
                         key: const Key('access-restricted-sign-in'),
