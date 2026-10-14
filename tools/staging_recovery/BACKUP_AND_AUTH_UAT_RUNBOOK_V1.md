@@ -53,8 +53,15 @@ a migration; use approved migration tooling only after a separate decision.
    Do not assume a cached hostname, role password or endpoint is still valid.
 2. Inventory available `pg_dump` / `pg_restore` / Supabase CLI version via
    `--version` and `--help`; match server PostgreSQL 17 tooling.
-   Those native executables were **not found on PATH** at this preflight.
-   Install only through a separately approved installation workflow.
+   **Correction (2026-10-15):** PostgreSQL **18.6** binaries were subsequently
+   found at `D:\Program Files\PostgreSQL\18\bin\` and verified; they were absent
+   only from `PATH`. No installation is needed for `pg_dump`, `pg_restore` or
+   `psql`. The Supabase server is PostgreSQL 17.11; PostgreSQL 18 `pg_dump`
+   supports dumping from a PostgreSQL 17 server. `age`/`age-keygen` 1.3.2
+   are also installed. A running **local PostgreSQL 18** service and an
+   available TCP 5432 listener were discovered, but **database authentication
+   and isolation have not passed**. Do not provision or restore in an existing
+   shared local database.
 3. Obtain least-privilege backup credentials from the existing protected
    Windows credential provider/DPAPI or a locked service file. Never place a
    password/token in a command line, script, chat message, Git repo or log.
